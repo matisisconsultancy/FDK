@@ -26,9 +26,12 @@ fast and deploys anywhere (GitHub Pages, Netlify, Vercel, S3, …).
 ## 📁 Structure
 
 ```
-index.html    →  Markup and copy
-styles.css    →  Styling, gradient, animations, responsive
-script.js     →  Navbar, scroll reveal, mobile menu, form
+index.html    →  Home (hero, concepts, thesis-missing, founder, library, contact)
+thesis.html   →  Thesis + Author (split hero, thesis architecture, founder bio,
+                 experience table, academic background)
+styles.css    →  Styling, animations, responsive (shared)
+script.js     →  Preloader, cursor, masked reveals, parallax, sticky, form (shared)
+.nojekyll     →  Tells GitHub Pages to serve files as-is (no Jekyll build)
 ```
 
 ## 🚀 Run locally
@@ -37,6 +40,18 @@ script.js     →  Navbar, scroll reveal, mobile menu, form
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
+
+## 🌐 Publish on GitHub Pages
+
+Pages must be enabled once from the repo settings (an automated token can't turn
+it on for the first time):
+
+1. GitHub → repo **Settings** → **Pages**
+2. **Build and deployment → Source:** `Deploy from a branch`
+3. **Branch:** `claude/eager-carson-vjorjg` · **Folder:** `/ (root)` → **Save**
+4. Wait ~1 min. Site goes live at **https://matisisconsultancy.github.io/FDK/**
+
+(When this branch is merged to `main`, switch the branch selector to `main`.)
 
 ## 🖼 Images
 
