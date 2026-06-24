@@ -14,24 +14,22 @@
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
-  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Navbar -->
   <header class="nav nav--solid" id="nav">
     <div class="container nav__inner">
-      <a href="index.html" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor="">
-        <svg class="brand__logo" viewBox="0 0 40 32" width="38" height="30" aria-hidden="true">
-          <path d="M3 3v26M3 3h13M3 15h10" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="square"/>
-          <path d="M22 3h7c5 0 8 5 8 13s-3 13-8 13h-7z" stroke="currentColor" stroke-width="2.6" fill="none"/>
-        </svg>
-        <span class="brand__text">fdk<small>EmpowerNet</small></span>
+      <a href="index.html" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor>
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 34 34" width="30" height="30"><rect x="3" y="20" width="6" height="11" rx="2"/><rect x="14" y="11" width="6" height="20" rx="2"/><rect x="25" y="3" width="6" height="28" rx="2"/></svg></span>
+        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
       </a>
       <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="index.html" data-cursor="">Home</a>
-        <a href="thesis.html" class="is-current" data-cursor="">Thesis + Author</a>
-        <a href="index.html#library" data-cursor="">Intelligence Library</a>
-        <a href="index.html#contact" class="nav__cta magnetic" data-cursor="">Contact <span aria-hidden="true">→</span></a>
+        <a href="index.html" data-cursor>Home</a>
+        <a href="thesis.html" class="is-current" data-cursor>Thesis + Author</a>
+        <a href="book.html" data-cursor>The Book</a>
+        <a href="index.html#library" data-cursor>Intelligence Library</a>
+        <a href="index.html#contact" class="nav__cta magnetic" data-cursor>Contact <span aria-hidden="true">→</span></a>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -173,7 +171,7 @@
     <div class="container footer__inner">
       <nav class="footer__col" aria-label="Footer">
         <h4>Explore</h4>
-        <a href="index.html">Home</a><a href="thesis.html">Thesis + Author</a><a href="index.html#library">Intelligence Library</a><a href="index.html#contact">Contact</a>
+        <a href="index.html">Home</a><a href="thesis.html">Thesis + Author</a><a href="book.html">The Book</a><a href="index.html#library">Intelligence Library</a><a href="index.html#contact">Contact</a>
       </nav>
       <div class="footer__col">
         <h4>Contact</h4>

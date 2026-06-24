@@ -26,13 +26,22 @@ fast and deploys anywhere (GitHub Pages, Netlify, Vercel, S3, …).
 ## 📁 Structure
 
 ```
-index.html    →  Home (hero, concepts, thesis-missing, founder, library, contact)
+index.html    →  Home (animated-canvas hero, statement, concepts, manifesto band,
+                 the-gap, founder teaser, BOOK LAUNCH, library, contact)
 thesis.html   →  Thesis + Author (split hero, thesis architecture, founder bio,
                  experience table, academic background)
+book.html     →  The Book — Velocity Capitalism (3D cover, chapters, excerpt with
+                 sample download, buy links: Amazon / Apple / Google Play / Kobo)
 styles.css    →  Styling, animations, responsive (shared)
-script.js     →  Preloader, cursor, masked reveals, parallax, sticky, form (shared)
+script.js     →  Hero canvas, cursor ring, masked reveals, parallax, sticky,
+                 book sample download, form (shared)
 .nojekyll     →  Tells GitHub Pages to serve files as-is (no Jekyll build)
 ```
+
+> **The book** (`Velocity Capitalism`) is placeholder content built on FDK's own
+> thesis — swap the title, cover text and the four buy-link URLs (`book.html`,
+> search for `#buy`) for the real listings when they're live. "Download a sample"
+> generates a `.txt` excerpt client-side; replace with a real PDF if preferred.
 
 ## 🚀 Run locally
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="FDK builds the strategic AI thesis your board doesn't have yet. For CSOs and CEOs in mobility, energy, and telecom facing board-level AI decisions." />
-  <meta name="theme-color" content="#0c1030" />
+  <meta name="theme-color" content="#0a0e2e" />
   <title>FDK EmpowerNet · The strategic thesis your board doesn't have yet</title>
 
   <meta property="og:title" content="FDK · The strategic thesis your board doesn't have yet" />
@@ -13,44 +13,42 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Grain overlay -->
   <div class="grain" aria-hidden="true"></div>
-
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor" aria-hidden="true"><span class="cursor__label"></span></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Preloader -->
   <div class="loader" id="loader" aria-hidden="true">
     <div class="loader__inner">
-      <span class="loader__brand">fdk<small>EmpowerNet</small></span>
+      <span class="brand brand--loader">
+        <span class="brand__mark"><svg viewBox="0 0 34 34" width="34" height="34" aria-hidden="true"><rect x="3" y="20" width="6" height="11" rx="2"/><rect x="14" y="11" width="6" height="20" rx="2"/><rect x="25" y="3" width="6" height="28" rx="2"/></svg></span>
+        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
+      </span>
       <span class="loader__count" id="loaderCount">0</span>
     </div>
     <div class="loader__bar"><span id="loaderBar"></span></div>
   </div>
 
-  <!-- Reading progress -->
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-
   <!-- Navbar -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="#home" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor="">
-        <svg class="brand__logo" viewBox="0 0 40 32" width="38" height="30" aria-hidden="true">
-          <path d="M3 3v26M3 3h13M3 15h10" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="square"/>
-          <path d="M22 3h7c5 0 8 5 8 13s-3 13-8 13h-7z" stroke="currentColor" stroke-width="2.6" fill="none"/>
-        </svg>
-        <span class="brand__text">fdk<small>EmpowerNet</small></span>
+      <a href="#home" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor>
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 34 34" width="30" height="30"><rect x="3" y="20" width="6" height="11" rx="2"/><rect x="14" y="11" width="6" height="20" rx="2"/><rect x="25" y="3" width="6" height="28" rx="2"/></svg>
+        </span>
+        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
       </a>
 
       <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="#home" data-cursor="">Home</a>
-        <a href="thesis.html" data-cursor="">Thesis + Author</a>
-        <a href="#library" data-cursor="">Intelligence Library</a>
-        <a href="#contact" class="nav__cta magnetic" data-cursor="">Contact <span aria-hidden="true">→</span></a>
+        <a href="#home" data-cursor>Home</a>
+        <a href="thesis.html" data-cursor>Thesis + Author</a>
+        <a href="book.html" data-cursor>The Book</a>
+        <a href="#library" data-cursor>Intelligence Library</a>
+        <a href="#contact" class="nav__cta magnetic" data-cursor>Contact <span aria-hidden="true">→</span></a>
       </nav>
 
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -59,168 +57,174 @@
     </div>
   </header>
 
-  <main id="scroll">
+  <main>
     <!-- HERO -->
     <section class="hero" id="home">
-      <div class="hero__bg" data-parallax="0.18" aria-hidden="true"></div>
-      <div class="hero__ghost" data-parallax="0.4" aria-hidden="true">FDK</div>
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <span class="hero__side hero__side--l" aria-hidden="true">EST · EUROPE</span>
+      <span class="hero__side hero__side--r" aria-hidden="true">AI · STRATEGY</span>
 
       <div class="container hero__inner">
-        <p class="hero__eyebrow reveal-up">Strategic AI intelligence · Europe</p>
+        <p class="hero__eyebrow reveal-up"><span class="hero__idx">01</span> Strategic AI Intelligence</p>
         <h1 class="hero__title">
           <span class="hero__line" data-reveal-text>The strategic thesis your</span>
           <span class="hero__accent" data-reveal-block>board doesn't have yet.</span>
         </h1>
-
         <p class="hero__lead reveal-up">
           Most large European corporates are running AI initiatives. Few have a defensible
-          argument for where AI creates structural advantage in their sector.
-          That argument is what FDK builds.
+          argument for where AI creates structural advantage in their sector. That argument is
+          what FDK builds — for CSOs and CEOs in mobility, energy, and telecom.
         </p>
-        <p class="hero__sub reveal-up">
-          For CSOs and CEOs in mobility, energy, and telecom facing board-level AI decisions.
-        </p>
-
         <div class="hero__actions reveal-up">
-          <a href="#contact" class="btn btn--brief magnetic" data-cursor="Briefing">
-            <span class="btn__bullet" aria-hidden="true"></span>
-            Request an Executive Briefing
+          <a href="#contact" class="btn btn--brief magnetic" data-cursor>
+            <span class="btn__bullet" aria-hidden="true"></span> Request an Executive Briefing
           </a>
+          <a href="#book" class="btn btn--ghost magnetic" data-cursor>New book → Velocity Capitalism</a>
         </div>
       </div>
 
-      <a href="#statement" class="hero__scroll" aria-label="Scroll down" data-cursor="">
-        <span>Scroll</span>
-        <span class="mouse"><span></span></span>
+      <a href="#statement" class="hero__scroll" aria-label="Scroll down" data-cursor>
+        <span>Scroll</span><span class="mouse"><span></span></span>
       </a>
     </section>
 
-    <!-- MARQUEE -->
+    <!-- DOUBLE MARQUEE -->
     <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Mobility</span><span class="dot">•</span><span>Energy</span><span class="dot">•</span><span>Telecom</span><span class="dot">•</span><span>AI Strategy</span><span class="dot">•</span>
-        <span>Mobility</span><span class="dot">•</span><span>Energy</span><span class="dot">•</span><span>Telecom</span><span class="dot">•</span><span>AI Strategy</span><span class="dot">•</span>
+      <div class="marquee__track marquee__track--a">
+        <span>Mobility</span><i>✦</i><span>Energy</span><i>✦</i><span>Telecom</span><i>✦</i><span>AI Strategy</span><i>✦</i>
+        <span>Mobility</span><i>✦</i><span>Energy</span><i>✦</i><span>Telecom</span><i>✦</i><span>AI Strategy</span><i>✦</i>
+      </div>
+      <div class="marquee__track marquee__track--b marquee--outline">
+        <span>Velocity Capitalism</span><i>✦</i><span>Structural Bifurcation</span><i>✦</i><span>The Repricing</span><i>✦</i><span>The Civic Platform</span><i>✦</i>
+        <span>Velocity Capitalism</span><i>✦</i><span>Structural Bifurcation</span><i>✦</i><span>The Repricing</span><i>✦</i><span>The Civic Platform</span><i>✦</i>
       </div>
     </div>
 
-    <!-- STATEMENT (scroll word highlight) -->
+    <!-- STATEMENT -->
     <section class="statement" id="statement">
       <div class="container">
         <p class="statement__text" data-highlight>
-          The board is moving. The thesis is missing. FDK builds the proprietary argument
-          for where artificial intelligence creates structural advantage — before the market
-          prices it in.
+          The board is moving. The thesis is missing. FDK builds the proprietary argument for
+          where artificial intelligence creates structural advantage — before the market prices
+          it in.
         </p>
       </div>
     </section>
 
-    <!-- FOUR CONCEPTS — sticky storytelling -->
+    <!-- CONCEPTS -->
     <section class="concepts" id="concepts">
       <div class="container concepts__head">
-        <span class="eyebrow reveal-up">The Thesis</span>
+        <span class="eyebrow reveal-up">The Thesis · 02</span>
         <h2 class="section__title" data-reveal-text>Four concepts. One thesis. Built for the decisions your board is facing now.</h2>
       </div>
 
       <div class="container concepts__grid">
         <div class="concepts__media-col">
           <div class="concepts__sticky">
+            <span class="concepts__bignum" id="cBigNum" aria-hidden="true">01</span>
             <figure class="cmedia">
-              <img class="cmedia__img is-active" data-i="0"
-                src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
-              <img class="cmedia__img" data-i="1"
-                src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
-              <img class="cmedia__img" data-i="2"
-                src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
-              <img class="cmedia__img" data-i="3"
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
-              <span class="cmedia__index"><b id="cIndex">01</b> / 04</span>
+              <img class="cmedia__img is-active" data-i="0" src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
+              <img class="cmedia__img" data-i="1" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
+              <img class="cmedia__img" data-i="2" src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
+              <img class="cmedia__img" data-i="3" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" alt="" loading="lazy" onerror="this.classList.add('img--fail')" />
             </figure>
           </div>
         </div>
 
         <ol class="concepts__list" id="conceptsList">
-          <li class="concept" data-i="0">
-            <span class="concept__num">001</span>
-            <h3>Velocity Capitalism</h3>
-            <p>Speed has replaced scale as the decisive competitive variable.</p>
-          </li>
-          <li class="concept" data-i="1">
-            <span class="concept__num">002</span>
-            <h3>Structural Bifurcation</h3>
-            <p>Sectors are splitting between organisations that embed intelligence and those
-              that procure it. The gap is quiet now. It will be visible in 36 months.</p>
-          </li>
-          <li class="concept" data-i="2">
-            <span class="concept__num">003</span>
-            <h3>The Repricing</h3>
-            <p>European infrastructure operators are systematically mispriced. The correction
-              has not yet been absorbed by markets.</p>
-          </li>
-          <li class="concept" data-i="3">
-            <span class="concept__num">004</span>
-            <h3>The Civic Platform</h3>
-            <p>AI-native infrastructure improves through use. This inverts the standard
-              depreciation logic — and demands a different investment thesis.</p>
-          </li>
+          <li class="concept" data-i="0"><span class="concept__num">001</span><h3>Velocity Capitalism</h3><p>Speed has replaced scale as the decisive competitive variable.</p></li>
+          <li class="concept" data-i="1"><span class="concept__num">002</span><h3>Structural Bifurcation</h3><p>Sectors are splitting between organisations that embed intelligence and those that procure it. The gap is quiet now. It will be visible in 36 months.</p></li>
+          <li class="concept" data-i="2"><span class="concept__num">003</span><h3>The Repricing</h3><p>European infrastructure operators are systematically mispriced. The correction has not yet been absorbed by markets.</p></li>
+          <li class="concept" data-i="3"><span class="concept__num">004</span><h3>The Civic Platform</h3><p>AI-native infrastructure improves through use. This inverts the standard depreciation logic — and demands a different investment thesis.</p></li>
         </ol>
       </div>
+    </section>
+
+    <!-- MANIFESTO BAND -->
+    <section class="manifesto" aria-label="Manifesto">
+      <div class="manifesto__row manifesto__row--a"><span>Velocity has replaced scale —</span><span class="manifesto__o">Velocity has replaced scale —</span><span>Velocity has replaced scale —</span></div>
+      <div class="manifesto__row manifesto__row--b"><span class="manifesto__o">Intelligence is now infrastructure.</span><span>Intelligence is now infrastructure.</span><span class="manifesto__o">Intelligence is now infrastructure.</span></div>
     </section>
 
     <!-- THE THESIS IS MISSING -->
     <section class="section section--navy missing" id="thesis">
       <div class="container">
+        <span class="eyebrow reveal-up">The Gap · 03</span>
         <h2 class="section__title section__title--light missing__title" data-reveal-text>The board is moving but the thesis is missing</h2>
 
         <div class="missing__grid">
-          <article class="mcard reveal-up" data-parallax="0.05">
-            <span class="mcard__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/>
-              </svg>
-            </span>
+          <article class="mcard reveal-up">
+            <span class="mcard__n">01</span>
             <h3>AI initiatives are multiplying</h3>
             <p>Strategic theses are not. Most boards are approving decisions they cannot evaluate.</p>
           </article>
-          <article class="mcard reveal-up" data-parallax="0.1">
-            <span class="mcard__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/>
-              </svg>
-            </span>
+          <article class="mcard reveal-up">
+            <span class="mcard__n">02</span>
             <h3>The velocity economy rewards those who compress decision cycles</h3>
             <p>Boards still operating on quarterly planning are behind before the meeting starts.</p>
           </article>
-          <article class="mcard reveal-up" data-parallax="0.05">
-            <span class="mcard__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5">
-                <circle cx="12" cy="12" r="9"/><path d="M8 16 16 8M10 8h6v6"/>
-              </svg>
-            </span>
+          <article class="mcard reveal-up">
+            <span class="mcard__n">03</span>
             <h3>Without a proprietary thesis</h3>
-            <p>Every AI investment defaults to vendor narrative, analyst consensus, or competitor
-              imitation. None of these are strategy.</p>
+            <p>Every AI investment defaults to vendor narrative, analyst consensus, or competitor imitation. None of these are strategy.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- FOUNDER -->
-    <section class="section founder" id="author">
-      <div class="container founder__grid">
-        <figure class="founder__media reveal-img">
-          <img
-            src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80"
-            alt="Francesco de Leo Kaufmann" loading="lazy"
-            data-parallax-img onerror="this.closest('figure').classList.add('media--fallback')" />
-        </figure>
-        <div class="founder__body">
-          <span class="eyebrow reveal-up">The Founder &amp; The Thesis</span>
-          <p class="founder__quote" data-reveal-text>The thesis is built from operations, not from research.</p>
-          <p class="founder__name reveal-up">
-            Francesco de Leo Kaufmann — Global Strategy Officer, FS Group · Chairman,
-            QBUZZ Founder, Kaufmann &amp; Partners
+    <!-- FOUNDER TEASER -->
+    <section class="founderteaser" id="author">
+      <figure class="founderteaser__media reveal-img">
+        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=1200&q=80" alt="Francesco de Leo Kaufmann" loading="lazy" data-parallax-img onerror="this.closest('figure').classList.add('media--fallback')" />
+      </figure>
+      <div class="founderteaser__overlay">
+        <div class="container">
+          <span class="eyebrow eyebrow--light reveal-up">The Founder · 04</span>
+          <p class="founderteaser__quote" data-reveal-text>The thesis is built from operations, not from research.</p>
+          <p class="founderteaser__name reveal-up">Francesco de Leo Kaufmann — Global Strategy Officer, FS Group · Chairman, QBUZZ</p>
+          <a href="thesis.html" class="btn btn--brief magnetic reveal-up" data-cursor>The Founder &amp; The Thesis</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BOOK LAUNCH -->
+    <section class="book" id="book">
+      <div class="book__glow" aria-hidden="true"></div>
+      <div class="container book__inner">
+        <div class="book__media reveal-up">
+          <div class="book3d" id="book3d">
+            <div class="book3d__cover">
+              <span class="book3d__brand">FDK · EMPOWERNET</span>
+              <span class="book3d__title">Velocity<br>Capitalism</span>
+              <span class="book3d__rule"></span>
+              <span class="book3d__sub">How AI rewrites<br>competitive advantage</span>
+              <span class="book3d__author">Francesco de Leo Kaufmann</span>
+            </div>
+          </div>
+          <span class="book__badge">New<br>2026</span>
+        </div>
+
+        <div class="book__body">
+          <span class="eyebrow reveal-up">New release · 05</span>
+          <h2 class="book__title" data-reveal-text>Velocity Capitalism</h2>
+          <p class="book__subtitle reveal-up">How Artificial Intelligence Rewrites Competitive Advantage</p>
+          <p class="book__desc reveal-up">
+            The thesis, in full. A board-level argument for the AI era — why speed has replaced
+            scale, how sectors are bifurcating, and where the next repricing of infrastructure
+            will happen. Written for the people making the decisions, not narrating them.
           </p>
-          <a href="thesis.html" class="btn btn--solid magnetic reveal-up" data-cursor="">The Founder &amp; The Thesis</a>
+          <div class="book__actions reveal-up">
+            <a href="book.html" class="btn btn--brief magnetic" data-cursor>View the book</a>
+            <a href="book.html#excerpt" class="btn btn--ghost-d magnetic" data-cursor>Download a sample</a>
+          </div>
+          <p class="book__buy reveal-up">
+            Available on
+            <a href="book.html#buy">Amazon</a> ·
+            <a href="book.html#buy">Apple Books</a> ·
+            <a href="book.html#buy">Google Play</a> ·
+            <a href="book.html#buy">Kobo</a>
+          </p>
         </div>
       </div>
     </section>
@@ -228,27 +232,27 @@
     <!-- INTELLIGENCE LIBRARY -->
     <section class="section section--navy library" id="library">
       <div class="container">
-        <div class="section__head">
-          <span class="eyebrow reveal-up">Intelligence Library</span>
+        <div class="section__head section__head--left">
+          <span class="eyebrow reveal-up">Intelligence Library · 06</span>
           <h2 class="section__title section__title--light" data-reveal-text>Proprietary intelligence, ahead of the consensus</h2>
         </div>
 
         <div class="library__grid">
-          <a href="#contact" class="lcard reveal-up" data-cursor="Read">
+          <a href="#contact" class="lcard reveal-up" data-cursor>
             <div class="lcard__media"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.lcard__media').classList.add('img--fail')"/></div>
             <span class="lcard__tag">Sector Thesis</span>
             <h3>Mobility after AI-native infrastructure</h3>
             <p>Where embedded intelligence repositions operators across the European mobility value chain.</p>
             <span class="lcard__more">Read briefing →</span>
           </a>
-          <a href="#contact" class="lcard reveal-up" data-cursor="Read">
+          <a href="#contact" class="lcard reveal-up" data-cursor>
             <div class="lcard__media"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.lcard__media').classList.add('img--fail')"/></div>
             <span class="lcard__tag">Framework</span>
             <h3>Evaluating an AI investment as a board</h3>
             <p>A decision lens that separates strategy from vendor narrative and analyst consensus.</p>
             <span class="lcard__more">Read briefing →</span>
           </a>
-          <a href="#contact" class="lcard reveal-up" data-cursor="Read">
+          <a href="#contact" class="lcard reveal-up" data-cursor>
             <div class="lcard__media"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.lcard__media').classList.add('img--fail')"/></div>
             <span class="lcard__tag">Repricing</span>
             <h3>The mispricing of infrastructure operators</h3>
@@ -263,13 +267,10 @@
     <section class="section contact" id="contact">
       <div class="container contact__grid">
         <div class="contact__intro">
-          <span class="eyebrow reveal-up">Contact</span>
+          <span class="eyebrow reveal-up">Contact · 07</span>
           <h2 class="contact__title" data-reveal-text>Request an Executive Briefing</h2>
-          <p class="contact__sub reveal-up">
-            A focused session for CSOs and CEOs in mobility, energy and telecom.
-            Tell us the decision your board is facing — we'll bring the thesis.
-          </p>
-          <p class="contact__direct reveal-up"><a href="mailto:info@fdkempowernet.com" data-cursor="Email">info@fdkempowernet.com</a></p>
+          <p class="contact__sub reveal-up">A focused session for CSOs and CEOs in mobility, energy and telecom. Tell us the decision your board is facing — we'll bring the thesis.</p>
+          <p class="contact__direct reveal-up"><a href="mailto:info@fdkempowernet.com" data-cursor>info@fdkempowernet.com</a></p>
         </div>
 
         <form class="form reveal-up" id="briefingForm" novalidate>
@@ -279,12 +280,10 @@
           </div>
           <div class="form__row">
             <div class="field"><label for="company">Organisation</label><input id="company" name="company" type="text" placeholder="Company" /></div>
-            <div class="field"><label for="sector">Sector</label>
-              <select id="sector" name="sector"><option value="mobility">Mobility</option><option value="energy">Energy</option><option value="telecom">Telecom</option><option value="other">Other</option></select>
-            </div>
+            <div class="field"><label for="sector">Sector</label><select id="sector" name="sector"><option value="mobility">Mobility</option><option value="energy">Energy</option><option value="telecom">Telecom</option><option value="other">Other</option></select></div>
           </div>
           <div class="field"><label for="message">The decision your board is facing</label><textarea id="message" name="message" rows="3" placeholder="Briefly describe the board-level AI decision..."></textarea></div>
-          <button type="submit" class="btn btn--solid btn--block magnetic" data-cursor="">Request briefing</button>
+          <button type="submit" class="btn btn--solid btn--block magnetic" data-cursor>Request briefing</button>
           <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
@@ -294,12 +293,12 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer__top">
-      <a href="#home" class="footer__word" data-cursor="Top">fdk<span>EmpowerNet</span></a>
+      <a href="#home" class="footer__word" data-cursor>fdk<span>EmpowerNet</span></a>
     </div>
     <div class="container footer__inner">
       <nav class="footer__col" aria-label="Footer">
         <h4>Explore</h4>
-        <a href="#home">Home</a><a href="thesis.html">Thesis + Author</a><a href="#library">Intelligence Library</a><a href="#contact">Contact</a>
+        <a href="#home">Home</a><a href="thesis.html">Thesis + Author</a><a href="book.html">The Book</a><a href="#library">Intelligence Library</a><a href="#contact">Contact</a>
       </nav>
       <div class="footer__col">
         <h4>Contact</h4>
