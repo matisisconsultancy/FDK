@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FDK — Comunidad dinámica donde el conocimiento financiero, la innovación y la estrategia están al alcance de todos. Conecta, aprende y crece." />
+  <meta name="theme-color" content="#0a0a12" />
+  <title>FDK · Empoderamiento, Comunidad e Innovación</title>
+
+  <meta property="og:title" content="FDK · Empoderamiento, Comunidad e Innovación" />
+  <meta property="og:description" content="Una comunidad colaborativa donde el conocimiento financiero, estratégico y de innovación está al alcance de todos." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-aurora" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navbar -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="brand" aria-label="FDK inicio">
+        <span class="brand__mark">FDK</span>
+        <span class="brand__dot"></span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
+        <a href="#comunidad">Comunidad</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto" class="nav__cta">Únete</a>
+      </nav>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+        <div class="hero__badge reveal">
+          <span class="pulse"></span> Comunidad activa · +120 miembros
+        </div>
+
+        <h1 class="hero__title reveal">
+          Conocimiento que
+          <span class="gradient-text">empodera</span><br />
+          a toda la comunidad.
+        </h1>
+
+        <p class="hero__lead reveal">
+          En <strong>FDK</strong> construimos un espacio colaborativo y dinámico donde el
+          intercambio de saberes <em>financieros</em>, de <em>innovación</em> y
+          <em>estrategia</em> está al alcance de todos. Conecta, aprende y crece.
+        </p>
+
+        <div class="hero__actions reveal">
+          <a href="#contacto" class="btn btn--primary">
+            Quiero unirme
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#servicios" class="btn btn--ghost">Conoce los servicios</a>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats reveal" id="stats">
+          <div class="stat">
+            <span class="stat__num" data-count="120" data-suffix="+">0</span>
+            <span class="stat__label">Miembros activos</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="45" data-suffix="+">0</span>
+            <span class="stat__label">Sesiones de aprendizaje</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="98" data-suffix="%">0</span>
+            <span class="stat__label">Recomendación</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="12" data-suffix="">0</span>
+            <span class="stat__label">Aliados estratégicos</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#comunidad" class="hero__scroll" aria-label="Desplázate hacia abajo">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- COMUNIDAD / VALUES -->
+    <section class="section" id="comunidad">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Quiénes somos</span>
+          <h2 class="section__title">Una comunidad pensada para <span class="gradient-text">crecer juntos</span></h2>
+          <p class="section__sub">
+            FDK nace para democratizar el acceso al conocimiento que impulsa decisiones inteligentes.
+            Cada interacción suma valor a la red.
+          </p>
+        </div>
+
+        <div class="values">
+          <article class="value reveal">
+            <div class="value__icon">🤝</div>
+            <h3>Colaboración real</h3>
+            <p>Un entorno donde compartir experiencias y recursos es la norma, no la excepción.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__icon">🚀</div>
+            <h3>Innovación constante</h3>
+            <p>Exploramos nuevas ideas y herramientas para mantenernos siempre un paso adelante.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__icon">📈</div>
+            <h3>Crecimiento medible</h3>
+            <p>Estrategias claras y conocimiento accionable que se traduce en resultados.</p>
+          </article>
+          <article class="value reveal">
+            <div class="value__icon">🌍</div>
+            <h3>Acceso para todos</h3>
+            <p>Conocimiento financiero y estratégico abierto, sin barreras ni tecnicismos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section section--alt" id="servicios">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Qué hacemos</span>
+          <h2 class="section__title">Cuatro pilares, un mismo <span class="gradient-text">propósito</span></h2>
+          <p class="section__sub">Diseñamos cada eje para que avances con acompañamiento y método.</p>
+        </div>
+
+        <div class="services">
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow"></div>
+            <div class="card__num">01</div>
+            <h3 class="card__title">Comunidad</h3>
+            <p class="card__text">
+              Una red viva de personas que comparten metas. Networking, encuentros y apoyo mutuo
+              para multiplicar oportunidades.
+            </p>
+            <ul class="card__list">
+              <li>Eventos y meetups</li>
+              <li>Grupos de interés</li>
+              <li>Mentorías entre pares</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow"></div>
+            <div class="card__num">02</div>
+            <h3 class="card__title">Comunicación</h3>
+            <p class="card__text">
+              Contenido claro y relevante que mantiene a la comunidad informada y conectada con
+              lo que de verdad importa.
+            </p>
+            <ul class="card__list">
+              <li>Boletines y novedades</li>
+              <li>Canales temáticos</li>
+              <li>Difusión de oportunidades</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow"></div>
+            <div class="card__num">03</div>
+            <h3 class="card__title">Aprendizaje</h3>
+            <p class="card__text">
+              Formación práctica en finanzas, innovación y estrategia, diseñada para aplicarse
+              desde el primer día.
+            </p>
+            <ul class="card__list">
+              <li>Talleres en vivo</li>
+              <li>Recursos descargables</li>
+              <li>Rutas de aprendizaje</li>
+            </ul>
+          </article>
+
+          <article class="card reveal" tabindex="0">
+            <div class="card__glow"></div>
+            <div class="card__num">04</div>
+            <h3 class="card__title">Consultoría</h3>
+            <p class="card__text">
+              Acompañamiento estratégico personalizado para llevar tus proyectos y decisiones al
+              siguiente nivel.
+            </p>
+            <ul class="card__list">
+              <li>Diagnóstico a medida</li>
+              <li>Planes de acción</li>
+              <li>Seguimiento continuo</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section" id="proceso">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Cómo funciona</span>
+          <h2 class="section__title">Tu camino en <span class="gradient-text">FDK</span></h2>
+          <p class="section__sub">Tres pasos simples para empezar a aprovechar la comunidad.</p>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <div class="timeline__dot">1</div>
+            <div class="timeline__body">
+              <h3>Conéctate</h3>
+              <p>Únete a la comunidad y crea tu perfil. Te damos la bienvenida y te orientamos según tus metas.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__dot">2</div>
+            <div class="timeline__body">
+              <h3>Aprende y participa</h3>
+              <p>Accede a talleres, recursos y conversaciones. Comparte lo que sabes y aprende del resto.</p>
+            </div>
+          </li>
+          <li class="timeline__item reveal">
+            <div class="timeline__dot">3</div>
+            <div class="timeline__body">
+              <h3>Crece con estrategia</h3>
+              <p>Aplica el conocimiento con acompañamiento experto y mide tu progreso de forma constante.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section section--alt" id="testimonios">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow">Lo que dicen</span>
+          <h2 class="section__title">Historias de la <span class="gradient-text">comunidad</span></h2>
+        </div>
+
+        <div class="testimonials">
+          <figure class="quote reveal">
+            <blockquote>"FDK me dio claridad financiera que ningún curso me había dado. Es práctico y la comunidad nunca te deja solo."</blockquote>
+            <figcaption><span class="avatar">MR</span><div><strong>María Rivas</strong><small>Emprendedora</small></div></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>"El valor está en la red. En una sola sesión conecté con aliados que aceleraron mi proyecto."</blockquote>
+            <figcaption><span class="avatar">JL</span><div><strong>Jorge León</strong><small>Consultor</small></div></figcaption>
+          </figure>
+          <figure class="quote reveal">
+            <blockquote>"Aprendizaje real, sin tecnicismos. Por fin entiendo cómo tomar mejores decisiones estratégicas."</blockquote>
+            <figcaption><span class="avatar">AC</span><div><strong>Ana Castro</strong><small>Profesional independiente</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA / CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="cta reveal">
+          <div class="cta__glow"></div>
+          <div class="cta__content">
+            <span class="eyebrow">Da el primer paso</span>
+            <h2 class="cta__title">Únete a una comunidad que <span class="gradient-text">impulsa tu crecimiento</span></h2>
+            <p class="cta__sub">Déjanos tus datos y te contactamos para darte la bienvenida a FDK.</p>
+          </div>
+
+          <form class="form" id="joinForm" novalidate>
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Nombre</label>
+                <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+              </div>
+              <div class="field">
+                <label for="email">Correo</label>
+                <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="interest">Me interesa</label>
+              <select id="interest" name="interest">
+                <option value="comunidad">Comunidad</option>
+                <option value="aprendizaje">Aprendizaje</option>
+                <option value="consultoria">Consultoría</option>
+                <option value="comunicacion">Comunicación</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="message">Mensaje (opcional)</label>
+              <textarea id="message" name="message" rows="3" placeholder="Cuéntanos tus metas..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block">Enviar solicitud</button>
+            <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="brand__mark">FDK</span>
+        <p>Comunidad, conocimiento e innovación al alcance de todos.</p>
+      </div>
+      <nav class="footer__col" aria-label="Enlaces">
+        <h4>Explora</h4>
+        <a href="#comunidad">Comunidad</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proceso">Proceso</a>
+        <a href="#testimonios">Testimonios</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Contacto</h4>
+        <a href="mailto:info@fdkempowernet.com">info@fdkempowernet.com</a>
+        <div class="footer__social">
+          <a href="#" aria-label="LinkedIn" class="social">in</a>
+          <a href="#" aria-label="Instagram" class="social">ig</a>
+          <a href="#" aria-label="X" class="social">x</a>
+        </div>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <p>© <span id="year">2026</span> FDK Empowernet. Todos los derechos reservados.</p>
+      <p>Hecho con propósito · Comunidad que empodera.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
