@@ -1,50 +1,44 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="FDK — Comunidad dinámica donde el conocimiento financiero, la innovación y la estrategia están al alcance de todos. Conecta, aprende y crece." />
-  <meta name="theme-color" content="#0a0a12" />
-  <title>FDK · Empoderamiento, Comunidad e Innovación</title>
+  <meta name="description" content="FDK builds the strategic AI thesis your board doesn't have yet. For CSOs and CEOs in mobility, energy, and telecom facing board-level AI decisions." />
+  <meta name="theme-color" content="#141a4e" />
+  <title>FDK EmpowerNet · The strategic thesis your board doesn't have yet</title>
 
-  <meta property="og:title" content="FDK · Empoderamiento, Comunidad e Innovación" />
-  <meta property="og:description" content="Una comunidad colaborativa donde el conocimiento financiero, estratégico y de innovación está al alcance de todos." />
+  <meta property="og:title" content="FDK · The strategic thesis your board doesn't have yet" />
+  <meta property="og:description" content="Most large European corporates run AI initiatives. Few have a defensible argument for where AI creates structural advantage. That argument is what FDK builds." />
   <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Animated background -->
-  <div class="bg-aurora" aria-hidden="true">
-    <span class="blob blob-1"></span>
-    <span class="blob blob-2"></span>
-    <span class="blob blob-3"></span>
-    <div class="grid-overlay"></div>
-  </div>
-
-  <!-- Progress bar -->
+  <!-- Reading progress -->
   <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
 
   <!-- Navbar -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="#inicio" class="brand" aria-label="FDK inicio">
-        <span class="brand__mark">FDK</span>
-        <span class="brand__dot"></span>
+      <a href="#home" class="brand" aria-label="FDK EmpowerNet home">
+        <svg class="brand__logo" viewBox="0 0 40 32" width="40" height="32" aria-hidden="true">
+          <path d="M3 3v26M3 3h13M3 15h10" stroke="currentColor" stroke-width="2.6" fill="none" stroke-linecap="square"/>
+          <path d="M22 3h7c5 0 8 5 8 13s-3 13-8 13h-7z" stroke="currentColor" stroke-width="2.6" fill="none"/>
+        </svg>
+        <span class="brand__text">fdk<small>EmpowerNet</small></span>
       </a>
 
-      <nav class="nav__links" id="navLinks" aria-label="Navegación principal">
-        <a href="#comunidad">Comunidad</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#testimonios">Testimonios</a>
-        <a href="#contacto" class="nav__cta">Únete</a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#thesis">Thesis + Author</a>
+        <a href="#library">Intelligence Library</a>
+        <a href="#contact" class="nav__cta">Contact <span aria-hidden="true">→</span></a>
       </nav>
 
-      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -52,264 +46,238 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="home">
+      <div class="hero__bg" aria-hidden="true"></div>
       <div class="container hero__inner">
-        <div class="hero__badge reveal">
-          <span class="pulse"></span> Comunidad activa · +120 miembros
-        </div>
-
         <h1 class="hero__title reveal">
-          Conocimiento que
-          <span class="gradient-text">empodera</span><br />
-          a toda la comunidad.
+          The strategic thesis your
+          <span class="hero__accent">board doesn't have yet.</span>
         </h1>
 
         <p class="hero__lead reveal">
-          En <strong>FDK</strong> construimos un espacio colaborativo y dinámico donde el
-          intercambio de saberes <em>financieros</em>, de <em>innovación</em> y
-          <em>estrategia</em> está al alcance de todos. Conecta, aprende y crece.
+          Most large European corporates are running AI initiatives. Few have a defensible
+          argument for where AI creates structural advantage in their sector.
+          That argument is what FDK builds.
+        </p>
+
+        <p class="hero__sub reveal">
+          For CSOs and CEOs in mobility, energy, and telecom facing board-level AI decisions.
         </p>
 
         <div class="hero__actions reveal">
-          <a href="#contacto" class="btn btn--primary">
-            Quiero unirme
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <a href="#contact" class="btn btn--brief">
+            <span class="btn__bullet" aria-hidden="true"></span>
+            Request an Executive Briefing
           </a>
-          <a href="#servicios" class="btn btn--ghost">Conoce los servicios</a>
-        </div>
-
-        <!-- Stats -->
-        <div class="stats reveal" id="stats">
-          <div class="stat">
-            <span class="stat__num" data-count="120" data-suffix="+">0</span>
-            <span class="stat__label">Miembros activos</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" data-count="45" data-suffix="+">0</span>
-            <span class="stat__label">Sesiones de aprendizaje</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" data-count="98" data-suffix="%">0</span>
-            <span class="stat__label">Recomendación</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num" data-count="12" data-suffix="">0</span>
-            <span class="stat__label">Aliados estratégicos</span>
-          </div>
         </div>
       </div>
 
-      <a href="#comunidad" class="hero__scroll" aria-label="Desplázate hacia abajo">
+      <a href="#concepts" class="hero__scroll" aria-label="Scroll down">
         <span class="mouse"><span></span></span>
       </a>
     </section>
 
-    <!-- COMUNIDAD / VALUES -->
-    <section class="section" id="comunidad">
+    <!-- FOUR CONCEPTS -->
+    <section class="section concepts" id="concepts">
+      <div class="container">
+        <h2 class="section__title reveal">
+          Four concepts. One thesis. Built for the decisions
+          your board is facing now.
+        </h2>
+
+        <div class="concepts__grid">
+          <figure class="concepts__media reveal">
+            <img
+              src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=900&q=80"
+              alt="Executive reviewing strategic data on a tablet"
+              loading="lazy" onerror="this.closest('figure').classList.add('media--fallback')" />
+          </figure>
+
+          <ol class="concepts__list">
+            <li class="concept reveal">
+              <div class="concept__head">
+                <h3>Velocity Capitalism</h3>
+                <span class="concept__num">001</span>
+              </div>
+              <p>Speed has replaced scale as the decisive competitive variable.</p>
+            </li>
+            <li class="concept reveal">
+              <div class="concept__head">
+                <h3>Structural Bifurcation</h3>
+                <span class="concept__num">002</span>
+              </div>
+              <p>Sectors are splitting between organisations that embed intelligence and those
+                that procure it. The gap is quiet now. It will be visible in 36 months.</p>
+            </li>
+            <li class="concept reveal">
+              <div class="concept__head">
+                <h3>The Repricing</h3>
+                <span class="concept__num">003</span>
+              </div>
+              <p>European infrastructure operators are systematically mispriced. The correction
+                has not yet been absorbed by markets.</p>
+            </li>
+            <li class="concept reveal">
+              <div class="concept__head">
+                <h3>The Civic Platform</h3>
+                <span class="concept__num">004</span>
+              </div>
+              <p>AI-native infrastructure improves through use. This inverts the standard
+                depreciation logic — and demands a different investment thesis.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE THESIS IS MISSING -->
+    <section class="section section--navy missing" id="thesis">
+      <div class="container">
+        <h2 class="section__title section__title--light reveal">
+          The board is moving but the thesis is missing
+        </h2>
+
+        <div class="missing__grid">
+          <article class="mcard reveal">
+            <span class="mcard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/><path d="M12 3v9h9"/>
+              </svg>
+            </span>
+            <h3>AI initiatives are multiplying</h3>
+            <p>Strategic theses are not. Most boards are approving decisions they cannot evaluate.</p>
+          </article>
+
+          <article class="mcard reveal">
+            <span class="mcard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18"/>
+              </svg>
+            </span>
+            <h3>The velocity economy rewards those who compress decision cycles</h3>
+            <p>Boards still operating on quarterly planning are behind before the meeting starts.</p>
+          </article>
+
+          <article class="mcard reveal">
+            <span class="mcard__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.6">
+                <circle cx="12" cy="12" r="9"/><path d="M8 16 16 8M10 8h6v6"/>
+              </svg>
+            </span>
+            <h3>Without a proprietary thesis</h3>
+            <p>Every AI investment defaults to vendor narrative, analyst consensus, or competitor
+              imitation. None of these are strategy.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDER -->
+    <section class="section founder" id="author">
+      <div class="container">
+        <div class="founder__card reveal">
+          <figure class="founder__media">
+            <img
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
+              alt="Francesco de Leo Kaufmann"
+              loading="lazy" onerror="this.closest('figure').classList.add('media--fallback')" />
+          </figure>
+          <div class="founder__body">
+            <p class="founder__quote">The thesis is built from operations, not from research.</p>
+            <p class="founder__name">
+              Francesco de Leo Kaufmann — Global Strategy Officer, FS Group · Chairman,
+              QBUZZ Founder, Kaufmann &amp; Partners
+            </p>
+            <a href="#thesis" class="btn btn--solid">The Founder &amp; The Thesis</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTELLIGENCE LIBRARY -->
+    <section class="section section--navy library" id="library">
       <div class="container">
         <div class="section__head reveal">
-          <span class="eyebrow">Quiénes somos</span>
-          <h2 class="section__title">Una comunidad pensada para <span class="gradient-text">crecer juntos</span></h2>
-          <p class="section__sub">
-            FDK nace para democratizar el acceso al conocimiento que impulsa decisiones inteligentes.
-            Cada interacción suma valor a la red.
+          <span class="eyebrow">Intelligence Library</span>
+          <h2 class="section__title section__title--light">
+            Proprietary intelligence, ahead of the consensus
+          </h2>
+          <p class="section__sub section__sub--light">
+            Briefings, sector theses and frameworks written for the people making board-level
+            AI decisions — not for the conference circuit.
           </p>
         </div>
 
-        <div class="values">
-          <article class="value reveal">
-            <div class="value__icon">🤝</div>
-            <h3>Colaboración real</h3>
-            <p>Un entorno donde compartir experiencias y recursos es la norma, no la excepción.</p>
-          </article>
-          <article class="value reveal">
-            <div class="value__icon">🚀</div>
-            <h3>Innovación constante</h3>
-            <p>Exploramos nuevas ideas y herramientas para mantenernos siempre un paso adelante.</p>
-          </article>
-          <article class="value reveal">
-            <div class="value__icon">📈</div>
-            <h3>Crecimiento medible</h3>
-            <p>Estrategias claras y conocimiento accionable que se traduce en resultados.</p>
-          </article>
-          <article class="value reveal">
-            <div class="value__icon">🌍</div>
-            <h3>Acceso para todos</h3>
-            <p>Conocimiento financiero y estratégico abierto, sin barreras ni tecnicismos.</p>
-          </article>
+        <div class="library__grid">
+          <a href="#contact" class="lcard reveal">
+            <span class="lcard__tag">Sector Thesis</span>
+            <h3>Mobility after AI-native infrastructure</h3>
+            <p>Where embedded intelligence repositions operators across the European mobility value chain.</p>
+            <span class="lcard__more">Read briefing →</span>
+          </a>
+          <a href="#contact" class="lcard reveal">
+            <span class="lcard__tag">Framework</span>
+            <h3>Evaluating an AI investment as a board</h3>
+            <p>A decision lens that separates strategy from vendor narrative and analyst consensus.</p>
+            <span class="lcard__more">Read briefing →</span>
+          </a>
+          <a href="#contact" class="lcard reveal">
+            <span class="lcard__tag">Repricing</span>
+            <h3>The mispricing of infrastructure operators</h3>
+            <p>Why the correction is structural, and the window before markets absorb it.</p>
+            <span class="lcard__more">Read briefing →</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- SERVICIOS -->
-    <section class="section section--alt" id="servicios">
+    <!-- CONTACT / CTA -->
+    <section class="section contact" id="contact">
       <div class="container">
-        <div class="section__head reveal">
-          <span class="eyebrow">Qué hacemos</span>
-          <h2 class="section__title">Cuatro pilares, un mismo <span class="gradient-text">propósito</span></h2>
-          <p class="section__sub">Diseñamos cada eje para que avances con acompañamiento y método.</p>
-        </div>
-
-        <div class="services">
-          <article class="card reveal" tabindex="0">
-            <div class="card__glow"></div>
-            <div class="card__num">01</div>
-            <h3 class="card__title">Comunidad</h3>
-            <p class="card__text">
-              Una red viva de personas que comparten metas. Networking, encuentros y apoyo mutuo
-              para multiplicar oportunidades.
+        <div class="contact__grid">
+          <div class="contact__intro reveal">
+            <span class="eyebrow">Contact</span>
+            <h2 class="section__title">Request an Executive Briefing</h2>
+            <p class="section__sub">
+              A focused session for CSOs and CEOs in mobility, energy and telecom.
+              Tell us the decision your board is facing — we'll bring the thesis.
             </p>
-            <ul class="card__list">
-              <li>Eventos y meetups</li>
-              <li>Grupos de interés</li>
-              <li>Mentorías entre pares</li>
-            </ul>
-          </article>
-
-          <article class="card reveal" tabindex="0">
-            <div class="card__glow"></div>
-            <div class="card__num">02</div>
-            <h3 class="card__title">Comunicación</h3>
-            <p class="card__text">
-              Contenido claro y relevante que mantiene a la comunidad informada y conectada con
-              lo que de verdad importa.
+            <p class="contact__direct">
+              <a href="mailto:info@fdkempowernet.com">info@fdkempowernet.com</a>
             </p>
-            <ul class="card__list">
-              <li>Boletines y novedades</li>
-              <li>Canales temáticos</li>
-              <li>Difusión de oportunidades</li>
-            </ul>
-          </article>
-
-          <article class="card reveal" tabindex="0">
-            <div class="card__glow"></div>
-            <div class="card__num">03</div>
-            <h3 class="card__title">Aprendizaje</h3>
-            <p class="card__text">
-              Formación práctica en finanzas, innovación y estrategia, diseñada para aplicarse
-              desde el primer día.
-            </p>
-            <ul class="card__list">
-              <li>Talleres en vivo</li>
-              <li>Recursos descargables</li>
-              <li>Rutas de aprendizaje</li>
-            </ul>
-          </article>
-
-          <article class="card reveal" tabindex="0">
-            <div class="card__glow"></div>
-            <div class="card__num">04</div>
-            <h3 class="card__title">Consultoría</h3>
-            <p class="card__text">
-              Acompañamiento estratégico personalizado para llevar tus proyectos y decisiones al
-              siguiente nivel.
-            </p>
-            <ul class="card__list">
-              <li>Diagnóstico a medida</li>
-              <li>Planes de acción</li>
-              <li>Seguimiento continuo</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESO -->
-    <section class="section" id="proceso">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="eyebrow">Cómo funciona</span>
-          <h2 class="section__title">Tu camino en <span class="gradient-text">FDK</span></h2>
-          <p class="section__sub">Tres pasos simples para empezar a aprovechar la comunidad.</p>
-        </div>
-
-        <ol class="timeline">
-          <li class="timeline__item reveal">
-            <div class="timeline__dot">1</div>
-            <div class="timeline__body">
-              <h3>Conéctate</h3>
-              <p>Únete a la comunidad y crea tu perfil. Te damos la bienvenida y te orientamos según tus metas.</p>
-            </div>
-          </li>
-          <li class="timeline__item reveal">
-            <div class="timeline__dot">2</div>
-            <div class="timeline__body">
-              <h3>Aprende y participa</h3>
-              <p>Accede a talleres, recursos y conversaciones. Comparte lo que sabes y aprende del resto.</p>
-            </div>
-          </li>
-          <li class="timeline__item reveal">
-            <div class="timeline__dot">3</div>
-            <div class="timeline__body">
-              <h3>Crece con estrategia</h3>
-              <p>Aplica el conocimiento con acompañamiento experto y mide tu progreso de forma constante.</p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- TESTIMONIOS -->
-    <section class="section section--alt" id="testimonios">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="eyebrow">Lo que dicen</span>
-          <h2 class="section__title">Historias de la <span class="gradient-text">comunidad</span></h2>
-        </div>
-
-        <div class="testimonials">
-          <figure class="quote reveal">
-            <blockquote>"FDK me dio claridad financiera que ningún curso me había dado. Es práctico y la comunidad nunca te deja solo."</blockquote>
-            <figcaption><span class="avatar">MR</span><div><strong>María Rivas</strong><small>Emprendedora</small></div></figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>"El valor está en la red. En una sola sesión conecté con aliados que aceleraron mi proyecto."</blockquote>
-            <figcaption><span class="avatar">JL</span><div><strong>Jorge León</strong><small>Consultor</small></div></figcaption>
-          </figure>
-          <figure class="quote reveal">
-            <blockquote>"Aprendizaje real, sin tecnicismos. Por fin entiendo cómo tomar mejores decisiones estratégicas."</blockquote>
-            <figcaption><span class="avatar">AC</span><div><strong>Ana Castro</strong><small>Profesional independiente</small></div></figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA / CONTACTO -->
-    <section class="section" id="contacto">
-      <div class="container">
-        <div class="cta reveal">
-          <div class="cta__glow"></div>
-          <div class="cta__content">
-            <span class="eyebrow">Da el primer paso</span>
-            <h2 class="cta__title">Únete a una comunidad que <span class="gradient-text">impulsa tu crecimiento</span></h2>
-            <p class="cta__sub">Déjanos tus datos y te contactamos para darte la bienvenida a FDK.</p>
           </div>
 
-          <form class="form" id="joinForm" novalidate>
+          <form class="form reveal" id="briefingForm" novalidate>
             <div class="form__row">
               <div class="field">
-                <label for="name">Nombre</label>
-                <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" placeholder="Full name" required />
               </div>
               <div class="field">
-                <label for="email">Correo</label>
-                <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required />
+                <label for="email">Work email</label>
+                <input id="email" name="email" type="email" placeholder="name@company.com" required />
+              </div>
+            </div>
+            <div class="form__row">
+              <div class="field">
+                <label for="company">Organisation</label>
+                <input id="company" name="company" type="text" placeholder="Company" />
+              </div>
+              <div class="field">
+                <label for="sector">Sector</label>
+                <select id="sector" name="sector">
+                  <option value="mobility">Mobility</option>
+                  <option value="energy">Energy</option>
+                  <option value="telecom">Telecom</option>
+                  <option value="other">Other</option>
+                </select>
               </div>
             </div>
             <div class="field">
-              <label for="interest">Me interesa</label>
-              <select id="interest" name="interest">
-                <option value="comunidad">Comunidad</option>
-                <option value="aprendizaje">Aprendizaje</option>
-                <option value="consultoria">Consultoría</option>
-                <option value="comunicacion">Comunicación</option>
-              </select>
+              <label for="message">The decision your board is facing</label>
+              <textarea id="message" name="message" rows="3" placeholder="Briefly describe the board-level AI decision..."></textarea>
             </div>
-            <div class="field">
-              <label for="message">Mensaje (opcional)</label>
-              <textarea id="message" name="message" rows="3" placeholder="Cuéntanos tus metas..."></textarea>
-            </div>
-            <button type="submit" class="btn btn--primary btn--block">Enviar solicitud</button>
+            <button type="submit" class="btn btn--solid btn--block">Request briefing</button>
             <p class="form__status" id="formStatus" role="status" aria-live="polite"></p>
           </form>
         </div>
@@ -321,29 +289,24 @@
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
-        <span class="brand__mark">FDK</span>
-        <p>Comunidad, conocimiento e innovación al alcance de todos.</p>
+        <span class="brand__text brand__text--footer">fdk<small>EmpowerNet</small></span>
+        <p>The strategic AI thesis your board doesn't have yet.</p>
       </div>
-      <nav class="footer__col" aria-label="Enlaces">
-        <h4>Explora</h4>
-        <a href="#comunidad">Comunidad</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#proceso">Proceso</a>
-        <a href="#testimonios">Testimonios</a>
+      <nav class="footer__col" aria-label="Footer">
+        <h4>Explore</h4>
+        <a href="#home">Home</a>
+        <a href="#thesis">Thesis + Author</a>
+        <a href="#library">Intelligence Library</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="footer__col">
-        <h4>Contacto</h4>
+        <h4>Contact</h4>
         <a href="mailto:info@fdkempowernet.com">info@fdkempowernet.com</a>
-        <div class="footer__social">
-          <a href="#" aria-label="LinkedIn" class="social">in</a>
-          <a href="#" aria-label="Instagram" class="social">ig</a>
-          <a href="#" aria-label="X" class="social">x</a>
-        </div>
       </div>
     </div>
     <div class="container footer__bottom">
-      <p>© <span id="year">2026</span> FDK Empowernet. Todos los derechos reservados.</p>
-      <p>Hecho con propósito · Comunidad que empodera.</p>
+      <p>© <span id="year">2026</span> FDK EmpowerNet. All rights reserved.</p>
+      <p>For CSOs and CEOs in mobility, energy and telecom.</p>
     </div>
   </footer>
 

@@ -1,48 +1,56 @@
-# FDK · Landing moderna y dinámica
+# FDK EmpowerNet · Modern rebuild
 
-Reinterpretación moderna del sitio **fdkempowernet.com**: una comunidad colaborativa
-donde el conocimiento financiero, de innovación y estrategia está al alcance de todos.
+A modern, dynamic rebuild of **fdkempowernet.com** — the strategic AI thesis
+practice for CSOs and CEOs in mobility, energy and telecom facing board-level
+AI decisions.
 
-Construido como sitio estático (sin dependencias ni build) para que cargue rápido y
-sea fácil de desplegar en cualquier hosting (GitHub Pages, Netlify, Vercel, etc.).
+Built as a dependency-free static site (HTML + CSS + vanilla JS) so it loads
+fast and deploys anywhere (GitHub Pages, Netlify, Vercel, S3, …).
 
-## ✨ Características
+## ✨ What's inside
 
-- **Diseño moderno** con modo oscuro, gradientes vivos y tipografía Sora/Inter.
-- **Fondo animado** (blobs aurora + grid) con parallax sutil al hacer scroll.
-- **Animaciones dinámicas**: revelado al hacer scroll (IntersectionObserver),
-  contadores animados de estadísticas, barra de progreso de lectura.
-- **Navbar inteligente** que cambia al hacer scroll + menú hamburguesa en móvil.
-- **Secciones**: Hero, Comunidad/Valores, Servicios (Comunidad, Comunicación,
-  Aprendizaje, Consultoría), Proceso, Testimonios, CTA con formulario y Footer.
-- **Totalmente responsive** y accesible (respeta `prefers-reduced-motion`).
-- **Formulario de contacto** con validación en el front (listo para conectar a un
-  endpoint real).
+- **Brand-accurate design** — FDK navy (`#141a4e`) + green (`#2ee06a`), animated
+  green→teal→blue→purple hero gradient, light-weight display typography.
+- **Sections** (matching the source site):
+  - Hero — *"The strategic thesis your board doesn't have yet."*
+  - Four concepts — Velocity Capitalism, Structural Bifurcation, The Repricing,
+    The Civic Platform.
+  - *"The board is moving but the thesis is missing"* — three insight cards.
+  - Founder — Francesco de Leo Kaufmann.
+  - Intelligence Library — briefing cards.
+  - Contact — *Request an Executive Briefing* form.
+- **Dynamic touches** — animated hero gradient, scroll-reveal (IntersectionObserver),
+  reading-progress bar, smart sticky navbar + mobile menu, hover micro-interactions.
+- **Responsive** and accessible (respects `prefers-reduced-motion`).
 
-## 📁 Estructura
+## 📁 Structure
 
 ```
-index.html    →  Marcado y contenido
-styles.css    →  Estilos, animaciones y responsive
-script.js     →  Interacciones (scroll, contadores, menú, formulario)
+index.html    →  Markup and copy
+styles.css    →  Styling, gradient, animations, responsive
+script.js     →  Navbar, scroll reveal, mobile menu, form
 ```
 
-## 🚀 Uso
-
-Abre `index.html` en el navegador, o sirve la carpeta:
+## 🚀 Run locally
 
 ```bash
 python3 -m http.server 8000
-# luego abre http://localhost:8000
+# open http://localhost:8000
 ```
 
-## 🔌 Conectar el formulario
+## 🖼 Images
 
-En `script.js`, dentro del handler de `#joinForm`, reemplaza el bloque
-`setTimeout(...)` por un `fetch()` a tu endpoint (por ejemplo Formspree, un
-Worker, o tu API).
+The concept and founder photos load from Unsplash with a graceful gradient
+fallback (`onerror`). Drop in the real FDK assets by replacing the two `<img src>`
+URLs in `index.html` (search for `unsplash.com`), or point them at local files
+under an `assets/` folder.
 
-## 🎨 Personalización
+## 🔌 Connect the form
 
-Los colores de marca están como variables CSS en `:root` (`styles.css`):
-`--brand`, `--brand-2`, `--brand-3` y el gradiente `--grad`.
+In `script.js`, inside the `#briefingForm` handler, replace the `setTimeout(...)`
+block with a real `fetch()` to your endpoint (Formspree, a Worker, your CRM/API).
+
+## 🎨 Customisation
+
+Brand colours live as CSS variables in `:root` (`styles.css`):
+`--navy`, `--green`, `--green-deep`, plus the hero gradient in `.hero__bg`.

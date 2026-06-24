@@ -65,64 +65,8 @@
     revealEls.forEach((el) => el.classList.add("in"));
   }
 
-  /* ---- Animated stat counters ---- */
-  const statsWrap = $("#stats");
-  const animateCount = (el) => {
-    const target = parseFloat(el.dataset.count || "0");
-    const suffix = el.dataset.suffix || "";
-    const duration = 1500;
-    const start = performance.now();
-    const step = (now) => {
-      const t = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - t, 3); // easeOutCubic
-      el.textContent = Math.round(target * eased) + suffix;
-      if (t < 1) requestAnimationFrame(step);
-      else el.textContent = target + suffix;
-    };
-    requestAnimationFrame(step);
-  };
-
-  if (statsWrap) {
-    if ("IntersectionObserver" in window) {
-      const statIO = new IntersectionObserver(
-        (entries) => {
-          if (entries.some((e) => e.isIntersecting)) {
-            $$(".stat__num", statsWrap).forEach(animateCount);
-            statIO.disconnect();
-          }
-        },
-        { threshold: 0.4 }
-      );
-      statIO.observe(statsWrap);
-    } else {
-      $$(".stat__num", statsWrap).forEach(animateCount);
-    }
-  }
-
-  /* ---- Subtle parallax on background blobs ---- */
-  const blobs = $$(".blob");
-  if (blobs.length && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    let ticking = false;
-    window.addEventListener(
-      "scroll",
-      () => {
-        if (ticking) return;
-        ticking = true;
-        requestAnimationFrame(() => {
-          const y = window.scrollY;
-          blobs.forEach((b, i) => {
-            const speed = (i + 1) * 0.04;
-            b.style.transform = `translateY(${y * speed}px)`;
-          });
-          ticking = false;
-        });
-      },
-      { passive: true }
-    );
-  }
-
   /* ---- Contact form (front-end only) ---- */
-  const form = $("#joinForm");
+  const form = $("#briefingForm");
   const status = $("#formStatus");
   if (form && status) {
     form.addEventListener("submit", (e) => {
@@ -134,12 +78,12 @@
       status.className = "form__status";
 
       if (!name || !email) {
-        status.textContent = "Por favor completa tu nombre y correo.";
+        status.textContent = "Please enter your name and work email.";
         status.classList.add("err");
         return;
       }
       if (!emailOk) {
-        status.textContent = "Ese correo no parece válido. Revísalo, por favor.";
+        status.textContent = "That email doesn't look valid. Please check it.";
         status.classList.add("err");
         return;
       }
@@ -147,14 +91,14 @@
       const btn = $("button[type=submit]", form);
       const original = btn.textContent;
       btn.disabled = true;
-      btn.textContent = "Enviando...";
+      btn.textContent = "Sending...";
 
       // Simulated submission — replace with real endpoint when available.
       setTimeout(() => {
         btn.disabled = false;
         btn.textContent = original;
         form.reset();
-        status.textContent = `¡Gracias, ${name}! Hemos recibido tu solicitud. Te contactaremos pronto.`;
+        status.textContent = `Thank you, ${name}. We've received your request and will be in touch shortly.`;
         status.classList.add("ok");
       }, 900);
     });
