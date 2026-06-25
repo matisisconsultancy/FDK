@@ -478,9 +478,9 @@ img { max-width: 100%; display: block; }
 .crumb i { font-style: normal; opacity: 0.5; }
 .crumb b { font-weight: 500; color: #fff; }
 
-.libhero { position: relative; overflow: hidden; background: var(--navy-deep); color: #fff; padding: 180px 0 70px; }
+.libhero { position: relative; overflow: hidden; background: var(--navy-deep); color: #fff; padding: 184px 0 96px; }
 .libhero__glow { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(50% 60% at 80% 20%, rgba(46,224,106,0.16), transparent 60%), radial-gradient(50% 60% at 5% 90%, rgba(26,36,112,0.55), transparent 70%); }
-.libhero__inner { position: relative; z-index: 2; max-width: 920px; }
+.libhero__inner { position: relative; z-index: 2; max-width: 920px; text-align: left; }
 .libhero__title { font-size: clamp(2.8rem, 7vw, 5.4rem); font-weight: 300; letter-spacing: -2px; line-height: 1.02; }
 .libhero__sub { color: rgba(255,255,255,0.74); font-size: clamp(1.05rem, 1.8vw, 1.3rem); line-height: 1.6; max-width: 640px; margin-top: 26px; }
 
@@ -488,7 +488,7 @@ img { max-width: 100%; display: block; }
 .libhero .hl-green { color: var(--green); font-weight: 500; }
 .libhero__sub { color: rgba(255,255,255,0.74); font-size: clamp(1.05rem, 1.8vw, 1.3rem); line-height: 1.6; max-width: 640px; margin-top: 26px; }
 
-.library-page { background: var(--navy-deep); color: #fff; padding: 26px 0 120px; }
+.library-page { background: var(--navy-deep); color: #fff; padding: 88px 0 130px; }
 .catalog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
 .catalog-grid .bookcard__stage { padding: 12px 0 30px; }
 .catalog-grid .book3d--sm { width: 170px; }
