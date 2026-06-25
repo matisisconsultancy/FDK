@@ -492,6 +492,43 @@
     }));
   }
 
+  /* ---------- Article: signal accordions ---------- */
+  $$(".signal").forEach((item) => {
+    const head = item.querySelector(".signal__head");
+    if (!head) return;
+    head.addEventListener("click", () => {
+      const open = item.classList.toggle("is-open");
+      head.setAttribute("aria-expanded", String(open));
+    });
+  });
+
+  /* ---------- Article: animated stat counters ---------- */
+  const counters = $$("[data-count]");
+  if (counters.length) {
+    const fmt = (n) => Math.round(n).toLocaleString("en-US");
+    const render = (el, val) => { el.textContent = (el.dataset.prefix || "") + fmt(val) + (el.dataset.suffix || ""); };
+    const run = (el) => {
+      const target = parseFloat(el.dataset.count);
+      if (reduceMotion) { render(el, target); return; }
+      const dur = 1200; let start = null;
+      const step = (t) => {
+        if (start === null) start = t;
+        const p = Math.min(1, (t - start) / dur);
+        render(el, target * (1 - Math.pow(1 - p, 3)));
+        if (p < 1) requestAnimationFrame(step);
+      };
+      requestAnimationFrame(step);
+    };
+    if ("IntersectionObserver" in window) {
+      const io2 = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { run(e.target); io2.unobserve(e.target); } });
+      }, { threshold: 0.4 });
+      counters.forEach((el) => io2.observe(el));
+    } else {
+      counters.forEach(run);
+    }
+  }
+
   /* ---------- Subscribe form (front-end only) ---------- */
   const subForm = $("#subForm");
   const subStatus = $("#subStatus");
