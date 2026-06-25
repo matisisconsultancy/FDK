@@ -120,19 +120,19 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    HERO
    ============================================================ */
-.hero { position: relative; min-height: 100svh; display: flex; align-items: center; padding: 150px 0 120px; overflow: hidden; color: #fff; background: var(--navy-deep); }
+.hero { position: relative; min-height: 100svh; display: flex; align-items: center; padding: 184px 0 124px; overflow: hidden; color: #fff; background: var(--navy-deep); }
 .hero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
-.hero__glow { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(60% 50% at 72% 30%, rgba(46,224,106,0.22), transparent 60%), radial-gradient(50% 60% at 10% 90%, rgba(26,36,112,0.6), transparent 70%); }
-.hero__side { position: absolute; top: 50%; font-size: 0.72rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.4); z-index: 2; }
+.hero__glow { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(55% 50% at 75% 36%, rgba(46,224,106,0.20), transparent 60%), radial-gradient(50% 60% at 8% 92%, rgba(26,36,112,0.55), transparent 70%); }
+.hero__side { position: absolute; top: 50%; font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.32); z-index: 2; }
 .hero__side--l { left: 26px; transform: translateY(-50%) rotate(-90deg); transform-origin: left; }
 .hero__side--r { right: 26px; transform: translateY(-50%) rotate(90deg); transform-origin: right; }
-.hero__inner { position: relative; z-index: 2; max-width: 1080px; }
-.hero__eyebrow { display: inline-flex; align-items: center; gap: 14px; font-size: 0.8rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.82); margin-bottom: 30px; }
-.hero__idx { display: inline-grid; place-items: center; width: 34px; height: 34px; border: 1px solid rgba(46,224,106,0.5); border-radius: 50%; color: var(--green); font-family: "Space Grotesk", "Inter", sans-serif; }
-.hero__title { font-size: clamp(2.9rem, 8.4vw, 7.2rem); font-weight: 300; line-height: 0.98; letter-spacing: -2px; }
-.hero__line { display: block; }
-.hero__accent { display: block; font-style: normal; font-weight: 500; color: var(--green); letter-spacing: -2.5px; margin-top: 0.04em; text-shadow: 0 0 50px rgba(46,224,106,0.35); }
-.hero__lead { font-size: clamp(1.05rem, 1.9vw, 1.32rem); font-weight: 400; max-width: 720px; margin: 42px 0 0; color: rgba(255,255,255,0.92); transition-delay: 0.1s; }
+.hero__inner { position: relative; z-index: 2; max-width: 1000px; }
+.hero__eyebrow { display: inline-flex; align-items: center; gap: 14px; font-size: 0.78rem; font-weight: 500; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.7); margin-bottom: 34px; }
+.hero__idx { display: inline-grid; place-items: center; width: 32px; height: 32px; border: 1px solid rgba(46,224,106,0.5); border-radius: 50%; color: var(--green); font-family: "Space Grotesk", "Inter", sans-serif; font-size: 0.82rem; }
+.hero__title { font-size: clamp(2.5rem, 6vw, 5.4rem); font-weight: 400; line-height: 1.05; letter-spacing: -1.6px; max-width: 16ch; }
+.hero__line { display: block; color: rgba(255,255,255,0.96); }
+.hero__accent { display: block; font-style: normal; font-weight: 500; color: var(--green); letter-spacing: -1.6px; margin-top: 0.02em; text-shadow: 0 0 44px rgba(46,224,106,0.28); }
+.hero__lead { font-size: clamp(1.02rem, 1.6vw, 1.2rem); font-weight: 400; max-width: 600px; margin: 40px 0 0; color: rgba(255,255,255,0.78); line-height: 1.7; transition-delay: 0.1s; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 44px; transition-delay: 0.2s; }
 .hero__scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.7); z-index: 2; }
 .mouse { display: block; width: 22px; height: 36px; border: 1.5px solid rgba(255,255,255,0.55); border-radius: 12px; position: relative; }
