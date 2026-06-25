@@ -132,7 +132,7 @@ img { max-width: 100%; display: block; }
 .hero__title { font-size: clamp(2.5rem, 6vw, 5.4rem); font-weight: 400; line-height: 1.08; letter-spacing: -1.6px; text-wrap: balance; }
 .hero__line { display: block; color: rgba(255,255,255,0.96); }
 .hero__accent { display: block; font-style: normal; font-weight: 500; color: var(--green); letter-spacing: -1.6px; margin-top: 0.04em; text-shadow: 0 0 44px rgba(46,224,106,0.28); }
-.hero__lead { font-size: clamp(1.1rem, 1.9vw, 1.34rem); font-weight: 400; max-width: 780px; margin: 42px auto 0; color: rgba(255,255,255,0.82); line-height: 1.65; transition-delay: 0.1s; }
+.hero__lead { font-size: clamp(0.92rem, 1.3vw, 1.08rem); font-weight: 400; max-width: 720px; margin: 40px auto 0; color: rgba(255,255,255,0.78); line-height: 1.6; transition-delay: 0.1s; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 46px; justify-content: center; transition-delay: 0.2s; }
 .hero__scroll { position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 12px; font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.7); z-index: 2; }
 .mouse { display: block; width: 22px; height: 36px; border: 1.5px solid rgba(255,255,255,0.55); border-radius: 12px; position: relative; }
