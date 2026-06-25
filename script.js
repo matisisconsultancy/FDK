@@ -408,6 +408,11 @@
   });
 
   /* ---------- Intelligence Library: live greeting + day/night mode ---------- */
+  // Page theme follows the clock by default (day = light, night = dark);
+  // the filter buttons can force it (Day → light, Night → dark, All → auto).
+  let journalManualTheme = null; // null = follow clock; "light" | "dark" = forced
+  const applyJournalTheme = (light) => document.body.classList.toggle("theme-light", light);
+  const isDaytime = () => { const h = new Date().getHours(); return h >= 5 && h < 18; };
   const jGreeting = $("#jGreeting");
   const jClock = $("#jClock");
   const journalHero = $(".journal-hero");
@@ -455,6 +460,7 @@
       if (jClock) jClock.textContent = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
       if (journalHero) journalHero.dataset.mode = mode;
       fillFeatured(mode);
+      if (journalManualTheme === null) applyJournalTheme(mode === "day");
     };
     updateClock();
     setInterval(updateClock, 30000);
@@ -479,8 +485,10 @@
       });
       if (countEl) countEl.textContent = String(shown);
       if (emptyEl) emptyEl.hidden = shown > 0;
-      // Day → bright page, Night → dark page, All notes → dark (default)
-      document.body.classList.toggle("theme-light", f === "day");
+      // Day → force light, Night → force dark, All notes → follow the clock
+      if (f === "day") { journalManualTheme = "light"; applyJournalTheme(true); }
+      else if (f === "night") { journalManualTheme = "dark"; applyJournalTheme(false); }
+      else { journalManualTheme = null; applyJournalTheme(isDaytime()); }
     }));
   }
 
