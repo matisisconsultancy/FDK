@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=10" />
+  <link rel="stylesheet" href="styles.css?v=11" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -156,26 +156,32 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer__top">
-      <a href="index.html" class="footer__word" data-cursor>fdk<span>EmpowerNet</span></a>
-    </div>
-    <div class="container footer__inner">
-      <nav class="footer__col" aria-label="Footer">
-        <h4>Explore</h4>
-        <a href="index.html">Home</a><a href="thesis.html">Thesis + Author</a><a href="book.html">The Book</a><a href="index.html#library">Intelligence Library</a><a href="index.html#contact">Contact</a>
-      </nav>
-      <div class="footer__col">
-        <h4>Contact</h4>
-        <a href="mailto:info@fdkempowernet.com">info@fdkempowernet.com</a>
-        <p class="footer__note">For CSOs and CEOs in mobility, energy and telecom.</p>
+    <div class="container footer__main">
+      <div class="footer__lead">
+        <span class="footer__label">Get in touch</span>
+        <a class="footer__email magnetic" href="mailto:info@fdkempowernet.com" data-cursor>
+          info@fdkempowernet.com
+          <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg>
+        </a>
       </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="index.html" data-cursor>Home</a>
+        <a href="thesis.html" data-cursor>Thesis + Author</a>
+        <a href="book.html" data-cursor>The Book</a>
+        <a href="index.html#library" data-cursor>Intelligence Library</a>
+        <a href="index.html#contact" data-cursor>Contact</a>
+      </nav>
     </div>
-    <div class="container footer__bottom">
-      <p>© <span id="year">2026</span> FDK EmpowerNet. All rights reserved.</p>
-      <p>Velocity Capitalism — the strategic AI thesis, in full.</p>
+    <div class="container footer__base">
+      <span class="footer__brand">
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 34 34" width="26" height="26"><rect x="3" y="20" width="6" height="11" rx="2"/><rect x="14" y="11" width="6" height="20" rx="2"/><rect x="25" y="3" width="6" height="28" rx="2"/></svg></span>
+        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
+      </span>
+      <span class="footer__meta">© <span id="year">2026</span> FDK EmpowerNet · Mobility · Energy · Telecom</span>
+      <button type="button" class="footer__top-link" id="toTop" data-cursor>Back to top <span class="footer__top-ic" aria-hidden="true">↑</span></button>
     </div>
   </footer>
 
-  <script src="script.js?v=10"></script>
+  <script src="script.js?v=11"></script>
 </body>
 </html>

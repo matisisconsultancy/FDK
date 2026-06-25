@@ -280,6 +280,14 @@
     onStmt();
   }
 
+  /* ---------- Back to top ---------- */
+  const toTop = $("#toTop");
+  if (toTop) {
+    toTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+    });
+  }
+
   /* ---------- Interactive thesis cards (tap / keyboard reveal) ---------- */
   $$(".tcard").forEach((card) => {
     card.addEventListener("click", () => card.classList.toggle("is-open"));

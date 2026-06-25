@@ -293,16 +293,29 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    FOOTER
    ============================================================ */
-.footer { background: var(--navy-deep); color: #fff; padding-top: 90px; overflow: hidden; }
-.footer__top { padding-bottom: 30px; border-bottom: 1px solid rgba(255,255,255,0.1); }
-.footer__word { display: block; font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 300; font-size: clamp(4rem, 18vw, 16rem); line-height: 0.8; letter-spacing: -4px; }
-.footer__word span { font-size: 0.12em; letter-spacing: 4px; color: var(--green); vertical-align: super; }
-.footer__inner { display: grid; grid-template-columns: 1fr 1fr; gap: 44px; padding: 50px 0; }
-.footer__col h4 { font-size: 0.95rem; margin-bottom: 20px; font-family: "Inter", sans-serif; font-weight: 600; }
-.footer__col a { display: block; color: rgba(255,255,255,0.66); font-size: 0.98rem; margin-bottom: 12px; transition: color 0.25s; }
-.footer__col a:hover { color: var(--green); }
-.footer__note { color: rgba(255,255,255,0.5); margin-top: 14px; font-size: 0.92rem; }
-.footer__bottom { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding: 26px 40px; border-top: 1px solid rgba(255,255,255,0.1); color: rgba(255,255,255,0.5); font-size: 0.86rem; }
+.footer { background: var(--navy-deep); color: #fff; padding-top: 110px; }
+.footer__main { display: grid; grid-template-columns: 1.4fr 1fr; gap: 60px; align-items: start; padding-bottom: 64px; }
+.footer__label { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-bottom: 22px; }
+.footer__email { display: inline-flex; align-items: center; gap: 18px; font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 400; font-size: clamp(1.7rem, 4.6vw, 3.4rem); letter-spacing: -1px; color: #fff; line-height: 1; }
+.footer__email svg { flex: none; transition: transform 0.45s var(--ease); }
+.footer__email:hover { color: var(--green); }
+.footer__email:hover svg { transform: translate(6px, -6px); }
+.footer__nav { display: flex; flex-direction: column; gap: 2px; padding-top: 6px; }
+.footer__nav a { position: relative; width: fit-content; color: rgba(255,255,255,0.7); font-size: 1.05rem; padding: 8px 0; transition: color 0.3s var(--ease), padding-left 0.3s var(--ease); }
+.footer__nav a::before { content: ""; position: absolute; left: 0; top: 50%; width: 0; height: 1px; background: var(--green); transition: width 0.3s var(--ease); }
+.footer__nav a:hover { color: #fff; padding-left: 26px; }
+.footer__nav a:hover::before { width: 18px; }
+.footer__base { display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap; padding: 30px 0 40px; border-top: 1px solid rgba(255,255,255,0.1); }
+.footer__brand { display: inline-flex; align-items: center; gap: 11px; }
+.footer__brand .brand__mark { color: var(--green); display: inline-flex; }
+.footer__brand .brand__text { display: inline-flex; flex-direction: column; line-height: 1; }
+.footer__brand .brand__text b { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 600; font-size: 1.2rem; color: #fff; letter-spacing: -0.5px; }
+.footer__brand .brand__text i { font-style: normal; font-size: 0.52rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--green); margin-top: 2px; }
+.footer__meta { color: rgba(255,255,255,0.45); font-size: 0.86rem; letter-spacing: 0.3px; }
+.footer__top-link { display: inline-flex; align-items: center; gap: 10px; background: none; border: 0; cursor: pointer; color: rgba(255,255,255,0.7); font-family: inherit; font-size: 0.9rem; font-weight: 500; letter-spacing: 0.5px; transition: color 0.3s; }
+.footer__top-link:hover { color: var(--green); }
+.footer__top-ic { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid rgba(255,255,255,0.2); border-radius: 50%; transition: transform 0.4s var(--ease), border-color 0.3s, background 0.3s, color 0.3s; }
+.footer__top-link:hover .footer__top-ic { transform: translateY(-4px); border-color: var(--green); background: var(--green); color: var(--navy-deep); }
 
 /* ============================================================
    THESIS + AUTHOR PAGE
@@ -426,7 +439,7 @@ img { max-width: 100%; display: block; }
   .concepts__sticky { position: static; }
   .cmedia { aspect-ratio: 16/10; }
   .missing__grid, .library__grid, .arch__grid, .inside__list, .buy__grid { grid-template-columns: 1fr 1fr; }
-  .footer__inner { grid-template-columns: 1fr; }
+  .footer__main { grid-template-columns: 1fr; gap: 44px; }
   .fbio__media { min-height: 56vh; }
   .book__badge { right: 4%; }
   .bhero__media { order: -1; }
@@ -441,7 +454,7 @@ img { max-width: 100%; display: block; }
   .hero__side { display: none; }
   .missing__grid, .library__grid, .arch__grid, .inside__list, .buy__grid { grid-template-columns: 1fr; }
   .form__row { grid-template-columns: 1fr; }
-  .footer__bottom { flex-direction: column; }
+  .footer__base { flex-direction: column; align-items: flex-start; gap: 20px; }
   .thero { grid-template-columns: 1fr; }
   .thero__left { min-height: 36vh; }
   .xp__item { grid-template-columns: 36px 1fr; gap: 14px; padding: 22px 14px; }
