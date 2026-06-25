@@ -432,7 +432,7 @@
   const jfilter = $(".jfilter");
   if (jfilter) {
     const btns = $$(".jfilter__btn", jfilter);
-    const entries = $$(".jentry");
+    const entries = $$(".jpost");
     const countEl = $("#jCount");
     const emptyEl = $("#journalEmpty");
     btns.forEach((b) => b.addEventListener("click", () => {

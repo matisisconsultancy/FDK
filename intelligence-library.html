@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=37" />
+  <link rel="stylesheet" href="styles.css?v=38" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -75,73 +75,57 @@
           </div>
         </a>
 
-        <!-- TIMELINE -->
-        <h3 class="journal__h">A day on the desk</h3>
-        <div class="timeline2" id="timeline">
-          <span class="timeline2__rail" aria-hidden="true"></span>
+        <!-- NOTES GRID -->
+        <h3 class="journal__h">Latest notes</h3>
+        <div class="jgrid" id="journalGrid">
 
-          <article class="jentry" data-type="day">
-            <span class="jnode jnode--day" aria-hidden="true"><span class="jic jic--sun"></span></span>
-            <a class="jcard jcard--day" href="#" data-cursor>
-              <div class="jcard__top"><span class="jtype jtype--day">Day note</span><span class="jtime">07:42 · Pre-open</span></div>
-              <h3>Three signals before the bell</h3>
-              <p>What the overnight tape is telling us about mobility and energy before Europe opens — and the one I'd act on.</p>
-              <div class="jcard__foot"><span class="jtags">Markets</span><span class="jread">3 min →</span></div>
-            </a>
-          </article>
+          <a class="jpost jpost--day" data-type="day" href="#" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 07:42 · Pre-open</span></div>
+            <span class="jpost__tag">Day note · Markets</span>
+            <h3>Three signals before the bell</h3>
+            <p>What the overnight tape is telling us about mobility and energy before Europe opens — and the one I'd act on.</p>
+            <span class="jpost__more">Read note →</span>
+          </a>
 
-          <article class="jentry" data-type="day">
-            <span class="jnode jnode--day" aria-hidden="true"><span class="jic jic--sun"></span></span>
-            <a class="jcard jcard--day" href="#" data-cursor>
-              <div class="jcard__top"><span class="jtype jtype--day">Day note</span><span class="jtime">11:05 · Intraday</span></div>
-              <h3>QBUZZ utilisation ticks up — why it matters</h3>
-              <p>A small operational number that, compounded, is exactly the learning-loop effect the thesis predicts.</p>
-              <div class="jcard__foot"><span class="jtags">Mobility · Signal</span><span class="jread">4 min →</span></div>
-            </a>
-          </article>
+          <a class="jpost jpost--day" data-type="day" href="#" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 11:05 · Intraday</span></div>
+            <span class="jpost__tag">Day note · Mobility</span>
+            <h3>QBUZZ utilisation ticks up — why it matters</h3>
+            <p>A small operational number that, compounded, is exactly the learning-loop effect the thesis predicts.</p>
+            <span class="jpost__more">Read note →</span>
+          </a>
 
-          <article class="jentry" data-type="day">
-            <span class="jnode jnode--day" aria-hidden="true"><span class="jic jic--sun"></span></span>
-            <a class="jcard jcard--day" href="#" data-cursor>
-              <div class="jcard__top"><span class="jtype jtype--day">Day note</span><span class="jtime">13:20 · Midday</span></div>
-              <h3>The midday read: bifurcation, in real time</h3>
-              <p>Two telecoms, same sector, opposite tape. The gap between embed-intelligence and procure-it is showing up on the screen.</p>
-              <div class="jcard__foot"><span class="jtags">Telecom</span><span class="jread">5 min →</span></div>
-            </a>
-          </article>
+          <a class="jpost jpost--day" data-type="day" href="#" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 13:20 · Midday</span></div>
+            <span class="jpost__tag">Day note · Telecom</span>
+            <h3>The midday read: bifurcation, in real time</h3>
+            <p>Two telecoms, same sector, opposite tape. The gap between embed-intelligence and procure-it is showing up on the screen.</p>
+            <span class="jpost__more">Read note →</span>
+          </a>
 
-          <article class="jentry" data-type="night">
-            <span class="jnode jnode--night" aria-hidden="true"><span class="jic jic--moon"></span></span>
-            <a class="jcard jcard--night" href="#" data-cursor>
-              <span class="jcard__stars" aria-hidden="true"></span>
-              <div class="jcard__top"><span class="jtype jtype--night"><span class="jic jic--moon"></span> Night note</span><span class="jtime">21:10 · Close</span></div>
-              <h3>Market close: what moved and why</h3>
-              <p>The day's wrap — the prints that matter, stripped of the noise, framed against the thesis.</p>
-              <div class="jcard__foot"><span class="jtags">Markets · Wrap</span><span class="jread">6 min →</span></div>
-            </a>
-          </article>
+          <a class="jpost jpost--night" data-type="night" href="#" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--moon"></span> 21:10 · Close</span></div>
+            <span class="jpost__tag">Night note · Markets</span>
+            <h3>Market close: what moved and why</h3>
+            <p>The day's wrap — the prints that matter, stripped of the noise, framed against the thesis.</p>
+            <span class="jpost__more">Read note →</span>
+          </a>
 
-          <article class="jentry" data-type="night">
-            <span class="jnode jnode--night" aria-hidden="true"><span class="jic jic--moon"></span></span>
-            <a class="jcard jcard--night" href="#" data-cursor>
-              <span class="jcard__stars" aria-hidden="true"></span>
-              <div class="jcard__top"><span class="jtype jtype--night"><span class="jic jic--moon"></span> Night note</span><span class="jtime">22:35 · Reflection</span></div>
-              <h3>The gap widened today</h3>
-              <p>A quiet session, but the structural distance between the two halves of every sector grew. The slow felt fine. They shouldn't.</p>
-              <div class="jcard__foot"><span class="jtags">Strategy</span><span class="jread">4 min →</span></div>
-            </a>
-          </article>
+          <a class="jpost jpost--night" data-type="night" href="#" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--moon"></span> 22:35 · Reflection</span></div>
+            <span class="jpost__tag">Night note · Strategy</span>
+            <h3>The gap widened today</h3>
+            <p>A quiet session, but the structural distance between the two halves of every sector grew. The slow felt fine. They shouldn't.</p>
+            <span class="jpost__more">Read note →</span>
+          </a>
 
-          <article class="jentry" data-type="night">
-            <span class="jnode jnode--night" aria-hidden="true"><span class="jic jic--moon"></span></span>
-            <a class="jcard jcard--night" href="#" data-cursor>
-              <span class="jcard__stars" aria-hidden="true"></span>
-              <div class="jcard__top"><span class="jtype jtype--night"><span class="jic jic--moon"></span> Night note</span><span class="jtime">23:15 · Sign-off</span></div>
-              <h3>Three things to sleep on</h3>
-              <p>The end-of-day note: one risk, one opportunity, one question for tomorrow's open.</p>
-              <div class="jcard__foot"><span class="jtags">Reflection</span><span class="jread">2 min →</span></div>
-            </a>
-          </article>
+          <a class="jpost jpost--night" data-type="night" href="#" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--moon"></span> 23:15 · Sign-off</span></div>
+            <span class="jpost__tag">Night note · Reflection</span>
+            <h3>Three things to sleep on</h3>
+            <p>The end-of-day note: one risk, one opportunity, one question for tomorrow's open.</p>
+            <span class="jpost__more">Read note →</span>
+          </a>
         </div>
 
         <p class="journal__empty" id="journalEmpty" hidden>No notes in this view yet — check back after the next session.</p>
@@ -188,6 +172,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=37"></script>
+  <script src="script.js?v=38"></script>
 </body>
 </html>
