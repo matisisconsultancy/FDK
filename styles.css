@@ -75,7 +75,8 @@ img { max-width: 100%; display: block; }
 .brand--loader .brand__text b { font-size: 2.2rem; }
 
 /* ---------- Navbar ---------- */
-.nav { position: fixed; top: 18px; left: 0; right: 0; z-index: 90; color: #fff; animation: navDrop 0.9s var(--ease) 0.15s both; }
+.nav { position: fixed; top: 18px; left: 0; right: 0; z-index: 90; color: #fff; animation: navDrop 0.9s var(--ease) 0.15s both; transition: top 0.45s var(--ease); }
+.nav.nav--hidden { top: -120px; }
 @keyframes navDrop { from { transform: translateY(-140%); opacity: 0; } to { transform: none; opacity: 1; } }
 .nav .container { padding-inline: 24px; }
 .nav__inner {

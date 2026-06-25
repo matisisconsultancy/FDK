@@ -103,13 +103,22 @@
   /* ---------- Navbar + progress ---------- */
   const nav = $("#nav");
   const progress = $("#scrollProgress");
+  const navLinksEl = $("#navLinks");
+  let lastY = window.scrollY || 0;
   const onScroll = () => {
     const sy = window.scrollY || document.documentElement.scrollTop;
-    if (nav) nav.classList.toggle("scrolled", sy > 40);
+    if (nav) {
+      nav.classList.toggle("scrolled", sy > 40);
+      // hide on scroll down, reveal on scroll up (keep visible near top / when menu open)
+      const menuOpen = navLinksEl && navLinksEl.classList.contains("open");
+      if (sy > 160 && sy > lastY + 4 && !menuOpen) nav.classList.add("nav--hidden");
+      else if (sy < lastY - 4 || sy <= 160) nav.classList.remove("nav--hidden");
+    }
     if (progress) {
       const docH = document.documentElement.scrollHeight - window.innerHeight;
       progress.style.width = (docH > 0 ? (sy / docH) * 100 : 0) + "%";
     }
+    lastY = sy;
   };
   window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
