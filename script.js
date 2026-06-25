@@ -206,6 +206,72 @@
     requestAnimationFrame(draw);
   }
 
+  /* ---------- Thesis hero: interactive dot grid ---------- */
+  const tcanvas = $("#theroCanvas");
+  if (tcanvas && !reduceMotion) {
+    const tctx = tcanvas.getContext("2d");
+    const host = tcanvas.parentElement;
+    let w = 0, h = 0, gap = 36, dots = [], running = true;
+    const radius = 170;
+    const mouse = { x: -9999, y: -9999, active: false };
+    const build = () => {
+      const dpr = Math.min(2, window.devicePixelRatio || 1);
+      w = tcanvas.clientWidth; h = tcanvas.clientHeight;
+      tcanvas.width = w * dpr; tcanvas.height = h * dpr;
+      tctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      gap = Math.max(30, Math.min(42, w / 16));
+      const cols = Math.ceil(w / gap) + 1, rows = Math.ceil(h / gap) + 1;
+      dots = [];
+      for (let yy = 0; yy < rows; yy++)
+        for (let xx = 0; xx < cols; xx++)
+          dots.push({ ox: xx * gap, oy: yy * gap, x: xx * gap, y: yy * gap, l: 0 });
+    };
+    build();
+    window.addEventListener("resize", build);
+    host.addEventListener("mousemove", (e) => {
+      const r = tcanvas.getBoundingClientRect();
+      mouse.x = e.clientX - r.left; mouse.y = e.clientY - r.top; mouse.active = true;
+    }, { passive: true });
+    host.addEventListener("mouseleave", () => { mouse.active = false; mouse.x = -9999; mouse.y = -9999; });
+    if ("IntersectionObserver" in window) {
+      new IntersectionObserver((es) => { running = es[0].isIntersecting; }, { threshold: 0 }).observe(tcanvas);
+    }
+    let t = 0;
+    const draw = () => {
+      if (running && w && h) {
+        t += 0.018;
+        tctx.clearRect(0, 0, w, h);
+        if (mouse.active) {
+          const grd = tctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, radius);
+          grd.addColorStop(0, "rgba(46,224,106,0.14)");
+          grd.addColorStop(1, "rgba(46,224,106,0)");
+          tctx.fillStyle = grd; tctx.fillRect(0, 0, w, h);
+        }
+        for (const d of dots) {
+          const dx = d.ox - mouse.x, dy = d.oy - mouse.y;
+          const dist = Math.hypot(dx, dy);
+          const infl = mouse.active ? Math.max(0, 1 - dist / radius) : 0;
+          const idle = 0.06 + 0.05 * Math.sin(d.ox * 0.012 + d.oy * 0.014 + t);
+          const target = Math.max(idle, infl);
+          d.l += (target - d.l) * 0.12;
+          const push = infl * infl * 22;
+          const ang = Math.atan2(dy, dx);
+          const tx = d.ox + Math.cos(ang) * push;
+          const ty = d.oy + Math.sin(ang) * push;
+          d.x += (tx - d.x) * 0.15; d.y += (ty - d.y) * 0.15;
+          const size = 1 + d.l * 2.6;
+          tctx.beginPath();
+          tctx.arc(d.x, d.y, size, 0, Math.PI * 2);
+          if (d.l > 0.25) tctx.fillStyle = `rgba(46,224,106,${0.2 + d.l * 0.75})`;
+          else tctx.fillStyle = `rgba(170,185,230,${0.05 + d.l * 0.5})`;
+          tctx.fill();
+        }
+      }
+      requestAnimationFrame(draw);
+    };
+    requestAnimationFrame(draw);
+  }
+
   /* ---------- Parallax ---------- */
   const parallaxImgs = $$("[data-parallax-img]");
   let ticking = false;
