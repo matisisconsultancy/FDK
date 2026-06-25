@@ -413,6 +413,18 @@
   let journalManualTheme = null; // null = follow clock; "light" | "dark" = forced
   const applyJournalTheme = (light) => document.body.classList.toggle("theme-light", light);
   const isDaytime = () => { const h = new Date().getHours(); return h >= 5 && h < 18; };
+  // Map a publish hour to a time-of-day phase that tints the card background.
+  const phaseOf = (h) => {
+    if (h >= 5 && h < 9) return { key: "dawn", dark: false };
+    if (h >= 9 && h < 17) return { key: "day", dark: false };
+    if (h >= 17 && h < 20) return { key: "dusk", dark: true };
+    if (h >= 2 && h < 5) return { key: "late", dark: true };
+    return { key: "night", dark: true }; // 20:00–02:00
+  };
+  const hourOf = (el) => {
+    const m = (el.textContent || "").match(/(\d{1,2}):\d{2}/);
+    return m ? parseInt(m[1], 10) : 12;
+  };
   const jGreeting = $("#jGreeting");
   const jClock = $("#jClock");
   const journalHero = $(".journal-hero");
@@ -425,13 +437,16 @@
       const posts = $$(`.jpost[data-type="${mode}"]`);
       const latest = posts[posts.length - 1];
       if (!latest) return;
-      const isNight = mode === "night";
       const get = (sel) => { const el = latest.querySelector(sel); return el ? el.textContent.trim() : ""; };
       const badge = get(".jpost__badge");
       const time = badge.split("·")[0].trim();
       const tag = get(".jpost__tag");
       const cat = tag.includes("·") ? tag.split("·").slice(1).join("·").trim() : tag;
+      // Background follows the publish hour of the note being featured.
+      const ph = phaseOf(hourOf(latest.querySelector(".jpost__badge") || latest));
+      const isNight = ph.dark;
 
+      featured.dataset.phase = ph.key;
       featured.classList.toggle("jfeatured--night", isNight);
       featured.classList.toggle("jfeatured--day", !isNight);
       featured.setAttribute("href", latest.getAttribute("href") || "#");
@@ -464,6 +479,16 @@
     };
     updateClock();
     setInterval(updateClock, 30000);
+
+    // Tint each note card by the hour it was published.
+    $$(".jpost").forEach((card) => {
+      const ph = phaseOf(hourOf(card.querySelector(".jpost__badge") || card));
+      card.dataset.phase = ph.key;
+      card.classList.toggle("jpost--night", ph.dark);
+      card.classList.toggle("jpost--day", !ph.dark);
+      const ic = card.querySelector(".jpost__badge .jic");
+      if (ic) ic.className = "jic " + (ph.dark ? "jic--moon" : "jic--sun");
+    });
   }
 
   /* ---------- Intelligence Library: day/night filter ---------- */
