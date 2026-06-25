@@ -367,6 +367,7 @@ img { max-width: 100%; display: block; }
 .fbio__name { font-size: clamp(2.4rem, 5vw, 4.2rem); font-weight: 300; line-height: 1.02; letter-spacing: -1px; color: #fff; margin: 18px 0 0; }
 .fbio__text { color: rgba(255,255,255,0.82); font-size: clamp(1.05rem, 1.7vw, 1.28rem); line-height: 1.65; max-width: 620px; margin-top: 34px; }
 
+.experience { background: #ffffff; }
 .xp__head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; margin-bottom: 50px; }
 .experience__title { font-family: "Space Grotesk", "Inter", sans-serif; font-size: clamp(2.2rem, 5vw, 4rem); font-weight: 600; font-style: normal; color: var(--navy); letter-spacing: -1px; }
 .xp__count { font-family: ui-monospace, Menlo, monospace; font-size: 0.85rem; letter-spacing: 0.5px; color: var(--muted); padding-bottom: 8px; }
