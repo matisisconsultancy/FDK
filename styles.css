@@ -471,6 +471,34 @@ img { max-width: 100%; display: block; }
 .bookcard__link { display: inline-block; margin-top: 18px; color: var(--green); font-weight: 600; font-size: 0.95rem; transition: letter-spacing 0.3s var(--ease); }
 .bookcard:hover .bookcard__link { letter-spacing: 0.6px; }
 
+/* ---------- Library catalog + book detail pages ---------- */
+.crumb { display: flex; align-items: center; gap: 12px; font-size: 0.88rem; color: rgba(255,255,255,0.5); margin-bottom: 28px; }
+.crumb a { color: rgba(255,255,255,0.72); transition: color 0.3s var(--ease); }
+.crumb a:hover { color: var(--green); }
+.crumb i { font-style: normal; opacity: 0.5; }
+.crumb b { font-weight: 500; color: #fff; }
+
+.libhero { position: relative; overflow: hidden; background: var(--navy-deep); color: #fff; padding: 180px 0 70px; }
+.libhero__glow { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(50% 60% at 80% 20%, rgba(46,224,106,0.16), transparent 60%), radial-gradient(50% 60% at 5% 90%, rgba(26,36,112,0.55), transparent 70%); }
+.libhero__inner { position: relative; z-index: 2; max-width: 920px; }
+.libhero__title { font-size: clamp(2.8rem, 7vw, 5.4rem); font-weight: 300; letter-spacing: -2px; line-height: 1.02; }
+.libhero__sub { color: rgba(255,255,255,0.74); font-size: clamp(1.05rem, 1.8vw, 1.3rem); line-height: 1.6; max-width: 640px; margin-top: 26px; }
+
+.library-page { background: var(--navy-deep); color: #fff; padding: 26px 0 140px; }
+a.bookcard { color: inherit; }
+a.bookcard .bookcard__link { color: var(--green); }
+a.bookcard:hover .bookcard__link { letter-spacing: 0.6px; }
+
+/* "More from the library" strip on a book page */
+.morebooks { background: var(--navy-deep); color: #fff; }
+.morebooks .section__head { margin-bottom: 50px; }
+.morebooks__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.morecard { display: flex; align-items: center; gap: 20px; padding: 22px; border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; background: rgba(255,255,255,0.03); transition: background 0.4s var(--ease), border-color 0.4s var(--ease), transform 0.4s var(--ease); }
+.morecard:hover { background: rgba(255,255,255,0.06); border-color: rgba(46,224,106,0.4); transform: translateY(-5px); }
+.morecard__spine { flex: none; width: 46px; height: 66px; border-radius: 2px 5px 5px 2px; background: linear-gradient(135deg, #1a2470, #0c1138); border-left: 3px solid var(--green); }
+.morecard h4 { font-family: "Space Grotesk", "Inter", sans-serif; font-size: 1.06rem; font-weight: 500; color: #fff; line-height: 1.2; }
+.morecard span { color: rgba(255,255,255,0.55); font-size: 0.86rem; }
+
 /* ============================================================
    RESPONSIVE
    ============================================================ */

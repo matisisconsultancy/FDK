@@ -304,13 +304,15 @@
   }
 
   /* ---------- Book: download a sample ---------- */
-  function downloadSample() {
+  function downloadSample(btn) {
+    const title = (btn && btn.dataset.title) || "Velocity Capitalism";
+    const sub = (btn && btn.dataset.sub) || "How Artificial Intelligence Rewrites Competitive Advantage";
     const text = [
-      "VELOCITY CAPITALISM",
-      "How Artificial Intelligence Rewrites Competitive Advantage",
+      title.toUpperCase(),
+      sub,
       "Francesco de Leo Kaufmann — FDK EmpowerNet",
       "",
-      "— SAMPLE / OPENING CHAPTER —",
+      "— SAMPLE —",
       "",
       "Speed has replaced scale.",
       "",
@@ -319,14 +321,7 @@
       "and outspend its rivals. Scale was the moat. That logic is now inverting.",
       "",
       "In an economy where intelligence compounds with every interaction, the decisive",
-      "variable is no longer how much a company owns — it is how quickly it learns. The",
-      "organisations that will lead the next decade are not those with the most assets.",
-      "They are those with the fastest learning cycles. Every board still optimising for",
-      "quarterly planning is, quietly, operating on the wrong clock.",
-      "",
-      "This is not a story about technology adoption. AI initiatives are multiplying across",
-      "every large European corporate; strategic theses are not. The gap between the two is",
-      "where this book lives.",
+      "variable is no longer how much a company owns — it is how quickly it learns.",
       "",
       "— End of sample —",
       "Buy the full book: info@fdkempowernet.com",
@@ -335,7 +330,7 @@
     const url = URL.createObjectURL(blob);
     const a = document.createElement("a");
     a.href = url;
-    a.download = "Velocity-Capitalism-sample.txt";
+    a.download = title.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "") + "-sample.txt";
     document.body.appendChild(a);
     a.click();
     a.remove();
@@ -343,7 +338,7 @@
   }
   ["#downloadSample", "#downloadSample2"].forEach((sel) => {
     const btn = $(sel);
-    if (btn) btn.addEventListener("click", downloadSample);
+    if (btn) btn.addEventListener("click", () => downloadSample(btn));
   });
 
   /* ---------- Contact form ---------- */
