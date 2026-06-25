@@ -412,6 +412,37 @@
   const jClock = $("#jClock");
   const journalHero = $(".journal-hero");
   if (jGreeting || jClock || journalHero) {
+    // Featured banner mirrors the latest note for the current time-of-day,
+    // switching its background between day (white) and night (navy).
+    const featured = $("#jFeatured");
+    const fillFeatured = (mode) => {
+      if (!featured) return;
+      const posts = $$(`.jpost[data-type="${mode}"]`);
+      const latest = posts[posts.length - 1];
+      if (!latest) return;
+      const isNight = mode === "night";
+      const get = (sel) => { const el = latest.querySelector(sel); return el ? el.textContent.trim() : ""; };
+      const badge = get(".jpost__badge");
+      const time = badge.split("·")[0].trim();
+      const tag = get(".jpost__tag");
+      const cat = tag.includes("·") ? tag.split("·").slice(1).join("·").trim() : tag;
+
+      featured.classList.toggle("jfeatured--night", isNight);
+      featured.classList.toggle("jfeatured--day", !isNight);
+      featured.setAttribute("href", latest.getAttribute("href") || "#");
+
+      const typeEl = featured.querySelector(".jtype");
+      if (typeEl) {
+        typeEl.className = "jtype " + (isNight ? "jtype--night" : "jtype--day");
+        typeEl.innerHTML = `<span class="jic ${isNight ? "jic--moon" : "jic--sun"}" aria-hidden="true"></span> ${tag}`;
+      }
+      const set = (sel, val) => { const el = featured.querySelector(sel); if (el) el.textContent = val; };
+      set(".jtime", time ? `Today · ${time}` : "Today");
+      set(".jfeatured__title", get("h3"));
+      set(".jfeatured__excerpt", get("p"));
+      set(".jtags", cat);
+    };
+
     const updateClock = () => {
       const d = new Date();
       const hr = d.getHours();
@@ -423,6 +454,7 @@
       if (jGreeting) jGreeting.textContent = g;
       if (jClock) jClock.textContent = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
       if (journalHero) journalHero.dataset.mode = mode;
+      fillFeatured(mode);
     };
     updateClock();
     setInterval(updateClock, 30000);
