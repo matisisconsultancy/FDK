@@ -196,17 +196,6 @@ img { max-width: 100%; display: block; }
 .concept.is-active::before { height: calc(100% - 92px); }
 
 /* ============================================================
-   MANIFESTO BAND
-   ============================================================ */
-.manifesto { background: var(--navy-deep); color: #fff; padding: 90px 0; overflow: hidden; }
-.manifesto__row { display: flex; gap: 40px; white-space: nowrap; font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 300; font-style: normal; font-size: clamp(2.4rem, 7vw, 6rem); line-height: 1.05; }
-.manifesto__row--a { animation: marquee 30s linear infinite; }
-.manifesto__row--b { animation: marquee-rev 34s linear infinite; }
-.manifesto__o { color: transparent; -webkit-text-stroke: 1.2px var(--green); }
-.manifesto__row:not(.manifesto__row--b) .manifesto__o { -webkit-text-stroke-color: rgba(255,255,255,0.4); }
-.manifesto__row--b span:not(.manifesto__o) { color: var(--green); }
-
-/* ============================================================
    MISSING (navy)
    ============================================================ */
 .missing .eyebrow { display: block; text-align: center; }
