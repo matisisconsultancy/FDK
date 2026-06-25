@@ -768,12 +768,12 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
   background-image: linear-gradient(rgba(124,139,255,0.08) 1px, transparent 1px), linear-gradient(90deg, rgba(124,139,255,0.08) 1px, transparent 1px);
   background-size: 54px 54px; -webkit-mask-image: radial-gradient(80% 70% at 50% 0%, #000 0%, transparent 75%); mask-image: radial-gradient(80% 70% at 50% 0%, #000 0%, transparent 75%); }
 .art-hero__glow { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(40% 50% at 82% 14%, rgba(46,224,106,0.16), transparent 60%); }
-.art-hero__inner { position: relative; z-index: 2; max-width: 900px; }
+.art-hero__inner { position: relative; z-index: 2; }
 .art-back { display: flex; width: fit-content; align-items: center; gap: 8px; font-size: 0.86rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.6); margin-bottom: 26px; transition: color 0.3s var(--ease), gap 0.3s var(--ease); }
 .art-back:hover { color: #fff; gap: 12px; }
 .art-kicker { display: inline-flex; align-items: center; gap: 10px; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 0.8rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green); background: rgba(46,224,106,0.08); border: 1px solid rgba(46,224,106,0.2); padding: 8px 15px; border-radius: 100px; }
 .art-kicker__pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--green); box-shadow: 0 0 0 0 rgba(46,224,106,0.6); animation: pulse2 1.8s ease-out infinite; }
-.art-title { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 300; letter-spacing: -2.5px; line-height: 0.98; font-size: clamp(2.7rem, 7vw, 5.6rem); color: #fff; margin: 26px 0 0; }
+.art-title { font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 300; letter-spacing: -2.5px; line-height: 0.98; font-size: clamp(2.7rem, 7vw, 5.6rem); color: #fff; margin: 26px 0 0; max-width: 900px; }
 .art-dek { font-size: clamp(1.15rem, 2.1vw, 1.5rem); line-height: 1.5; color: rgba(255,255,255,0.74); max-width: 720px; margin-top: 24px; font-weight: 300; }
 .art-dek strong { color: #fff; font-weight: 500; }
 .art-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin-top: 34px; font-size: 0.9rem; color: rgba(255,255,255,0.6); }
