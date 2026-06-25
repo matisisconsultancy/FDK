@@ -651,7 +651,7 @@ img { max-width: 100%; display: block; }
 .journal-hero__title, .journal-hero__sub, .jbar__count, .journal__h,
 .jfilter__btn, .jpost--day { transition: background 0.5s var(--ease), color 0.4s var(--ease), border-color 0.4s var(--ease); }
 
-body.theme-light .journal-hero { background: var(--paper); color: var(--ink); }
+body.theme-light .journal-hero { background: #ffffff; color: var(--ink); }
 body.theme-light .journal-hero__title { color: var(--ink); }
 body.theme-light .journal-hero__sub { color: var(--muted); }
 body.theme-light .journal-hero__sub strong { color: var(--ink); }
@@ -659,7 +659,7 @@ body.theme-light .journal-hero .jh-sun { opacity: 0.5; background: radial-gradie
 body.theme-light .journal-hero .jh-stars { opacity: 0.05; }
 body.theme-light .jclock { color: var(--muted); background: rgba(13,18,56,0.04); border-color: rgba(13,18,56,0.1); }
 
-body.theme-light .journal { background: var(--paper); color: var(--ink); }
+body.theme-light .journal { background: #ffffff; color: var(--ink); }
 body.theme-light .jfilter { background: rgba(13,18,56,0.04); border-color: rgba(13,18,56,0.1); }
 body.theme-light .jfilter__btn { color: var(--muted); }
 body.theme-light .jfilter__btn:hover { color: var(--ink); }
@@ -670,7 +670,14 @@ body.theme-light .journal__h { color: var(--muted); }
 body.theme-light .journal__empty { color: var(--muted); }
 body.theme-light .jpost--day { border-color: rgba(13,18,56,0.1); box-shadow: 0 18px 44px -34px rgba(0,0,0,0.45); }
 
-body.theme-light .jsub { background: var(--paper-2); }
+body.theme-light .jsub { background: #ffffff; }
+body.theme-light .jsub__inner { background: linear-gradient(120deg, rgba(46,224,106,0.12), rgba(124,139,255,0.08)); border-color: rgba(13,18,56,0.08); box-shadow: 0 26px 60px -40px rgba(13,18,56,0.5); }
+body.theme-light .jsub__inner .eyebrow--light { color: var(--green-deep); }
+body.theme-light .jsub__inner h2 { color: var(--ink); }
+body.theme-light .jsub__inner p { color: var(--muted); }
+body.theme-light .jsub__form input { background: #fff; border-color: rgba(13,18,56,0.14); color: var(--ink); }
+body.theme-light .jsub__form input::placeholder { color: var(--muted-light); }
+body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 /* Footer stays dark in both modes — a deliberate grounding base for the page. */
 
 /* ============================================================
