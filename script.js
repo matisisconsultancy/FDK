@@ -280,6 +280,14 @@
     onStmt();
   }
 
+  /* ---------- Interactive thesis cards (tap / keyboard reveal) ---------- */
+  $$(".tcard").forEach((card) => {
+    card.addEventListener("click", () => card.classList.toggle("is-open"));
+    card.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); card.classList.toggle("is-open"); }
+    });
+  });
+
   /* ---------- Book: excerpt toggle ---------- */
   const exToggle = $("#excerptToggle");
   const exMore = $("#excerptMore");
