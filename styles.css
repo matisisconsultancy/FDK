@@ -294,19 +294,24 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    CONTACT
    ============================================================ */
-.contact__grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 70px; align-items: start; }
+.contact { background: #ffffff; }
+.contact__grid { display: grid; grid-template-columns: 1fr 1.05fr; gap: 70px; align-items: center; }
 .contact__title { font-size: clamp(2rem, 4.4vw, 3.4rem); font-weight: 300; line-height: 1.08; letter-spacing: -1px; }
 .contact__sub { color: var(--muted); margin-top: 20px; font-size: 1.1rem; max-width: 460px; }
 .contact__direct { margin-top: 28px; }
 .contact__direct a { color: var(--green-deep); font-weight: 500; font-size: 1.2rem; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
-.form { display: flex; flex-direction: column; gap: 18px; }
+
+/* Modern elevated form card */
+.form { display: flex; flex-direction: column; gap: 18px; background: #ffffff; border: 1px solid rgba(13,18,56,0.07); border-radius: 24px; padding: clamp(26px, 3vw, 40px); box-shadow: 0 50px 90px -60px rgba(13,18,56,0.45), 0 2px 6px -2px rgba(13,18,56,0.06); }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.field { display: flex; flex-direction: column; gap: 8px; }
-.field label { font-size: 0.82rem; color: var(--muted); font-weight: 600; }
-.field input, .field select, .field textarea { padding: 15px 16px; border-radius: 4px; background: #fff; border: 1px solid var(--border); color: var(--ink); font-family: inherit; font-size: 1rem; transition: border-color 0.25s, box-shadow 0.25s; resize: vertical; }
+.field { display: flex; flex-direction: column; gap: 9px; }
+.field label { font-size: 0.72rem; letter-spacing: 0.8px; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.field input, .field select, .field textarea { padding: 16px 18px; border-radius: 14px; background: #f3f5f9; border: 1.5px solid transparent; color: var(--ink); font-family: inherit; font-size: 1rem; transition: border-color 0.25s var(--ease), box-shadow 0.25s var(--ease), background 0.25s var(--ease); resize: vertical; }
 .field input::placeholder, .field textarea::placeholder { color: #9aa0b5; }
-.field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--green-deep); box-shadow: 0 0 0 3px rgba(31,175,82,0.16); }
-.field select { appearance: none; cursor: pointer; }
+.field input:hover, .field select:hover, .field textarea:hover { background-color: #eef1f6; }
+.field input:focus, .field select:focus, .field textarea:focus { outline: none; background-color: #fff; border-color: var(--green-deep); box-shadow: 0 0 0 4px rgba(31,175,82,0.13); }
+.field select { appearance: none; cursor: pointer; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23555a70' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 18px center; padding-right: 44px; }
+.form .btn--block { margin-top: 6px; border-radius: 16px; }
 .form__status { font-size: 0.95rem; min-height: 1.2em; }
 .form__status.ok { color: var(--green-deep); }
 .form__status.err { color: #d6455d; }
