@@ -144,19 +144,6 @@
     window.addEventListener("mouseup", () => ring.classList.remove("is-down"));
   }
 
-  /* ---------- Magnetic ---------- */
-  if (finePointer && !reduceMotion) {
-    $$(".magnetic").forEach((el) => {
-      el.addEventListener("mousemove", (e) => {
-        const r = el.getBoundingClientRect();
-        const mx = e.clientX - (r.left + r.width / 2);
-        const my = e.clientY - (r.top + r.height / 2);
-        el.style.transform = `translate(${mx * 0.12}px, ${my * 0.12}px)`;
-      });
-      el.addEventListener("mouseleave", () => { el.style.transform = ""; });
-    });
-  }
-
   /* ---------- Hero canvas: flowing signal field ---------- */
   const canvas = $("#heroCanvas");
   if (canvas && !reduceMotion) {
