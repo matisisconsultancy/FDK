@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="The Intelligence Library — Francesco de Leo Kaufmann's daily field notes: day signals and night briefings, market closes and end-of-day summaries." />
+  <meta name="theme-color" content="#070a24" />
+  <title>Intelligence Library · FDK EmpowerNet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=37" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="nav nav--solid" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor>
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 34 34" width="30" height="30"><rect x="3" y="20" width="6" height="11" rx="2"/><rect x="14" y="11" width="6" height="20" rx="2"/><rect x="25" y="3" width="6" height="28" rx="2"/></svg></span>
+        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html" data-cursor>Home</a>
+        <a href="thesis.html" data-cursor>Thesis + Author</a>
+        <a href="library.html" data-cursor>Library</a>
+        <a href="intelligence-library.html" class="is-current" data-cursor>Intelligence Library</a>
+        <a href="index.html#contact" class="nav__cta magnetic" data-cursor>Contact <span aria-hidden="true">→</span></a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <!-- JOURNAL HERO -->
+    <section class="journal-hero" id="top" data-mode="night">
+      <div class="journal-hero__sky" aria-hidden="true"><span class="jh-sun"></span><span class="jh-stars"></span></div>
+      <div class="container journal-hero__inner">
+        <nav class="crumb" aria-label="Breadcrumb"><a href="index.html">Home</a><i>/</i><b>Intelligence Library</b></nav>
+        <div class="jclock reveal-up">
+          <span class="jclock__dot" aria-hidden="true"></span>
+          <span id="jGreeting">Good evening</span> · <span id="jClock">—:—</span> · <span class="jclock__live">live journal</span>
+        </div>
+        <h1 class="journal-hero__title" data-reveal-text>Field notes, from dawn to <span class="hl-green">close</span>.</h1>
+        <p class="journal-hero__sub reveal-up">Francesco writes through the day. <strong>Day notes</strong> capture signals as they happen; <strong>night notes</strong> close the day — market wraps, end-of-day reads and what to sleep on. One journal, two rhythms.</p>
+      </div>
+    </section>
+
+    <!-- FILTER + FEATURED -->
+    <section class="journal">
+      <div class="container">
+        <div class="jbar reveal-up">
+          <div class="jfilter" role="tablist" aria-label="Filter notes">
+            <button class="jfilter__btn is-active" data-filter="all" data-cursor>All notes</button>
+            <button class="jfilter__btn" data-filter="day" data-cursor><span class="jic jic--sun" aria-hidden="true"></span> Day</button>
+            <button class="jfilter__btn" data-filter="night" data-cursor><span class="jic jic--moon" aria-hidden="true"></span> Night</button>
+          </div>
+          <span class="jbar__count"><b id="jCount">6</b> notes · updated daily</span>
+        </div>
+
+        <!-- FEATURED (latest) -->
+        <a class="jfeatured jcard--night reveal-up" href="#" data-cursor>
+          <span class="jfeatured__stars" aria-hidden="true"></span>
+          <div class="jfeatured__body">
+            <div class="jcard__top">
+              <span class="jtype jtype--night"><span class="jic jic--moon" aria-hidden="true"></span> Night note · Market close</span>
+              <span class="jtime">Today · 21:10</span>
+            </div>
+            <h2 class="jfeatured__title">Market close: the repricing leaked into telecom today</h2>
+            <p class="jfeatured__excerpt">Three operators moved on no news. That is the tell. When prices drift without a headline, the market is re-rating the asset class, not the asset — exactly the correction the thesis has been waiting on. Here is what closed, what didn't, and the one line I'm sleeping on.</p>
+            <div class="jcard__foot"><span class="jtags">Markets · Telecom</span><span class="jread">6 min read →</span></div>
+          </div>
+        </a>
+
+        <!-- TIMELINE -->
+        <h3 class="journal__h">A day on the desk</h3>
+        <div class="timeline2" id="timeline">
+          <span class="timeline2__rail" aria-hidden="true"></span>
+
+          <article class="jentry" data-type="day">
+            <span class="jnode jnode--day" aria-hidden="true"><span class="jic jic--sun"></span></span>
+            <a class="jcard jcard--day" href="#" data-cursor>
+              <div class="jcard__top"><span class="jtype jtype--day">Day note</span><span class="jtime">07:42 · Pre-open</span></div>
+              <h3>Three signals before the bell</h3>
+              <p>What the overnight tape is telling us about mobility and energy before Europe opens — and the one I'd act on.</p>
+              <div class="jcard__foot"><span class="jtags">Markets</span><span class="jread">3 min →</span></div>
+            </a>
+          </article>
+
+          <article class="jentry" data-type="day">
+            <span class="jnode jnode--day" aria-hidden="true"><span class="jic jic--sun"></span></span>
+            <a class="jcard jcard--day" href="#" data-cursor>
+              <div class="jcard__top"><span class="jtype jtype--day">Day note</span><span class="jtime">11:05 · Intraday</span></div>
+              <h3>QBUZZ utilisation ticks up — why it matters</h3>
+              <p>A small operational number that, compounded, is exactly the learning-loop effect the thesis predicts.</p>
+              <div class="jcard__foot"><span class="jtags">Mobility · Signal</span><span class="jread">4 min →</span></div>
+            </a>
+          </article>
+
+          <article class="jentry" data-type="day">
+            <span class="jnode jnode--day" aria-hidden="true"><span class="jic jic--sun"></span></span>
+            <a class="jcard jcard--day" href="#" data-cursor>
+              <div class="jcard__top"><span class="jtype jtype--day">Day note</span><span class="jtime">13:20 · Midday</span></div>
+              <h3>The midday read: bifurcation, in real time</h3>
+              <p>Two telecoms, same sector, opposite tape. The gap between embed-intelligence and procure-it is showing up on the screen.</p>
+              <div class="jcard__foot"><span class="jtags">Telecom</span><span class="jread">5 min →</span></div>
+            </a>
+          </article>
+
+          <article class="jentry" data-type="night">
+            <span class="jnode jnode--night" aria-hidden="true"><span class="jic jic--moon"></span></span>
+            <a class="jcard jcard--night" href="#" data-cursor>
+              <span class="jcard__stars" aria-hidden="true"></span>
+              <div class="jcard__top"><span class="jtype jtype--night"><span class="jic jic--moon"></span> Night note</span><span class="jtime">21:10 · Close</span></div>
+              <h3>Market close: what moved and why</h3>
+              <p>The day's wrap — the prints that matter, stripped of the noise, framed against the thesis.</p>
+              <div class="jcard__foot"><span class="jtags">Markets · Wrap</span><span class="jread">6 min →</span></div>
+            </a>
+          </article>
+
+          <article class="jentry" data-type="night">
+            <span class="jnode jnode--night" aria-hidden="true"><span class="jic jic--moon"></span></span>
+            <a class="jcard jcard--night" href="#" data-cursor>
+              <span class="jcard__stars" aria-hidden="true"></span>
+              <div class="jcard__top"><span class="jtype jtype--night"><span class="jic jic--moon"></span> Night note</span><span class="jtime">22:35 · Reflection</span></div>
+              <h3>The gap widened today</h3>
+              <p>A quiet session, but the structural distance between the two halves of every sector grew. The slow felt fine. They shouldn't.</p>
+              <div class="jcard__foot"><span class="jtags">Strategy</span><span class="jread">4 min →</span></div>
+            </a>
+          </article>
+
+          <article class="jentry" data-type="night">
+            <span class="jnode jnode--night" aria-hidden="true"><span class="jic jic--moon"></span></span>
+            <a class="jcard jcard--night" href="#" data-cursor>
+              <span class="jcard__stars" aria-hidden="true"></span>
+              <div class="jcard__top"><span class="jtype jtype--night"><span class="jic jic--moon"></span> Night note</span><span class="jtime">23:15 · Sign-off</span></div>
+              <h3>Three things to sleep on</h3>
+              <p>The end-of-day note: one risk, one opportunity, one question for tomorrow's open.</p>
+              <div class="jcard__foot"><span class="jtags">Reflection</span><span class="jread">2 min →</span></div>
+            </a>
+          </article>
+        </div>
+
+        <p class="journal__empty" id="journalEmpty" hidden>No notes in this view yet — check back after the next session.</p>
+      </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+    <section class="section jsub">
+      <div class="container">
+        <div class="jsub__inner reveal-up">
+          <div>
+            <span class="eyebrow eyebrow--light">Never miss a close</span>
+            <h2>The day note at dawn. The night note at close.</h2>
+            <p>Both rhythms, delivered. The morning signals and the evening wrap, straight to your inbox.</p>
+          </div>
+          <form class="jsub__form" id="subForm" novalidate>
+            <input id="subEmail" type="email" placeholder="name@company.com" aria-label="Work email" required />
+            <button type="submit" class="btn btn--brief" data-cursor>Subscribe</button>
+            <p class="form__status" id="subStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__main">
+      <div class="footer__lead">
+        <span class="footer__label">Get in touch</span>
+        <a class="footer__email" href="mailto:info@fdkempowernet.com" data-cursor>info@fdkempowernet.com<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="index.html" data-cursor>Home</a>
+        <a href="thesis.html" data-cursor>Thesis + Author</a>
+        <a href="library.html" data-cursor>Library</a>
+        <a href="intelligence-library.html" data-cursor>Intelligence Library</a>
+        <a href="index.html#contact" data-cursor>Contact</a>
+      </nav>
+    </div>
+    <div class="container footer__base">
+      <span class="footer__brand"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 34 34" width="26" height="26"><rect x="3" y="20" width="6" height="11" rx="2"/><rect x="14" y="11" width="6" height="20" rx="2"/><rect x="25" y="3" width="6" height="28" rx="2"/></svg></span><span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span></span>
+      <span class="footer__meta">© <span id="year">2026</span> FDK EmpowerNet · Mobility · Energy · Telecom</span>
+      <button type="button" class="footer__top-link" id="toTop" data-cursor>Back to top <span class="footer__top-ic" aria-hidden="true">↑</span></button>
+    </div>
+  </footer>
+
+  <script src="script.js?v=37"></script>
+</body>
+</html>

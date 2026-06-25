@@ -407,6 +407,65 @@
     if (btn) btn.addEventListener("click", () => downloadSample(btn));
   });
 
+  /* ---------- Intelligence Library: live greeting + day/night mode ---------- */
+  const jGreeting = $("#jGreeting");
+  const jClock = $("#jClock");
+  const journalHero = $(".journal-hero");
+  if (jGreeting || jClock || journalHero) {
+    const updateClock = () => {
+      const d = new Date();
+      const hr = d.getHours();
+      let g = "Good evening", mode = "night";
+      if (hr >= 5 && hr < 12) { g = "Good morning"; mode = "day"; }
+      else if (hr >= 12 && hr < 18) { g = "Good afternoon"; mode = "day"; }
+      else if (hr >= 18 && hr < 22) { g = "Good evening"; mode = "night"; }
+      else { g = "Working late"; mode = "night"; }
+      if (jGreeting) jGreeting.textContent = g;
+      if (jClock) jClock.textContent = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      if (journalHero) journalHero.dataset.mode = mode;
+    };
+    updateClock();
+    setInterval(updateClock, 30000);
+  }
+
+  /* ---------- Intelligence Library: day/night filter ---------- */
+  const jfilter = $(".jfilter");
+  if (jfilter) {
+    const btns = $$(".jfilter__btn", jfilter);
+    const entries = $$(".jentry");
+    const countEl = $("#jCount");
+    const emptyEl = $("#journalEmpty");
+    btns.forEach((b) => b.addEventListener("click", () => {
+      btns.forEach((x) => x.classList.remove("is-active"));
+      b.classList.add("is-active");
+      const f = b.dataset.filter;
+      let shown = 0;
+      entries.forEach((e) => {
+        const match = f === "all" || e.dataset.type === f;
+        e.classList.toggle("is-hidden", !match);
+        if (match) shown++;
+      });
+      if (countEl) countEl.textContent = String(shown);
+      if (emptyEl) emptyEl.hidden = shown > 0;
+    }));
+  }
+
+  /* ---------- Subscribe form (front-end only) ---------- */
+  const subForm = $("#subForm");
+  const subStatus = $("#subStatus");
+  if (subForm && subStatus) {
+    subForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      const email = $("#subEmail").value.trim();
+      const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      subStatus.className = "form__status";
+      if (!ok) { subStatus.textContent = "Please enter a valid email."; subStatus.classList.add("err"); return; }
+      subForm.reset();
+      subStatus.textContent = "Subscribed — the day and night notes are on their way.";
+      subStatus.classList.add("ok");
+    });
+  }
+
   /* ---------- Contact form ---------- */
   const form = $("#briefingForm");
   const status = $("#formStatus");
