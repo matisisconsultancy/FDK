@@ -447,27 +447,9 @@
       });
       if (countEl) countEl.textContent = String(shown);
       if (emptyEl) emptyEl.hidden = shown > 0;
+      // Day → bright page, Night → dark page, All notes → dark (default)
+      document.body.classList.toggle("theme-light", f === "day");
     }));
-  }
-
-  /* ---------- Intelligence Library: page light/dark toggle ---------- */
-  const themeToggle = $("#themeToggle");
-  if (themeToggle) {
-    const themeLabel = $("#themeLabel");
-    const KEY = "fdk-journal-theme";
-    const apply = (light) => {
-      document.body.classList.toggle("theme-light", light);
-      themeToggle.setAttribute("aria-pressed", String(light));
-      if (themeLabel) themeLabel.textContent = light ? "Light" : "Dark";
-    };
-    let stored = null;
-    try { stored = localStorage.getItem(KEY); } catch (e) {}
-    apply(stored === "light");
-    themeToggle.addEventListener("click", () => {
-      const light = !document.body.classList.contains("theme-light");
-      apply(light);
-      try { localStorage.setItem(KEY, light ? "light" : "dark"); } catch (e) {}
-    });
   }
 
   /* ---------- Subscribe form (front-end only) ---------- */
