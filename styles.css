@@ -337,9 +337,10 @@ img { max-width: 100%; display: block; }
 .btn--navy { background: var(--navy); color: #fff; }
 .btn--navy:hover { background: var(--navy-soft); }
 
+.arch { background: #ffffff; }
 .arch__title { text-align: center; font-style: normal; font-weight: 500; margin-bottom: 72px; }
 .arch__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.tcard { position: relative; overflow: hidden; min-height: 400px; background: var(--paper-2); border: 1px solid transparent; border-radius: 16px; padding: 38px 32px 64px; cursor: pointer; outline: none; transition: transform 0.55s var(--ease), box-shadow 0.55s var(--ease), background 0.5s var(--ease), border-color 0.5s var(--ease); will-change: transform; }
+.tcard { position: relative; overflow: hidden; min-height: 400px; background: #f1f2f4; border: 1px solid transparent; border-radius: 16px; padding: 38px 32px 64px; cursor: pointer; outline: none; transition: transform 0.55s var(--ease), box-shadow 0.55s var(--ease), background 0.5s var(--ease), border-color 0.5s var(--ease); will-change: transform; }
 .tcard:hover, .tcard:focus-visible, .tcard.is-open { transform: translateY(-8px); background: #fff; border-color: rgba(46,224,106,0.4); box-shadow: 0 36px 60px -34px rgba(13,18,56,0.4); }
 .tcard__ghost { position: absolute; right: 16px; bottom: -28px; font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 600; font-size: 12.5rem; line-height: 0.8; color: rgba(13,18,56,0.06); pointer-events: none; transition: opacity 0.55s var(--ease), transform 0.55s var(--ease); }
 .tcard:hover .tcard__ghost, .tcard:focus-visible .tcard__ghost, .tcard.is-open .tcard__ghost { opacity: 0; transform: translateY(12px); }
