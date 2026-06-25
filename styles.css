@@ -341,11 +341,11 @@ img { max-width: 100%; display: block; }
    THESIS + AUTHOR PAGE
    ============================================================ */
 .btn__bullet--light { background: #fff; }
-.thero { display: grid; grid-template-columns: 1fr 1fr; min-height: 100svh; }
-.thero__left { background: var(--navy); position: relative; overflow: hidden; display: grid; place-items: center; }
-.thero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 1; }
-.thero__ghost { position: relative; z-index: 2; font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 300; font-size: clamp(6rem, 18vw, 18rem); color: rgba(255,255,255,0.05); letter-spacing: -6px; user-select: none; pointer-events: none; }
-.thero__right { background: var(--navy); display: flex; align-items: center; padding: 8vw 6vw; }
+.thero { position: relative; display: grid; grid-template-columns: 1fr 1fr; min-height: 100svh; background: var(--navy); overflow: hidden; }
+.thero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
+.thero__left { position: relative; z-index: 1; display: grid; place-items: center; }
+.thero__ghost { position: relative; z-index: 1; font-family: "Space Grotesk", "Inter", sans-serif; font-weight: 300; font-size: clamp(6rem, 18vw, 18rem); color: rgba(255,255,255,0.05); letter-spacing: -6px; user-select: none; pointer-events: none; }
+.thero__right { position: relative; z-index: 1; background: transparent; display: flex; align-items: center; padding: 8vw 6vw; }
 .thero__content { max-width: 640px; }
 .thero__eyebrow { color: var(--green); font-size: 1.05rem; font-weight: 600; margin-bottom: 28px; display: block; letter-spacing: 1px; }
 .thero__quote { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 600; font-style: normal; line-height: 1.18; letter-spacing: -1px; color: #fff; }
