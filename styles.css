@@ -321,7 +321,7 @@ img { max-width: 100%; display: block; }
 
 .arch__title { text-align: center; font-style: normal; font-weight: 500; margin-bottom: 72px; }
 .arch__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
-.tcard { position: relative; overflow: hidden; min-height: 440px; background: var(--paper-2); border: 1px solid transparent; border-radius: 16px; padding: 38px 32px; cursor: pointer; outline: none; transition: transform 0.55s var(--ease), box-shadow 0.55s var(--ease), background 0.5s var(--ease), border-color 0.5s var(--ease); will-change: transform; }
+.tcard { position: relative; overflow: hidden; min-height: 440px; background: var(--paper-2); border: 1px solid transparent; border-radius: 16px; padding: 38px 32px 64px; cursor: pointer; outline: none; transition: transform 0.55s var(--ease), box-shadow 0.55s var(--ease), background 0.5s var(--ease), border-color 0.5s var(--ease); will-change: transform; }
 .tcard:hover, .tcard:focus-visible, .tcard.is-open { transform: translateY(-8px); background: #fff; border-color: rgba(46,224,106,0.4); box-shadow: 0 36px 60px -34px rgba(13,18,56,0.4); }
 .tcard__icon { color: var(--green-deep); display: inline-flex; transition: transform 0.55s var(--ease); }
 .tcard:hover .tcard__icon, .tcard:focus-visible .tcard__icon, .tcard.is-open .tcard__icon { transform: translateY(-4px) scale(1.05); }
@@ -329,7 +329,7 @@ img { max-width: 100%; display: block; }
 .tcard h3 { font-family: "Space Grotesk", "Inter", sans-serif; font-size: 1.42rem; font-weight: 500; font-style: normal; line-height: 1.25; color: var(--navy); margin-top: 10px; max-width: 90%; }
 .tcard h3 span { font-weight: 400; color: var(--muted); transition: color 0.5s var(--ease); }
 .tcard:hover h3 span, .tcard:focus-visible h3 span, .tcard.is-open h3 span { color: var(--navy); }
-.tcard p { position: absolute; left: 32px; right: 32px; bottom: 56px; margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.6; opacity: 0; transform: translateY(14px); transition: opacity 0.55s var(--ease), transform 0.55s var(--ease); pointer-events: none; }
+.tcard p { margin-top: 18px; color: var(--muted); font-size: 1rem; line-height: 1.6; opacity: 0; transform: translateY(14px); transition: opacity 0.55s var(--ease), transform 0.55s var(--ease); }
 .tcard:hover p, .tcard:focus-visible p, .tcard.is-open p { opacity: 1; transform: none; }
 .tcard__hint { position: absolute; left: 32px; bottom: 28px; display: inline-flex; align-items: center; gap: 8px; font-size: 0.85rem; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--green-deep); transition: opacity 0.4s var(--ease); }
 .tcard__hint b { display: inline-grid; place-items: center; width: 22px; height: 22px; border: 1px solid currentColor; border-radius: 50%; font-weight: 400; }
