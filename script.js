@@ -158,13 +158,28 @@
   const toggle = $("#navToggle");
   const links = $("#navLinks");
   if (toggle && links) {
-    const close = () => { links.classList.remove("open"); toggle.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); };
+    const subToggle = $(".nav__sub-toggle", links);
+    const hasSub = subToggle ? subToggle.closest(".nav__has-sub") : null;
+    const close = () => {
+      links.classList.remove("open"); toggle.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+      if (hasSub) hasSub.classList.remove("is-open");
+    };
     toggle.addEventListener("click", () => {
       const open = links.classList.toggle("open");
       toggle.classList.toggle("open", open);
       toggle.setAttribute("aria-expanded", String(open));
     });
-    $$("a", links).forEach((a) => a.addEventListener("click", close));
+    // On mobile the Library item expands its submenu instead of navigating.
+    if (subToggle && hasSub) {
+      subToggle.addEventListener("click", (e) => {
+        if (window.matchMedia("(max-width: 720px)").matches) {
+          e.preventDefault();
+          hasSub.classList.toggle("is-open");
+        }
+      });
+    }
+    $$("a:not(.nav__sub-toggle)", links).forEach((a) => a.addEventListener("click", close));
   }
 
   /* ---------- Cursor ring (native cursor stays) ---------- */
