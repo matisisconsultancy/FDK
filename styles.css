@@ -280,6 +280,10 @@ img { max-width: 100%; display: block; }
 }
 /* no left spine for the photo cover (avoids a detached sliver at shallow tilt) */
 .book3d--cover .book3d__cover::before { display: none; }
+/* thinner page edge when the cover is shown small (catalog) */
+.book3d--sm.book3d--cover .book3d__cover::after { width: 12px; }
+/* real cover thumbnail inside a more-books mini card */
+.morecard__cover { flex: none; width: 46px; height: 66px; object-fit: cover; border-radius: 2px 5px 5px 2px; box-shadow: 3px 5px 12px -4px rgba(0,0,0,0.6); }
 @keyframes bookfloat3d {
   0%, 100% { transform: rotateY(-28deg) rotateX(3deg) translateY(0); }
   50% { transform: rotateY(-23deg) rotateX(3deg) translateY(-14px); }
