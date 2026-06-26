@@ -266,6 +266,10 @@ img { max-width: 100%; display: block; }
 .book3d { position: relative; width: 300px; aspect-ratio: 3 / 4.4; transform-style: preserve-3d; transform: rotateY(-26deg) rotateX(5deg); animation: bookfloat 6s var(--ease) infinite; }
 .book3d--lg { width: 340px; }
 @keyframes bookfloat { 0%,100% { transform: rotateY(-26deg) rotateX(5deg) translateY(0); } 50% { transform: rotateY(-20deg) rotateX(5deg) translateY(-16px); } }
+
+/* Real cover image presented as a tilted book */
+.bookphoto { display: grid; place-items: center; perspective: 1500px; }
+.bookphoto img { display: block; width: 340px; max-width: 80%; height: auto; border-radius: 5px; box-shadow: -30px 36px 72px -30px rgba(0,0,0,0.78), 0 8px 18px -8px rgba(0,0,0,0.5); transform-style: preserve-3d; animation: bookfloat 6s var(--ease) infinite; }
 .book3d__cover {
   position: absolute; inset: 0; border-radius: 3px 8px 8px 3px;
   background: linear-gradient(135deg, #1a2470 0%, #0c1138 70%);
