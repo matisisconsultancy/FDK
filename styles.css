@@ -284,6 +284,7 @@ img { max-width: 100%; display: block; }
    same size everywhere (width follows each cover's true shape — no cropping) */
 .book3d--lg.book3d--cover { width: auto; height: 558px; }
 .catalog-grid .book3d--sm.book3d--cover { width: auto; height: 279px; }
+.book__media .book3d--cover { width: auto; height: 500px; }
 /* thinner page edge when the cover is shown small (catalog) */
 .book3d--sm.book3d--cover .book3d__cover::after { width: 12px; }
 /* real cover thumbnail inside a more-books mini card */
