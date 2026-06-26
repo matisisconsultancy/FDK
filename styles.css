@@ -767,8 +767,12 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
    ============================================================ */
 @media (max-width: 1024px) {
   .concepts__grid, .contact__grid, .book__inner, .bhero__inner, .fbio, .acard { grid-template-columns: 1fr; gap: 50px; }
+  /* Concepts: pin the image to the top on mobile so it stays visible and
+     keeps changing while the user scrolls the list beneath it. */
+  .concepts__grid { display: block; }
+  .concepts__media-col { position: sticky; top: 70px; z-index: 4; margin-bottom: 30px; }
   .concepts__sticky { position: static; }
-  .cmedia { aspect-ratio: 16/10; }
+  .cmedia { aspect-ratio: 16/10; max-height: 32vh; }
   .missing__grid, .library__grid, .arch__grid, .inside__list, .buy__grid, .series__grid, .catalog-grid, .jgrid { grid-template-columns: 1fr 1fr; }
   .footer__main { grid-template-columns: 1fr; gap: 44px; }
   .fbio__media { min-height: 56vh; }
