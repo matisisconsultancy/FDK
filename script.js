@@ -170,10 +170,11 @@
       toggle.classList.toggle("open", open);
       toggle.setAttribute("aria-expanded", String(open));
     });
-    // On mobile the Library item expands its submenu instead of navigating.
+    // On mobile, tapping the caret expands the submenu; tapping the Library
+    // label itself still navigates to the Library page.
     if (subToggle && hasSub) {
       subToggle.addEventListener("click", (e) => {
-        if (window.matchMedia("(max-width: 720px)").matches) {
+        if (window.matchMedia("(max-width: 720px)").matches && e.target.closest(".nav__caret")) {
           e.preventDefault();
           hasSub.classList.toggle("is-open");
         }
