@@ -879,7 +879,7 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 .art-sign__mark { color: var(--green); display: inline-flex; }
 
 /* More-entries gallery */
-.art-more { padding: 26px 0 18px; }
+.art-more { padding: 26px 0 72px; }
 .art-more__head { margin-bottom: 30px; }
 .art-more__head .art-h2 { margin-top: 0; }
 .art-more__grid { margin-top: 0; }
