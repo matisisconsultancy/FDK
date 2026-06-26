@@ -493,44 +493,164 @@
     ],
   };
 
-  function downloadSample(btn) {
-    const title = (btn && btn.dataset.title) || "The European Pivot";
-    const sub = (btn && btn.dataset.sub) || "How Europe Will Finance the Industrial Age of AI";
-    const body = BOOK_SAMPLES[title] || [
-      "Speed has replaced scale.",
-      "",
-      "For a century, competitive advantage was a function of size. The firm with the",
-      "most assets, the widest distribution and the deepest balance sheet could outlast",
-      "and outspend its rivals. Scale was the moat. That logic is now inverting.",
-      "",
-      "In an economy where intelligence compounds with every interaction, the decisive",
-      "variable is no longer how much a company owns — it is how quickly it learns.",
-    ];
-    const text = [
-      title.toUpperCase(),
-      sub,
-      "Francesco de Leo Kaufmann — FDK EmpowerNet",
-      "",
-      "— SAMPLE —",
-      "",
-      ...body,
-      "",
-      "— End of sample —",
-      "Buy the full book: info@fdkempowernet.com",
-    ].join("\n");
-    const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = title.replace(/[^a-z0-9]+/gi, "-").replace(/^-|-$/g, "") + "-sample.txt";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  /* ---------- Sample reader: in-page preview + soft email gate ----------
+     Opens a premium reading modal with the book's opening chapter. After a
+     short teaser, a soft gate invites the reader to unlock the rest by
+     joining The Velocity Edge (captured via Kit / ConvertKit). It is a SOFT
+     gate: readers can skip and keep reading either way.
+     To go live: paste your Kit/ConvertKit form ID into CK_FORM_ID below. */
+  const CK_FORM_ID = "YOUR_KIT_FORM_ID"; // ← replace with your Kit form ID
+  const PREVIEW_KEY = "fdk_preview_unlocked";
+  const DEFAULT_SAMPLE = [
+    "Speed has replaced scale.",
+    "",
+    "For a century, competitive advantage was a function of size. The firm with the most assets, the widest distribution and the deepest balance sheet could outlast and outspend its rivals. Scale was the moat. That logic is now inverting.",
+    "",
+    "In an economy where intelligence compounds with every interaction, the decisive variable is no longer how much a company owns — it is how quickly it learns.",
+  ];
+
+  const isUnlocked = () => { try { return localStorage.getItem(PREVIEW_KEY) === "1"; } catch (e) { return false; } };
+  const setUnlocked = () => { try { localStorage.setItem(PREVIEW_KEY, "1"); } catch (e) {} };
+
+  function parseSample(lines) {
+    const out = { chapter: "", paras: [] };
+    let i = 0;
+    while (i < lines.length && !lines[i].trim()) i++;
+    if (i < lines.length) { out.chapter = lines[i].trim(); i++; }
+    let cur = [];
+    for (; i < lines.length; i++) {
+      const ln = lines[i];
+      if (!ln.trim()) { if (cur.length) { out.paras.push(cur.join(" ")); cur = []; } }
+      else cur.push(ln.trim());
+    }
+    if (cur.length) out.paras.push(cur.join(" "));
+    return out;
   }
+
+  async function ckSubscribe(email, book) {
+    if (!CK_FORM_ID || CK_FORM_ID === "YOUR_KIT_FORM_ID") return { ok: true, placeholder: true };
+    try {
+      const res = await fetch("https://app.kit.com/forms/" + CK_FORM_ID + "/subscriptions", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({ email_address: email, fields: { book_interest: book } }),
+      });
+      return { ok: res.ok };
+    } catch (e) { return { ok: false }; }
+  }
+
+  let readerEl = null;
+  const rq = (k) => readerEl.querySelector('[data-r="' + k + '"]');
+
+  function buildReader() {
+    const el = document.createElement("div");
+    el.className = "reader"; el.id = "sampleReader"; el.hidden = true;
+    el.innerHTML =
+      '<div class="reader__backdrop" data-reader-close></div>' +
+      '<div class="reader__panel" role="dialog" aria-modal="true" aria-label="Book preview">' +
+        '<button class="reader__close" type="button" aria-label="Close preview" data-reader-close>&times;</button>' +
+        '<div class="reader__scroll">' +
+          '<span class="reader__eyebrow">Opening chapter · Preview</span>' +
+          '<h2 class="reader__title" data-r="title"></h2>' +
+          '<p class="reader__sub" data-r="sub"></p>' +
+          '<span class="reader__byline">Francesco de Leo Kaufmann · FDK EmpowerNet</span>' +
+          '<p class="reader__chapter" data-r="chapter"></p>' +
+          '<div class="reader__body" data-r="teaser"></div>' +
+          '<div data-r="gatewrap"></div>' +
+          '<div class="reader__body reader__rest" data-r="rest" hidden></div>' +
+          '<div class="reader__foot" data-r="foot" hidden>' +
+            '<p>That’s the opening. The full argument continues in the book.</p>' +
+            '<a class="reader__buy" href="#buy" data-reader-close>Get the book <span aria-hidden="true">→</span></a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    document.body.appendChild(el);
+    el.addEventListener("click", (e) => { if (e.target.closest("[data-reader-close]")) closeReader(); });
+    return el;
+  }
+
+  function gateHTML() {
+    return '<div class="reader__gate" data-r="gate">' +
+      '<span class="reader__gate-label">Keep reading · free</span>' +
+      '<h3>Unlock the full opening chapter — and get The Velocity Edge.</h3>' +
+      '<p>FdK’s journal for board-level AI decisions, delivered to your inbox. Add your email to read the rest of the chapter now.</p>' +
+      '<form class="reader__form" data-r="form" novalidate>' +
+        '<input class="reader__input" type="email" name="email" required placeholder="you@company.com" autocomplete="email" aria-label="Email address" />' +
+        '<button class="reader__submit" type="submit">Send me the chapter <span aria-hidden="true">→</span></button>' +
+      '</form>' +
+      '<button class="reader__skip" type="button" data-r="skip">No thanks — just let me read</button>' +
+      '<p class="reader__msg" data-r="msg" hidden></p>' +
+    '</div>';
+  }
+
+  const showMsg = (el, text, kind) => { el.hidden = false; el.textContent = text; el.className = "reader__msg reader__msg--" + kind; };
+  const revealRest = () => { rq("rest").hidden = false; rq("foot").hidden = false; };
+
+  function wireGate() {
+    const form = rq("form"), skip = rq("skip"), msg = rq("msg"), gate = rq("gate");
+    skip.addEventListener("click", () => { revealRest(); skip.remove(); });
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const input = form.querySelector(".reader__input");
+      const email = (input.value || "").trim();
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showMsg(msg, "Please enter a valid email address.", "err"); input.focus(); return; }
+      const submit = form.querySelector(".reader__submit");
+      submit.disabled = true; submit.textContent = "Sending…";
+      const res = await ckSubscribe(email, rq("title").textContent);
+      setUnlocked();
+      revealRest();
+      gate.classList.add("reader__gate--done");
+      form.hidden = true; skip.hidden = true;
+      showMsg(msg, res.ok
+        ? "You’re in — The Velocity Edge is on its way. Enjoy the chapter."
+        : "Enjoy the chapter. We couldn’t confirm the subscription just now — please try again later.", "ok");
+    });
+  }
+
+  function openSampleReader(btn) {
+    if (!readerEl) readerEl = buildReader();
+    const title = (btn && btn.dataset.title) || "The European Pivot";
+    const sub = (btn && btn.dataset.sub) || "";
+    const { chapter, paras } = parseSample(BOOK_SAMPLES[title] || DEFAULT_SAMPLE);
+    rq("title").textContent = title;
+    rq("sub").textContent = sub;
+    rq("chapter").textContent = chapter;
+    const unlocked = isUnlocked();
+    const teaserCount = Math.min(2, Math.max(1, paras.length - 1));
+    const teaser = unlocked ? paras : paras.slice(0, teaserCount);
+    const rest = unlocked ? [] : paras.slice(teaserCount);
+    const toP = (arr) => arr.map((p) => "<p>" + p + "</p>").join("");
+    rq("teaser").innerHTML = toP(teaser);
+    rq("rest").innerHTML = toP(rest);
+    const gatewrap = rq("gatewrap");
+    if (rest.length === 0) {
+      gatewrap.innerHTML = "";
+      rq("rest").hidden = false; rq("foot").hidden = false;
+    } else {
+      gatewrap.innerHTML = gateHTML();
+      rq("rest").hidden = true; rq("foot").hidden = true;
+      wireGate();
+    }
+    rq("rest").scrollTop = 0;
+    readerEl.querySelector(".reader__scroll").scrollTop = 0;
+    readerEl.hidden = false;
+    document.body.classList.add("reader-open");
+    requestAnimationFrame(() => readerEl.classList.add("is-open"));
+    const focusEl = readerEl.querySelector(".reader__input") || readerEl.querySelector(".reader__close");
+    setTimeout(() => { if (focusEl) focusEl.focus({ preventScroll: true }); }, 90);
+  }
+
+  function closeReader() {
+    if (!readerEl || readerEl.hidden) return;
+    readerEl.classList.remove("is-open");
+    document.body.classList.remove("reader-open");
+    setTimeout(() => { readerEl.hidden = true; }, 400);
+  }
+
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeReader(); });
   ["#downloadSample", "#downloadSample2"].forEach((sel) => {
     const btn = $(sel);
-    if (btn) btn.addEventListener("click", () => downloadSample(btn));
+    if (btn) btn.addEventListener("click", () => openSampleReader(btn));
   });
 
   /* ---------- Intelligence Library: live greeting + day/night mode ---------- */

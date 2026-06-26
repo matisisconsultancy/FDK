@@ -1094,3 +1094,54 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
   .jgrid { gap: 22px; }
   .jsub__inner { padding: 34px 24px; }
 }
+
+/* ============================================================
+   SAMPLE READER — in-page preview + soft email gate
+   A premium light reading modal used by the book "Read the
+   chapter" buttons; captures emails into The Velocity Edge (Kit).
+   ============================================================ */
+.reader { position: fixed; inset: 0; z-index: 1500; display: flex; align-items: center; justify-content: center; padding: 24px; }
+.reader[hidden] { display: none; }
+.reader [hidden] { display: none !important; }
+.reader__backdrop { position: absolute; inset: 0; background: rgba(7,10,36,0.68); backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px); opacity: 0; transition: opacity 0.4s var(--ease); }
+.reader.is-open .reader__backdrop { opacity: 1; }
+.reader__panel { position: relative; width: min(680px, 100%); max-height: 90vh; display: flex; flex-direction: column; background: #fff; color: var(--ink); border-radius: 20px; box-shadow: 0 44px 110px -34px rgba(0,0,0,0.65); overflow: hidden; transform: translateY(18px) scale(0.985); opacity: 0; transition: transform 0.45s var(--ease), opacity 0.4s var(--ease); }
+.reader.is-open .reader__panel { transform: none; opacity: 1; }
+.reader__close { position: absolute; top: 14px; right: 16px; z-index: 4; width: 38px; height: 38px; border: 0; border-radius: 50%; background: rgba(17,20,46,0.06); color: var(--ink); font-size: 1.4rem; line-height: 1; cursor: pointer; display: grid; place-items: center; transition: background 0.3s var(--ease); }
+.reader__close:hover { background: rgba(17,20,46,0.12); }
+.reader__scroll { overflow-y: auto; padding: clamp(30px, 5vw, 54px); -webkit-overflow-scrolling: touch; }
+.reader__eyebrow { font-family: var(--font-mono); font-size: 0.72rem; letter-spacing: 2px; text-transform: uppercase; color: var(--green-deep); }
+.reader__title { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.6rem, 4vw, 2.3rem); letter-spacing: -1px; line-height: 1.08; margin: 12px 0 6px; }
+.reader__sub { color: var(--muted); font-size: 1.02rem; }
+.reader__byline { display: block; margin-top: 14px; padding-bottom: 22px; border-bottom: 1px solid rgba(17,20,46,0.1); font-family: var(--font-mono); font-size: 0.76rem; letter-spacing: 0.3px; color: var(--muted-light); }
+.reader__chapter { margin: 26px 0 18px; font-family: var(--font-display); font-weight: 500; font-size: 1.12rem; letter-spacing: 0.2px; color: var(--ink); }
+.reader__body p { font-size: 1.06rem; line-height: 1.75; color: rgba(17,20,46,0.82); margin: 0 0 18px; }
+.reader__rest[hidden] { display: none; }
+/* Soft gate */
+.reader__gate { position: relative; margin: 6px 0 8px; padding: 28px clamp(20px,4vw,32px); border-radius: 16px; background: linear-gradient(160deg, rgba(46,224,106,0.1), rgba(124,139,255,0.08)); border: 1px solid rgba(17,20,46,0.1); }
+.reader__gate::before { content: ""; position: absolute; left: 0; right: 0; top: -64px; height: 64px; background: linear-gradient(to bottom, rgba(255,255,255,0), #fff); pointer-events: none; }
+.reader__gate-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green-deep); }
+.reader__gate h3 { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.15rem,2.4vw,1.4rem); letter-spacing: -0.3px; line-height: 1.25; margin: 8px 0 6px; color: var(--ink); }
+.reader__gate > p { color: var(--muted); font-size: 0.96rem; line-height: 1.5; margin-bottom: 18px; }
+.reader__form { display: flex; gap: 10px; flex-wrap: wrap; }
+.reader__input { flex: 1 1 220px; min-width: 0; padding: 13px 18px; border-radius: 100px; border: 1px solid rgba(17,20,46,0.18); background: #fff; font: inherit; font-size: 0.95rem; color: var(--ink); transition: border-color 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+.reader__input::placeholder { color: var(--muted-light); }
+.reader__input:focus { outline: none; border-color: var(--green-deep); box-shadow: 0 0 0 3px rgba(46,224,106,0.18); }
+.reader__submit { flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 13px 22px; border: 0; border-radius: 100px; background: var(--green); color: var(--navy-deep); font-family: inherit; font-weight: 600; font-size: 0.94rem; cursor: pointer; box-shadow: 0 12px 28px -12px rgba(46,224,106,0.8); transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
+.reader__submit:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -14px rgba(46,224,106,0.85); }
+.reader__submit[disabled] { opacity: 0.6; cursor: default; transform: none; }
+.reader__skip { display: inline-block; margin-top: 14px; padding: 0; background: none; border: 0; color: var(--muted); font-size: 0.86rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; transition: color 0.3s var(--ease); }
+.reader__skip:hover { color: var(--ink); }
+.reader__msg { margin: 12px 0 0; font-size: 0.9rem; font-weight: 500; }
+.reader__msg--ok { color: var(--green-deep); }
+.reader__msg--err { color: #c0392b; }
+.reader__gate--done { background: rgba(46,224,106,0.08); border-color: rgba(46,224,106,0.3); }
+.reader__foot { margin-top: 26px; padding-top: 22px; border-top: 1px solid rgba(17,20,46,0.1); display: flex; flex-wrap: wrap; gap: 12px 18px; align-items: center; justify-content: space-between; }
+.reader__foot p { margin: 0; font-size: 0.92rem; color: var(--muted); }
+.reader__buy { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.92rem; color: var(--green-deep); }
+body.reader-open { overflow: hidden; }
+@media (max-width: 560px) {
+  .reader { padding: 0; align-items: flex-end; }
+  .reader__panel { max-height: 94vh; border-radius: 20px 20px 0 0; width: 100%; }
+  .reader__submit { flex: 1 1 100%; justify-content: center; }
+}
