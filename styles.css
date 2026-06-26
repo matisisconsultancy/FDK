@@ -796,6 +796,8 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
   .nav__cta { justify-content: center; margin: 6px 0 0; padding: 12px 22px; }
   .nav__toggle { display: flex; }
   .hero__side { display: none; }
+  /* Founder photo: centre Francesco so he isn't cropped on narrow screens */
+  .founderteaser__media img { transform: none; object-position: 58% 22%; }
   .missing__grid, .library__grid, .arch__grid, .inside__list, .buy__grid, .series__grid, .catalog-grid, .jgrid, .morebooks__grid { grid-template-columns: 1fr; }
   .morecard { gap: 16px; padding: 16px 18px; }
   .morecard > div { min-width: 0; }
