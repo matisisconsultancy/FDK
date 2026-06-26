@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=55" />
+  <link rel="stylesheet" href="styles.css?v=56" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -57,11 +57,11 @@
             <button class="jfilter__btn" data-filter="day" data-cursor><span class="jic jic--sun" aria-hidden="true"></span> Day</button>
             <button class="jfilter__btn" data-filter="night" data-cursor><span class="jic jic--moon" aria-hidden="true"></span> Night</button>
           </div>
-          <span class="jbar__count"><b>3</b> notes · updated daily</span>
+          <span class="jbar__count"><b id="jCount">3</b> notes · updated daily</span>
         </div>
 
         <!-- FEATURED (latest) -->
-        <a class="jfeatured jfeatured--day reveal-up" data-phase="dawn" href="the-ai-reckoning-begins.html" data-cursor>
+        <a class="jfeatured jfeatured--day reveal-up" id="jFeatured" data-phase="dawn" href="the-ai-reckoning-begins.html" data-cursor>
           <span class="jfeatured__stars" aria-hidden="true"></span>
           <div class="jfeatured__body">
             <div class="jcard__top">
@@ -139,6 +139,7 @@
     </div>
   </footer>
 
-  <script src="script.js?v=55"></script>
+  <script src="posts.js?v=56"></script>
+  <script src="script.js?v=56"></script>
 </body>
 </html>

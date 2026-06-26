@@ -65,15 +65,47 @@
   }
 
   /* ---------- Scroll reveal ---------- */
-  const revealTargets = $$("[data-reveal-text], [data-reveal-block], .reveal-up, .reveal-img")
-    .filter((el) => !el.closest(".hero")); // hero revealed by preloader
+  let revealIO = null;
   if ("IntersectionObserver" in window && !reduceMotion) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+    revealIO = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); revealIO.unobserve(e.target); } });
     }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
-    revealTargets.forEach((el) => io.observe(el));
-  } else {
-    revealTargets.forEach((el) => el.classList.add("in"));
+  }
+  // Observe reveal targets (works for static and dynamically-injected nodes).
+  const revealObserve = (els) => els.forEach((el) => { if (revealIO) revealIO.observe(el); else el.classList.add("in"); });
+  revealObserve($$("[data-reveal-text], [data-reveal-block], .reveal-up, .reveal-img").filter((el) => !el.closest(".hero")));
+
+  /* ---------- The Velocity Edge: data-driven entries (posts.js) ---------- */
+  const POSTS = (window.FDK_POSTS || []).slice();
+  const lcardHTML = (p) => `
+    <a href="${p.url}" class="lcard reveal-up" data-cursor>
+      <div class="lcard__media"><img src="${p.image}" alt="" loading="lazy" onerror="this.closest('.lcard__media').classList.add('img--fail')"/></div>
+      <span class="lcard__tag">${p.tag}</span>
+      <h3>${p.title}</h3>
+      <p>${p.excerpt}</p>
+      <span class="lcard__more">Read note →</span>
+    </a>`;
+  const currentPage = (location.pathname.split("/").pop() || "index.html");
+
+  // Home teaser cards — show the latest 3 entries.
+  const homeGrid = $(".library .library__grid");
+  if (homeGrid && POSTS.length) {
+    homeGrid.innerHTML = POSTS.slice(0, 3).map(lcardHTML).join("");
+    revealObserve($$(".lcard", homeGrid));
+  }
+
+  // Article footer gallery — every other entry, so readers can hop across notes.
+  const moreGrid = $("#artMoreGrid");
+  if (moreGrid) {
+    const others = POSTS.filter((p) => p.url !== currentPage).slice(0, 3);
+    const sec = moreGrid.closest(".art-more");
+    if (others.length) {
+      moreGrid.className = "library__grid art-more__grid" + (others.length <= 2 ? " jgrid--pair" : "");
+      moreGrid.innerHTML = others.map(lcardHTML).join("");
+      revealObserve($$(".lcard", moreGrid));
+    } else if (sec) {
+      sec.hidden = true;
+    }
   }
 
   /* ---------- Preloader ---------- */
@@ -421,47 +453,56 @@
     if (h >= 2 && h < 5) return { key: "late", dark: true };
     return { key: "night", dark: true }; // 20:00–02:00
   };
-  const hourOf = (el) => {
-    const m = (el.textContent || "").match(/(\d{1,2}):\d{2}/);
-    return m ? parseInt(m[1], 10) : 12;
-  };
+  const hourFromTime = (t) => { const m = String(t || "").match(/(\d{1,2})/); return m ? parseInt(m[1], 10) : 12; };
   const jGreeting = $("#jGreeting");
   const jClock = $("#jClock");
   const journalHero = $(".journal-hero");
   if (jGreeting || jClock || journalHero) {
-    // Featured banner mirrors the latest note for the current time-of-day,
-    // switching its background between day (white) and night (navy).
-    const featured = $("#jFeatured");
-    const fillFeatured = (mode) => {
-      if (!featured) return;
-      const posts = $$(`.jpost[data-type="${mode}"]`);
-      const latest = posts[posts.length - 1];
-      if (!latest) return;
-      const get = (sel) => { const el = latest.querySelector(sel); return el ? el.textContent.trim() : ""; };
-      const badge = get(".jpost__badge");
-      const time = badge.split("·")[0].trim();
-      const tag = get(".jpost__tag");
-      const cat = tag.includes("·") ? tag.split("·").slice(1).join("·").trim() : tag;
-      // Background follows the publish hour of the note being featured.
-      const ph = phaseOf(hourOf(latest.querySelector(".jpost__badge") || latest));
-      const isNight = ph.dark;
-
-      featured.dataset.phase = ph.key;
-      featured.classList.toggle("jfeatured--night", isNight);
-      featured.classList.toggle("jfeatured--day", !isNight);
-      featured.setAttribute("href", latest.getAttribute("href") || "#");
-
-      const typeEl = featured.querySelector(".jtype");
-      if (typeEl) {
-        typeEl.className = "jtype " + (isNight ? "jtype--night" : "jtype--day");
-        typeEl.innerHTML = `<span class="jic ${isNight ? "jic--moon" : "jic--sun"}" aria-hidden="true"></span> ${tag}`;
+    // Render the journal from the shared entry list: newest = featured, rest = grid.
+    const renderJournal = () => {
+      if (!POSTS.length) return;
+      const featured = $("#jFeatured");
+      if (featured) {
+        const p = POSTS[0];
+        const ph = phaseOf(hourFromTime(p.time));
+        const dn = ph.dark ? "night" : "day";
+        const cat = p.tag.includes("·") ? p.tag.split("·").slice(1).join("·").trim() : p.tag;
+        featured.href = p.url;
+        featured.dataset.phase = ph.key;
+        featured.className = `jfeatured jfeatured--${dn} reveal-up`;
+        featured.innerHTML = `
+          <span class="jfeatured__stars" aria-hidden="true"></span>
+          <div class="jfeatured__body">
+            <div class="jcard__top">
+              <span class="jtype jtype--${dn}"><span class="jic jic--${ph.dark ? "moon" : "sun"}" aria-hidden="true"></span> ${p.tag}</span>
+              <span class="jtime">${p.date}</span>
+            </div>
+            <h2 class="jfeatured__title">${p.title}</h2>
+            <p class="jfeatured__excerpt">${p.excerpt}</p>
+            <div class="jcard__foot"><span class="jtags">${cat}</span><span class="jread">${p.read} →</span></div>
+          </div>`;
       }
-      const set = (sel, val) => { const el = featured.querySelector(sel); if (el) el.textContent = val; };
-      set(".jtime", time ? `Today · ${time}` : "Today");
-      set(".jfeatured__title", get("h3"));
-      set(".jfeatured__excerpt", get("p"));
-      set(".jtags", cat);
+      const grid = $("#journalGrid");
+      if (grid) {
+        const rest = POSTS.slice(1);
+        grid.className = "jgrid" + (rest.length <= 2 ? " jgrid--pair" : "");
+        grid.innerHTML = rest.map((p) => {
+          const ph = phaseOf(hourFromTime(p.time));
+          const dn = ph.dark ? "night" : "day";
+          return `<a class="jpost jpost--${dn} reveal-up" data-type="${p.kind}" data-phase="${ph.key}" href="${p.url}" data-cursor>
+            <div class="jpost__media"><img src="${p.image}" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--${ph.dark ? "moon" : "sun"}"></span> ${p.time} · ${p.slot}</span></div>
+            <span class="jpost__tag">${p.tag}</span>
+            <h3>${p.title}</h3>
+            <p>${p.excerpt}</p>
+            <span class="jpost__more">Read note →</span>
+          </a>`;
+        }).join("");
+      }
+      const countEl = $("#jCount");
+      if (countEl) countEl.textContent = String(POSTS.length);
+      revealObserve($$("#jFeatured, #journalGrid .jpost"));
     };
+    renderJournal();
 
     const updateClock = () => {
       const d = new Date();
@@ -474,21 +515,10 @@
       if (jGreeting) jGreeting.textContent = g;
       if (jClock) jClock.textContent = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
       if (journalHero) journalHero.dataset.mode = mode;
-      fillFeatured(mode);
       if (journalManualTheme === null) applyJournalTheme(mode === "day");
     };
     updateClock();
     setInterval(updateClock, 30000);
-
-    // Tint each note card by the hour it was published.
-    $$(".jpost").forEach((card) => {
-      const ph = phaseOf(hourOf(card.querySelector(".jpost__badge") || card));
-      card.dataset.phase = ph.key;
-      card.classList.toggle("jpost--night", ph.dark);
-      card.classList.toggle("jpost--day", !ph.dark);
-      const ic = card.querySelector(".jpost__badge .jic");
-      if (ic) ic.className = "jic " + (ph.dark ? "jic--moon" : "jic--sun");
-    });
   }
 
   /* ---------- Intelligence Library: day/night filter ---------- */

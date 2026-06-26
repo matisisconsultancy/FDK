@@ -874,6 +874,12 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 .art-sign { display: inline-flex; align-items: center; gap: 12px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.1); width: 100%; font-family: var(--font-mono); font-size: 0.82rem; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); }
 .art-sign__mark { color: var(--green); display: inline-flex; }
 
+/* More-entries gallery */
+.art-more { padding: 26px 0 18px; }
+.art-more__head { margin-bottom: 30px; }
+.art-more__head .art-h2 { margin-top: 0; }
+.art-more__grid { margin-top: 0; }
+
 /* Back-to-journal CTA */
 .art-next { padding: 0 0 110px; }
 .art-next__inner { display: grid; grid-template-columns: 1.4fr auto; gap: 36px; align-items: center; padding: 44px clamp(28px,4vw,52px); border-radius: 22px; background: linear-gradient(120deg, rgba(46,224,106,0.12), rgba(124,139,255,0.1)); border: 1px solid rgba(255,255,255,0.1); }
