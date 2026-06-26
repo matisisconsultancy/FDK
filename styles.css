@@ -285,7 +285,8 @@ img { max-width: 100%; display: block; }
    LIBRARY (navy)
    ============================================================ */
 .library .section__head { margin-bottom: 60px; }
-.library__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.library__cta { margin-top: 30px; }
+.library__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; margin-top: 56px; }
 .lcard { display: flex; flex-direction: column; gap: 14px; }
 .lcard__media { aspect-ratio: 16/11; overflow: hidden; border-radius: 8px; background: rgba(255,255,255,0.06); margin-bottom: 8px; }
 .lcard__media img { width: 100%; height: 100%; object-fit: cover; transition: transform 1s var(--ease); filter: grayscale(0.3); }
