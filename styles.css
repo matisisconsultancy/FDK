@@ -102,6 +102,18 @@ img { max-width: 100%; display: block; }
 .nav__cta:hover { background: #fff; transform: translateY(-2px); box-shadow: 0 16px 32px -12px rgba(46, 224, 106, 0.6); }
 .nav__cta span { display: inline-block; transition: transform 0.3s var(--ease); }
 .nav__cta:hover span { transform: translateX(5px); }
+
+/* Library dropdown submenu */
+.nav__has-sub { position: relative; display: inline-flex; align-items: center; }
+.nav__sub-toggle { display: inline-flex !important; align-items: center; gap: 7px; }
+.nav__caret { width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.3s var(--ease); opacity: 0.85; }
+.nav__has-sub:hover .nav__caret, .nav__has-sub:focus-within .nav__caret { transform: rotate(225deg) translate(-1px,-1px); }
+.nav__submenu { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(6px); min-width: 250px; margin-top: 12px; background: rgba(7,10,36,0.92); backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px); border: 1px solid rgba(255,255,255,0.12); border-radius: 16px; padding: 8px; display: flex; flex-direction: column; gap: 2px; opacity: 0; visibility: hidden; transition: opacity 0.28s var(--ease), transform 0.28s var(--ease), visibility 0.28s; box-shadow: 0 26px 54px -22px rgba(0,0,0,0.75); z-index: 20; }
+.nav__submenu::before { content: ""; position: absolute; top: -14px; left: 0; right: 0; height: 14px; }
+.nav__has-sub:hover .nav__submenu, .nav__has-sub:focus-within .nav__submenu { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
+.nav__submenu a { padding: 11px 14px !important; border-radius: 10px; color: rgba(255,255,255,0.82) !important; font-size: 0.9rem !important; font-weight: 500; white-space: nowrap; background: none !important; }
+.nav__submenu a:hover { background: rgba(255,255,255,0.09) !important; color: #fff !important; }
+.nav__submenu-all { color: var(--green) !important; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 4px; padding-top: 12px !important; }
 .nav__toggle { display: none; flex-direction: column; gap: 6px; background: none; border: 0; cursor: pointer; padding: 8px; }
 .nav__toggle span { width: 24px; height: 2px; background: #fff; transition: 0.35s var(--ease); }
 .nav__toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -531,7 +543,7 @@ img { max-width: 100%; display: block; }
 .libhero__sub { color: rgba(255,255,255,0.74); font-size: clamp(1.05rem, 1.8vw, 1.3rem); line-height: var(--lh-lead); max-width: 640px; margin-top: 26px; }
 
 .library-page { background: var(--navy-deep); color: #fff; padding: 88px 0 130px; }
-.catalog-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+.catalog-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
 .catalog-grid .bookcard__stage { padding: 12px 0 30px; }
 .catalog-grid .book3d--sm { width: 170px; }
 .catalog-grid .book3d--sm .book3d__title { font-size: 1.5rem; }
@@ -770,6 +782,11 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
   .nav__links { position: fixed; inset: 94px 14px auto 14px; flex-direction: column; gap: 4px; background: rgba(7,10,36,0.96); backdrop-filter: blur(18px); border: 1px solid rgba(255,255,255,0.12); border-radius: 22px; padding: 14px; transform: translateY(-130%); opacity: 0; transition: transform 0.45s var(--ease), opacity 0.3s var(--ease); align-items: stretch; }
   .nav__links.open { transform: none; opacity: 1; }
   .nav__links a:not(.nav__cta) { padding: 14px 16px; border-radius: 12px; }
+  .nav__has-sub { display: block; width: 100%; }
+  .nav__caret { display: none; }
+  .nav__submenu { position: static; transform: none !important; opacity: 1; visibility: visible; min-width: 0; margin: 2px 0 6px; padding: 4px 0 4px 12px; background: none; border: none; border-left: 1px solid rgba(255,255,255,0.14); border-radius: 0; box-shadow: none; backdrop-filter: none; -webkit-backdrop-filter: none; }
+  .nav__submenu::before { display: none; }
+  .nav__submenu a { padding: 11px 14px !important; font-size: 0.86rem !important; }
   .nav__cta { justify-content: center; margin: 8px 0 0; }
   .nav__toggle { display: flex; }
   .hero__side { display: none; }

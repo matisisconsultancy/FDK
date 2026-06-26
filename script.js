@@ -464,8 +464,8 @@
   };
 
   function downloadSample(btn) {
-    const title = (btn && btn.dataset.title) || "Velocity Capitalism";
-    const sub = (btn && btn.dataset.sub) || "How Artificial Intelligence Rewrites Competitive Advantage";
+    const title = (btn && btn.dataset.title) || "The European Pivot";
+    const sub = (btn && btn.dataset.sub) || "How Europe Will Finance the Industrial Age of AI";
     const body = BOOK_SAMPLES[title] || [
       "Speed has replaced scale.",
       "",

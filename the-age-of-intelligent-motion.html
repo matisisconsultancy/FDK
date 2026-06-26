@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=76" />
+  <link rel="stylesheet" href="styles.css?v=77" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -26,7 +26,15 @@
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="index.html" data-cursor>Home</a>
         <a href="thesis.html" data-cursor>Thesis + Author</a>
-        <a href="library.html" class="is-current" data-cursor>Library</a>
+        <div class="nav__has-sub">
+          <a href="library.html" class="nav__sub-toggle is-current" data-cursor>Library <span class="nav__caret" aria-hidden="true"></span></a>
+          <div class="nav__submenu">
+            <a href="the-european-pivot.html" data-cursor>The European Pivot</a>
+            <a href="the-age-of-intelligent-motion.html" data-cursor>The Age of Intelligent Motion</a>
+            <a href="the-rise-of-velocity.html" data-cursor>The Rise of Velocity</a>
+            <a href="library.html" class="nav__submenu-all" data-cursor>View the full Library &rarr;</a>
+          </div>
+        </div>
         <a href="index.html#contact" data-cursor>Contact</a>
         <a href="intelligence-library.html" class="nav__cta magnetic" data-cursor>The Velocity Edge <span aria-hidden="true">→</span></a>
       </nav>
@@ -43,7 +51,7 @@
         <div class="bhero__media">
           <div class="book3d book3d--lg book3d--cover" id="book3d" style="--cover-ar: 760 / 1185;">
             <div class="book3d__cover">
-              <img class="book3d__img" src="assets/the-age-of-intelligent-motion-cover.jpg?v=76" width="760" height="1185" alt="The Age of Intelligent Motion — book cover" />
+              <img class="book3d__img" src="assets/the-age-of-intelligent-motion-cover.jpg?v=77" width="760" height="1185" alt="The Age of Intelligent Motion — book cover" />
             </div>
           </div>
         </div>
@@ -158,8 +166,7 @@
           <h2 class="section__title section__title--light" data-reveal-text>More from the Library</h2>
         </div>
         <div class="morebooks__grid">
-          <a class="morecard reveal-up" href="velocity-capitalism.html" data-cursor><span class="morecard__spine" aria-hidden="true"></span><div><h4>Velocity Capitalism</h4><span>New · 2026</span></div></a>
-          <a class="morecard reveal-up" href="the-european-pivot.html" data-cursor><img class="morecard__cover" src="assets/european-pivot-cover.jpg?v=76" width="760" height="1247" alt="" /><div><h4>The European Pivot</h4><span>Strategy</span></div></a>
+          <a class="morecard reveal-up" href="the-european-pivot.html" data-cursor><img class="morecard__cover" src="assets/european-pivot-cover.jpg?v=77" width="760" height="1247" alt="" /><div><h4>The European Pivot</h4><span>Strategy</span></div></a>
           <a class="morecard reveal-up" href="the-rise-of-velocity.html" data-cursor><span class="morecard__spine" aria-hidden="true"></span><div><h4>The Rise of Velocity</h4><span>Velocity</span></div></a>
         </div>
         <p class="reveal-up" style="margin-top:34px;"><a href="library.html" class="bookcard__link" data-cursor>← Back to the full Library</a></p>
@@ -188,6 +195,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=76"></script>
+  <script src="script.js?v=77"></script>
 </body>
 </html>

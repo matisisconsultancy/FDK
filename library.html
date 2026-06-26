@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The FDK EmpowerNet Library — four volumes on where artificial intelligence creates structural advantage. Preview, sample and buy each title." />
+  <meta name="description" content="The FDK EmpowerNet Library — three volumes on where artificial intelligence creates structural advantage. Preview, sample and buy each title." />
   <meta name="theme-color" content="#0a0e2e" />
   <title>Library · FDK EmpowerNet</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=76" />
+  <link rel="stylesheet" href="styles.css?v=77" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -26,7 +26,15 @@
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="index.html" data-cursor>Home</a>
         <a href="thesis.html" data-cursor>Thesis + Author</a>
-        <a href="library.html" class="is-current" data-cursor>Library</a>
+        <div class="nav__has-sub">
+          <a href="library.html" class="nav__sub-toggle is-current" data-cursor>Library <span class="nav__caret" aria-hidden="true"></span></a>
+          <div class="nav__submenu">
+            <a href="the-european-pivot.html" data-cursor>The European Pivot</a>
+            <a href="the-age-of-intelligent-motion.html" data-cursor>The Age of Intelligent Motion</a>
+            <a href="the-rise-of-velocity.html" data-cursor>The Rise of Velocity</a>
+            <a href="library.html" class="nav__submenu-all" data-cursor>View the full Library &rarr;</a>
+          </div>
+        </div>
         <a href="index.html#contact" data-cursor>Contact</a>
         <a href="intelligence-library.html" class="nav__cta magnetic" data-cursor>The Velocity Edge <span aria-hidden="true">→</span></a>
       </nav>
@@ -39,9 +47,9 @@
     <section class="libhero" id="top">
       <div class="libhero__glow" aria-hidden="true"></div>
       <div class="container libhero__inner">
-        <span class="eyebrow eyebrow--light reveal-up">The Library · 4 volumes</span>
+        <span class="eyebrow eyebrow--light reveal-up">The Library · 3 volumes</span>
         <h1 class="libhero__title" data-reveal-text>The FDK <span class="hl-green">Library</span>.</h1>
-        <p class="libhero__sub reveal-up">Four volumes, one continuous argument on where artificial intelligence creates structural advantage. Choose a title to read the description, a sample, and where to buy it.</p>
+        <p class="libhero__sub reveal-up">Three volumes, one continuous argument on where artificial intelligence creates structural advantage. Choose a title to read the description, a sample, and where to buy it.</p>
       </div>
     </section>
 
@@ -49,31 +57,11 @@
     <section class="library-page">
       <div class="container">
         <div class="catalog-grid">
-          <a class="bookcard reveal-up" href="velocity-capitalism.html" data-cursor>
-            <div class="bookcard__stage">
-              <div class="book3d book3d--sm">
-                <div class="book3d__cover">
-                  <span class="book3d__brand">FDK · EMPOWERNET</span>
-                  <span class="book3d__title">Velocity<br>Capitalism</span>
-                  <span class="book3d__rule"></span>
-                  <span class="book3d__sub">How AI rewrites<br>competitive advantage</span>
-                  <span class="book3d__author">Francesco de Leo Kaufmann</span>
-                </div>
-              </div>
-            </div>
-            <div class="bookcard__meta">
-              <span class="bookcard__tag">New · 2026</span>
-              <h3>Velocity Capitalism</h3>
-              <p>How Artificial Intelligence rewrites competitive advantage.</p>
-              <span class="bookcard__link">View the book →</span>
-            </div>
-          </a>
-
           <a class="bookcard reveal-up" href="the-age-of-intelligent-motion.html" data-cursor>
             <div class="bookcard__stage">
               <div class="book3d book3d--sm book3d--cover" style="--cover-ar: 760 / 1185;">
                 <div class="book3d__cover">
-                  <img class="book3d__img" src="assets/the-age-of-intelligent-motion-cover.jpg?v=76" width="760" height="1185" alt="The Age of Intelligent Motion — book cover" />
+                  <img class="book3d__img" src="assets/the-age-of-intelligent-motion-cover.jpg?v=77" width="760" height="1185" alt="The Age of Intelligent Motion — book cover" />
                 </div>
               </div>
             </div>
@@ -89,7 +77,7 @@
             <div class="bookcard__stage">
               <div class="book3d book3d--sm book3d--cover">
                 <div class="book3d__cover">
-                  <img class="book3d__img" src="assets/european-pivot-cover.jpg?v=76" width="760" height="1247" alt="The European Pivot — book cover" />
+                  <img class="book3d__img" src="assets/european-pivot-cover.jpg?v=77" width="760" height="1247" alt="The European Pivot — book cover" />
                 </div>
               </div>
             </div>
@@ -167,6 +155,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=76"></script>
+  <script src="script.js?v=77"></script>
 </body>
 </html>
