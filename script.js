@@ -402,16 +402,42 @@
   }
 
   /* ---------- Book: download a sample ---------- */
+  const BOOK_SAMPLES = {
+    "The European Pivot": [
+      "PROLOGUE — From Stagnation to the Velocity Age",
+      "",
+      "Periods of sustained European outperformance in capital markets have rarely",
+      "coincided with moments of obvious technological superiority. They have emerged,",
+      "more often, when the continent reorganised its financial architecture around a",
+      "new mechanism of power.",
+      "",
+      "The railway boom of the nineteenth century did not enrich London because British",
+      "engineers were brilliant, but because the London Stock Exchange developed the",
+      "long-duration investment instruments that turned locomotives into a continental",
+      "asset class. The electrification between the wars did not lift Berlin and Milan",
+      "because of their physicists' superiority, but because municipal balance sheets,",
+      "regional banks and industrial conglomerates organised themselves into funding",
+      "structures equal to the scale of the technology.",
+      "",
+      "Every transition of this nature shares a pattern — technology arrives, capital",
+      "lags behind, and the societies that close that gap fastest define the economic",
+      "order that follows. Europe is today in the early stage of another such transition,",
+      "and it is falling behind.",
+      "",
+      "The problem this poses for Europe is not technological. It is financial.",
+      "",
+      "This book's answer: Europe already holds the right asset, without having",
+      "recognised it as a strategic instrument — high-speed rail. Not as a transport",
+      "service, nor a climate or regional-development policy, but as the only physical",
+      "backbone of continental scale on which to finance, deploy and govern a",
+      "continental AI platform.",
+    ],
+  };
+
   function downloadSample(btn) {
     const title = (btn && btn.dataset.title) || "Velocity Capitalism";
     const sub = (btn && btn.dataset.sub) || "How Artificial Intelligence Rewrites Competitive Advantage";
-    const text = [
-      title.toUpperCase(),
-      sub,
-      "Francesco de Leo Kaufmann — FDK EmpowerNet",
-      "",
-      "— SAMPLE —",
-      "",
+    const body = BOOK_SAMPLES[title] || [
       "Speed has replaced scale.",
       "",
       "For a century, competitive advantage was a function of size. The firm with the",
@@ -420,6 +446,15 @@
       "",
       "In an economy where intelligence compounds with every interaction, the decisive",
       "variable is no longer how much a company owns — it is how quickly it learns.",
+    ];
+    const text = [
+      title.toUpperCase(),
+      sub,
+      "Francesco de Leo Kaufmann — FDK EmpowerNet",
+      "",
+      "— SAMPLE —",
+      "",
+      ...body,
       "",
       "— End of sample —",
       "Buy the full book: info@fdkempowernet.com",
