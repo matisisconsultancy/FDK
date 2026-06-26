@@ -509,6 +509,16 @@
     "In an economy where intelligence compounds with every interaction, the decisive variable is no longer how much a company owns — it is how quickly it learns.",
   ];
 
+  // Books with real page-image previews (rendered from the PDF). Listed
+  // books show a page viewer; others fall back to the text excerpt above.
+  const PREVIEW_V = "86";
+  const BOOK_PAGES = {
+    "The Rise of Velocity": {
+      free: 3,
+      images: Array.from({ length: 14 }, (_, i) => "assets/rise-preview/p" + String(i + 1).padStart(2, "0") + ".jpg?v=" + PREVIEW_V),
+    },
+  };
+
   const isUnlocked = () => { try { return localStorage.getItem(PREVIEW_KEY) === "1"; } catch (e) { return false; } };
   const setUnlocked = () => { try { localStorage.setItem(PREVIEW_KEY, "1"); } catch (e) {} };
 
@@ -550,10 +560,10 @@
       '<div class="reader__panel" role="dialog" aria-modal="true" aria-label="Book preview">' +
         '<button class="reader__close" type="button" aria-label="Close preview" data-reader-close>&times;</button>' +
         '<div class="reader__scroll">' +
-          '<span class="reader__eyebrow">Opening chapter · Preview</span>' +
+          '<span class="reader__eyebrow" data-r="eyebrow">Opening chapter · Preview</span>' +
           '<h2 class="reader__title" data-r="title"></h2>' +
           '<p class="reader__sub" data-r="sub"></p>' +
-          '<span class="reader__byline">Francesco de Leo Kaufmann · FDK EmpowerNet</span>' +
+          '<span class="reader__byline" data-r="byline">Francesco de Leo Kaufmann · FDK EmpowerNet</span>' +
           '<p class="reader__chapter" data-r="chapter"></p>' +
           '<div class="reader__body" data-r="teaser"></div>' +
           '<div data-r="gatewrap"></div>' +
@@ -569,10 +579,10 @@
     return el;
   }
 
-  function gateHTML() {
+  function gateHTML(thing) {
     return '<div class="reader__gate" data-r="gate">' +
       '<span class="reader__gate-label">Keep reading · free</span>' +
-      '<h3>Unlock the full opening chapter — and get The Velocity Edge.</h3>' +
+      '<h3>Unlock the full ' + (thing || "opening chapter") + ' — and get The Velocity Edge.</h3>' +
       '<p>FdK’s journal for board-level AI decisions, delivered to your inbox. Add your email to read the rest of the chapter now.</p>' +
       '<form class="reader__form" data-r="form" novalidate>' +
         '<input class="reader__input" type="email" name="email" required placeholder="you@company.com" autocomplete="email" aria-label="Email address" />' +
@@ -611,23 +621,40 @@
     if (!readerEl) readerEl = buildReader();
     const title = (btn && btn.dataset.title) || "The European Pivot";
     const sub = (btn && btn.dataset.sub) || "";
-    const { chapter, paras } = parseSample(BOOK_SAMPLES[title] || DEFAULT_SAMPLE);
+    const unlocked = isUnlocked();
+    const pageCfg = BOOK_PAGES[title];
     rq("title").textContent = title;
     rq("sub").textContent = sub;
-    rq("chapter").textContent = chapter;
-    const unlocked = isUnlocked();
-    const teaserCount = Math.min(2, Math.max(1, paras.length - 1));
-    const teaser = unlocked ? paras : paras.slice(0, teaserCount);
-    const rest = unlocked ? [] : paras.slice(teaserCount);
-    const toP = (arr) => arr.map((p) => "<p>" + p + "</p>").join("");
-    rq("teaser").innerHTML = toP(teaser);
-    rq("rest").innerHTML = toP(rest);
+    let restLen, gateThing;
+    if (pageCfg) {
+      // Real book pages rendered from the PDF.
+      rq("eyebrow").textContent = "Opening pages · Preview";
+      rq("title").hidden = true; rq("sub").hidden = true; rq("chapter").hidden = true; rq("byline").hidden = true;
+      const imgs = pageCfg.images;
+      const free = unlocked ? imgs.length : Math.min(pageCfg.free, imgs.length);
+      const toImg = (s, i, lazy) => '<img class="reader__page" src="' + s + '" alt="Preview page ' + (i + 1) + '"' + (lazy ? ' loading="lazy"' : "") + " />";
+      rq("teaser").innerHTML = imgs.slice(0, free).map((s, i) => toImg(s, i, false)).join("");
+      rq("rest").innerHTML = imgs.slice(free).map((s, i) => toImg(s, free + i, true)).join("");
+      restLen = imgs.length - free; gateThing = "preview";
+    } else {
+      // Text excerpt.
+      rq("eyebrow").textContent = "Opening chapter · Preview";
+      rq("title").hidden = false; rq("sub").hidden = false; rq("chapter").hidden = false; rq("byline").hidden = false;
+      const parsed = parseSample(BOOK_SAMPLES[title] || DEFAULT_SAMPLE);
+      rq("chapter").textContent = parsed.chapter;
+      const paras = parsed.paras;
+      const teaserCount = Math.min(2, Math.max(1, paras.length - 1));
+      const toP = (arr) => arr.map((p) => "<p>" + p + "</p>").join("");
+      rq("teaser").innerHTML = toP(unlocked ? paras : paras.slice(0, teaserCount));
+      rq("rest").innerHTML = toP(unlocked ? [] : paras.slice(teaserCount));
+      restLen = unlocked ? 0 : paras.length - teaserCount; gateThing = "opening chapter";
+    }
     const gatewrap = rq("gatewrap");
-    if (rest.length === 0) {
+    if (restLen <= 0) {
       gatewrap.innerHTML = "";
       rq("rest").hidden = false; rq("foot").hidden = false;
     } else {
-      gatewrap.innerHTML = gateHTML();
+      gatewrap.innerHTML = gateHTML(gateThing);
       rq("rest").hidden = true; rq("foot").hidden = true;
       wireGate();
     }

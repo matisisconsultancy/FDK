@@ -1145,3 +1145,6 @@ body.reader-open { overflow: hidden; }
   .reader__panel { max-height: 94vh; border-radius: 20px 20px 0 0; width: 100%; }
   .reader__submit { flex: 1 1 100%; justify-content: center; }
 }
+/* Page-image preview (real book pages in the reader) */
+.reader__page { display: block; width: 100%; height: auto; margin: 0 0 16px; border-radius: 10px; background: rgba(17,20,46,0.05); box-shadow: 0 14px 36px -20px rgba(0,0,0,0.45); }
+.reader__rest .reader__page:last-child, .reader__body .reader__page:last-child { margin-bottom: 0; }
