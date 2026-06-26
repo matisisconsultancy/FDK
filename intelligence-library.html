@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=52" />
+  <link rel="stylesheet" href="styles.css?v=53" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -57,72 +57,40 @@
             <button class="jfilter__btn" data-filter="day" data-cursor><span class="jic jic--sun" aria-hidden="true"></span> Day</button>
             <button class="jfilter__btn" data-filter="night" data-cursor><span class="jic jic--moon" aria-hidden="true"></span> Night</button>
           </div>
-          <span class="jbar__count"><b id="jCount">6</b> notes · updated daily</span>
+          <span class="jbar__count"><b>3</b> notes · updated daily</span>
         </div>
 
         <!-- FEATURED (latest) -->
-        <a class="jfeatured jfeatured--night reveal-up" id="jFeatured" href="the-deflationary-rotation.html" data-cursor>
+        <a class="jfeatured jfeatured--day reveal-up" data-phase="dawn" href="the-ai-reckoning-begins.html" data-cursor>
           <span class="jfeatured__stars" aria-hidden="true"></span>
           <div class="jfeatured__body">
             <div class="jcard__top">
-              <span class="jtype jtype--night"><span class="jic jic--moon" aria-hidden="true"></span> Night note · Market close</span>
-              <span class="jtime">Today · 21:10</span>
+              <span class="jtype jtype--day"><span class="jic jic--sun" aria-hidden="true"></span> Morning View · Markets</span>
+              <span class="jtime">June 26, 2026</span>
             </div>
-            <h2 class="jfeatured__title">Market close: the repricing leaked into telecom today</h2>
-            <p class="jfeatured__excerpt">Three operators moved on no news. That is the tell. When prices drift without a headline, the market is re-rating the asset class, not the asset — exactly the correction the thesis has been waiting on. Here is what closed, what didn't, and the one line I'm sleeping on.</p>
-            <div class="jcard__foot"><span class="jtags">Markets · Telecom</span><span class="jread">Read note →</span></div>
+            <h2 class="jfeatured__title">The AI Reckoning Begins</h2>
+            <p class="jfeatured__excerpt">Markets are repricing the winners before the economy does. The era when almost any AI narrative earned a valuation premium is ending — and a more disciplined market is taking its place.</p>
+            <div class="jcard__foot"><span class="jtags">Markets · AI · Macro</span><span class="jread">3 min read →</span></div>
           </div>
         </a>
 
         <!-- NOTES GRID -->
-        <h3 class="journal__h">Latest notes</h3>
-        <div class="jgrid" id="journalGrid">
+        <h3 class="journal__h">More notes</h3>
+        <div class="jgrid jgrid--pair" id="journalGrid">
 
-          <a class="jpost jpost--day" data-type="day" href="the-deflationary-rotation.html" data-cursor>
-            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 07:42 · Pre-open</span></div>
+          <a class="jpost jpost--day" data-type="day" href="the-great-ai-shakeout.html" data-cursor>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 08:30 · Morning View</span></div>
             <span class="jpost__tag">Day note · Markets</span>
-            <h3>Three signals before the bell</h3>
-            <p>What the overnight tape is telling us about mobility and energy before Europe opens — and the one I'd act on.</p>
+            <h3>The Great AI Shakeout</h3>
+            <p>Why capital is no longer rewarding AI exposure — it is rewarding AI economics. From enthusiasm to discipline.</p>
             <span class="jpost__more">Read note →</span>
           </a>
 
           <a class="jpost jpost--day" data-type="day" href="the-deflationary-rotation.html" data-cursor>
-            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1474487548417-781cb71495f3?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 11:05 · Intraday</span></div>
-            <span class="jpost__tag">Day note · Mobility</span>
-            <h3>QBUZZ utilisation ticks up — why it matters</h3>
-            <p>A small operational number that, compounded, is exactly the learning-loop effect the thesis predicts.</p>
-            <span class="jpost__more">Read note →</span>
-          </a>
-
-          <a class="jpost jpost--day" data-type="day" href="the-deflationary-rotation.html" data-cursor>
-            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 13:20 · Midday</span></div>
-            <span class="jpost__tag">Day note · Telecom</span>
-            <h3>The midday read: bifurcation, in real time</h3>
-            <p>Two telecoms, same sector, opposite tape. The gap between embed-intelligence and procure-it is showing up on the screen.</p>
-            <span class="jpost__more">Read note →</span>
-          </a>
-
-          <a class="jpost jpost--night" data-type="night" href="the-deflationary-rotation.html" data-cursor>
-            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--moon"></span> 21:10 · Close</span></div>
-            <span class="jpost__tag">Night note · Markets</span>
-            <h3>Market close: what moved and why</h3>
-            <p>The day's wrap — the prints that matter, stripped of the noise, framed against the thesis.</p>
-            <span class="jpost__more">Read note →</span>
-          </a>
-
-          <a class="jpost jpost--night" data-type="night" href="the-deflationary-rotation.html" data-cursor>
-            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--moon"></span> 22:35 · Reflection</span></div>
-            <span class="jpost__tag">Night note · Strategy</span>
-            <h3>The gap widened today</h3>
-            <p>A quiet session, but the structural distance between the two halves of every sector grew. The slow felt fine. They shouldn't.</p>
-            <span class="jpost__more">Read note →</span>
-          </a>
-
-          <a class="jpost jpost--night" data-type="night" href="the-deflationary-rotation.html" data-cursor>
-            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--moon"></span> 23:15 · Sign-off</span></div>
-            <span class="jpost__tag">Night note · Reflection</span>
-            <h3>Three things to sleep on</h3>
-            <p>The end-of-day note: one risk, one opportunity, one question for tomorrow's open.</p>
+            <div class="jpost__media"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 08:00 · Today’s Edition</span></div>
+            <span class="jpost__tag">Day note · Markets</span>
+            <h3>The Deflationary Rotation</h3>
+            <p>Why the next phase of the AI supercycle will be about lower costs, higher margins and rising profits — not bigger models.</p>
             <span class="jpost__more">Read note →</span>
           </a>
         </div>
@@ -171,6 +139,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=52"></script>
+  <script src="script.js?v=53"></script>
 </body>
 </html>

@@ -626,6 +626,7 @@ img { max-width: 100%; display: block; }
 
 /* Notes as image-preview cards (day = white, night = navy) */
 .jgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+.jgrid--pair { grid-template-columns: repeat(2, 1fr); }
 .jpost { display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; padding-bottom: 28px; transition: transform 0.45s var(--ease), box-shadow 0.45s var(--ease); }
 .jpost.is-hidden { display: none; }
 .jpost:hover { transform: translateY(-8px); }
@@ -811,6 +812,9 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 .art-mark { color: var(--green); }
 .art-lead { font-size: 1.35rem !important; line-height: 1.65 !important; color: #fff !important; }
 .art-lead::first-letter { float: left; font-family: var(--font-display); font-size: 4.6rem; line-height: 0.8; font-weight: 500; padding: 6px 16px 0 0; color: var(--green); }
+
+/* Opening epigraph */
+.art-epigraph { font-style: italic; font-weight: 300; font-size: clamp(1.15rem, 2.2vw, 1.55rem) !important; line-height: 1.45 !important; color: rgba(255,255,255,0.72) !important; border-top: 1px solid rgba(255,255,255,0.12); border-bottom: 1px solid rgba(255,255,255,0.12); padding: 26px 0 !important; margin-bottom: 40px !important; }
 
 /* Pull quote */
 .art-pull { position: relative; margin: 56px 0; padding: 8px 0 8px 34px; border-left: 3px solid var(--green); }
