@@ -511,12 +511,11 @@
 
   // Books with real page-image previews (rendered from the PDF). Listed
   // books show a page viewer; others fall back to the text excerpt above.
-  const PREVIEW_V = "86";
+  const PREVIEW_V = "87";
+  const previewImages = (dir, n) => Array.from({ length: n }, (_, i) => "assets/" + dir + "/p" + String(i + 1).padStart(2, "0") + ".jpg?v=" + PREVIEW_V);
   const BOOK_PAGES = {
-    "The Rise of Velocity": {
-      free: 3,
-      images: Array.from({ length: 14 }, (_, i) => "assets/rise-preview/p" + String(i + 1).padStart(2, "0") + ".jpg?v=" + PREVIEW_V),
-    },
+    "The Rise of Velocity": { free: 6, images: previewImages("rise-preview", 14) },
+    "The Age of Intelligent Motion": { free: 6, images: previewImages("aim-preview", 14) },
   };
 
   const isUnlocked = () => { try { return localStorage.getItem(PREVIEW_KEY) === "1"; } catch (e) { return false; } };

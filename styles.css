@@ -156,6 +156,9 @@ img { max-width: 100%; display: block; }
 .hero { position: relative; min-height: 100svh; display: flex; align-items: center; padding: 184px 0 124px; overflow: hidden; color: #fff; background: var(--navy-deep); }
 .hero__canvas { position: absolute; inset: 0; width: 100%; height: 100%; z-index: 0; }
 .hero__glow { position: absolute; inset: 0; z-index: 1; pointer-events: none; background: radial-gradient(55% 50% at 75% 36%, rgba(46,224,106,0.20), transparent 60%), radial-gradient(50% 60% at 8% 92%, rgba(26,36,112,0.55), transparent 70%); }
+/* Thesis hero — distinct indigo/violet wash so it reads apart from the home */
+.hero--thesis { background: radial-gradient(135% 110% at 78% -12%, #21215f 0%, #0d1038 50%, #070a24 100%); }
+.hero--thesis .hero__glow { background: radial-gradient(48% 58% at 18% 16%, rgba(124,139,255,0.28), transparent 62%), radial-gradient(42% 52% at 88% 90%, rgba(46,224,106,0.12), transparent 60%); }
 .hero__side { position: absolute; top: 50%; font-size: 0.7rem; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.32); z-index: 2; }
 .hero__side--l { left: 26px; transform: translateY(-50%) rotate(-90deg); transform-origin: left; }
 .hero__side--r { right: 26px; transform: translateY(-50%) rotate(90deg); transform-origin: right; }
@@ -1118,8 +1121,8 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 .reader__body p { font-size: 1.06rem; line-height: 1.75; color: rgba(17,20,46,0.82); margin: 0 0 18px; }
 .reader__rest[hidden] { display: none; }
 /* Soft gate */
-.reader__gate { position: relative; margin: 6px 0 8px; padding: 28px clamp(20px,4vw,32px); border-radius: 16px; background: linear-gradient(160deg, rgba(46,224,106,0.1), rgba(124,139,255,0.08)); border: 1px solid rgba(17,20,46,0.1); }
-.reader__gate::before { content: ""; position: absolute; left: 0; right: 0; top: -64px; height: 64px; background: linear-gradient(to bottom, rgba(255,255,255,0), #fff); pointer-events: none; }
+.reader__gate { position: relative; margin: 0; padding: 90px clamp(20px,4vw,34px) 34px; border: 0; border-radius: 0; background: linear-gradient(to bottom, rgba(46,224,106,0.18) 0%, rgba(46,224,106,0.18) 38%, rgba(46,224,106,0.05) 82%, rgba(46,224,106,0) 100%); }
+.reader__gate::before { content: ""; position: absolute; left: 0; right: 0; top: -150px; height: 150px; background: linear-gradient(to bottom, rgba(46,224,106,0) 0%, rgba(46,224,106,0.18) 100%); pointer-events: none; }
 .reader__gate-label { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green-deep); }
 .reader__gate h3 { font-family: var(--font-display); font-weight: 500; font-size: clamp(1.15rem,2.4vw,1.4rem); letter-spacing: -0.3px; line-height: 1.25; margin: 8px 0 6px; color: var(--ink); }
 .reader__gate > p { color: var(--muted); font-size: 0.96rem; line-height: 1.5; margin-bottom: 18px; }
