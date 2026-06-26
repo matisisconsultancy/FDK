@@ -923,6 +923,26 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 .art-sign { display: inline-flex; align-items: center; gap: 12px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.1); width: 100%; font-family: var(--font-mono); font-size: 0.82rem; letter-spacing: 0.5px; color: rgba(255,255,255,0.6); }
 .art-sign__mark { color: var(--green); display: inline-flex; }
 
+/* Article — data matrix (layered comparison tables) */
+.art-matrix { list-style: none; margin: 40px 0; padding: 0; display: grid; gap: 14px; }
+.art-matrix__item { position: relative; padding: 22px 24px; border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; background: rgba(255,255,255,0.025); }
+.art-matrix__item--accent { border-color: rgba(46,224,106,0.42); background: rgba(46,224,106,0.06); }
+.art-matrix__k { display: block; font-family: var(--font-display); font-size: 1.18rem; font-weight: 500; color: #fff; letter-spacing: -0.2px; }
+.art-matrix__v { margin: 9px 0 14px !important; font-size: 0.96rem !important; line-height: 1.55 !important; color: rgba(255,255,255,0.72) !important; }
+.art-matrix__s { display: inline-flex; align-items: center; font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 1.2px; text-transform: uppercase; color: var(--green); background: rgba(46,224,106,0.1); border: 1px solid rgba(46,224,106,0.26); padding: 5px 11px; border-radius: 999px; }
+
+/* Article — board questions / numbered callouts */
+.art-qlist { list-style: none; margin: 36px 0; padding: 0; display: grid; gap: 16px; counter-reset: aq; }
+.art-qlist__item { position: relative; padding: 22px 24px 22px 66px; border: 1px solid rgba(255,255,255,0.1); border-radius: 14px; background: rgba(255,255,255,0.02); }
+.art-qlist__item::before { counter-increment: aq; content: counter(aq, decimal-leading-zero); position: absolute; left: 24px; top: 23px; font-family: var(--font-mono); font-size: 0.82rem; color: var(--green); }
+.art-qlist__q { display: block; font-family: var(--font-display); font-size: 1.16rem; font-weight: 500; color: #fff; margin-bottom: 8px; letter-spacing: -0.2px; }
+.art-qlist__item p { margin: 0 !important; font-size: 0.95rem !important; line-height: 1.55 !important; color: rgba(255,255,255,0.72) !important; }
+@media (max-width: 680px) {
+  .art-matrix__item, .art-qlist__item { padding: 18px 18px; }
+  .art-qlist__item { padding-left: 18px; padding-top: 42px; }
+  .art-qlist__item::before { top: 16px; left: 18px; }
+}
+
 /* More-entries gallery */
 .art-more { padding: 26px 0 104px; }
 .art-more__head { margin-bottom: 30px; }
