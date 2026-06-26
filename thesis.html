@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css?v=80" />
+  <link rel="stylesheet" href="styles.css?v=81" />
 </head>
 <body>
   <div class="grain" aria-hidden="true"></div>
@@ -45,17 +45,26 @@
   </header>
 
   <main>
-    <!-- SPLIT HERO -->
-    <section class="thero" id="top">
-      <canvas class="thero__canvas" id="theroCanvas" aria-hidden="true"></canvas>
-      <div class="thero__left" aria-hidden="true"><span class="thero__ghost">FDK</span></div>
-      <div class="thero__right">
-        <div class="thero__content">
-          <span class="thero__eyebrow reveal-up">Empowernet</span>
-          <h1 class="thero__quote" data-reveal-text>The thesis is not borrowed from research. It is built from operations.</h1>
-          <a href="#bio" class="btn btn--brief magnetic reveal-up" data-cursor="">
-            <span class="btn__bullet" aria-hidden="true"></span> Meet FDK
-          </a>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <span class="hero__side hero__side--l" aria-hidden="true">EST · EUROPE</span>
+      <span class="hero__side hero__side--r" aria-hidden="true">AI · STRATEGY</span>
+      <div class="container hero__inner">
+        <h1 class="hero__title">
+          <span class="hero__line" data-reveal-text>The thesis is not borrowed from research.</span>
+          <span class="hero__accent" data-reveal-block>It is built from operations.</span>
+        </h1>
+        <p class="hero__lead reveal-up">
+          Francesco de Leo Kaufmann builds the proprietary argument for where AI creates structural
+          advantage — not as an observer, but from inside the systems being transformed: Europe's
+          largest transport operator, its first AI-native mobility platform, and the boards deciding
+          the next industrial era.
+        </p>
+        <div class="hero__actions reveal-up">
+          <a href="#bio" class="btn btn--brief magnetic" data-cursor><span class="btn__bullet" aria-hidden="true"></span> Meet the author</a>
+          <a href="#architecture" class="btn btn--ghost magnetic" data-cursor>Read the thesis <span aria-hidden="true">↓</span></a>
         </div>
       </div>
     </section>
@@ -274,6 +283,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=80"></script>
+  <script src="script.js?v=81"></script>
 </body>
 </html>
