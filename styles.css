@@ -11,8 +11,8 @@
   --green: #2ee06a;
   --green-deep: #16c45a;
   --green-dim: rgba(46, 224, 106, 0.16);
-  --paper: #f5f4ef;
-  --paper-2: #ecebe4;
+  --paper: #ffffff;
+  --paper-2: #f4f4f2;
   --muted: #555a70;
   --muted-light: #9aa0bd;
   --border: rgba(17, 20, 46, 0.12);
@@ -1021,6 +1021,11 @@ body.theme-light .jsub__form input:focus { border-color: var(--green-deep); }
 .art--day .art-next__inner .eyebrow--light { color: var(--green-deep); }
 .art--day .art-next__inner h2 { color: var(--ink); }
 .art--day .art-next__inner p { color: var(--muted); }
+/* Journal gallery cards on light */
+.art--day .lcard h3 { color: var(--ink); }
+.art--day .lcard p { color: var(--muted); }
+.art--day .lcard__media { background: rgba(17,20,46,0.05); }
+.art--day .lcard__media.img--fail { background: rgba(17,20,46,0.06); }
 
 @media (max-width: 860px) {
   .art-stats__grid { grid-template-columns: 1fr 1fr; }
