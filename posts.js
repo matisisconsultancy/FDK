@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "beyond-the-ai-trade.html",
+    title: "Beyond the AI Trade",
+    excerpt: "The next trillion dollars won’t be created by better models — it will be created by better capital allocation. AI is entering its execution phase.",
+    tag: "The Week Ahead · Capital",
+    slot: "The Week Ahead",
+    image: "assets/concept/macro.svg?v=94",
+    date: "June 28, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "the-ai-reckoning-begins.html",
     title: "The AI Reckoning Begins",
     excerpt: "Markets are repricing the winners before the economy does — the era when any AI narrative earned a premium is ending.",
