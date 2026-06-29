@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "the-great-capital-formation-race.html",
+    title: "The Great Capital Formation Race",
+    excerpt: "Why the next AI winners will be determined less by innovation than by investment — the largest capital formation cycle of the century is underway.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "assets/concept/repricing.svg?v=94",
+    date: "June 29, 2026",
+    read: "5 min read",
+    time: "08:30",
+    kind: "day"
+  },
+  {
     url: "the-week-that-could-redefine-the-ai-trade.html",
     title: "The Week That Could Redefine the AI Trade",
     excerpt: "Sintra, US payrolls, China PMI and Tesla may reveal where the next trillion dollars of market value will be created.",
