@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "the-week-that-could-redefine-the-ai-trade.html",
+    title: "The Week That Could Redefine the AI Trade",
+    excerpt: "Sintra, US payrolls, China PMI and Tesla may reveal where the next trillion dollars of market value will be created.",
+    tag: "The Week Ahead · Capital",
+    slot: "The Week Ahead",
+    image: "assets/concept/shakeout.svg?v=94",
+    date: "June 29, 2026",
+    read: "4 min read",
+    time: "07:30",
+    kind: "day"
+  },
+  {
     url: "beyond-the-ai-trade.html",
     title: "Beyond the AI Trade",
     excerpt: "The next trillion dollars won’t be created by better models — it will be created by better capital allocation. AI is entering its execution phase.",
