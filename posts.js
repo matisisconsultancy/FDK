@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "the-second-ai-supercycle.html",
+    title: "The Second AI Supercycle",
+    excerpt: "Intelligence created the boom. Infrastructure will create the fortunes — capital is rotating toward the Infrastructure of Intelligence.",
+    tag: "Morning View · Infrastructure",
+    slot: "Morning View",
+    image: "assets/concept/network.svg?v=94",
+    date: "June 30, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "the-great-capital-formation-race.html",
     title: "The Great Capital Formation Race",
     excerpt: "Why the next AI winners will be determined less by innovation than by investment — the largest capital formation cycle of the century is underway.",
