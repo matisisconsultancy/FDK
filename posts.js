@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "the-new-capital-cycle.html",
+    title: "The New Capital Cycle",
+    excerpt: "The greatest opportunity is no longer AI — it is the race to own the Infrastructure of Intelligence. History rewards the landlords, not the tenants.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "assets/concept/signal.svg?v=94",
+    date: "July 6, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "own-it-or-finance-it.html",
+    title: "Own It, or Finance It",
+    excerpt: "Europe’s defining test in The New Capital Cycle — own the Infrastructure of Intelligence, or simply finance it while others capture the profits.",
+    tag: "Morning Note · Europe",
+    slot: "Morning Note",
+    image: "assets/concept/macro.svg?v=94",
+    date: "July 6, 2026",
+    read: "4 min read",
+    time: "07:15",
+    kind: "day"
+  },
+  {
     url: "the-second-ai-supercycle.html",
     title: "The Second AI Supercycle",
     excerpt: "Intelligence created the boom. Infrastructure will create the fortunes — capital is rotating toward the Infrastructure of Intelligence.",
