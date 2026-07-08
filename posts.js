@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "the-intelligence-divide.html",
+    title: "The Intelligence Divide",
+    excerpt: "Capital is no longer rewarding companies — it is separating the owners of intelligence infrastructure from everyone else.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    date: "July 7, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "the-winners-will-own-it.html",
+    title: "The Winners Will Own It",
+    excerpt: "Europe’s historic opportunity in the Intelligence Divide — lead where it is already strong, or pay to use what others own.",
+    tag: "Morning Note · Europe",
+    slot: "Morning Note",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "July 7, 2026",
+    read: "3 min read",
+    time: "07:15",
+    kind: "day"
+  },
+  {
     url: "the-new-capital-cycle.html",
     title: "The New Capital Cycle",
     excerpt: "The greatest opportunity is no longer AI — it is the race to own the Infrastructure of Intelligence. History rewards the landlords, not the tenants.",
