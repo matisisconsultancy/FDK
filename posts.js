@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "the-next-security-order.html",
+    title: "The Next Security Order",
+    excerpt: "The market is pricing oil. It should be pricing the next security order — every crisis reallocates capital, and this one reallocates it toward resilience.",
+    tag: "Breaking News · Geopolitics",
+    slot: "Breaking News",
+    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?auto=format&fit=crop&w=800&q=80",
+    date: "July 8, 2026",
+    read: "6 min read",
+    time: "13:30",
+    kind: "day"
+  },
+  {
     url: "the-intelligence-divide.html",
     title: "The Intelligence Divide",
     excerpt: "Capital is no longer rewarding companies — it is separating the owners of intelligence infrastructure from everyone else.",
