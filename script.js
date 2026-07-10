@@ -85,7 +85,7 @@
       <p>${p.excerpt}</p>
       <span class="lcard__more">Read note →</span>
     </a>`;
-  const currentPage = (location.pathname.split("/").pop() || "index.html");
+  const currentPage = (location.pathname.replace(/index\.html$/, "").replace(/\/$/, "") || "/");
 
   // Home teaser cards — show the latest 3 entries.
   const homeGrid = $(".library .library__grid");
@@ -528,15 +528,15 @@
   // Books with real page-image previews (rendered from the PDF). Listed
   // books show a page viewer; others fall back to the text excerpt above.
   const PREVIEW_V = "90";
-  const previewImages = (dir, n) => Array.from({ length: n }, (_, i) => "assets/" + dir + "/p" + String(i + 1).padStart(2, "0") + ".jpg?v=" + PREVIEW_V);
+  const previewImages = (dir, n) => Array.from({ length: n }, (_, i) => "/assets/" + dir + "/p" + String(i + 1).padStart(2, "0") + ".jpg?v=" + PREVIEW_V);
   const BOOK_PAGES = {
     "The Rise of Velocity": { free: 6, images: previewImages("rise-preview", 14) },
     // Drop the PDF's first two pages (rendered cover + back blurb); lead with
     // the supplied cover art, then continue from the title page (p03 onwards).
     "The Age of Intelligent Motion": {
       free: 6,
-      images: ["assets/the-age-of-intelligent-motion-cover.jpg?v=" + PREVIEW_V].concat(
-        ["03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"].map((n) => "assets/aim-preview/p" + n + ".jpg?v=" + PREVIEW_V)
+      images: ["/assets/the-age-of-intelligent-motion-cover.jpg?v=" + PREVIEW_V].concat(
+        ["03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14"].map((n) => "/assets/aim-preview/p" + n + ".jpg?v=" + PREVIEW_V)
       ),
     },
   };

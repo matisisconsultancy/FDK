@@ -7,7 +7,7 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "the-next-security-order.html",
+    url: "/the-next-security-order",
     title: "The Next Security Order",
     excerpt: "The market is pricing oil. It should be pricing the next security order — every crisis reallocates capital, and this one reallocates it toward resilience.",
     tag: "Breaking News · Geopolitics",
@@ -19,7 +19,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-intelligence-divide.html",
+    url: "/the-intelligence-divide",
     title: "The Intelligence Divide",
     excerpt: "Capital is no longer rewarding companies — it is separating the owners of intelligence infrastructure from everyone else.",
     tag: "Morning View · Capital",
@@ -31,7 +31,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-winners-will-own-it.html",
+    url: "/the-winners-will-own-it",
     title: "The Winners Will Own It",
     excerpt: "Europe’s historic opportunity in the Intelligence Divide — lead where it is already strong, or pay to use what others own.",
     tag: "Morning Note · Europe",
@@ -43,7 +43,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-new-capital-cycle.html",
+    url: "/the-new-capital-cycle",
     title: "The New Capital Cycle",
     excerpt: "The greatest opportunity is no longer AI — it is the race to own the Infrastructure of Intelligence. History rewards the landlords, not the tenants.",
     tag: "Morning View · Capital",
@@ -55,7 +55,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "own-it-or-finance-it.html",
+    url: "/own-it-or-finance-it",
     title: "Own It, or Finance It",
     excerpt: "Europe’s defining test in The New Capital Cycle — own the Infrastructure of Intelligence, or simply finance it while others capture the profits.",
     tag: "Morning Note · Europe",
@@ -67,7 +67,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-second-ai-supercycle.html",
+    url: "/the-second-ai-supercycle",
     title: "The Second AI Supercycle",
     excerpt: "Intelligence created the boom. Infrastructure will create the fortunes — capital is rotating toward the Infrastructure of Intelligence.",
     tag: "Morning View · Infrastructure",
@@ -79,7 +79,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-great-capital-formation-race.html",
+    url: "/the-great-capital-formation-race",
     title: "The Great Capital Formation Race",
     excerpt: "Why the next AI winners will be determined less by innovation than by investment — the largest capital formation cycle of the century is underway.",
     tag: "Morning View · Capital",
@@ -91,7 +91,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-week-that-could-redefine-the-ai-trade.html",
+    url: "/the-week-that-could-redefine-the-ai-trade",
     title: "The Week That Could Redefine the AI Trade",
     excerpt: "Sintra, US payrolls, China PMI and Tesla may reveal where the next trillion dollars of market value will be created.",
     tag: "The Week Ahead · Capital",
@@ -103,7 +103,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "beyond-the-ai-trade.html",
+    url: "/beyond-the-ai-trade",
     title: "Beyond the AI Trade",
     excerpt: "The next trillion dollars won’t be created by better models — it will be created by better capital allocation. AI is entering its execution phase.",
     tag: "The Week Ahead · Capital",
@@ -115,7 +115,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-ai-reckoning-begins.html",
+    url: "/the-ai-reckoning-begins",
     title: "The AI Reckoning Begins",
     excerpt: "Markets are repricing the winners before the economy does — the era when any AI narrative earned a premium is ending.",
     tag: "Morning View · Markets",
@@ -127,7 +127,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-great-ai-shakeout.html",
+    url: "/the-great-ai-shakeout",
     title: "The Great AI Shakeout",
     excerpt: "Why capital is no longer rewarding AI exposure — it is rewarding AI economics. From enthusiasm to discipline.",
     tag: "Morning View · Markets",
@@ -139,7 +139,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-deflationary-rotation.html",
+    url: "/the-deflationary-rotation",
     title: "The Deflationary Rotation",
     excerpt: "Why the next phase of the AI supercycle will be about lower costs, higher margins and rising profits — not bigger models.",
     tag: "Today’s Edition · Macro",
@@ -151,7 +151,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "the-velocity-imperative.html",
+    url: "/the-velocity-imperative",
     title: "The Velocity Imperative",
     excerpt: "Why speed — not scale — has become the decisive competitive variable, and the three questions most boards are not yet asking.",
     tag: "Morning View · Strategy",
@@ -163,7 +163,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "structural-bifurcation.html",
+    url: "/structural-bifurcation",
     title: "Structural Bifurcation",
     excerpt: "The divergence your board has not yet named — between organisations that embed intelligence and those building it for their vendors.",
     tag: "Night Briefing · Governance",
@@ -175,7 +175,7 @@ window.FDK_POSTS = [
     kind: "night"
   },
   {
-    url: "the-repricing.html",
+    url: "/the-repricing",
     title: "The Repricing",
     excerpt: "What European infrastructure is actually worth once it learns — and why standard valuation models have not yet absorbed it.",
     tag: "Morning View · Capital",
@@ -187,7 +187,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "on-sovereign-intelligence.html",
+    url: "/on-sovereign-intelligence",
     title: "On Sovereign Intelligence",
     excerpt: "Why Europe's AI position is an infrastructure governance question — three models, one structural choice being written right now.",
     tag: "Night Briefing · Europe",
@@ -199,7 +199,7 @@ window.FDK_POSTS = [
     kind: "night"
   },
   {
-    url: "the-fiscal-architecture.html",
+    url: "/the-fiscal-architecture",
     title: "The Fiscal Architecture of the Velocity Economy",
     excerpt: "What governments must relearn about capital before the instruments harden — sequenced finance for assets that learn, not depreciate.",
     tag: "Morning View · Policy",
@@ -211,7 +211,7 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "what-the-velocity-economy-demands.html",
+    url: "/what-the-velocity-economy-demands",
     title: "What the Velocity Economy Demands from Capital",
     excerpt: "Infrastructure funds are pricing AI-native operators as utilities. How to tell a genuine learning system from an AI narrative.",
     tag: "Night Briefing · Capital",
