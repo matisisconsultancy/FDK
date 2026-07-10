@@ -7,6 +7,14 @@
 (function () {
   "use strict";
 
+  /* Canonical URL: never leave "index.html" in the address bar. If someone
+     opens an old link ending in /index.html, rewrite it to the clean path
+     without reloading the page. */
+  if (location.pathname.endsWith("/index.html")) {
+    var cleanPath = location.pathname.slice(0, -"index.html".length);
+    history.replaceState(null, "", cleanPath + location.search + location.hash);
+  }
+
   const $ = (s, c = document) => c.querySelector(s);
   const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
