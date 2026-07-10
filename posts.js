@@ -7,18 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "the-week-in-numbers.html",
-    title: "The Week in Numbers",
-    excerpt: "The indicators that defined the week — from $650B in AI infrastructure to the 45/35/20 geopolitical scenarios — and the one thesis running through them all.",
-    tag: "Weekly Recap · Indicators",
-    slot: "Weekly Recap",
-    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
-    date: "July 8, 2026",
-    read: "4 min read",
-    time: "16:30",
-    kind: "day"
-  },
-  {
     url: "the-next-security-order.html",
     title: "The Next Security Order",
     excerpt: "The market is pricing oil. It should be pricing the next security order — every crisis reallocates capital, and this one reallocates it toward resilience.",
