@@ -4,6 +4,21 @@
 [build]
   publish = "."
 
+# Clean URLs: never show index.html or the .html extension in the address bar.
+#   fdkempowernet.com/index.html  -> fdkempowernet.com/
+#   fdkempowernet.com/thesis.html -> fdkempowernet.com/thesis   (served from thesis.html)
+[[redirects]]
+  from = "/index.html"
+  to = "/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/*.html"
+  to = "/:splat"
+  status = 301
+  force = true
+
 # HTML is always revalidated, so a new deploy shows up instantly (no stale cache).
 [[headers]]
   for = "/*.html"
