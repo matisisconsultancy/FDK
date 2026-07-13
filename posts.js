@@ -7,6 +7,42 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-end-of-cheap-globalization",
+    title: "The End of Cheap Globalization",
+    excerpt: "A new capital cycle is emerging around AI, defense, energy and industrial sovereignty — the largest reallocation of capital since the end of the Cold War.",
+    tag: "Morning View · Geopolitics",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80",
+    date: "July 13, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/intelligence-becomes-infrastructure",
+    title: "Intelligence Becomes Infrastructure",
+    excerpt: "Hormuz threatens the rate-cut trade, AI is turning electricity into a scarce financial asset, and Europe — with Spain its rising star — may be the most under-owned beneficiary.",
+    tag: "Morning View · Energy",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=800&q=80",
+    date: "July 12, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/the-end-of-the-technology-cycle",
+    title: "The End of the Technology Cycle",
+    excerpt: "AI is becoming a permanent claim on capital, energy and political power. Markets are still treating it as another trade.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    date: "July 11, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-next-security-order",
     title: "The Next Security Order",
     excerpt: "The market is pricing oil. It should be pricing the next security order — every crisis reallocates capital, and this one reallocates it toward resilience.",
@@ -31,18 +67,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/the-winners-will-own-it",
-    title: "The Winners Will Own It",
-    excerpt: "Europe’s historic opportunity in the Intelligence Divide — lead where it is already strong, or pay to use what others own.",
-    tag: "Morning Note · Europe",
-    slot: "Morning Note",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "July 7, 2026",
-    read: "3 min read",
-    time: "07:15",
-    kind: "day"
-  },
-  {
     url: "/the-new-capital-cycle",
     title: "The New Capital Cycle",
     excerpt: "The greatest opportunity is no longer AI — it is the race to own the Infrastructure of Intelligence. History rewards the landlords, not the tenants.",
@@ -52,18 +76,6 @@ window.FDK_POSTS = [
     date: "July 6, 2026",
     read: "8 min read",
     time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/own-it-or-finance-it",
-    title: "Own It, or Finance It",
-    excerpt: "Europe’s defining test in The New Capital Cycle — own the Infrastructure of Intelligence, or simply finance it while others capture the profits.",
-    tag: "Morning Note · Europe",
-    slot: "Morning Note",
-    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
-    date: "July 6, 2026",
-    read: "4 min read",
-    time: "07:15",
     kind: "day"
   },
   {
@@ -88,18 +100,6 @@ window.FDK_POSTS = [
     date: "June 29, 2026",
     read: "5 min read",
     time: "08:30",
-    kind: "day"
-  },
-  {
-    url: "/the-week-that-could-redefine-the-ai-trade",
-    title: "The Week That Could Redefine the AI Trade",
-    excerpt: "Sintra, US payrolls, China PMI and Tesla may reveal where the next trillion dollars of market value will be created.",
-    tag: "The Week Ahead · Capital",
-    slot: "The Week Ahead",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80",
-    date: "June 29, 2026",
-    read: "4 min read",
-    time: "07:30",
     kind: "day"
   },
   {
