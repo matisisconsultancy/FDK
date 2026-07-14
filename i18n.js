@@ -22,7 +22,7 @@
     if (dataLoading) return;
     dataLoading = true;
     var s = document.createElement("script");
-    s.src = "/i18n-data.js?v=98";
+    s.src = "/i18n-data.js?v=99";
     s.onload = function () { DICT = window.FDK_I18N || DICT; var q = dataQueue; dataQueue = []; q.forEach(function (f) { f(); }); };
     s.onerror = function () { dataQueue = []; };
     document.head.appendChild(s);

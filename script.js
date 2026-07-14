@@ -123,7 +123,9 @@
   function revealHero() {
     $$(".hero [data-reveal-text], .hero [data-reveal-block], .hero .reveal-up").forEach((el) => el.classList.add("in"));
   }
-  if (loader && !reduceMotion) {
+  // Desktop only: the preloader covers the hero for ~1.5s, which delays FCP/LCP.
+  // On touch devices we skip it so content paints immediately.
+  if (loader && !reduceMotion && finePointer) {
     document.body.classList.add("loading");
     let p = 0;
     const tick = () => {
@@ -210,8 +212,10 @@
   }
 
   /* ---------- Hero canvas: flowing signal field ---------- */
+  // Desktop only: on touch devices the continuous canvas loop is the biggest
+  // main-thread cost and barely visible, so we skip it entirely there.
   const canvas = $("#heroCanvas");
-  if (canvas && !reduceMotion) {
+  if (canvas && !reduceMotion && finePointer) {
     const ctx = canvas.getContext("2d");
     let w = 0, h = 0, running = true;
     const mouse = { x: 0.7, y: 0.4 };
@@ -264,7 +268,7 @@
 
   /* ---------- Thesis hero: interactive dot grid ---------- */
   const tcanvas = $("#theroCanvas");
-  if (tcanvas && !reduceMotion) {
+  if (tcanvas && !reduceMotion && finePointer) {
     const tctx = tcanvas.getContext("2d");
     const host = tcanvas.parentElement;
     let w = 0, h = 0, gap = 36, dots = [], running = true;
@@ -342,7 +346,7 @@
     });
     ticking = false;
   };
-  if (!reduceMotion && parallaxImgs.length) {
+  if (!reduceMotion && finePointer && parallaxImgs.length) {
     window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(parallax); } }, { passive: true });
     parallax();
   }
