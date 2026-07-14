@@ -672,8 +672,9 @@
       gate.classList.add("reader__gate--done");
       form.hidden = true; skip.hidden = true;
       showMsg(msg, res.ok
-        ? "You’re in — The Velocity Edge is on its way. Enjoy the chapter."
-        : "Enjoy the chapter. We couldn’t confirm the subscription just now — please try again later.", "ok");
+        ? "You’re in. Check your inbox and confirm your email to download the sample — meanwhile, keep reading below."
+        : "Enjoy the chapter. We couldn’t confirm the subscription just now — please try again later.",
+        res.ok ? "ok" : "err");
     });
   }
 
