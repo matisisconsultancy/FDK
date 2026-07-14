@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-trillion-dollar-trade",
+    title: "The Next Trillion-Dollar Trade",
+    excerpt: "Forget oil. The real investment opportunity is the global race to finance intelligence — $5.8 trillion to build the infrastructure the AI economy runs on.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=800&q=80",
+    date: "July 14, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-end-of-cheap-globalization",
     title: "The End of Cheap Globalization",
     excerpt: "A new capital cycle is emerging around AI, defense, energy and industrial sovereignty — the largest reallocation of capital since the end of the Cold War.",
