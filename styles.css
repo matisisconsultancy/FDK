@@ -1201,3 +1201,7 @@ body.theme-light .jsub__social.social-link:hover { color: #0a66c2; border-color:
 @media (max-width: 720px) {
   .lang-switch { margin: 8px 6px 2px; align-self: flex-start; }
 }
+
+/* <picture> wrappers (WebP + JPG fallback) must not affect layout:
+   the inner <img> keeps behaving as a direct child of its container. */
+picture { display: contents; }

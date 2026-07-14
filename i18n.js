@@ -13,6 +13,21 @@
   var DEFAULT = "en";
   var DICT = window.FDK_I18N || { es: {}, it: {} };
 
+  // The translation dictionary (~420 KB) is only fetched when a non-English
+  // language is active, so English visitors never download it.
+  var dataLoading = false, dataQueue = [];
+  function ensureData(cb) {
+    if (window.FDK_I18N) { DICT = window.FDK_I18N; cb(); return; }
+    dataQueue.push(cb);
+    if (dataLoading) return;
+    dataLoading = true;
+    var s = document.createElement("script");
+    s.src = "/i18n-data.js?v=97";
+    s.onload = function () { DICT = window.FDK_I18N || DICT; var q = dataQueue; dataQueue = []; q.forEach(function (f) { f(); }); };
+    s.onerror = function () { dataQueue = []; };
+    document.head.appendChild(s);
+  }
+
   /* ---- language selection ---------------------------------- */
   function stored() { try { return localStorage.getItem("fdk_lang"); } catch (e) { return null; } }
   function detect() {
@@ -114,9 +129,8 @@
     if (LANGS.indexOf(lang) < 0) lang = DEFAULT;
     current = lang;
     try { localStorage.setItem("fdk_lang", lang); } catch (e) {}
-    apply(document.body, lang);
-    applyHead(lang);
-    syncSwitcher();
+    if (lang === "en") { apply(document.body, lang); applyHead(lang); syncSwitcher(); }
+    else ensureData(function () { apply(document.body, lang); applyHead(lang); syncSwitcher(); });
   }
 
   /* ---- switcher UI ----------------------------------------- */
@@ -172,13 +186,13 @@
   function boot() {
     buildSwitcher();
     makeObserver();
-    if (current !== "en") apply(document.body, current);
-    applyHead(current);
+    document.documentElement.setAttribute("lang", current);
+    if (current !== "en") ensureData(function () { apply(document.body, current); applyHead(current); });
   }
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();
   window.addEventListener("load", function () {
-    if (current !== "en") apply(document.body, current);
+    if (current !== "en") ensureData(function () { apply(document.body, current); });
     syncSwitcher();
   });
 
