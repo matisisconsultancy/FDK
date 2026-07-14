@@ -34,11 +34,18 @@
      never breaks while you finish the setup.
      ============================================================ */
   const FDK_FORMS = {
-    // 1) BOOK DEMO (Sample reader on the home page).
-    //    Kit / ConvertKit form ID. Kit's FREE plan emails the demo
-    //    automatically via this form's "Incentive email".
-    //    Paste the numeric form ID (e.g. "1234567").
-    kitBookFormId: "YOUR_KIT_FORM_ID",
+    // 1) BOOK DEMOS (Sample reader — one Kit form per book).
+    //    Each book has its own page and its own Kit form, so each
+    //    book emails ITS OWN sample PDF. Kit's FREE plan emails the
+    //    PDF automatically via the form's "Confirmation email".
+    //    Key = exact book title (as shown on the button's data-title);
+    //    value = numeric Kit form ID (from app.kit.com/forms/<ID>/…).
+    //    A book with no entry here stays in demo mode (sends nothing).
+    kitBookForms: {
+      "The Rise of Velocity": "9684960",
+      // "The European Pivot": "YOUR_KIT_FORM_ID",
+      // "The Age of Intelligent Motion": "YOUR_KIT_FORM_ID",
+    },
 
     // 2) NEWSLETTER (#subForm in the Intelligence Library).
     //    Kit / ConvertKit form ID. Can be the same as the book form
@@ -666,7 +673,9 @@
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showMsg(msg, "Please enter a valid email address.", "err"); input.focus(); return; }
       const submit = form.querySelector(".reader__submit");
       submit.disabled = true; submit.textContent = "Sending…";
-      const res = await ckSubscribe(FDK_FORMS.kitBookFormId, email, { book_interest: rq("title").textContent });
+      const bookTitle = rq("title").textContent;
+      const bookFormId = (FDK_FORMS.kitBookForms || {})[bookTitle];
+      const res = await ckSubscribe(bookFormId, email, { book_interest: bookTitle });
       setUnlocked();
       revealRest();
       gate.classList.add("reader__gate--done");

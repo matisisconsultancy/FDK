@@ -9,40 +9,53 @@ it works but sends nothing — so the live site never breaks mid-setup.
 
 | Form | Where | Config key | Backend |
 |------|-------|-----------|---------|
-| Book demo (Sample reader) | home page `#downloadSample` | `kitBookFormId` | Kit / ConvertKit |
+| Book demos (Sample reader) | each book page `#downloadSample` | `kitBookForms` (one per book) | Kit / ConvertKit |
 | Newsletter | intelligence-library `#subForm` | `kitNewsletterFormId` | Kit / ConvertKit |
 | Briefing request | home page `#briefingForm` | `briefingEndpoint` | Google Apps Script |
 
 ---
 
-## 1 · Book demo + Newsletter → Kit (ConvertKit), free plan
+## 1 · Book demos → Kit (ConvertKit), free plan — ONE FORM PER BOOK
 
-Kit's free plan includes the **incentive email**, which is what auto-sends
-the demo the moment someone submits their email.
+Each book has its own page (`/the-rise-of-velocity/`, `/the-european-pivot/`,
+`/the-age-of-intelligent-motion/`, …) and should have its **own Kit form**, so
+each book emails **its own sample PDF**. Kit's free plan includes the
+**confirmation email**, which is what auto-sends the sample.
+
+For **each** book you want to offer:
 
 1. Create a free account at **https://kit.com** (formerly ConvertKit).
-2. **Grow → Landing Pages & Forms → Create → Form → Inline.** Design doesn't
-   matter (the site uses its own UI); you only need the form to exist.
-3. Open the form → **Settings → Incentive email** → turn **ON**
-   "Send incentive email". This is the email the visitor receives:
-   - **Attach the demo** as a PDF, **or**
-   - add a **button/link** that opens the demo online (e.g. a link to the
-     sample chapter already on the site, or a Google Drive "anyone with the
-     link" PDF).
-   - Turn **off** "Auto-confirm new subscribers" only if you want
-     double-opt-in; leave default for instant delivery.
-4. Find the **form ID**: open the form, look at the URL
-   `app.kit.com/forms/**1234567**/edit` — the number is the ID.
-5. Paste it into `script.js`:
+2. **Grow → Landing Pages & Forms → Create New → Form → Inline.** Design
+   doesn't matter (the site uses its own UI); you only need the form to exist.
+   Name it after the book (e.g. "The Rise of Velocity").
+3. Open the form → **Settings → Confirmation email**:
+   - Keep **"Send confirmation email"** ON.
+   - Leave **"Auto-confirm new subscribers"** OFF (standard double opt-in).
+   - Under **"After confirming redirect to"**, choose **Download** and upload
+     that book's sample **PDF** (or **URL** for an online link).
+   - Optionally **Edit Email Contents** for the brand voice.
+4. Find the **form ID** in the URL: `app.kit.com/forms/…/**9684960**/edit` —
+   the number is the ID.
+5. Add it to the `kitBookForms` map in `script.js`, keyed by the **exact**
+   book title (must match the button's `data-title`):
    ```js
-   kitBookFormId: "1234567",
-   kitNewsletterFormId: "1234567",   // same form, or a second one
+   kitBookForms: {
+     "The Rise of Velocity": "9684960",
+     "The European Pivot": "1234567",           // add when ready
+     "The Age of Intelligent Motion": "7654321",// add when ready
+   },
    ```
-   Use the **same** ID for both if you want one list, or create a second
-   form for pure newsletter sign-ups and use its ID for the newsletter.
+   A book with no entry stays in demo mode (reveals the preview, sends
+   nothing) — so unfinished books never send the wrong PDF.
 
 That's it — the site posts to `https://app.kit.com/forms/<id>/subscriptions`,
-Kit stores the subscriber and fires the incentive email.
+Kit stores the subscriber and fires the confirmation email with the sample.
+
+### Newsletter form
+
+The Intelligence Library newsletter (`#subForm`) uses its own form:
+create one more Kit form (or reuse a book form) and paste its ID into
+`kitNewsletterFormId`.
 
 ---
 
@@ -91,7 +104,7 @@ again.
 
 ### Quick checklist
 - [ ] Kit form created + incentive email ON with the demo attached/linked
-- [ ] `kitBookFormId` filled in
+- [ ] Book form ID added to `kitBookForms` (one per book)
 - [ ] `kitNewsletterFormId` filled in
 - [ ] Apps Script deployed as Web app (Anyone), `/exec` URL copied
 - [ ] `briefingEndpoint` filled in
