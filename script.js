@@ -25,6 +25,34 @@
   const yEl = $("#year");
   if (yEl) yEl.textContent = new Date().getFullYear();
 
+  /* ============================================================
+     FDK · FORMS CONFIG — the only values you edit to go live.
+     Full step-by-step instructions: see FORMS-SETUP.md
+     ------------------------------------------------------------
+     Until a value is filled in, its form stays in "demo" mode
+     (it looks like it works but sends nothing), so the live site
+     never breaks while you finish the setup.
+     ============================================================ */
+  const FDK_FORMS = {
+    // 1) BOOK DEMO (Sample reader on the home page).
+    //    Kit / ConvertKit form ID. Kit's FREE plan emails the demo
+    //    automatically via this form's "Incentive email".
+    //    Paste the numeric form ID (e.g. "1234567").
+    kitBookFormId: "YOUR_KIT_FORM_ID",
+
+    // 2) NEWSLETTER (#subForm in the Intelligence Library).
+    //    Kit / ConvertKit form ID. Can be the same as the book form
+    //    or a separate one for pure newsletter sign-ups.
+    kitNewsletterFormId: "YOUR_KIT_FORM_ID",
+
+    // 3) BRIEFING FORM (Request briefing on the home page).
+    //    Google Apps Script Web App URL. It saves the lead to a
+    //    Google Sheet, emails your team, and auto-replies to the
+    //    client. Paste the deployment URL ending in "/exec".
+    briefingEndpoint: "YOUR_APPS_SCRIPT_URL",
+  };
+  const isConfigured = (v, placeholder) => !!v && v !== placeholder;
+
   /* ---------- Split text into masked words / block ---------- */
   function splitText(el) {
     const nodes = Array.from(el.childNodes);
@@ -522,8 +550,7 @@
      short teaser, a soft gate invites the reader to unlock the rest by
      joining The Velocity Edge (captured via Kit / ConvertKit). It is a SOFT
      gate: readers can skip and keep reading either way.
-     To go live: paste your Kit/ConvertKit form ID into CK_FORM_ID below. */
-  const CK_FORM_ID = "YOUR_KIT_FORM_ID"; // ← replace with your Kit form ID
+     To go live: set FDK_FORMS.kitBookFormId at the top of this file. */
   const PREVIEW_KEY = "fdk_preview_unlocked";
   const DEFAULT_SAMPLE = [
     "Speed has replaced scale.",
@@ -567,13 +594,16 @@
     return out;
   }
 
-  async function ckSubscribe(email, book) {
-    if (!CK_FORM_ID || CK_FORM_ID === "YOUR_KIT_FORM_ID") return { ok: true, placeholder: true };
+  /* Subscribe an email to a Kit / ConvertKit form. Returns
+     { ok, placeholder }. While the form ID is still the placeholder,
+     resolves ok:true so the UX keeps working before setup is done. */
+  async function ckSubscribe(formId, email, fields) {
+    if (!isConfigured(formId, "YOUR_KIT_FORM_ID")) return { ok: true, placeholder: true };
     try {
-      const res = await fetch("https://app.kit.com/forms/" + CK_FORM_ID + "/subscriptions", {
+      const res = await fetch("https://app.kit.com/forms/" + formId + "/subscriptions", {
         method: "POST",
         headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify({ email_address: email, fields: { book_interest: book } }),
+        body: JSON.stringify({ email_address: email, fields: fields || {} }),
       });
       return { ok: res.ok };
     } catch (e) { return { ok: false }; }
@@ -636,7 +666,7 @@
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { showMsg(msg, "Please enter a valid email address.", "err"); input.focus(); return; }
       const submit = form.querySelector(".reader__submit");
       submit.disabled = true; submit.textContent = "Sending…";
-      const res = await ckSubscribe(email, rq("title").textContent);
+      const res = await ckSubscribe(FDK_FORMS.kitBookFormId, email, { book_interest: rq("title").textContent });
       setUnlocked();
       revealRest();
       gate.classList.add("reader__gate--done");
@@ -855,27 +885,39 @@
     }
   }
 
-  /* ---------- Subscribe form (front-end only) ---------- */
+  /* ---------- Subscribe form (newsletter → Kit / ConvertKit) ---------- */
   const subForm = $("#subForm");
   const subStatus = $("#subStatus");
   if (subForm && subStatus) {
-    subForm.addEventListener("submit", (e) => {
+    subForm.addEventListener("submit", async (e) => {
       e.preventDefault();
-      const email = $("#subEmail").value.trim();
+      const emailInput = $("#subEmail");
+      const email = emailInput.value.trim();
       const ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
       subStatus.className = "form__status";
       if (!ok) { subStatus.textContent = "Please enter a valid email."; subStatus.classList.add("err"); return; }
+      const subBtn = $("button[type=submit]", subForm);
+      const subOriginal = subBtn ? subBtn.textContent : "";
+      if (subBtn) { subBtn.disabled = true; subBtn.textContent = "Subscribing…"; }
+      const res = await ckSubscribe(FDK_FORMS.kitNewsletterFormId, email, { source: "intelligence-library" });
+      if (subBtn) { subBtn.disabled = false; subBtn.textContent = subOriginal; }
       subForm.reset();
-      subStatus.textContent = "Subscribed — the day and night notes are on their way.";
-      subStatus.classList.add("ok");
+      subStatus.textContent = res.ok
+        ? "Subscribed — the day and night notes are on their way."
+        : "Something went wrong. Please try again in a moment.";
+      subStatus.classList.add(res.ok ? "ok" : "err");
     });
   }
 
-  /* ---------- Contact form ---------- */
+  /* ---------- Briefing form (lead → Google Apps Script) ----------
+     Posts the lead to a Google Apps Script Web App, which saves it to
+     a Google Sheet, emails the team, and auto-replies to the client.
+     Body is sent as text/plain so the browser skips the CORS preflight
+     that Apps Script cannot answer. Set FDK_FORMS.briefingEndpoint. */
   const form = $("#briefingForm");
   const status = $("#formStatus");
   if (form && status) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const name = $("#name").value.trim();
       const email = $("#email").value.trim();
@@ -886,11 +928,46 @@
       const btn = $("button[type=submit]", form);
       const original = btn.textContent;
       btn.disabled = true; btn.textContent = "Sending...";
-      setTimeout(() => {
-        btn.disabled = false; btn.textContent = original; form.reset();
-        status.textContent = `Thank you, ${name}. We've received your request and will be in touch shortly.`;
-        status.classList.add("ok");
-      }, 900);
+
+      const done = (ok) => {
+        btn.disabled = false; btn.textContent = original;
+        if (ok) {
+          form.reset();
+          status.textContent = `Thank you, ${name}. We've received your request and will be in touch shortly.`;
+          status.classList.add("ok");
+        } else {
+          status.textContent = "We couldn't send that just now. Please try again, or email us directly.";
+          status.classList.add("err");
+        }
+      };
+
+      // Not configured yet → keep the friendly confirmation (demo mode).
+      if (!isConfigured(FDK_FORMS.briefingEndpoint, "YOUR_APPS_SCRIPT_URL")) {
+        setTimeout(() => done(true), 700);
+        return;
+      }
+
+      const payload = {
+        name: name,
+        email: email,
+        company: ($("#company") && $("#company").value.trim()) || "",
+        sector: ($("#sector") && $("#sector").value) || "",
+        message: ($("#message") && $("#message").value.trim()) || "",
+        source: "briefingForm",
+        page: location.href,
+      };
+      try {
+        const res = await fetch(FDK_FORMS.briefingEndpoint, {
+          method: "POST",
+          headers: { "Content-Type": "text/plain;charset=utf-8" },
+          body: JSON.stringify(payload),
+        });
+        let ok = res.ok;
+        try { const j = await res.json(); ok = ok && j && j.ok !== false; } catch (e) {}
+        done(ok);
+      } catch (e) {
+        done(false);
+      }
     });
   }
 })();
