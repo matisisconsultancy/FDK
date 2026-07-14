@@ -60,8 +60,8 @@ client auto-reply. Files: `forms/briefing-apps-script.gs`.
    - `SHEET_ID`: leave `""` (the script is bound to this sheet), **or**
      paste the ID from the sheet URL
      `docs.google.com/spreadsheets/d/**<ID>**/edit`.
-   - `TEAM_EMAIL`: where lead alerts go — `matisisconsultancy@gmail.com`
-     or `info@fdkempowernet.com` once that mailbox exists.
+   - `TEAM_EMAIL`: where lead alerts go — already set to
+     `fdkempowernet@gmail.com`.
 5. **Deploy → New deployment → ⚙ → Web app:**
    - **Execute as:** Me
    - **Who has access:** **Anyone**

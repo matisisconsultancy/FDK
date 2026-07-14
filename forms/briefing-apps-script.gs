@@ -30,9 +30,8 @@ var CONFIG = {
   SHEET_ID: "",
   SHEET_NAME: "Leads",
 
-  // Where lead notifications go. Change to info@fdkempowernet.com
-  // once that mailbox is live, or keep the Gmail below.
-  TEAM_EMAIL: "matisisconsultancy@gmail.com",
+  // Where lead notifications go.
+  TEAM_EMAIL: "fdkempowernet@gmail.com",
 
   // Shown to the client in the auto-reply. Purely cosmetic.
   BRAND_NAME: "FDK EmpowerNet",
