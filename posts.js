@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-is-accelerating",
+    title: "The Great Split Is Accelerating",
+    excerpt: "From Hormuz to TSMC, capital is reorganizing around competing AI ecosystems — where resilience, industrial capability and sovereignty matter more than efficiency.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&w=800&q=80",
+    date: "July 16, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-split",
     title: "The Great Split",
     excerpt: "Why the AI Supercycle is creating a K-shaped global economy — one side builds intelligence and compounds capital, the other imports it and rents access.",
