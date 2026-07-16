@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split",
+    title: "The Great Split",
+    excerpt: "Why the AI Supercycle is creating a K-shaped global economy — one side builds intelligence and compounds capital, the other imports it and rents access.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
+    date: "July 15, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-next-trillion-dollar-trade",
     title: "The Next Trillion-Dollar Trade",
     excerpt: "Forget oil. The real investment opportunity is the global race to finance intelligence — $5.8 trillion to build the infrastructure the AI economy runs on.",
