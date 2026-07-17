@@ -13,6 +13,12 @@ Drop a note here and it gets published automatically to
 
 Processed drafts are moved to `drafts/published/` automatically.
 
+> **Fully automated:** pushing a `.md` file into `drafts/` triggers the
+> `Publish drafts` GitHub Action, which formats it (AI if free-form), builds
+> the page, updates `posts.js` + `sitemap.xml`, archives the draft, and pushes
+> — GitHub Pages then redeploys with the note live. The free-form (AI) path
+> needs an `ANTHROPIC_API_KEY` repository secret.
+
 ---
 
 ## Format (deterministic)
@@ -25,7 +31,7 @@ title: The New Alpha
 date: July 17, 2026
 slot: Morning View
 dek: The next trillion dollars will not be created by better technology. They will be created by **higher productivity**.
-image: https://images.unsplash.com/photo-XXXXXXXX?auto=format&fit=crop&w=800&q=80
+image: https://images.unsplash.com/photo-XXXXXXXX?auto=format&fit=crop&w=800&q=80   # optional — auto-assigned from scripts/cover-pool.json if omitted
 tag: Macro · Productivity          # optional (appended after the slot)
 epigraph: Technology is no longer the scarce resource. Productivity is.   # optional
 excerpt: One-line summary for the card.   # optional (defaults to the dek)

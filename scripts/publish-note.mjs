@@ -73,8 +73,21 @@ const title = fm.title || die("front-matter: 'title' is required");
 const date = fm.date || die("front-matter: 'date' is required (e.g. July 18, 2026)");
 const slot = fm.slot || die("front-matter: 'slot' is required (e.g. Morning View)");
 const dek = fm.dek || "";
-const image = fm.image || "";
+const image = fm.image || pickCover();
 const slotCfg = SLOTS[slot] || { kind: "day", time: "08:00" };
+
+/* ---- auto cover: first pool URL not yet used in posts.js ----------------- */
+function pickCover() {
+  const poolPath = path.join(ROOT, "scripts", "cover-pool.json");
+  if (!fs.existsSync(poolPath)) return "";
+  let pool;
+  try { pool = JSON.parse(fs.readFileSync(poolPath, "utf8")).covers || []; }
+  catch { return ""; }
+  const used = fs.readFileSync(path.join(ROOT, "posts.js"), "utf8");
+  const free = pool.find((u) => !used.includes(u.split("?")[0]));
+  if (!free) { warn("cover-pool exhausted — add more URLs to scripts/cover-pool.json; publishing without a unique cover."); return pool[0] || ""; }
+  return free;
+}
 const kind = fm.kind || slotCfg.kind;
 const time = fm.time || slotCfg.time;
 const tag = fm.tag ? `${slot} · ${fm.tag}` : slot;
@@ -86,7 +99,6 @@ function estimateRead(text) {
   const words = text.split(/\s+/).filter(Boolean).length;
   return `${Math.max(2, Math.round(words / 200))} min read`;
 }
-if (!image) die("front-matter: 'image' is required (a cover URL). The AI layer supplies this automatically.");
 
 /* ---- block parser -------------------------------------------------------- */
 const lines = body.split("\n");

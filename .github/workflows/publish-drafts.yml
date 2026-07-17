@@ -1,0 +1,65 @@
+name: Publish drafts — The Velocity Edge
+
+# When a draft lands under drafts/, format it (AI if free-form), build the
+# note page, update posts.js + sitemap.xml, archive the draft, and push the
+# result back so GitHub Pages redeploys with the new note live.
+
+on:
+  push:
+    branches:
+      - claude/eager-carson-vjorjg
+      - claude/ai-capital-allocation-5uragv
+    paths:
+      - "drafts/**"
+  workflow_dispatch: {}
+
+concurrency:
+  group: publish-drafts-${{ github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Process drafts
+        id: process
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: node scripts/process-drafts.mjs
+
+      - name: Commit and push
+        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "Publish ${{ steps.process.outputs.published }} note(s) from drafts"
+          for attempt in 1 2 3 4; do
+            git pull --rebase --autostash origin "${{ github.ref_name }}" || true
+            if git push origin "HEAD:${{ github.ref_name }}"; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt), retrying…"
+            sleep $((attempt * 3))
+          done
+          echo "::error::Failed to push after 4 attempts"
+          exit 1
