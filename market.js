@@ -11,7 +11,7 @@
 
   var CFG = {
     // ← Paste your FREE Twelve Data API key (twelvedata.com → Dashboard → API Key)
-    key: "YOUR_TWELVEDATA_KEY",
+    key: "348570cac4d04db0a36e15bc8b4f8833",
     refreshMs: 90000,
     cacheMs: 60000,
     speed: 0.045,   // px per ms (~45px/s) — matches the brand marquee feel
