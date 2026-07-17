@@ -1,9 +1,9 @@
 /* ============================================================
-   FDK EmpowerNet · Live market ticker (pill marquee, swipeable)
-   - Renders elegant "pill" chips for each indicator.
-   - Auto-scrolls like a marquee, but is also a native horizontal
-     scroll container, so it can be dragged / swiped with a finger.
-   - Live data via Twelve Data (free key). Until a key is set, it
+   FDK EmpowerNet · Live market ticker (pill marquee)
+   - Elegant "pill" chips per indicator.
+   - Smooth, continuous transform-based marquee motion (like the
+     original brand marquee), AND finger-draggable / swipeable.
+   - Live data via Twelve Data (free key). Until a key is set it
      shows clearly-marked sample values so the layout looks right.
    ============================================================ */
 (function () {
@@ -12,8 +12,9 @@
   var CFG = {
     // ← Paste your FREE Twelve Data API key (twelvedata.com → Dashboard → API Key)
     key: "YOUR_TWELVEDATA_KEY",
-    refreshMs: 90000,   // refresh live prices every 90s
-    cacheMs: 60000,     // reuse data across pages for 60s (fewer API calls)
+    refreshMs: 90000,
+    cacheMs: 60000,
+    speed: 0.045,   // px per ms (~45px/s) — matches the brand marquee feel
     items: [
       { s: "WTI/USD",   l: "Oil · WTI",   dp: 2, d: 78.42,  c: 0.82 },
       { s: "BRENT/USD", l: "Brent",       dp: 2, d: 82.15,  c: 0.64 },
@@ -48,13 +49,13 @@
     if (!live) pills.push('<span class="mpill mpill--tag">Sample</span>');
     CFG.items.forEach(function (it) {
       var q = map && map[it.s];
-      if (live && !q) return;                 // when live, never fake a missing symbol
+      if (live && !q) return;
       pills.push(pillHTML(it, q ? q.price : it.d, q ? q.chg : it.c));
     });
     var html = pills.join("");
     containers.forEach(function (c) {
       var track = c.querySelector(".mkt__track");
-      if (track) track.innerHTML = html + html; // duplicate for a seamless loop
+      if (track) { track.innerHTML = html + html; if (c.__measure) c.__measure(); }
     });
   }
 
@@ -89,34 +90,49 @@
       .catch(function () { render(null, false); });
   }
 
-  render(null, false);   // paint immediately (sample) so the band is never empty
-  fetchLive();
-  setInterval(fetchLive, CFG.refreshMs);
-
-  /* ---- marquee that is also finger-swipeable ---- */
+  /* ---- smooth transform marquee + finger drag ---- */
   containers.forEach(function (c) {
-    var paused = false, onscreen = true, idle = null, last = 0;
-    var hold = function () { paused = true; clearTimeout(idle); };
-    var release = function () { clearTimeout(idle); idle = setTimeout(function () { paused = false; }, 2500); };
-    c.addEventListener("pointerenter", hold);
-    c.addEventListener("pointerleave", release);
-    c.addEventListener("pointerdown", hold);
+    var track = c.querySelector(".mkt__track");
+    if (!track) return;
+    var pos = 0, half = 0, dragging = false, startX = 0, startPos = 0, paused = false, onscreen = true, last = 0, idle = null;
+
+    c.__measure = function () { half = track.scrollWidth / 2; };
+    function apply() { track.style.transform = "translate3d(" + pos.toFixed(2) + "px,0,0)"; }
+    function wrap() { if (half > 0) { while (pos <= -half) pos += half; while (pos > 0) pos -= half; } }
+
+    c.style.touchAction = "pan-y";   // let vertical page scroll pass through
+    c.addEventListener("pointerenter", function () { if (!dragging) paused = true; });
+    c.addEventListener("pointerleave", function () { if (!dragging) { clearTimeout(idle); idle = setTimeout(function () { paused = false; }, 600); } });
+    c.addEventListener("pointerdown", function (e) {
+      dragging = true; paused = true; startX = e.clientX; startPos = pos;
+      if (c.setPointerCapture) { try { c.setPointerCapture(e.pointerId); } catch (x) {} }
+      clearTimeout(idle);
+    });
+    c.addEventListener("pointermove", function (e) {
+      if (!dragging) return;
+      pos = startPos + (e.clientX - startX); wrap(); apply();
+    });
+    var release = function () { if (!dragging) return; dragging = false; clearTimeout(idle); idle = setTimeout(function () { paused = false; }, 2000); };
     c.addEventListener("pointerup", release);
-    c.addEventListener("touchstart", hold, { passive: true });
-    c.addEventListener("touchend", release, { passive: true });
+    c.addEventListener("pointercancel", release);
+
     if ("IntersectionObserver" in window) {
       new IntersectionObserver(function (e) { onscreen = e[0].isIntersecting; }, { threshold: 0 }).observe(c);
     }
     function step(ts) {
       if (!last) last = ts;
       var dt = Math.min(48, ts - last); last = ts;
-      if (!paused && onscreen && !document.hidden && !reduceMotion) {
-        c.scrollLeft += dt * 0.045;               // ~45px/s drift
-        var half = c.scrollWidth / 2;
-        if (half > 0 && c.scrollLeft >= half) c.scrollLeft -= half;
+      if (!half) c.__measure();
+      if (!paused && !dragging && onscreen && !document.hidden && !reduceMotion) {
+        pos -= dt * CFG.speed; wrap(); apply();
       }
       requestAnimationFrame(step);
     }
     requestAnimationFrame(step);
+    window.addEventListener("resize", c.__measure);
   });
+
+  render(null, false);   // paint immediately (sample) so the band is never empty
+  fetchLive();
+  setInterval(fetchLive, CFG.refreshMs);
 })();
