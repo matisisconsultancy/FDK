@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-alpha",
+    title: "The New Alpha",
+    excerpt: "The next trillion dollars will not be created by better technology, but by higher productivity — the speed at which nations convert intelligence into output.",
+    tag: "Morning View · Productivity",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?auto=format&fit=crop&w=800&q=80",
+    date: "July 17, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-is-accelerating",
     title: "The Great Split Is Accelerating",
     excerpt: "From Hormuz to TSMC, capital is reorganizing around competing AI ecosystems — where resilience, industrial capability and sovereignty matter more than efficiency.",
