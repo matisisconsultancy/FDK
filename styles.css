@@ -1205,3 +1205,10 @@ body.theme-light .jsub__social.social-link:hover { color: #0a66c2; border-color:
 /* <picture> wrappers (WebP + JPG fallback) must not affect layout:
    the inner <img> keeps behaving as a direct child of its container. */
 picture { display: contents; }
+
+/* ============================================================
+   LIVE MARKET TICKER (TradingView ticker tape)
+   ============================================================ */
+.ticker-band { background: var(--navy-deep); border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); }
+.ticker-band .tradingview-widget-container { line-height: 0; }
+.ticker-band .tradingview-widget-copyright { display: none; }

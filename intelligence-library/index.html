@@ -64,6 +64,33 @@
         <p class="journal-hero__sub reveal-up">Francesco writes through the day. <strong>Day notes</strong> capture signals as they happen; <strong>night notes</strong> close the day — market wraps, end-of-day reads and what to sleep on. One journal, two rhythms.</p>
       </div>
     </section>
+    <!-- LIVE MARKET TICKER (TradingView) -->
+    <aside class="ticker-band" aria-label="Live market indicators">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            { "proName": "TVC:USOIL", "title": "Crude Oil WTI" },
+            { "proName": "TVC:UKOIL", "title": "Brent" },
+            { "proName": "FX:EURUSD", "title": "EUR/USD" },
+            { "proName": "TVC:DXY", "title": "Dollar Index" },
+            { "proName": "TVC:GOLD", "title": "Gold" },
+            { "proName": "SP:SPX", "title": "S&P 500" },
+            { "proName": "NASDAQ:NDX", "title": "Nasdaq 100" },
+            { "proName": "NASDAQ:NVDA", "title": "Nvidia" },
+            { "proName": "BINANCE:BTCUSDT", "title": "Bitcoin" },
+            { "proName": "TVC:US10Y", "title": "US 10Y" }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+        </script>
+      </div>
+    </aside>
 
     <!-- FILTER + FEATURED -->
     <section class="journal">

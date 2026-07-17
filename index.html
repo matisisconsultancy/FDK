@@ -112,13 +112,33 @@
       </div>
     </section>
 
-    <!-- MARQUEE (section divider) -->
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee__track">
-        <span>Mobility</span><i>•</i><span>Energy</span><i>•</i><span>AI Strategy</span><i>•</i><span>Mobility</span><i>•</i><span>Energy</span><i>•</i><span>AI Strategy</span><i>•</i>
-        <span>Mobility</span><i>•</i><span>Energy</span><i>•</i><span>AI Strategy</span><i>•</i><span>Mobility</span><i>•</i><span>Energy</span><i>•</i><span>AI Strategy</span><i>•</i>
+    <!-- LIVE MARKET TICKER (TradingView) -->
+    <aside class="ticker-band" aria-label="Live market indicators">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            { "proName": "TVC:USOIL", "title": "Crude Oil WTI" },
+            { "proName": "TVC:UKOIL", "title": "Brent" },
+            { "proName": "FX:EURUSD", "title": "EUR/USD" },
+            { "proName": "TVC:DXY", "title": "Dollar Index" },
+            { "proName": "TVC:GOLD", "title": "Gold" },
+            { "proName": "SP:SPX", "title": "S&P 500" },
+            { "proName": "NASDAQ:NDX", "title": "Nasdaq 100" },
+            { "proName": "NASDAQ:NVDA", "title": "Nvidia" },
+            { "proName": "BINANCE:BTCUSDT", "title": "Bitcoin" },
+            { "proName": "TVC:US10Y", "title": "US 10Y" }
+          ],
+          "showSymbolLogo": true,
+          "colorTheme": "dark",
+          "isTransparent": true,
+          "displayMode": "adaptive",
+          "locale": "en"
+        }
+        </script>
       </div>
-    </div>
+    </aside>
 
     <!-- CONCEPTS -->
     <section class="concepts" id="concepts">
