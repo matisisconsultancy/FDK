@@ -91,13 +91,24 @@ Technology is no longer the scarce resource. Productivity is. ==That is the new 
 | `::signals HEADING \| hint` | numbered accordion (`# Title` + text + `signal:`) |
 | `::patterns HEADING \| hint` | card grid (`# Title` + text; `# [45%] Title` for a badge) |
 | `::section HEADING \| hint` | a numbered section header |
+| `::rank HEADING \| hint` | ranked list — one row per line `SCORE :: Name :: trend` (trend optional), auto-numbered |
 | `::takeaways LABEL \| subhead` | bulleted list |
 | `::para` | plain paragraphs |
 | `::close` | the closing line |
 
+Example `::rank` (great for GVI index / benchmark editions):
+```
+::rank Global industries | GVI score · 22 July 2026
+96.2 :: Artificial Intelligence & Accelerated Computing :: ▲ 0.5
+94.8 :: Semiconductors & Advanced Chips :: ▲ 0.4
+93.6 :: Cloud, Data Centers & AI Infrastructure :: ▲ 0.6
+```
+
 ### Slots (set day/night + time automatically)
 `Morning View`, `Morning Note`, `Today's Edition`, `The Week Ahead`,
-`Breaking News` → **day** · `Night Briefing`, `Evening Note`, `The Close` → **night**
+`Breaking News`, `Sunday Edition`, `In Focus`, `Market Watch`, `Midday Pulse`,
+`Daily Nowcast` → **day** · `Night Briefing`, `Evening Note`, `The Close` → **night**
+(Any other slot label also works — it defaults to day / 08:00.)
 
 ---
 

@@ -51,6 +51,11 @@ const SLOTS = {
   "Today's Edition":{ kind: "day",   time: "08:00" },
   "The Week Ahead": { kind: "day",   time: "08:00" },
   "Breaking News":  { kind: "day",   time: "13:30" },
+  "Sunday Edition": { kind: "day",   time: "09:00" },
+  "In Focus":       { kind: "day",   time: "08:00" },
+  "Market Watch":   { kind: "day",   time: "09:30" },
+  "Midday Pulse":   { kind: "day",   time: "12:30" },
+  "Daily Nowcast":  { kind: "day",   time: "07:00" },
   "Night Briefing": { kind: "night", time: "21:30" },
   "Evening Note":   { kind: "night", time: "21:00" },
   "The Close":      { kind: "night", time: "21:00" },
@@ -189,6 +194,27 @@ function patternsHTML(arg, buf) {
   }).join("\n");
   return head + `        <div class="patterns">\n${cards}\n        </div>\n`;
 }
+function rankHTML(arg, buf) {
+  // lines: "score :: name :: trend"  (trend optional). Auto-numbered 01..N.
+  const head = arg ? sectionHead(arg) : "";
+  const rows = buf.map((l) => l.trim()).filter(Boolean);
+  const bd = "1px solid rgba(127,127,127,.18)";
+  const mono = "font-family:'JetBrains Mono',monospace";
+  const lis = rows.map((r, idx) => {
+    const parts = r.split("::").map((s) => s.trim());
+    const score = parts[0] || "";
+    const name = parts[1] || "";
+    const trend = parts[2] || "";
+    const top = idx === 0 ? "border-top:" + bd + ";" : "";
+    const trendHTML = trend ? `<span style="${mono};opacity:.55;font-size:.8em;white-space:nowrap;">${inline(trend)}</span>` : "";
+    return `          <li style="display:flex;align-items:baseline;gap:.9rem;padding:.72rem 0;${top}border-bottom:${bd};">
+            <span style="${mono};font-weight:600;opacity:.4;min-width:2.2ch;">${String(idx + 1).padStart(2, "0")}</span>
+            <span style="flex:1;min-width:0;">${inline(name)}</span>
+            <span style="${mono};font-weight:600;" class="hl-green">${inline(score)}</span>${trendHTML}
+          </li>`;
+  }).join("\n");
+  return head + `        <section class="art-rank reveal-up">\n          <ol style="list-style:none;margin:0;padding:0;">\n${lis}\n          </ol>\n        </section>\n`;
+}
 function takeawaysHTML(arg, buf) {
   const [label, sub] = (arg || "Key takeaways").split("|").map((s) => (s || "").trim());
   const items = buf.map((l) => l.match(/^[-*]\s+(.*)$/)).filter(Boolean).map((x) => `            <li>${inline(x[1])}</li>`).join("\n");
@@ -209,6 +235,7 @@ for (const bl of blocks) {
   else if (bl.name === "signals") art += signalsHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "patterns") art += patternsHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "section") art += sectionHead(bl.arg) + "\n";
+  else if (bl.name === "rank") art += rankHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "takeaways") art += takeawaysHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "para") paras(bl.buf).forEach((p) => art += `        <p class="reveal-up">${inline(p)}</p>\n\n`);
   else if (bl.name === "close") art += `        <p class="art-close reveal-up">${paras(bl.buf).map(inline).join(" ")}</p>\n\n`;
