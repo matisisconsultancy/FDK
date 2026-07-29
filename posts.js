@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-velocity-has-arrived",
+    title: "The Cost of Velocity Has Arrived",
+    excerpt: "The overnight semiconductor rout does not end the AI Supercycle — it ends the assumption that every dollar spent to build it creates equal value. The market has moved from measuring possibility to underwriting reality.",
+    tag: "Morning View · Markets",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "July 29, 2026",
+    read: "10 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-acceleration-meets-the-cost-of-capital",
     title: "The Great Acceleration Meets the Cost of Capital",
     excerpt: "As renewed inflation risks and a possible Federal Reserve rate increase raise the cost of capital, markets must separate acceleration supported by strategic necessity from acceleration sustained only by optimistic valuations.",
