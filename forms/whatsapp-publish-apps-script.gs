@@ -16,19 +16,23 @@
  * SETUP — full walkthrough in ../WHATSAPP-SETUP.md. In short:
  *   1. Create a GitHub fine-grained token (Contents: Read/Write on the repo).
  *   2. Create a new Apps Script project, paste this file.
- *   3. Fill in CONFIG below (GITHUB_TOKEN + ALLOWED_SENDERS).
+ *   3. Fill in CONFIG below (GITHUB_TOKEN via Script Properties + ALLOWED_SENDERS).
  *   4. Deploy → New deployment → Web app (Execute as: Me · Access: Anyone).
  *   5. Paste the /exec URL into Twilio's WhatsApp "When a message comes in".
  *
- * SECURITY: store the token in Script Properties, not in the file, if you can
- * (see readToken_ below). Only numbers in ALLOWED_SENDERS can publish, and the
- * message must start with the KEYWORD — so a stray WhatsApp never goes live.
+ * SECURITY: store the token in Script Properties, not in the file (see
+ * readToken_). Only numbers in ALLOWED_SENDERS can publish, and the message
+ * must start with the KEYWORD — so a stray WhatsApp never goes live.
+ *
+ * DIAGNOSTICS: doPost + reply_ write to the Apps Script execution log
+ * (Logger.log). Run testGitHub() / testDoPost() straight from the editor to
+ * check the GitHub commit path and the message handling without WhatsApp.
  */
 
 // ======================== CONFIG ========================
 var CONFIG = {
   // ---- GitHub ----
-  // Prefer Script Properties (File ▸ Project settings ▸ Script properties):
+  // Prefer Script Properties (⚙ Project settings ▸ Script properties):
   // add a property named GITHUB_TOKEN. Leaving this "" then reads it from there.
   GITHUB_TOKEN: "",
   GITHUB_REPO: "matisisconsultancy/FDK",
@@ -40,8 +44,8 @@ var CONFIG = {
   // The message must start with this word (case-insensitive) to publish.
   KEYWORD: "PUBLICAR",
   // Numbers allowed to publish — E.164 with country code, no "whatsapp:" prefix.
-  // e.g. "+34600123123". Leave the array empty to allow any sender (NOT advised).
-  ALLOWED_SENDERS: [],
+  // Leave the array empty to allow any sender (NOT advised in production).
+  ALLOWED_SENDERS: ["+34600358822"],
 
   // Default edition slot (see drafts/README.md for the full list).
   DEFAULT_SLOT: "Midday Pulse",
@@ -55,6 +59,7 @@ function doPost(e) {
     var p = (e && e.parameter) || {};
     var from = String(p.From || "").replace(/^whatsapp:/i, "").trim();
     var body = String(p.Body || "").trim();
+    Logger.log("IN from=[" + from + "] body=[" + body + "]");
 
     // 1 · sender allow-list
     if (CONFIG.ALLOWED_SENDERS.length && CONFIG.ALLOWED_SENDERS.indexOf(from) === -1) {
@@ -128,6 +133,7 @@ function readToken_() {
 
 // Reply to Twilio with TwiML — Twilio relays this back to the sender on WhatsApp.
 function reply_(msg) {
+  Logger.log("REPLY: " + msg);
   var xml = '<?xml version="1.0" encoding="UTF-8"?><Response><Message>' +
     xmlEscape_(msg) + "</Message></Response>";
   return ContentService.createTextOutput(xml).setMimeType(ContentService.MimeType.XML);
@@ -198,4 +204,35 @@ function xmlEscape_(s) {
 
 function escapeRe_(s) {
   return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+// ----------------------------------------------------------- diagnostics ----
+// Run these straight from the editor (pick the function, press ▷ Run) and read
+// the execution log. They are safe manual helpers — Twilio never calls them.
+
+function testGitHub() {
+  try {
+    var t = todayParts_();
+    commitFile_(
+      "drafts/" + t.iso + "-test-directo.md",
+      "---\ntitle: Test Directo\nslug: test-directo\ndate: " + t.pretty +
+        "\nslot: Midday Pulse\nformat: ai\n---\n\nPrueba directa desde Apps Script.\n",
+      "Test directo desde Apps Script"
+    );
+    Logger.log("✅ OK: commit hecho. Revisa GitHub.");
+  } catch (e) {
+    Logger.log("✖ ERROR: " + e.message);
+  }
+}
+
+// Simulates the exact POST Twilio sends, against this editor's code.
+function testDoPost() {
+  var fake = {
+    parameter: {
+      From: "whatsapp:+34600358822",
+      Body: "PUBLICAR\nPrueba Simulada\nCuerpo de prueba enviado como si viniera de WhatsApp.",
+    },
+  };
+  var out = doPost(fake);
+  Logger.log("RESPUESTA XML:\n" + out.getContent());
 }
