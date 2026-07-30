@@ -166,7 +166,50 @@
     return g + regional + pillars + keys;
   }
 
+  /* ---------- Overview (condensed executive summary of all infographics) ---------- */
+  function tile(label, value, delta, trend, sub) {
+    return '<div class="g-tile"><span class="g-tile__l">' + esc(label) + '</span>' +
+      '<span class="g-tile__v">' + esc(value) + (delta != null ? " " + deltaHTML(delta, trend) : "") + '</span>' +
+      (sub ? '<span class="g-tile__s">' + esc(sub) + '</span>' : "") + '</div>';
+  }
+  function panelOverview() {
+    var idx = daily.index || {}, c = daily.corporates || {}, w = weekly || {};
+    var sc = w.countriesScorecard || {}, ind = w.industries || {}, eu = w.europe || {}, bk = w.banks || {};
+    var averages = '<div class="g-tiles">' +
+      tile("Global Velocity Index", fmt(idx.score), idx.delta, idx.trend, idx.trend30d ? idx.trend30d + " · daily" : "daily") +
+      (c.average ? tile("Corporate average", fmt(c.average.score), c.average.delta, c.average.trend, "daily · 250+ firms") : "") +
+      (ind.corporateAverageAllIndustries ? tile("Industry average", fmt(ind.corporateAverageAllIndustries.score), ind.corporateAverageAllIndustries.delta, "up", "weekly · 10 industries") : "") +
+      (eu.europeAverage ? tile("Europe corporates", fmt(eu.europeAverage.score), eu.europeAverage.delta, "up", "weekly · 10 countries") : "") +
+      (bk.europeanBanksAverage ? tile("European banks", fmt(bk.europeanBanksAverage.score), bk.europeanBanksAverage.delta, "up", "weekly · 110+ banks") : "") +
+      (sc.globalAverage ? tile("Global country avg", fmt(sc.globalAverage.score), sc.globalAverage.delta, "up", "weekly · 180 countries") : "") +
+      '</div>';
+
+    var lead = [];
+    if (c.top && c.top[0]) lead.push(tile("Top corporate", c.top[0].name, c.top[0].delta, c.top[0].trend, "GVI " + fmt(c.top[0].score)));
+    if (ind.highestIndustry) lead.push(tile("Strongest industry", ind.highestIndustry.name, null, null, "GVI " + fmt(ind.highestIndustry.score)));
+    if (ind.lowestIndustry) lead.push(tile("Weakest industry", ind.lowestIndustry.name, null, null, "GVI " + fmt(ind.lowestIndustry.score)));
+    if (eu.highestCorporate) lead.push(tile("Top EU corporate", eu.highestCorporate.name, null, null, eu.highestCorporate.country + " · " + fmt(eu.highestCorporate.score)));
+    if (bk.highestBank) lead.push(tile("Top EU bank", bk.highestBank.name, null, null, bk.highestBank.country + " · " + fmt(bk.highestBank.score)));
+    var leaders = lead.length ? '<h4 class="g-sub__h">Leaders & laggards</h4><div class="g-tiles">' + lead.join("") + '</div>' : "";
+
+    var movers = (sc.biggestImprovers && sc.biggestImprovers.length) ?
+      '<div class="g-sub"><h4 class="g-sub__h g-sub__h--up">Biggest movers this week</h4><div class="g-chips">' +
+      sc.biggestImprovers.filter(function (m) { return m.country; }).map(function (m) {
+        return '<span class="g-chip"><b>' + esc(m.country) + '</b>' + deltaHTML(m.delta, m.delta < 0 ? "down" : "up") + '</span>';
+      }).join("") + '</div></div>' : "";
+
+    var pillars = (sc.pillars && sc.pillars.length) ?
+      '<div class="g-sub"><h4 class="g-sub__h">Velocity pillar snapshot</h4><div class="g-pillars">' +
+      sc.pillars.slice(0, 10).map(function (p) {
+        return '<div class="g-pillar"><span class="g-pillar__n">' + esc(p.name) + '</span><span class="g-pillar__s">' + fmt(p.score) + " " + deltaHTML(p.delta, "up") + '</span><span class="g-bar"><span class="g-bar__fill" style="width:' + p.score + '%"></span></span></div>';
+      }).join("") + '</div></div>' : "";
+
+    return '<p class="g-note">One glance across every FDK velocity scorecard. Open a tab for the full ranking.</p>' +
+      averages + '<div class="g-sub">' + leaders + '</div>' + movers + pillars;
+  }
+
   var TABS = [
+    { id: "overview",   label: "Overview",   cadence: "Live",   render: panelOverview },
     { id: "countries",  label: "Countries",  cadence: "Daily",  render: panelCountries },
     { id: "corporates", label: "Corporates", cadence: "Daily",  render: panelCorporates },
     { id: "industries", label: "Industries", cadence: "Weekly", render: panelIndustries },

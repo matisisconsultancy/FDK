@@ -85,6 +85,14 @@
     .g-sub__h--up { color:var(--g-green); } .g-sub__h--down { color:var(--g-red); }
     .g-foot { color:var(--g-dim); font-size:.78rem; margin-top:30px; line-height:1.6; }
 
+    /* overview tiles */
+    .g-tiles { display:grid; grid-template-columns:repeat(auto-fill,minmax(210px,1fr)); gap:14px; margin-bottom:8px; }
+    .g-tile { border:1px solid var(--g-line); border-radius:14px; padding:16px 18px; background:linear-gradient(180deg,rgba(46,224,106,.05),rgba(255,255,255,.015)); display:flex; flex-direction:column; gap:5px; }
+    .g-tile__l { color:var(--g-dim); font-size:.72rem; letter-spacing:1px; text-transform:uppercase; }
+    .g-tile__v { font-family:var(--font-display); font-weight:600; color:#fff; font-size:1.4rem; line-height:1.1; display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; }
+    .g-tile__v .g-delta { font-size:.8rem; }
+    .g-tile__s { color:var(--g-dim); font-size:.76rem; }
+
     /* cards (industries / europe / banks-by-country) */
     .g-cards { display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:18px; }
     .g-cards--tight { grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); }
@@ -171,8 +179,8 @@
         </div>
 
         <div class="gvi-how">
-          <h3>How this stays updated</h3>
-          <p>Every table, badge and sparkline on this page is drawn from a single data file — <code>gvi-data.js</code>. To publish the day's numbers, edit that file to match the infographic, bump the date, and commit. GitHub Pages redeploys automatically. No HTML or design work per update.</p>
+          <h3>How this stays updated — automatically</h3>
+          <p>Drop the day's FDK infographic into <code>data/gvi/inbox/</code>. A vision model reads the numbers, updates the source data, extends each sparkline and rebuilds the dashboard — then commits and pushes. No transcription, no HTML, no design work. The infographic is the only input. (See <code>data/gvi/inbox/README.md</code>.)</p>
         </div>
       </div>
     </section>

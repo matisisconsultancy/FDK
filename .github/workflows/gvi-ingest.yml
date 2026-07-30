@@ -1,0 +1,73 @@
+name: GVI daily auto-ingest
+
+# Drop the day's FDK infographic(s) into data/gvi/inbox/ (any commit that adds
+# images there triggers this). A vision model reads the numbers, updates
+# data/gvi/latest.json, rebuilds gvi-data.js, archives the image and pushes —
+# so the /gvi dashboard reflects the new edition automatically.
+#
+# Uses the existing ANTHROPIC_API_KEY repo secret. Optional: set the repo/org
+# variable GVI_VISION_MODEL to pick a specific Claude model.
+
+on:
+  push:
+    branches:
+      - claude/fdk-indicators-web-integration-2mob0i
+    paths:
+      - "data/gvi/inbox/**"
+  workflow_dispatch: {}
+
+concurrency:
+  group: gvi-ingest-${{ github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Ingest infographics (AI vision)
+        id: ingest
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GVI_VISION_MODEL: ${{ vars.GVI_VISION_MODEL }}
+        run: node scripts/gvi-ingest.mjs
+
+      - name: Rebuild dashboard data
+        if: steps.ingest.outputs.ingested != '0' && steps.ingest.outputs.ingested != ''
+        run: node scripts/gvi-build.mjs
+
+      - name: Commit and push
+        if: steps.ingest.outputs.ingested != '0' && steps.ingest.outputs.ingested != ''
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add data/gvi/latest.json gvi-data.js data/gvi/inbox
+          if git diff --cached --quiet; then
+            echo "Nothing to commit."
+            exit 0
+          fi
+          git commit -m "GVI: ingest daily infographic(s) → refresh dashboard"
+          for attempt in 1 2 3 4; do
+            git pull --rebase --autostash origin "${{ github.ref_name }}" || true
+            if git push origin "HEAD:${{ github.ref_name }}"; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt), retrying…"
+            sleep $((attempt * 3))
+          done
+          echo "::error::Failed to push after 4 attempts"
+          exit 1
