@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/test-directo",
+    title: "Test Directo",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "July 30, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-ai-trade-has-split-into-cash-flow-and-capex",
     title: "The AI Trade Has Split Into Cash Flow and Capex",
     excerpt: "Microsoft didn't rescue the AI trade — it proved that only companies with contracted demand, operating leverage and defensible cash flow deserve to remain inside it. The Great Split has moved inside Artificial Intelligence itself.",
