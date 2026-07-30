@@ -41,13 +41,23 @@ for (const file of pending) {
   const rel = path.join("drafts", file);
   console.log(`\n━━━ processing ${rel} ━━━`);
   try {
-    const content = fs.readFileSync(path.join(DRAFTS, file), "utf8");
-    const structured = /^---\n[\s\S]*?\n---/.test(content.replace(/\r\n/g, "\n"));
+    const norm = fs.readFileSync(path.join(DRAFTS, file), "utf8").replace(/\r\n/g, "\n");
+    const fmMatch = norm.match(/^---\n([\s\S]*?)\n---/);
+    const hasFM = !!fmMatch;
+    // `format: ai` marks a draft that has pinned front-matter (e.g. a known
+    // title/slug from the WhatsApp publisher) but whose body still needs the AI
+    // to structure it into the site's blocks. Free-form drafts (no front-matter
+    // at all) also go through the formatter.
+    const wantsAI = hasFM && /(^|\n)\s*format\s*:\s*ai\b/i.test(fmMatch[1]);
 
-    if (!structured) {
-      if (!hasKey) { console.warn(`⚠ ${file} is free-form but ANTHROPIC_API_KEY is not set — skipping.`); failed.push(file); continue; }
-      console.log("→ free-form draft: running AI formatter…");
-      run("format-draft.mjs", [rel, "--in-place"]);
+    if (!hasFM || wantsAI) {
+      if (!hasKey) {
+        if (!hasFM) { console.warn(`⚠ ${file} is free-form but ANTHROPIC_API_KEY is not set — skipping.`); failed.push(file); continue; }
+        console.warn(`⚠ ${file} requested 'format: ai' but ANTHROPIC_API_KEY is not set — publishing as plain paragraphs.`);
+      } else {
+        console.log(hasFM ? "→ pinned draft: running AI formatter (title/slug preserved)…" : "→ free-form draft: running AI formatter…");
+        run("format-draft.mjs", [rel, "--in-place"]);
+      }
     }
 
     run("publish-note.mjs", [rel]);
