@@ -205,34 +205,3 @@ function xmlEscape_(s) {
 function escapeRe_(s) {
   return String(s).replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
 }
-
-// ----------------------------------------------------------- diagnostics ----
-// Run these straight from the editor (pick the function, press ▷ Run) and read
-// the execution log. They are safe manual helpers — Twilio never calls them.
-
-function testGitHub() {
-  try {
-    var t = todayParts_();
-    commitFile_(
-      "drafts/" + t.iso + "-test-directo.md",
-      "---\ntitle: Test Directo\nslug: test-directo\ndate: " + t.pretty +
-        "\nslot: Midday Pulse\nformat: ai\n---\n\nPrueba directa desde Apps Script.\n",
-      "Test directo desde Apps Script"
-    );
-    Logger.log("✅ OK: commit hecho. Revisa GitHub.");
-  } catch (e) {
-    Logger.log("✖ ERROR: " + e.message);
-  }
-}
-
-// Simulates the exact POST Twilio sends, against this editor's code.
-function testDoPost() {
-  var fake = {
-    parameter: {
-      From: "whatsapp:+34600358822",
-      Body: "PUBLICAR\nPrueba Simulada\nCuerpo de prueba enviado como si viniera de WhatsApp.",
-    },
-  };
-  var out = doPost(fake);
-  Logger.log("RESPUESTA XML:\n" + out.getContent());
-}
