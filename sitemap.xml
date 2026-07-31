@@ -258,16 +258,4 @@
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
-  <url>
-    <loc>https://fdkempowernet.com/prueba-simulada/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://fdkempowernet.com/test-directo/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
