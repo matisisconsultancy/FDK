@@ -23,12 +23,12 @@ FDK → email a la cuenta dedicada ──▶ Apps Script (cada 5 min, siempre ac
 - **Google Doc**: pega su enlace en el cuerpo.
 
 El **asunto** es el **título** de la nota. Para publicar, el asunto debe empezar
-por **`PUBLICAR`** y el email venir de una dirección autorizada.
+por **`PUBLISH`** y el email venir de una dirección autorizada.
 
 Ejemplo:
 ```
 Para:    (la cuenta dedicada, p. ej. publicar.fdk@gmail.com)
-Asunto:  PUBLICAR The Capital Rotation Accelerates
+Asunto:  PUBLISH The Capital Rotation Accelerates
 Cuerpo:  (el artículo, o un adjunto, o el link de un Google Doc)
 ```
 
@@ -76,7 +76,7 @@ sin que tengas que hacer nada más. (Para pararlo algún día: ejecuta
 ## Parte E · Probar
 Manda un email **desde una dirección autorizada** a la cuenta dedicada:
 ```
-Asunto:  PUBLICAR Prueba Email
+Asunto:  PUBLISH Prueba Email
 Cuerpo:  Este es un artículo de prueba enviado por email. El capital rota hacia la productividad.
 ```
 En ≤ 5 min: se publica la nota, y te llega a `NOTIFY_EMAIL` el correo con el
@@ -103,5 +103,5 @@ esperar, ejecuta `processInbox` a mano desde el editor.)*
   de Google Sheet o a Kit para no mantener la lista a mano.)
 - **PDF escaneado / foto de texto:** se lee por OCR (idioma español). La calidad
   varía; si algo sale raro, envía el texto en el cuerpo o como Google Doc.
-- **Guardarraíl:** solo se publica si el asunto empieza por `PUBLICAR` y el
+- **Guardarraíl:** solo se publica si el asunto empieza por `PUBLISH` y el
   remitente está en `ALLOWED_SENDERS`. Nada más se toca.

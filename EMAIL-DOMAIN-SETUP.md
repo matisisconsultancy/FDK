@@ -22,7 +22,7 @@ automatización (Apps Script). DNS en **GoDaddy**.
 
 Con **un solo usuario de pago** (~6 $/mes) y el resto como **alias** que caen en
 la misma bandeja, cubrimos todo. El Apps Script corre bajo el usuario principal
-y filtra los emails de publicación por asunto (`PUBLICAR`) y remitente.
+y filtra los emails de publicación por asunto (`PUBLISH`) y remitente.
 
 ---
 
@@ -115,7 +115,7 @@ Los libros los envía **Kit**, así que hay que **autenticar el dominio también
    ALLOWED_SENDERS: ["francesco@fdkempowernet.com", "…"],  // desde donde escribe FDK
    NOTIFY_EMAIL: "admin@fdkempowernet.com",
    ```
-4. FDK publicará enviando a **`publicar@fdkempowernet.com`** con asunto `PUBLICAR <título>`.
+4. FDK publicará enviando a **`publicar@fdkempowernet.com`** con asunto `PUBLISH <título>`.
 
 ---
 

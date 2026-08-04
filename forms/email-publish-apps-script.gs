@@ -44,14 +44,14 @@ var CONFIG = {
 
   // ---- Who may publish, and how ----
   // Emails allowed to publish. The article's author address(es).
-  ALLOWED_SENDERS: ["matisisconsultancy@gmail.com"],
+  ALLOWED_SENDERS: ["team@fdkempowernet.com"],
   // The Subject must start with this word to publish (a stray email never goes
   // live). Set to "" to publish ANY email from an allowed sender (not advised).
-  KEYWORD: "PUBLICAR",
+  KEYWORD: "PUBLISH",
 
   // ---- Notifications ----
   // Where FDK gets the "published" email with the link + share button.
-  NOTIFY_EMAIL: "matisisconsultancy@gmail.com",
+  NOTIFY_EMAIL: "team@fdkempowernet.com",
   // Phase 2b — email the contact list on publish. Off by default.
   NOTIFY_CONTACTS: false,
   NOTIFY_CONTACTS_TO: [], // e.g. ["a@x.com","b@y.com"] — used only if NOTIFY_CONTACTS is true
