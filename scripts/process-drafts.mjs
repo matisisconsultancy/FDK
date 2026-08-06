@@ -56,7 +56,16 @@ for (const file of pending) {
         console.warn(`⚠ ${file} requested 'format: ai' but ANTHROPIC_API_KEY is not set — publishing as plain paragraphs.`);
       } else {
         console.log(hasFM ? "→ pinned draft: running AI formatter (title/slug preserved)…" : "→ free-form draft: running AI formatter…");
-        run("format-draft.mjs", [rel, "--in-place"]);
+        try {
+          run("format-draft.mjs", [rel, "--in-place"]);
+        } catch (e) {
+          // A pinned (format: ai) draft already has valid front-matter + a plain
+          // body, so it can still publish as plain paragraphs if the AI step
+          // fails — never lose a publish over a transient API error. A free-form
+          // draft has no usable front-matter yet, so it must fail here.
+          if (!hasFM) throw e;
+          console.warn(`⚠ AI formatter failed for ${file}; publishing as plain paragraphs. ${e.message}`);
+        }
       }
     }
 
