@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-velocity-edge-the-morning-view-august-5-fdk",
+    title: "—The Velocity Edge The Morning View August 5 FDK",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "August 6, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/segunda-prueba-autenticacion",
     title: "segunda prueba autenticacion",
     excerpt: "",
