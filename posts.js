@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/prueba-formato-velocity-edge",
+    title: "Prueba Formato Velocity Edge",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "August 6, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-855-billion-capacity-divide",
     title: "The $855 Billion Capacity Divide",
     excerpt: "",
