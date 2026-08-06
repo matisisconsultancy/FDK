@@ -19,6 +19,7 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write   # allow re-running the Pages build on transient GitHub timeouts
 
 jobs:
   publish:
@@ -63,3 +64,35 @@ jobs:
           done
           echo "::error::Failed to push after 4 attempts"
           exit 1
+
+      - name: Ensure Pages deployment (self-heal transient GitHub timeouts)
+        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        continue-on-error: true   # best-effort: never fail the publish over this
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          set +e
+          echo "Giving the GitHub Pages build a moment to start…"
+          sleep 45
+          max_attempts=3
+          attempt=1
+          while [ $attempt -le $max_attempts ]; do
+            run_id=$(gh run list --branch "$BRANCH" --workflow "pages build and deployment" \
+              --limit 1 --json databaseId -q '.[0].databaseId' 2>/dev/null)
+            if [ -z "$run_id" ]; then
+              echo "No Pages build visible yet; waiting…"; sleep 20; attempt=$((attempt+1)); continue
+            fi
+            echo "Watching Pages build $run_id (attempt $attempt/$max_attempts)…"
+            gh run watch "$run_id" >/dev/null 2>&1
+            status=$(gh run view "$run_id" --json conclusion -q '.conclusion' 2>/dev/null)
+            echo "Pages build $run_id conclusion: $status"
+            if [ "$status" = "success" ]; then
+              echo "✅ Pages deployed."; exit 0
+            fi
+            echo "⚠ Pages deploy did not succeed ($status). Re-running…"
+            gh run rerun "$run_id" >/dev/null 2>&1 || gh run rerun "$run_id" --failed >/dev/null 2>&1 || true
+            sleep 30
+            attempt=$((attempt+1))
+          done
+          echo "::warning::Pages still not deployed after $max_attempts attempts — likely a GitHub Pages incident. The note is committed and will deploy once GitHub recovers."
