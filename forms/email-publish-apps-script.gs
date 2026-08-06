@@ -44,7 +44,7 @@ var CONFIG = {
 
   // ---- Who may publish, and how ----
   // Emails allowed to publish. The article's author address(es).
-  ALLOWED_SENDERS: ["team@fdkempowernet.com", "fdeleo@kaufmannpartners.com"],
+  ALLOWED_SENDERS: ["team@fdkempowernet.com", "fdeleo@kaufmannpartners.com", "carolinaortegaicao@gmail.com"],
   // The Subject must start with this word to publish (a stray email never goes
   // live). Set to "" to publish ANY email from an allowed sender (not advised).
   KEYWORD: "PUBLISH",
