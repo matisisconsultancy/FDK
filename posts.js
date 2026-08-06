@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-855-billion-capacity-divide",
+    title: "The $855 Billion Capacity Divide",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "August 6, 2026",
+    read: "22 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-velocity-edge-the-morning-view-august-5-fdk",
     title: "—The Velocity Edge The Morning View August 5 FDK",
     excerpt: "",
