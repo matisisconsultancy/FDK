@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-is-growing-jobs-are-not",
+    title: "AI Is Growing. Jobs Are Not.",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "August 6, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/prueba-formato-velocity-edge",
     title: "Prueba Formato Velocity Edge",
     excerpt: "",
