@@ -61,13 +61,24 @@ var CONFIG = {
 
   // ---- Publishing ----
   BRAND_NAME: "FDK EmpowerNet",
-  DEFAULT_SLOT: "Midday Pulse",
   TIMEZONE: "Europe/Madrid",
 
-  // ---- Mensaje para compartir ----
-  // El bot envía un segundo mensaje LIMPIO, listo para copiar o reenviar tal
-  // cual a los contactos. Cambia el texto a tu gusto; usa {title} y {url}.
-  SHARE_TEMPLATE: "📖 Lee mi último artículo:\n\n«{title}»\n\n{url}",
+  // ---- Ediciones por hora ----
+  // El bot elige la edición según la hora de publicación (zona TIMEZONE):
+  // `from` = hora (0–23) a partir de la cual aplica. `slot` = etiqueta del
+  // sitio (debe existir en scripts/publish-note.mjs). `label` = nombre que se
+  // muestra en el mensaje para compartir.
+  EDITIONS: [
+    { from: 0,  slot: "Morning View", label: "Morning View" }, // 00:00–11:59
+    { from: 12, slot: "Midday Pulse", label: "Midday Pulse" }, // 12:00–17:59
+    { from: 18, slot: "The Close",    label: "Closer Note"  }, // 18:00–23:59
+  ],
+
+  // ---- Mensaje para compartir (bilingüe EN–IT) ----
+  // Segundo mensaje LIMPIO, listo para copiar o reenviar. Usa {edition},
+  // {title} y {url}. Cambia el texto a tu gusto.
+  SHARE_TEMPLATE:
+    "📖 Read my {edition} — Leggi il mio {edition}\n\n«{title}»\n\n{url}",
 };
 // ========================================================
 
@@ -220,6 +231,9 @@ function processMessage_(msg) {
   var slug = kebab_(title);
   if (!slug) { tgSend_(chatId, "⚠️ El título no genera una URL válida. Usa texto con letras."); return; }
 
+  // ---- pick the edition by publish time (Morning View / Midday Pulse / …) --
+  var ed = editionFor_(new Date());
+
   // ---- build + commit the draft (title/slug pinned; body AI-formatted) ----
   var today = todayParts_();
   var draft =
@@ -227,7 +241,7 @@ function processMessage_(msg) {
     "title: " + title + "\n" +
     "slug: " + slug + "\n" +
     "date: " + today.pretty + "\n" +
-    "slot: " + CONFIG.DEFAULT_SLOT + "\n" +
+    "slot: " + ed.slot + "\n" +
     "format: ai\n" +
     "---\n\n" +
     article + "\n";
@@ -238,17 +252,27 @@ function processMessage_(msg) {
 
   // 1) short confirmation for Francesco (with a quick link button)
   tgSendWithButton_(chatId,
-    "✅ <b>Publicado:</b> «" + escapeHtml_(title) + "» — online en ~1–2 min.\n" +
+    "✅ <b>Publicado</b> · " + escapeHtml_(ed.label) + ": «" + escapeHtml_(title) + "» — online en ~1–2 min.\n" +
     "👇 Copia o reenvía este mensaje para compartirlo:",
     "🔗 Ver nota", url);
 
   // 2) the clean, ready-to-share message (copy or forward as-is)
-  tgSend_(chatId, buildShare_(title, url));
+  tgSend_(chatId, buildShare_(title, url, ed.label));
+}
+
+// Choose the edition for a given time, from CONFIG.EDITIONS (by TIMEZONE hour).
+function editionFor_(date) {
+  var eds = CONFIG.EDITIONS || [];
+  var h = Number(Utilities.formatDate(date || new Date(), CONFIG.TIMEZONE || "Etc/UTC", "H"));
+  var pick = eds[0] || { slot: "Midday Pulse", label: "Midday Pulse" };
+  for (var i = 0; i < eds.length; i++) { if (h >= eds[i].from) pick = eds[i]; }
+  return pick;
 }
 
 // The forwardable/copyable message, from CONFIG.SHARE_TEMPLATE.
-function buildShare_(title, url) {
+function buildShare_(title, url, edition) {
   return String(CONFIG.SHARE_TEMPLATE || "«{title}»\n\n{url}")
+    .replace(/\{edition\}/g, escapeHtml_(edition || ""))
     .replace(/\{title\}/g, escapeHtml_(title))
     .replace(/\{url\}/g, url);
 }
