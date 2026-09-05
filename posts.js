@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/part-i-the-return-of-pricing-power",
+    title: "Part I — The Return of Pricing Power",
+    excerpt: "A quiet session masked a structural shift as capital rotates toward the owners of the Industrial AI ecosystem.",
+    tag: "Closing of the Day · Capital",
+    slot: "Closing of the Day",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "August 3, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-velocity-edge-in-focus-august-4-2026-fdk",
     title: "The Velocity Edge—In Focus | August 4, 2026 | FDK",
     excerpt: "As the price of intelligence collapses, the capability to produce it becomes one of the most capital-intensive assets on earth.",
