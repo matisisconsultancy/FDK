@@ -63,6 +63,11 @@ var CONFIG = {
   BRAND_NAME: "FDK EmpowerNet",
   DEFAULT_SLOT: "Midday Pulse",
   TIMEZONE: "Europe/Madrid",
+
+  // ---- Mensaje para compartir ----
+  // El bot envía un segundo mensaje LIMPIO, listo para copiar o reenviar tal
+  // cual a los contactos. Cambia el texto a tu gusto; usa {title} y {url}.
+  SHARE_TEMPLATE: "📖 Lee mi último artículo:\n\n«{title}»\n\n{url}",
 };
 // ========================================================
 
@@ -229,13 +234,23 @@ function processMessage_(msg) {
 
   commitFile_("drafts/" + today.iso + "-" + slug + ".md", draft, "Publish via Telegram: " + title);
 
-  // ---- reply with the exact live link + a "Ver nota" button ----
   var url = CONFIG.SITE_BASE + "/" + slug + "/";
+
+  // 1) short confirmation for Francesco (with a quick link button)
   tgSendWithButton_(chatId,
-    "✅ <b>Recibido:</b> «" + escapeHtml_(title) + "»\n" +
-    "Se está publicando y estará online en 1–2 min:\n" + url + "\n\n" +
-    "Reenvía este mensaje para compartirlo.",
+    "✅ <b>Publicado:</b> «" + escapeHtml_(title) + "» — online en ~1–2 min.\n" +
+    "👇 Copia o reenvía este mensaje para compartirlo:",
     "🔗 Ver nota", url);
+
+  // 2) the clean, ready-to-share message (copy or forward as-is)
+  tgSend_(chatId, buildShare_(title, url));
+}
+
+// The forwardable/copyable message, from CONFIG.SHARE_TEMPLATE.
+function buildShare_(title, url) {
+  return String(CONFIG.SHARE_TEMPLATE || "«{title}»\n\n{url}")
+    .replace(/\{title\}/g, escapeHtml_(title))
+    .replace(/\{url\}/g, url);
 }
 
 /* ==================== DIAGNOSTICS ==================== */
