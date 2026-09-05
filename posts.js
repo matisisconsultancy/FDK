@@ -19,42 +19,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/the-velocity-edge-in-focus-august-4-2026-fdk",
-    title: "The Velocity Edge—In Focus | August 4, 2026 | FDK",
-    excerpt: "As the price of intelligence collapses, the capability to produce it becomes one of the most capital-intensive assets on earth.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    date: "September 5, 2026",
-    read: "7 min read",
-    time: "21:00",
-    kind: "night"
-  },
-  {
-    url: "/it-is-managing-an-economy-in-which-productivity-growth-may-no-longer-produce-proportional-employment-growth",
-    title: "It is managing an economy in which productivity growth may no longer produce proportional employment growth.",
-    excerpt: "AI, energy, capital markets and labor have fused into one strategic system — and Europe's window to mobilize capital is closing.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "September 5, 2026",
-    read: "4 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
-    url: "/the-capital-rotation-accelerates",
-    title: "The Capital Rotation Accelerates",
-    excerpt: "",
-    tag: "Midday Pulse",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "July 30, 2026",
-    read: "2 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
     url: "/the-ai-trade-has-split-into-cash-flow-and-capex",
     title: "The AI Trade Has Split Into Cash Flow and Capex",
     excerpt: "Microsoft didn't rescue the AI trade — it proved that only companies with contracted demand, operating leverage and defensible cash flow deserve to remain inside it. The Great Split has moved inside Artificial Intelligence itself.",
@@ -475,6 +439,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
