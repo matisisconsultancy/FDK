@@ -7,6 +7,66 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-velocity-edge-the-morning-view-august-6-2026-fdk",
+    title: "The Velocity Edge — The Morning View | August 6, 2026 | FDK",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/the-costs-of-building-intelligence-arrive-before-the-economy-receives-its-full-productivity-dividend",
+    title: "The costs of building intelligence arrive before the economy receives its full productivity dividend.",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/the-completed-ai-system-may-lower-the-cost-of-producing-services",
+    title: "The completed AI system may lower the cost of producing services.",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/it-is-managing-an-economy-in-which-productivity-growth-may-no-longer-produce-proportional-employment-growth",
+    title: "It is managing an economy in which productivity growth may no longer produce proportional employment growth.",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/european-companies-increasingly-want-ai-systems-that-preserve-control-over-data-infrastructure-auditability-and-deploy",
+    title: "European companies increasingly want AI systems that preserve control over data, infrastructure, auditability and deploy",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/una-prueba-mas",
     title: "Una prueba más",
     excerpt: "",
