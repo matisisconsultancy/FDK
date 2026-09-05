@@ -216,38 +216,46 @@ function processMessage_(msg) {
 
   // ---- gather the article (document > text) ----
   var got = extractContent_(msg);       // { text, title, source }
-  var article = (got.text || "").trim();
-  if (!article) { tgSend_(chatId, "⚠️ No encontré texto para publicar.\n\n" + helpText_()); return; }
+  var raw = (got.text || "").trim();
+  if (!raw) { tgSend_(chatId, "⚠️ No encontré texto para publicar.\n\n" + helpText_()); return; }
 
-  // Title: caption / first line; body = the rest.
-  var title = got.title;
-  if (!title) {
-    var lines = article.split(/\r?\n/);
-    title = String(lines.shift() || "").trim().slice(0, 120);
-    var rest = lines.join("\n").trim();
-    if (rest) article = rest;
+  // A masthead line ("The Velocity Edge — In Focus | August 4, 2026 | FDK")
+  // NEVER becomes the title: we only lift the DATE and the EDITION from it.
+  // The real (chapter) title is the next line.
+  var parsed = parseHeader_(raw);
+
+  var title, article;
+  if (got.title && got.title.trim()) {
+    // A document caption is the explicit title; strip a masthead from the body.
+    title = got.title.trim();
+    article = parsed.hadMasthead ? parsed.body : raw;
+  } else {
+    title = parsed.title;
+    article = parsed.body;
   }
-  if (!title) { tgSend_(chatId, "⚠️ Falta el título (primera línea del mensaje o pie del documento)."); return; }
+  title = String(title || "").trim().slice(0, 200);
+  if (!title) { tgSend_(chatId, "⚠️ Falta el título del artículo (la primera línea real, debajo de la cabecera de fecha)."); return; }
+  if (!article) article = title;
 
   var slug = kebab_(title);
   if (!slug) { tgSend_(chatId, "⚠️ El título no genera una URL válida. Usa texto con letras."); return; }
 
-  // ---- pick the edition by publish time (Morning View / Midday Pulse / …) --
-  var ed = editionFor_(new Date());
+  // ---- date + edition: from the masthead if present, else now / by-time -----
+  var when = parsed.dateObj ? dateParts_(parsed.dateObj) : todayParts_();
+  var ed = parsed.edition ? { slot: parsed.edition, label: parsed.edition } : editionFor_(new Date());
 
   // ---- build + commit the draft (title/slug pinned; body AI-formatted) ----
-  var today = todayParts_();
   var draft =
     "---\n" +
     "title: " + title + "\n" +
     "slug: " + slug + "\n" +
-    "date: " + today.pretty + "\n" +
+    "date: " + when.pretty + "\n" +
     "slot: " + ed.slot + "\n" +
     "format: ai\n" +
     "---\n\n" +
     article + "\n";
 
-  commitFile_("drafts/" + today.iso + "-" + slug + ".md", draft, "Publish via Telegram: " + title);
+  commitFile_("drafts/" + when.iso + "-" + slug + ".md", draft, "Publish via Telegram: " + title);
 
   var url = CONFIG.SITE_BASE + "/" + slug + "/";
 
@@ -259,6 +267,52 @@ function processMessage_(msg) {
 
   // 2) the clean, ready-to-share message (copy or forward as-is)
   tgSend_(chatId, buildShare_(title, url, ed.label));
+}
+
+// Split the incoming text into { title, body, dateObj, edition, hadMasthead }.
+// If the first line is a masthead ("The Velocity Edge — In Focus | August 4,
+// 2026 | FDK") it is removed from the title and only used to lift the date and
+// the edition; the real title is the next non-empty line.
+function parseHeader_(text) {
+  var lines = String(text || "").split(/\r?\n/);
+  var i = 0;
+  while (i < lines.length && !lines[i].trim()) i++;   // first non-empty line
+  var first = (lines[i] || "").trim();
+
+  var mast = detectMasthead_(first);
+  if (mast) {
+    var j = i + 1;
+    while (j < lines.length && !lines[j].trim()) j++; // title = next non-empty
+    var title = (lines[j] || "").trim();
+    var body;
+    if (title) body = lines.slice(j + 1).join("\n").trim();
+    else       body = lines.slice(i + 1).join("\n").trim();
+    return { title: title, body: body, dateObj: mast.dateObj, edition: mast.edition, hadMasthead: true };
+  }
+  return {
+    title: first,
+    body: lines.slice(i + 1).join("\n").trim(),
+    dateObj: null, edition: null, hadMasthead: false,
+  };
+}
+
+// Detect a masthead line and pull its date + edition. Returns null if the line
+// is just a normal title.
+function detectMasthead_(line) {
+  if (!line) return null;
+  var hasDate = /[A-Z][a-z]+\s+\d{1,2},\s*\d{4}/.test(line);       // "August 4, 2026"
+  var looks = /the velocity edge/i.test(line) || /\bFDK\b/.test(line) ||
+              (line.indexOf("|") !== -1 && hasDate);
+  if (!looks) return null;
+
+  var dateObj = null;
+  var dm = line.match(/([A-Z][a-z]+\s+\d{1,2},\s*\d{4})/);
+  if (dm) { var d = new Date(dm[1]); if (!isNaN(d.getTime())) dateObj = d; }
+
+  var edition = null;
+  var em = line.match(/velocity edge\s*[—–\-|:]\s*([^|]+)/i); // text after the dash, up to "|"
+  if (em) edition = em[1].replace(/[|].*$/, "").trim();
+  return { dateObj: dateObj, edition: edition };
 }
 
 // Choose the edition for a given time, from CONFIG.EDITIONS (by TIMEZONE hour).
@@ -443,12 +497,13 @@ function kebab_(s) {
     .replace(/^-+|-+$/g, "");
 }
 
-function todayParts_() {
+function todayParts_() { return dateParts_(new Date()); }
+
+function dateParts_(d) {
   var tz = CONFIG.TIMEZONE || "Etc/UTC";
-  var now = new Date();
   return {
-    iso: Utilities.formatDate(now, tz, "yyyy-MM-dd"),
-    pretty: Utilities.formatDate(now, tz, "MMMM d, yyyy"),
+    iso: Utilities.formatDate(d, tz, "yyyy-MM-dd"),
+    pretty: Utilities.formatDate(d, tz, "MMMM d, yyyy"),
   };
 }
 
