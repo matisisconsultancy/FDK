@@ -70,6 +70,19 @@ function doPost(e) {
   var msg = update.message || update.edited_message;
   if (!msg) return ok_();
 
+  // De-dup — CRITICAL. Telegram re-delivers the same update until it gets a
+  // fast 200, and won't deliver the NEXT update until the current one is
+  // acknowledged. Without this, a slow request republishes the same note
+  // several times AND blocks later messages from ever arriving. Mark each
+  // update_id as handled immediately so retries are ignored and the queue
+  // advances.
+  if (update.update_id != null) {
+    var cache = CacheService.getScriptCache();
+    var uKey = "tg_u_" + update.update_id;
+    if (cache.get(uKey)) return ok_();
+    cache.put(uKey, "1", 21600); // remember for 6h
+  }
+
   var chatId = msg.chat && msg.chat.id;
   var fromId = msg.from && msg.from.id;
   var text = String(msg.text || "").trim();
