@@ -7,6 +7,90 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-velocity-edge-the-morning-view-august-6-2026-fdk",
+    title: "The Velocity Edge — The Morning View | August 6, 2026 | FDK",
+    excerpt: "Output is accelerating faster than employment, and the market is starting to price who captures AI's value — and who is displaced creating it.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/the-costs-of-building-intelligence-arrive-before-the-economy-receives-its-full-productivity-dividend",
+    title: "The costs of building intelligence arrive before the economy receives its full productivity dividend.",
+    excerpt: "Industrial AI is redrawing the lines between profits and wages, capital and labor, and the returns available to everyone else.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/the-completed-ai-system-may-lower-the-cost-of-producing-services",
+    title: "The completed AI system may lower the cost of producing services.",
+    excerpt: "Demand is still expanding, but the relationship between economic activity and labor absorption is changing.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/segunda-prueba-limpia",
+    title: "Segunda prueba limpia",
+    excerpt: "A short confirmation that the bot responds and publishes only once.",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/prueba-telegram-fdk",
+    title: "Prueba Telegram FDK",
+    excerpt: "Nota de prueba para verificar la publicación automática de extremo a extremo.",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/it-is-managing-an-economy-in-which-productivity-growth-may-no-longer-produce-proportional-employment-growth",
+    title: "It is managing an economy in which productivity growth may no longer produce proportional employment growth.",
+    excerpt: "Growth without hiring is not stagnation — it is a reallocation of income, bargaining power and economic control.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/european-companies-increasingly-want-ai-systems-that-preserve-control-over-data-infrastructure-auditability-and-deploy",
+    title: "European companies increasingly want AI systems that preserve control over data, infrastructure, auditability and deploy",
+    excerpt: "Lower crude, unchanged auction sizes and a structural demand for capital reshape the financing equation of the Next Economy.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-capital-rotation-accelerates",
     title: "The Capital Rotation Accelerates",
     excerpt: "",
