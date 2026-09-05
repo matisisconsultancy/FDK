@@ -68,17 +68,18 @@ var CONFIG = {
   // `from` = hora (0–23) a partir de la cual aplica. `slot` = etiqueta del
   // sitio (debe existir en scripts/publish-note.mjs). `label` = nombre que se
   // muestra en el mensaje para compartir.
+  // `label` = slot para que coincida EXACTAMENTE con la etiqueta del sitio.
   EDITIONS: [
     { from: 0,  slot: "Morning View", label: "Morning View" }, // 00:00–11:59
     { from: 12, slot: "Midday Pulse", label: "Midday Pulse" }, // 12:00–17:59
-    { from: 18, slot: "The Close",    label: "Closer Note"  }, // 18:00–23:59
+    { from: 18, slot: "The Close",    label: "The Close"    }, // 18:00–23:59
   ],
 
   // ---- Mensaje para compartir (bilingüe EN–IT) ----
-  // Segundo mensaje LIMPIO, listo para copiar o reenviar. Usa {edition},
-  // {title} y {url}. Cambia el texto a tu gusto.
+  // Refleja el sello del artículo en el sitio ("The Velocity Edge · {edición}")
+  // para que TODO concuerde. Usa {edition}, {title} y {url}.
   SHARE_TEMPLATE:
-    "📖 Read my {edition} — Leggi il mio {edition}\n\n«{title}»\n\n{url}",
+    "📖 The Velocity Edge · {edition}\n\n«{title}»\n\nRead it · Leggilo 👉 {url}",
 };
 // ========================================================
 
