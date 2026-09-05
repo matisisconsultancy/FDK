@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-velocity-edge-the-morning-view-august-6-2026-fdk",
+    title: "The Velocity Edge — The Morning View | August 6, 2026 | FDK",
+    excerpt: "Output is accelerating faster than employment as the AI Supercycle enters a more consequential phase.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/european-companies-increasingly-want-ai-systems-that-preserve-control-over-data-infrastructure-auditability-and-deploy",
+    title: "European companies increasingly want AI systems that preserve control over data, infrastructure, auditability and deploy",
+    excerpt: "Cheaper crude and softer yields do not restore the old world — they reveal the next architecture of The Great Split.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "8 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-capital-rotation-accelerates",
     title: "The Capital Rotation Accelerates",
     excerpt: "",
