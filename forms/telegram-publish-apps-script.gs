@@ -111,23 +111,69 @@ function pollUpdates() {
     var resp = JSON.parse(raw);
     if (!resp.ok || !resp.result || !resp.result.length) return;
 
-    for (var i = 0; i < resp.result.length; i++) {
-      var u = resp.result[i];
-      var msg = u.message || u.edited_message;
-      if (msg) {
+    // Telegram caps a message at 4096 chars and auto-splits a longer paste into
+    // several messages. getUpdates drains all pending updates at once, so the
+    // split parts always arrive together — stitch them back into one article.
+    var items = groupUpdates_(resp.result);
+
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      if (it.msg) {
+        if (it.texts && it.texts.length > 1) it.msg.text = it.texts.join(""); // rebuild split text
         try {
-          processMessage_(msg);
+          processMessage_(it.msg);
         } catch (e) {
-          Logger.log("✖ update " + u.update_id + ": " + e);
-          try { tgSend_(msg.chat && msg.chat.id, "✖ No se pudo publicar: " + String(e)); } catch (e2) {}
+          Logger.log("✖ update " + it.update_id + ": " + e);
+          try { tgSend_(it.msg.chat && it.msg.chat.id, "✖ No se pudo publicar: " + String(e)); } catch (e2) {}
         }
       }
-      // Confirm this update immediately so a later crash never re-processes it.
-      props.setProperty("TG_OFFSET", String(u.update_id + 1));
+      // Confirm through the LAST update in the group so retries never re-process.
+      props.setProperty("TG_OFFSET", String(it.update_id + 1));
     }
   } finally {
     lock.releaseLock();
   }
+}
+
+// Merge consecutive text messages that are pieces of ONE 4096-split paste.
+// Only merges when the previous piece hit the ~4096 limit (a real split), so
+// two distinct short notes are never fused together.
+function groupUpdates_(updates) {
+  var items = [];
+  var WINDOW = 60;   // seconds allowed between split pieces
+  var SPLIT = 4000;  // a piece at/above this length is a Telegram-split chunk
+  for (var i = 0; i < updates.length; i++) {
+    var u = updates[i];
+    var msg = u.message || u.edited_message;
+    if (!msg) { items.push({ update_id: u.update_id, msg: null }); continue; }
+
+    var text = (typeof msg.text === "string") ? msg.text : null;
+    var isCmd = text != null && /^\//.test(text.trim());
+    var prev = items.length ? items[items.length - 1] : null;
+
+    var canMerge = text != null && !isCmd && prev && prev.canContinue &&
+      prev.chatId === (msg.chat && msg.chat.id) &&
+      prev.fromId === (msg.from && msg.from.id) &&
+      (msg.date - prev.lastDate) <= WINDOW;
+
+    if (canMerge) {
+      prev.texts.push(text);
+      prev.lastDate = msg.date;
+      prev.update_id = u.update_id;
+      prev.canContinue = text.length >= SPLIT; // keep merging only while pieces are full-length
+    } else {
+      items.push({
+        update_id: u.update_id,
+        msg: msg,
+        chatId: msg.chat && msg.chat.id,
+        fromId: msg.from && msg.from.id,
+        texts: text != null ? [text] : null,
+        lastDate: msg.date,
+        canContinue: text != null && !isCmd && text.length >= SPLIT,
+      });
+    }
+  }
+  return items;
 }
 
 // Handle one Telegram message: commands, allow-list, then publish + reply.
