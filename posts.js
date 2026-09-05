@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/segunda-prueba-limpia",
+    title: "Segunda prueba limpia",
+    excerpt: "",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/prueba-telegram-fdk",
     title: "Prueba Telegram FDK",
     excerpt: "",
