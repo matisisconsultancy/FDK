@@ -2,18 +2,26 @@
  * FDK EmpowerNet — Telegram → publish backend (Google Apps Script)
  * ----------------------------------------------------------------
  * Publish a note on the site from TELEGRAM, hands-free and ALWAYS ON.
- * Francesco writes to a bot; seconds later the bot replies IN THE SAME CHAT
+ * Francesco writes to a bot; within ~1 min the bot replies IN THE SAME CHAT
  * with the live link, ready to forward.
  *
- *   FDK (Telegram) ──▶ Telegram ──▶ this web app ──▶ GitHub (drafts/)
- *                          ▲                              │
- *                          └──── instant reply w/ link    ▼
- *                                          GitHub Action → AI formats → publishes
+ *   FDK (Telegram) ──▶ Telegram  ◀── this script asks "any new messages?"
+ *                          │            every minute (time-driven trigger)
+ *                          ▼
+ *                   commits a draft to GitHub (drafts/)
+ *                          ▼
+ *          GitHub Action → AI formats → publishes → live link
+ *                          │
+ *                          ▼  the bot replies in the chat with the link
  *
- * WHY TELEGRAM: the bot token and the webhook NEVER expire — nothing to
- * re-join every 72h (the flaw that killed the Twilio WhatsApp sandbox). It is
- * free, official, and the link comes back in the same chat instantly, because
- * we pin the title/slug in the draft so the URL is known before the build ends.
+ * WHY POLLING (getUpdates) INSTEAD OF A WEBHOOK:
+ * A published Apps Script web app always answers an incoming request with an
+ * HTTP 302 redirect, never a plain 200. Telegram treats that 302 as a FAILED
+ * delivery ("Wrong response from the webhook: 302 Found"), so with a webhook it
+ * re-sends the same message (loops) and stops delivering the next ones (the
+ * queue stalls). Polling flips it around: OUR script calls Telegram, so there
+ * is no 302 to fail on. A time-driven trigger runs on Google's servers forever
+ * — nothing to re-join, nothing that expires. Rock solid.
  *
  * WAYS TO SUBMIT AN ARTICLE (all supported):
  *   1. Plain text: first line = title, the rest = the article.
@@ -22,16 +30,18 @@
  * Guard = the sender's Telegram id must be on ALLOWED_IDS.
  *
  * SETUP — full walkthrough in ../TELEGRAM-SETUP.md. In short:
- *   1. Talk to @BotFather on Telegram → /newbot → copy the bot TOKEN.
+ *   1. Talk to @BotFather → /newbot → copy the bot TOKEN.
  *   2. New Apps Script project, paste this file.
  *   3. Services (+) → add "Drive API" → version 2   (needed for Word/PDF).
  *   4. ⚙ Project settings → Script properties → add:
  *        GITHUB_TOKEN   = <your GitHub fine-grained token>
  *        TELEGRAM_TOKEN = <the bot token from BotFather>
- *   5. Deploy → New deployment → Web app (Execute as: Me · Access: Anyone).
- *   6. Run setWebhook() once from the editor → connects the bot to this app.
- *   7. In Telegram, send /id to the bot from each phone that will publish and
- *      add those numbers to ALLOWED_IDS below (then redeploy).
+ *   5. Send /id to the bot, add your numeric id(s) to ALLOWED_IDS below, save.
+ *   6. Run setupPolling() ONCE from the editor (authorise when asked).
+ *      → it removes any webhook and schedules the minute-by-minute poll forever.
+ *
+ * NOTE: because the poll runs from a time-driven trigger (not a web-app
+ * deployment), editing the code + SAVING is enough — no re-deploy needed.
  */
 
 // ======================== CONFIG ========================
@@ -56,128 +66,142 @@ var CONFIG = {
 };
 // ========================================================
 
-/* ============================ WEBHOOK ============================ */
+/* ==================== ONE-TIME SETUP ==================== */
 
-// Telegram POSTs every message here as JSON.
-function doPost(e) {
-  var update;
+/**
+ * Run this ONCE from the editor. It:
+ *   1. Removes any Telegram webhook (webhook + polling are mutually exclusive).
+ *   2. Schedules pollUpdates() to run every minute, forever.
+ * Re-running it is safe (it de-duplicates the trigger).
+ */
+function setupPolling() {
+  var del = tgApi_("deleteWebhook", { drop_pending_updates: false });
+  Logger.log("deleteWebhook → " + del);
+  installTrigger();
+  Logger.log("✅ Polling activo: pollUpdates cada 1 minuto (siempre activo).");
+}
+
+function installTrigger() {
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (t.getHandlerFunction() === "pollUpdates") ScriptApp.deleteTrigger(t);
+  });
+  ScriptApp.newTrigger("pollUpdates").timeBased().everyMinutes(1).create();
+  Logger.log("⏱️ Disparador instalado: pollUpdates cada 1 minuto.");
+}
+
+/** Optional: stop the automation. */
+function removeTrigger() {
+  ScriptApp.getProjectTriggers().forEach(function (t) {
+    if (t.getHandlerFunction() === "pollUpdates") ScriptApp.deleteTrigger(t);
+  });
+  Logger.log("🛑 Disparador eliminado.");
+}
+
+/* ==================== MAIN POLL LOOP ==================== */
+
+// Time-driven entry point. Asks Telegram for new messages and publishes them.
+function pollUpdates() {
+  var lock = LockService.getScriptLock();
+  if (!lock.tryLock(2000)) return; // never let two runs overlap
   try {
-    update = JSON.parse((e && e.postData && e.postData.contents) || "{}");
-  } catch (err) {
-    return ok_(); // malformed — acknowledge so Telegram doesn't retry forever
+    var props = PropertiesService.getScriptProperties();
+    var offset = Number(props.getProperty("TG_OFFSET") || 0);
+
+    var raw = tgApi_("getUpdates", { offset: offset, timeout: 0, allowed_updates: ["message"] });
+    var resp = JSON.parse(raw);
+    if (!resp.ok || !resp.result || !resp.result.length) return;
+
+    for (var i = 0; i < resp.result.length; i++) {
+      var u = resp.result[i];
+      var msg = u.message || u.edited_message;
+      if (msg) {
+        try {
+          processMessage_(msg);
+        } catch (e) {
+          Logger.log("✖ update " + u.update_id + ": " + e);
+          try { tgSend_(msg.chat && msg.chat.id, "✖ No se pudo publicar: " + String(e)); } catch (e2) {}
+        }
+      }
+      // Confirm this update immediately so a later crash never re-processes it.
+      props.setProperty("TG_OFFSET", String(u.update_id + 1));
+    }
+  } finally {
+    lock.releaseLock();
   }
+}
 
-  var msg = update.message || update.edited_message;
-  if (!msg) return ok_();
-
-  // De-dup — CRITICAL. Telegram re-delivers the same update until it gets a
-  // fast 200, and won't deliver the NEXT update until the current one is
-  // acknowledged. Without this, a slow request republishes the same note
-  // several times AND blocks later messages from ever arriving. Mark each
-  // update_id as handled immediately so retries are ignored and the queue
-  // advances.
-  if (update.update_id != null) {
-    var cache = CacheService.getScriptCache();
-    var uKey = "tg_u_" + update.update_id;
-    if (cache.get(uKey)) return ok_();
-    cache.put(uKey, "1", 21600); // remember for 6h
-  }
-
+// Handle one Telegram message: commands, allow-list, then publish + reply.
+function processMessage_(msg) {
   var chatId = msg.chat && msg.chat.id;
   var fromId = msg.from && msg.from.id;
   var text = String(msg.text || "").trim();
 
-  try {
-    // ---- helper commands (never publish) ----
-    if (text === "/id" || text === "/id@") {
-      tgSend_(chatId, "🆔 Tu Telegram id es: <code>" + fromId + "</code>\n\n" +
-        "Pásaselo a quien administra el bot para autorizarte.");
-      return ok_();
-    }
-    if (/^\/(start|help|ayuda)\b/i.test(text)) {
-      tgSend_(chatId, helpText_());
-      return ok_();
-    }
-
-    // ---- allow-list ----
-    if (CONFIG.ALLOWED_IDS.length && CONFIG.ALLOWED_IDS.indexOf(fromId) === -1) {
-      tgSend_(chatId, "⛔ Este usuario no está autorizado para publicar.\n" +
-        "Envía /id y pasa ese número al administrador del bot.");
-      return ok_();
-    }
-
-    // ---- gather the article (document > text) ----
-    var got = extractContent_(msg);      // { text, title, source }
-    var article = (got.text || "").trim();
-    if (!article) {
-      tgSend_(chatId, "⚠️ No encontré texto para publicar.\n\n" + helpText_());
-      return ok_();
-    }
-
-    // Title: caption / first line; body = the rest.
-    var title = got.title;
-    if (!title) {
-      var lines = article.split(/\r?\n/);
-      title = String(lines.shift() || "").trim().slice(0, 120);
-      var rest = lines.join("\n").trim();
-      if (rest) article = rest; // first line was the title → body is the remainder
-    }
-    if (!title) { tgSend_(chatId, "⚠️ Falta el título (primera línea del mensaje o pie del documento)."); return ok_(); }
-
-    var slug = kebab_(title);
-    if (!slug) { tgSend_(chatId, "⚠️ El título no genera una URL válida. Usa texto con letras."); return ok_(); }
-
-    // ---- build + commit the draft (title/slug pinned; body AI-formatted) ----
-    var today = todayParts_();
-    var draft =
-      "---\n" +
-      "title: " + title + "\n" +
-      "slug: " + slug + "\n" +
-      "date: " + today.pretty + "\n" +
-      "slot: " + CONFIG.DEFAULT_SLOT + "\n" +
-      "format: ai\n" +
-      "---\n\n" +
-      article + "\n";
-
-    commitFile_("drafts/" + today.iso + "-" + slug + ".md", draft, "Publish via Telegram: " + title);
-
-    // ---- instant reply with the exact live link + a "Ver nota" button ----
-    var url = CONFIG.SITE_BASE + "/" + slug + "/";
-    tgSendWithButton_(chatId,
-      "✅ <b>Recibido:</b> «" + escapeHtml_(title) + "»\n" +
-      "Se está publicando y estará online en 1–2 min:\n" + url + "\n\n" +
-      "Reenvía este mensaje para compartirlo.",
-      "🔗 Ver nota", url);
-    return ok_();
-  } catch (err) {
-    tgSend_(chatId, "✖ No se pudo publicar: " + String(err));
-    return ok_();
+  // ---- helper commands (never publish) ----
+  if (text === "/id" || text === "/id@") {
+    tgSend_(chatId, "🆔 Tu Telegram id es: <code>" + fromId + "</code>\n\n" +
+      "Pásaselo a quien administra el bot para autorizarte.");
+    return;
   }
+  if (/^\/(start|help|ayuda)\b/i.test(text)) { tgSend_(chatId, helpText_()); return; }
+
+  // ---- allow-list ----
+  if (CONFIG.ALLOWED_IDS.length && CONFIG.ALLOWED_IDS.indexOf(fromId) === -1) {
+    tgSend_(chatId, "⛔ Este usuario no está autorizado para publicar.\n" +
+      "Envía /id y pasa ese número al administrador del bot.");
+    return;
+  }
+
+  // ---- gather the article (document > text) ----
+  var got = extractContent_(msg);       // { text, title, source }
+  var article = (got.text || "").trim();
+  if (!article) { tgSend_(chatId, "⚠️ No encontré texto para publicar.\n\n" + helpText_()); return; }
+
+  // Title: caption / first line; body = the rest.
+  var title = got.title;
+  if (!title) {
+    var lines = article.split(/\r?\n/);
+    title = String(lines.shift() || "").trim().slice(0, 120);
+    var rest = lines.join("\n").trim();
+    if (rest) article = rest;
+  }
+  if (!title) { tgSend_(chatId, "⚠️ Falta el título (primera línea del mensaje o pie del documento)."); return; }
+
+  var slug = kebab_(title);
+  if (!slug) { tgSend_(chatId, "⚠️ El título no genera una URL válida. Usa texto con letras."); return; }
+
+  // ---- build + commit the draft (title/slug pinned; body AI-formatted) ----
+  var today = todayParts_();
+  var draft =
+    "---\n" +
+    "title: " + title + "\n" +
+    "slug: " + slug + "\n" +
+    "date: " + today.pretty + "\n" +
+    "slot: " + CONFIG.DEFAULT_SLOT + "\n" +
+    "format: ai\n" +
+    "---\n\n" +
+    article + "\n";
+
+  commitFile_("drafts/" + today.iso + "-" + slug + ".md", draft, "Publish via Telegram: " + title);
+
+  // ---- reply with the exact live link + a "Ver nota" button ----
+  var url = CONFIG.SITE_BASE + "/" + slug + "/";
+  tgSendWithButton_(chatId,
+    "✅ <b>Recibido:</b> «" + escapeHtml_(title) + "»\n" +
+    "Se está publicando y estará online en 1–2 min:\n" + url + "\n\n" +
+    "Reenvía este mensaje para compartirlo.",
+    "🔗 Ver nota", url);
 }
 
-function doGet() {
-  return ContentService
-    .createTextOutput(JSON.stringify({ ok: true, service: "FDK Telegram publisher", ready: true }))
-    .setMimeType(ContentService.MimeType.JSON);
-}
+/* ==================== DIAGNOSTICS ==================== */
 
-/* ==================== ONE-TIME SETUP HELPERS ==================== */
-
-// Run ONCE from the editor after deploying → connects the bot to this web app.
-function setWebhook() {
-  var url = PropertiesService.getScriptProperties().getProperty("WEBHOOK_URL") ||
-            ScriptApp.getService().getUrl();
-  if (!url) throw new Error("No pude obtener la URL del web app. Despliega primero (Deploy → Web app).");
-  var res = tgApi_("setWebhook", { url: url, drop_pending_updates: true });
-  Logger.log("setWebhook → " + res);
-}
-
-// Optional: disconnect the bot.
-function deleteWebhook() { Logger.log("deleteWebhook → " + tgApi_("deleteWebhook", {})); }
-
-// Optional: confirm the bot token works and see the connected webhook.
 function getMe() { Logger.log("getMe → " + tgApi_("getMe", {})); }
 function getWebhookInfo() { Logger.log("getWebhookInfo → " + tgApi_("getWebhookInfo", {})); }
+// Health check if you ever deploy this as a web app (not required for polling).
+function doGet() {
+  return ContentService
+    .createTextOutput(JSON.stringify({ ok: true, service: "FDK Telegram publisher (polling)", ready: true }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
 
 /* ==================== CONTENT EXTRACTION ==================== */
 
@@ -193,7 +217,6 @@ function extractContent_(msg) {
         return { text: txt, title: cap || "", source: "documento (" + (d.file_name || "adjunto") + ")" };
       }
     }
-    // document unreadable → fall through to any caption as text
     var cap2 = String(msg.caption || "").trim();
     if (cap2) return { text: cap2, title: "", source: "pie del documento" };
   }
@@ -317,14 +340,12 @@ function commitFile_(filePath, contentStr, message) {
 
 /* ==================== HELPERS ==================== */
 
-function ok_() { return ContentService.createTextOutput("ok"); }
-
 function helpText_() {
   return "👋 <b>" + escapeHtml_(CONFIG.BRAND_NAME) + " — publicador</b>\n\n" +
     "Para publicar una nota, mándame:\n" +
     "• <b>Texto:</b> el <u>título en la 1ª línea</u> y el artículo debajo, o\n" +
     "• <b>Un documento</b> (.docx, .pdf o .txt) con el título como pie de foto (caption).\n\n" +
-    "En 1–2 min te respondo aquí mismo con el link listo para compartir.\n\n" +
+    "En ~1 min te respondo aquí mismo con el link listo para compartir.\n\n" +
     "Comandos: /id (ver tu id) · /help (esta ayuda)";
 }
 

@@ -4,16 +4,26 @@ Francesco escribe a un **bot de Telegram** y en 1–2 minutos recibe, **en el mi
 chat**, el link de la nota ya publicada, listo para reenviar.
 
 - ✅ **Gratis** y **oficial** (Bot API de Telegram).
-- ✅ **Siempre activo**: ni el token ni el webhook caducan (a diferencia del
+- ✅ **Siempre activo**: un disparador cada minuto en los servidores de Google;
+  nada que re-activar (a diferencia del
   sandbox de WhatsApp de Twilio, que había que re-activar cada 72 h).
 - ✅ Acepta **texto** o **documentos** (`.docx`, `.pdf`, `.txt`).
 - ✅ Convive con la **publicación manual** de siempre — no reemplaza nada.
 
 ```
-FDK (Telegram) → bot → Apps Script → GitHub (drafts/) → Action (formato AI) → web
-       ▲                                                                        │
-       └──────────────── respuesta instantánea con el link ─────────────────────┘
+FDK (Telegram) → bot ← Apps Script pregunta "¿mensajes nuevos?" cada minuto
+                              │
+                              ▼  commit → GitHub (drafts/) → Action (formato AI) → web
+                              ▼  el bot responde en el chat con el link (~1 min)
 ```
+
+> **Nota técnica (importante):** este bot usa **sondeo (polling)**, no webhook. Un
+> web app de Apps Script siempre responde con un redirect **302**, y Telegram lo
+> trata como entrega fallida (`Wrong response from the webhook: 302 Found`) → se
+> producen bucles y la cola se atasca. Con polling es **nuestro** script el que
+> pregunta a Telegram cada minuto, así que no hay 302 que falle. A cambio, la
+> respuesta llega en **~1 min** (no en segundos), tiempo de sobra porque la nota
+> tarda 1–2 min en salir online igualmente.
 
 ---
 
@@ -52,44 +62,39 @@ FDK (Telegram) → bot → Apps Script → GitHub (drafts/) → Action (formato 
 
 ---
 
-## Paso 4 · Desplegar el web app (2 min)
-
-1. Arriba a la derecha → **Implementar** → **Nueva implementación**.
-2. Tipo → **Aplicación web**.
-3. **Ejecutar como:** *Yo* · **Quién tiene acceso:** *Cualquier usuario*.
-4. **Implementar** → autoriza los permisos (tu cuenta de Google).
-5. Copia la **URL** que termina en `/exec` (no hace falta pegarla en ningún sitio;
-   el bot se conecta solo en el paso siguiente).
-
----
-
-## Paso 5 · Conectar el bot al web app (10 seg)
-
-1. En el editor de Apps Script, en el selector de funciones elige **`setWebhook`**.
-2. Pulsa **Ejecutar** una vez.
-3. En **Registros** verás `"ok":true` → el bot ya está conectado.
-
-> Si más adelante cambias el código y creas una **nueva implementación**, vuelve
-> a ejecutar `setWebhook` una vez.
-
----
-
-## Paso 6 · Autorizar a quién puede publicar (2 min)
+## Paso 4 · Autorizar a quién puede publicar (2 min)
 
 1. En Telegram, abre tu bot (búscalo por el usuario que le pusiste) y pulsa
    **Iniciar** / envía `/id`.
-2. El bot responde con tu **número de id** (p. ej. `123456789`).
+2. El bot responde con tu **número de id** (p. ej. `123456789`). *(El bot sólo
+   responde a `/id` una vez que el polling está activo — Paso 5. Si aún no
+   responde, sáltate esto, activa el polling, y vuelve.)*
 3. Haz lo mismo desde el teléfono de **Francesco**.
 4. En el código, en `CONFIG.ALLOWED_IDS`, pon esos números:
    ```js
    ALLOWED_IDS: [123456789, 987654321],
    ```
-5. Guarda → **Implementar** → **Gestionar implementaciones** → editar (lápiz) →
-   **Nueva versión** → **Implementar**. (No hace falta re-ejecutar `setWebhook`
-   si la URL no cambia, pero no molesta hacerlo.)
+5. **Guarda** (Ctrl+S). Con polling **no hace falta re-desplegar**: el disparador
+   ejecuta siempre el código guardado.
 
 > Deja `ALLOWED_IDS: []` **solo** para una prueba rápida (permite a cualquiera).
 > En producción pon siempre los ids.
+
+---
+
+## Paso 5 · Activar el polling (10 seg) — ¡el paso clave!
+
+1. En el editor de Apps Script, en el selector de funciones (arriba) elige
+   **`setupPolling`**.
+2. Pulsa **▶ Ejecutar** una vez → autoriza los permisos cuando te lo pida.
+3. En **Registros** verás `✅ Polling activo: pollUpdates cada 1 minuto`.
+
+Eso quita cualquier webhook y programa el sondeo **para siempre**. No hay que
+desplegar nada ni volver a tocarlo.
+
+> ¿Cambias el código más adelante? Sólo **guarda** (Ctrl+S) — el disparador
+> ejecuta el código nuevo al minuto siguiente. Si añades/quitas un disparador,
+> vuelve a ejecutar `setupPolling` una vez.
 
 ---
 
