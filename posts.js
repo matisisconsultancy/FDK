@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-velocity-edge-in-focus-august-4-2026-fdk",
+    title: "The Velocity Edge—In Focus | August 4, 2026 | FDK",
+    excerpt: "As the price of intelligence collapses, the capability to produce it becomes one of the most capital-intensive assets on earth.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "7 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/it-is-managing-an-economy-in-which-productivity-growth-may-no-longer-produce-proportional-employment-growth",
     title: "It is managing an economy in which productivity growth may no longer produce proportional employment growth.",
     excerpt: "AI, energy, capital markets and labor have fused into one strategic system — and Europe's window to mobilize capital is closing.",
