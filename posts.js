@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-velocity-edge-midday-pulse-august-5-2026-fdk",
+    title: "The Velocity Edge — Midday Pulse | August 5, 2026 | FDK",
+    excerpt: "The AI trade is migrating from compute toward the physical system that makes intelligence possible.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/its-financial-architecture-is-becoming-less-forgiving",
+    title: "Its financial architecture is becoming less forgiving.",
+    excerpt: "The AI divide has shifted from capability to whether intelligence can justify its own infrastructure.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-velocity-edge-the-morning-view-august-6-2026-fdk",
     title: "The Velocity Edge — The Morning View | August 6, 2026 | FDK",
     excerpt: "Output is accelerating faster than employment, and the market is starting to price who captures AI's value — and who is displaced creating it.",
