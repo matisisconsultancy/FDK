@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/it-is-managing-an-economy-in-which-productivity-growth-may-no-longer-produce-proportional-employment-growth",
+    title: "It is managing an economy in which productivity growth may no longer produce proportional employment growth.",
+    excerpt: "AI, energy, capital markets and labor have fused into one strategic system — and Europe's window to mobilize capital is closing.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 5, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-capital-rotation-accelerates",
     title: "The Capital Rotation Accelerates",
     excerpt: "",
