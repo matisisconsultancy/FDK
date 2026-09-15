@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/nvidias-340-billion-morning",
+    title: "Nvidia’s $340 Billion Morning",
+    excerpt: "NVIDIA's results triggered a duration shock — markets are extending the expected life of the AI investment cycle.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "August 27, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-meets-the-full-equation",
     title: "The AI Supercycle Meets the Full Equation",
     excerpt: "Three separate market stories — Nvidia earnings, U.S. PCE and the Strait of Hormuz — converge into a single economic equation.",
