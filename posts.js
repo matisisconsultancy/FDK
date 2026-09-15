@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-grid-draws-the-line",
+    title: "The Grid Draws the Line",
+    excerpt: "The AI Supercycle is not weakening—it is becoming industrial, and therefore more selective.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "August 5, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-european-railways-competitive-dynamics",
     title: "The European Railways Competitive Dynamics",
     excerpt: "Why the next phase of European rail competition is a contest between capital architectures, not train operators.",
