@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/nvidia-won-the-numerator-warsh-now-sets-the-denominator",
+    title: "Nvidia Won the Numerator. Warsh Now Sets the Denominator.",
+    excerpt: "The Great Split is becoming Earnings Velocity versus Discount-Rate Velocity, and Jackson Hole is today's pivot.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/nvidias-340-billion-morning",
     title: "Nvidia’s $340 Billion Morning",
     excerpt: "NVIDIA's results triggered a duration shock — markets are extending the expected life of the AI investment cycle.",
