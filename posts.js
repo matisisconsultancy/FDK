@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/u-s-china-ai-watch-material-inflection-detected",
+    title: "U.S.: China AI Watch: Material Inflection Detected",
+    excerpt: "The first clean macroeconomic evidence that China's AI-and-automation strategy is operating at industrial scale.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/electricity-infrastructure-construction-and-capital",
     title: "Electricity, Infrastructure, Construction and Capital.",
     excerpt: "AI does not eliminate the economics of the physical world — it intensifies them, migrating scarcity from computing to memory to optics to power to capital.",
