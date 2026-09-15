@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/10-year-yield-has-moved-above-5-and-markets-are-assigning-around-a-90-probability-to-a-fed-hike-this-week",
+    title: "10-year Yield Has Moved Above 5%, and Markets Are Assigning Around a 90% Probability to a Fed Hike This Week.",
+    excerpt: "Higher rates make Italian banking consolidation simultaneously more strategic and more financially demanding.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "2 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/italian-banking-paradox-2-0",
     title: "Italian Banking Paradox 2.0",
     excerpt: "MPS's defence now depends on the value of the very share currency Intesa's takeover attempt helped make scarce.",
