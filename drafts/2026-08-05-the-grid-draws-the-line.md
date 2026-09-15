@@ -104,5 +104,19 @@ The market must now add a distinction beyond announced versus completed: announc
 - The capital-expenditure bar has risen again: the market now asks whether the return exceeds the cost of funding it.
 - Own scarcity—but verify permission, utilization and liability.
 
+::rank The Global Velocity Index | full ranked read · August 5, 2026
+97.4 :: Semiconductors
+97.2 :: Aerospace & Defense
+97.1 :: Cloud & Data Centers
+97.0 :: Energy & Power Infrastructure
+96.6 :: Artificial Intelligence & Accelerated Computing
+95.4 :: Financial Services & Fintech
+95.2 :: Telecommunications & Digital Infrastructure
+94.9 :: Construction & Critical Infrastructure
+94.7 :: Advanced Manufacturing & Robotics
+93.9 :: Healthcare & Biotechnology
+92.6 :: Mining & Critical Minerals
+82.6 :: Agriculture & Food Systems
+
 ::close
 The next strategic advantage is not maximum capital expenditure. It is the ability to move capital through every approval gate and ==convert it into productive cash flow faster than competitors==.

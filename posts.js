@@ -31,30 +31,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/iv-innovation-velocity-cf-capital-formation-pa-productivity-acceleration-ib-infrastructure-build-out-ad-adoption-and-diffusion-me-market-expansion-ps-policy-support-sr-supply-chain-resi",
-    title: "IV: innovation velocity; CF: capital formation; PA: productivity acceleration; IB: infrastructure build-out; AD: adoption and diffusion; ME: market expansion; PS: policy support; SR: supply-chain resi",
-    excerpt: "A ranked read on which industries are building the Next Economy fastest — and why the edge is shifting toward power, machinery and infrastructure.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "3 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/the-grid-draws-the-line",
-    title: "The Grid Draws the Line",
-    excerpt: "The AI Supercycle is not weakening—it is becoming industrial, and therefore more selective.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "August 5, 2026",
-    read: "8 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/part-i-the-return-of-pricing-power",
     title: "Part I — The Return of Pricing Power",
     excerpt: "A quiet session masked a structural shift as capital rotates toward the owners of the Industrial AI ecosystem.",
@@ -487,6 +463,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
