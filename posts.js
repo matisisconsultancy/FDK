@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-trade-is-repricing-the-worlds-cost-of-capital",
+    title: "The AI Trade Is Repricing the World’s Cost of Capital",
+    excerpt: "Hyperscaler bond issuance is lifting real yields and reshaping the cost of capital for the entire economy.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "August 14, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/closing-of-the-day-fdk",
     title: "Closing of the Day — FDK",
     excerpt: "As producer prices hold and yields fall, the AI trade is migrating from equities into credit — and toward a single emerging capital cycle.",
