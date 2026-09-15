@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-morning-view",
+    title: "The Morning View",
+    excerpt: "Two repricing mechanisms converge this week — NVIDIA on the return on intelligence, Jackson Hole on the price of capital.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "7 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/central-banks-and-the-great-split",
     title: "Central Banks and the Great Split",
     excerpt: "AI is becoming a monetary variable before becoming a monetary-policy target — and central banks were not built for the world it creates.",
