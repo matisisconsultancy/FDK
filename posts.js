@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-has-found-its-bankers",
+    title: "AI Has Found Its Bankers",
+    excerpt: "Nvidia enlists six of the world's largest financial institutions to fund Industrial AI at system scale, as oil, permits and CPI reintroduce physical limits.",
+    tag: "The Morning View · Capital",
+    slot: "The Morning View",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "August 11, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ai-infrastructure-is-entering-a-higher-cost-financing-regime",
     title: "AI Infrastructure Is Entering a Higher-Cost Financing Regime",
     excerpt: "Debt issuance is accelerating and project bankability is tightening as markets begin to distinguish capital committed from capital capable of earning above its cost.",
