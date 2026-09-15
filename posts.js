@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/closing-of-the-day",
+    title: "Closing of the Day",
+    excerpt: "The AI Supercycle is migrating from a technology valuation story into a capital-formation regime.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "6 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/ai-is-shifting-risk-from-balance-sheets-to-capital-markets",
     title: "AI Is Shifting Risk From Balance Sheets to Capital Markets",
     excerpt: "The AI Supercycle is not slowing — its financial architecture is being rebuilt around distributed risk.",
