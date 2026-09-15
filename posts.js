@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/august-12-2026-fdk",
+    title: "August 12, 2026 | FDK",
+    excerpt: "Global AI investment now exceeds $1 trillion in 2026, forcing markets to ask who actually earns the return.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "August 12, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-is-now-capital-formation-vs-demand",
     title: "The Great Split Is Now Capital Formation vs. Demand",
     excerpt: "Three economies, one phenomenon — capital formation is decoupling from the demand meant to absorb it.",
