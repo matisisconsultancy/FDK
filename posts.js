@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-self-reinforcing-risiko",
+    title: "The Self-reinforcing Risiko",
+    excerpt: "How equity currency, control premiums and time are redrawing the hierarchy of Italian banking.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/10-year-yield-has-moved-above-5-and-markets-are-assigning-around-a-90-probability-to-a-fed-hike-this-week",
     title: "10-year Yield Has Moved Above 5%, and Markets Are Assigning Around a 90% Probability to a Fed Hike This Week.",
     excerpt: "Higher rates make Italian banking consolidation simultaneously more strategic and more financially demanding.",
