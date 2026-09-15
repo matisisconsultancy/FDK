@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-industrial-ai-is-becoming-the-age-of-capital-formation",
+    title: "The Age of Industrial AI Is Becoming the Age of Capital Formation",
+    excerpt: "Weak payrolls, Nvidia's infrastructure push and Hormuz all point to the same divide — capital-rich versus capital-constrained systems.",
+    tag: "The Morning View · Capital",
+    slot: "The Morning View",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "August 8, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/iv-innovation-velocity-cf-capital-formation-pa-productivity-acceleration-ib-infrastructure-build-out-ad-adoption-and-diffusion-me-market-expansion-ps-policy-support-sr-supply-chain-resi",
     title: "IV: innovation velocity; CF: capital formation; PA: productivity acceleration; IB: infrastructure build-out; AD: adoption and diffusion; ME: market expansion; PS: policy support; SR: supply-chain resi",
     excerpt: "A ranked read on which industries are building the Next Economy fastest — and why the edge is shifting toward power, machinery and infrastructure.",
