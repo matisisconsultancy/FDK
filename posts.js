@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-meets-the-scarcity-premium",
+    title: "The AI Supercycle Meets the Scarcity Premium",
+    excerpt: "Oil above $90, the yen through 160, and Soitec locking in photonics customers — the AI Supercycle is running into scarcity, not out of demand.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "August 31, 2026",
+    read: "10 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/nvidia-won-the-numerator-warsh-now-sets-the-denominator",
     title: "Nvidia Won the Numerator. Warsh Now Sets the Denominator.",
     excerpt: "The Great Split is becoming Earnings Velocity versus Discount-Rate Velocity, and Jackson Hole is today's pivot.",
