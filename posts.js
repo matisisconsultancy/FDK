@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/august-12-2026-fdk",
+    title: "August 12, 2026 | FDK",
+    excerpt: "Global AI investment now exceeds $1 trillion in 2026, forcing markets to ask who actually earns the return.",
+    tag: "MIDDAY PULSE · Capital",
+    slot: "MIDDAY PULSE",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ai-has-found-its-bankers",
     title: "AI Has Found Its Bankers",
     excerpt: "Nvidia enlists six of the world's largest financial institutions to fund Industrial AI at system scale, as oil, permits and CPI reintroduce physical limits.",
