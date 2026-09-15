@@ -303,23 +303,46 @@ function parseHeader_(text) {
   };
 }
 
-// Detect a masthead line and pull its date + edition. Returns null if the line
-// is just a normal title.
+// Detect a masthead line and pull its date + edition. Handles both "|" and
+// em/en-dash separators, e.g. "The Velocity Edge — Closing of the Day |
+// August 12, 2026 | FDK". Returns null if the line is just a normal title.
 function detectMasthead_(line) {
   if (!line) return null;
   var hasDate = /[A-Z][a-z]+\s+\d{1,2},\s*\d{4}/.test(line);       // "August 4, 2026"
-  var looks = /the velocity edge/i.test(line) || /\bFDK\b/.test(line) ||
-              (line.indexOf("|") !== -1 && hasDate);
+  var looks = /the velocity edge/i.test(line) || /\bFDK\b/i.test(line) ||
+              (/[|—–]/.test(line) && hasDate);
   if (!looks) return null;
 
   var dateObj = null;
   var dm = line.match(/([A-Z][a-z]+\s+\d{1,2},\s*\d{4})/);
   if (dm) { var d = new Date(dm[1]); if (!isNaN(d.getTime())) dateObj = d; }
 
+  // Split on | — – and pick the segment that is the edition (not the brand,
+  // not the date, not "FDK").
+  var segs = line.split(/\s*[|—–]\s*/);
   var edition = null;
-  var em = line.match(/velocity edge\s*[—–\-|:]\s*([^|]+)/i); // text after the dash, up to "|"
-  if (em) edition = em[1].replace(/[|].*$/, "").trim();
-  return { dateObj: dateObj, edition: edition };
+  for (var i = 0; i < segs.length; i++) {
+    var seg = String(segs[i] || "").trim();
+    if (!seg) continue;
+    if (/^the\s+velocity\s+edge$/i.test(seg)) continue;
+    if (/^fdk$/i.test(seg)) continue;
+    if (/[A-Z][a-z]+\s+\d{1,2},\s*\d{4}/.test(seg)) continue; // the date
+    edition = seg; break;
+  }
+  return { dateObj: dateObj, edition: edition ? normalizeEdition_(edition) : null };
+}
+
+// Map whatever edition wording the note uses to a canonical site slot, so the
+// note is classified and time-stamped correctly (Morning View / Midday Pulse /
+// The Close…). Unknown editions are kept (tidied) as-is.
+function normalizeEdition_(ed) {
+  var e = String(ed || "").toLowerCase();
+  if (/clos/.test(e)) return "The Close";              // The Close / Closing of the Day
+  if (/morning/.test(e)) return "Morning View";
+  if (/midday|mid-day|midday pulse/.test(e)) return "Midday Pulse";
+  if (/in\s*focus/.test(e)) return "In Focus";
+  if (/night|evening|midnight/.test(e)) return "The Close";
+  return toTitleCase_(ed);
 }
 
 // Normalize a title to natural Title Case, whatever case it arrives in
