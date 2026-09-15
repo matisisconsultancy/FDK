@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-european-railways-competitive-dynamics",
+    title: "The European Railways Competitive Dynamics",
+    excerpt: "Why the next phase of European rail competition is a contest between capital architectures, not train operators.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-age-of-industrial-ai-is-becoming-the-age-of-capital-formation",
     title: "The Age of Industrial AI Is Becoming the Age of Capital Formation",
     excerpt: "Weak payrolls, Nvidia's infrastructure push and Hormuz all point to the same divide — capital-rich versus capital-constrained systems.",
