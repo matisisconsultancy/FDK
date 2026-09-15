@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-rally-is-no-longer-about-ai",
+    title: "The AI Rally Is No Longer About AI",
+    excerpt: "A benign CPI print rewarded not tech broadly but the industrial architecture of intelligence — and the valuation regime is turning selective.",
+    tag: "The Morning View · Capital",
+    slot: "The Morning View",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/august-12-2026-fdk",
     title: "August 12, 2026 | FDK",
     excerpt: "Global AI investment now exceeds $1 trillion in 2026, forcing markets to ask who actually earns the return.",
