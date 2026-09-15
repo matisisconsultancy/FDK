@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-underwriting-test",
+    title: "The Underwriting Test",
+    excerpt: "Three simultaneous repricings — capital, physical scarcity and technological uncertainty — push the AI Supercycle from its build phase into its underwriting phase.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europe-ai-gigafactory-watch-material-inflection-detected",
     title: "Europe AI Gigafactory Watch: Material Inflection Detected",
     excerpt: "Axelera and EUCLYD signal European capital forming around the semiconductor layer just as the continent prepares tens of billions in sovereign AI infrastructure.",
