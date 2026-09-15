@@ -1,0 +1,386 @@
+{
+  "updated": "2026-07-30T15:28:19.023Z",
+  "provider": "sample",
+  "count": 27,
+  "skipped": [],
+  "items": [
+    {
+      "id": "NVIDIA",
+      "label": "NVIDIA",
+      "symbol": "NVDA",
+      "exchange": null,
+      "group": "AI & Semiconductors",
+      "price": 126,
+      "chg": -1.8,
+      "currency": "USD",
+      "name": "NVIDIA",
+      "spark": [
+        126
+      ]
+    },
+    {
+      "id": "TSMC",
+      "label": "TSMC",
+      "symbol": "TSM",
+      "exchange": null,
+      "group": "AI & Semiconductors",
+      "price": 92.4,
+      "chg": -1.43,
+      "currency": "USD",
+      "name": "TSMC",
+      "spark": [
+        92.4
+      ]
+    },
+    {
+      "id": "Broadcom",
+      "label": "Broadcom",
+      "symbol": "AVGO",
+      "exchange": null,
+      "group": "AI & Semiconductors",
+      "price": 101.2,
+      "chg": -1.06,
+      "currency": "USD",
+      "name": "Broadcom",
+      "spark": [
+        101.2
+      ]
+    },
+    {
+      "id": "ASML",
+      "label": "ASML",
+      "symbol": "ASML",
+      "exchange": null,
+      "group": "AI & Semiconductors",
+      "price": 47.15,
+      "chg": -0.69,
+      "currency": "USD",
+      "name": "ASML",
+      "spark": [
+        47.15
+      ]
+    },
+    {
+      "id": "AMD",
+      "label": "AMD",
+      "symbol": "AMD",
+      "exchange": null,
+      "group": "AI & Semiconductors",
+      "price": 15.24,
+      "chg": -0.32,
+      "currency": "USD",
+      "name": "AMD",
+      "spark": [
+        15.24
+      ]
+    },
+    {
+      "id": "Microsoft",
+      "label": "Microsoft",
+      "symbol": "MSFT",
+      "exchange": null,
+      "group": "Big Tech",
+      "price": 3.6,
+      "chg": 0.05,
+      "currency": "USD",
+      "name": "Microsoft",
+      "spark": [
+        3.6
+      ]
+    },
+    {
+      "id": "Apple",
+      "label": "Apple",
+      "symbol": "AAPL",
+      "exchange": null,
+      "group": "Big Tech",
+      "price": 2457,
+      "chg": 0.42,
+      "currency": "USD",
+      "name": "Apple",
+      "spark": [
+        2457
+      ]
+    },
+    {
+      "id": "Alphabet",
+      "label": "Alphabet",
+      "symbol": "GOOGL",
+      "exchange": null,
+      "group": "Big Tech",
+      "price": 1.19,
+      "chg": 0.79,
+      "currency": "USD",
+      "name": "Alphabet",
+      "spark": [
+        1.19
+      ]
+    },
+    {
+      "id": "Amazon",
+      "label": "Amazon",
+      "symbol": "AMZN",
+      "exchange": null,
+      "group": "Big Tech",
+      "price": 77050,
+      "chg": 1.16,
+      "currency": "USD",
+      "name": "Amazon",
+      "spark": [
+        77050
+      ]
+    },
+    {
+      "id": "Meta",
+      "label": "Meta",
+      "symbol": "META",
+      "exchange": null,
+      "group": "Big Tech",
+      "price": 151.2,
+      "chg": 1.53,
+      "currency": "USD",
+      "name": "Meta",
+      "spark": [
+        151.2
+      ]
+    },
+    {
+      "id": "SAP",
+      "label": "SAP",
+      "symbol": "SAP",
+      "exchange": "XETR",
+      "group": "Europe",
+      "price": 88,
+      "chg": 1.9,
+      "currency": "EUR",
+      "name": "SAP",
+      "spark": [
+        88
+      ]
+    },
+    {
+      "id": "Siemens",
+      "label": "Siemens",
+      "symbol": "SIE",
+      "exchange": "XETR",
+      "group": "Europe",
+      "price": 96.6,
+      "chg": -1.73,
+      "currency": "EUR",
+      "name": "Siemens",
+      "spark": [
+        96.6
+      ]
+    },
+    {
+      "id": "LVMH",
+      "label": "LVMH",
+      "symbol": "MC",
+      "exchange": "Euronext",
+      "group": "Europe",
+      "price": 45.1,
+      "chg": -1.36,
+      "currency": "EUR",
+      "name": "LVMH",
+      "spark": [
+        45.1
+      ]
+    },
+    {
+      "id": "ASML (AMS)",
+      "label": "ASML (AMS)",
+      "symbol": "ASML",
+      "exchange": "Euronext",
+      "group": "Europe",
+      "price": 14.6,
+      "chg": -0.99,
+      "currency": "EUR",
+      "name": "ASML (AMS)",
+      "spark": [
+        14.6
+      ]
+    },
+    {
+      "id": "Novo Nordisk",
+      "label": "Novo Nordisk",
+      "symbol": "NOVO-B",
+      "exchange": "OMXCOP",
+      "group": "Europe",
+      "price": 4.32,
+      "chg": -0.62,
+      "currency": "EUR",
+      "name": "Novo Nordisk",
+      "spark": [
+        4.32
+      ]
+    },
+    {
+      "id": "Inditex",
+      "label": "Inditex",
+      "symbol": "ITX",
+      "exchange": "BME",
+      "group": "Europe",
+      "price": 2340,
+      "chg": -0.25,
+      "currency": "EUR",
+      "name": "Inditex",
+      "spark": [
+        2340
+      ]
+    },
+    {
+      "id": "Iberdrola",
+      "label": "Iberdrola",
+      "symbol": "IBE",
+      "exchange": "BME",
+      "group": "Europe",
+      "price": 1.13,
+      "chg": 0.12,
+      "currency": "EUR",
+      "name": "Iberdrola",
+      "spark": [
+        1.13
+      ]
+    },
+    {
+      "id": "Banco Santander",
+      "label": "Banco Santander",
+      "symbol": "SAN",
+      "exchange": "BME",
+      "group": "Europe",
+      "price": 73700,
+      "chg": 0.49,
+      "currency": "EUR",
+      "name": "Banco Santander",
+      "spark": [
+        73700
+      ]
+    },
+    {
+      "id": "ENCE Energía y Celulosa",
+      "label": "ENCE Energía y Celulosa",
+      "symbol": "ENC",
+      "exchange": "BME",
+      "group": "Europe",
+      "price": 144.9,
+      "chg": 0.86,
+      "currency": "EUR",
+      "name": "ENCE Energía y Celulosa",
+      "spark": [
+        144.9
+      ]
+    },
+    {
+      "id": "S&P 500",
+      "label": "S&P 500",
+      "symbol": "SPX",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 105.6,
+      "chg": 1.23,
+      "currency": "USD",
+      "name": "S&P 500",
+      "spark": [
+        105.6
+      ]
+    },
+    {
+      "id": "Nasdaq 100",
+      "label": "Nasdaq 100",
+      "symbol": "NDX",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 92,
+      "chg": 1.6,
+      "currency": "USD",
+      "name": "Nasdaq 100",
+      "spark": [
+        92
+      ]
+    },
+    {
+      "id": "EuroStoxx 50",
+      "label": "EuroStoxx 50",
+      "symbol": "STOXX50E",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 43.05,
+      "chg": 1.97,
+      "currency": "USD",
+      "name": "EuroStoxx 50",
+      "spark": [
+        43.05
+      ]
+    },
+    {
+      "id": "IBEX 35",
+      "label": "IBEX 35",
+      "symbol": "IBEX",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 13.97,
+      "chg": -1.66,
+      "currency": "USD",
+      "name": "IBEX 35",
+      "spark": [
+        13.97
+      ]
+    },
+    {
+      "id": "Brent",
+      "label": "Brent",
+      "symbol": "BRENT/USD",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 4.14,
+      "chg": -1.29,
+      "currency": "USD",
+      "name": "Brent",
+      "spark": [
+        4.14
+      ]
+    },
+    {
+      "id": "Gold",
+      "label": "Gold",
+      "symbol": "XAU/USD",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 2808,
+      "chg": -0.92,
+      "currency": "USD",
+      "name": "Gold",
+      "spark": [
+        2808
+      ]
+    },
+    {
+      "id": "EUR/USD",
+      "label": "EUR/USD",
+      "symbol": "EUR/USD",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 1.08,
+      "chg": -0.55,
+      "currency": "USD",
+      "name": "EUR/USD",
+      "spark": [
+        1.08
+      ]
+    },
+    {
+      "id": "Bitcoin",
+      "label": "Bitcoin",
+      "symbol": "BTC/USD",
+      "exchange": null,
+      "group": "Macro & Commodities",
+      "price": 70350,
+      "chg": -0.18,
+      "currency": "USD",
+      "name": "Bitcoin",
+      "spark": [
+        70350
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "_comment": "FDK live-market watchlist. Add/remove entries freely — the daily GitHub Action reads this file, fetches quotes from TwelveData and writes quotes.json. Each entry: label (display), symbol (TwelveData ticker), exchange (optional, for non-US listings), group. Symbols are validated on each run; any TwelveData rejects are logged and skipped, never breaking the board.",
+  "groups": [
+    {
+      "name": "AI & Semiconductors",
+      "items": [
+        { "label": "NVIDIA",   "symbol": "NVDA" },
+        { "label": "TSMC",     "symbol": "TSM" },
+        { "label": "Broadcom", "symbol": "AVGO" },
+        { "label": "ASML",     "symbol": "ASML" },
+        { "label": "AMD",      "symbol": "AMD" }
+      ]
+    },
+    {
+      "name": "Big Tech",
+      "items": [
+        { "label": "Microsoft", "symbol": "MSFT" },
+        { "label": "Apple",     "symbol": "AAPL" },
+        { "label": "Alphabet",  "symbol": "GOOGL" },
+        { "label": "Amazon",    "symbol": "AMZN" },
+        { "label": "Meta",      "symbol": "META" }
+      ]
+    },
+    {
+      "name": "Europe",
+      "items": [
+        { "label": "SAP",             "symbol": "SAP",  "exchange": "XETR" },
+        { "label": "Siemens",         "symbol": "SIE",  "exchange": "XETR" },
+        { "label": "LVMH",            "symbol": "MC",   "exchange": "Euronext" },
+        { "label": "ASML (AMS)",      "symbol": "ASML", "exchange": "Euronext" },
+        { "label": "Novo Nordisk",    "symbol": "NOVO-B", "exchange": "OMXCOP" },
+        { "label": "Inditex",         "symbol": "ITX",  "exchange": "BME" },
+        { "label": "Iberdrola",       "symbol": "IBE",  "exchange": "BME" },
+        { "label": "Banco Santander", "symbol": "SAN",  "exchange": "BME" },
+        { "label": "ENCE Energía y Celulosa", "symbol": "ENC", "exchange": "BME" }
+      ]
+    },
+    {
+      "name": "Macro & Commodities",
+      "items": [
+        { "label": "S&P 500",  "symbol": "SPX" },
+        { "label": "Nasdaq 100","symbol": "NDX" },
+        { "label": "EuroStoxx 50", "symbol": "STOXX50E" },
+        { "label": "IBEX 35",  "symbol": "IBEX" },
+        { "label": "Brent",    "symbol": "BRENT/USD" },
+        { "label": "Gold",     "symbol": "XAU/USD" },
+        { "label": "EUR/USD",  "symbol": "EUR/USD" },
+        { "label": "Bitcoin",  "symbol": "BTC/USD" }
+      ]
+    }
+  ]
+}

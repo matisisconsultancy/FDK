@@ -1,0 +1,65 @@
+name: Update live market data
+
+# Fetches fresh quotes for the watchlist (data/market/watchlist.json) from
+# TwelveData and commits data/market/quotes.json so GitHub Pages redeploys
+# with the latest prices. Fully automated — no manual step.
+#
+# SETUP (one time): add a repository secret named TWELVEDATA_API_KEY
+#   Settings → Secrets and variables → Actions → New repository secret
+# (Free key at twelvedata.com. For intraday/real-time across many tickers,
+#  the paid Grow plan lifts the 8 req/min · 800/day free limits.)
+
+on:
+  schedule:
+    - cron: "0 6 * * 1-5"    # 06:00 UTC weekdays (pre-EU open)
+    - cron: "5 20 * * 1-5"   # 20:05 UTC weekdays (after US close)
+  workflow_dispatch: {}
+
+concurrency:
+  group: market-update-${{ github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  quotes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch quotes
+        env:
+          TWELVEDATA_API_KEY: ${{ secrets.TWELVEDATA_API_KEY }}
+        run: node scripts/fetch-quotes.mjs
+
+      - name: Commit and push
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add data/market/quotes.json
+          if git diff --cached --quiet; then
+            echo "No quote changes."
+            exit 0
+          fi
+          git commit -m "Update live market data ($(date -u +%Y-%m-%dT%H:%MZ))"
+          for attempt in 1 2 3 4; do
+            git pull --rebase --autostash origin "${{ github.ref_name }}" || true
+            if git push origin "HEAD:${{ github.ref_name }}"; then
+              echo "Pushed on attempt $attempt"
+              exit 0
+            fi
+            echo "Push failed (attempt $attempt), retrying…"
+            sleep $((attempt * 3))
+          done
+          echo "::error::Failed to push after 4 attempts"
+          exit 1

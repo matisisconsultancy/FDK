@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-YTR5GM8FWL"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-YTR5GM8FWL');</script>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FDK live market board — real-time prices and daily moves for the equities, indices and commodities shaping the Next Economy. Updated automatically." />
+  <meta name="theme-color" content="#070a24" />
+  <title>Live Market Board · FDK EmpowerNet</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" /></noscript>
+  <link rel="stylesheet" href="/styles.css?v=103" />
+
+  <style>
+    .mkt-hero { background: var(--navy-deep); color:#fff; padding: 150px 0 40px; }
+    .mkt-hero__eyebrow { color: var(--green); font-size:.78rem; font-weight:600; letter-spacing:2.5px; text-transform:uppercase; }
+    .mkt-hero__title { font-family: var(--font-display); font-weight:400; font-size: clamp(2.2rem,5vw,4rem); line-height:1.04; letter-spacing:-1.5px; margin:.4em 0 .2em; }
+    .mkt-hero__dek { color: rgba(255,255,255,.72); max-width: 720px; font-size: clamp(1rem,1.3vw,1.14rem); }
+    .mkt-section { background: var(--navy-deep); color:#fff; padding: 10px 0 120px; }
+
+    #market { --mb-green:#2ee06a; --mb-red:#ff5c6c; --mb-line:rgba(255,255,255,.1); --mb-dim:rgba(255,255,255,.55); }
+    .mb-meta { display:flex; flex-wrap:wrap; gap:12px 20px; align-items:center; margin-bottom:26px; }
+    .mb-badge { font-size:.76rem; font-weight:600; letter-spacing:.5px; color:var(--navy-deep); background:var(--green); padding:6px 14px; border-radius:100px; }
+    .mb-badge--sample { background:#ffcf5c; color:#3a2a00; }
+    .mb-updated { color:var(--mb-dim); font-size:.85rem; font-family:var(--font-mono); }
+    .mb-group { margin-bottom:34px; }
+    .mb-group__h { font-family:var(--font-display); font-weight:500; font-size:1.05rem; color:#fff; margin:0 0 14px; padding-bottom:8px; border-bottom:1px solid var(--mb-line); }
+    .mb-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:14px; }
+    .mb-card { border:1px solid var(--mb-line); border-radius:14px; padding:15px 17px; background:rgba(255,255,255,.02); position:relative; transition:border-color .25s, transform .25s; }
+    .mb-card:hover { border-color:rgba(46,224,106,.4); transform:translateY(-2px); }
+    .mb-card.is-stale { opacity:.72; }
+    .mb-card__top { display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:10px; }
+    .mb-card__label { font-family:var(--font-display); font-weight:500; color:#fff; font-size:1rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+    .mb-card__sym { font-family:var(--font-mono); color:var(--mb-dim); font-size:.68rem; white-space:nowrap; }
+    .mb-card__mid { display:flex; justify-content:space-between; align-items:baseline; gap:8px; margin-bottom:8px; }
+    .mb-card__px { font-family:var(--font-mono); font-weight:600; font-size:1.15rem; color:#fff; }
+    .mb-chg { font-family:var(--font-mono); font-weight:600; font-size:.85rem; white-space:nowrap; }
+    .mb-chg--up { color:var(--mb-green); } .mb-chg--down { color:var(--mb-red); } .mb-chg--flat { color:var(--mb-dim); }
+    .mb-spark { display:block; width:100%; height:34px; }
+    .mb-card__stale { position:absolute; top:10px; right:12px; font-size:.6rem; color:var(--mb-dim); text-transform:uppercase; letter-spacing:1px; }
+    .mb-foot { color:var(--mb-dim); font-size:.78rem; margin-top:26px; line-height:1.6; }
+    .mb-error { color:#ffcf5c; }
+  </style>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="nav nav--solid" id="nav">
+    <div class="container nav__inner">
+      <a href="/" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor>
+        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="30" height="30"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span>
+        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
+      </a>
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="/" data-cursor>Home</a>
+        <a href="/thesis" data-cursor>Thesis + Author</a>
+        <a href="/library" data-cursor>Library</a>
+        <a href="/#contact" data-cursor>Contact</a>
+        <a href="/intelligence-library" class="nav__cta magnetic" data-cursor>The Velocity Edge <span aria-hidden="true">→</span></a>
+      </nav>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="mkt-hero">
+      <div class="container">
+        <span class="mkt-hero__eyebrow">The Velocity Edge · Live markets</span>
+        <h1 class="mkt-hero__title">Live Market Board</h1>
+        <p class="mkt-hero__dek">Real-time prices and daily moves for the equities, indices and commodities shaping the Next Economy — pulled automatically from public market data.</p>
+      </div>
+    </section>
+
+    <section class="mkt-section">
+      <div class="container">
+        <div id="market" aria-live="polite">
+          <noscript><p style="color:#fff">Enable JavaScript to view the live market board.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__main">
+      <div class="footer__lead">
+        <span class="footer__label">Get in touch</span>
+        <a class="footer__email" href="mailto:info@fdkempowernet.com" data-cursor>info@fdkempowernet.com<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+      </div>
+      <nav class="footer__nav" aria-label="Footer">
+        <a href="/" data-cursor>Home</a>
+        <a href="/thesis" data-cursor>Thesis + Author</a>
+        <a href="/library" data-cursor>Library</a>
+        <a href="/intelligence-library" data-cursor>The Velocity Edge</a>
+        <a href="/#contact" data-cursor>Contact</a>
+      </nav>
+    </div>
+    <div class="container footer__base">
+      <span class="footer__brand"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span><span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span></span>
+      <span class="footer__meta">© <span id="year">2026</span> FDK EmpowerNet · Mobility · Energy · Telecom</span>
+      <button type="button" class="footer__top-link" id="toTop" data-cursor>Back to top <span class="footer__top-ic" aria-hidden="true">↑</span></button>
+    </div>
+  </footer>
+
+  <script src="/script.js?v=103"></script>
+  <script src="/market-board.js?v=1"></script>
+</body>
+</html>
