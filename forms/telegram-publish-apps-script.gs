@@ -152,13 +152,17 @@ function pollUpdates() {
   }
 }
 
-// Merge consecutive text messages that are pieces of ONE 4096-split paste.
-// Only merges when the previous piece hit the ~4096 limit (a real split), so
-// two distinct short notes are never fused together.
+// Merge consecutive text messages that are pieces of ONE long paste that
+// Telegram split at its 4096-char limit. Telegram breaks at the nearest space/
+// newline, so a piece can land below 4096 — length alone is unreliable. The
+// dependable signal is TIME: split (or hand-continued) pieces arrive from the
+// same user within a few seconds, while two distinct articles are always far
+// apart. So we merge same-user text that arrives within WINDOW seconds of a
+// prior SUBSTANTIAL piece (MIN_PREV guards against fusing two short notes).
 function groupUpdates_(updates) {
   var items = [];
-  var WINDOW = 60;   // seconds allowed between split pieces
-  var SPLIT = 4000;  // a piece at/above this length is a Telegram-split chunk
+  var WINDOW = 20;      // seconds allowed between pieces of the same article
+  var MIN_PREV = 1000;  // the running piece must be this big to accept a continuation
   for (var i = 0; i < updates.length; i++) {
     var u = updates[i];
     var msg = u.message || u.edited_message;
@@ -168,16 +172,17 @@ function groupUpdates_(updates) {
     var isCmd = text != null && /^\//.test(text.trim());
     var prev = items.length ? items[items.length - 1] : null;
 
-    var canMerge = text != null && !isCmd && prev && prev.canContinue &&
+    var canMerge = text != null && !isCmd && prev && prev.mergeable &&
       prev.chatId === (msg.chat && msg.chat.id) &&
       prev.fromId === (msg.from && msg.from.id) &&
+      prev.len >= MIN_PREV &&
       (msg.date - prev.lastDate) <= WINDOW;
 
     if (canMerge) {
       prev.texts.push(text);
+      prev.len += text.length;
       prev.lastDate = msg.date;
-      prev.update_id = u.update_id;
-      prev.canContinue = text.length >= SPLIT; // keep merging only while pieces are full-length
+      prev.update_id = u.update_id; // still mergeable, so 3+ pieces also join
     } else {
       items.push({
         update_id: u.update_id,
@@ -185,8 +190,9 @@ function groupUpdates_(updates) {
         chatId: msg.chat && msg.chat.id,
         fromId: msg.from && msg.from.id,
         texts: text != null ? [text] : null,
+        len: text != null ? text.length : 0,
         lastDate: msg.date,
-        canContinue: text != null && !isCmd && text.length >= SPLIT,
+        mergeable: text != null && !isCmd,
       });
     }
   }
