@@ -19,12 +19,17 @@ messages, runs the matching pipeline, and pushes — so GitHub Pages redeploys.
 
 ## What to send
 
-- **A photo** (any FDK GVI infographic) → the dashboard refreshes. Send several
-  at once (country daily, corporate daily, the weekly scorecards) — each is read.
+- **One message with a photo + a caption** (how FDK usually sends: the
+  infographic as the image, the edition text as the caption) → the dashboard
+  refreshes **and** the caption is published as the article. One message, both
+  outputs.
+- **A photo only** → dashboard update. Send several at once (country daily,
+  corporate daily, the weekly scorecards) — each is read.
 - **An image sent as a file/document** → treated the same as a photo.
-- **A text message** (a note or edition, free-form) → published as an article.
-  The existing AI formatter structures it into the site's article style.
-- Commands `/start`, `/help`, `/skip`, `/id` are ignored (not published).
+- **A text message only** → published as an article (AI-formatted into the
+  site's style).
+- Captions/texts shorter than ~40 characters are treated as labels, not
+  articles. Commands `/start`, `/help`, `/skip`, `/id` are ignored.
 
 ## One-time setup
 

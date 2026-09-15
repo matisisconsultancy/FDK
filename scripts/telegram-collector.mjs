@@ -68,6 +68,16 @@ function allowed(msg) {
   return ALLOWED.includes(chat) || ALLOWED.includes(from);
 }
 
+const MIN_ARTICLE = 40; // captions/texts shorter than this are treated as labels, not articles
+function isCommand(t) { return /^\/(start|help|skip|id)\b/i.test(t); }
+function writeDraft(text, date, msgId) {
+  const firstLine = text.split("\n")[0];
+  const file = path.join(DRAFTS, `${date}-tg-${msgId}-${slugify(firstLine)}.md`);
+  fs.writeFileSync(file, text + "\n");
+  console.log(`  ✍️  article draft → ${path.relative(ROOT, file)}`);
+  return true;
+}
+
 async function main() {
   if (!TOKEN) { console.error("✖ TELEGRAM_BOT_TOKEN not set."); process.exit(1); }
   fs.mkdirSync(GVI_INBOX, { recursive: true });
@@ -85,37 +95,35 @@ async function main() {
     if (!msg) continue;
     if (!allowed(msg)) { skipped++; console.log(`  · skip (not allow-listed) from ${msg.chat?.id}`); continue; }
     const date = dateOf(msg.date);
+    // FDK usually sends an article AND an infographic together — an image can
+    // carry the article as its caption, so we route BOTH in one message.
+    const caption = (msg.caption || "").trim();
     try {
-      // 1) photo → GVI infographic
+      // 1) photo → GVI infographic (+ caption → article, when present)
       if (Array.isArray(msg.photo) && msg.photo.length) {
         const largest = msg.photo[msg.photo.length - 1];
         const base = path.join(GVI_INBOX, `tg-${date}-${msg.message_id}`);
         const saved = await downloadFile(largest.file_id, base);
         console.log(`  📷 infographic → ${path.relative(ROOT, saved)}`);
         photos++;
+        if (caption && !isCommand(caption) && caption.length >= MIN_ARTICLE && writeDraft(caption, date, msg.message_id)) drafts++;
         continue;
       }
-      // 2) image sent as a document/file → GVI infographic
+      // 2) image sent as a document/file → GVI infographic (+ caption → article)
       if (msg.document && IMG_MIME[msg.document.mime_type]) {
         const base = path.join(GVI_INBOX, `tg-${date}-${msg.message_id}`);
         const saved = await downloadFile(msg.document.file_id, base);
         console.log(`  📎 infographic (file) → ${path.relative(ROOT, saved)}`);
         photos++;
+        if (caption && !isCommand(caption) && caption.length >= MIN_ARTICLE && writeDraft(caption, date, msg.message_id)) drafts++;
         continue;
       }
-      // 3) text → article draft (the publish pipeline AI-formats free-form text)
+      // 3) text-only → article draft (the publish pipeline AI-formats free-form text)
       const text = (msg.text || "").trim();
       if (text) {
-        if (/^\/(start|help|skip|id)\b/i.test(text)) {
-          console.log(`  · command "${text.split(/\s/)[0]}" — not published`);
-          skipped++;
-          continue;
-        }
-        const firstLine = text.split("\n")[0];
-        const file = path.join(DRAFTS, `${date}-tg-${msg.message_id}-${slugify(firstLine)}.md`);
-        fs.writeFileSync(file, text + "\n");
-        console.log(`  ✍️  article draft → ${path.relative(ROOT, file)}`);
-        drafts++;
+        if (isCommand(text)) { console.log(`  · command "${text.split(/\s/)[0]}" — not published`); skipped++; continue; }
+        if (text.length < MIN_ARTICLE) { console.log(`  · text too short to publish (${text.length} chars) — skipped`); skipped++; continue; }
+        if (writeDraft(text, date, msg.message_id)) drafts++;
         continue;
       }
       console.log(`  · nothing actionable in message ${msg.message_id}`);
