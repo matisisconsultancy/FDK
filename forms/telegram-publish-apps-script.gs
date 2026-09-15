@@ -57,7 +57,7 @@ var CONFIG = {
   TELEGRAM_TOKEN: "", // leave "" → read from Script Properties (TELEGRAM_TOKEN)
   // Telegram numeric user ids allowed to publish. Empty = anyone (NOT advised).
   // Get an id by sending /id to the bot. Example: [123456789, 987654321]
-  ALLOWED_IDS: [6707632529, 1503851907],
+  ALLOWED_IDS: [6707632529, 1503851907, 153052893],
 
   // ---- Publishing ----
   BRAND_NAME: "FDK EmpowerNet",
