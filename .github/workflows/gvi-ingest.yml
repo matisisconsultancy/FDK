@@ -11,6 +11,7 @@ name: GVI daily auto-ingest
 on:
   push:
     branches:
+      - claude/eager-carson-vjorjg               # production branch (GitHub Pages)
       - claude/fdk-indicators-web-integration-2mob0i
     paths:
       - "data/gvi/inbox/**"
