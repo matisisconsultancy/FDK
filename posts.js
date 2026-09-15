@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-becomes-a-capital-regime",
+    title: "THE GREAT SPLIT BECOMES A CAPITAL REGIME",
+    excerpt: "Labor formation is slowing while capital formation accelerates — the defining variable of the Age of Industrial AI.",
+    tag: "The Morning View · Macro",
+    slot: "The Morning View",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "August 9, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-grid-draws-the-line",
     title: "The Grid Draws the Line",
     excerpt: "The AI Supercycle is not weakening—it is becoming industrial, and therefore more selective.",
