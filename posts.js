@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-is-now-capital-formation-vs-demand",
+    title: "The Great Split Is Now Capital Formation vs. Demand",
+    excerpt: "Three economies, one phenomenon — capital formation is decoupling from the demand meant to absorb it.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/friday-august-14-2026-three-part-edition",
+    title: "Friday, August 14, 2026 | Three-Part Edition",
+    excerpt: "U.S. retail fell, China's credit contracted, Europe's employment barely grew — yet capital keeps flooding into the AI trade.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "10 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-ai-trade-is-repricing-the-worlds-cost-of-capital",
     title: "The AI Trade Is Repricing the World’s Cost of Capital",
     excerpt: "Hyperscaler bond issuance is lifting real yields and reshaping the cost of capital for the entire economy.",
