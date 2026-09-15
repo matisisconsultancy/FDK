@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/central-banks-and-the-great-split",
+    title: "Central Banks and the Great Split",
+    excerpt: "AI is becoming a monetary variable before becoming a monetary-policy target — and central banks were not built for the world it creates.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "August 19, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/closing-of-the-day",
+    title: "Closing of the Day",
+    excerpt: "The AI Supercycle is migrating from a technology valuation story into a capital-formation regime.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "August 17, 2026",
+    read: "6 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-gigafactory-moment",
     title: "Europe’s AI Gigafactory Moment",
     excerpt: "A cleared Spanish gigafactory joint venture signals Europe is beginning coordinated, large-scale AI capital formation.",
