@@ -2,7 +2,7 @@
 title: Closing of the Day — FDK
 slug: closing-of-the-day-fdk
 date: September 15, 2026
-slot: Midday Pulse
+slot: The Close
 tag: Capital
 dek: AI is no longer merely changing earnings expectations — it is beginning to change the ==price of capital itself==.
 epigraph: The first AI trade repriced intelligence. The second repriced infrastructure. The third will reprice the cost of capital.

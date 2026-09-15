@@ -7,18 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/closing-of-the-day-fdk",
-    title: "Closing of the Day — FDK",
-    excerpt: "As producer prices hold and yields fall, the AI trade is migrating from equities into credit — and toward a single emerging capital cycle.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "5 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
     url: "/the-ai-rally-is-no-longer-about-ai",
     title: "The AI Rally Is No Longer About AI",
     excerpt: "A benign CPI print rewarded not tech broadly but the industrial architecture of intelligence — and the valuation regime is turning selective.",
@@ -111,18 +99,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
     date: "August 8, 2026",
     read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/part-i-the-return-of-pricing-power",
-    title: "Part I — The Return of Pricing Power",
-    excerpt: "A quiet session masked a structural shift as capital rotates toward the owners of the Industrial AI ecosystem.",
-    tag: "Closing of the Day · Capital",
-    slot: "Closing of the Day",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "August 3, 2026",
-    read: "3 min read",
     time: "08:00",
     kind: "day"
   },
@@ -547,6 +523,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 

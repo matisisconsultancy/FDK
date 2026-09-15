@@ -2,7 +2,7 @@
 title: Part I — The Return of Pricing Power
 slug: part-i-the-return-of-pricing-power
 date: August 3, 2026
-slot: Closing of the Day
+slot: The Close
 tag: Capital
 dek: Today's rally looked like confidence — but beneath it, capital is rotating between **economic regimes**, not sectors, as the ==Age of Industrial AI== reprices the global economy.
 epigraph: History rarely announces itself with volatility.
