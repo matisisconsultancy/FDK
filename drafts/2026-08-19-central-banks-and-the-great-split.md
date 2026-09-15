@@ -1,7 +1,7 @@
 ---
 title: Central Banks and the Great Split
 slug: central-banks-and-the-great-split
-date: September 15, 2026
+date: August 19, 2026
 slot: In Focus
 tag: Macro
 dek: Artificial intelligence is moving from the margins of central-bank research to the center of monetary policy, creating **one interest rate across two capital regimes** — the ==Great Capital Divide==.

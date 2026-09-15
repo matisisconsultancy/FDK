@@ -1,8 +1,8 @@
 ---
 title: Closing of the Day
 slug: closing-of-the-day
-date: September 15, 2026
-slot: Midday Pulse
+date: August 17, 2026
+slot: The Close
 tag: Capital
 dek: AI is no longer only repricing technology — it is beginning to reprice the ==physical economy==.
 epigraph: As AI moves from the cloud into the physical world, capital will follow intelligence.
