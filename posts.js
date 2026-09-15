@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/italian-banking-paradox-2-0",
+    title: "Italian Banking Paradox 2.0",
+    excerpt: "MPS's defence now depends on the value of the very share currency Intesa's takeover attempt helped make scarce.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "12 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-underwriting-test",
     title: "The Underwriting Test",
     excerpt: "Three simultaneous repricings — capital, physical scarcity and technological uncertainty — push the AI Supercycle from its build phase into its underwriting phase.",
