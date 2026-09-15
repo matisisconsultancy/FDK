@@ -47,22 +47,10 @@ window.FDK_POSTS = [
     title: "The AI Rally Is No Longer About AI",
     excerpt: "A benign CPI print rewarded not tech broadly but the industrial architecture of intelligence — and the valuation regime is turning selective.",
     tag: "The Morning View · Capital",
-    slot: "The Morning View",
+    slot: "Morning View",
     image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
     date: "September 15, 2026",
     read: "7 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/august-12-2026-fdk",
-    title: "August 12, 2026 | FDK",
-    excerpt: "Global AI investment now exceeds $1 trillion in 2026, forcing markets to ask who actually earns the return.",
-    tag: "MIDDAY PULSE · Capital",
-    slot: "MIDDAY PULSE",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "5 min read",
     time: "08:00",
     kind: "day"
   },
@@ -71,7 +59,7 @@ window.FDK_POSTS = [
     title: "AI Has Found Its Bankers",
     excerpt: "Nvidia enlists six of the world's largest financial institutions to fund Industrial AI at system scale, as oil, permits and CPI reintroduce physical limits.",
     tag: "The Morning View · Capital",
-    slot: "The Morning View",
+    slot: "Morning View",
     image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
     date: "August 11, 2026",
     read: "9 min read",
@@ -95,7 +83,7 @@ window.FDK_POSTS = [
     title: "The Great Split Becomes a Capital Regime",
     excerpt: "Labor formation is slowing while capital formation accelerates — the defining variable of the Age of Industrial AI.",
     tag: "The Morning View · Macro",
-    slot: "The Morning View",
+    slot: "Morning View",
     image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
     date: "August 9, 2026",
     read: "7 min read",
@@ -131,7 +119,7 @@ window.FDK_POSTS = [
     title: "The Age of Industrial AI Is Becoming the Age of Capital Formation",
     excerpt: "Weak payrolls, Nvidia's infrastructure push and Hormuz all point to the same divide — capital-rich versus capital-constrained systems.",
     tag: "The Morning View · Capital",
-    slot: "The Morning View",
+    slot: "Morning View",
     image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
     date: "August 8, 2026",
     read: "2 min read",
@@ -559,6 +547,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
