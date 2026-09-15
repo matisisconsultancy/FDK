@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-ai-gigafactory-watch-material-inflection-detected",
+    title: "Europe AI Gigafactory Watch: Material Inflection Detected",
+    excerpt: "Axelera and EUCLYD signal European capital forming around the semiconductor layer just as the continent prepares tens of billions in sovereign AI infrastructure.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "6 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/central-banks-ai-watch-material-inflection-detected",
     title: "Central Banks & AI Watch: Material Inflection Detected",
     excerpt: "Lagarde and the BIS push the AI debate from productivity toward credit, capital and financial stability.",
