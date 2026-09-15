@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/central-banks-ai-watch-material-inflection-detected",
+    title: "Central Banks & AI Watch: Material Inflection Detected",
+    excerpt: "Lagarde and the BIS push the AI debate from productivity toward credit, capital and financial stability.",
+    tag: "The Close · Central Banks",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "8 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/15-september-2026",
     title: "15 September 2026",
     excerpt: "As AI hits its speed limits, control of access to scarce inputs becomes the defining competitive edge.",
