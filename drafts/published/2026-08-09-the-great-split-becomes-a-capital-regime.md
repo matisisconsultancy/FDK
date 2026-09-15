@@ -1,5 +1,5 @@
 ---
-title: THE GREAT SPLIT BECOMES A CAPITAL REGIME
+title: The Great Split Becomes a Capital Regime
 slug: the-great-split-becomes-a-capital-regime
 date: August 9, 2026
 slot: The Morning View

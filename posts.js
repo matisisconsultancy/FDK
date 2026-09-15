@@ -8,7 +8,7 @@
 window.FDK_POSTS = [
   {
     url: "/the-great-split-becomes-a-capital-regime",
-    title: "THE GREAT SPLIT BECOMES A CAPITAL REGIME",
+    title: "The Great Split Becomes a Capital Regime",
     excerpt: "Labor formation is slowing while capital formation accelerates — the defining variable of the Age of Industrial AI.",
     tag: "The Morning View · Macro",
     slot: "The Morning View",
