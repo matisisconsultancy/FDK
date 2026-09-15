@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-infrastructure-is-entering-a-higher-cost-financing-regime",
+    title: "AI Infrastructure Is Entering a Higher-Cost Financing Regime",
+    excerpt: "Debt issuance is accelerating and project bankability is tightening as markets begin to distinguish capital committed from capital capable of earning above its cost.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "August 10, 2026",
+    read: "9 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-becomes-a-capital-regime",
     title: "The Great Split Becomes a Capital Regime",
     excerpt: "Labor formation is slowing while capital formation accelerates — the defining variable of the Age of Industrial AI.",
