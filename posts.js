@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-gigafactory-moment",
+    title: "Europe’s AI Gigafactory Moment",
+    excerpt: "A cleared Spanish gigafactory joint venture signals Europe is beginning coordinated, large-scale AI capital formation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/central-banks-and-the-great-split",
+    title: "Central Banks and the Great Split",
+    excerpt: "AI is becoming a monetary variable before becoming a monetary-policy target — and central banks were not built for the world it creates.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-bond-market-is-repricing-the-ai-supercycle",
     title: "The Bond Market Is Repricing the AI Supercycle",
     excerpt: "As long-end yields surge worldwide, the AI Supercycle's next bottleneck may be neither chips nor electricity but the risk-free rate itself.",
