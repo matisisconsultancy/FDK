@@ -7,6 +7,42 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-demand-side",
+    title: "The Great Split Reaches the Demand Side",
+    excerpt: "U.S. retail fell, China's credit contracted, Europe's employment barely grew — yet capital keeps flooding into the AI trade.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "August 14, 2026",
+    read: "10 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
+    url: "/repricing-the-cost-of-capital",
+    title: "Repricing the Cost of Capital",
+    excerpt: "As producer prices hold and yields fall, the AI trade is migrating from equities into credit — and toward a single emerging capital cycle.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "August 13, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
+    url: "/who-earns-the-return-on-a-trillion-dollars-of-ai",
+    title: "Who Earns the Return on a Trillion Dollars of AI?",
+    excerpt: "Global AI investment now exceeds $1 trillion in 2026, forcing markets to ask who actually earns the return.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "August 12, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-is-now-capital-formation-vs-demand",
     title: "The Great Split Is Now Capital Formation vs. Demand",
     excerpt: "Three economies, one phenomenon — capital formation is decoupling from the demand meant to absorb it.",
