@@ -241,6 +241,7 @@ function processMessage_(msg) {
   }
   title = String(title || "").trim().slice(0, 200);
   if (!title) { tgSend_(chatId, "⚠️ Falta el título del artículo (la primera línea real, debajo de la cabecera de fecha)."); return; }
+  title = toTitleCase_(title); // normalize to Title Case whatever case it arrived in
   if (!article) article = title;
 
   var slug = kebab_(title);
@@ -319,6 +320,38 @@ function detectMasthead_(line) {
   var em = line.match(/velocity edge\s*[—–\-|:]\s*([^|]+)/i); // text after the dash, up to "|"
   if (em) edition = em[1].replace(/[|].*$/, "").trim();
   return { dateObj: dateObj, edition: edition };
+}
+
+// Normalize a title to natural Title Case, whatever case it arrives in
+// (ALL CAPS, all-lowercase, or mixed). Minor words (the, of, and, to…) stay
+// lowercase unless first/last. Preserves acronyms and proper nouns that carry
+// internal capitals (AI, GVI, FDK, SoftBank, OpenAI…).
+function toTitleCase_(s) {
+  s = String(s || "").trim();
+  if (!s) return s;
+  var letters = s.replace(/[^A-Za-z]/g, "");
+  var allCaps = letters && letters === letters.toUpperCase();
+  var MINOR = { a:1,an:1,and:1,as:1,at:1,but:1,by:1,"for":1,"if":1,"in":1,nor:1,of:1,on:1,or:1,per:1,the:1,to:1,up:1,via:1,vs:1 };
+  var KNOWN = { ai:"AI",gvi:"GVI",fdk:"FDK",us:"US",usa:"USA",uk:"UK",eu:"EU",gdp:"GDP",ceo:"CEO",cfo:"CFO",gpu:"GPU",cpu:"CPU",amd:"AMD",ipo:"IPO",ii:"II",iii:"III",iv:"IV",vi:"VI",vii:"VII",viii:"VIII",ix:"IX",q1:"Q1",q2:"Q2",q3:"Q3",q4:"Q4" };
+  var tokens = s.split(/(\s+)/);
+  var n = s.trim().split(/\s+/).length;
+  var idx = 0;
+  var breaker = false; // a colon or dash just before → capitalize the next word
+  return tokens.map(function (tok) {
+    if (tok === "" || /^\s+$/.test(tok)) return tok;
+    idx++;
+    var m = tok.match(/^([^A-Za-z0-9]*)([\s\S]*?)([^A-Za-z0-9]*)$/);
+    var pre = m[1], core = m[2], post = m[3];
+    if (!core) { if (/[:—–]/.test(tok)) breaker = true; return tok; }
+    var forceCap = breaker || /[:—–]/.test(pre);
+    breaker = /[:—–]/.test(post);
+    var lower = core.toLowerCase();
+    if (KNOWN[lower]) return pre + KNOWN[lower] + post;
+    if (!allCaps && /[A-Z]/.test(core.slice(1))) return pre + core + post; // proper noun / acronym
+    var isEdge = (idx === 1 || idx === n || forceCap);
+    if (!isEdge && MINOR[lower]) return pre + lower + post;
+    return pre + lower.charAt(0).toUpperCase() + lower.slice(1) + post;
+  }).join("");
 }
 
 // Choose the edition for a given time, from CONFIG.EDITIONS (by TIMEZONE hour).
