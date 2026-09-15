@@ -7,18 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/august-12-2026-fdk",
-    title: "August 12, 2026 | FDK",
-    excerpt: "Global AI investment now exceeds $1 trillion in 2026, forcing markets to ask who actually earns the return.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "August 12, 2026",
-    read: "5 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
     url: "/the-great-split-is-now-capital-formation-vs-demand",
     title: "The Great Split Is Now Capital Formation vs. Demand",
     excerpt: "Three economies, one phenomenon — capital formation is decoupling from the demand meant to absorb it.",
@@ -31,18 +19,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/friday-august-14-2026-three-part-edition",
-    title: "Friday, August 14, 2026 | Three-Part Edition",
-    excerpt: "U.S. retail fell, China's credit contracted, Europe's employment barely grew — yet capital keeps flooding into the AI trade.",
-    tag: "The Close · Macro",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "10 min read",
-    time: "21:00",
-    kind: "night"
-  },
-  {
     url: "/the-ai-trade-is-repricing-the-worlds-cost-of-capital",
     title: "The AI Trade Is Repricing the World’s Cost of Capital",
     excerpt: "Hyperscaler bond issuance is lifting real yields and reshaping the cost of capital for the entire economy.",
@@ -53,18 +29,6 @@ window.FDK_POSTS = [
     read: "9 min read",
     time: "08:00",
     kind: "day"
-  },
-  {
-    url: "/closing-of-the-day-fdk",
-    title: "Closing of the Day — FDK",
-    excerpt: "As producer prices hold and yields fall, the AI trade is migrating from equities into credit — and toward a single emerging capital cycle.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "5 min read",
-    time: "21:00",
-    kind: "night"
   },
   {
     url: "/part-i-the-return-of-pricing-power",
@@ -583,6 +547,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 

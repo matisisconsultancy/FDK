@@ -1,6 +1,6 @@
 ---
-title: August 12, 2026 | FDK
-slug: august-12-2026-fdk
+title: Who Earns the Return on a Trillion Dollars of AI?
+slug: who-earns-the-return-on-a-trillion-dollars-of-ai
 date: August 12, 2026
 slot: Midday Pulse
 tag: Capital

@@ -1,7 +1,7 @@
 ---
-title: Friday, August 14, 2026 | Three-Part Edition
-slug: friday-august-14-2026-three-part-edition
-date: September 15, 2026
+title: The Great Split Reaches the Demand Side
+slug: the-great-split-reaches-the-demand-side
+date: August 14, 2026
 slot: The Close
 tag: Macro
 dek: The capital economy remains remarkably strong; the demand economy is becoming less so — and that is a **much more consequential** ==Great Split==.
