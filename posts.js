@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-meets-the-full-equation",
+    title: "The AI Supercycle Meets the Full Equation",
+    excerpt: "Three separate market stories — Nvidia earnings, U.S. PCE and the Strait of Hormuz — converge into a single economic equation.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "August 26, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-morning-view",
     title: "The Morning View",
     excerpt: "Two repricing mechanisms converge this week — NVIDIA on the return on intelligence, Jackson Hole on the price of capital.",
