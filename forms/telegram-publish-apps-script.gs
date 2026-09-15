@@ -239,16 +239,18 @@ function processMessage_(msg) {
     title = parsed.title;
     article = parsed.body;
   }
-  title = String(title || "").trim().slice(0, 200);
-  if (!title) { tgSend_(chatId, "⚠️ Falta el título del artículo (la primera línea real, debajo de la cabecera de fecha)."); return; }
-  title = toTitleCase_(title); // normalize to Title Case whatever case it arrived in
+  var rawTitle = String(title || "").trim().slice(0, 200);
+  // A date written in the title becomes the note's DATE — never part of the title.
+  var titleDate = parsed.dateObj ? null : dateFromText_(rawTitle);
+  title = cleanTitle_(rawTitle); // strip date / FDK / brand / dashes → Title Case
+  if (!title) { tgSend_(chatId, "⚠️ No pude leer un título limpio. Manda el título en su propia línea (sin la fecha)."); return; }
   if (!article) article = title;
 
   var slug = kebab_(title);
   if (!slug) { tgSend_(chatId, "⚠️ El título no genera una URL válida. Usa texto con letras."); return; }
 
-  // ---- date + edition: from the masthead if present, else now / by-time -----
-  var when = parsed.dateObj ? dateParts_(parsed.dateObj) : todayParts_();
+  // ---- date + edition: masthead > date-in-title > today / by-time -----------
+  var when = (parsed.dateObj || titleDate) ? dateParts_(parsed.dateObj || titleDate) : todayParts_();
   var ed = parsed.edition ? { slot: parsed.edition, label: parsed.edition } : editionFor_(new Date());
 
   // ---- build + commit the draft (title/slug pinned; body AI-formatted) ----
@@ -343,6 +345,28 @@ function normalizeEdition_(ed) {
   if (/in\s*focus/.test(e)) return "In Focus";
   if (/night|evening|midnight/.test(e)) return "The Close";
   return toTitleCase_(ed);
+}
+
+// Pull a "Month D, YYYY" date out of free text (title or masthead), if present.
+function dateFromText_(t) {
+  var dm = String(t || "").match(/([A-Z][a-z]+\s+\d{1,2},?\s*\d{4})/);
+  if (dm) { var d = new Date(dm[1].replace(/(\d)\s+(\d{4})/, "$1, $2")); if (!isNaN(d.getTime())) return d; }
+  return null;
+}
+
+// Clean a title into a publishable one: remove any date, weekday prefix, "FDK"
+// and the brand, turn masthead separators (| — –) into a colon, and apply Title
+// Case. Dates and cruft never belong in the title — the date goes to the note.
+function cleanTitle_(t) {
+  t = String(t || "");
+  t = t.replace(/^\s*(mon|tues|wednes|thurs|fri|satur|sun)day\b\s*,?\s*/i, ""); // weekday prefix
+  t = t.replace(/[A-Za-z]+\s+\d{1,2},?\s*\d{4}/g, "");     // dates
+  t = t.replace(/\bfdk\b/gi, "");
+  t = t.replace(/the\s+velocity\s+edge/gi, "");
+  var parts = t.split(/\s*[|—–]\s*/).map(function (x) { return x.trim(); }).filter(Boolean);
+  t = parts.join(": ");
+  t = t.replace(/\s{2,}/g, " ").replace(/^[\s:,\-]+|[\s:,\-]+$/g, "").trim();
+  return toTitleCase_(t);
 }
 
 // Normalize a title to natural Title Case, whatever case it arrives in
