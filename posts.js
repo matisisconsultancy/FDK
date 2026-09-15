@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-bond-market-is-repricing-the-ai-supercycle",
+    title: "The Bond Market Is Repricing the AI Supercycle",
+    excerpt: "As long-end yields surge worldwide, the AI Supercycle's next bottleneck may be neither chips nor electricity but the risk-free rate itself.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/closing-of-the-day",
     title: "Closing of the Day",
     excerpt: "The AI Supercycle is migrating from a technology valuation story into a capital-formation regime.",
