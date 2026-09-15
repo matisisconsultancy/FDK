@@ -311,8 +311,15 @@ function parseHeader_(text) {
 function detectMasthead_(line) {
   if (!line) return null;
   var hasDate = /[A-Z][a-z]+\s+\d{1,2},\s*\d{4}/.test(line);       // "August 4, 2026"
+  // The line minus any date/FDK/brand/separators — is what's left JUST an
+  // edition name? (so a bare "Closing of the Day" is treated as the edition,
+  // not the title, and gets the right slot/colour).
+  var bare = line.replace(/[A-Za-z]+\s+\d{1,2},?\s*\d{4}/g, "").replace(/\bfdk\b/gi, "")
+                 .replace(/the\s+velocity\s+edge/gi, "").replace(/[|—–]/g, " ")
+                 .replace(/\s{2,}/g, " ").trim();
+  var editionOnly = /^(the\s+)?(closing(\s+of\s+the\s+day)?|the\s+close|morning\s+view|morning\s+note|midday(\s+pulse)?|in\s+focus|night\s+briefing|evening(\s+note)?|market\s+watch|breaking\s+news|daily\s+nowcast|sunday\s+edition|today'?s?\s+edition|the\s+week\s+ahead)$/i.test(bare);
   var looks = /the velocity edge/i.test(line) || /\bFDK\b/i.test(line) ||
-              (/[|—–]/.test(line) && hasDate);
+              (/[|—–]/.test(line) && hasDate) || editionOnly;
   if (!looks) return null;
 
   var dateObj = null;
