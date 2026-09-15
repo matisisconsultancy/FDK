@@ -18,10 +18,10 @@ every minute and now routes **both** parts of the message:
 
 One Telegram message → the dashboard **and** the article update. No transcription.
 
-The Apps Script lives in the FDK Google account; its source is kept in the repo
-at [`forms/telegram-publish-apps-script.gs`](../../../forms/telegram-publish-apps-script.gs).
-To enable the infographic route, paste that updated script into the Apps Script
-project (it adds the photo handling to the article bot you already run).
+The Apps Script lives in the FDK Google account (the same one that publishes
+articles). To enable the infographic route, apply the two additions in
+[`forms/telegram-infographic-additions.md`](../../../forms/telegram-infographic-additions.md)
+to that script — they add photo handling to the article bot you already run.
 
 ## Manual fallback
 
