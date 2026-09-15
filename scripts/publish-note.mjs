@@ -90,8 +90,17 @@ function pickCover() {
   catch { return ""; }
   const used = fs.readFileSync(path.join(ROOT, "posts.js"), "utf8");
   const free = pool.find((u) => !used.includes(u.split("?")[0]));
-  if (!free) { warn("cover-pool exhausted — add more URLs to scripts/cover-pool.json; publishing without a unique cover."); return pool[0] || ""; }
-  return free;
+  if (free) return free;
+  // exhausted → reuse the LEAST-used cover so covers stay spread out instead of
+  // every new note falling back to the same image. Add more URLs to
+  // scripts/cover-pool.json for full uniqueness.
+  warn("cover-pool exhausted — reusing least-used cover; add more URLs to scripts/cover-pool.json.");
+  let best = pool[0] || "", bestCount = Infinity;
+  for (const u of pool) {
+    const c = used.split(u.split("?")[0]).length - 1;
+    if (c < bestCount) { bestCount = c; best = u; }
+  }
+  return best;
 }
 const kind = fm.kind || slotCfg.kind;
 const time = fm.time || slotCfg.time;
