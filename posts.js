@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/15-september-2026",
+    title: "15 September 2026",
+    excerpt: "As AI hits its speed limits, control of access to scarce inputs becomes the defining competitive edge.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/u-s-china-ai-watch-material-inflection-detected",
     title: "U.S.: China AI Watch: Material Inflection Detected",
     excerpt: "The first clean macroeconomic evidence that China's AI-and-automation strategy is operating at industrial scale.",
