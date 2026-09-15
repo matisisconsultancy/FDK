@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/electricity-infrastructure-construction-and-capital",
+    title: "Electricity, Infrastructure, Construction and Capital.",
+    excerpt: "AI does not eliminate the economics of the physical world — it intensifies them, migrating scarcity from computing to memory to optics to power to capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "6 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-ai-supercycle-meets-the-scarcity-premium",
     title: "The AI Supercycle Meets the Scarcity Premium",
     excerpt: "Oil above $90, the yen through 160, and Soitec locking in photonics customers — the AI Supercycle is running into scarcity, not out of demand.",
