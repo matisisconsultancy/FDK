@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-is-shifting-risk-from-balance-sheets-to-capital-markets",
+    title: "AI Is Shifting Risk From Balance Sheets to Capital Markets",
+    excerpt: "The AI Supercycle is not slowing — its financial architecture is being rebuilt around distributed risk.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "August 16, 2026",
+    read: "11 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-demand-side",
     title: "The Great Split Reaches the Demand Side",
     excerpt: "U.S. retail fell, China's credit contracted, Europe's employment barely grew — yet capital keeps flooding into the AI trade.",
