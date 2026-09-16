@@ -28,6 +28,49 @@ if (!key) { console.error("✖ ANTHROPIC_API_KEY is not set — cannot run the A
 
 const raw = fs.readFileSync(srcPath, "utf8");
 
+/* ---- optional pre-set front-matter -------------------------------------------
+   A draft may arrive with a small front-matter block that pins editorial fields
+   the pipeline must NOT let the model reinvent — most importantly `title` and
+   `slug`, so the published link is known up-front (e.g. the WhatsApp publisher
+   replies with the live URL before the build runs). We strip that block before
+   sending the prose to the model, then force the pinned keys back onto the
+   model's output. `format: ai` is just the marker that routed us here — it is
+   consumed, not preserved. */
+function parseFrontMatter(text) {
+  const m = text.replace(/\r\n/g, "\n").match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!m) return { fm: {}, body: text };
+  const fm = {};
+  for (const line of m[1].split("\n")) {
+    const kv = line.match(/^([a-zA-Z_]+)\s*:\s*(.*)$/);
+    if (kv) fm[kv[1].trim()] = kv[2].trim();
+  }
+  return { fm, body: m[2] };
+}
+
+function forceFrontMatter(draft, forced) {
+  const m = draft.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!m) return draft;
+  const fmLines = m[1].split("\n");
+  const body = m[2];
+  for (const [k, v] of Object.entries(forced)) {
+    if (v == null || v === "") continue;
+    const line = `${k}: ${v}`;
+    const idx = fmLines.findIndex((l) => new RegExp(`^${k}\\s*:`).test(l));
+    if (idx >= 0) { fmLines[idx] = line; continue; }
+    const ti = fmLines.findIndex((l) => /^title\s*:/.test(l));
+    if (ti >= 0) fmLines.splice(ti + 1, 0, line);
+    else fmLines.unshift(line);
+  }
+  return `---\n${fmLines.join("\n")}\n---\n\n${body.replace(/^\n+/, "")}`;
+}
+
+const { fm: preFM, body: preBody } = parseFrontMatter(raw);
+const PRESERVE_KEYS = ["title", "slug", "date", "slot", "tag", "dek", "epigraph", "excerpt"];
+const preserve = {};
+for (const k of PRESERVE_KEYS) if (preFM[k]) preserve[k] = preFM[k];
+// The prose the model formats: the body only (never the pinned front-matter).
+const prose = preBody.trim() || raw;
+
 const SYSTEM = `You are the editorial engine for "The Velocity Edge", a daily market-and-capital
 newsletter by Francesco de Leo Kaufmann on the FDK EmpowerNet site. You convert a raw
 newsletter text into a structured DRAFT that the site's build script turns into a styled
@@ -72,7 +115,7 @@ const body = {
   thinking: { type: "adaptive" },
   system: SYSTEM,
   messages: [
-    { role: "user", content: `Convert this newsletter text into the draft format:\n\n${raw}` },
+    { role: "user", content: `Convert this newsletter text into the draft format:\n\n${prose}` },
   ],
 };
 
@@ -93,7 +136,7 @@ if (!res.ok) {
 }
 
 const data = await res.json();
-const out = (data.content || [])
+let out = (data.content || [])
   .filter((b) => b.type === "text")
   .map((b) => b.text)
   .join("")
@@ -105,6 +148,13 @@ const out = (data.content || [])
 if (!out.startsWith("---")) {
   console.error("✖ Model did not return a valid front-matter draft. Got:\n" + out.slice(0, 400));
   process.exit(1);
+}
+
+// Pin the pre-set editorial fields (title/slug/date/…) over the model's guesses
+// so the published slug/link matches what was promised up-front.
+if (Object.keys(preserve).length) {
+  out = forceFrontMatter(out, preserve);
+  console.error(`✓ preserved front-matter keys: ${Object.keys(preserve).join(", ")}`);
 }
 
 if (inPlace) {

@@ -14,7 +14,7 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync, cpSync } fr
 import { join, resolve, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:http";
-import { extractAll, extractJS, htmlFiles, noTranslate } from "./i18n-extract.mjs";
+import { extractAll, extractJS, htmlFiles, noTranslate, isTranslatable } from "./i18n-extract.mjs";
 import { SKIP_CLASS, SKIP_TAG, SKIP_ID } from "./i18n-core.mjs";
 import { slugFor } from "./i18n-build.mjs";
 
@@ -82,7 +82,7 @@ for (const f of htmlFiles()) {
   await page.goto(url + "?lang=es", { waitUntil: "load" });
   await page.waitForTimeout(400);
 
-  const leftovers = await page.evaluate(({ MARK, KEEP, SKIP }) => {
+  const leftovers = await page.evaluate(({ MARK, KEEP, SKIP, MIN }) => {
     const out = [];
     const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let n;
@@ -96,10 +96,11 @@ for (const f of htmlFiles()) {
           getComputedStyle(el).display === "none") continue;
       const t = v.replace(/\s+/g, " ").trim();
       if (!t || KEEP.indexOf(t) >= 0) continue;   // proper nouns stay as they are
+      if (t.length < MIN) continue;               // too short to carry meaning — see isTranslatable
       out.push(t.slice(0, 90));
     }
     return out;
-  }, { MARK, KEEP: [...noTranslate()], SKIP: skipSelector() });
+  }, { MARK, KEEP: [...noTranslate()], SKIP: skipSelector(), MIN: 2 });
 
   checked++;
   if (leftovers.length) {
