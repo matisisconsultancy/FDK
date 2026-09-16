@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-2-16-gigawatt-contradiction",
+    title: "The 2.16-gigawatt Contradiction",
+    excerpt: "As Anthropic calls to pace frontier models yet builds gigawatts of inference capacity, the Supercycle rotates from creating intelligence to industrializing it.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "9 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre",
     title: "The Next Economy Research Centre",
     excerpt: "Training stays concentrated while inference begins to diffuse across regions, enterprises and devices.",
