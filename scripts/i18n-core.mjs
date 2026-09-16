@@ -255,6 +255,19 @@ function atomResolves(k, dict) {
 
 export function resolves(k, dict) {
   if (dict[k] !== undefined) return true;
+  /* A block the engine could not translate in one piece falls back to its
+     parts, so a ranking row whose figures change daily is covered as long as
+     every word inside it is. */
+  if (k.includes("<")) {
+    const texts = [];
+    (function walk(n) {
+      for (const c of n.children || []) {
+        if (c.type === "text") { const t = normWS(c.value).trim(); if (/[A-Za-zÀ-ÿ]/.test(t)) texts.push(t); }
+        else walk(c);
+      }
+    })(parseHTML(k));
+    if (texts.length && texts.every((t) => resolves(t, dict))) return true;
+  }
   const q = /^“([\s\S]+)”$/.exec(k);
   if (q && resolves(normWS(q[1]).trim(), dict)) return true;
   const arrow = /^([\s\S]+?)\s*[←-↓»›]$/.exec(k);
