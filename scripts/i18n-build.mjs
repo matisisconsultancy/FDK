@@ -18,7 +18,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync
 import { join, resolve, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractAll, extractJS, htmlFiles, noTranslate } from "./i18n-extract.mjs";
-import { parseHTML } from "./i18n-core.mjs";
+import { resolves } from "./i18n-core.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = join(ROOT, "data", "i18n");
@@ -88,7 +88,7 @@ let bad = 0;
 for (const lang of LANGS) {
   const dict = readJSON(join(SRC, `${lang}.json`), {});
   const keep = noTranslate();
-  const missing = [...all.keys()].filter((k) => dict[k] === undefined && !keep.has(k));
+  const missing = [...all.keys()].filter((k) => !keep.has(k) && !resolves(k, dict));
   const stale = Object.keys(dict).filter((k) => !all.has(k));
   if (missing.length) bad = 1;
   if (!check) {

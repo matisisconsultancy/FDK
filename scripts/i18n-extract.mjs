@@ -13,7 +13,7 @@ import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative, resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import {
-  parseHTML, isSkipped, classify, serializeChildren, normWS, hasText,
+  parseHTML, isSkipped, classify, serializeChildren, normWS, resolves,
 } from "./i18n-core.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -175,7 +175,7 @@ if (process.argv[1] && process.argv[1].endsWith("i18n-extract.mjs")) {
     const d = dict[lang] || {};
     const keep = noTranslate();
     console.log(JSON.stringify(
-      [...all.keys()].filter((k) => d[k] === undefined && !keep.has(k)), null, 1));
+      [...all.keys()].filter((k) => !keep.has(k) && !resolves(k, d)), null, 1));
   } else if (args[0] === "--files") {
     for (const [k, v] of all) console.log([...v.files].join(",") + "\t" + k);
   } else {
@@ -185,7 +185,7 @@ if (process.argv[1] && process.argv[1].endsWith("i18n-extract.mjs")) {
     console.log("keys total     :", keys.length);
     for (const lang of ["es", "it"]) {
       const d = dict[lang] || {};
-      const missing = keys.filter((k) => d[k] === undefined);
+      const missing = keys.filter((k) => !resolves(k, d));
       console.log(`missing (${lang})   : ${missing.length}`);
     }
     const stale = Object.keys(dict.es || {}).filter((k) => !all.has(k));

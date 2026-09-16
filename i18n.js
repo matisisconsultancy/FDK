@@ -52,14 +52,14 @@
   var INLINE = { a:1,b:1,strong:1,i:1,em:1,span:1,br:1,small:1,sup:1,sub:1,
     mark:1,u:1,abbr:1,q:1,cite:1,time:1,wbr:1,s:1,del:1,ins:1,kbd:1,var:1,bdi:1,bdo:1 };
   var SKIP_TAG = { script:1,style:1,noscript:1,svg:1,code:1,pre:1,canvas:1,iframe:1,template:1 };
-  var SKIP_CLASS = { brand:1,"footer__email":1,jclock:1,"cmedia__count":1,"lang-switch":1,
+  var SKIP_CLASS = { brand:1,"brand__text":1,"brand__mark":1,"footer__brand":1,"footer__email":1,jclock:1,"cmedia__count":1,"lang-switch":1,
     marquee:1,mkt:1,"mb-card__px":1,"mb-card__sym":1,"mb-chg":1,"g-delta":1,"g-spark":1,
     "r-word":1,"r-word__in":1,"r-block__in":1,hl:1,"art-stat__num":1,"stat__num":1 };
   var SKIP_ID = { jClock:1, cBigNum:1, year:1, loaderCount:1 };
   /* Blocks that line up independent labels (a byline, a stat, an accordion
      head) rather than forming a sentence: their parts are translated one by
      one, so a new note's date, tag or figure needs no entry of its own. */
-  var PARTS_CLASS = { "art-meta":1,"art-stat":1,"signal__head":1,buystore:1,
+  var PARTS_CLASS = { "art-meta":1,"art-author":1,"art-stat":1,"signal__head":1,buystore:1,
     "jcard__top":1,"jpost__badge":1,"mb-card__top":1,"mb-meta":1,"g-tchip":1,"g-card__head":1 };
   /* Never rebuilt from a translation string — listeners, canvases,
      counters and media must survive untouched. */

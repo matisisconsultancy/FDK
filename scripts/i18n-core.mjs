@@ -116,7 +116,7 @@ export function parseHTML(html) {
 }
 
 /* ---------- selectors used by the key algorithm ---------- */
-export const SKIP_CLASS = ["brand","footer__email","jclock","cmedia__count","lang-switch",
+export const SKIP_CLASS = ["brand","brand__text","brand__mark","footer__brand","footer__email","jclock","cmedia__count","lang-switch",
   "marquee","mkt","mb-card__px","mb-card__sym","mb-chg","g-delta","g-spark","r-word",
   "r-word__in","r-block__in","hl","art-stat__num","stat__num"];
 export const SKIP_TAG = new Set(["script","style","noscript","svg","code","pre","canvas","iframe","template"]);
@@ -124,7 +124,7 @@ export const SKIP_ID = new Set(["jClock","cBigNum","year","loaderCount"]);
 /* Blocks that line up independent labels (a byline, a stat, an accordion
    head) rather than forming a sentence. Their parts are translated one by
    one, so a new note's date, tag or figure never needs its own entry. */
-export const PARTS_CLASS = ["art-meta","art-stat","signal__head","buystore",
+export const PARTS_CLASS = ["art-meta","art-author","art-stat","signal__head","buystore",
   "jcard__top","jpost__badge","mb-card__top","mb-meta","g-tchip","g-card__head"];
 
 export function classList(el) {
@@ -222,4 +222,53 @@ export function classify(el) {
   if (inlineWithText === 0) return textWithLetters > 0 ? "text" : "recurse";
   if (hasOpaque(el)) return "text";
   return "unit";
+}
+
+/* ============================================================
+   Rule coverage — mirrors the pattern rules in i18n.js so the
+   build can tell "no translation anywhere" apart from "the
+   engine derives this one" (a date, a reading time, a
+   "Slot · Section" label, a page title built from an article
+   name). Without it every date would be reported as a gap.
+   ============================================================ */
+const MONTHS = ["January","February","March","April","May","June","July",
+  "August","September","October","November","December"];
+const PREFIX = ["Data as of","Week ending","week ending","As of","as of",
+  "Updated","updated","As at","as at","Published"];
+
+function dateRule(k) {
+  let m = /^([A-Z][a-z]+) (\d{1,2}), (\d{4})$/.exec(k);
+  if (m && MONTHS.includes(m[1])) return true;
+  m = /^(\d{1,2}) ([A-Z][a-z]+) (\d{4})$/.exec(k);
+  return !!(m && MONTHS.includes(m[2]));
+}
+
+function atomResolves(k, dict) {
+  if (dict[k] !== undefined) return true;
+  if (dateRule(k)) return true;
+  if (/^\d+ min read$/.test(k)) return true;
+  for (const p of PREFIX)
+    if (k.length > p.length + 1 && k.startsWith(p + " ") && dict[p] !== undefined) return true;
+  if (!/[A-Za-zÀ-ÿ]/.test(k)) return true;
+  return false;
+}
+
+export function resolves(k, dict) {
+  if (dict[k] !== undefined) return true;
+  const q = /^“([\s\S]+)”$/.exec(k);
+  if (q && resolves(normWS(q[1]).trim(), dict)) return true;
+  const arrow = /^([\s\S]+?)\s*[←-↓»›]$/.exec(k);
+  if (arrow && resolves(normWS(arrow[1]).trim(), dict)) return true;
+  if (k.includes("·")) {
+    for (const raw of k.split("·")) {
+      const p = normWS(raw).trim();
+      if (!p) continue;
+      if (atomResolves(p, dict)) return true;
+      const i = p.indexOf(" — ");
+      if (i >= 0 && (atomResolves(p.slice(0, i).trim(), dict) ||
+                     atomResolves(p.slice(i + 3).trim(), dict))) return true;
+    }
+    return false;
+  }
+  return atomResolves(k, dict);
 }
