@@ -11,10 +11,15 @@
 
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) {
     return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  /* Prices and timestamps follow the language the visitor is reading in. */
+  function loc() {
+    var l = window.FDK_i18n ? window.FDK_i18n.lang() : "en";
+    return { en: "en-US", es: "es-ES", it: "it-IT" }[l] || "en-US";
+  }
   function fmtPrice(n, cur) {
     if (n == null) return "—";
     var dp = Math.abs(n) >= 1000 ? 0 : Math.abs(n) >= 10 ? 2 : 4;
-    var s = Number(n).toLocaleString("en-US", { minimumFractionDigits: dp, maximumFractionDigits: dp });
+    var s = Number(n).toLocaleString(loc(), { minimumFractionDigits: dp, maximumFractionDigits: dp });
     return cur ? s + " " + esc(cur) : s;
   }
   function pctHTML(chg) {
@@ -58,7 +63,7 @@
       return '<section class="mb-group"><h3 class="mb-group__h">' + esc(name) + '</h3>' +
         '<div class="mb-grid">' + groups[name].map(card).join("") + '</div></section>';
     }).join("");
-    var when = data.updated ? new Date(data.updated).toLocaleString("en-GB", { dateStyle: "medium", timeStyle: "short" }) : "—";
+    var when = data.updated ? new Date(data.updated).toLocaleString(loc() === "en-US" ? "en-GB" : loc(), { dateStyle: "medium", timeStyle: "short" }) : "—";
     var tag = data.provider === "sample"
       ? '<span class="mb-badge mb-badge--sample">Sample data — set TWELVEDATA_API_KEY to go live</span>'
       : '<span class="mb-badge">Live · ' + esc(data.provider || "market data") + '</span>';
@@ -70,8 +75,11 @@
     mount.innerHTML = '<p class="mb-error">' + esc(msg) + '</p>';
   }
 
+  var lastData = null;
+  document.addEventListener("fdk:langchange", function () { if (lastData) render(lastData); });
+
   fetch("/data/market/quotes.json?t=" + Date.now())
     .then(function (r) { if (!r.ok) throw new Error("quotes.json not found (" + r.status + ")"); return r.json(); })
-    .then(render)
+    .then(function (d) { lastData = d; render(d); })
     .catch(function (e) { fail("Market data unavailable — " + e.message + ". The daily job writes data/market/quotes.json."); });
 })();

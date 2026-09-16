@@ -32,7 +32,8 @@
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   function fmt(n, dp) {
-    return Number(n).toLocaleString("en-US", { minimumFractionDigits: dp, maximumFractionDigits: dp });
+    var loc = window.FDK_i18n ? { en: "en-US", es: "es-ES", it: "it-IT" }[window.FDK_i18n.lang()] : "en-US";
+    return Number(n).toLocaleString(loc || "en-US", { minimumFractionDigits: dp, maximumFractionDigits: dp });
   }
   function pillHTML(it, price, chg) {
     var dir = chg > 0 ? "up" : (chg < 0 ? "down" : "flat");

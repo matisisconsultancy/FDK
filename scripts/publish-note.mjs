@@ -296,6 +296,7 @@ const page = `<!DOCTYPE html>
 <html lang="en">
 <head>
 ${gaHead}  <meta charset="UTF-8" />
+  <script src="/i18n-boot.js?v=${ver}"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="${esc(excerpt)} The Velocity Edge, by Francesco de Leo Kaufmann." />
   <meta name="theme-color" content="#ffffff" />
@@ -371,10 +372,9 @@ ${art}        <div class="art-sign reveal-up">
 
 ${FOOTER}
 
+  <script src="/i18n.js?v=${ver}"></script>
   <script src="/posts.js?v=${ver}"></script>
   <script src="/script.js?v=${ver}"></script>
-  <script src="/i18n-data.js?v=${ver}"></script>
-  <script src="/i18n.js?v=${ver}"></script>
 </body>
 </html>
 `;

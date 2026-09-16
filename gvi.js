@@ -241,4 +241,5 @@
     show(TABS[0].id);
   }
   build();
+  document.addEventListener("fdk:langchange", build);
 })();

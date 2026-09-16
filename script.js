@@ -22,6 +22,14 @@
   const lerp = (a, b, n) => a + (b - a) * n;
   const clamp = (v, min, max) => Math.min(max, Math.max(min, v));
 
+  /* ---------- locale helpers (i18n.js owns the current language) ----------
+     Every figure the page animates or prints has to read naturally in the
+     visitor's language: 1,234.5 in English, 1.234,5 in Spanish and Italian. */
+  const fdkLang = () => (window.FDK_i18n ? window.FDK_i18n.lang() : "en");
+  const fdkLocale = () => ({ en: "en-US", es: "es-ES", it: "it-IT" })[fdkLang()] || "en-US";
+  const fdkNum = (n, o) => (window.FDK_i18n ? window.FDK_i18n.num(n, o)
+    : Number(n).toLocaleString("en-US", o || {}));
+
   const yEl = $("#year");
   if (yEl) yEl.textContent = new Date().getFullYear();
 
@@ -824,7 +832,7 @@
       else if (hr >= 18 && hr < 22) { g = "Good evening"; mode = "night"; }
       else { g = "Working late"; mode = "night"; }
       if (jGreeting) jGreeting.textContent = g;
-      if (jClock) jClock.textContent = d.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" });
+      if (jClock) jClock.textContent = d.toLocaleTimeString(fdkLocale(), { hour: "2-digit", minute: "2-digit" });
       if (journalHero) journalHero.dataset.mode = mode;
       if (journalManualTheme === null) applyJournalTheme(mode === "day");
     };
@@ -871,7 +879,7 @@
   /* ---------- Article: animated stat counters ---------- */
   const counters = $$("[data-count]");
   if (counters.length) {
-    const fmt = (n) => Math.round(n).toLocaleString("en-US");
+    const fmt = (n) => fdkNum(Math.round(n));
     const render = (el, val) => { el.textContent = (el.dataset.prefix || "") + fmt(val) + (el.dataset.suffix || ""); };
     const run = (el) => {
       const target = parseFloat(el.dataset.count);
