@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-permission",
+    title: "The Price of Permission",
+    excerpt: "Capital is not the constraint on the AI Supercycle — permission is, and it has a price.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-self-reinforcing-risiko",
     title: "The Self-reinforcing Risiko",
     excerpt: "How equity currency, control premiums and time are redrawing the hierarchy of Italian banking.",
