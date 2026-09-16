@@ -18,7 +18,7 @@ import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync
 import { join, resolve, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractAll, extractJS, htmlFiles, noTranslate } from "./i18n-extract.mjs";
-import { resolves } from "./i18n-core.mjs";
+import { resolves, lookupParts } from "./i18n-core.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const SRC = join(ROOT, "data", "i18n");
@@ -57,6 +57,12 @@ export function buildIndex() {
     if (!perPage.has(only)) perPage.set(only, new Set());
     perPage.get(only).add(k);
   }
+  /* A block the engine translates part by part needs those parts shipped
+     with it, even though they are not keys of their own. */
+  const attach = (bucket, k) => { for (const t of lookupParts(k)) bucket.add(t); };
+  for (const k of [...common]) attach(common, k);
+  for (const keys of perPage.values()) for (const k of [...keys]) attach(keys, k);
+
   return { all, common, perPage };
 }
 
@@ -89,7 +95,11 @@ for (const lang of LANGS) {
   const dict = readJSON(join(SRC, `${lang}.json`), {});
   const keep = noTranslate();
   const missing = [...all.keys()].filter((k) => !keep.has(k) && !resolves(k, dict));
-  const stale = Object.keys(dict).filter((k) => !all.has(k));
+  /* A dictionary entry is live if it is a key, or a part the engine looks up
+     while translating one. */
+  const live = new Set(all.keys());
+  for (const k of all.keys()) for (const t of lookupParts(k)) live.add(t);
+  const stale = Object.keys(dict).filter((k) => !live.has(k));
   if (missing.length) bad = 1;
   if (!check) {
     let n = emit(lang, "common", common, dict);
