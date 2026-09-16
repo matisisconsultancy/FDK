@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-resilience-premium-becomes-measurable",
+    title: "The Resilience Premium Becomes Measurable",
+    excerpt: "The AI Supercycle is discovering that intelligence is only as valuable as the physical system that can keep it running.",
+    tag: "FDK GVI Corporate Benchmark · Infrastructure",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "10 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/16-september-2026-provisional-nowcast",
     title: "16 September 2026: Provisional Nowcast",
     excerpt: "The GVI holds at 108.0 as the UK slips to 82.3 and Japan captures the paradox of rising Intelligence Velocity meeting a faster-rising physical energy cost.",
