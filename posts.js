@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre",
+    title: "The Next Economy Research Centre",
+    excerpt: "Training stays concentrated while inference begins to diffuse across regions, enterprises and devices.",
+    tag: "Morning View · AI Infrastructure",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-resilience-premium-becomes-measurable",
     title: "The Resilience Premium Becomes Measurable",
     excerpt: "The AI Supercycle is discovering that intelligence is only as valuable as the physical system that can keep it running.",
