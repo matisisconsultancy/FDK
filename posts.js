@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/16-september-2026-provisional-nowcast",
+    title: "16 September 2026: Provisional Nowcast",
+    excerpt: "The GVI holds at 108.0 as the UK slips to 82.3 and Japan captures the paradox of rising Intelligence Velocity meeting a faster-rising physical energy cost.",
+    tag: "FDK Global Velocity Index · Macro",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-permission",
     title: "The Price of Permission",
     excerpt: "Capital is not the constraint on the AI Supercycle — permission is, and it has a price.",
