@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/16-september-2026",
+    title: "16 September 2026",
+    excerpt: "Spain rebuilds the grid, Germany integrates the stack, and Europe's Gigafactories become a capital-formation mechanism for the Next Economy.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-2-16-gigawatt-contradiction",
     title: "The 2.16-gigawatt Contradiction",
     excerpt: "As Anthropic calls to pace frontier models yet builds gigawatts of inference capacity, the Supercycle rotates from creating intelligence to industrializing it.",
