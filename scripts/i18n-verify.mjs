@@ -15,10 +15,17 @@ import { join, resolve, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { createServer } from "node:http";
 import { extractAll, extractJS, htmlFiles, noTranslate } from "./i18n-extract.mjs";
+import { SKIP_CLASS, SKIP_TAG, SKIP_ID } from "./i18n-core.mjs";
 import { slugFor } from "./i18n-build.mjs";
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const MARK = "✓";     // every translated string becomes a tick
+
+/* The engine's own skip rules, so this check can never drift from them. */
+function skipSelector() {
+  return [...SKIP_CLASS.map((c) => "." + c), ...SKIP_TAG,
+    ...[...SKIP_ID].map((i) => "#" + i), "[data-no-i18n]", "[data-count]"].join(",");
+}
 
 const pw = await import(process.env.PW || "playwright");
 const { chromium } = pw.default || pw;
@@ -75,10 +82,7 @@ for (const f of htmlFiles()) {
   await page.goto(url + "?lang=es", { waitUntil: "load" });
   await page.waitForTimeout(400);
 
-  const leftovers = await page.evaluate(({ MARK, KEEP }) => {
-    const SKIP = ".brand,.footer__email,.jclock,.cmedia__count,.lang-switch,.marquee,.mkt," +
-      ".mb-card__px,.mb-card__sym,.mb-chg,.g-delta,.g-spark,.art-stat__num,.stat__num," +
-      "[data-no-i18n],[data-count],code,pre,script,style,noscript,svg,canvas";
+  const leftovers = await page.evaluate(({ MARK, KEEP, SKIP }) => {
     const out = [];
     const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
     let n;
@@ -95,7 +99,7 @@ for (const f of htmlFiles()) {
       out.push(t.slice(0, 90));
     }
     return out;
-  }, { MARK, KEEP: [...noTranslate()] });
+  }, { MARK, KEEP: [...noTranslate()], SKIP: skipSelector() });
 
   checked++;
   if (leftovers.length) {

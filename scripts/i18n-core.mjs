@@ -116,7 +116,7 @@ export function parseHTML(html) {
 }
 
 /* ---------- selectors used by the key algorithm ---------- */
-export const SKIP_CLASS = ["brand","brand__text","brand__mark","footer__brand","footer__email","jclock","cmedia__count","lang-switch",
+export const SKIP_CLASS = ["brand","brand__text","brand__mark","footer__brand","footer__email","cmedia__count","lang-switch",
   "marquee","mkt","mb-card__px","mb-card__sym","mb-chg","g-delta","g-spark","r-word",
   "r-word__in","r-block__in","hl","art-stat__num","stat__num"];
 export const SKIP_TAG = new Set(["script","style","noscript","svg","code","pre","canvas","iframe","template"]);
@@ -274,8 +274,12 @@ export function lookupParts(k) {
   const add = (t) => {
     if (!t || !/[A-Za-zÀ-ÿ]/.test(t)) return;
     out.add(t);
+    const arrow = /^([\s\S]+?)\s*[\u2190-\u2193\u00bb\u203a]$/.exec(t);
+    if (arrow) add(normWS(arrow[1]).trim());
+    const quoted = /^\u201c([\s\S]+)\u201d$/.exec(t);
+    if (quoted) add(normWS(quoted[1]).trim());
     if (t.includes("\u00b7"))
-      for (const seg of t.split("\u00b7")) { const s2 = normWS(seg).trim(); if (/[A-Za-zÀ-ÿ]/.test(s2)) out.add(s2); }
+      for (const seg of t.split("\u00b7")) { const s2 = normWS(seg).trim(); if (/[A-Za-zÀ-ÿ]/.test(s2)) add(s2); }
   };
   add(k);
   for (const t of innerTexts(k)) add(t);

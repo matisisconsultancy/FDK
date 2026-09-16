@@ -41,6 +41,16 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/process-drafts.mjs
 
+      # A new note goes live in English straight away; the dictionaries are
+      # rebuilt so the shared copy around it still reads in ES/IT, and the log
+      # lists exactly which new strings need translating.
+      - name: Rebuild translation dictionaries
+        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        run: |
+          node scripts/i18n-build.mjs
+          echo "--- strings awaiting translation ---"
+          node scripts/i18n-extract.mjs
+
       - name: Commit and push
         if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
         run: |

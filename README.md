@@ -43,6 +43,44 @@ script.js     →  Hero canvas, cursor ring, masked reveals, parallax, sticky,
 > search for `#buy`) for the real listings when they're live. "Download a sample"
 > generates a `.txt` excerpt client-side; replace with a real PDF if preferred.
 
+## 🌍 Languages (EN · ES · IT)
+
+The site picks its language from the visitor's browser and offers a switcher in
+the navigation that remembers the choice. English lives in the HTML, so an
+English reader downloads no dictionary at all; Spanish and Italian readers get
+two small files — the shared copy plus the copy of the page they opened.
+
+```
+i18n-boot.js        in <head>: picks the language, loads its dictionaries
+i18n.js             the engine, first script at the end of <body>
+data/i18n/es.json   the editable Spanish source          ← edit these
+data/i18n/it.json   the editable Italian source          ← edit these
+data/i18n/runtime.json     strings that only ever reach the DOM through JS
+data/i18n/no-translate.json  proper nouns that stay as they are
+i18n/*.js           generated — never edit by hand
+```
+
+The engine translates a **block at a time**, so a sentence broken by `<strong>`
+or a highlight span is still translated as one sentence and keeps its emphasis.
+Dates, reading times, `Slot · Section` labels and page titles are derived by
+rule, so a newly published note reads correctly before anyone touches a
+dictionary.
+
+```bash
+node scripts/i18n-extract.mjs            # what is translatable, and what is missing
+node scripts/i18n-extract.mjs --missing es > gaps.json
+node scripts/i18n-merge.mjs batch.json   # merge {"english": {"es": "…", "it": "…"}}
+node scripts/i18n-build.mjs              # rebuild i18n/*.js   ← after every edit
+node scripts/i18n-build.mjs --check      # CI: fail if anything is untranslated
+node scripts/i18n-verify.mjs             # load all pages in Chromium, fail on leftovers
+```
+
+After editing `data/i18n/*.json`, always run `i18n-build.mjs` — the browser reads
+the generated files, not the JSON.
+
+To keep a name in English everywhere (a company, a book title, an FDK concept),
+add it to `data/i18n/no-translate.json` rather than mapping it to itself.
+
 ## 🚀 Run locally
 
 ```bash
