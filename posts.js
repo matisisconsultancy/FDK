@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-sovereign-stack-premium",
+    title: "The Sovereign Stack Premium",
+    excerpt: "Huawei, SK Hynix, Crux AI, Generac and Cohere show the corporation is no longer competing alone.",
+    tag: "FDK GVI Corporate Benchmark · Sovereign Systems",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "September 17, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-velocity-index-daily-update",
     title: "Global Velocity Index: Daily Update",
     excerpt: "The Fed lifts rates 25bp to 3.75%–4.00% and signals more, as the US GVI edges to 94.3 and the headline index holds at 108.0.",
