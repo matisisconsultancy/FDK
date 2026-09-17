@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-velocity-index-daily-update",
+    title: "Global Velocity Index: Daily Update",
+    excerpt: "The Fed lifts rates 25bp to 3.75%–4.00% and signals more, as the US GVI edges to 94.3 and the headline index holds at 108.0.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "September 17, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/16-september-2026",
     title: "16 September 2026",
     excerpt: "Spain rebuilds the grid, Germany integrates the stack, and Europe's Gigafactories become a capital-formation mechanism for the Next Economy.",
