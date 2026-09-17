@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-self-tightening-supercycle",
+    title: "The Self-tightening Supercycle",
+    excerpt: "As the Fed tightens and the 10-year holds near 5%, AI capital formation accelerates into project-finance scale — and starts repricing the resources it consumes.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 17, 2026",
+    read: "10 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-sovereign-stack-premium",
     title: "The Sovereign Stack Premium",
     excerpt: "Huawei, SK Hynix, Crux AI, Generac and Cohere show the corporation is no longer competing alone.",
