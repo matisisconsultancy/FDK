@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/17-september-2026",
+    title: "17 September 2026",
+    excerpt: "Two signals — Spain rationing grid capacity and a $22B AI loan backed by European banks — redraw the European AI challenge.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "September 17, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/italian-banking-risiko-the-calendar-becomes-a-weapon",
     title: "Italian Banking Risiko: The Calendar Becomes a Weapon",
     excerpt: "Intesa clears IVASS as antitrust opens a new front — and the calendar becomes part of the capital structure.",
