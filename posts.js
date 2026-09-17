@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/italian-banking-risiko-the-calendar-becomes-a-weapon",
+    title: "Italian Banking Risiko: The Calendar Becomes a Weapon",
+    excerpt: "Intesa clears IVASS as antitrust opens a new front — and the calendar becomes part of the capital structure.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 17, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-self-tightening-supercycle",
     title: "The Self-tightening Supercycle",
     excerpt: "As the Fed tightens and the 10-year holds near 5%, AI capital formation accelerates into project-finance scale — and starts repricing the resources it consumes.",
