@@ -45,15 +45,28 @@ script.js     →  Hero canvas, cursor ring, masked reveals, parallax, sticky,
 
 ## 🌍 Languages (EN · ES · IT)
 
-Three checks. **`i18n-audit.mjs` is the one that decides** — the other two
-each have a blind spot that let real mixing through:
+Four checks. **`i18n-audit.mjs` is the one that decides** — two of the
+others have a blind spot that let real mixing through:
 
-- `node scripts/i18n-audit.mjs` — renders every URL in `es` and `it`
-  with the real built dictionaries and searches the visible text for
-  the English source strings themselves, so nothing upstream can hide
-  a failure downstream. It checks **both** ways a visitor gets a
-  language: opening the page in it, and picking it from the switcher.
-  It also fails if any dictionary is requested with a stale `?v=`.
+- `node scripts/i18n-audit.mjs` — renders every URL with the real built
+  dictionaries and searches the visible text for the source strings
+  themselves, so nothing upstream can hide a failure downstream. It
+  covers both ways a visitor gets a language — opening the page in it
+  (`i18n-boot.js`) and picking it from the switcher (`i18n.js`) — and
+  walks the whole matrix, `en→es→it→en→it`, including returning to
+  English and switching twice. It reads text, `<title>`, the meta cards
+  and the translatable attributes, and reports four faults: English left
+  in `es`/`it`, Spanish on an Italian page or the reverse, `es`/`it` text
+  left behind after returning to English, and any dictionary requested
+  with a stale `?v=`. Strings under four words are compared as whole
+  values rather than searched for, so a nav label is covered without
+  "Home" matching inside a sentence.
+- `node scripts/i18n-lint.mjs` — checks the translations themselves,
+  which the audit cannot: it only sees whether a string changed
+  language, not whether the same idea is worded the same way on every
+  page. Markup parity (a translation must carry exactly its source's
+  tags), the house wording for recurring terms, and the Spanish
+  register — the site addresses the reader as *usted* throughout.
 - `node scripts/i18n-verify.mjs` — asks whether the key the browser
   requests is the key the extractor produced. Blind spot: it answers
   every `/i18n/*` request with one pseudo-dictionary, so it never
@@ -109,6 +122,7 @@ node scripts/i18n-merge.mjs batch.json   # merge {"english": {"es": "…", "it":
 node scripts/i18n-build.mjs              # rebuild i18n/*.js   ← after every edit
 node scripts/i18n-build.mjs --check      # CI: fail if anything is untranslated
 node scripts/i18n-audit.mjs              # load AND switch, in Chromium — the decisive check
+node scripts/i18n-lint.mjs               # wording, markup parity and register
 node scripts/i18n-verify.mjs             # key-shape check (see blind spot above)
 ```
 
