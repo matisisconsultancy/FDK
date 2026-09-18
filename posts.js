@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-execution-premium",
+    title: "The Execution Premium",
+    excerpt: "In Italy's banking Risiko, the market is now pricing the path to closing, not the presentation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/from-capex-to-collateral",
     title: "From Capex to Collateral",
     excerpt: "As global money converges upward, AI infrastructure crosses the line from expenditure into collateral.",
