@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-ai-gigafactory-watch",
+    title: "Europe AI Gigafactory Watch",
+    excerpt: "Nabiax breaks ground on an €800M, 80 MW AI data center in Alcalá de Henares, turning announced capacity into physical capex.",
+    tag: "The Close · Infrastructure",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-sovereign-electron",
     title: "The Sovereign Electron",
     excerpt: "The AI Supercycle is no longer financed, powered or secured by corporations alone — sovereign capital has entered the compute stack.",
