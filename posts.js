@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/from-capex-to-collateral",
+    title: "From Capex to Collateral",
+    excerpt: "As global money converges upward, AI infrastructure crosses the line from expenditure into collateral.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/18-september-2026",
     title: "18 September 2026",
     excerpt: "A global tightening cycle collides with an AI capex boom, revealing where scarcity rents are migrating next.",
