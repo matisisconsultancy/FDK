@@ -45,6 +45,20 @@ script.js     →  Hero canvas, cursor ring, masked reveals, parallax, sticky,
 
 ## 🌍 Languages (EN · ES · IT)
 
+Two checks, because they catch different things:
+
+- `node scripts/i18n-verify.mjs` — asks whether the key the browser
+  requests is the key the extractor produced.
+- `node scripts/i18n-diff.mjs` — renders every URL in all three
+  languages and reports text that did **not** change. It has no skip
+  list, so it also catches strings the engine wrongly skips and
+  dictionary entries that just repeat the English. Brand names, book
+  titles and tickers are expected in its output; prose is not.
+
+The `?v=` cache key in `i18n-boot.js` is derived from the built
+dictionaries by `i18n-build.mjs`, so a translation change can never
+be served from a stale cache.
+
 The site picks its language from the visitor's browser and offers a switcher in
 the navigation that remembers the choice. English lives in the HTML, so an
 English reader downloads no dictionary at all; Spanish and Italian readers get

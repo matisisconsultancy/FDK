@@ -15,6 +15,7 @@
      node scripts/i18n-build.mjs --check   → report only, non-zero on gaps
    ============================================================ */
 import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { join, resolve, dirname, relative } from "node:path";
 import { fileURLToPath } from "node:url";
 import { extractAll, extractJS, htmlFiles, noTranslate } from "./i18n-extract.mjs";
@@ -78,6 +79,45 @@ function emit(lang, name, keys, dict) {
   return Object.keys(obj).length;
 }
 
+/* ------------------------------------------------------------------
+   Cache busting. The browser caches /i18n/*.js under the ?v= query in
+   i18n-boot.js, so a dictionary that changes without that query changing
+   is served stale — the shell translates from the old cache while new
+   copy stays English. Deriving the version from the built content makes
+   that impossible: any change to a dictionary or to the scripts that
+   read one produces a new version on the next build.
+   ------------------------------------------------------------------ */
+const VERSIONED = ["i18n-boot.js", "i18n.js", "script.js", "posts.js",
+  "market.js", "market-board.js", "gvi.js", "gvi-data.js", "styles.css"];
+
+function assetVersion() {
+  const h = createHash("sha256");
+  for (const f of readdirSync(OUT).sort()) h.update(readFileSync(join(OUT, f)));
+  for (const f of VERSIONED) {
+    const p = join(ROOT, f);
+    if (!existsSync(p)) continue;
+    /* normalise the version strings out, or the hash would chase itself */
+    h.update(readFileSync(p, "utf8").replace(/\?v=[0-9a-z]+/g, "?v=").replace(/var V = "[^"]*";/, ""));
+  }
+  return "v=" + h.digest("hex").slice(0, 10);
+}
+
+function stampVersion(version) {
+  let touched = 0;
+  const boot = join(ROOT, "i18n-boot.js");
+  const b = readFileSync(boot, "utf8");
+  const nb = b.replace(/var V = "[^"]*";/, `var V = "${version}";`);
+  if (nb !== b) { writeFileSync(boot, nb); touched++; }
+
+  const rx = new RegExp(`((?:src|href)="/(?:${VERSIONED.map((f) => f.replace(".", "\\.")).join("|")})\\?v=)[0-9a-z=]*(")`, "g");
+  for (const f of htmlFiles()) {
+    const src = readFileSync(f, "utf8");
+    const out = src.replace(rx, (m, a, b2) => a.replace(/v=$/, "") + version + b2);
+    if (out !== src) { writeFileSync(f, out); touched++; }
+  }
+  return touched;
+}
+
 const isCLI = process.argv[1] && process.argv[1].endsWith("i18n-build.mjs");
 if (isCLI) main();
 
@@ -100,6 +140,10 @@ for (const lang of LANGS) {
   const live = new Set(all.keys());
   for (const k of all.keys()) for (const t of lookupParts(k)) live.add(t);
   const stale = Object.keys(dict).filter((k) => !live.has(k));
+  /* An entry whose translation equals its key renders as English while
+     counting as translated — legitimate for a word that is the same in
+     both languages, a bug for anything else. Report it so it stays visible. */
+  const identical = Object.keys(dict).filter((k) => dict[k] === k && !keep.has(k));
   if (missing.length) bad = 1;
   if (!check) {
     let n = emit(lang, "common", common, dict);
@@ -113,7 +157,13 @@ for (const lang of LANGS) {
   const translatable = all.size - [...all.keys()].filter((k) => keep.has(k)).length;
   console.log(`${lang}: ${translatable - missing.length}/${translatable} translated` +
     (missing.length ? `  · MISSING ${missing.length}` : "  · complete") +
-    (stale.length ? `  · stale ${stale.length}` : ""));
+    (stale.length ? `  · stale ${stale.length}` : "") +
+    (identical.length ? `  · identical ${identical.length}` : ""));
+}
+if (!check) {
+  const version = assetVersion();
+  const touched = stampVersion(version);
+  console.log(`asset version ${version} → ${touched} file(s) stamped`);
 }
 if (check && bad) process.exit(1);
 }

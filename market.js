@@ -27,10 +27,12 @@
     ]
   };
 
+  var lastMap = null, lastLive = false;
   var containers = Array.prototype.slice.call(document.querySelectorAll(".mkt"));
   if (!containers.length) return;
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  function t(s) { return (window.FDK_t ? window.FDK_t(s) : s) || s; }
   function fmt(n, dp) {
     var loc = window.FDK_i18n ? { en: "en-US", es: "es-ES", it: "it-IT" }[window.FDK_i18n.lang()] : "en-US";
     return Number(n).toLocaleString(loc || "en-US", { minimumFractionDigits: dp, maximumFractionDigits: dp });
@@ -46,8 +48,9 @@
       '</span>';
   }
   function render(map, live) {
+    lastMap = map; lastLive = live;
     var pills = [];
-    if (!live) pills.push('<span class="mpill mpill--tag">Sample</span>');
+    if (!live) pills.push('<span class="mpill mpill--tag">' + t("Sample") + "</span>");
     CFG.items.forEach(function (it) {
       var q = map && map[it.s];
       if (live && !q) return;
@@ -132,6 +135,8 @@
     requestAnimationFrame(step);
     window.addEventListener("resize", c.__measure);
   });
+
+  document.addEventListener("fdk:langchange", function () { render(lastMap, lastLive); });
 
   render(null, false);   // paint immediately (sample) so the band is never empty
   fetchLive();
