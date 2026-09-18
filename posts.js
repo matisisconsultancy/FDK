@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/18-september-2026-executive-synthesis",
+    title: "18 September 2026: Executive Synthesis",
+    excerpt: "Central banks tighten as AI turns physical — the market's new dividing line is productive capital versus capital that cannot clear the hurdle rate.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/europe-ai-gigafactory-watch",
     title: "Europe AI Gigafactory Watch",
     excerpt: "Nabiax breaks ground on an €800M, 80 MW AI data center in Alcalá de Henares, turning announced capacity into physical capex.",
