@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-center",
+    title: "The Next Economy Research Center",
+    excerpt: "AI is moving from an output of the R&D system to an input into producing the next generation of AI.",
+    tag: "Morning View · AI",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/18-september-2026-provisional-nowcast",
     title: "18 September 2026: Provisional Nowcast",
     excerpt: "The GVI holds at 108.0 as the Bank of Japan joins the Fed and ECB in tightening, reframing the AI Supercycle around returns.",
