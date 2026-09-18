@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/18-september-2026",
+    title: "18 September 2026",
+    excerpt: "A global tightening cycle collides with an AI capex boom, revealing where scarcity rents are migrating next.",
+    tag: "Morning View · AI Infrastructure",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-orchestration-premium",
     title: "The Orchestration Premium",
     excerpt: "Four developments, one system: the competitive bottleneck is migrating from intelligence itself toward the orchestration of everything intelligence requires.",
