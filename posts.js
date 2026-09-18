@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-sovereign-electron",
+    title: "The Sovereign Electron",
+    excerpt: "The AI Supercycle is no longer financed, powered or secured by corporations alone — sovereign capital has entered the compute stack.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "9 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-center",
     title: "The Next Economy Research Center",
     excerpt: "AI is moving from an output of the R&D system to an input into producing the next generation of AI.",
