@@ -102,6 +102,27 @@ function assetVersion() {
   return "v=" + h.digest("hex").slice(0, 10);
 }
 
+/* A second copy of the cache key anywhere but i18n-boot.js goes stale without
+   anyone noticing: the first load uses the fresh one, a language switch uses
+   the stale one and serves a months-old dictionary from cache. Fail the build
+   rather than ship that again. */
+function assertSingleVersionSource() {
+  const bad = [];
+  for (const f of VERSIONED) {
+    if (f === "i18n-boot.js") continue;
+    const p = join(ROOT, f);
+    if (!existsSync(p)) continue;
+    const src = readFileSync(p, "utf8");
+    for (const m of src.matchAll(/["'`]v=[0-9a-z]+["'`]/g))
+      if (!/["'`]v=0["'`]/.test(m[0])) bad.push(`${f}: ${m[0]}`);
+  }
+  if (bad.length) {
+    console.error("hard-coded cache key outside i18n-boot.js — read it from window.FDK_IV instead:");
+    for (const b of bad) console.error("  " + b);
+    process.exit(1);
+  }
+}
+
 function stampVersion(version) {
   let touched = 0;
   const boot = join(ROOT, "i18n-boot.js");
@@ -161,6 +182,7 @@ for (const lang of LANGS) {
     (identical.length ? `  · identical ${identical.length}` : ""));
 }
 if (!check) {
+  assertSingleVersionSource();
   const version = assetVersion();
   const touched = stampVersion(version);
   console.log(`asset version ${version} → ${touched} file(s) stamped`);

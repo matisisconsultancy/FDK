@@ -11,7 +11,7 @@
 (function () {
   "use strict";
   var LANGS = { en: 1, es: 1, it: 1 };
-  var V = "v=c0098997e4";
+  var V = "v=48f6e0bf62";
 
   function fromQuery() {
     var m = /[?&]lang=([a-zA-Z-]+)/.exec(location.search);
@@ -37,6 +37,10 @@
   var lang = (q && LANGS[q] && q) || (s && LANGS[s] && s) || fromBrowser() || "en";
 
   window.FDK_LANG = lang;
+  /* The cache key travels with the page so i18n.js reuses this exact one when
+     a visitor switches language. Set before the English early-return: an
+     English visitor who picks Español needs it too. */
+  window.FDK_IV = V;
   try { document.documentElement.setAttribute("lang", lang); } catch (e) {}
 
   /* Page slug → the per-page dictionary file. "/" → home. */

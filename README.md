@@ -45,19 +45,41 @@ script.js     →  Hero canvas, cursor ring, masked reveals, parallax, sticky,
 
 ## 🌍 Languages (EN · ES · IT)
 
-Two checks, because they catch different things:
+Three checks. **`i18n-audit.mjs` is the one that decides** — the other two
+each have a blind spot that let real mixing through:
 
+- `node scripts/i18n-audit.mjs` — renders every URL in `es` and `it`
+  with the real built dictionaries and searches the visible text for
+  the English source strings themselves, so nothing upstream can hide
+  a failure downstream. It checks **both** ways a visitor gets a
+  language: opening the page in it, and picking it from the switcher.
+  It also fails if any dictionary is requested with a stale `?v=`.
 - `node scripts/i18n-verify.mjs` — asks whether the key the browser
-  requests is the key the extractor produced.
+  requests is the key the extractor produced. Blind spot: it answers
+  every `/i18n/*` request with one pseudo-dictionary, so it never
+  proves a string reached the page file the browser actually asks for.
 - `node scripts/i18n-diff.mjs` — renders every URL in all three
-  languages and reports text that did **not** change. It has no skip
-  list, so it also catches strings the engine wrongly skips and
-  dictionary entries that just repeat the English. Brand names, book
-  titles and tickers are expected in its output; prose is not.
+  languages and reports text that did **not** change. Brand names,
+  book titles and tickers are expected in its output; prose is not.
+  Blind spot: it pairs text nodes across languages by index, and
+  `script.js` splits headings into one span per word — a heading whose
+  word count changes when translated shifts every later index, hiding
+  the rest of that page.
 
-The `?v=` cache key in `i18n-boot.js` is derived from the built
-dictionaries by `i18n-build.mjs`, so a translation change can never
-be served from a stale cache.
+The `?v=` cache key lives in **one** place, `i18n-boot.js`, stamped by
+`i18n-build.mjs` from a hash of the built dictionaries and published to
+`window.FDK_IV`. `i18n.js` reads it from there when the switcher loads a
+language. A second hand-written copy of that key once went stale and made
+every language switch serve a months-old dictionary from cache, so the
+build now refuses to run if one reappears.
+
+Animated text (`[data-reveal-text]`, `[data-reveal-block]`,
+`[data-highlight]`) is rebuilt into one span per word by `script.js`, and
+the engine skips those spans. `i18n.js` therefore records each such
+block's pristine English markup before its first pass — on **every**
+language, English included, since an English visitor may switch later —
+and `script.js` restores it, asks for a refresh and re-splits whenever the
+language changes.
 
 The site picks its language from the visitor's browser and offers a switcher in
 the navigation that remembers the choice. English lives in the HTML, so an
@@ -86,7 +108,8 @@ node scripts/i18n-extract.mjs --missing es > gaps.json
 node scripts/i18n-merge.mjs batch.json   # merge {"english": {"es": "…", "it": "…"}}
 node scripts/i18n-build.mjs              # rebuild i18n/*.js   ← after every edit
 node scripts/i18n-build.mjs --check      # CI: fail if anything is untranslated
-node scripts/i18n-verify.mjs             # load all pages in Chromium, fail on leftovers
+node scripts/i18n-audit.mjs              # load AND switch, in Chromium — the decisive check
+node scripts/i18n-verify.mjs             # key-shape check (see blind spot above)
 ```
 
 After editing `data/i18n/*.json`, always run `i18n-build.mjs` — the browser reads

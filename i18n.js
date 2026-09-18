@@ -25,7 +25,11 @@
   var NAMES = { en: "EN", es: "ES", it: "IT" };
   var LABEL = { en: "English", es: "Español", it: "Italiano" };
   var DEFAULT = "en";
-  var VERSION = "v=104";
+  /* The cache key for /i18n/*.js. It has to be the one i18n-boot.js used for
+     the first load: a second, hand-maintained copy here silently went stale
+     and made every language switch fetch a months-old dictionary from cache,
+     leaving anything newer in English. Single source, stamped by the build. */
+  var VERSION = window.FDK_IV || "v=0";
 
   var current = (function () {
     var l = window.FDK_LANG;
@@ -538,7 +542,21 @@
 
   /* ---------- boot ---------- */
   buildSwitcher();
-  if (current !== DEFAULT) { walk(document.body); applyHead(); }
+  /* Walk on every language, English included. For English nothing changes on
+     screen — but the walk is what records each block's original markup as its
+     dictionary key, and it has to happen before the other scripts rewrite the
+     DOM (script.js splits headings into one span per word). Skipping it for
+     English meant an English visitor who then picked Español had every block
+     keyed by its already-split markup, which matches nothing in the
+     dictionary, so those blocks stayed in English. */
+  /* Keep the pristine English markup of the blocks script.js animates. It
+     splits them into one span per word, which destroys the text nodes this
+     engine translates through, so on a language switch there is nothing left
+     to translate from. Captured here, before the first walk, it is English in
+     every language. script.js puts it back before asking for a refresh. */
+  var rv = document.querySelectorAll("[data-reveal-text],[data-reveal-block],[data-highlight]");
+  for (var ri = 0; ri < rv.length; ri++) rv[ri].__i18nEN = rv[ri].innerHTML;
+  walk(document.body); applyHead();
   makeObserver();
   syncSwitcher();
 })();

@@ -110,9 +110,52 @@
     el.classList.add("r-block");
     el.appendChild(inner);
   }
+  /* Splitting replaces a heading's text node with one span per word, and the
+     i18n engine skips those spans — so once split, a heading can no longer be
+     translated. On first load that is harmless (i18n runs before this script),
+     but on a language switch it would freeze every heading in the previous
+     language. Keep the pre-split markup so the switch can put it back, let the
+     engine translate it, then split again. */
+  /* Undo a split so the element can be split again without nesting wrappers.
+     A block the engine re-translated comes back unsplit already, so this is
+     usually a no-op; a block with no translation keeps its spans and needs it. */
+  function unsplit(el) {
+    const ws = el.querySelectorAll(".r-word");
+    for (let i = ws.length - 1; i >= 0; i--) {
+      const w = ws[i], inner = w.firstChild, frag = document.createDocumentFragment();
+      while (inner && inner.firstChild) frag.appendChild(inner.firstChild);
+      w.parentNode.replaceChild(frag, w);
+    }
+    const b = el.firstElementChild;
+    if (b && b.className === "r-block__in") {
+      while (b.firstChild) el.insertBefore(b.firstChild, b);
+      el.removeChild(b);
+      el.classList.remove("r-block");
+    }
+    el.normalize();
+  }
+  const split = (el) =>
+    (el.hasAttribute("data-reveal-text") ? splitText : splitBlock)(el);
+
   if (!reduceMotion) {
     $$("[data-reveal-text]").forEach(splitText);
     $$("[data-reveal-block]").forEach(splitBlock);
+    /* On a language switch, put each animated block back to the English the
+       engine recorded before it was split, let the engine translate it afresh,
+       then split it again and keep it visible — it was already revealed. */
+    document.addEventListener("fdk:langchange", function () {
+      $$("[data-reveal-text],[data-reveal-block]").forEach((el) => {
+        if (el.__i18nEN !== undefined) {
+          el.classList.remove("r-block");
+          el.innerHTML = el.__i18nEN;
+        } else unsplit(el);
+      });
+      if (window.FDK_i18n) window.FDK_i18n.refresh();
+      $$("[data-reveal-text],[data-reveal-block]").forEach((el) => {
+        split(el);
+        el.classList.add("in");
+      });
+    });
   }
 
   /* ---------- Scroll reveal ---------- */
@@ -419,14 +462,27 @@
   /* ---------- Statement word highlight ---------- */
   const stmt = $("[data-highlight]");
   if (stmt && !reduceMotion) {
-    const words = stmt.textContent.trim().split(/\s+/);
-    stmt.textContent = "";
-    const spans = words.map((wd) => {
-      const s = document.createElement("span");
-      s.className = "hl";
-      s.textContent = wd + " ";
-      stmt.appendChild(s);
-      return s;
+    /* One span per word, and those spans are skipped by the i18n engine — so
+       rebuild them from the translated text whenever the language changes,
+       exactly as the animated headings do. */
+    let spans = [];
+    const paint = () => {
+      const words = stmt.textContent.trim().split(/\s+/);
+      stmt.textContent = "";
+      spans = words.map((wd) => {
+        const s = document.createElement("span");
+        s.className = "hl";
+        s.textContent = wd + " ";
+        stmt.appendChild(s);
+        return s;
+      });
+    };
+    paint();
+    document.addEventListener("fdk:langchange", function () {
+      if (stmt.__i18nEN !== undefined) stmt.innerHTML = stmt.__i18nEN;
+      if (window.FDK_i18n) window.FDK_i18n.refresh();
+      paint();
+      onStmt();
     });
     const onStmt = () => {
       const r = stmt.getBoundingClientRect();
