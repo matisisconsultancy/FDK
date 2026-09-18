@@ -3,724 +3,80 @@ title: Closing of the Day
 slug: closing-of-the-day
 date: September 17, 2026
 slot: The Close
-format: ai
+tag: Macro
+dek: The Fed hiked for the first time since 2023 — and technology **rallied anyway**, revealing that the AI Supercycle must now clear a ==rising productivity hurdle==.
+epigraph: The world now needs intelligence, capital and energy to compound faster than money grows expensive.
+excerpt: The Fed finally hiked, markets rallied, and the real signal is a rising productivity hurdle for the AI Supercycle.
 ---
-
-FDK
-
-Thursday, September 17, 2026
-
-THE PRODUCTIVITY HURDLE
 
 The Fed finally hiked. Markets rallied anyway.
 
 The S&P 500 gained 1.14%, the Nasdaq 1.69%, semiconductors more than 3%, while the U.S. 10-year retreated toward 4.95% and oil eased but remained above $100. Initial jobless claims fell to 196,000. The Bank of England refused to follow the Fed—for now—but warned inflation could exceed 4%. Tomorrow the Bank of Japan is expected to take rates to a 31-year high.
 
-Meanwhile, Crusoe raised $3.9 billion at a $30.9 billion valuation, CoreWeave sought another $3 billion of convertible capital, Applied Materials committed $5 billion to India, and GlobalFoundries and Marvell expanded AI-connectivity semiconductor capacity.
+The hidden message of September 17 is not that high rates no longer matter. It is that the AI Supercycle has raised the productivity hurdle it must clear. The world is moving into a regime in which intelligence, capital and energy must produce productivity faster than monetary tightening raises the cost of deploying them.
 
-The hidden message of September 17 is not that high rates no longer matter. It is that the AI Supercycle has raised the productivity hurdle it must clear.
+::stats
+3.75%–4.00% :: New fed funds target, first hike since July 2023
++1.14% :: S&P 500 to 7,637.74; Nasdaq +1.69%, semis +3%
+196,000 :: Initial jobless claims, lowest since mid-July
+~4.95% :: U.S. 10-year yield; mortgage rate at 6.95%
 
-The world is moving into a regime in which intelligence, capital and energy must produce productivity faster than monetary tightening raises the cost of deploying them.
+::pull THE PRODUCTIVITY HURDLE
+The AI Supercycle remains intact only when ==Δ productivity > Δ cost of capital==. Today's rally suggests investors still believe the numerator can win — but they are becoming far more selective about where.
 
-⸻
+::section The Fed Hiked. Technology Rallied. That Is the Signal. | Part I
+Yesterday the Federal Reserve raised its policy rate by 25 basis points to 3.75%–4.00%, its first increase since July 2023. The decision was unanimous. Sixteen of eighteen policymakers foresee at least one further quarter-point increase before year-end. Fed Chair Kevin Warsh emphasized both persistent inflation and the continuing strength of the economy.
 
-PART I — THE FED HIKED. TECHNOLOGY RALLIED. THAT IS THE SIGNAL.
+Twenty-four hours later, Wall Street delivered a decisive verdict. The Dow gained 0.62% to 51,779.85, the S&P 500 rose 1.14% to 7,637.74, and the Nasdaq surged 1.69% to 26,418.30. Technology led every major S&P sector. This was not a return to easy money. The market absorbed the first Fed hike — and immediately returned to the productivity trade.
 
-The Fundamental Question
+::signals The Signals of September 17 | five reads on the tape
+# The Fed Has Crossed From Pause to Tightening Cycle
+Markets now assign roughly a 53% probability of another 25-basis-point increase at the October meeting, up from about 27% a week ago. The first AI Supercycle was financed in a world expecting rates to normalize downward. The next phase is being built where the opposite assumption may be necessary.
+signal: Capital must now earn its return despite expensive money — and that changes the selection mechanism.
 
-What if the decisive variable for the next phase of the AI Supercycle is no longer the level of interest rates—but whether AI productivity can compound faster than the hurdle rate rises?
+# The Labor Market Gave the Fed Permission to Keep Going
+Initial claims fell 10,000 to 196,000, far below the 208,000 consensus, with the four-week average at 203,250 and continuing claims at 1.73 million, the lowest since January 2024. This follows August payroll growth of 162,000 and unemployment of 4.1%.
+signal: The Fed need not choose between inflation and employment — so the question shifts to how many hikes productivity can absorb.
 
-Yesterday the Federal Reserve raised its policy rate by 25 basis points to 3.75%–4.00%, its first increase since July 2023. The decision was unanimous. Sixteen of eighteen policymakers submitting rate projections expect at least one further quarter-point increase before year-end. Fed Chair Kevin Warsh emphasized both persistent inflation and the continuing strength of the economy. 
+# Oil Fell, But the Energy Constraint Did Not Disappear
+Brent settled about 1% lower but stayed above $100 as Saudi Arabia routed additional crude through Oman following the East-West pipeline attack. Crude remains roughly 50% above pre-war levels, diesel near record highs, jet fuel roughly doubled since February, and European gas at its highest since 2022.
+signal: Rerouting has reduced the scarcity premium — it has not eliminated scarcity.
 
-Twenty-four hours later, Wall Street delivered a surprisingly decisive verdict.
+# The BoE Confirmed the Energy Shock Is Now a Global Rate Shock
+The Bank of England held at 3.75% on a 6–3 vote but warned inflation could exceed 4% early next year and signaled rates may need to rise. It also paused gilt sales for six months and will permanently stop selling its longest-dated holdings.
+signal: Central banks are tightening the price of money while trying not to destabilize the market for money.
 
-The Dow gained 0.62% to 51,779.85.
+# The Market Bought Semiconductors After the Hike
+Semiconductors gained more than 3% and technology led the tape — a sharp reversal from Monday's semiconductor selloff. Investors are differentiating AI capacity without economics from AI capacity with productivity and scarcity value.
+signal: Investors are not abandoning the physical AI stack because rates are higher — they are demanding a higher return from it.
 
-The S&P 500 rose 1.14% to 7,637.74.
+::section Where Global Capital Is Moving | Part II
+Thursday delivered an unusually clean capital map. Money moved toward AI infrastructure, semiconductor capacity, India, distributed computing and connectivity — companies capable of turning capital into usable intelligence. But the deals also reveal that AI's capital intensity is still rising.
 
-The Nasdaq surged 1.69% to 26,418.30.
+Crusoe raised $3.9 billion at a $30.9 billion post-money valuation, joining the expanding class of AI-native "neoclouds" forming beneath the hyperscalers. NVIDIA-backed CoreWeave announced $3 billion of convertible financing, its shares falling 4.2% as investors absorbed the requirement — nearly $7 billion of new financing around two infrastructure providers in a single day. That is the Supercycle's paradox in miniature: demand is extraordinary, and so is demand for capital.
 
-Semiconductors advanced more than 3%. Technology led every major S&P sector. 
+Applied Materials committed $5 billion to India over the next decade, assembling another node in a semiconductor network now stretching across Taiwan, Korea, Japan, the United States and India. GlobalFoundries and Marvell expanded their agreement to lift capacity for AI data-center connectivity, confirming that the bottleneck keeps migrating — from GPUs to HBM to power to optics and networking. The productive unit is no longer the chip; it is the cluster, and eventually the AI factory.
 
-This was not a return to easy money.
+::patterns The Wider Constraint Map | pressure points beyond the chip
+# Europe's Winter Gas Problem
+European TTF gas has risen from roughly €30/MWh to around €80/MWh. Executives warn LNG prices could spike as European buyers compete with North Asia while Hormuz stays impaired. Europe's AI ambitions cannot be separated from energy policy; the metric is productivity per secure megawatt-hour.
 
-It was something more interesting.
+# [€800B] EU Bonds as a Safe Asset
+The European Commission will push for EU-issued bonds — already the third-largest triple-A market globally — to join major sovereign indexes. Deeper common capital markets could finance defense, AI, grids and industrial transformation, and advance euro internationalization.
 
-The market absorbed the first Fed hike—and immediately returned to the productivity trade.
+# Permission Becomes an Input
+Silicon Valley faces rising local resistance to data centers over electricity, water and pollution. The constraint sequence has moved from chip to memory to network to power to grid to land to permission — and time to permission now belongs inside the capital-return model.
 
-⸻
+# The 5% Housing Split
+Single-family starts jumped 7.6% in August, but permits fell 1.8% and pending sales sat 4.7% below a year earlier, with mortgage rates at 6.95%. Strategic capex rises while rate-sensitive ordinary capex falls — the Great Split becoming a capital-allocation split.
 
-SIGNAL 1 — THE FED HAS CROSSED THE LINE FROM PAUSE TO TIGHTENING CYCLE
+::pull THE NEW SCREEN
+The critical metric is now the **productivity spread**: expected return from AI-driven productivity minus the marginal cost of capital. At 2% risk-free, a mediocre AI project could still create value. ==At 5%, it cannot.==
 
-Yesterday’s increase matters less than what comes next.
+::takeaways Key takeaways | the productivity regime
+- The decisive variable is no longer the level of rates, but whether AI productivity can compound faster than the hurdle rate rises.
+- Capital is available — but becoming more expensive, more selective and more strategic.
+- Central banks face one balancing act: raise the hurdle rate without breaking capital formation.
+- Distinguish AI cash flow and contracted utilization from capacity built against future expectations.
 
-Financial markets now assign roughly a 53% probability of another 25-basis-point increase at the October meeting, compared with only about 27% a week ago. The Fed’s own projections are less aggressive, but 16 of 18 policymakers foresee at least another hike this year. 
-
-That gives us a new monetary-policy baseline:
-
-FED FUNDS: 3.75%–4.00%
-
-with:
-
-MORE TIGHTENING POSSIBLE.
-
-The first AI Supercycle was financed in a world in which investors expected rates eventually to normalize downward.
-
-The next phase is being built in a world where the opposite assumption may be necessary.
-
-Capital must earn its return despite expensive money.
-
-That changes the selection mechanism.
-
-⸻
-
-SIGNAL 2 — THE LABOR MARKET GAVE THE FED PERMISSION TO KEEP GOING
-
-Initial U.S. unemployment claims unexpectedly fell 10,000 to 196,000, their lowest since mid-July and far below the 208,000 consensus. The four-week average fell to 203,250, while continuing claims dropped to 1.73 million, their lowest since January 2024. Reuters notes holiday-related seasonal noise, but the underlying labor market still appears stable. 
-
-This follows August payroll growth of 162,000 and unemployment of 4.1%.
-
-The significance is straightforward.
-
-The Fed does not currently need to choose between inflation and employment.
-
-That gives Warsh more freedom to attack inflation.
-
-And it moves the relevant market question away from:
-
-Can the economy survive one hike?
-
-toward:
-
-HOW MANY HIKES CAN PRODUCTIVITY ABSORB?
-
-That is the new equation.
-
-⸻
-
-SIGNAL 3 — OIL FELL. THE ENERGY CONSTRAINT DID NOT DISAPPEAR.
-
-Oil eased again Thursday as Saudi Arabia found ways to move additional crude through Oman following the attack on its East-West pipeline.Brent settled about 1% lower but remained above $100 per barrel. 
-
-That distinction matters.
-
-The network is adapting.
-
-Saudi barrels are finding another route.
-
-That validates the Network Resilience framework we developed earlier this week.
-
-But the underlying energy system remains constrained.
-
-Reuters notes that crude remains roughly 50% above pre-war levels, diesel is close to record highs, jet fuel has approximately doubled since February, and European natural gas is at its highest since 2022. 
-
-So today’s relief should not be confused with normalization.
-
-Rerouting has reduced the scarcity premium.
-
-It has not eliminated scarcity.
-
-⸻
-
-SIGNAL 4 — THE BANK OF ENGLAND CONFIRMED THAT THE ENERGY SHOCK HAS BECOME A GLOBAL RATE SHOCK
-
-The Bank of England held its policy rate at 3.75%, voting 6–3.
-
-But it warned that inflation could rise above 4% early next year, and explicitly signaled that rates may need to rise if the Middle East conflict continues. 
-
-The Bank also changed the mechanics of quantitative tightening: it will pause gilt sales for six months, permanently stop selling its longest-dated holdings, and slow the longer-term pace of balance-sheet reduction. 
-
-This is revealing.
-
-Central banks are simultaneously trying to:
-
-TIGHTEN THE PRICE OF MONEY
-
-while avoiding:
-
-DESTABILIZING THE MARKET FOR MONEY.
-
-That distinction will matter enormously.
-
-The world needs trillions of dollars for:
-
-AI;
-
-grids;
-
-energy;
-
-defense;
-
-housing;
-
-industrial infrastructure.
-
-Central banks can fight inflation.
-
-But they cannot allow the transmission mechanism of capital formation itself to break.
-
-⸻
-
-SIGNAL 5 — THE MARKET BOUGHT SEMICONDUCTORS AFTER THE HIKE
-
-Perhaps the most important market signal today was inside the equity tape.
-
-Technology led the S&P 500.
-
-Semiconductors gained more than 3%.
-
-The Nasdaq rose 1.69%. 
-
-That is particularly notable after Monday’s sharp semiconductor selloff.
-
-The market appears to be differentiating between:
-
-AI CAPACITY WITHOUT ECONOMICS
-
-and
-
-AI CAPACITY WITH PRODUCTIVITY AND SCARCITY VALUE.
-
-Today’s semiconductor rally suggests investors are not abandoning the physical AI stack because rates are higher.
-
-They are asking for a higher return from it.
-
-That distinction is fundamental.
-
-⸻
-
-THE HIDDEN PATTERN — THE PRODUCTIVITY HURDLE
-
-For most of the last three years, the AI investment equation looked like this:
-
-AI CAPABILITY ↑
-
-→ CAPEX ↑
-→ CAPACITY ↑
-→ EXPECTED PRODUCTIVITY ↑
-→ VALUATION ↑
-
-The denominator was secondary.
-
-That world is gone.
-
-The new equation is:
-
-AI PRODUCTIVITY VELOCITY
-
-versus
-
-HURDLE-RATE VELOCITY.
-
-On one side:
-
-better models;
-
-cheaper inference;
-
-agents;
-
-automation;
-
-Industrial AI;
-
-higher utilization;
-
-more output per worker;
-
-more output per unit of capital.
-
-On the other:
-
-oil above $100;
-
-expensive electricity;
-
-Fed tightening;
-
-ECB tightening;
-
-possible BoE tightening;
-
-a BOJ hike;
-
-higher sovereign yields;
-
-higher corporate credit costs.
-
-The AI Supercycle remains intact only when:
-
-Δ PRODUCTIVITY > Δ COST OF CAPITAL.
-
-That is the central market equation now.
-
-And today’s rally suggests investors still believe the numerator can win.
-
-But they are becoming much more selective about where.
-
-⸻
-
-PART II — WHERE GLOBAL CAPITAL IS MOVING
-
-FROM AI PROMISE TO PRODUCTIVITY INFRASTRUCTURE
-
-Thursday delivered an unusually clean capital map.
-
-Money moved toward:
-
-AI infrastructure;
-
-semiconductor capacity;
-
-India;
-
-distributed computing;
-
-connectivity;
-
-and companies capable of turning capital into usable intelligence.
-
-But today’s deals also reveal something else:
-
-AI’S CAPITAL INTENSITY IS STILL RISING.
-
-⸻
-
-1 — CRUSOE: $3.9 BILLION AT $30.9 BILLION
-
-AI-infrastructure provider Crusoe raised:
-
-$3.9 BILLION
-
-at a post-money valuation of:
-
-$30.9 BILLION.
-
-Crusoe began in cryptocurrency infrastructure before pivoting toward AI and is now part of the rapidly expanding class of specialized AI “neoclouds.” 
-
-This is an important signal.
-
-The hyperscalers are not absorbing all AI infrastructure demand.
-
-A second infrastructure layer is forming beneath them.
-
-AWS.
-
-Azure.
-
-Google Cloud.And increasingly:
-
-AI-NATIVE COMPUTE PROVIDERS.
-
-That increases competition.
-
-But it also increases capital requirements.
-
-⸻
-
-2 — COREWEAVE: ANOTHER $3 BILLION OF CONVERTIBLE CAPITAL
-
-NVIDIA-backed CoreWeave announced plans Thursday to raise:
-
-$3 BILLION
-
-through convertible debt.
-
-Its shares fell 4.2% on the day as investors absorbed the financing requirement. 
-
-Put CoreWeave beside Crusoe.
-
-In a single day:
-
-Crusoe: +$3.9B equity capital
-
-CoreWeave: +$3B convertible capital sought
-
-Almost:
-
-$7 BILLION
-
-of new financing around two AI-infrastructure providers.
-
-That is the Supercycle’s paradox in miniature.
-
-Demand is extraordinary.
-
-But demand for capital is extraordinary too.
-
-The critical metric is therefore becoming:
-
-CASH FLOW PER DOLLAR OF AI INFRASTRUCTURE.
-
-⸻
-
-3 — APPLIED MATERIALS: $5 BILLION MOVES INTO INDIA
-
-Applied Materials announced plans to invest:
-
-$5 BILLION IN INDIA OVER THE NEXT DECADE
-
-to expand its semiconductor presence. 
-
-This is strategically larger than another corporate investment announcement.
-
-India is assembling another node in the global semiconductor network.
-
-That matters after the lessons of the last week.
-
-Taiwan concentration.
-
-Chinese export restrictions.
-
-Critical-material scarcity.
-
-Geopolitical chokepoints.
-
-Capital increasingly wants multiple productive geographies.
-
-India offers:
-
-engineering talent;
-
-domestic demand;
-
-industrial policy;
-
-geopolitical optionality;
-
-and an increasingly ambitious semiconductor ecosystem.
-
-The architecture becomes:
-
-TAIWAN
-
-KOREA
-
-JAPAN
-
-UNITED STATES
-
-INDIA
-
-rather than a single concentrated semiconductor geography.
-
-That is network resilience translated into capex.
-
-⸻
-
-4 — GLOBALFOUNDRIES × MARVELL: THE BOTTLENECK MOVES TO CONNECTIVITY
-
-GlobalFoundries and Marvell expanded their manufacturing agreement Thursday to increase production capacity for semiconductors used in AI data-center connectivity. 
-
-This matters because the AI bottleneck keeps moving.
-
-First:
-
-GPUs.
-
-Then:
-
-HBM.
-
-Then:
-
-power.
-
-Then:
-
-optics and networking.
-
-The more processors a data center contains, the more economically valuable the fabric connecting them becomes.
-
-The productive unit is no longer:
-
-THE CHIP.
-
-It is increasingly:
-
-THE CLUSTER.
-
-And eventually:
-
-THE AI FACTORY.
-
-That means capital will keep propagating outward from accelerated computing into every layer required to keep the factory operating at high utilization.
-
-⸻
-
-5 — EUROPE’S WINTER GAS PROBLEM IS BECOMING AN INDUSTRIAL-COMPETITIVENESS PROBLEM
-
-Europe enters the coming winter with unusually low gas inventories.
-
-Industry executives warned Thursday that global LNG prices could rise sharply as European buyers compete with North Asia while Hormuz remains impaired. 
-
-European TTF gas prices have risen from roughly €30/MWh to around €80/MWh during the crisis. 
-
-That has direct implications for Industrial AI.
-
-Europe wants:
-
-AI gigafactories;
-
-semiconductor fabs;
-
-battery plants;
-
-defense factories;
-
-electrified mobility;
-
-hydrogen;
-
-advanced manufacturing.
-
-Every one requires abundant energy.
-
-The European AI equation therefore cannot be:
-
-AI POLICY
-
-separate from:
-
-ENERGY POLICY.
-
-The relevant metric is increasingly:
-
-PRODUCTIVITY PER SECURE MEGAWATT-HOUR.
-
-Europe’s competitive disadvantage will widen if its energy system remains structurally more expensive than America’s or China’s.
-
-⸻
-
-6 — THE EU WANTS TO TURN €800 BILLION OF DEBT INTO A CAPITAL-MARKET ASSET
-
-The European Commission said Thursday it will push for EU-issued bonds to be included in major global sovereign-bond indexes.
-
-Approximately:
-
-€800 BILLION
-
-of EU bonds are already outstanding.
-
-That makes the EU the second-largest triple-A debt market in Europe and the third-largest globally, according to the Commission. 
-
-This could become strategically important.
-
-Europe needs a deeper common capital market to finance:
-
-defense;
-
-AI infrastructure;
-
-energy;
-
-grids;
-
-transport;
-
-industrial transformation.
-
-EU bonds could increasingly become the missing continental safe asset.
-
-The recursive architecture would be:
-
-EU BONDS→ GLOBAL INSTITUTIONAL DEMAND
-→ LOWER LIQUIDITY PREMIUM
-→ LARGER COMMON CAPITAL POOL
-→ INFRASTRUCTURE
-→ PRODUCTIVITY
-→ EURO INTERNATIONALIZATION.
-
-Europe’s AI problem is partly technological.
-
-It is also financial architecture.
-
-⸻
-
-7 — THE DATA-CENTER BOOM IS NOW HITTING ITS POLITICAL CONSTRAINT
-
-Silicon Valley is encountering increasing local resistance to AI data-center development over:
-
-electricity;
-
-water;
-
-pollution;
-
-and infrastructure burdens. 
-
-This confirms another thesis developed throughout this Closing series.
-
-The AI constraint sequence has moved from:
-
-CHIP
-
-→ MEMORY
-→ NETWORK
-→ POWER
-→ GRID
-→ LAND
-→ PERMISSION.
-
-Permission is now becoming a productive input.
-
-A theoretically perfect AI site with no social or political license is worth zero.
-
-The competitive advantage of a city, region or country therefore increasingly includes:
-
-TIME TO PERMISSION.
-
-That belongs inside the capital-return model.
-
-⸻
-
-8 — THE HOUSING MARKET SHOWS THE OTHER SIDE OF THE 5% WORLD
-
-U.S. single-family housing starts jumped 7.6% in August.
-
-But permits for future single-family construction fell 1.8%, overall housing permits declined 2.7%, and pending home sales remained 4.7% below year-earlier levels.
-
-The 30-year mortgage rate has risen to 6.95%, its highest since January 2025. 
-
-This is an important counterweight to the AI boom.
-
-Capital is flowing massively into:
-
-data centers;
-
-semiconductors;
-
-energy;
-
-defense.
-
-But higher rates are simultaneously suppressing capital formation in:
-
-housing;
-
-consumer durables;
-
-smaller businesses.
-
-The Great Split is therefore becoming a capital-allocation split.
-
-STRATEGIC CAPEX ↑
-
-while:
-
-RATE-SENSITIVE ORDINARY CAPEX ↓.
-
-That can support GDP while increasing inequality between sectors, companies and households.
-
-⸻
-
-9 — THE BANK OF ENGLAND SHOWED HOW CENTRAL BANKS CAN PROTECT THE TRANSMISSION MECHANISM
-
-The BoE held rates at 3.75% while warning inflation could exceed 4%.
-
-But simultaneously it announced a slower unwinding of its enormous gilt portfolio and paused active sales for six months. 
-
-This is subtle but important.
-
-The Bank is separating:
-
-MONETARY TIGHTENING
-
-from:
-
-MARKET-LIQUIDITY TIGHTENING.
-
-That may become increasingly relevant globally.
-
-Central banks need to raise rates to control inflation.
-
-But sovereigns simultaneously need enormous amounts of capital for:
-
-defense;
-
-energy;
-
-AI;
-
-infrastructure.
-
-The policy challenge will increasingly be:
-
-RAISE THE HURDLE RATE WITHOUT BREAKING CAPITAL FORMATION.
-
-That is an extraordinarily difficult balancing act.
-
-⸻
-
-10 — THE CAPITAL MAP OF SEPTEMBER 17
-
-Today’s numbers belong together:
-
-Crusoe: $3.9B new capital.
-
-Crusoe valuation: $30.9B.
-
-CoreWeave: $3B convertible financing.
-
-Applied Materials India: $5B.
-
-EU bonds outstanding: ~€800B.
-
-Fed funds: 3.75%–4.00%.
-
-U.S. 10Y: ~4.95%.
-
-Mortgage rate: 6.95%.
-
-European TTF gas: ~€80/MWh.
-
-They describe one system.
-
-CAPITAL IS AVAILABLE.
-
-But capital is becoming:
-
-more expensive;
-
-more selective;
-
-more strategic.
-
-That means the winners increasingly need to demonstrate:
-
-PRODUCTIVITY PER DOLLAR OF CAPITAL.
-
-⸻
-
-FOR INVESTORS — THE NEW SCREEN IS PRODUCTIVITY SPREAD
-
-The critical investment metric should now become:
-
-PRODUCTIVITY SPREAD
-
-defined conceptually as:
-
-expected return from AI-driven productivity
-
-minus
-
-marginal cost of capital.
-
-At a 2% risk-free rate, a mediocre AI project could still create financial value.
-
-At 5%, it cannot.
-
-Investors should increasingly distinguish:
-
-AI companies producing cash flow;
-
-AI infrastructure with contracted utilization;
-
-power assets with contracted demand;
-
-from:
-
-AI capacity built primarily against future expectations.
-
-The next Great Split is inside AI itself.
+::close The next Great Split is ==inside AI itself== — and the winners must prove productivity per dollar of capital.

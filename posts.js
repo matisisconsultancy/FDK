@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-orchestration-premium",
+    title: "The Orchestration Premium",
+    excerpt: "Four developments, one system: the competitive bottleneck is migrating from intelligence itself toward the orchestration of everything intelligence requires.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/17-september-2026",
     title: "17 September 2026",
     excerpt: "Two signals — Spain rationing grid capacity and a $22B AI loan backed by European banks — redraw the European AI challenge.",
