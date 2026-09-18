@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/18-september-2026-provisional-nowcast",
+    title: "18 September 2026: Provisional Nowcast",
+    excerpt: "The GVI holds at 108.0 as the Bank of Japan joins the Fed and ECB in tightening, reframing the AI Supercycle around returns.",
+    tag: "FDK Global Velocity Index · Macro",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-execution-premium",
     title: "The Execution Premium",
     excerpt: "In Italy's banking Risiko, the market is now pricing the path to closing, not the presentation.",
