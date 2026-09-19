@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-proof-premium",
+    title: "The Proof Premium",
+    excerpt: "Anthropic and Accenture commit $2B to AI evaluation, Nscale's contracts hit $103B against a $1.02B loss, Oracle's Jupiter debt trades below par, and Volkswagen resets to a 1% margin.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/19-september-2026-provisional-nowcast",
     title: "19 September 2026: Provisional Nowcast",
     excerpt: "No country clears all four GVI admission thresholds today, but the system beneath the number is entering an underwriting-and-verification regime.",
