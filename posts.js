@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-corridors",
+    title: "Europe’s AI Corridors",
+    excerpt: "Which European corridors can convert compute, energy and capital into self-reinforcing economic velocity — and which have the greatest upside from here.",
+    tag: "The Global View · Capital",
+    slot: "The Global View",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/gvi-countries-rankings-in-focus",
     title: "GVI Countries Rankings: In Focus",
     excerpt: "Which countries are turning accelerated computing, energy, capital and AI into productivity faster than the rest of the world?",
