@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/19-september-2026-provisional-nowcast",
+    title: "19 September 2026: Provisional Nowcast",
+    excerpt: "No country clears all four GVI admission thresholds today, but the system beneath the number is entering an underwriting-and-verification regime.",
+    tag: "FDK Global Velocity Index · Capital",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/18-september-2026-executive-synthesis",
     title: "18 September 2026: Executive Synthesis",
     excerpt: "Central banks tighten as AI turns physical — the market's new dividing line is productive capital versus capital that cannot clear the hurdle rate.",
