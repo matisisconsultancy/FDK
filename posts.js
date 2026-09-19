@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-scale",
+    title: "The Price of Scale",
+    excerpt: "The industrial architecture behind the Italian banking battle is becoming visible.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-quality-of-scale",
     title: "The Quality of Scale",
     excerpt: "The index-level calm at Friday's close masks a consequential repricing of what kind of scale deserves capital.",
