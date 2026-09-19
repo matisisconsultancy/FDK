@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-countries-rankings-in-focus",
+    title: "GVI Countries Rankings: In Focus",
+    excerpt: "Which countries are turning accelerated computing, energy, capital and AI into productivity faster than the rest of the world?",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/global-cities-ranking-19-september-2026",
     title: "Global Cities Ranking: 19 September 2026",
     excerpt: "Communities are starting to demand a direct economic return for surrendering electricity, water, land and infrastructure to AI.",
