@@ -126,7 +126,16 @@ const READ = () => {
   });
   /* Each value on its own as well, so a short label can be compared whole —
      a substring search would match "Home" inside a sentence. */
-  return { blob: parts.join(" ~ "), nodes: parts };
+  return {
+    blob: parts.join(" ~ "), nodes: parts,
+    /* The switcher itself. A page can be perfectly translated and still be
+       unusable if the control is missing, and a page can carry the control
+       while having no dictionary of its own to switch into. */
+    switcher: [...document.querySelectorAll("#langSwitch .lang-switch__btn")]
+      .map((b) => b.getAttribute("data-lang")).join(","),
+    dict: window.FDK_I18N && window.FDK_I18N[window.FDK_LANG]
+      ? Object.keys(window.FDK_I18N[window.FDK_LANG]).length : 0,
+  };
 };
 
 const hits = (text, probes) => {
@@ -168,6 +177,7 @@ const shortHits = (nodes, map) => {
 };
 
 const findings = [];
+const pageDict = new Map();
 const badVersion = new Set();
 const record = (kind, lang, url, list, via) => {
   for (const s of list) findings.push({ kind, lang, url, via, text: s });
@@ -185,6 +195,10 @@ for (const u of urls) {
     await pg.goto(base + u + "?lang=" + lang, { waitUntil: "load" });
     await pg.waitForTimeout(400);
     const r = await pg.evaluate(READ);
+    if (r.switcher !== "en,es,it")
+      findings.push({ kind: "switcher", lang, url: u, via: "load",
+        text: `language switcher missing or incomplete: [${r.switcher}]` });
+    pageDict.set(u, Math.max(pageDict.get(u) || 0, r.dict));
     const t = " " + words(r.blob) + " ";
     record("english", lang, u, hits(t, P[lang]), "load");
     record("english", lang, u, shortHits(r.nodes, SHORT[lang]), "load/short");
@@ -213,6 +227,20 @@ for (const u of urls) {
 }
 await browser.close(); server.close();
 
+/* A page whose dictionary is barely larger than the shared one has no copy of
+   its own translated — the switcher works but the article stays English, which
+   is what a newly published note looks like. The English check cannot catch
+   that on its own: it probes for strings that HAVE a translation, so a note
+   with none produces no probes at all.
+   The dashboards are the honest exception — everything they show is rendered
+   at runtime, so their strings legitimately live in the shared dictionary. */
+const RUNTIME_PAGES = new Set(["/", "/gvi/", "/markets/"]);
+const common = Math.min(...[...pageDict.values()]);
+for (const [u, n] of pageDict)
+  if (n <= common + 2 && !RUNTIME_PAGES.has(u))
+    findings.push({ kind: "nodict", lang: "es/it", url: u, via: "load",
+      text: `only ${n} strings loaded (shared dictionary is ${common}) — the page has no translations of its own` });
+
 const group = new Map();
 for (const f of findings) {
   const k = `${f.kind} · ${f.lang} · ${f.via} · ${f.url}`;
@@ -232,5 +260,7 @@ console.log(`\n${urls.length} URLs · direct load in es/it · switch en→es→i
 console.log(`  english  ${count("english")}   source text still visible in es/it`);
 console.log(`  crossed  ${count("crossed")}   one language's text on the other's page`);
 console.log(`  stale    ${count("stale")}   es/it text left behind after returning to English`);
+console.log(`  switcher ${count("switcher")}   pages missing the EN/ES/IT control`);
+console.log(`  nodict   ${count("nodict")}   pages with no translations of their own`);
 console.log(`  version  ${badVersion.size}   dictionaries requested with a stale ?v=`);
 process.exit(findings.length + badVersion.size ? 1 : 0);

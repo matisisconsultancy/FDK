@@ -52,6 +52,29 @@ jobs:
           echo "--- strings awaiting translation ---"
           node scripts/i18n-extract.mjs
 
+      # Publishing never waits for translation, but it must not be silent about
+      # it either: until a note is translated it renders in English whichever
+      # language the reader picks, which looks like a broken switcher. Surface
+      # the count on the run summary instead of burying it in the log.
+      - name: Report untranslated notes
+        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        run: |
+          if node scripts/i18n-build.mjs --check > /tmp/i18n-check.txt 2>&1; then
+            echo "### Translations complete" >> "$GITHUB_STEP_SUMMARY"
+            echo "Every string on the new note is already in ES and IT." >> "$GITHUB_STEP_SUMMARY"
+          else
+            MISSING=$(grep -oE 'MISSING [0-9]+' /tmp/i18n-check.txt | head -1 | grep -oE '[0-9]+')
+            echo "::warning title=Note published in English::${MISSING:-some} strings still need ES/IT translation. Until then the language switcher changes the shell but leaves the article in English."
+            {
+              echo "### :warning: Published in English"
+              echo ""
+              echo "**${MISSING:-Some} strings** on the new note have no Spanish or Italian yet."
+              echo "The switcher will change the navigation and dates but leave the article in English."
+              echo ""
+              echo "To finish it: translate the strings, run \`node scripts/i18n-build.mjs\`, and push."
+            } >> "$GITHUB_STEP_SUMMARY"
+          fi
+
       - name: Commit and push
         if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
         run: |

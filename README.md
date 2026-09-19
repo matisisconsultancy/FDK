@@ -60,7 +60,10 @@ others have a blind spot that let real mixing through:
   left behind after returning to English, and any dictionary requested
   with a stale `?v=`. Strings under four words are compared as whole
   values rather than searched for, so a nav label is covered without
-  "Home" matching inside a sentence.
+  "Home" matching inside a sentence. It also checks that the EN/ES/IT
+  control is actually on the page, and that the page has a dictionary of
+  its own — a **newly published note has neither translations nor probes**,
+  so the English check alone cannot see it.
 - `node scripts/i18n-lint.mjs` — checks the translations themselves,
   which the audit cannot: it only sees whether a string changed
   language, not whether the same idea is worded the same way on every
@@ -131,6 +134,16 @@ the generated files, not the JSON.
 
 To keep a name in English everywhere (a company, a book title, an FDK concept),
 add it to `data/i18n/no-translate.json` rather than mapping it to itself.
+
+### A newly published note is English until someone translates it
+
+`publish-drafts.yml` puts a note live immediately and rebuilds the
+dictionaries, but nothing translates new copy. Until it is translated the
+note renders in English whichever language the reader picks — the switcher
+changes the navigation, dates and footer around an English article, which
+reads as a broken switcher rather than as missing translation. The workflow
+now says so on the run summary with the count of strings still waiting, so
+it is visible instead of buried in the log.
 
 ## 🚀 Run locally
 
