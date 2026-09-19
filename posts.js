@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/19-september-2026",
+    title: "19 September 2026",
+    excerpt: "As AI moves onto the U.S.–China negotiating table, the unit of competition shifts from models to entire systems.",
+    tag: "U.s. · AI Geopolitics",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/september-19",
     title: "September 19",
     excerpt: "MPS's defence hardens into an industrial plan as Brussels turns pro-scale and Generali moves to the centre of gravity.",
