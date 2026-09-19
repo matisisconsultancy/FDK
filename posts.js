@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/central-banks-ai-watch",
+    title: "Central Banks & AI Watch",
+    excerpt: "The AI Supercycle is producing a monetary paradox as central banks confront a rising neutral rate during the build-out phase.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/19-september-2026",
     title: "19 September 2026",
     excerpt: "As AI moves onto the U.S.–China negotiating table, the unit of competition shifts from models to entire systems.",
