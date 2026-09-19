@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-cities-ranking-19-september-2026",
+    title: "Global Cities Ranking: 19 September 2026",
+    excerpt: "Communities are starting to demand a direct economic return for surrendering electricity, water, land and infrastructure to AI.",
+    tag: "GVI Global Cities Signature Survey · Urban Velocity",
+    slot: "GVI Global Cities Signature Survey",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-acceleration-trap",
     title: "The Acceleration Trap",
     excerpt: "The era of unconstrained AI is ending — and the next divide runs through the AI economy itself.",
