@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-acceleration-trap",
+    title: "The Acceleration Trap",
+    excerpt: "The era of unconstrained AI is ending — and the next divide runs through the AI economy itself.",
+    tag: "Quick Take · Capital",
+    slot: "Quick Take",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/central-banks-ai-watch",
     title: "Central Banks & AI Watch",
     excerpt: "The AI Supercycle is producing a monetary paradox as central banks confront a rising neutral rate during the build-out phase.",
