@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/september-19",
+    title: "September 19",
+    excerpt: "MPS's defence hardens into an industrial plan as Brussels turns pro-scale and Generali moves to the centre of gravity.",
+    tag: "The Italian Banking Tipping Point · Capital",
+    slot: "The Italian Banking Tipping Point",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-scale",
     title: "The Price of Scale",
     excerpt: "The industrial architecture behind the Italian banking battle is becoming visible.",
