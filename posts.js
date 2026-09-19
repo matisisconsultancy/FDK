@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-quality-of-scale",
+    title: "The Quality of Scale",
+    excerpt: "The index-level calm at Friday's close masks a consequential repricing of what kind of scale deserves capital.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-proof-premium",
     title: "The Proof Premium",
     excerpt: "Anthropic and Accenture commit $2B to AI evaluation, Nscale's contracts hit $103B against a $1.02B loss, Oracle's Jupiter debt trades below par, and Volkswagen resets to a 1% margin.",
