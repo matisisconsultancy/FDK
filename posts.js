@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/20-september-2026-provisional-nowcast",
+    title: "20 September 2026: Provisional Nowcast",
+    excerpt: "The GVI holds at 108.0 as France slips to 81.4 and the AI Supercycle's governing constraint shifts from access to absorption.",
+    tag: "FDK Global Velocity Index · Capital",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-corridors",
     title: "Europe’s AI Corridors",
     excerpt: "Which European corridors can convert compute, energy and capital into self-reinforcing economic velocity — and which have the greatest upside from here.",
