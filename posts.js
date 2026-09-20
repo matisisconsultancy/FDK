@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/material-inflection-detected",
+    title: "Material Inflection Detected",
+    excerpt: "China's central bank warns AI may deepen excess supply rather than stoke inflation, splitting the world into distinct monetary regimes.",
+    tag: "Central Banks & AI Watch · Macro",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-governance-premium",
     title: "The Governance Premium",
     excerpt: "Weekend reporting reveals the governance architecture behind the MPS defence, shifting the Italian Risiko from scale to control.",
