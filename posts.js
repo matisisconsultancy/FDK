@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-velocity-index-country-rankings",
+    title: "Global Velocity Index: Country Rankings",
+    excerpt: "The Global Velocity Index ranks which economies convert AI, capital, energy and industry into acceleration fastest.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/20-september-2026",
     title: "20 September 2026",
     excerpt: "With the 10-year Treasury testing 5% and oil above $100, the AI race is no longer about building intelligence but making it pay.",
