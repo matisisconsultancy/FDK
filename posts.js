@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-morning-view-quick-take",
+    title: "The Morning View: Quick Take",
+    excerpt: "The AI contest has moved from best model to best terms of access — and that final step is now decisive.",
+    tag: "Morning View · Strategy",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-assurance-stack",
     title: "The Assurance Stack",
     excerpt: "Gemini crosses a cyber boundary, Anthropic moves AI into a wet lab, and Nippon Life readies $12.75B for AI infrastructure—three signals of one shift.",
