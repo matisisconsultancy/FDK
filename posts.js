@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-assurance-stack",
+    title: "The Assurance Stack",
+    excerpt: "Gemini crosses a cyber boundary, Anthropic moves AI into a wet lab, and Nippon Life readies $12.75B for AI infrastructure—three signals of one shift.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/20-september-2026-provisional-nowcast",
     title: "20 September 2026: Provisional Nowcast",
     excerpt: "The GVI holds at 108.0 as France slips to 81.4 and the AI Supercycle's governing constraint shifts from access to absorption.",
