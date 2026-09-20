@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-governance-premium",
+    title: "The Governance Premium",
+    excerpt: "Weekend reporting reveals the governance architecture behind the MPS defence, shifting the Italian Risiko from scale to control.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "11 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ive-made-the-five-signals-fully-symmetrical-each-now-follows-the-same-structure-what-changed-why-it-matters-decisive-implication",
     title: "I’ve Made the Five Signals Fully Symmetrical: Each Now Follows the Same Structure: What Changed → Why It Matters → Decisive Implication.",
     excerpt: "Who can convert technological acceleration into economic power before the surrounding system slows it down?",
