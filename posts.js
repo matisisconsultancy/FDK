@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ive-made-the-five-signals-fully-symmetrical-each-now-follows-the-same-structure-what-changed-why-it-matters-decisive-implication",
+    title: "I’ve Made the Five Signals Fully Symmetrical: Each Now Follows the Same Structure: What Changed → Why It Matters → Decisive Implication.",
+    excerpt: "Who can convert technological acceleration into economic power before the surrounding system slows it down?",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-morning-view-quick-take",
     title: "The Morning View: Quick Take",
     excerpt: "The AI contest has moved from best model to best terms of access — and that final step is now decisive.",
