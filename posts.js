@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/20-september-2026",
+    title: "20 September 2026",
+    excerpt: "With the 10-year Treasury testing 5% and oil above $100, the AI race is no longer about building intelligence but making it pay.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "September 20, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/material-inflection-detected",
     title: "Material Inflection Detected",
     excerpt: "China's central bank warns AI may deepen excess supply rather than stoke inflation, splitting the world into distinct monetary regimes.",
