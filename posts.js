@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/21-september-2026-provisional-nowcast",
+    title: "21 September 2026: Provisional Nowcast",
+    excerpt: "China's DRAM milestone lifts the GVI signal as the AI Supercycle broadens from compute into memory, power and capital.",
+    tag: "FDK Global Velocity Index · Capital",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 21, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-velocity-index-country-rankings",
     title: "Global Velocity Index: Country Rankings",
     excerpt: "The Global Velocity Index ranks which economies convert AI, capital, energy and industry into acceleration fastest.",
