@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-revenue-quality-test",
+    title: "The Revenue Quality Test",
+    excerpt: "SoftBank's $11bn bond launch, China's robotics reset and RoboTechnik's Hong Kong listing mark a new dividing line — the quality of demand.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 21, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/21-september-2026-provisional-nowcast",
     title: "21 September 2026: Provisional Nowcast",
     excerpt: "China's DRAM milestone lifts the GVI signal as the AI Supercycle broadens from compute into memory, power and capital.",
