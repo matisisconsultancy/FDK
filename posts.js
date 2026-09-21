@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/21-september-2026",
+    title: "21 September 2026",
+    excerpt: "AI still lifts markets, but at 4.76% two-year yields the winners now need scarcity, contracted demand and returns above the rising cost of capital.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "September 21, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-revenue-quality-test",
     title: "The Revenue Quality Test",
     excerpt: "SoftBank's $11bn bond launch, China's robotics reset and RoboTechnik's Hong Kong listing mark a new dividing line — the quality of demand.",
