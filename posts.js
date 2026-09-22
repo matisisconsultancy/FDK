@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/22-september-2026",
+    title: "22 September 2026",
+    excerpt: "Meta's agent reignites the AI trade as Alibaba escalates, Texas freezes permits and Europe begins measuring the build-out.",
+    tag: "Morning View · Infrastructure",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 22, 2026",
+    read: "11 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-compounding-stack",
     title: "The Compounding Stack",
     excerpt: "Alibaba builds a self-reinforcing AI stack, AMD crosses $1 trillion as a systems company, and the Next Economy enters its compounding phase.",
