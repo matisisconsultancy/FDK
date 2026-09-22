@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/22-september-2026-evidence-cutoff-04-45-cest",
+    title: "22 September 2026: Evidence Cutoff: 04:45 CEST",
+    excerpt: "GVI holds at 108.0 as financial friction eases and the AI race migrates toward the efficiency frontier.",
+    tag: "FDK Global Velocity Index · Capital",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "September 22, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/21-september-2026",
     title: "21 September 2026",
     excerpt: "AI still lifts markets, but at 4.76% two-year yields the winners now need scarcity, contracted demand and returns above the rising cost of capital.",
