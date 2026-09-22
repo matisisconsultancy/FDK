@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-compounding-stack",
+    title: "The Compounding Stack",
+    excerpt: "Alibaba builds a self-reinforcing AI stack, AMD crosses $1 trillion as a systems company, and the Next Economy enters its compounding phase.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "September 22, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/22-september-2026-evidence-cutoff-04-45-cest",
     title: "22 September 2026: Evidence Cutoff: 04:45 CEST",
     excerpt: "GVI holds at 108.0 as financial friction eases and the AI race migrates toward the efficiency frontier.",
