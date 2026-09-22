@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-alliance-option",
+    title: "The Alliance Option",
+    excerpt: "A reported UniCredit–Crédit Agricole dialogue over Banco BPM signals a shift from consolidation to coalition-building.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "September 22, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/22-september-2026",
     title: "22 September 2026",
     excerpt: "Meta's agent reignites the AI trade as Alibaba escalates, Texas freezes permits and Europe begins measuring the build-out.",
