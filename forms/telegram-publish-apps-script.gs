@@ -121,6 +121,10 @@ function pollUpdates() {
   var lock = LockService.getScriptLock();
   if (!lock.tryLock(2000)) return; // never let two runs overlap
   try {
+    // Runs every minute: notify when a pending publish is actually live, or a
+    // pending deletion is actually gone. Must be BEFORE the early return below.
+    processPendingConfirms_();
+
     var props = PropertiesService.getScriptProperties();
     var offset = Number(props.getProperty("TG_OFFSET") || 0);
 
@@ -199,6 +203,63 @@ function groupUpdates_(updates) {
   return items;
 }
 
+/* ============ PENDING CONFIRMATIONS (publish live / delete gone) ============ */
+
+// Queue an item to confirm on a later poll once its URL state actually changes.
+function addPendingConfirm_(entry) {
+  var props = PropertiesService.getScriptProperties();
+  var list = [];
+  try { var raw = props.getProperty("PENDING_CONFIRMS"); if (raw) list = JSON.parse(raw); } catch (e) {}
+  entry.since = Date.now();
+  list.push(entry);
+  props.setProperty("PENDING_CONFIRMS", JSON.stringify(list));
+}
+
+// Each poll: for each pending item, check the real URL and notify when ready.
+function processPendingConfirms_() {
+  var props = PropertiesService.getScriptProperties();
+  var raw = props.getProperty("PENDING_CONFIRMS");
+  if (!raw) return;
+  var list;
+  try { list = JSON.parse(raw); } catch (e) { props.deleteProperty("PENDING_CONFIRMS"); return; }
+  if (!list || !list.length) return;
+
+  var now = Date.now();
+  var keep = [];
+  for (var i = 0; i < list.length; i++) {
+    var e = list[i];
+    var live = urlIsLive_(e.url);
+    if (e.type === "publish" && live) {
+      // Now visible → send the clean, shareable message (link is safe to forward).
+      tgSend_(e.chatId, "🟢 <b>Ya está online:</b> «" + escapeHtml_(e.title || e.slug) + "»\n" +
+        "👇 Copia o reenvía este mensaje para compartirlo:");
+      tgSend_(e.chatId, buildShare_(e.title || e.slug, e.url, e.edition || ""));
+      continue;
+    }
+    if (e.type === "delete" && !live) {
+      tgSend_(e.chatId, "🗑️ <b>Borrado:</b> «" + escapeHtml_(e.slug) + "» ya no está online.");
+      continue;
+    }
+    // Not ready yet — give up after 25 min so nothing lingers forever.
+    if (now - (e.since || now) > 25 * 60 * 1000) {
+      tgSend_(e.chatId, "ℹ️ La " + (e.type === "publish" ? "publicación" : "eliminación") +
+        " de «" + escapeHtml_(e.slug) + "» está tardando más de lo normal. Revísalo en un rato:\n" + e.url);
+      continue;
+    }
+    keep.push(e);
+  }
+  if (keep.length) props.setProperty("PENDING_CONFIRMS", JSON.stringify(keep));
+  else props.deleteProperty("PENDING_CONFIRMS");
+}
+
+// True when the URL responds 200 (the page is actually served).
+function urlIsLive_(url) {
+  try {
+    var res = UrlFetchApp.fetch(url, { method: "get", muteHttpExceptions: true, followRedirects: true });
+    return res.getResponseCode() === 200;
+  } catch (e) { return false; }
+}
+
 // Handle one Telegram message: commands, allow-list, then publish + reply.
 function processMessage_(msg) {
   var chatId = msg.chat && msg.chat.id;
@@ -234,10 +295,11 @@ function processMessage_(msg) {
     try {
       // Drop a marker; the publish pipeline removes the note on the next build.
       commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
-      tgSendWithButton_(chatId,
+      var durl = CONFIG.SITE_BASE + "/" + slug + "/";
+      tgSend_(chatId,
         "🗑️ <b>Borrado solicitado:</b> «" + escapeHtml_(slug) + "»\n" +
-        "Estará fuera de la web en 1–2 min.",
-        "🔗 Ver nota (aún online)", CONFIG.SITE_BASE + "/" + slug + "/");
+        "Te confirmo aquí en cuanto ya no esté online (~1–2 min).");
+      addPendingConfirm_({ type: "delete", slug: slug, chatId: chatId, url: durl });
     } catch (err) {
       tgSend_(chatId, "✖ No se pudo solicitar el borrado: " + String(err));
     }
@@ -292,14 +354,15 @@ function processMessage_(msg) {
 
   var url = CONFIG.SITE_BASE + "/" + slug + "/";
 
-  // 1) short confirmation for Francesco (with a quick link button)
+  // Instant receipt only — NOT the shareable link yet: the note is not visible
+  // until the build + Pages deploy finish. The shareable message is sent later,
+  // once we've verified the URL is actually live (see processPendingConfirms_).
   tgSendWithButton_(chatId,
-    "✅ <b>Publicado</b> · " + escapeHtml_(ed.label) + ": «" + escapeHtml_(title) + "» — online en ~1–2 min.\n" +
-    "👇 Copia o reenvía este mensaje para compartirlo:",
-    "🔗 Ver nota", url);
+    "✅ <b>Recibido</b> · " + escapeHtml_(ed.label) + ": «" + escapeHtml_(title) + "»\n" +
+    "Se está publicando — te aviso aquí en cuanto esté online (~1–2 min).",
+    "🔗 Ver estado", url);
 
-  // 2) the clean, ready-to-share message (copy or forward as-is)
-  tgSend_(chatId, buildShare_(title, url, ed.label));
+  addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label });
 }
 
 // Split the incoming text into { title, body, dateObj, edition, hadMasthead }.
