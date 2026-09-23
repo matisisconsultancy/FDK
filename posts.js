@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/23-september-2026-provisional-nowcast",
+    title: "23 September 2026: Provisional Nowcast",
+    excerpt: "GVI steady at 108.0 as energy relief arrives and China's full-stack AI strategy becomes explicit.",
+    tag: "FDK Global Velocity Index · Macro",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-alliance-option",
     title: "The Alliance Option",
     excerpt: "A reported UniCredit–Crédit Agricole dialogue over Banco BPM signals a shift from consolidation to coalition-building.",
