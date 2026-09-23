@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/markets-technology-geopolitics-the-real-economy",
+    title: "Markets · Technology · Geopolitics · the Real Economy",
+    excerpt: "A five-lens visual framework for reading the trading day and the next market move.",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-deployability-premium",
     title: "The Deployability Premium",
     excerpt: "The Next Economy crosses another threshold as the market rewards deployability over raw capability.",
