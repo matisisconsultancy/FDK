@@ -112,6 +112,11 @@ var TXT = {
   badSlug:    { it: "⚠️ Il titolo non genera un URL valido. Usa del testo con lettere.",
                 en: "⚠️ The title doesn't make a valid URL. Use text with letters." },
   pubErr:     { it: function (e) { return "✖ Impossibile pubblicare: " + e; }, en: function (e) { return "✖ Could not publish: " + e; } },
+  delConfirm: { it: function (s) { return "🗑️ Vuoi eliminare «" + s + "»?\nRispondi <b>SÍ</b> per confermare, oppure <b>NO</b> per annullare."; },
+                en: function (s) { return "🗑️ Delete «" + s + "»?\nReply <b>YES</b> to confirm, or <b>NO</b> to cancel."; } },
+  delWhich:   { it: "🗑️ Quale nota vuoi eliminare? Incolla il link della nota, oppure scrivi:\n<code>borrar nota: &lt;url o slug&gt;</code>",
+                en: "🗑️ Which note do you want to delete? Paste the note's link, or send:\n<code>borrar nota: &lt;url or slug&gt;</code>" },
+  delCancelled: { it: "✖ Eliminazione annullata.", en: "✖ Deletion cancelled." },
 };
 function L(key) { var m = TXT[key]; return m ? (m[CONFIG.LANG] || m.it) : ""; }
 // ========================================================
@@ -283,6 +288,38 @@ function processPendingConfirms_() {
   else props.deleteProperty("PENDING_CONFIRMS");
 }
 
+// Commit an unpublish marker and start watching for the note to go offline.
+// Shared by the explicit command and the confirmed loose-intent path.
+function doUnpublish_(chatId, slug) {
+  try {
+    commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
+    var durl = CONFIG.SITE_BASE + "/" + slug + "/";
+    tgSend_(chatId, L("delReq")(escapeHtml_(slug)));
+    addPendingConfirm_({ type: "delete", slug: slug, chatId: chatId, url: durl });
+  } catch (err) {
+    tgSend_(chatId, L("delErr")(String(err)));
+  }
+}
+
+// A short-lived "delete X?" question, per chat, awaiting a SÍ/NO answer.
+function pendingDeleteKey_(chatId) { return "PENDING_DELETE_" + chatId; }
+function setPendingDelete_(chatId, slug) {
+  PropertiesService.getScriptProperties()
+    .setProperty(pendingDeleteKey_(chatId), JSON.stringify({ slug: slug, since: Date.now() }));
+}
+function getPendingDelete_(chatId) {
+  var raw = PropertiesService.getScriptProperties().getProperty(pendingDeleteKey_(chatId));
+  if (!raw) return null;
+  try {
+    var p = JSON.parse(raw);
+    if (Date.now() - (p.since || 0) > 10 * 60 * 1000) { clearPendingDelete_(chatId); return null; } // expire after 10 min
+    return p;
+  } catch (e) { clearPendingDelete_(chatId); return null; }
+}
+function clearPendingDelete_(chatId) {
+  PropertiesService.getScriptProperties().deleteProperty(pendingDeleteKey_(chatId));
+}
+
 // True when the URL responds 200 (the page is actually served).
 function urlIsLive_(url) {
   try {
@@ -310,24 +347,68 @@ function processMessage_(msg) {
     return;
   }
 
-  // ---- delete a note: "borrar nota: <url|slug>" (or /borrar, borrar:, etc.) ----
-  var del = text.match(/^\s*(?:\/(?:borrar|eliminar|delete)\b\s*|(?:borrar|eliminar|delete)\s+(?:la\s+)?(?:nota|note)\b\s*[:：]?\s*|(?:borrar|eliminar|delete)\s*[:：]\s*)([\s\S]*)$/i);
-  if (del) {
-    var slug = slugFromArg_(del[1]);
-    if (!slug) {
-      tgSend_(chatId, L("delUsage"));
+  // ---- delete flow ------------------------------------------------------
+  // The bot must NEVER publish a delete request as a new note. Three layers:
+  //   1. a pending confirmation (the user answered SÍ/NO to "delete X?");
+  //   2. an explicit command "borrar nota: <url|slug>" → delete immediately;
+  //   3. a *loose* delete intent — one of our own links pasted, or a short
+  //      message with a delete verb ("bórrala", "elimina la de prueba",
+  //      "borrado", …). These are confirmed (or we ask which note), and are
+  //      intercepted BEFORE the publish path so they can't become junk notes.
+
+  // 1) answer to a pending "delete X?" question -------------------------------
+  var pend = getPendingDelete_(chatId);
+  if (pend) {
+    if (/^\s*(?:s[íìi]|yes|ok(?:ay)?|va bene|conferm[oa]|d(?:'|’)accordo|dai|certo|s[íì]\s*b[óo]rra|b[óo]rrala|elimina(?:la)?|adelante)\b/i.test(text)) {
+      clearPendingDelete_(chatId);
+      doUnpublish_(chatId, pend.slug);
       return;
     }
-    try {
-      // Drop a marker; the publish pipeline removes the note on the next build.
-      commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
-      var durl = CONFIG.SITE_BASE + "/" + slug + "/";
-      tgSend_(chatId, L("delReq")(escapeHtml_(slug)));
-      addPendingConfirm_({ type: "delete", slug: slug, chatId: chatId, url: durl });
-    } catch (err) {
-      tgSend_(chatId, L("delErr")(String(err)));
+    if (/^\s*(?:no|annulla|cancell?a|cancel(?:ar)?|stop|ferma|lascia)\b/i.test(text)) {
+      clearPendingDelete_(chatId);
+      tgSend_(chatId, L("delCancelled"));
+      return;
     }
+    // Any other message abandons the pending delete and is handled normally.
+    clearPendingDelete_(chatId);
+  }
+
+  // 2) explicit command → delete immediately (trusted, one step) ---------------
+  var del = text.match(/^\s*(?:\/(?:borrar|eliminar|delete)\b\s*|(?:borrar|eliminar|delete)\s+(?:la\s+)?(?:nota|note)\b\s*[:：]?\s*|(?:borrar|eliminar|delete)\s*[:：]\s*)([\s\S]*)$/i);
+  if (del) {
+    var slugCmd = slugFromArg_(del[1]);
+    if (!slugCmd) { tgSend_(chatId, L("delUsage")); return; }
+    doUnpublish_(chatId, slugCmd);
     return;
+  }
+
+  // 3) loose delete intent (plain text only; documents are always articles) ----
+  if (msg.text && !msg.document) {
+    var host = String(CONFIG.SITE_BASE || "").replace(/^https?:\/\//i, "").replace(/\/+$/, "");
+    var siteRe = new RegExp(host.replace(/[.]/g, "\\.") + "\\/([a-z0-9][a-z0-9-]*)", "i");
+    var mUrl = host ? text.match(siteRe) : null;
+    var deleteVerb = /\b(?:borra(?:r|do|la)?|b[óo]rrala|elimina(?:r|la|re)?|cancell?a(?:re)?|delete|remove|unpublish|quita(?:r|la)?)\b/i.test(text);
+    var words = text.trim().split(/\s+/).filter(Boolean).length;
+    var isShort = words <= 15 && (text.match(/\n/g) || []).length <= 1;
+
+    // A) one of our own note links pasted → confirm deleting that slug.
+    if (mUrl && mUrl[1]) {
+      setPendingDelete_(chatId, mUrl[1].toLowerCase());
+      tgSend_(chatId, L("delConfirm")(escapeHtml_(mUrl[1].toLowerCase())));
+      return;
+    }
+    // B) short message with a delete verb but no link.
+    if (deleteVerb && isShort) {
+      // Try "borrar <slug>" style where the slug is a single hyphenated token.
+      var mSlug = text.match(/\b([a-z0-9]+(?:-[a-z0-9]+){1,})\b/i);
+      if (mSlug) {
+        setPendingDelete_(chatId, mSlug[1].toLowerCase());
+        tgSend_(chatId, L("delConfirm")(escapeHtml_(mSlug[1].toLowerCase())));
+      } else {
+        tgSend_(chatId, L("delWhich"));   // delete intent, but we don't know which note
+      }
+      return;
+    }
   }
 
   // ---- gather the article (document > text) ----
