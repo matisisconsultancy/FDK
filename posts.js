@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-cities-ranking",
+    title: "Global Cities Ranking",
+    excerpt: "Communities are starting to demand a direct economic return for surrendering electricity, water, land and infrastructure to AI.",
+    tag: "GVI Global Cities Signature Survey · Urban Velocity",
+    slot: "GVI Global Cities Signature Survey",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-bifurcation",
     title: "The Great Bifurcation",
     excerpt: "AI has become a macroeconomic variable, and central banks now face its demand shock years before its productivity dividend arrives.",
@@ -196,18 +208,6 @@ window.FDK_POSTS = [
     date: "September 19, 2026",
     read: "4 min read",
     time: "12:30",
-    kind: "day"
-  },
-  {
-    url: "/global-cities-ranking-19-september-2026",
-    title: "Global Cities Ranking: 19 September 2026",
-    excerpt: "Communities are starting to demand a direct economic return for surrendering electricity, water, land and infrastructure to AI.",
-    tag: "GVI Global Cities Signature Survey · Urban Velocity",
-    slot: "GVI Global Cities Signature Survey",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "September 19, 2026",
-    read: "7 min read",
-    time: "08:00",
     kind: "day"
   },
   {
@@ -1231,6 +1231,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: Global Cities Ranking: 19 September 2026
-slug: global-cities-ranking-19-september-2026
+title: Global Cities Ranking
+slug: global-cities-ranking
 date: September 19, 2026
 slot: GVI Global Cities Signature Survey
 tag: Urban Velocity
