@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-deployability-premium",
+    title: "The Deployability Premium",
+    excerpt: "The Next Economy crosses another threshold as the market rewards deployability over raw capability.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/23-september-2026-provisional-nowcast",
     title: "23 September 2026: Provisional Nowcast",
     excerpt: "GVI steady at 108.0 as energy relief arrives and China's full-stack AI strategy becomes explicit.",
