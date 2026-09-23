@@ -56,6 +56,8 @@ const SLOTS = {
   "Market Watch":   { kind: "day",   time: "09:30" },
   "Midday Pulse":   { kind: "day",   time: "12:30" },
   "Daily Nowcast":  { kind: "day",   time: "07:00" },
+  "Provisional Nowcast": { kind: "day",   time: "06:30" },
+  "Executive Synthesis": { kind: "day",   time: "09:15" },
   "Night Briefing": { kind: "night", time: "21:30" },
   "Evening Note":   { kind: "night", time: "21:00" },
   "The Close":      { kind: "night", time: "21:00" },
