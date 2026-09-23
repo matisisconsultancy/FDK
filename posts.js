@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-disclosure-test",
+    title: "The Disclosure Test",
+    excerpt: "As Consob widens its MPS scrutiny, the 29 October vote becomes a test of whether the defensive architecture is legally clean and executable.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/https-chatgpt-com-library-share-libfile-a9ec4035b3d88191b6dda0d718a5fa00-account-id-personal",
     title: "Https://chatgpt.com/library/share/libfile_a9ec4035b3d88191b6dda0d718a5fa00?account_id=personal",
     excerpt: "",
