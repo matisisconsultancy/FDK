@@ -220,13 +220,14 @@ function processMessage_(msg) {
     return;
   }
 
-  // ---- /borrar <url|slug>: request deletion of a published note ----
-  var del = text.match(/^\/(borrar|eliminar|delete)\b\s*([\s\S]*)$/i);
+  // ---- delete a note: "borrar nota: <url|slug>" (or /borrar, borrar:, etc.) ----
+  var del = text.match(/^\s*(?:\/(?:borrar|eliminar|delete)\b\s*|(?:borrar|eliminar|delete)\s+(?:la\s+)?(?:nota|note)\b\s*[:：]?\s*|(?:borrar|eliminar|delete)\s*[:：]\s*)([\s\S]*)$/i);
   if (del) {
-    var slug = slugFromArg_(del[2]);
+    var slug = slugFromArg_(del[1]);
     if (!slug) {
-      tgSend_(chatId, "ℹ️ Uso: <code>/borrar &lt;url o slug&gt;</code>\n" +
-        "Ejemplo: <code>/borrar the-underwriting-test</code>\n" +
+      tgSend_(chatId, "ℹ️ Para borrar una nota escribe:\n" +
+        "<code>borrar nota: &lt;url o slug&gt;</code>\n" +
+        "Ejemplo: <code>borrar nota: the-underwriting-test</code>\n" +
         "o pega el enlace completo de la nota.");
       return;
     }
@@ -607,7 +608,7 @@ function helpText_() {
     "• <b>Texto:</b> el <u>título en la 1ª línea</u> y el artículo debajo, o\n" +
     "• <b>Un documento</b> (.docx, .pdf o .txt) con el título como pie de foto (caption).\n\n" +
     "En ~1 min te respondo aquí mismo con el link listo para compartir.\n\n" +
-    "🗑️ <b>Borrar una nota:</b> <code>/borrar &lt;url o slug&gt;</code>\n\n" +
+    "🗑️ <b>Borrar una nota:</b> <code>borrar nota: &lt;url o slug&gt;</code>\n\n" +
     "Comandos: /id (ver tu id) · /help (esta ayuda)";
 }
 
