@@ -454,6 +454,28 @@ function processMessage_(msg) {
   // A date written in the title becomes the note's DATE — never part of the title.
   var titleDate = parsed.dateObj ? null : dateFromText_(rawTitle);
   title = cleanTitle_(rawTitle); // strip date / FDK / brand / dashes → Title Case
+  if (!title) {
+    // The first candidate was pure date/masthead cruft (e.g. a date on its own
+    // line above the real headline). Fall back to the first *title-like* body
+    // line — short, not a full sentence — and lift its date if it carries one.
+    var bl = String(article || "").split(/\r?\n/);
+    for (var bi = 0; bi < bl.length; bi++) {
+      var cand = bl[bi].trim();
+      if (!cand) continue;
+      var words = cand.split(/\s+/).length;
+      var titleLike = words <= 14 && !/[.!?]$/.test(cand);
+      var ct = titleLike ? cleanTitle_(cand.slice(0, 200)) : "";
+      if (ct) {
+        title = ct;
+        if (!parsed.dateObj && !titleDate) { var dd = dateFromText_(cand); if (dd) titleDate = dd; }
+        article = bl.slice(bi + 1).join("\n").trim();
+        break;
+      }
+      // Stop at the first real prose line: if it isn't title-like, there is no
+      // separate headline — don't turn a paragraph into a title.
+      if (!titleLike) break;
+    }
+  }
   if (!title) { tgSend_(chatId, L("noTitle")); return; }
   if (!article) article = title;
 
