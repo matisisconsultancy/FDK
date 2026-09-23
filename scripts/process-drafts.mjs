@@ -24,15 +24,33 @@ const hasKey = !!process.env.ANTHROPIC_API_KEY;
 if (!fs.existsSync(DRAFTS)) { console.log("No drafts/ directory — nothing to do."); process.exit(0); }
 fs.mkdirSync(PUBLISHED, { recursive: true });
 
+const run = (script, extra = []) =>
+  execFileSync("node", [path.join("scripts", script), ...extra], { stdio: ["ignore", "inherit", "inherit"], cwd: ROOT });
+
+// ---- unpublish requests (from the bot's /borrar command) --------------------
+// The bot drops a marker file drafts/unpublish/<slug> for each note to remove.
+const UNPUB = path.join(DRAFTS, "unpublish");
+const unpublished = [];
+if (fs.existsSync(UNPUB)) {
+  const markers = fs.readdirSync(UNPUB).filter((f) => fs.statSync(path.join(UNPUB, f)).isFile());
+  const slugs = [...new Set(markers.map((f) => f.replace(/\.txt$/i, "").replace(/^\/+|\/+$/g, "").trim()).filter(Boolean))];
+  if (slugs.length) {
+    console.log(`\n━━━ unpublish request: ${slugs.join(", ")} ━━━`);
+    try { run("unpublish-note.mjs", slugs); unpublished.push(...slugs); }
+    catch (e) { console.error(`✖ unpublish failed: ${e.message}`); }
+    for (const f of markers) { try { fs.rmSync(path.join(UNPUB, f)); } catch {} }
+  }
+}
+
 const pending = fs.readdirSync(DRAFTS)
   .filter((f) => f.endsWith(".md") && !SKIP.has(f))
   .filter((f) => fs.statSync(path.join(DRAFTS, f)).isFile())
   .sort();
 
-if (!pending.length) { console.log("No pending drafts."); process.exit(0); }
-
-const run = (script, extra = []) =>
-  execFileSync("node", [path.join("scripts", script), ...extra], { stdio: ["ignore", "inherit", "inherit"], cwd: ROOT });
+if (!pending.length) {
+  console.log(unpublished.length ? `Unpublished ${unpublished.length} note(s); no drafts to publish.` : "No pending drafts.");
+  process.exit(0);
+}
 
 const published = [];
 const failed = [];
