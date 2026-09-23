@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/publicacion-de-nota-numero-1-prueba-del-24-de-septiembre-del-2026",
+    title: "Publicación De Nota Número 1: Prueba Del 24 De Septiembre Del 2026",
+    excerpt: "Primera nota de prueba correspondiente a la edición del 24 de septiembre de 2026.",
+    tag: "Morning View",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-cities-ranking",
     title: "Global Cities Ranking",
     excerpt: "Communities are starting to demand a direct economic return for surrendering electricity, water, land and infrastructure to AI.",
