@@ -376,16 +376,22 @@ function processMessage_(msg) {
   // 2) explicit command → delete immediately (trusted, one step) ---------------
   // Natural verbs in Italian/English (Spanish tolerated silently as a fallback):
   //   delete / remove / elimina(re) / cancella(re)  [+ borrar/eliminar]
+  // The ":" and the word "nota"/"note" are all optional — any of these work:
+  //   "elimina nota: <x>"  "elimina nota <x>"  "elimina: <x>"  "elimina <x>"
+  //   "delete note <x>"  "/delete <x>"  "cancella <x>"  "remove <x>"
   var V = "delete|remove|elimina(?:re)?|cancella(?:re)?|borrar|eliminar";
   var del = text.match(new RegExp(
-    "^\\s*(?:\\/(?:" + V + ")\\b\\s*" +
-    "|(?:" + V + ")\\s+(?:la\\s+)?(?:nota|note)\\b\\s*[:：]?\\s*" +
-    "|(?:" + V + ")\\s*[:：]\\s*)([\\s\\S]*)$", "i"));
+    "^\\s*\\/?(?:" + V + ")\\b(?:\\s+(?:la\\s+)?(?:nota|note))?\\s*[:：]?\\s*([\\s\\S]*)$", "i"));
   if (del) {
-    var slugCmd = slugFromArg_(del[1]);
-    if (!slugCmd) { tgSend_(chatId, L("delUsage")); return; }
-    doUnpublish_(chatId, slugCmd);
-    return;
+    var arg = del[1].trim();
+    var slugCmd = slugFromArg_(arg);
+    // Delete immediately only when the argument is a SINGLE token (a slug or a
+    // URL). A multi-word argument ("la nota di prova", or an article that just
+    // happens to start with "delete") is ambiguous → fall through to the loose
+    // handler, which confirms or asks which note, and never publishes it.
+    if (slugCmd && /^\S+$/.test(arg)) { doUnpublish_(chatId, slugCmd); return; }
+    if (!arg) { tgSend_(chatId, L("delUsage")); return; }
+    // else: fall through to loose intent handling below.
   }
 
   // 3) loose delete intent (plain text only; documents are always articles) ----
