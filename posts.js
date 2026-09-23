@@ -7,9 +7,9 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/publicacion-de-nota-numero-1-prueba-del-24-de-septiembre-del-2026",
-    title: "Publicación De Nota Número 1: Prueba Del 24 De Septiembre Del 2026",
-    excerpt: "Primera nota de prueba correspondiente a la edición del 24 de septiembre de 2026.",
+    url: "/hola-esta-es-una-segunda-prueba-del-24-de-septiembre",
+    title: "Hola, Esta Es Una Segunda Prueba Del 24 De Septiembre",
+    excerpt: "A brief test edition for September 24.",
     tag: "Morning View",
     slot: "Morning View",
     image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
@@ -1243,6 +1243,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
