@@ -98,8 +98,8 @@ var TXT = {
                 en: function (s) { return "🗑️ <b>Deleted:</b> «" + s + "» is no longer online."; } },
   slow:       { it: function (k, s, u) { return "ℹ️ La " + (k === "publish" ? "pubblicazione" : "eliminazione") + " di «" + s + "» sta impiegando più del solito. Ricontrolla tra poco:\n" + u; },
                 en: function (k, s, u) { return "ℹ️ The " + (k === "publish" ? "publishing" : "deletion") + " of «" + s + "» is taking longer than usual. Check again shortly:\n" + u; } },
-  delUsage:   { it: "ℹ️ Per eliminare una nota scrivi:\n<code>borrar nota: &lt;url o slug&gt;</code>\nEsempio: <code>borrar nota: the-underwriting-test</code>\noppure incolla il link completo della nota.",
-                en: "ℹ️ To delete a note, send:\n<code>borrar nota: &lt;url or slug&gt;</code>\nExample: <code>borrar nota: the-underwriting-test</code>\nor paste the note's full link." },
+  delUsage:   { it: "ℹ️ Per eliminare una nota scrivi:\n<code>elimina nota: &lt;url o slug&gt;</code>\nEsempio: <code>elimina nota: the-underwriting-test</code>\noppure incolla il link completo della nota.",
+                en: "ℹ️ To delete a note, send:\n<code>delete note: &lt;url or slug&gt;</code>\nExample: <code>delete note: the-underwriting-test</code>\nor paste the note's full link." },
   delErr:     { it: function (e) { return "✖ Impossibile richiedere l'eliminazione: " + e; },
                 en: function (e) { return "✖ Could not request the deletion: " + e; } },
   notAllowed: { it: "⛔ Questo utente non è autorizzato a pubblicare.\nInvia /id e passa quel numero all'amministratore del bot.",
@@ -112,10 +112,10 @@ var TXT = {
   badSlug:    { it: "⚠️ Il titolo non genera un URL valido. Usa del testo con lettere.",
                 en: "⚠️ The title doesn't make a valid URL. Use text with letters." },
   pubErr:     { it: function (e) { return "✖ Impossibile pubblicare: " + e; }, en: function (e) { return "✖ Could not publish: " + e; } },
-  delConfirm: { it: function (s) { return "🗑️ Vuoi eliminare «" + s + "»?\nRispondi <b>SÍ</b> per confermare, oppure <b>NO</b> per annullare."; },
+  delConfirm: { it: function (s) { return "🗑️ Vuoi eliminare «" + s + "»?\nRispondi <b>SÌ</b> per confermare, oppure <b>NO</b> per annullare."; },
                 en: function (s) { return "🗑️ Delete «" + s + "»?\nReply <b>YES</b> to confirm, or <b>NO</b> to cancel."; } },
-  delWhich:   { it: "🗑️ Quale nota vuoi eliminare? Incolla il link della nota, oppure scrivi:\n<code>borrar nota: &lt;url o slug&gt;</code>",
-                en: "🗑️ Which note do you want to delete? Paste the note's link, or send:\n<code>borrar nota: &lt;url or slug&gt;</code>" },
+  delWhich:   { it: "🗑️ Quale nota vuoi eliminare? Incolla il link della nota, oppure scrivi:\n<code>elimina nota: &lt;url o slug&gt;</code>",
+                en: "🗑️ Which note do you want to delete? Paste the note's link, or send:\n<code>delete note: &lt;url or slug&gt;</code>" },
   delCancelled: { it: "✖ Eliminazione annullata.", en: "✖ Deletion cancelled." },
 };
 function L(key) { var m = TXT[key]; return m ? (m[CONFIG.LANG] || m.it) : ""; }
@@ -374,7 +374,13 @@ function processMessage_(msg) {
   }
 
   // 2) explicit command → delete immediately (trusted, one step) ---------------
-  var del = text.match(/^\s*(?:\/(?:borrar|eliminar|delete)\b\s*|(?:borrar|eliminar|delete)\s+(?:la\s+)?(?:nota|note)\b\s*[:：]?\s*|(?:borrar|eliminar|delete)\s*[:：]\s*)([\s\S]*)$/i);
+  // Natural verbs in Italian/English (Spanish tolerated silently as a fallback):
+  //   delete / remove / elimina(re) / cancella(re)  [+ borrar/eliminar]
+  var V = "delete|remove|elimina(?:re)?|cancella(?:re)?|borrar|eliminar";
+  var del = text.match(new RegExp(
+    "^\\s*(?:\\/(?:" + V + ")\\b\\s*" +
+    "|(?:" + V + ")\\s+(?:la\\s+)?(?:nota|note)\\b\\s*[:：]?\\s*" +
+    "|(?:" + V + ")\\s*[:：]\\s*)([\\s\\S]*)$", "i"));
   if (del) {
     var slugCmd = slugFromArg_(del[1]);
     if (!slugCmd) { tgSend_(chatId, L("delUsage")); return; }
@@ -776,7 +782,8 @@ function helpText_() {
       "• <b>Text:</b> the <u>title on the 1st line</u> and the article below, or\n" +
       "• <b>A document</b> (.docx, .pdf or .txt) with the title as the caption.\n\n" +
       "In ~1–2 min I'll message you here with the link, ready to share.\n\n" +
-      "🗑️ <b>Delete a note:</b> <code>borrar nota: &lt;url or slug&gt;</code>\n\n" +
+      "🗑️ <b>Delete a note:</b> <code>delete note: &lt;url or slug&gt;</code>\n" +
+      "(also works: <code>remove</code> · or just paste the note's link)\n\n" +
       "Commands: /id (your id) · /help (this help)";
   }
   return "👋 <b>" + b + " — publisher</b>\n\n" +
@@ -784,7 +791,8 @@ function helpText_() {
     "• <b>Testo:</b> il <u>titolo nella 1ª riga</u> e l'articolo sotto, oppure\n" +
     "• <b>Un documento</b> (.docx, .pdf o .txt) con il titolo come didascalia.\n\n" +
     "In ~1–2 min ti scrivo qui con il link, pronto da condividere.\n\n" +
-    "🗑️ <b>Eliminare una nota:</b> <code>borrar nota: &lt;url o slug&gt;</code>\n\n" +
+    "🗑️ <b>Eliminare una nota:</b> <code>elimina nota: &lt;url o slug&gt;</code>\n" +
+    "(vanno bene anche: <code>cancella</code> · <code>delete</code> · o incolla il link della nota)\n\n" +
     "Comandi: /id (il tuo id) · /help (questo aiuto)";
 }
 
