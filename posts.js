@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/https-chatgpt-com-library-share-libfile-a9ec4035b3d88191b6dda0d718a5fa00-account-id-personal",
+    title: "Https://chatgpt.com/library/share/libfile_a9ec4035b3d88191b6dda0d718a5fa00?account_id=personal",
+    excerpt: "",
+    tag: "Morning View",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/markets-technology-geopolitics-the-real-economy",
     title: "Markets · Technology · Geopolitics · the Real Economy",
     excerpt: "A five-lens visual framework for reading the trading day and the next market move.",
