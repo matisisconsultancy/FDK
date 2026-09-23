@@ -7,54 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/esta-es-una-prueba-de-que-esta-funcionando-el-publicador",
-    title: "Esta Es Una Prueba De Que Está Funcionando El Publicador",
-    excerpt: "A short test edition verifying the publisher is working.",
-    tag: "Morning View",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/the-disclosure-test",
-    title: "The Disclosure Test",
-    excerpt: "As Consob widens its MPS scrutiny, the 29 October vote becomes a test of whether the defensive architecture is legally clean and executable.",
-    tag: "In Focus · Capital",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "9 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/https-chatgpt-com-library-share-libfile-a9ec4035b3d88191b6dda0d718a5fa00-account-id-personal",
-    title: "Https://chatgpt.com/library/share/libfile_a9ec4035b3d88191b6dda0d718a5fa00?account_id=personal",
-    excerpt: "",
-    tag: "Morning View",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/markets-technology-geopolitics-the-real-economy",
-    title: "Markets · Technology · Geopolitics · the Real Economy",
-    excerpt: "A five-lens visual framework for reading the trading day and the next market move.",
-    tag: "Morning View · Macro",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-deployability-premium",
     title: "The Deployability Premium",
     excerpt: "The Next Economy crosses another threshold as the market rewards deployability over raw capability.",
@@ -63,18 +15,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
     date: "September 23, 2026",
     read: "9 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/23-september-2026-provisional-nowcast",
-    title: "23 September 2026: Provisional Nowcast",
-    excerpt: "GVI steady at 108.0 as energy relief arrives and China's full-stack AI strategy becomes explicit.",
-    tag: "FDK Global Velocity Index · Macro",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "6 min read",
     time: "08:00",
     kind: "day"
   },
@@ -91,18 +31,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/22-september-2026",
-    title: "22 September 2026",
-    excerpt: "Meta's agent reignites the AI trade as Alibaba escalates, Texas freezes permits and Europe begins measuring the build-out.",
-    tag: "Morning View · Infrastructure",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
-    date: "September 22, 2026",
-    read: "11 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-compounding-stack",
     title: "The Compounding Stack",
     excerpt: "Alibaba builds a self-reinforcing AI stack, AMD crosses $1 trillion as a systems company, and the Next Economy enters its compounding phase.",
@@ -111,54 +39,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
     date: "September 22, 2026",
     read: "9 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/22-september-2026-evidence-cutoff-04-45-cest",
-    title: "22 September 2026: Evidence Cutoff: 04:45 CEST",
-    excerpt: "GVI holds at 108.0 as financial friction eases and the AI race migrates toward the efficiency frontier.",
-    tag: "FDK Global Velocity Index · Capital",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "September 22, 2026",
-    read: "5 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/21-september-2026",
-    title: "21 September 2026",
-    excerpt: "AI still lifts markets, but at 4.76% two-year yields the winners now need scarcity, contracted demand and returns above the rising cost of capital.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "September 21, 2026",
-    read: "5 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/the-revenue-quality-test",
-    title: "The Revenue Quality Test",
-    excerpt: "SoftBank's $11bn bond launch, China's robotics reset and RoboTechnik's Hong Kong listing mark a new dividing line — the quality of demand.",
-    tag: "FDK GVI Corporate Benchmark · Capital",
-    slot: "FDK GVI Corporate Benchmark",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
-    date: "September 21, 2026",
-    read: "8 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/21-september-2026-provisional-nowcast",
-    title: "21 September 2026: Provisional Nowcast",
-    excerpt: "China's DRAM milestone lifts the GVI signal as the AI Supercycle broadens from compute into memory, power and capital.",
-    tag: "FDK Global Velocity Index · Capital",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
-    date: "September 21, 2026",
-    read: "7 min read",
     time: "08:00",
     kind: "day"
   },
@@ -173,18 +53,6 @@ window.FDK_POSTS = [
     read: "5 min read",
     time: "21:00",
     kind: "night"
-  },
-  {
-    url: "/20-september-2026",
-    title: "20 September 2026",
-    excerpt: "With the 10-year Treasury testing 5% and oil above $100, the AI race is no longer about building intelligence but making it pay.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "September 20, 2026",
-    read: "3 min read",
-    time: "12:30",
-    kind: "day"
   },
   {
     url: "/material-inflection-detected",
@@ -243,18 +111,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
     date: "September 20, 2026",
     read: "9 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/20-september-2026-provisional-nowcast",
-    title: "20 September 2026: Provisional Nowcast",
-    excerpt: "The GVI holds at 108.0 as France slips to 81.4 and the AI Supercycle's governing constraint shifts from access to absorption.",
-    tag: "FDK Global Velocity Index · Capital",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "September 20, 2026",
-    read: "7 min read",
     time: "08:00",
     kind: "day"
   },
@@ -319,18 +175,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/19-september-2026",
-    title: "19 September 2026",
-    excerpt: "As AI moves onto the U.S.–China negotiating table, the unit of competition shifts from models to entire systems.",
-    tag: "U.S. · AI Geopolitics",
-    slot: "U.S.",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "September 19, 2026",
-    read: "4 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/september-19",
     title: "September 19",
     excerpt: "MPS's defence hardens into an industrial plan as Brussels turns pro-scale and Generali moves to the centre of gravity.",
@@ -379,30 +223,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/19-september-2026-provisional-nowcast",
-    title: "19 September 2026: Provisional Nowcast",
-    excerpt: "No country clears all four GVI admission thresholds today, but the system beneath the number is entering an underwriting-and-verification regime.",
-    tag: "FDK Global Velocity Index · Capital",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
-    date: "September 19, 2026",
-    read: "7 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/18-september-2026-executive-synthesis",
-    title: "18 September 2026: Executive Synthesis",
-    excerpt: "Central banks tighten as AI turns physical — the market's new dividing line is productive capital versus capital that cannot clear the hurdle rate.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
-    date: "September 18, 2026",
-    read: "5 min read",
-    time: "21:00",
-    kind: "night"
-  },
-  {
     url: "/europe-ai-gigafactory-watch",
     title: "Europe AI Gigafactory Watch",
     excerpt: "Nabiax breaks ground on an €800M, 80 MW AI data center in Alcalá de Henares, turning announced capacity into physical capex.",
@@ -439,18 +259,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/18-september-2026-provisional-nowcast",
-    title: "18 September 2026: Provisional Nowcast",
-    excerpt: "The GVI holds at 108.0 as the Bank of Japan joins the Fed and ECB in tightening, reframing the AI Supercycle around returns.",
-    tag: "FDK Global Velocity Index · Macro",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "September 18, 2026",
-    read: "6 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-execution-premium",
     title: "The Execution Premium",
     excerpt: "In Italy's banking Risiko, the market is now pricing the path to closing, not the presentation.",
@@ -475,18 +283,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/18-september-2026",
-    title: "18 September 2026",
-    excerpt: "A global tightening cycle collides with an AI capex boom, revealing where scarcity rents are migrating next.",
-    tag: "Morning View · AI Infrastructure",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "September 18, 2026",
-    read: "9 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-orchestration-premium",
     title: "The Orchestration Premium",
     excerpt: "Four developments, one system: the competitive bottleneck is migrating from intelligence itself toward the orchestration of everything intelligence requires.",
@@ -495,18 +291,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
     date: "September 18, 2026",
     read: "7 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/17-september-2026",
-    title: "17 September 2026",
-    excerpt: "Two signals — Spain rationing grid capacity and a $22B AI loan backed by European banks — redraw the European AI challenge.",
-    tag: "Europe AI Gigafactory Watch · Capital",
-    slot: "Europe AI Gigafactory Watch",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "September 17, 2026",
-    read: "6 min read",
     time: "08:00",
     kind: "day"
   },
@@ -559,18 +343,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/16-september-2026",
-    title: "16 September 2026",
-    excerpt: "Spain rebuilds the grid, Germany integrates the stack, and Europe's Gigafactories become a capital-formation mechanism for the Next Economy.",
-    tag: "Europe AI Gigafactory Watch · Capital",
-    slot: "Europe AI Gigafactory Watch",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "September 16, 2026",
-    read: "5 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-2-16-gigawatt-contradiction",
     title: "The 2.16-gigawatt Contradiction",
     excerpt: "As Anthropic calls to pace frontier models yet builds gigawatts of inference capacity, the Supercycle rotates from creating intelligence to industrializing it.",
@@ -603,18 +375,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
     date: "September 16, 2026",
     read: "10 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/16-september-2026-provisional-nowcast",
-    title: "16 September 2026: Provisional Nowcast",
-    excerpt: "The GVI holds at 108.0 as the UK slips to 82.3 and Japan captures the paradox of rising Intelligence Velocity meeting a faster-rising physical energy cost.",
-    tag: "FDK Global Velocity Index · Macro",
-    slot: "FDK Global Velocity Index",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "September 16, 2026",
-    read: "7 min read",
     time: "08:00",
     kind: "day"
   },
@@ -667,18 +427,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/the-underwriting-test",
-    title: "The Underwriting Test",
-    excerpt: "Three simultaneous repricings — capital, physical scarcity and technological uncertainty — push the AI Supercycle from its build phase into its underwriting phase.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "8 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/europe-ai-gigafactory-watch-material-inflection-detected",
     title: "Europe AI Gigafactory Watch: Material Inflection Detected",
     excerpt: "Axelera and EUCLYD signal European capital forming around the semiconductor layer just as the continent prepares tens of billions in sovereign AI infrastructure.",
@@ -701,18 +449,6 @@ window.FDK_POSTS = [
     read: "8 min read",
     time: "21:00",
     kind: "night"
-  },
-  {
-    url: "/15-september-2026",
-    title: "15 September 2026",
-    excerpt: "As AI hits its speed limits, control of access to scarce inputs becomes the defining competitive edge.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "9 min read",
-    time: "08:00",
-    kind: "day"
   },
   {
     url: "/u-s-china-ai-watch-material-inflection-detected",
@@ -1435,6 +1171,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
