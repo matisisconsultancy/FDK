@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-disclosure-test",
+    title: "The Disclosure Test",
+    excerpt: "Consob, not another bidder, is now setting the pace of the Italian Banking Risiko.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-architecture-of-the-new-bank",
     title: "The Architecture of the New Bank",
     excerpt: "MPS's defence hardens into an industrial plan as Brussels turns pro-scale and Generali moves to the centre of gravity.",
