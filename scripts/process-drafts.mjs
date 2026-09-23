@@ -37,6 +37,23 @@ const run = (script, extra = []) =>
 const published = [];
 const failed = [];
 
+// Reject drafts whose title is not a real title — a URL, a bare date, a
+// masthead line, or a test note. These are the junk the Telegram pipeline
+// produces; they must never reach the live site regardless of which bot sent
+// them. Returns a reason string when junk, else null.
+const MONTHS = "january|february|march|april|may|june|july|august|september|october|november|december";
+function looksJunkTitle(title) {
+  const t = String(title || "").trim();
+  if (!t) return "empty title";
+  if (/https?:\/\/|chatgpt\.com|libfile_|account_id=/i.test(t)) return "URL as title";
+  if (new RegExp("^\\d{1,2}\\s+(" + MONTHS + ")\\s+\\d{4}\\b", "i").test(t)) return "date as title";
+  if (new RegExp("^(" + MONTHS + ")\\s+\\d{1,2},?\\s+\\d{4}\\b", "i").test(t)) return "date as title";
+  if (/\|\s*fdk\b/i.test(t) || /^the velocity edge\b/i.test(t)) return "masthead as title";
+  if (/·.*·.*·/.test(t)) return "section list as title";
+  if (/prueba de que est[aá] funcionando|funcionando el publicador/i.test(t)) return "test note";
+  return null;
+}
+
 for (const file of pending) {
   const rel = path.join("drafts", file);
   console.log(`\n━━━ processing ${rel} ━━━`);
@@ -67,6 +84,19 @@ for (const file of pending) {
           console.warn(`⚠ AI formatter failed for ${file}; publishing as plain paragraphs. ${e.message}`);
         }
       }
+    }
+
+    // ---- guard: never publish a junk draft ----
+    const finalFm = fs.readFileSync(path.join(DRAFTS, file), "utf8").match(/^---\n([\s\S]*?)\n---/);
+    const titleLine = finalFm ? ((finalFm[1].match(/(?:^|\n)\s*title\s*:\s*(.+)/) || [])[1] || "").trim() : "";
+    const junkReason = looksJunkTitle(titleLine);
+    if (junkReason) {
+      const REJECTED = path.join(DRAFTS, "rejected");
+      fs.mkdirSync(REJECTED, { recursive: true });
+      fs.renameSync(path.join(DRAFTS, file), path.join(REJECTED, file));
+      console.warn(`⛔ rejected ${file}: ${junkReason} — title ${JSON.stringify(titleLine)} → drafts/rejected/`);
+      failed.push(file);
+      continue;
     }
 
     run("publish-note.mjs", [rel]);
