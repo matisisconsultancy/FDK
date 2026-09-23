@@ -310,32 +310,34 @@ function parseHeader_(text) {
 // August 12, 2026 | FDK". Returns null if the line is just a normal title.
 function detectMasthead_(line) {
   if (!line) return null;
-  var hasDate = /[A-Z][a-z]+\s+\d{1,2},\s*\d{4}/.test(line);       // "August 4, 2026"
-  // The line minus any date/FDK/brand/separators — is what's left JUST an
-  // edition name? (so a bare "Closing of the Day" is treated as the edition,
-  // not the title, and gets the right slot/colour).
-  var bare = line.replace(/[A-Za-z]+\s+\d{1,2},?\s*\d{4}/g, "").replace(/\bfdk\b/gi, "")
-                 .replace(/the\s+velocity\s+edge/gi, "").replace(/[|—–]/g, " ")
+  // Dates in BOTH orders: "August 4, 2026" and "22 September 2026".
+  var DATE = "(?:[A-Z][a-z]+\\s+\\d{1,2},?\\s*\\d{4}|\\d{1,2}\\s+[A-Z][a-z]+\\s+\\d{4})";
+  var hasDate = new RegExp(DATE).test(line);
+  // The line minus any date/FDK/brand/separators (incl. ":") — is what's left
+  // JUST an edition name? (so a bare "Closing of the Day" or "22 September
+  // 2026: Provisional Nowcast" is read as the edition, not the title).
+  var bare = line.replace(new RegExp(DATE, "g"), "").replace(/\bfdk\b/gi, "")
+                 .replace(/the\s+velocity\s+edge/gi, "").replace(/[|—–:]/g, " ")
                  .replace(/\s{2,}/g, " ").trim();
-  var editionOnly = /^(the\s+)?(closing(\s+of\s+the\s+day)?|the\s+close|morning\s+view|morning\s+note|midday(\s+pulse)?|in\s+focus|night\s+briefing|evening(\s+note)?|market\s+watch|breaking\s+news|daily\s+nowcast|sunday\s+edition|today'?s?\s+edition|the\s+week\s+ahead)$/i.test(bare);
+  var editionOnly = /^(the\s+)?(closing(\s+of\s+the\s+day)?|the\s+close|morning\s+view|morning\s+note|midday(\s+pulse)?|in\s+focus|night\s+briefing|evening(\s+note)?|market\s+watch|breaking\s+news|(daily\s+|provisional\s+)?nowcast|executive\s+synthesis|sunday\s+edition|today'?s?\s+edition|the\s+week\s+ahead)$/i.test(bare);
   var looks = /the velocity edge/i.test(line) || /\bFDK\b/i.test(line) ||
-              (/[|—–]/.test(line) && hasDate) || editionOnly;
+              (/[|—–:]/.test(line) && hasDate) || editionOnly || (hasDate && bare === "");
   if (!looks) return null;
 
   var dateObj = null;
-  var dm = line.match(/([A-Z][a-z]+\s+\d{1,2},\s*\d{4})/);
-  if (dm) { var d = new Date(dm[1]); if (!isNaN(d.getTime())) dateObj = d; }
+  var dm = line.match(new RegExp(DATE));
+  if (dm) { var d = new Date(dm[0]); if (!isNaN(d.getTime())) dateObj = d; }
 
-  // Split on | — – and pick the segment that is the edition (not the brand,
+  // Split on | — – : and pick the segment that is the edition (not the brand,
   // not the date, not "FDK").
-  var segs = line.split(/\s*[|—–]\s*/);
+  var segs = line.split(/\s*[|—–:]\s*/);
   var edition = null;
   for (var i = 0; i < segs.length; i++) {
     var seg = String(segs[i] || "").trim();
     if (!seg) continue;
     if (/^the\s+velocity\s+edge$/i.test(seg)) continue;
     if (/^fdk$/i.test(seg)) continue;
-    if (/[A-Z][a-z]+\s+\d{1,2},\s*\d{4}/.test(seg)) continue; // the date
+    if (new RegExp("^" + DATE + "$").test(seg)) continue; // the date segment
     edition = seg; break;
   }
   return { dateObj: dateObj, edition: edition ? normalizeEdition_(edition) : null };
@@ -356,8 +358,10 @@ function normalizeEdition_(ed) {
 
 // Pull a "Month D, YYYY" date out of free text (title or masthead), if present.
 function dateFromText_(t) {
-  var dm = String(t || "").match(/([A-Z][a-z]+\s+\d{1,2},?\s*\d{4})/);
-  if (dm) { var d = new Date(dm[1].replace(/(\d)\s+(\d{4})/, "$1, $2")); if (!isNaN(d.getTime())) return d; }
+  t = String(t || "");
+  var m = t.match(/([A-Z][a-z]+\s+\d{1,2},?\s*\d{4})/) || // "August 4, 2026"
+          t.match(/(\d{1,2}\s+[A-Z][a-z]+\s+\d{4})/);      // "22 September 2026"
+  if (m) { var d = new Date(m[1]); if (!isNaN(d.getTime())) return d; }
   return null;
 }
 
@@ -367,7 +371,8 @@ function dateFromText_(t) {
 function cleanTitle_(t) {
   t = String(t || "");
   t = t.replace(/^\s*(mon|tues|wednes|thurs|fri|satur|sun)day\b\s*,?\s*/i, ""); // weekday prefix
-  t = t.replace(/[A-Za-z]+\s+\d{1,2},?\s*\d{4}/g, "");     // dates
+  t = t.replace(/[A-Za-z]+\s+\d{1,2},?\s*\d{4}/g, "");     // dates "Month D, YYYY"
+  t = t.replace(/\d{1,2}\s+[A-Za-z]+\s+\d{4}/g, "");       // dates "DD Month YYYY"
   t = t.replace(/\bfdk\b/gi, "");
   t = t.replace(/the\s+velocity\s+edge/gi, "");
   var parts = t.split(/\s*[|—–]\s*/).map(function (x) { return x.trim(); }).filter(Boolean);
