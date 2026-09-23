@@ -1,6 +1,6 @@
 ---
-title: 18 September 2026: Executive Synthesis
-slug: 18-september-2026-executive-synthesis
+title: The Denominator
+slug: the-denominator
 date: September 18, 2026
 slot: The Close
 tag: Capital

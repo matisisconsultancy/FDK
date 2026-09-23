@@ -1,6 +1,6 @@
 ---
-title: 16 September 2026
-slug: 16-september-2026
+title: The Bottleneck Is the Asset
+slug: the-bottleneck-is-the-asset
 date: September 16, 2026
 slot: The Close
 tag: Capital

@@ -1,6 +1,6 @@
 ---
-title: 19 September 2026
-slug: 19-september-2026
+title: Financeable Powered Intelligence
+slug: financeable-powered-intelligence
 date: September 19, 2026
 slot: Europe AI Gigafactory Watch
 tag: Capital

@@ -7,8 +7,8 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/22-september-2026",
-    title: "22 September 2026",
+    url: "/the-great-bifurcation",
+    title: "The Great Bifurcation",
     excerpt: "AI has become a macroeconomic variable, and central banks now face its demand shock years before its productivity dividend arrives.",
     tag: "Central Banks & AI Watch · Macro",
     slot: "Central Banks & AI Watch",
@@ -19,8 +19,8 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/21-september-2026",
-    title: "21 September 2026",
+    url: "/the-hurdle-rate",
+    title: "The Hurdle Rate",
     excerpt: "When oil and yields eased together, capital rushed straight back into semiconductors — revealing the true constraint on the AI Supercycle.",
     tag: "The Close · Capital",
     slot: "The Close",
@@ -31,8 +31,8 @@ window.FDK_POSTS = [
     kind: "night"
   },
   {
-    url: "/19-september-2026",
-    title: "19 September 2026",
+    url: "/financeable-powered-intelligence",
+    title: "Financeable Powered Intelligence",
     excerpt: "As AI infrastructure becomes a credit asset, power delays, permitting and offtake now flow straight into spreads and WACC.",
     tag: "Europe AI Gigafactory Watch · Capital",
     slot: "Europe AI Gigafactory Watch",
@@ -43,8 +43,8 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/18-september-2026-executive-synthesis",
-    title: "18 September 2026: Executive Synthesis",
+    url: "/the-denominator",
+    title: "The Denominator",
     excerpt: "Central banks converge on tightening as the AI Supercycle turns physical — and the dividing line becomes productive capital versus capital that arrives too late.",
     tag: "The Close · Capital",
     slot: "The Close",
@@ -55,8 +55,8 @@ window.FDK_POSTS = [
     kind: "night"
   },
   {
-    url: "/16-september-2026",
-    title: "16 September 2026",
+    url: "/the-bottleneck-is-the-asset",
+    title: "The Bottleneck Is the Asset",
     excerpt: "Capital is becoming more expensive, energy more strategic and intelligence cheaper — and value migrates to whoever can connect the three.",
     tag: "The Close · Capital",
     slot: "The Close",
@@ -1231,6 +1231,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 

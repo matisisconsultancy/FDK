@@ -1,6 +1,6 @@
 ---
-title: 21 September 2026
-slug: 21-september-2026
+title: The Hurdle Rate
+slug: the-hurdle-rate
 date: September 21, 2026
 slot: The Close
 tag: Capital

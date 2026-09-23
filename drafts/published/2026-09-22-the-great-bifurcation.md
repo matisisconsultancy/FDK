@@ -1,6 +1,6 @@
 ---
-title: 22 September 2026
-slug: 22-september-2026
+title: The Great Bifurcation
+slug: the-great-bifurcation
 date: September 22, 2026
 slot: Central Banks & AI Watch
 tag: Macro
