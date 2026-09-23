@@ -117,6 +117,8 @@ var TXT = {
   delWhich:   { it: "🗑️ Quale nota vuoi eliminare? Incolla il link della nota, oppure scrivi:\n<code>elimina nota: &lt;url o slug&gt;</code>",
                 en: "🗑️ Which note do you want to delete? Paste the note's link, or send:\n<code>delete note: &lt;url or slug&gt;</code>" },
   delCancelled: { it: "✖ Eliminazione annullata.", en: "✖ Deletion cancelled." },
+  delNotFound: { it: function (s) { return "⚠️ Non trovo «" + s + "» online. Controlla il link o lo slug (o la nota è già stata eliminata)."; },
+                 en: function (s) { return "⚠️ I can't find «" + s + "» online. Check the link or slug (or the note is already deleted)."; } },
 };
 function L(key) { var m = TXT[key]; return m ? (m[CONFIG.LANG] || m.it) : ""; }
 // ========================================================
@@ -292,8 +294,14 @@ function processPendingConfirms_() {
 // Shared by the explicit command and the confirmed loose-intent path.
 function doUnpublish_(chatId, slug) {
   try {
-    commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
     var durl = CONFIG.SITE_BASE + "/" + slug + "/";
+    // Verify the note is actually online first. Without this, deleting a slug
+    // that never existed (a typo, or a title that produced a different slug)
+    // would leave its URL 404 from the start — and the confirmation loop, which
+    // fires "deleted" the moment the URL is not 200, would send a FALSE
+    // "Eliminato" while the real note stayed online.
+    if (!urlIsLive_(durl)) { tgSend_(chatId, L("delNotFound")(escapeHtml_(slug))); return; }
+    commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
     tgSend_(chatId, L("delReq")(escapeHtml_(slug)));
     addPendingConfirm_({ type: "delete", slug: slug, chatId: chatId, url: durl });
   } catch (err) {
