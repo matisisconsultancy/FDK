@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/prueba-de-borrado-a-traves-del-bot",
+    title: "Prueba De Borrado a Través Del Bot",
+    excerpt: "A routine deletion test routed through the bot to confirm the pipeline is live.",
+    tag: "Morning View · Test",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/22-september-2026",
     title: "22 September 2026",
     excerpt: "AI has become a macroeconomic variable, and central banks now face its demand shock years before its productivity dividend arrives.",
