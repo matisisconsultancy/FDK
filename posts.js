@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/esta-es-una-prueba-de-que-esta-funcionando-el-publicador",
+    title: "Esta Es Una Prueba De Que Está Funcionando El Publicador",
+    excerpt: "A short test edition verifying the publisher is working.",
+    tag: "Morning View",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-disclosure-test",
     title: "The Disclosure Test",
     excerpt: "As Consob widens its MPS scrutiny, the 29 October vote becomes a test of whether the defensive architecture is legally clean and executable.",
