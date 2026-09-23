@@ -7,42 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/segunda-prueba-de-borrado",
-    title: "Segunda Prueba De Borrado",
-    excerpt: "A second deletion test for the editorial pipeline.",
-    tag: "Morning View",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/si-borrala",
-    title: "Si, Bórrala",
-    excerpt: "A minimal directive arrives in place of the usual note.",
-    tag: "Morning View",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/prueba-de-borrado-a-traves-del-bot",
-    title: "Prueba De Borrado a Través Del Bot",
-    excerpt: "A routine deletion test routed through the bot to confirm the pipeline is live.",
-    tag: "Morning View · Test",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "September 23, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/22-september-2026",
     title: "22 September 2026",
     excerpt: "AI has become a macroeconomic variable, and central banks now face its demand shock years before its productivity dividend arrives.",
@@ -1267,6 +1231,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
