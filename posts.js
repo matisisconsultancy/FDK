@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/si-borrala",
+    title: "Si, Bórrala",
+    excerpt: "A minimal directive arrives in place of the usual note.",
+    tag: "Morning View",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/prueba-de-borrado-a-traves-del-bot",
     title: "Prueba De Borrado a Través Del Bot",
     excerpt: "A routine deletion test routed through the bot to confirm the pipeline is live.",
@@ -1243,6 +1255,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
