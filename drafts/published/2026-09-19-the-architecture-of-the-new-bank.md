@@ -1,6 +1,6 @@
 ---
-title: September 19
-slug: september-19
+title: The Architecture of the New Bank
+slug: the-architecture-of-the-new-bank
 date: September 19, 2026
 slot: The Italian Banking Tipping Point
 tag: Capital

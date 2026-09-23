@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-architecture-of-the-new-bank",
+    title: "The Architecture of the New Bank",
+    excerpt: "MPS's defence hardens into an industrial plan as Brussels turns pro-scale and Generali moves to the centre of gravity.",
+    tag: "The Italian Banking Tipping Point · Capital",
+    slot: "The Italian Banking Tipping Point",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/hola-esta-es-una-segunda-prueba-del-24-de-septiembre",
     title: "Hola, Esta Es Una Segunda Prueba Del 24 De Septiembre",
     excerpt: "A brief test edition for September 24.",
@@ -244,18 +256,6 @@ window.FDK_POSTS = [
     date: "September 19, 2026",
     read: "3 min read",
     time: "12:30",
-    kind: "day"
-  },
-  {
-    url: "/september-19",
-    title: "September 19",
-    excerpt: "MPS's defence hardens into an industrial plan as Brussels turns pro-scale and Generali moves to the centre of gravity.",
-    tag: "The Italian Banking Tipping Point · Capital",
-    slot: "The Italian Banking Tipping Point",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
-    date: "September 19, 2026",
-    read: "8 min read",
-    time: "08:00",
     kind: "day"
   },
   {
@@ -1243,6 +1243,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
