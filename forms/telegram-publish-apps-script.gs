@@ -220,6 +220,29 @@ function processMessage_(msg) {
     return;
   }
 
+  // ---- /borrar <url|slug>: request deletion of a published note ----
+  var del = text.match(/^\/(borrar|eliminar|delete)\b\s*([\s\S]*)$/i);
+  if (del) {
+    var slug = slugFromArg_(del[2]);
+    if (!slug) {
+      tgSend_(chatId, "ℹ️ Uso: <code>/borrar &lt;url o slug&gt;</code>\n" +
+        "Ejemplo: <code>/borrar the-underwriting-test</code>\n" +
+        "o pega el enlace completo de la nota.");
+      return;
+    }
+    try {
+      // Drop a marker; the publish pipeline removes the note on the next build.
+      commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
+      tgSendWithButton_(chatId,
+        "🗑️ <b>Borrado solicitado:</b> «" + escapeHtml_(slug) + "»\n" +
+        "Estará fuera de la web en 1–2 min.",
+        "🔗 Ver nota (aún online)", CONFIG.SITE_BASE + "/" + slug + "/");
+    } catch (err) {
+      tgSend_(chatId, "✖ No se pudo solicitar el borrado: " + String(err));
+    }
+    return;
+  }
+
   // ---- gather the article (document > text) ----
   var got = extractContent_(msg);       // { text, title, source }
   var raw = (got.text || "").trim();
@@ -584,7 +607,19 @@ function helpText_() {
     "• <b>Texto:</b> el <u>título en la 1ª línea</u> y el artículo debajo, o\n" +
     "• <b>Un documento</b> (.docx, .pdf o .txt) con el título como pie de foto (caption).\n\n" +
     "En ~1 min te respondo aquí mismo con el link listo para compartir.\n\n" +
+    "🗑️ <b>Borrar una nota:</b> <code>/borrar &lt;url o slug&gt;</code>\n\n" +
     "Comandos: /id (ver tu id) · /help (esta ayuda)";
+}
+
+// Extract a slug from a /borrar argument: a full note URL or a bare slug.
+function slugFromArg_(arg) {
+  arg = String(arg || "").trim();
+  if (!arg) return "";
+  arg = arg.replace(/^https?:\/\/[^\/]+/i, "");   // drop scheme + host if a URL
+  var seg = arg.split(/[\/?#]/).filter(Boolean).pop() || arg; // last path segment
+  return String(seg).toLowerCase()
+    .normalize("NFD").replace(/[̀-ͯ]/g, "")
+    .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 }
 
 function kebab_(s) {
