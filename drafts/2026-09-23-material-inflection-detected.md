@@ -3,116 +3,65 @@ title: Material Inflection Detected
 slug: material-inflection-detected
 date: September 23, 2026
 slot: Central Banks & AI Watch
-format: ai
+tag: Macro
+dek: A more coherent central-bank reaction function is emerging — and it treats AI as an **inflationary demand shock** now, with the ==productivity dividend== arriving only later.
+epigraph: First comes capital. Then scarcity. Then inflation. Then productivity.
+excerpt: The RBA, ECB and Europe's inflation picture now point the same way — AI's sequence, not its direction, is the decisive variable.
 ---
 
-THE CENTRAL-BANK CONSENSUS IS SHIFTING: AI IS A DEMAND SHOCK FIRST, A PRODUCTIVITY SHOCK LATER
+A more coherent central-bank reaction function is emerging. The latest signal comes from the Reserve Bank of Australia, and it is unusually explicit: Governor Michele Bullock said on 22 September that there are still "very few signs" AI is lifting the supply side of the economy, while there is substantial evidence it is already boosting demand. She described this as an "awkward sequencing" in which AI investment adds to excess demand before the productivity dividend arrives.
 
-23 September 2026 | FDK
+That is a major confirmation of the two-stage AI Supercycle thesis: AI capital formation drives demand, scarcity and inflation first — and only later does AI diffusion drive productivity, lower unit costs and industrial-AI deflation.
 
-A more coherent central-bank reaction function is emerging. The latest signal comes from the Reserve Bank of Australia, and it is unusually explicit: Governor Michele Bullock said on 22 September that there are still “very few signs” AI is lifting the supply side of the economy, while there is substantial evidence it is already boosting demand. She described this as an “awkward sequencing” in which AI investment adds to excess demand before the productivity dividend arrives. 
+::pull THE SEQUENCE, NOT THE DIRECTION
+AI may initially make the central-bank problem harder, not easier: stronger investment demand, incomplete productivity gains and greater labour-market mismatch can coexist.
 
-That is a major confirmation of the two-stage AI Supercycle thesis:
+Bullock's intervention goes further. She said the transition could temporarily worsen the trade-off between inflation and unemployment and even lift the effective NAIRU for a period as workers are displaced before new jobs and business models emerge.
 
-AI CAPITAL FORMATION → DEMAND / SCARCITY / INFLATION
+::stats
+95th pct :: S&P 500 market concentration above historical level
+75th pct :: IT-sector concentration above historical level
+~zero :: Estimated equity risk premia for lower-quartile S&P 500 firms
+mid-2027 :: Expected euro-area return toward inflation target
 
-followed only later by:
+::signals The New Central-Bank AI Reaction Function | three developments, one direction
 
-AI DIFFUSION → PRODUCTIVITY / LOWER UNIT COSTS / INDUSTRIAL-AI DEFLATION.
+# The RBA identifies sequencing risk
+Governor Bullock's message is that AI raises demand before supply. Investment adds to excess demand before any productivity dividend arrives, temporarily worsening the inflation-unemployment trade-off and potentially lifting the effective NAIRU.
+signal: AI raises demand before supply — the first-round effect is inflationary.
 
-Bullock’s intervention goes further. She said the transition could temporarily worsen the trade-off between inflation and unemployment and even lift the effective NAIRU for a period as workers are displaced before new jobs and business models emerge. In other words, AI may initially make the central-bank problem harder, not easier: stronger investment demand, incomplete productivity gains and greater labour-market mismatch can coexist. 
+# The ECB quantifies valuation and concentration risk
+In an Economic Bulletin analysis published on 22 September, ECB staff found strong realised and expected earnings have been the main support for US equities during the AI boom, but investor compensation for equity risk has compressed sharply. Market concentration is above the 95th percentile for the S&P 500 and above the 75th percentile for the IT sector, while the tails of technology-sector risk pricing have begun to widen. Underperformance by a small number of mega-cap companies could transmit into a broader market correction.
+signal: Thin risk premia and concentrated leadership amplify the cost of any disappointment.
 
-THE SECOND INFLECTION: CENTRAL BANKS ARE NOW MEASURING THE AI BUBBLE RISK
+# European inflation identifies energy as the binding constraint
+ECB Chief Economist Philip Lane said on 22 September that a second wave of energy-price increases means euro-area inflation is likely to remain higher for longer, with a return toward target now expected from around mid-2027. He acknowledged Europe is not at the centre of the AI boom, though European firms can still benefit from diffusion.
+signal: Energy is the intermediate constraint that can delay the pivot from AI inflation to productivity deflation.
 
-The same RBA discussion also moved directly into financial stability. Bullock said central banks are watching the possibility that the AI boom could prove to be a bubble and warned that a disorderly unwind could damage both the financial system and the real economy. She did not conclude that AI is a bubble; the important change is that the risk has entered the formal central-bank vulnerability set. 
+::section Europe's Double Scarcity Problem | energy plus infrastructure
+Europe risks facing energy scarcity and AI infrastructure scarcity before it captures AI productivity and industrial-AI deflation.
 
-The ECB has now quantified that risk more precisely. In an Economic Bulletin analysis published on 22 September, ECB staff found that strong realised and expected earnings have been the main support for US equities during the AI boom, but investor compensation for equity risk has compressed sharply. For the lower quartile of S&P 500 companies, estimated equity risk premia are close to zero, while risk pricing has become especially subdued in technology and industrial stocks. 
+The decisive variable is becoming the lag between capital formation and productivity realisation. The longer that lag, the more central banks must treat AI as inflationary. The shorter it becomes, the faster the monetary regime can pivot toward the productivity dividend.
 
-The more consequential finding is concentration. The ECB estimates that market concentration is above its historical 95th percentile for the S&P 500 and above the 75th percentile for the IT sector. At the same time, the tails of technology-sector risk pricing have begun to widen, suggesting investors are starting to discriminate more aggressively between stronger and weaker AI exposures. The ECB explicitly warns that underperformance by a small number of mega-cap companies could therefore transmit into a broader market correction, particularly if optimistic profit assumptions or large debt-financed AI investments prove unsustainable. 
+The emerging financial chain runs: AI expectations lift earnings expectations, compress risk premia, drive market concentration and debt-financed capex — until an earnings miss triggers systemic repricing. The risk is no longer simply that AI valuations are high; it is that concentration and financing leverage amplify the consequences of any disappointment in the productivity path.
 
-This gives the financial chain much greater precision:
-
-AI EXPECTATIONS → HIGH EARNINGS EXPECTATIONS → LOW RISK PREMIA → MARKET CONCENTRATION → DEBT-FINANCED CAPEX → EARNINGS MISS → SYSTEMIC REPRICING.
-
-The risk is no longer simply “AI valuations are high.” It is that market concentration and financing leverage amplify the consequences of any disappointment in the productivity path.
-
-EUROPE FACES A DOUBLE SCARCITY PROBLEM
-
-ECB Chief Economist Philip Lane added another important element on 22 September. He said the second wave of energy-price increases means euro-area inflation is likely to remain higher for longer, with a return toward target now expected from around mid-2027. Lane also acknowledged that Europe is not at the centre of the AI boom, although European firms can still benefit from diffusion. 
-
-That combination is strategically uncomfortable for Europe.
-
-Europe risks facing:
-
-Energy scarcity + AI infrastructure scarcity
-
-before it captures:
-
-AI productivity + Industrial-AI deflation.
-
-The policy consequence is clear. The decisive variable is becoming the lag between capital formation and productivity realisation.The longer that lag, the more central banks must treat AI as inflationary. The shorter it becomes, the faster the monetary regime can pivot toward the productivity dividend.
-
-THE NEW CENTRAL-BANK AI REACTION FUNCTION
-
-Three independent developments now point in the same direction.
-
-The RBA is identifying sequencing risk: AI raises demand before supply.
-
-The ECB is identifying valuation and concentration risk: thin risk premia and concentrated market leadership increase the consequences of disappointment.
-
-And the broader European inflation picture is identifying energy as the binding intermediate constraint that can delay the transition from AI investment inflation to productivity deflation. 
-
-The emerging reaction function is therefore:
-
-AI CAPEX
-→ DEMAND SHOCK
-→ ENERGY / COMPUTE / CONSTRUCTION SCARCITY
-→ INFLATION
-→ TIGHTER POLICY / HIGHER R*
-→ FINANCIAL LEVERAGE
-→ PRODUCTIVITY DELIVERY OR DISAPPOINTMENT
-→ INDUSTRIAL-AI DEFLATION OR FINANCIAL REPRICING.
-
-INVESTOR IMPLICATION
-
+::section The Investor Implication | winners versus timing
 The most important distinction is no longer simply AI winners versus AI losers. It is between companies and economies where productivity is already converting capital expenditure into cash flow, and those where valuation and leverage are running ahead of realised productivity.
 
 That argues for watching four variables together: realised AI earnings, free-cash-flow conversion, funding structures behind infrastructure expansion, and the time required for productivity gains to reach the broader economy. Thin risk premia make disappointment more expensive precisely when higher rates make refinancing more difficult.
 
-For rates, the implication is equally consequential: AI is not yet a clean disinflation trade. Where investment demand and energy constraints dominate, the first-round effect remains upward pressure on inflation and potentially on neutral rates.
+For rates, AI is not yet a clean disinflation trade. Where investment demand and energy constraints dominate, the first-round effect remains upward pressure on inflation and potentially on neutral rates.
 
-EU POLICY CONSEQUENCE
+::section The EU Policy Consequence | compress the transition interval
+Europe's priority should be to compress the transition interval between AI capital formation and industrial-AI productivity. That means accelerating grid capacity, power availability, compute infrastructure, permitting, industrial AI diffusion and workforce transition simultaneously.
 
-Europe’s priority should be to compress the transition interval between AI capital formation and Industrial-AI productivity.
+It also means incorporating AI-specific scenarios into financial-stability surveillance: concentrated equity exposures, data-centre financing, private credit, cloud concentration and the refinancing sensitivity of capital-intensive AI infrastructure. The objective is not to suppress the AI investment cycle, but to ensure Europe reaches the productivity phase before the inflationary and financial costs of the build-out become dominant.
 
-That means accelerating grid capacity, power availability, compute infrastructure, permitting, industrial AI diffusion and workforce transition simultaneously. It also means incorporating AI-specific scenarios into financial-stability surveillance: concentrated equity exposures, data-centre financing, private credit, cloud concentration and the refinancing sensitivity of capital-intensive AI infrastructure.
+::takeaways Key takeaways | what the sequence means
+- The central-bank question has moved beyond "inflationary or deflationary?" to ==it depends on the sequence==.
+- First comes capital, then scarcity, then inflation, then productivity — and only then deflation.
+- Between those stages sits the variable central banks now monitor explicitly: **financial fragility**.
+- Energy scarcity is the binding constraint that can lengthen the lag and delay the pivot.
+- The distinction that matters is cash-flow conversion, not simply AI exposure.
 
-The objective is not to suppress the AI investment cycle. It is to ensure Europe reaches the productivity phase before the inflationary and financial costs of the build-out become dominant.
-
-THE VELOCITY INSIGHT
-
-The central-bank debate has now moved decisively beyond the question:
-
-“Will AI be inflationary or deflationary?”
-
-The emerging answer is:
-
-IT DEPENDS ON THE SEQUENCE.
-
-First comes capital.
-Then scarcity.
-Then inflation.
-Then productivity.
-Only then comes deflation.
-
-And between those stages sits the increasingly important variable central banks are now beginning to monitor explicitly:
-
-FINANCIAL FRAGILITY.
-
-The AI Supercycle is therefore becoming a race not merely to build AI fastest, but to convert investment into productivity before inflation, leverage and concentration impose the cost of waiting.
-
-That is today’s material inflection.
-
-RBA — Michele Bullock, CEDA fireside chat, 22 September 2026⁠
-ECB — US equity market developments during the AI boom, 22 September 2026⁠
-ECB — Philip Lane interview on inflation, energy and AI, 22 September 2026⁠
+::close The AI Supercycle is becoming a race not merely to build AI fastest, but to convert investment into productivity ==before inflation, leverage and concentration impose the cost of waiting==.

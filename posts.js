@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capacity-wall",
+    title: "The Capacity Wall",
+    excerpt: "American business activity hit a five-year high, the 10-year broke above 5%, yet capital kept pouring into the AI build-out.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "9 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-disclosure-test",
     title: "The Disclosure Test",
     excerpt: "Consob, not another bidder, is now setting the pace of the Italian Banking Risiko.",
