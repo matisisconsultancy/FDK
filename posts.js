@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/segunda-prueba-de-borrado",
+    title: "Segunda Prueba De Borrado",
+    excerpt: "A second deletion test for the editorial pipeline.",
+    tag: "Morning View",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 23, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/si-borrala",
     title: "Si, Bórrala",
     excerpt: "A minimal directive arrives in place of the usual note.",
