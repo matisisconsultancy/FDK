@@ -63,6 +63,9 @@ var CONFIG = {
   BRAND_NAME: "FDK EmpowerNet",
   TIMEZONE: "Europe/Madrid",
 
+  // Idioma de los mensajes de estado que ve quien publica: "it" o "en".
+  LANG: "it",
+
   // ---- Ediciones por hora ----
   // El bot elige la edición según la hora de publicación (zona TIMEZONE):
   // `from` = hora (0–23) a partir de la cual aplica. `slot` = etiqueta del
@@ -81,6 +84,36 @@ var CONFIG = {
   SHARE_TEMPLATE:
     "📖 The Velocity Edge · {edition}\n\n«{title}»\n\nRead it · Leggilo 👉 {url}",
 };
+
+// ===== Mensajes de estado para quien publica (idioma en CONFIG.LANG) =====
+var TXT = {
+  received:   { it: function (ed, t) { return "✅ <b>Ricevuto</b> · " + ed + ": «" + t + "»\nStiamo pubblicando — ti avviso qui appena è online (~1–2 min)."; },
+                en: function (ed, t) { return "✅ <b>Received</b> · " + ed + ": «" + t + "»\nPublishing — I'll notify you here as soon as it's online (~1–2 min)."; } },
+  seeStatus:  { it: "🔗 Stato", en: "🔗 Status" },
+  online:     { it: function (t) { return "🟢 <b>È online:</b> «" + t + "»\n👇 Copia o inoltra questo messaggio per condividerlo:"; },
+                en: function (t) { return "🟢 <b>It's live:</b> «" + t + "»\n👇 Copy or forward this message to share it:"; } },
+  delReq:     { it: function (s) { return "🗑️ <b>Eliminazione richiesta:</b> «" + s + "»\nTi confermo qui appena non sarà più online (~1–2 min)."; },
+                en: function (s) { return "🗑️ <b>Deletion requested:</b> «" + s + "»\nI'll confirm here as soon as it's offline (~1–2 min)."; } },
+  deleted:    { it: function (s) { return "🗑️ <b>Eliminato:</b> «" + s + "» non è più online."; },
+                en: function (s) { return "🗑️ <b>Deleted:</b> «" + s + "» is no longer online."; } },
+  slow:       { it: function (k, s, u) { return "ℹ️ La " + (k === "publish" ? "pubblicazione" : "eliminazione") + " di «" + s + "» sta impiegando più del solito. Ricontrolla tra poco:\n" + u; },
+                en: function (k, s, u) { return "ℹ️ The " + (k === "publish" ? "publishing" : "deletion") + " of «" + s + "» is taking longer than usual. Check again shortly:\n" + u; } },
+  delUsage:   { it: "ℹ️ Per eliminare una nota scrivi:\n<code>borrar nota: &lt;url o slug&gt;</code>\nEsempio: <code>borrar nota: the-underwriting-test</code>\noppure incolla il link completo della nota.",
+                en: "ℹ️ To delete a note, send:\n<code>borrar nota: &lt;url or slug&gt;</code>\nExample: <code>borrar nota: the-underwriting-test</code>\nor paste the note's full link." },
+  delErr:     { it: function (e) { return "✖ Impossibile richiedere l'eliminazione: " + e; },
+                en: function (e) { return "✖ Could not request the deletion: " + e; } },
+  notAllowed: { it: "⛔ Questo utente non è autorizzato a pubblicare.\nInvia /id e passa quel numero all'amministratore del bot.",
+                en: "⛔ This user is not authorized to publish.\nSend /id and give that number to the bot admin." },
+  idMsg:      { it: function (id) { return "🆔 Il tuo id Telegram è: <code>" + id + "</code>\n\nPassalo a chi amministra il bot per autorizzarti."; },
+                en: function (id) { return "🆔 Your Telegram id is: <code>" + id + "</code>\n\nGive it to the bot admin to authorize you."; } },
+  noText:     { it: "⚠️ Non ho trovato testo da pubblicare.\n\n", en: "⚠️ I couldn't find any text to publish.\n\n" },
+  noTitle:    { it: "⚠️ Non sono riuscito a leggere un titolo pulito. Invia il titolo su una riga a parte (senza la data).",
+                en: "⚠️ I couldn't read a clean title. Send the title on its own line (without the date)." },
+  badSlug:    { it: "⚠️ Il titolo non genera un URL valido. Usa del testo con lettere.",
+                en: "⚠️ The title doesn't make a valid URL. Use text with letters." },
+  pubErr:     { it: function (e) { return "✖ Impossibile pubblicare: " + e; }, en: function (e) { return "✖ Could not publish: " + e; } },
+};
+function L(key) { var m = TXT[key]; return m ? (m[CONFIG.LANG] || m.it) : ""; }
 // ========================================================
 
 /* ==================== ONE-TIME SETUP ==================== */
@@ -145,7 +178,7 @@ function pollUpdates() {
           processMessage_(it.msg);
         } catch (e) {
           Logger.log("✖ update " + it.update_id + ": " + e);
-          try { tgSend_(it.msg.chat && it.msg.chat.id, "✖ No se pudo publicar: " + String(e)); } catch (e2) {}
+          try { tgSend_(it.msg.chat && it.msg.chat.id, L("pubErr")(String(e))); } catch (e2) {}
         }
       }
       // Confirm through the LAST update in the group so retries never re-process.
@@ -231,19 +264,17 @@ function processPendingConfirms_() {
     var live = urlIsLive_(e.url);
     if (e.type === "publish" && live) {
       // Now visible → send the clean, shareable message (link is safe to forward).
-      tgSend_(e.chatId, "🟢 <b>Ya está online:</b> «" + escapeHtml_(e.title || e.slug) + "»\n" +
-        "👇 Copia o reenvía este mensaje para compartirlo:");
+      tgSend_(e.chatId, L("online")(escapeHtml_(e.title || e.slug)));
       tgSend_(e.chatId, buildShare_(e.title || e.slug, e.url, e.edition || ""));
       continue;
     }
     if (e.type === "delete" && !live) {
-      tgSend_(e.chatId, "🗑️ <b>Borrado:</b> «" + escapeHtml_(e.slug) + "» ya no está online.");
+      tgSend_(e.chatId, L("deleted")(escapeHtml_(e.slug)));
       continue;
     }
     // Not ready yet — give up after 25 min so nothing lingers forever.
     if (now - (e.since || now) > 25 * 60 * 1000) {
-      tgSend_(e.chatId, "ℹ️ La " + (e.type === "publish" ? "publicación" : "eliminación") +
-        " de «" + escapeHtml_(e.slug) + "» está tardando más de lo normal. Revísalo en un rato:\n" + e.url);
+      tgSend_(e.chatId, L("slow")(e.type, escapeHtml_(e.slug), e.url));
       continue;
     }
     keep.push(e);
@@ -268,16 +299,14 @@ function processMessage_(msg) {
 
   // ---- helper commands (never publish) ----
   if (text === "/id" || text === "/id@") {
-    tgSend_(chatId, "🆔 Tu Telegram id es: <code>" + fromId + "</code>\n\n" +
-      "Pásaselo a quien administra el bot para autorizarte.");
+    tgSend_(chatId, L("idMsg")(fromId));
     return;
   }
   if (/^\/(start|help|ayuda)\b/i.test(text)) { tgSend_(chatId, helpText_()); return; }
 
   // ---- allow-list ----
   if (CONFIG.ALLOWED_IDS.length && CONFIG.ALLOWED_IDS.indexOf(fromId) === -1) {
-    tgSend_(chatId, "⛔ Este usuario no está autorizado para publicar.\n" +
-      "Envía /id y pasa ese número al administrador del bot.");
+    tgSend_(chatId, L("notAllowed"));
     return;
   }
 
@@ -286,22 +315,17 @@ function processMessage_(msg) {
   if (del) {
     var slug = slugFromArg_(del[1]);
     if (!slug) {
-      tgSend_(chatId, "ℹ️ Para borrar una nota escribe:\n" +
-        "<code>borrar nota: &lt;url o slug&gt;</code>\n" +
-        "Ejemplo: <code>borrar nota: the-underwriting-test</code>\n" +
-        "o pega el enlace completo de la nota.");
+      tgSend_(chatId, L("delUsage"));
       return;
     }
     try {
       // Drop a marker; the publish pipeline removes the note on the next build.
       commitFile_("drafts/unpublish/" + slug + ".txt", slug + "\n", "Unpublish via Telegram: " + slug);
       var durl = CONFIG.SITE_BASE + "/" + slug + "/";
-      tgSend_(chatId,
-        "🗑️ <b>Borrado solicitado:</b> «" + escapeHtml_(slug) + "»\n" +
-        "Te confirmo aquí en cuanto ya no esté online (~1–2 min).");
+      tgSend_(chatId, L("delReq")(escapeHtml_(slug)));
       addPendingConfirm_({ type: "delete", slug: slug, chatId: chatId, url: durl });
     } catch (err) {
-      tgSend_(chatId, "✖ No se pudo solicitar el borrado: " + String(err));
+      tgSend_(chatId, L("delErr")(String(err)));
     }
     return;
   }
@@ -309,7 +333,7 @@ function processMessage_(msg) {
   // ---- gather the article (document > text) ----
   var got = extractContent_(msg);       // { text, title, source }
   var raw = (got.text || "").trim();
-  if (!raw) { tgSend_(chatId, "⚠️ No encontré texto para publicar.\n\n" + helpText_()); return; }
+  if (!raw) { tgSend_(chatId, L("noText") + helpText_()); return; }
 
   // A masthead line ("The Velocity Edge — In Focus | August 4, 2026 | FDK")
   // NEVER becomes the title: we only lift the DATE and the EDITION from it.
@@ -329,11 +353,11 @@ function processMessage_(msg) {
   // A date written in the title becomes the note's DATE — never part of the title.
   var titleDate = parsed.dateObj ? null : dateFromText_(rawTitle);
   title = cleanTitle_(rawTitle); // strip date / FDK / brand / dashes → Title Case
-  if (!title) { tgSend_(chatId, "⚠️ No pude leer un título limpio. Manda el título en su propia línea (sin la fecha)."); return; }
+  if (!title) { tgSend_(chatId, L("noTitle")); return; }
   if (!article) article = title;
 
   var slug = kebab_(title);
-  if (!slug) { tgSend_(chatId, "⚠️ El título no genera una URL válida. Usa texto con letras."); return; }
+  if (!slug) { tgSend_(chatId, L("badSlug")); return; }
 
   // ---- date + edition: masthead > date-in-title > today / by-time -----------
   var when = (parsed.dateObj || titleDate) ? dateParts_(parsed.dateObj || titleDate) : todayParts_();
@@ -357,10 +381,8 @@ function processMessage_(msg) {
   // Instant receipt only — NOT the shareable link yet: the note is not visible
   // until the build + Pages deploy finish. The shareable message is sent later,
   // once we've verified the URL is actually live (see processPendingConfirms_).
-  tgSendWithButton_(chatId,
-    "✅ <b>Recibido</b> · " + escapeHtml_(ed.label) + ": «" + escapeHtml_(title) + "»\n" +
-    "Se está publicando — te aviso aquí en cuanto esté online (~1–2 min).",
-    "🔗 Ver estado", url);
+  // Receipt only — no link at all. The link arrives when the note is live.
+  tgSend_(chatId, L("received")(escapeHtml_(ed.label), escapeHtml_(title)));
 
   addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label });
 }
@@ -666,13 +688,23 @@ function commitFile_(filePath, contentStr, message) {
 /* ==================== HELPERS ==================== */
 
 function helpText_() {
-  return "👋 <b>" + escapeHtml_(CONFIG.BRAND_NAME) + " — publicador</b>\n\n" +
-    "Para publicar una nota, mándame:\n" +
-    "• <b>Texto:</b> el <u>título en la 1ª línea</u> y el artículo debajo, o\n" +
-    "• <b>Un documento</b> (.docx, .pdf o .txt) con el título como pie de foto (caption).\n\n" +
-    "En ~1 min te respondo aquí mismo con el link listo para compartir.\n\n" +
-    "🗑️ <b>Borrar una nota:</b> <code>borrar nota: &lt;url o slug&gt;</code>\n\n" +
-    "Comandos: /id (ver tu id) · /help (esta ayuda)";
+  var b = escapeHtml_(CONFIG.BRAND_NAME);
+  if (CONFIG.LANG === "en") {
+    return "👋 <b>" + b + " — publisher</b>\n\n" +
+      "To publish a note, send me:\n" +
+      "• <b>Text:</b> the <u>title on the 1st line</u> and the article below, or\n" +
+      "• <b>A document</b> (.docx, .pdf or .txt) with the title as the caption.\n\n" +
+      "In ~1–2 min I'll message you here with the link, ready to share.\n\n" +
+      "🗑️ <b>Delete a note:</b> <code>borrar nota: &lt;url or slug&gt;</code>\n\n" +
+      "Commands: /id (your id) · /help (this help)";
+  }
+  return "👋 <b>" + b + " — publisher</b>\n\n" +
+    "Per pubblicare una nota, inviami:\n" +
+    "• <b>Testo:</b> il <u>titolo nella 1ª riga</u> e l'articolo sotto, oppure\n" +
+    "• <b>Un documento</b> (.docx, .pdf o .txt) con il titolo come didascalia.\n\n" +
+    "In ~1–2 min ti scrivo qui con il link, pronto da condividere.\n\n" +
+    "🗑️ <b>Eliminare una nota:</b> <code>borrar nota: &lt;url o slug&gt;</code>\n\n" +
+    "Comandi: /id (il tuo id) · /help (questo aiuto)";
 }
 
 // Extract a slug from a /borrar argument: a full note URL or a bare slug.
