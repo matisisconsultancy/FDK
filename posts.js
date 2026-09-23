@@ -7,6 +7,66 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/22-september-2026",
+    title: "22 September 2026",
+    excerpt: "AI has become a macroeconomic variable, and central banks now face its demand shock years before its productivity dividend arrives.",
+    tag: "Central Banks & AI Watch · Macro",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "September 22, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/21-september-2026",
+    title: "21 September 2026",
+    excerpt: "When oil and yields eased together, capital rushed straight back into semiconductors — revealing the true constraint on the AI Supercycle.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "September 21, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
+    url: "/19-september-2026",
+    title: "19 September 2026",
+    excerpt: "As AI infrastructure becomes a credit asset, power delays, permitting and offtake now flow straight into spreads and WACC.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "September 19, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/18-september-2026-executive-synthesis",
+    title: "18 September 2026: Executive Synthesis",
+    excerpt: "Central banks converge on tightening as the AI Supercycle turns physical — and the dividing line becomes productive capital versus capital that arrives too late.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 18, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
+    url: "/16-september-2026",
+    title: "16 September 2026",
+    excerpt: "Capital is becoming more expensive, energy more strategic and intelligence cheaper — and value migrates to whoever can connect the three.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 16, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-deployability-premium",
     title: "The Deployability Premium",
     excerpt: "The Next Economy crosses another threshold as the market rewards deployability over raw capability.",
