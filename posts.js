@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-control",
+    title: "The Cost of Control",
+    excerpt: "With five-year Treasuries above 5%, the competitive test moves from AI capability to economic capture.",
+    tag: "Quick Take · Capital",
+    slot: "Quick Take",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-private-capital-vote",
     title: "The Private-capital Vote",
     excerpt: "The Treasury's abstention converts the MPS defensive vote from government versus market into private capital versus private capital.",
