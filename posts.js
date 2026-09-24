@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-deadline",
+    title: "Europe’s AI Deadline",
+    excerpt: "A more predictable U.S.–China relationship could accelerate AI compounding — and make Europe's position harder, not easier.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-855-billion-capacity-divide",
     title: "The $855 Billion Capacity Divide",
     excerpt: "Amazon added roughly $379 billion in value while Apple erased about $477 billion. The divergence exposed a new law of the AI economy — the market now pays for deliverable capacity, not the promise of intelligence.",
