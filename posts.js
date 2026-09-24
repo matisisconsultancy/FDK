@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-back-to-the-table",
+    title: "Europe: Back to the Table",
+    excerpt: "A managed bipolar system is forming; Europe must invest its way back to the negotiating table.",
+    tag: "In Focus · Geopolitics",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/dopo-trump-xi-la-corsa-accelera",
+    title: "Dopo Trump: Xi, La Corsa Accelera",
+    excerpt: "Una relazione USA–Cina più prevedibile non riduce l'urgenza europea sull'AI: la aumenta.",
+    tag: "The Velocity Edge · Europe AI Gigafactory Watch · AI",
+    slot: "The Velocity Edge · Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-deadline",
     title: "Europe’s AI Deadline",
     excerpt: "A more predictable U.S.–China relationship could accelerate AI compounding — and make Europe's position harder, not easier.",
