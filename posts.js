@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-acceleration",
+    title: "The Cost of Acceleration",
+    excerpt: "Five numbers frame a market where AI velocity collides with the rising cost of capital, energy and infrastructure.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-quick-take",
     title: "GVI Corporate Benchmark: Quick Take",
     excerpt: "The winners will not simply build the most capable AI — they will control the boundary between intelligence and action.",
