@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-855-billion-capacity-divide",
+    title: "The $855 Billion Capacity Divide",
+    excerpt: "Amazon added roughly $379 billion in value while Apple erased about $477 billion. The divergence exposed a new law of the AI economy — the market now pays for deliverable capacity, not the promise of intelligence.",
+    tag: "Midday Pulse · Capital · Three-Part Edition",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&w=800&q=80",
+    date: "August 6, 2026",
+    read: "12 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/ai-is-growing-jobs-are-not",
+    title: "AI Is Growing. Jobs Are Not.",
+    excerpt: "US services are expanding and profits remain strong, yet hiring is slowing. AI is becoming deflationary for labor while remaining inflationary for capital and infrastructure.",
+    tag: "Midday Pulse · The Great Split",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=800&q=80",
+    date: "August 6, 2026",
+    read: "2 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-big-take",
     title: "The Big Take",
     excerpt: "The Trump–Xi summit signals a shift from unmanaged rivalry to a managed architecture of strategic competition.",
