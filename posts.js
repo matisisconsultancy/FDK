@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take",
+    title: "The Big Take",
+    excerpt: "The Trump–Xi summit signals a shift from unmanaged rivalry to a managed architecture of strategic competition.",
+    tag: "U.s. · Geopolitics",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-cost-of-control",
     title: "The Cost of Control",
     excerpt: "With five-year Treasuries above 5%, the competitive test moves from AI capability to economic capture.",
