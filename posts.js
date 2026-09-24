@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/provisional-nowcast",
+    title: "Provisional Nowcast",
+    excerpt: "AI is now visible on both sides of the macro equation — supporting growth while keeping capital expensive.",
+    tag: "FDK Global Velocity Index · Macro",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-capacity-wall",
     title: "The Capacity Wall",
     excerpt: "American business activity hit a five-year high, the 10-year broke above 5%, yet capital kept pouring into the AI build-out.",
