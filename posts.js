@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-private-capital-vote",
+    title: "The Private-capital Vote",
+    excerpt: "The Treasury's abstention converts the MPS defensive vote from government versus market into private capital versus private capital.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-cost-of-acceleration",
     title: "The Cost of Acceleration",
     excerpt: "Five numbers frame a market where AI velocity collides with the rising cost of capital, energy and infrastructure.",
