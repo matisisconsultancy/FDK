@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-quick-take",
+    title: "GVI Corporate Benchmark: Quick Take",
+    excerpt: "The winners will not simply build the most capable AI — they will control the boundary between intelligence and action.",
+    tag: "Add This Just Before the Velocity Edge Section · Capital",
+    slot: "Add This Just Before the Velocity Edge Section",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 24, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/provisional-nowcast",
     title: "Provisional Nowcast",
     excerpt: "AI is now visible on both sides of the macro equation — supporting growth while keeping capital expensive.",
