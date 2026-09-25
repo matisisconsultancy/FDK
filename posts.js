@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/resolved-i-standardized-every-reference-to-the-same-benchmark-the-u-s-10-year-treasury-yield-at-approximately-5-2",
+    title: "Resolved. I Standardized Every Reference to the Same Benchmark: The U.S. 10-year Treasury Yield at Approximately 5.2%.",
+    excerpt: "The FDK GVI Corporate Benchmark on why powered, commissioned capacity — not contracts — is the new premium.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/5-avoid-stranded-scale",
     title: "5: Avoid: Stranded Scale",
     excerpt: "With U.S. long yields at multi-decade highs, AI growth must now compete for capital on materially tougher terms.",
