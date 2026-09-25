@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-proof",
+    title: "The Price of Proof",
+    excerpt: "The AI Supercycle has reached the underwriting desk — capital is moving toward bankable AI.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "2 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-intelligence-power-race",
     title: "The Intelligence Power Race",
     excerpt: "The AI race is no longer about models or chips—it is about the system that turns intelligence into capital, and Europe has a deadline.",
