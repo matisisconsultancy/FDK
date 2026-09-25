@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/compete-harder-escalate-less-invest-more",
+    title: "Compete Harder. Escalate Less. Invest More.",
+    excerpt: "Washington and Beijing postponed their deepest disputes — creating the strategic stability that could extend two rival AI capital cycles.",
+    tag: "U.s. · Geopolitics",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/resolved-i-standardized-every-reference-to-the-same-benchmark-the-u-s-10-year-treasury-yield-at-approximately-5-2",
     title: "Resolved. I Standardized Every Reference to the Same Benchmark: The U.S. 10-year Treasury Yield at Approximately 5.2%.",
     excerpt: "The FDK GVI Corporate Benchmark on why powered, commissioned capacity — not contracts — is the new premium.",
