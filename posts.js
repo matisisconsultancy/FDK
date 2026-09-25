@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-is-moving-from-productivity-story-to-cost-of-capital-story",
+    title: "AI Is Moving From Productivity Story to Cost-of-capital Story",
+    excerpt: "The ECB, BoE and SNB reveal a Great Split in how the AI shock transmits into yields, inflation and policy.",
+    tag: "Central Banks & AI Watch · Macro",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/compete-harder-escalate-less-invest-more",
     title: "Compete Harder. Escalate Less. Invest More.",
     excerpt: "Washington and Beijing postponed their deepest disputes — creating the strategic stability that could extend two rival AI capital cycles.",
