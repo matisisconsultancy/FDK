@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/5-avoid-stranded-scale",
+    title: "5: Avoid: Stranded Scale",
+    excerpt: "With U.S. long yields at multi-decade highs, AI growth must now compete for capital on materially tougher terms.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europe-back-to-the-table",
     title: "Europe: Back to the Table",
     excerpt: "A managed bipolar system is forming; Europe must invest its way back to the negotiating table.",
