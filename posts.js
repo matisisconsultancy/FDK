@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-power-race",
+    title: "The Intelligence Power Race",
+    excerpt: "The AI race is no longer about models or chips—it is about the system that turns intelligence into capital, and Europe has a deadline.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ai-is-moving-from-productivity-story-to-cost-of-capital-story",
     title: "AI Is Moving From Productivity Story to Cost-of-capital Story",
     excerpt: "The ECB, BoE and SNB reveal a Great Split in how the AI shock transmits into yields, inflation and policy.",
