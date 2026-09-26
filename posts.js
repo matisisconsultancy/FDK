@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-deepseek-inflection",
+    title: "The Deepseek Inflection",
+    excerpt: "China doesn't need the world's best AI model to disrupt the economics of the AI frontier.",
+    tag: "U.s. · AI",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ai-costs-are-real-the-economic-payoff-is-still-coming",
     title: "AI Costs Are Real. the Economic Payoff Is Still Coming.",
     excerpt: "AI is tightening the economy before transforming it — the offset of higher output and lower unit costs is still arriving.",
