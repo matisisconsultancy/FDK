@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-race-against-fragmentation",
+    title: "The Race Against Fragmentation",
+    excerpt: "Why the Italian banking consolidation may be the cycle that transforms the Eurozone itself.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-center-the-big-take",
     title: "The Next Economy Research Center: The Big Take",
     excerpt: "The Trump–Xi summit reframed rivalry as managed interdependence, raising structural capex while lowering extreme tail risk.",
