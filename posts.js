@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-costs-are-real-the-economic-payoff-is-still-coming",
+    title: "AI Costs Are Real. the Economic Payoff Is Still Coming.",
+    excerpt: "AI is tightening the economy before transforming it — the offset of higher output and lower unit costs is still arriving.",
+    tag: "Central Banks & AI Watch · Macro",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-race-against-fragmentation",
     title: "The Race Against Fragmentation",
     excerpt: "Why the Italian banking consolidation may be the cycle that transforms the Eurozone itself.",
