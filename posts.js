@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/weekend-edition",
+    title: "Weekend Edition",
+    excerpt: "We launch Life & Arts — a weekend inquiry into what kind of world we are actually building.",
+    tag: "Life & Arts · Life & Arts",
+    slot: "Life & Arts",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-stack-has-a-balance-sheet",
     title: "The Stack Has a Balance Sheet",
     excerpt: "Capital is expensive, energy is costly, and the market now pays only for monetization.",
