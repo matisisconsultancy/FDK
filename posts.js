@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/financial-verdict",
+    title: "Financial Verdict",
+    excerpt: "The next re-rating will separate AI cash generators from AI capital consumers.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-proof",
     title: "The Price of Proof",
     excerpt: "The AI Supercycle has reached the underwriting desk — capital is moving toward bankable AI.",
