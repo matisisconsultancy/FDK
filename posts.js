@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-efficiency-test",
+    title: "The Capital Efficiency Test",
+    excerpt: "With the U.S. 10-year Treasury at 5.158%, capital discipline is now the dividing line between AI growth and AI value creation.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/financial-verdict",
     title: "Financial Verdict",
     excerpt: "The next re-rating will separate AI cash generators from AI capital consumers.",
