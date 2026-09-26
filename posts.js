@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-center-the-big-take",
+    title: "The Next Economy Research Center: The Big Take",
+    excerpt: "The Trump–Xi summit reframed rivalry as managed interdependence, raising structural capex while lowering extreme tail risk.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-exception",
     title: "The AI Exception",
     excerpt: "Five numbers define a regime of Selective Acceleration, where the decisive question is who can turn AI capex into free cash flow fast enough to outrun the hurdle rate.",
