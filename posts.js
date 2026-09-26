@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-exception",
+    title: "The AI Exception",
+    excerpt: "Five numbers define a regime of Selective Acceleration, where the decisive question is who can turn AI capex into free cash flow fast enough to outrun the hurdle rate.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-capital-efficiency-test",
     title: "The Capital Efficiency Test",
     excerpt: "With the U.S. 10-year Treasury at 5.158%, capital discipline is now the dividing line between AI growth and AI value creation.",
