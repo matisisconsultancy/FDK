@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-stack-has-a-balance-sheet",
+    title: "The Stack Has a Balance Sheet",
+    excerpt: "Capital is expensive, energy is costly, and the market now pays only for monetization.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 26, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-deepseek-inflection",
     title: "The Deepseek Inflection",
     excerpt: "China doesn't need the world's best AI model to disrupt the economics of the AI frontier.",
