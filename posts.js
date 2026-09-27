@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-monday-gap-the-price-of-control",
+    title: "The Monday Gap: The Price of Control",
+    excerpt: "What breaks first on Monday — oil, bonds, or AI leadership?",
+    tag: "Morning View · Macro",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "September 27, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-ai",
     title: "The Great Repricing of AI",
     excerpt: "With the 10-year at 5.158%, AI leadership only pays where it converts into cash and valuation still leaves room for upside.",
