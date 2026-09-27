@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-is-repricing-the-cost-of-money",
+    title: "AI Is Repricing the Cost of Money",
+    excerpt: "AI capex is lifting real yields and hurdle rates now, long before diffusion delivers disinflation.",
+    tag: "Central Banks & AI Watch · Macro",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "September 27, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-race-moves-from-models-to-machines",
     title: "The Race Moves From Models to Machines",
     excerpt: "America raises the capability ceiling while China scales the deployment floor—Physical AI becomes the next battleground.",
