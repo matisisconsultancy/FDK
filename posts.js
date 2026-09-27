@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-update",
+    title: "Daily Update",
+    excerpt: "Geopolitical risk is easing while capital hurdles stay high — the AI Supercycle shifts from capacity to conversion.",
+    tag: "FDK Global Velocity Index · Macro",
+    slot: "FDK Global Velocity Index",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "September 27, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/weekend-edition",
     title: "Weekend Edition",
     excerpt: "We launch Life & Arts — a weekend inquiry into what kind of world we are actually building.",
