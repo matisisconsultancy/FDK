@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-italian-banking-paradox-2-0",
+    title: "The Italian Banking Paradox 2.0",
+    excerpt: "Italy's banking Risiko is no longer Italy's alone — it is becoming a re-equilibrium of Eurozone finance.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "September 27, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-monday-gap-the-price-of-control",
     title: "The Monday Gap: The Price of Control",
     excerpt: "What breaks first on Monday — oil, bonds, or AI leadership?",
