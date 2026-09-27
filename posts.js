@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-ai",
+    title: "The Great Repricing of AI",
+    excerpt: "With the 10-year at 5.158%, AI leadership only pays where it converts into cash and valuation still leaves room for upside.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "September 27, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/daily-update",
     title: "Daily Update",
     excerpt: "Geopolitical risk is easing while capital hurdles stay high — the AI Supercycle shifts from capacity to conversion.",
