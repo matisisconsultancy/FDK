@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/capital-creates-the-conditions-for-more-capital",
+    title: "Capital Creates the Conditions for More Capital.",
+    excerpt: "Why the AI supercycle is becoming a capital cycle, then a credit cycle, and potentially a monetary cycle.",
+    tag: "Midday Pulse · Central Banks",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "September 28, 2026",
+    read: "9 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark",
     title: "GVI Corporate Benchmark",
     excerpt: "A more discriminating phase begins — velocity identifies the leaders, economic capture determines the quality, valuation determines the return.",
