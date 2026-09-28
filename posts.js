@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark",
+    title: "GVI Corporate Benchmark",
+    excerpt: "A more discriminating phase begins — velocity identifies the leaders, economic capture determines the quality, valuation determines the return.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "September 28, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-monday-gap-the-great-split-moves-upstream",
     title: "The Monday Gap: The Great Split Moves Upstream",
     excerpt: "As scarce power and expensive capital collide with the AI Supercycle, the winners will be those who own the bottlenecks.",
