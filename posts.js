@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-hurdle-rate",
+    title: "The AI Hurdle Rate",
+    excerpt: "The AI Supercycle enters its harder financial phase as scarcity migrates from compute to energy to capital.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "September 28, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ai-is-repricing-the-cost-of-money",
     title: "AI Is Repricing the Cost of Money",
     excerpt: "AI capex is lifting real yields and hurdle rates now, long before diffusion delivers disinflation.",
