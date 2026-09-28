@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-monday-gap-the-great-split-moves-upstream",
+    title: "The Monday Gap: The Great Split Moves Upstream",
+    excerpt: "As scarce power and expensive capital collide with the AI Supercycle, the winners will be those who own the bottlenecks.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "September 28, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-hurdle-rate",
     title: "The AI Hurdle Rate",
     excerpt: "The AI Supercycle enters its harder financial phase as scarcity migrates from compute to energy to capital.",
