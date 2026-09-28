@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/banche-centrali-ai-watch",
+    title: "Banche Centrali: AI Watch",
+    excerpt: "L'AI Supercycle riporta il capitale al centro della politica monetaria.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "September 28, 2026",
+    read: "8 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/capital-creates-the-conditions-for-more-capital",
     title: "Capital Creates the Conditions for More Capital.",
     excerpt: "Why the AI supercycle is becoming a capital cycle, then a credit cycle, and potentially a monetary cycle.",

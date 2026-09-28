@@ -3,625 +3,144 @@ title: Capital Creates the Conditions for More Capital.
 slug: capital-creates-the-conditions-for-more-capital
 date: September 28, 2026
 slot: Midday Pulse
-format: ai
+tag: Central Banks
+dek: The recursive AI capital cycle is rewriting inflation, r-star—and the role of central banks, because AI may be **deflationary in its destination, inflationary in its construction—and recursive in its financing**.
+epigraph: For forty years markets asked what central banks would do to the economy; the AI Supercycle reverses the question.
+excerpt: The AI Supercycle is becoming a capital cycle, then a credit cycle, and potentially a monetary cycle.
 ---
-
-But recursion works in both directions.
-
-If expected returns decline:
-
-Lower expected returns
-→ lower valuations
-→ tighter financing
-→ lower CapEx
-→ slower capability growth
-→ weaker expected returns
-
-The virtuous cycle can become a vicious one.
-
-The BIS explicitly warns that competitive pressures could produce overinvestment and that a disappointment in AI returns could transform today’s CapEx boom into a bust with economy-wide implications. (Bank for International Settlements⁠)
-
-That is why this is becoming a central-bank issue.
-
-⸻
-
-3 | WHY THIS CYCLE IS DIFFERENT
-
-Traditional business cycles are primarily driven by fluctuations in demand, inventories, credit and employment.
-
-The AI cycle adds something different:
-
-EXPECTATIONS ABOUT FUTURE TECHNOLOGICAL CAPABILITY ARE DRIVING PRESENT-DAY PHYSICAL INVESTMENT.
-
-Capital is being committed today against cash flows that may depend on:
-
-future model capabilities,
-
-future inference economics,
-
-future enterprise adoption,
-
-future electricity availability,
-
-and future productivity gains.
-
-That creates an unusually long bridge between:
-
-Capital committed today
-
-and
-
-Cash flow realised tomorrow.
-
-Finance fills that bridge.
-
-And the larger that bridge becomes, the more monetary policy and financial stability become interconnected.
-
-⸻
-
-4 | THE GREAT BIFURCATION
-
-The AI Supercycle therefore contains two macroeconomic phases.
-
-PHASE I — INFRASTRUCTURE INFLATION
-
-Capital races toward scarce resources.
-
-Compute.
-
-Energy.
-
-Grid connections.
-
-Transformers.
-
-Land.
-
-Specialised labour.
-
-Finance.
-
-Demand arrives before productivity.
-
-PHASE II — INDUSTRIAL-AI DEFLATION
-
-AI diffuses across the economy.
-
-Automation accelerates.
-
-Inference becomes cheaper.
-
-Labour productivity rises.
-
-Supply expands.
-
-Unit costs decline.
-
-The central question is no longer:
-
-Is AI inflationary or deflationary?
-
-It is:
-
-How long does Phase I last before Phase II dominates?
-
-That timing question is becoming a central-bank question.
-
-Bank of England research shows why: persistent productivity growth can stimulate consumption and investment and raise the natural real interest rate; if demand moves before supply, inflation can initially increase. (Bank of England⁠)
-
-⸻
-
-5 | R-STAR BECOMES ENDOGENOUS TO THE AI CYCLE
-
-This is perhaps the deepest monetary implication.
-
-AI investment does not merely respond to interest rates.
-
-At sufficient scale, it can influence the equilibrium interest rate itself.
-
-The mechanism is recursive:
-
-Expected AI returns ↑
-→ desired investment ↑
-→ demand for capital ↑
-→ r-star ↑
-→ financing costs ↑
-→ required AI returns ↑
-
-AI therefore begins raising its own hurdle rate.
-
-That creates a natural selection mechanism inside the boom.
-
-Projects generating sufficiently high returns survive.
-
-Marginal projects become uneconomic.
-
-Capital concentrates around companies possessing:
-
-scale + cash flow + infrastructure + distribution + low cost of capital.
-
-The monetary regime therefore becomes part of the competitive architecture of AI.
-
-⸻
-
-6 | WHY THE ROLE OF CENTRAL BANKS MUST EXPAND
-
-This is where the consequences become institutional.
-
-Central banks traditionally separate two core responsibilities:
-
-Monetary policy: inflation and economic activity.
-
-Macroprudential policy: financial stability.
-
-The recursive AI capital cycle increasingly connects them.
-
-The BIS says AI simultaneously affects demand, supply and financial markets, making cyclical signals more difficult to interpret and complicating monetary-policy calibration. (Bank for International Settlements⁠)
-
-The Bank of England goes further: it identifies two interdependent financial-stability channels—the financing of AI infrastructure and the pace and extent of AI adoption. (Bank of England⁠)
-
-Central banks therefore increasingly need to monitor not merely inflation and employment, but the capital-formation mechanism producing them.
-
-⸻
-
-7 | FROM REACTION FUNCTION TO SYSTEM FUNCTION
-
-The traditional central-bank reaction function is approximately:Inflation + Employment + Output Gap → Policy Rate
-
-The AI economy requires a broader analytical framework:
-
-Inflation + Employment + Productivity + Capital Formation + Credit + Asset Prices + Energy + Financial Stability → Policy
-
-Not because central banks should determine where private capital is invested.
-
-They should not.
-
-But because the scale, speed, leverage and interconnectedness of capital formation can alter monetary transmission itself.
-
-The central bank must increasingly understand the system before inflation appears in conventional backward-looking indicators.
-
-⸻
-
-8 | FIVE NEW CENTRAL-BANK FUNCTIONS
-
-I — MEASURE THE AI CAPITAL CYCLE
-
-Central banks need better real-time measures of:
-
-AI CapEx,
-
-data-centre construction,
-
-power commitments,
-
-semiconductor investment,
-
-corporate bond issuance,
-
-private credit,
-
-off-balance-sheet financing,
-
-and AI-related leverage.
-
-Traditional investment statistics may arrive too slowly for a recursive cycle.
-
-⸻
-
-II — ESTIMATE A DYNAMIC R-STAR
-
-The neutral rate cannot be treated as static.
-
-If AI permanently raises expected returns on productive capital, equilibrium investment demand can change.
-
-Central banks therefore need to distinguish:
-
-temporary inflation
-
-from
-
-a structural upward shift in the equilibrium price of capital.
-
-That distinction determines whether “higher for longer” is cyclical—or structural.
-
-⸻
-
-III — MONITOR THE AI CREDIT SYSTEM
-
-The Bank of England reports rapid expansion of AI financing across public debt, private credit, leveraged finance and structured finance. It warns that increasing interconnectedness and external financing could allow shocks to propagate more widely through the financial system. (Bank of England⁠)
-
-The Federal Reserve’s May Financial Stability Report similarly records concerns that increasingly debt-funded AI CapEx is introducing additional leverage. (Federal Reserve⁠)
-
-Central banks therefore need visibility across the entire financing chain, not merely regulated bank balance sheets.
-
-⸻
-
-IV — WATCH THE EQUITY–CREDIT–SOVEREIGN LOOP
-
-The recursive cycle does not stop with corporations.
-
-AI expectations raise equity valuations.
-
-Higher valuations affect household wealth.
-
-AI investment affects growth expectations.
-
-Growth expectations influence assumptions about sovereign debt sustainability.
-
-Meanwhile, higher real rates increase sovereign debt-service costs.
-
-The Bank of England explicitly identifies this two-sided sovereign effect: AI productivity could improve debt sustainability, while sustained infrastructure investment could place upward pressure on real rates and debt-service burdens. (Bank of England⁠)
-
-The AI cycle is therefore beginning to connect:
-
-Corporate Equity → Corporate Credit → Growth → Rates → Sovereign Debt
-
-That is a macrofinancial system.
-
-⸻
-
-V — BECOME FASTER
-
-Perhaps the biggest institutional challenge is speed.
-
-AI can accelerate financial decision-making itself.
-
-Agentic systems can increasingly process information and execute decisions across markets at machine speed. The Bank of England has argued that AI’s accelerating capabilities create a double challenge: central banks must manage the new risks while also transforming how they perform their own role. (Bank of England⁠)
-
-The implication is profound.
-
-A faster economy eventually requires a faster central bank.
-
-Not necessarily faster rate changes.
-
-Faster measurement, simulation, surveillance and scenario analysis.
-
-⸻
-
-9 | THE NEW CENTRAL-BANK DASHBOARD
-
-The monetary-policy dashboard therefore needs another layer.
-
-OLD DASHBOARD
-
-Inflation
-Employment
-Wages
-GDP
-Credit
-Financial conditions
-
-AI-ERA DASHBOARD
-
-Everything above, plus:
-
-AI CapEx velocity
-
-AI credit creation
-
-Private-credit exposure
-
-Power-price pressure
-
-Grid scarcity
-
-Compute prices
-
-AI cash-flow conversion
-
-Equity-credit divergence
-
-CapEx-to-cash-flow ratios
-
-AI-driven productivity diffusion
-
-The critical variable becomes not simply the amount of investment.
-
-It becomes:
-
-THE VELOCITY OF CAPITAL FORMATION RELATIVE TO THE VELOCITY OF PRODUCTIVITY.AI is not simply changing productivity.
-
-It is changing the velocity of capital formation, the architecture of credit, the demand for energy, the distribution of wealth, and potentially the equilibrium price of money itself.
-
-That requires a new central-bank lens:
-
-from managing the business cycle to understanding the capital-formation cycle.
-
-Because the defining feature of this revolution is not merely its scale.
-
-It is its recursion.
-
-Capital creates intelligence.
-
-Intelligence attracts capital.
-
-Capital raises the price of money.
-
-And when the price of money changes, the entire cycle gets repriced.If capital formation outruns productivity:
-
-inflation + leverage + higher rates.
-
-If productivity outruns capital formation:
-
-disinflation + stronger cash flows + improving debt sustainability.
-
-That ratio may become one of the defining macro indicators of the AI age.
-
-⸻
-
-10 | EQUITY MARKETS
-
-The first-order AI trade was:
-
-Who has AI?
-
-The second-order trade becomes:
-
-Who can earn above the rising cost of AI capital?
-
-Investors should increasingly distinguish:
-
-AI cash-flow generators
-
-from
-
-AI capital consumers.
-
-The critical metric becomes:
-
-Incremental AI Free Cash Flow / Incremental AI Invested Capital
-
-Higher rates do not necessarily kill the AI boom.
-
-They discipline it.
-
-They force capital toward companies capable of monetising AI fastest.
-
-That could increase market concentration before AI eventually diffuses more broadly.
-
-The next equity market rewards conversion, not participation.
-
-⸻
-
-11 | BOND MARKETS
-
-For bonds, the implications may be even larger.
-
-The market has spent years asking:
-
-When will central banks cut?
-
-The AI capital cycle introduces a more important question:
-
-Where is the new neutral rate?
-
-If trillions of dollars of incremental investment compete for global savings while governments simultaneously run large financing requirements, equilibrium real yields may remain structurally higher than the pre-AI regime would suggest.
-
-Meanwhile, growing AI corporate issuance increases competition for capital.
-
-The bond market therefore becomes the place where the AI thesis faces its hardest test:
-
-Can future AI cash flows justify today’s capital commitments at tomorrow’s cost of money?
-
-⸻
-
-12 | THE CENTRAL-BANK PARADOX
-
-Central banks face an unusual dilemma.
-
-Tighten too little, and recursive capital formation could amplify demand, leverage and asset-price excesses.
-
-Tighten too much, and they risk suppressing precisely the investment that could expand future productive capacity and ultimately in reduce inflation.
-
-The challenge therefore cannot be reduced to:
-
-hawkish vs dovish.
-
-It becomes:
-
-How do you preserve price and financial stability without choking off productivity-enhancing capital formation?
-
-That is a fundamentally more complex reaction function.
-
-⸻
-
-THE BIG TAKE
-
-The AI Supercycle is becoming something larger than a technology cycle.
-
-It is becoming a capital cycle.
-
-Then a credit cycle.
-
-And potentially a monetary cycle.
-
-The defining characteristic is recursion:
-
-**Capital creates compute.
-
-Compute creates capability.
-Capability creates expectations.
-Expectations attract capital.**
-
-Until the return on capital fails to validate the expectation.
-
-Then recursion reverses.
-
-That is why central banks cannot watch this transformation from the sidelines.
-
-Their mandate does not need to become industrial policy.
-
-But their field of vision must expand.
-
-⸻
-
-KEY TAKEAWAYS — EQUITIES
-
-1. Follow returns, not CapEx.
-The decisive metric is AI cash-flow conversion.
-
-2. Balance-sheet strength becomes strategic.
-Self-financing capacity matters more as the cycle becomes leveraged.
-
-3. Higher rates accelerate selection.
-The hurdle rate separates scalable economics from speculative capacity.
-
-4. Expect concentration before diffusion.
-Capital may initially compound around companies possessing scale, cash and infrastructure.
-
-5. Watch recursion.
-When rising investment stops producing rising expected returns, the cycle changes direction.
-
-⸻
-
-KEY TAKEAWAYS — BONDS
-
-1. Stop focusing exclusively on the next rate cut.
-Focus on the trajectory of r-star.
-
-2. AI is becoming a major source of credit demand.
-
-3. Long-duration sovereign bonds increasingly sit at the intersection of AI growth and AI capital demand.
-
-4. Credit selection becomes critical as infrastructure financing expands.
-
-5. Watch the equity-credit gap.
-Credit may identify deterioration in AI economics before equity fully prices it.
-
-⸻
-
-THE VELOCITY EDGE — FINAL TAKE
-
-For forty years, markets asked:
-
-What will central banks do to the economy?
-
-The AI Supercycle reverses the question:
-
-What will the new economy do to central banks?THE VELOCITY EDGE
-
-CENTRAL BANKS — AI WATCH
-
-HIGHER FOR LONGER, FOR A DIFFERENT REASON
-
-The Recursive AI Capital Cycle Is Rewriting Inflation, r-Star—and the Role of Central Banks
-
-THE BIG TAKE | 28 September 2026
-
-⸻
-
-THE THESIS
 
 AI was supposed to make everything cheaper. Before it does, it may make money more expensive.
 
-But there is a second, more consequential development.
+The AI capital-formation cycle is becoming recursive. Investment creates infrastructure. Infrastructure increases compute capacity. Greater compute improves AI capabilities. Better capabilities raise expectations of future productivity and earnings. Those expectations lift valuations and improve access to capital. New capital finances another round of investment—and the cycle begins again, at a larger scale.
 
-The AI capital-formation cycle is becoming recursive.
+This is no longer simply a technology investment boom. It is an increasingly self-reinforcing capital-formation system, and that third characteristic—recursion in its financing—changes the role of central banks.
 
-Investment creates infrastructure. Infrastructure increases compute capacity. Greater compute improves AI capabilities. Better capabilities raise expectations of future productivity and earnings. Those expectations lift valuations and improve access to capital. New capital finances another round of investment.
+::stats
+11% :: US business fixed investment annual rate, Q1 2026 (Federal Reserve)
+$1T+ :: Big Tech AI-related CapEx, five largest firms, 2025–26 (BIS)
+$3–4T :: Projected global AI investment trajectory by 2030 (BIS)
 
-The cycle begins again—at a larger scale.
+::pull THE THESIS
+The AI revolution may be deflationary in its destination, inflationary in its construction—and ==recursive in its financing==.
 
-Capital → Compute → Capability → Expectations → Valuations → Financing → More Capital
+::section The Recursive Capital-Formation Cycle | Five reinforcing loops
+The first-order AI story was simple: companies invest because AI offers attractive future returns. The second-order story is more powerful: investment itself can create conditions that encourage more investment.
 
-This is no longer simply a technology investment boom.
+The mechanism works through five reinforcing loops—capability, valuation, credit, infrastructure and macro—each feeding the next.
 
-It is an increasingly self-reinforcing capital-formation system.
+::signals The Five Loops | How recursion compounds
+# Loop I — The Capability Loop
+More capital → more compute → better models → broader applications → greater expected productivity → more capital.
+signal: Capability begets capital, and capital begets capability.
 
-The Federal Reserve says US business fixed investment increased at an 11% annual rate in Q1 2026, with most of the strength apparently connected to infrastructure required for AI services. (Federal Reserve⁠)
+# Loop II — The Valuation Loop
+Higher expected AI earnings raise valuations, which lower effective equity-financing constraints, which enable greater CapEx, which strengthen AI expectations—and lift valuations again.
+signal: Valuations become a financing input, not just an output.
 
-The BIS estimates that the five largest Big Tech companies alone are set to spend more than $1 trillion on AI-related CapEx during 2025–26, while industry expectations put global AI investment on a trajectory toward $3–4 trillion by 2030. Increasingly, that investment is moving beyond internally generated cash flows toward debt and private credit. (Bank for International Settlements⁠)
+# Loop III — The Credit Loop
+Rising expected cash flows increase borrowing capacity, funding more bond and private-credit financing, more infrastructure and higher expected future cash flows. The Bank of England says AI-focused companies reached an inflection point when required investment exceeded their capacity to fund it from internal cash flows, accelerating the move to external finance during 2026.
+signal: The cycle has crossed from internal cash to external debt.
 
-That changes the macroeconomic equation.
+# Loop IV — The Infrastructure Loop
+More AI demand drives more data centres, more electricity demand, more grids, generation and storage—more infrastructure investment and greater available AI capacity.
+signal: Compute demand becomes an energy and grid problem.
 
-The AI revolution may be deflationary in its destination, inflationary in its construction—and recursive in its financing.
+# Loop V — The Macro Loop
+AI investment lifts GDP growth, strengthens expected productivity and asset prices, eases financial conditions and invites more investment. The BIS notes optimism around AI has simultaneously boosted CapEx and equity valuations, supporting favourable financial conditions.
+signal: The boom finances itself through easier conditions.
 
-That third characteristic changes the role of central banks.
+::section The Law Of Recursive Capital Formation | Law IV
+When investment increases the expected return to the next unit of investment, capital formation becomes self-reinforcing. The AI Supercycle has precisely this characteristic.
 
-⸻
+Capital builds compute. Compute produces intelligence. Intelligence creates applications. Applications create expected cash flows. Expected cash flows attract capital.
 
-1 | THE RECURSIVE CAPITAL-FORMATION CYCLE
+But recursion works in both directions. If expected returns decline, lower valuations lead to tighter financing, lower CapEx, slower capability growth and weaker expected returns. The virtuous cycle can become a vicious one. The BIS explicitly warns that competitive pressures could produce overinvestment, and that a disappointment in AI returns could transform today's CapEx boom into a bust with economy-wide implications. That is why this is becoming a central-bank issue.
 
-The first-order AI story was simple:
+::section Why This Cycle Is Different | Expectations driving physical investment
+Traditional business cycles are primarily driven by fluctuations in demand, inventories, credit and employment. The AI cycle adds something different: *expectations about future technological capability are driving present-day physical investment.*
 
-Companies invest because AI offers attractive future returns.
+Capital is being committed today against cash flows that may depend on future model capabilities, future inference economics, future enterprise adoption, future electricity availability and future productivity gains. That creates an unusually long bridge between capital committed today and cash flow realised tomorrow. Finance fills that bridge—and the larger it becomes, the more monetary policy and financial stability become interconnected.
 
-The second-order story is more powerful:
+::patterns The Great Bifurcation | Two macroeconomic phases
+# Phase I — Infrastructure Inflation
+Capital races toward scarce resources: compute, energy, grid connections, transformers, land, specialised labour, finance. Demand arrives before productivity.
 
-Investment itself can create conditions that encourage more investment.
+# Phase II — Industrial-AI Deflation
+AI diffuses across the economy. Automation accelerates, inference becomes cheaper, labour productivity rises, supply expands and unit costs decline.
 
-The mechanism works through five reinforcing loops.
+::pull The question is no longer whether AI is inflationary or deflationary—but how long Phase I lasts before Phase II dominates.
 
-LOOP I — THE CAPABILITY LOOP
+::section R-Star Becomes Endogenous To The AI Cycle | The deepest monetary implication
+AI investment does not merely respond to interest rates. At sufficient scale, it can influence the equilibrium interest rate itself. Expected AI returns rise, desired investment rises, demand for capital rises, r-star rises, financing costs rise, and required AI returns rise. AI therefore begins raising its own hurdle rate.
 
-More capital
-→ more compute
-→ better models
-→ broader applications
-→ greater expected productivity
-→ more capital.
+That creates a natural selection mechanism inside the boom. Projects generating sufficiently high returns survive; marginal projects become uneconomic. Capital concentrates around companies possessing scale, cash flow, infrastructure, distribution and a low cost of capital. The monetary regime therefore becomes part of the competitive architecture of AI.
 
-LOOP II — THE VALUATION LOOP
+Bank of England research shows why the timing matters: persistent productivity growth can stimulate consumption and investment and raise the natural real interest rate; if demand moves before supply, inflation can initially increase.
 
-Higher expected AI earnings
-→ higher valuations
-→ lower effective equity financing constraints
-→ greater CapEx
-→ stronger AI expectations
-→ higher valuations.
+::section Why The Role Of Central Banks Must Expand | From reaction function to system function
+Central banks traditionally separate monetary policy—inflation and activity—from macroprudential policy—financial stability. The recursive AI capital cycle increasingly connects them.
 
-LOOP III — THE CREDIT LOOP
+The BIS says AI simultaneously affects demand, supply and financial markets, making cyclical signals harder to interpret and complicating monetary-policy calibration. The Bank of England goes further, identifying two interdependent financial-stability channels: the financing of AI infrastructure and the pace and extent of AI adoption.
 
-Rising expected cash flows
-→ greater borrowing capacity
-→ more bond/private-credit financing
-→ more infrastructure
-→ higher expected future cash flows.
+The traditional reaction function—inflation, employment and the output gap into a policy rate—must broaden to include productivity, capital formation, credit, asset prices, energy and financial stability. Not because central banks should determine where private capital is invested—they should not—but because the scale, speed, leverage and interconnectedness of capital formation can alter monetary transmission itself.
 
-The Bank of England says AI-focused companies reached an inflection point when required investment exceeded their capacity to fund it from internal cash flows, accelerating the move toward external finance during 2026. (Bank of England⁠)
+::signals Five New Central-Bank Functions | The institutional consequences
+# I — Measure The AI Capital Cycle
+Central banks need better real-time measures of AI CapEx, data-centre construction, power commitments, semiconductor investment, corporate bond issuance, private credit, off-balance-sheet financing and AI-related leverage. Traditional investment statistics may arrive too slowly for a recursive cycle.
+signal: Measurement must move at the speed of the cycle.
 
-LOOP IV — THE INFRASTRUCTURE LOOP
+# II — Estimate A Dynamic R-Star
+The neutral rate cannot be treated as static. If AI permanently raises expected returns on productive capital, equilibrium investment demand can change. Central banks must distinguish temporary inflation from a structural upward shift in the equilibrium price of capital—the distinction that determines whether "higher for longer" is cyclical or structural.
+signal: Higher for longer may be structural, not cyclical.
 
-More AI demand
-→ more data centres
-→ more electricity demand
-→ more grids, generation and storage
-→ more infrastructure investment
-→ greater available AI capacity.
+# III — Monitor The AI Credit System
+The Bank of England reports rapid expansion of AI financing across public debt, private credit, leveraged finance and structured finance, warning that interconnectedness and external financing could propagate shocks more widely. The Federal Reserve's May Financial Stability Report similarly records concerns that increasingly debt-funded AI CapEx is introducing additional leverage.
+signal: Visibility must extend beyond regulated bank balance sheets.
 
-LOOP V — THE MACRO LOOP
+# IV — Watch The Equity–Credit–Sovereign Loop
+AI expectations raise equity valuations and household wealth; AI investment affects growth expectations, which influence sovereign debt sustainability; higher real rates raise debt-service costs. The Bank of England identifies this two-sided sovereign effect—productivity could improve debt sustainability, while sustained infrastructure investment could pressure real rates and debt-service burdens.
+signal: Corporate equity now connects to sovereign debt through a single chain.
 
-AI investment
-→ GDP growth
-→ stronger expected productivity
-→ stronger asset prices
-→ easier financial conditions
-→ greater investment.
+# V — Become Faster
+AI can accelerate financial decision-making itself. Agentic systems process information and execute across markets at machine speed. The Bank of England argues AI's accelerating capabilities create a double challenge: managing new risks while transforming how central banks perform their own role. A faster economy eventually requires a faster central bank—not necessarily faster rate changes, but faster measurement, simulation, surveillance and scenario analysis.
+signal: A faster economy requires a faster central bank.
 
-The BIS notes that optimism around AI has simultaneously boosted capital expenditure and equity valuations, helping support favourable financial conditions. (Bank for International Settlements⁠)
+::patterns The New Central-Bank Dashboard | Old versus AI-era
+# [OLD] Traditional Layer
+Inflation, employment, wages, GDP, credit and financial conditions.
 
-This is recursion.
+# [NEW] AI-Era Layer
+Everything above, plus AI CapEx velocity, AI credit creation, private-credit exposure, power-price pressure, grid scarcity, compute prices, AI cash-flow conversion, equity-credit divergence, CapEx-to-cash-flow ratios and AI-driven productivity diffusion.
 
-And recursion means the size of the cycle cannot be understood by looking only at the initial investment.
+::pull The critical variable is not the amount of investment. It is the ==velocity of capital formation relative to the velocity of productivity==.
 
-⸻
+::section Equity Markets | From participation to conversion
+The first-order AI trade asked: who has AI? The second-order trade asks: who can earn above the rising cost of AI capital? Investors should distinguish AI cash-flow generators from AI capital consumers, with the critical metric being incremental AI free cash flow over incremental AI invested capital.
 
-2 | THE LAW OF RECURSIVE CAPITAL FORMATION
+Higher rates do not necessarily kill the AI boom—they discipline it, forcing capital toward companies capable of monetising AI fastest. That could increase market concentration before AI eventually diffuses more broadly. The next equity market rewards conversion, not participation.
 
-We can now state a fourth law.
+::section Bond Markets | Where is the new neutral rate? | 
+For bonds the implications may be even larger. The market has spent years asking when central banks will cut. The AI capital cycle introduces a more important question: where is the new neutral rate? If trillions of dollars of incremental investment compete for global savings while governments run large financing requirements, equilibrium real yields may remain structurally higher than the pre-AI regime would suggest.
 
-LAW IV — THE LAW OF RECURSIVE CAPITAL FORMATION
+The bond market therefore becomes the place where the AI thesis faces its hardest test: can future AI cash flows justify today's capital commitments at tomorrow's cost of money?
 
-When investment increases the expected return to the next unit of investment, capital formation becomes self-reinforcing.
+::section The Central-Bank Paradox | Beyond hawkish versus dovish
+Tighten too little, and recursive capital formation could amplify demand, leverage and asset-price excesses. Tighten too much, and central banks risk suppressing precisely the investment that could expand future productive capacity and ultimately reduce inflation.
 
-The AI Supercycle has precisely this characteristic.
+The challenge cannot be reduced to hawkish versus dovish. It becomes: how do you preserve price and financial stability without choking off productivity-enhancing capital formation? That is a fundamentally more complex reaction function.
 
-Capital builds compute.
+::takeaways Key Takeaways — Equities | Follow returns, not headlines
+- **Follow returns, not CapEx** — the decisive metric is AI cash-flow conversion.
+- **Balance-sheet strength becomes strategic** — self-financing capacity matters more as the cycle becomes leveraged.
+- **Higher rates accelerate selection** — the hurdle rate separates scalable economics from speculative capacity.
+- **Expect concentration before diffusion** — capital may compound first around companies with scale, cash and infrastructure.
+- **Watch recursion** — when rising investment stops producing rising expected returns, the cycle changes direction.
 
-Compute produces intelligence.
+::takeaways Key Takeaways — Bonds | Trajectory over the next cut
+- **Stop focusing exclusively on the next rate cut** — focus on the trajectory of r-star.
+- **AI is becoming a major source of credit demand.**
+- **Long-duration sovereign bonds** increasingly sit at the intersection of AI growth and AI capital demand.
+- **Credit selection becomes critical** as infrastructure financing expands.
+- **Watch the equity-credit gap** — credit may identify deterioration in AI economics before equity fully prices it.
 
-Intelligence creates applications.
-
-Applications create expected cash flows.
-
-Expected cash flows attract capital.
+::close For forty years, markets asked what central banks would do to the economy. The AI Supercycle reverses the question: ==what will the new economy do to central banks?==
