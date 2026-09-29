@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-grid-is-becoming-the-ai-trade",
+    title: "The Grid Is Becoming the AI Trade",
+    excerpt: "AI capital formation is escaping the data center and reorganizing the industries around it.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "September 29, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/id-make-the-thesis-one-step-more-forceful-ai-is-already-acting-like-a-tightening-shock-through-capital-formation-while-the-easing-effect-of-productivity-remains-delayed",
     title: "I’d Make the Thesis One Step More Forceful: AI Is Already Acting Like a Tightening Shock Through Capital Formation, While the Easing Effect of Productivity Remains Delayed.",
     excerpt: "Three central-bank signals point to one monetary sequence — and a decisive asymmetry between tightening now and easing later.",
