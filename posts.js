@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/id-make-the-thesis-one-step-more-forceful-ai-is-already-acting-like-a-tightening-shock-through-capital-formation-while-the-easing-effect-of-productivity-remains-delayed",
+    title: "I’d Make the Thesis One Step More Forceful: AI Is Already Acting Like a Tightening Shock Through Capital Formation, While the Easing Effect of Productivity Remains Delayed.",
+    excerpt: "Three central-bank signals point to one monetary sequence — and a decisive asymmetry between tightening now and easing later.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "September 29, 2026",
+    read: "2 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-eurozone-banking-reordering",
     title: "The Eurozone Banking Reordering",
     excerpt: "The Italian banking contest is no longer about ownership — it is about who shapes European capital formation.",
