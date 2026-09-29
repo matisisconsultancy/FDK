@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-physical-ai-countermove",
+    title: "The Physical-ai Countermove",
+    excerpt: "AMD buys Fei-Fei Li's World Labs for $8.2B, pushing the AI frontier from language into robotics and Physical AI.",
+    tag: "U.s. · Capital",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "September 29, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-grid-is-becoming-the-ai-trade",
     title: "The Grid Is Becoming the AI Trade",
     excerpt: "AI capital formation is escaping the data center and reorganizing the industries around it.",
