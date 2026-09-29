@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-eurozone-banking-reordering",
+    title: "The Eurozone Banking Reordering",
+    excerpt: "The Italian banking contest is no longer about ownership — it is about who shapes European capital formation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "September 29, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/porate-benchmark",
     title: "Porate Benchmark",
     excerpt: "With the 10-year at 5.24%, the test is no longer how much AI capital is deployed but how fast it converts into cash.",
