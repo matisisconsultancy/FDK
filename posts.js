@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/porate-benchmark",
+    title: "Porate Benchmark",
+    excerpt: "With the 10-year at 5.24%, the test is no longer how much AI capital is deployed but how fast it converts into cash.",
+    tag: "Morning View · AI Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "September 29, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/banche-centrali-ai-watch",
     title: "Banche Centrali: AI Watch",
     excerpt: "L'AI Supercycle riporta il capitale al centro della politica monetaria.",
