@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/nvestor-allocation-framework",
+    title: "Nvestor Allocation Framework",
+    excerpt: "AI is becoming a financial selection mechanism — capital productivity, not capex, is now the decisive test.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "September 30, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-physical-ai-countermove",
     title: "The Physical-ai Countermove",
     excerpt: "AMD buys Fei-Fei Li's World Labs for $8.2B, pushing the AI frontier from language into robotics and Physical AI.",
