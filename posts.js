@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/china-breaks-the-cuda-wall",
+    title: "China Breaks the Cuda Wall",
+    excerpt: "China's pivotal AI advance is no longer a better model or chip, but the beginning of an alternative intelligence-production system.",
+    tag: "U.s. · Capital",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "September 30, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/beneath-the-patterns",
     title: "Beneath the Patterns",
     excerpt: "The AI cycle has moved from capital formation to return formation — separating compounding capital from stranded capital.",
