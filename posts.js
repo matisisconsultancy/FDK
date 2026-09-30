@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-is-moving-from-a-valuation-story-to-a-credit-and-cash-flow-story",
+    title: "AI Is Moving From a Valuation Story to a Credit-and-cash-flow Story.",
+    excerpt: "Three institutional signals converge on a single conclusion — watch credit first, follow cash flow second.",
+    tag: "Central Banks & AI Watch · Capital",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "September 30, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/china-breaks-the-cuda-wall",
     title: "China Breaks the Cuda Wall",
     excerpt: "China's pivotal AI advance is no longer a better model or chip, but the beginning of an alternative intelligence-production system.",
