@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/beneath-the-patterns",
+    title: "Beneath the Patterns",
+    excerpt: "The AI cycle has moved from capital formation to return formation — separating compounding capital from stranded capital.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "September 30, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/nvestor-allocation-framework",
     title: "Nvestor Allocation Framework",
     excerpt: "AI is becoming a financial selection mechanism — capital productivity, not capex, is now the decisive test.",
