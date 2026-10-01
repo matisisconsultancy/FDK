@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-grid-is-now-allocating-the-winners",
+    title: "The Grid Is Now Allocating the Winners",
+    excerpt: "Aragón shows that grid access, not GPUs, is becoming the binding constraint in Europe's AI build-out.",
+    tag: "Europe AI Gigafactory Watch · Energy",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 1, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/two-systems-two-economics-one-supercycle",
     title: "Two Systems. Two Economics. One Supercycle.",
     excerpt: "Two theories of economic power are reshaping the AI race — and together they are making the Supercycle larger.",
