@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-bottleneck-moves",
+    title: "The Bottleneck Moves",
+    excerpt: "Q4 opens with softer inflation but a 10-year yield at 5.306%, Micron's $32bn in locked memory commitments, and sovereign capital chasing the electrons.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 1, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-has-entered-the-return-on-capital-phase",
     title: "The AI Supercycle Has Entered the Return-on-Capital Phase",
     excerpt: "The AI Supercycle is shifting from capital formation to capital discrimination, favoring owners of memory, power, chip design and distribution.",
