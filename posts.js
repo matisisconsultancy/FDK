@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-capital",
+    title: "The Great Repricing of Capital",
+    excerpt: "AI is raising the equilibrium demand for capital before it expands the economy's supply capacity.",
+    tag: "Central Banks & AI Watch · Capital",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 1, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/higher-for-longer-meets-the-banking-union",
     title: "Higher for Longer Meets the Banking Union",
     excerpt: "Italy's inflation shock and Rome's bid for budget flexibility redraw the Risiko as a contest over who can mobilise capital when the sovereign cannot.",
