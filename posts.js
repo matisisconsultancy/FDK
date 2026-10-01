@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-self-raising-hurdle",
+    title: "The Self-raising Hurdle",
+    excerpt: "The Fed did not tighten. The market did. The AI Supercycle now competes against 5.3%.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 1, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-grid-is-now-allocating-the-winners",
     title: "The Grid Is Now Allocating the Winners",
     excerpt: "Aragón shows that grid access, not GPUs, is becoming the binding constraint in Europe's AI build-out.",
