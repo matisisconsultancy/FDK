@@ -1,0 +1,103 @@
+---
+title: The Great Repricing of Capital
+slug: the-great-repricing-of-capital
+date: October 1, 2026
+slot: Central Banks & AI Watch
+format: ai
+---
+
+AI IS RAISING THE EQUILIBRIUM DEMAND FOR CAPITAL BEFORE IT EXPANDS THE ECONOMY’S SUPPLY CAPACITY
+
+1 October 2026 | FDK
+
+THE BIG TAKE
+
+Kashkari has raised his estimate of the neutral funds rate to 3.25%, with the AI investment boom one reason equilibrium rates may be higher.
+
+That is the macro signal:
+
+AI IS NOT JUST RAISING GROWTH EXPECTATIONS.
+
+IT IS RAISING INVESTMENT DEMAND FASTER THAN PRODUCTIVE CAPACITY CAN RESPOND.
+
+The transmission is:
+
+AI CAPEX
+→ STRONGER DEMAND FOR SAVINGS + FINANCING
+→ HIGHER EQUILIBRIUM REAL RATE
+→ HIGHER MARKET REAL YIELDS
+→ HIGHER HURDLE RATES
+→ MORE SELECTIVE CAPITAL ALLOCATION
+
+Only later does the offset arrive:
+
+AI DIFFUSION
+→ HIGHER PRODUCTIVITY
+→ GREATER SUPPLY CAPACITY
+→ LOWER UNIT COSTS
+→ DISINFLATION
+
+The macro asymmetry is decisive:
+
+CAPITAL DEMAND MOVES FIRST.
+SUPPLY CAPACITY CATCHES UP LATER.
+
+1. RATES → CAPITAL SELECTIVITY
+
+Higher real yields determine who can keep investing.
+
+Cash-rich AI leaders can continue funding the build-out.
+
+Weaker firms face:
+
+HIGHER FINANCING COSTS
+→ LOWER CAPEX
+→ SLOWER ADOPTION
+→ WIDER COMPETITIVE GAPS
+
+1. EQUITIES → FROM AI EXPOSURE TO AI ECONOMIC CAPTURE
+
+Higher hurdle rates impose a harder market test.
+
+DISTANT AI PROMISES
+→ HIGHER DISCOUNTING
+→ LOWER VALUATION SUPPORT
+
+while:
+
+VISIBLE AI RETURNS
+→ HIGHER MARGINS
+→ HIGHER ROIC
+→ FREE CASH FLOW
+→ SELF-FUNDED REINVESTMENT
+
+The hierarchy is shifting:
+
+AI NARRATIVE
+→ AI CAPEX
+→ AI ADOPTION
+→ AI MONETIZATION
+→ FREE CASH FLOW
+
+The new divide:
+
+AI MONETIZERS vs AI CAPITAL CONSUMERS.
+
+THE RECURSIVE LOOP
+
+STRONG BALANCE SHEET
+→ MORE AI INVESTMENT
+→ GREATER CAPABILITY
+→ HIGHER CASH FLOW
+→ MORE REINVESTMENT
+
+That is where the monetary regime meets the K-shaped economy — and where the Law of Recursive Capital Accumulation starts to compound.
+
+INVESTOR VERDICT
+
+WATCH TWO VARIABLES:
+
+REAL RATES.
+CASH-FLOW CONVERSION.
+
+THE NEXT EQUITY ROTATION WILL FAVOR THE COMPANIES THAT CAN KEEP INVESTING — AND TURN AI INTO CASH FLOW FASTER THAN THEIR COMPETITORS.
