@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/higher-for-longer-meets-the-banking-union",
+    title: "Higher for Longer Meets the Banking Union",
+    excerpt: "Italy's inflation shock and Rome's bid for budget flexibility redraw the Risiko as a contest over who can mobilise capital when the sovereign cannot.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 1, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-bottleneck-moves",
     title: "The Bottleneck Moves",
     excerpt: "Q4 opens with softer inflation but a 10-year yield at 5.306%, Micron's $32bn in locked memory commitments, and sovereign capital chasing the electrons.",
