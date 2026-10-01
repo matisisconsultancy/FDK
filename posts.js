@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-has-entered-the-return-on-capital-phase",
+    title: "The AI Supercycle Has Entered the Return-on-Capital Phase",
+    excerpt: "The AI Supercycle is shifting from capital formation to capital discrimination, favoring owners of memory, power, chip design and distribution.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 1, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ai-is-moving-from-a-valuation-story-to-a-credit-and-cash-flow-story",
     title: "AI Is Moving From a Valuation Story to a Credit-and-cash-flow Story.",
     excerpt: "Three institutional signals converge on a single conclusion — watch credit first, follow cash flow second.",
