@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-13-basis-points",
+    title: "The Next 13 Basis Points",
+    excerpt: "Italy's problem is not yet the spread — it is what the spread could begin to change.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "7 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-next-13-basis-points-italys-regime-test",
     title: "The Next 13 Basis Points: Italy’s Regime Test",
     excerpt: "The next 13 basis points are not a forecast — they are a diagnostic window for Italian sovereign risk.",
