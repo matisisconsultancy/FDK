@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-divide",
+    title: "The Capital Divide",
+    excerpt: "AI is scaling faster just as financing that scale becomes more expensive — the competitive divide is moving from technology to financial resilience.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-economics-of-the-bottleneck",
     title: "The Economics of the Bottleneck",
     excerpt: "As models proliferate, scarcity and economic capture — not intelligence — decide the next AI leaders.",
