@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/eurozone-at-the-fault-line",
+    title: "Eurozone at the Fault Line",
+    excerpt: "France is repricing and the Eurozone is not yet fragmenting — but Italy, Spain, banks and private credit will decide whether that holds.",
+    tag: "Central Banks & AI Watch · Macro",
+    slot: "Central Banks & AI Watch",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-italys-future",
     title: "The Price of Italy’s Future",
     excerpt: "Whether Italy enters the AI supercycle with a structural cost-of-capital disadvantage may hinge on the next thirteen basis points.",
