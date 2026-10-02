@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-5-ai-economy",
+    title: "The 5% AI Economy",
+    excerpt: "One number dominates the European open — 5.25% — and it is reshaping who captures the AI supercycle.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-capital-divide",
     title: "The Capital Divide",
     excerpt: "AI is scaling faster just as financing that scale becomes more expensive — the competitive divide is moving from technology to financial resilience.",
