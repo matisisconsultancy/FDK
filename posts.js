@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-13-basis-points-italys-regime-test",
+    title: "The Next 13 Basis Points: Italy’s Regime Test",
+    excerpt: "The next 13 basis points are not a forecast — they are a diagnostic window for Italian sovereign risk.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "6 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/128-bps-next-week-is-about-contagion-not-italy",
     title: "128 Bps: Next Week Is About Contagion, Not Italy",
     excerpt: "The critical question is whether the Bund rally and French fiscal shock turn Italy from a relative-value trade into a fragmentation trade.",
