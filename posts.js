@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-race-becomes-a-capital-war",
+    title: "The AI Race Becomes a Capital War",
+    excerpt: "As the AI supercycle enters its second phase, markets will reward return on capital, not another model benchmark.",
+    tag: "U.s. · Capital",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/il-prezzo-del-controllo",
     title: "Il Prezzo Del Controllo",
     excerpt: "Il Risiko italiano è diventato il laboratorio in cui l'Europa cerca scala continentale senza perdere il controllo nazionale sul capitale.",
