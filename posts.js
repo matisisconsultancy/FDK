@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-136-and-144-action-triggers-in-focus",
+    title: "The 136 and 144 Action Triggers-in Focus",
+    excerpt: "A disciplined framework for reading BTP–Bund spreads: level, confirmation, action.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-next-13-basis-points",
     title: "The Next 13 Basis Points",
     excerpt: "Italy's problem is not yet the spread — it is what the spread could begin to change.",
