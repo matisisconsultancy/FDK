@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/il-prezzo-del-controllo",
+    title: "Il Prezzo Del Controllo",
+    excerpt: "Il Risiko italiano è diventato il laboratorio in cui l'Europa cerca scala continentale senza perdere il controllo nazionale sul capitale.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "8 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-control",
     title: "The Price of Control",
     excerpt: "Credit is validating scale already built; equity is discounting scale still to be bought.",
