@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-economics-of-the-bottleneck",
+    title: "The Economics of the Bottleneck",
+    excerpt: "As models proliferate, scarcity and economic capture — not intelligence — decide the next AI leaders.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-self-raising-hurdle",
     title: "The Self-raising Hurdle",
     excerpt: "The Fed did not tighten. The market did. The AI Supercycle now competes against 5.3%.",
