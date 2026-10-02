@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/128-bps-next-week-is-about-contagion-not-italy",
+    title: "128 Bps: Next Week Is About Contagion, Not Italy",
+    excerpt: "The critical question is whether the Bund rally and French fiscal shock turn Italy from a relative-value trade into a fragmentation trade.",
+    tag: "Eurozone Watch · Macro",
+    slot: "Eurozone Watch",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-race-becomes-a-capital-war",
     title: "The AI Race Becomes a Capital War",
     excerpt: "As the AI supercycle enters its second phase, markets will reward return on capital, not another model benchmark.",
