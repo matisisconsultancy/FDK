@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-italys-future",
+    title: "The Price of Italy’s Future",
+    excerpt: "Whether Italy enters the AI supercycle with a structural cost-of-capital disadvantage may hinge on the next thirteen basis points.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-136-and-144-action-triggers-in-focus",
     title: "The 136 and 144 Action Triggers-in Focus",
     excerpt: "A disciplined framework for reading BTP–Bund spreads: level, confirmation, action.",
