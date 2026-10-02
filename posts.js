@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-control",
+    title: "The Price of Control",
+    excerpt: "Credit is validating scale already built; equity is discounting scale still to be bought.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-5-ai-economy",
     title: "The 5% AI Economy",
     excerpt: "One number dominates the European open — 5.25% — and it is reshaping who captures the AI supercycle.",
