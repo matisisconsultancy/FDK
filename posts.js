@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-split-just-changed-shape",
+    title: "The Split Just Changed Shape",
+    excerpt: "The U.S. holds the superior frontier stack, but China is attacking its economics, software dependency and geographic enforceability.",
+    tag: "U.s. · Capital",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 3, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-cities-signature-survey",
     title: "GVI Global Cities: Signature Survey",
     excerpt: "The AI Supercycle is repricing cities into Converters and Constrained — and markets are beginning to price the difference.",
