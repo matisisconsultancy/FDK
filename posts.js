@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-last-interface",
+    title: "The Last Interface",
+    excerpt: "As agents capture intent and execute decisions, bargaining power and margin migrate upstream to whoever controls the choice before the transaction begins.",
+    tag: "In Depth · Agentic AI",
+    slot: "In Depth",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 3, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-split-just-changed-shape",
     title: "The Split Just Changed Shape",
     excerpt: "The U.S. holds the superior frontier stack, but China is attacking its economics, software dependency and geographic enforceability.",
