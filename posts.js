@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-revenue-deadline",
+    title: "The Revenue Deadline",
+    excerpt: "A weaker U.S. labour market, accelerating European inflation, and an AI buildout now measured in trillions converge into three timing mismatches.",
+    tag: "Morning View · AI & Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 3, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europe-watch",
     title: "Europe Watch",
     excerpt: "Three signals — France, Spain and the ECB — reveal that Europe's next AI constraint has moved from compute supply to financeable adoption.",
