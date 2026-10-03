@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-cities-signature-survey",
+    title: "GVI Global Cities: Signature Survey",
+    excerpt: "The AI Supercycle is repricing cities into Converters and Constrained — and markets are beginning to price the difference.",
+    tag: "Midday Pulse · Cities",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 3, 2026",
+    read: "7 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-spread-becomes-the-constraint",
     title: "The Spread Becomes the Constraint",
     excerpt: "The Italian banking Risiko has a new centre of gravity — the BTP–Bund spread — and it is quietly rewriting who can afford to do deals.",
