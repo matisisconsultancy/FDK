@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-spread-becomes-the-constraint",
+    title: "The Spread Becomes the Constraint",
+    excerpt: "The Italian banking Risiko has a new centre of gravity — the BTP–Bund spread — and it is quietly rewriting who can afford to do deals.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 3, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-revenue-deadline",
     title: "The Revenue Deadline",
     excerpt: "A weaker U.S. labour market, accelerating European inflation, and an AI buildout now measured in trillions converge into three timing mismatches.",
