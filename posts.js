@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-watch",
+    title: "Europe Watch",
+    excerpt: "Three signals — France, Spain and the ECB — reveal that Europe's next AI constraint has moved from compute supply to financeable adoption.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/eurozone-at-the-fault-line",
     title: "Eurozone at the Fault Line",
     excerpt: "France is repricing and the Eurozone is not yet fragmenting — but Italy, Spain, banks and private credit will decide whether that holds.",
