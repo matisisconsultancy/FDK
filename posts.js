@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-4-2-trillion-revenue-test",
+    title: "The $4.2 Trillion Revenue Test",
+    excerpt: "Friday eased the Fed question, but a $4.2 trillion revenue hurdle just reframed the entire AI debate.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 3, 2026",
+    read: "7 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-last-interface",
     title: "The Last Interface",
     excerpt: "As agents capture intent and execute decisions, bargaining power and margin migrate upstream to whoever controls the choice before the transaction begins.",
