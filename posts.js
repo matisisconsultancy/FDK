@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/u-s-china-ai-watch-the-stack-is-splitting",
+    title: "U.s.: China AI Watch: The Stack Is Splitting",
+    excerpt: "The next phase of the AI race is not a model race — it is a systems race between two production systems for intelligence.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 4, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-saying-no",
     title: "The Price of Saying No",
     excerpt: "Intesa raises its MPS cash offer and holds a hard condition, turning October 29 into a decision tree with three futures for the bank.",
