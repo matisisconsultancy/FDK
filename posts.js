@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-saying-no",
+    title: "The Price of Saying No",
+    excerpt: "Intesa raises its MPS cash offer and holds a hard condition, turning October 29 into a decision tree with three futures for the bank.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 4, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-state-enters-the-stack",
     title: "The State Enters the Stack",
     excerpt: "As state capital, vendor finance and private balance sheets enter the AI stack, the next competitive advantage is privileged access to capital.",
