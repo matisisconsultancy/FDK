@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-state-enters-the-ai-stack",
+    title: "The State Enters the AI Stack",
+    excerpt: "AI is becoming financialized and sovereignized at once — and the Great Split is moving from model quality to system control.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 4, 2026",
+    read: "7 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/u-s-china-ai-watch-the-stack-is-splitting",
     title: "U.s.: China AI Watch: The Stack Is Splitting",
     excerpt: "The next phase of the AI race is not a model race — it is a systems race between two production systems for intelligence.",
