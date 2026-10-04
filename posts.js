@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-state-enters-the-stack",
+    title: "The State Enters the Stack",
+    excerpt: "As state capital, vendor finance and private balance sheets enter the AI stack, the next competitive advantage is privileged access to capital.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 4, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-capital-rotation",
     title: "The AI Capital Rotation",
     excerpt: "The AI capital rotation has started — the edge now belongs to companies turning infrastructure control into durable returns.",
