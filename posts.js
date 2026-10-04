@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-capital-rotation",
+    title: "The AI Capital Rotation",
+    excerpt: "The AI capital rotation has started — the edge now belongs to companies turning infrastructure control into durable returns.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 4, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-4-2-trillion-revenue-test",
     title: "The $4.2 Trillion Revenue Test",
     excerpt: "Friday eased the Fed question, but a $4.2 trillion revenue hurdle just reframed the entire AI debate.",
