@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-chokepoint-premium",
+    title: "The Chokepoint Premium",
+    excerpt: "OPEC froze output, Yemen threatened the Red Sea, and the next inflation premium may be decided by passage, not production.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 4, 2026",
+    read: "8 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-state-enters-the-ai-stack",
     title: "The State Enters the AI Stack",
     excerpt: "AI is becoming financialized and sovereignized at once — and the Great Split is moving from model quality to system control.",
