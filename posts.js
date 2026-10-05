@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-capital-strikes-back",
+    title: "The Cost of Capital Strikes Back",
+    excerpt: "The global cost of capital is not falling; it is being redistributed toward Europe, energy and the AI build-out.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-capital-loop",
     title: "The Capital Loop",
     excerpt: "The AI Supercycle has crossed from technology cycle to macro variable, raising its own hurdle rate as it grows.",
