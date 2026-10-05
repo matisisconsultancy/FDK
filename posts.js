@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-balance-has-broken",
+    title: "The Balance Has Broken",
+    excerpt: "Delfin's move tightens MPS shareholder arithmetic ahead of the decisive October 29 vote.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-cost-of-capital-strikes-back",
     title: "The Cost of Capital Strikes Back",
     excerpt: "The global cost of capital is not falling; it is being redistributed toward Europe, energy and the AI build-out.",
