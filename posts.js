@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/material-developments-only",
+    title: "Material Developments Only",
+    excerpt: "A new EuroHPC deadline, a Finnish power benchmark and Italian political convergence sharpen the European Gigafactory contest.",
+    tag: "Europe AI Gigafactory Watch · Capital",
+    slot: "Europe AI Gigafactory Watch",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/u-s-china-ai-watch-the-gap-just-collapsed",
     title: "U.s.: China AI Watch: The Gap Just Collapsed",
     excerpt: "China compresses the AI capability gap to 3% as the competitive unit shifts from the model to the production system for intelligence.",
