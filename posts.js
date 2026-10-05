@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-rate-ai-built",
+    title: "The Rate AI Built",
+    excerpt: "The monetary cycle may be pausing; the capital cycle is not — and AI is now a macroeconomic rate shock.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/from-compute-to-control",
     title: "From Compute to Control",
     excerpt: "As the AI cycle rotates from capacity to control, Schneider's reported PTC deal and the BOJ's yield warning redefine the GVI regime.",
