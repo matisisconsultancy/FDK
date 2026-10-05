@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/u-s-china-ai-watch-the-gap-just-collapsed",
+    title: "U.s.: China AI Watch: The Gap Just Collapsed",
+    excerpt: "China compresses the AI capability gap to 3% as the competitive unit shifts from the model to the production system for intelligence.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-balance-has-broken",
     title: "The Balance Has Broken",
     excerpt: "Delfin's move tightens MPS shareholder arithmetic ahead of the decisive October 29 vote.",
