@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/from-compute-to-control",
+    title: "From Compute to Control",
+    excerpt: "As the AI cycle rotates from capacity to control, Schneider's reported PTC deal and the BOJ's yield warning redefine the GVI regime.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "10 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-chokepoint-premium",
     title: "The Chokepoint Premium",
     excerpt: "OPEC froze output, Yemen threatened the Red Sea, and the next inflation premium may be decided by passage, not production.",
