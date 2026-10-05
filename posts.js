@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-loop",
+    title: "The Capital Loop",
+    excerpt: "The AI Supercycle has crossed from technology cycle to macro variable, raising its own hurdle rate as it grows.",
+    tag: "Monday Brief · Capital",
+    slot: "Monday Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 5, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-rate-ai-built",
     title: "The Rate AI Built",
     excerpt: "The monetary cycle may be pausing; the capital cycle is not — and AI is now a macroeconomic rate shock.",
