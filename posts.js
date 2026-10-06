@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-contracted-supercycle",
+    title: "The Contracted Supercycle",
+    excerpt: "Beneath Tuesday's record rally, the AI Supercycle shifted from owning scarce assets to contracting them in advance.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "10 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/the-power-shift",
     title: "The Power Shift",
     excerpt: "The next AI winner will not maximize capacity — it will maximize the return on capacity.",
