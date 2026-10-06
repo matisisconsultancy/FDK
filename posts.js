@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-hurdle-rate-economy",
+    title: "The Hurdle-rate Economy",
+    excerpt: "One of the cycle's most important divergences — record tech valuations against two-decade-high borrowing costs — cannot persist indefinitely.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-control-premium",
     title: "The Control Premium",
     excerpt: "The AI premium is shifting from capacity to conversion — and today's benchmark names Schneider the defining mover.",
