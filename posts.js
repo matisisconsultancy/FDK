@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-power-shift",
+    title: "The Power Shift",
+    excerpt: "The next AI winner will not maximize capacity — it will maximize the return on capacity.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "3 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/u-s-china-ai-watch-capital-joins-the-stack",
     title: "U.s.: China AI Watch: Capital Joins the Stack",
     excerpt: "China's alternative AI stack is now drawing industrial-scale capital, moving the race from model versus model to stack versus stack.",
