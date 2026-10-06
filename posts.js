@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-reordering",
+    title: "The Great Reordering",
+    excerpt: "Italy's banking contest is no longer about consolidation—it is a rewriting of the financial order.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-5-35-paradox",
     title: "The 5.35% Paradox",
     excerpt: "Higher long rates may not kill the AI boom — they may concentrate it, turning the cost of capital into a competitive-selection mechanism.",
