@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-control-premium",
+    title: "The Control Premium",
+    excerpt: "The AI premium is shifting from capacity to conversion — and today's benchmark names Schneider the defining mover.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/material-developments-only",
     title: "Material Developments Only",
     excerpt: "A new EuroHPC deadline, a Finnish power benchmark and Italian political convergence sharpen the European Gigafactory contest.",
