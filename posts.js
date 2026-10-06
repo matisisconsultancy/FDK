@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-5-35-paradox",
+    title: "The 5.35% Paradox",
+    excerpt: "Higher long rates may not kill the AI boom — they may concentrate it, turning the cost of capital into a competitive-selection mechanism.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/ebit-revenue-capital-release",
     title: "Ebit + Revenue + Capital Release",
     excerpt: "AI no longer moves at the speed of the model — it moves at the speed of its slowest complement.",
