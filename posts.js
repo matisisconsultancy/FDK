@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ebit-revenue-capital-release",
+    title: "Ebit + Revenue + Capital Release",
+    excerpt: "AI no longer moves at the speed of the model — it moves at the speed of its slowest complement.",
+    tag: "Morning View · AI",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "11 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-hurdle-rate-economy",
     title: "The Hurdle-rate Economy",
     excerpt: "One of the cycle's most important divergences — record tech valuations against two-decade-high borrowing costs — cannot persist indefinitely.",
