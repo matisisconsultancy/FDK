@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-two-ai-economies",
+    title: "The Two AI Economies",
+    excerpt: "The US scales the frontier while China scales the economics beneath it — the decisive question is who captures the surplus.",
+    tag: "U.s. · Capital",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 7, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europes-next-financial-architecture",
     title: "Europe’s Next Financial Architecture",
     excerpt: "Italy's banking battle is becoming a debate about Europe's capacity to finance itself.",
