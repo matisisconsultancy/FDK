@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-conversion-test",
+    title: "The Conversion Test",
+    excerpt: "Scarcity built the first AI winners; economic conversion will decide the next ones.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 7, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-contracted-supercycle",
     title: "The Contracted Supercycle",
     excerpt: "Beneath Tuesday's record rally, the AI Supercycle shifted from owning scarce assets to contracting them in advance.",
