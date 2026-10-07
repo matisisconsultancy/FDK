@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-bond-market-has-arrived",
+    title: "The AI Bond Market Has Arrived",
+    excerpt: "AI investment is accelerating precisely as the cost of financing that acceleration stays structurally high.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 7, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-conversion-test",
     title: "The Conversion Test",
     excerpt: "Scarcity built the first AI winners; economic conversion will decide the next ones.",
