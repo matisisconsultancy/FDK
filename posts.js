@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-next-financial-architecture",
+    title: "Europe’s Next Financial Architecture",
+    excerpt: "Italy's banking battle is becoming a debate about Europe's capacity to finance itself.",
+    tag: "Europe Banking Watch · Capital",
+    slot: "Europe Banking Watch",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 7, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-bond-market-has-arrived",
     title: "The AI Bond Market Has Arrived",
     excerpt: "AI investment is accelerating precisely as the cost of financing that acceleration stays structurally high.",
