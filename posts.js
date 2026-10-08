@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/in-focus",
+    title: "In-focus",
+    excerpt: "AI financing demand is becoming large enough to alter the price and allocation of capital across the wider economy.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 8, 2026",
+    read: "8 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/material-inflection-alert",
     title: "Material Inflection Alert",
     excerpt: "Two developments refine the U.S.–China AI thesis as the contest turns to capital efficiency.",
