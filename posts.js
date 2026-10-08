@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/material-inflection-alert",
+    title: "Material Inflection Alert",
+    excerpt: "Two developments refine the U.S.–China AI thesis as the contest turns to capital efficiency.",
+    tag: "U.s. · AI Supercycle",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 8, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/europes-banking-endgame",
     title: "Europe’s Banking Endgame",
     excerpt: "Caltagirone's move against the October 29 resolutions reframes the MPS contest around turnout, not ownership.",
