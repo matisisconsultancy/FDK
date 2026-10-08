@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-credit-turn",
+    title: "The Credit Turn",
+    excerpt: "Five developments reveal a structural shift from technological acceleration to capital discipline across the global corporate economy.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 8, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-two-ai-economies",
     title: "The Two AI Economies",
     excerpt: "The US scales the frontier while China scales the economics beneath it — the decisive question is who captures the surplus.",
