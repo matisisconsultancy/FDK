@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-banking-endgame",
+    title: "Europe’s Banking Endgame",
+    excerpt: "Caltagirone's move against the October 29 resolutions reframes the MPS contest around turnout, not ownership.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 8, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-credit-turn",
     title: "The Credit Turn",
     excerpt: "Five developments reveal a structural shift from technological acceleration to capital discipline across the global corporate economy.",
