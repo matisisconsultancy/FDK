@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-credit-collision",
+    title: "The Credit Collision",
+    excerpt: "Record chip revenues meet $105 oil and 5.33% Treasuries as the AI supercycle migrates from corporate cash flow into the financial system.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 8, 2026",
+    read: "7 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/in-focus",
     title: "In-focus",
     excerpt: "AI financing demand is becoming large enough to alter the price and allocation of capital across the wider economy.",
