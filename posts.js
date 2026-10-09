@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-reversal",
+    title: "The Great Capital Reversal",
+    excerpt: "An Italian consolidation meant to reinforce national control may instead accelerate the redistribution of financial influence across Europe.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 9, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-ai-economics-test",
     title: "The AI Economics Test",
     excerpt: "Upstream AI demand is intact, but the decisive question is whether structural velocity converts into durable returns.",
