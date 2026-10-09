@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/in-focus-europe-watch",
+    title: "In Focus: Europe Watch",
+    excerpt: "From Spain's November vote to France's 2027 reckoning, Italy's next cycle and Germany's industrial comeback — a political turning point that must become an economic one.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 9, 2026",
+    read: "8 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-reversal",
     title: "The Great Capital Reversal",
     excerpt: "An Italian consolidation meant to reinforce national control may instead accelerate the redistribution of financial influence across Europe.",
