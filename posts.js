@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-economics-test",
+    title: "The AI Economics Test",
+    excerpt: "Upstream AI demand is intact, but the decisive question is whether structural velocity converts into durable returns.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 9, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-credit-collision",
     title: "The Credit Collision",
     excerpt: "Record chip revenues meet $105 oil and 5.33% Treasuries as the AI supercycle migrates from corporate cash flow into the financial system.",
