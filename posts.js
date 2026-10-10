@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/in-focus-european-banking-watch",
+    title: "In Focus: European Banking Watch",
+    excerpt: "UniCredit versus Intesa Sanpaolo — two rival architectures for the future of European banking.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "4 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
     url: "/europes-great-sovereign-repricing",
     title: "Europe’s Great Sovereign Repricing",
     excerpt: "Europe's next sovereign divide will separate economies whose productivity can outrun their debt from those whose debt will outrun their future.",
