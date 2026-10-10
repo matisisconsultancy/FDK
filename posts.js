@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-corporate-intelligence",
+    title: "Global Corporate Intelligence",
+    excerpt: "The October 10 FDK GVI Corporate Benchmark on who is converting technological acceleration into durable economic power.",
+    tag: "FDK GVI Corporate Benchmark · Capital",
+    slot: "FDK GVI Corporate Benchmark",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/in-focus-europe-watch",
     title: "In Focus: Europe Watch",
     excerpt: "From Spain's November vote to France's 2027 reckoning, Italy's next cycle and Germany's industrial comeback — a political turning point that must become an economic one.",
