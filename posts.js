@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/todays-espresso-index",
+    title: "Today’s Espresso Index",
+    excerpt: "The Espresso Index proposes to measure the speed at which the token economy converts technological capability into economic progress.",
+    tag: "Morning View · Intelligence",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-corporate-intelligence",
     title: "Global Corporate Intelligence",
     excerpt: "The October 10 FDK GVI Corporate Benchmark on who is converting technological acceleration into durable economic power.",
