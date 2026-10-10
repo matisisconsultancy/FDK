@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-sovereign-repricing",
+    title: "Europe’s Great Sovereign Repricing",
+    excerpt: "Europe's next sovereign divide will separate economies whose productivity can outrun their debt from those whose debt will outrun their future.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-markets-ai-supercycle-capital-formation-europe",
     title: "Global Markets • AI Supercycle • Capital Formation • Europe",
     excerpt: "Record equities, retreating consumers and the next financial divide — who captures the returns of the AI Supercycle.",
