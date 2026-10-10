@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-markets-ai-supercycle-capital-formation-europe",
+    title: "Global Markets • AI Supercycle • Capital Formation • Europe",
+    excerpt: "Record equities, retreating consumers and the next financial divide — who captures the returns of the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "9 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/material-strategic-inflection",
     title: "Material Strategic Inflection",
     excerpt: "China's October 9 directive reframes the AI contest from capability toward productivity and capital discipline.",
