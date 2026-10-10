@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/material-strategic-inflection",
+    title: "Material Strategic Inflection",
+    excerpt: "China's October 9 directive reframes the AI contest from capability toward productivity and capital discipline.",
+    tag: "U.s. · Capital",
+    slot: "U.s.",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/todays-espresso-index",
     title: "Today’s Espresso Index",
     excerpt: "The Espresso Index proposes to measure the speed at which the token economy converts technological capability into economic progress.",
