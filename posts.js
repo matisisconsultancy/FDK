@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-take-the-weekend-edition",
+    title: "Global Take: The Weekend Edition",
+    excerpt: "Why the coming deflationary boom may first trigger the most unforgiving capital repricing in a generation.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 11, 2026",
+    read: "7 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/europes-great-banking-reset",
     title: "Europe’s Great Banking Reset",
     excerpt: "",
