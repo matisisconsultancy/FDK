@@ -852,6 +852,117 @@ body.menu-open .demo,body.menu-open .demo-note{display:none}
 .lv-foot{margin-top:14px}
 @media(max-width:700px){.lv-table{min-width:0!important;width:100%}.lv-t,.lv-s,.lv-table thead th:nth-child(4),.lv-table thead th:nth-child(5){display:none}.lv-table td,.lv-table th{padding-left:10px!important;padding-right:10px!important}.lv-v{font-size:.88rem}}
 @media(prefers-reduced-motion:reduce){.lv-badge i,.lv-st--open i,.lv-flash,.lv-detail__in{animation:none}}
+
+/* ============================================================
+   v27 · dataviz pass — colours computed, not picked
+   Polarity: teal ▲ / orange ▼ (validated for deuteranopia/protanopia:
+   light ΔE 12.1, dark ΔE 11.6; red/green measured 2.5 and failed).
+   Marks use the mark tokens; text uses the darker/lighter text tokens (≥ 4.5:1).
+   Compare: indigo / magenta (light ΔE 10.8, dark 10.2).
+   ============================================================ */
+:root{--up:#22a98c;--dn:#e0703a;--up-t:#3cc9a6;--dn-t:#f28b55;--cmp-a:#5b8def;--cmp-b:#d064b0;--grid:rgba(120,160,225,.14);--muted-line:rgba(142,162,196,.75)}
+:root.day{--up:#14907a;--dn:#c8541c;--up-t:#0d7a66;--dn-t:#b04612;--cmp-a:#3b5bdb;--cmp-b:#c2409a;--grid:rgba(13,18,56,.09);--muted-line:rgba(85,90,112,.6)}
+.up,.g-delta--up,.g-arr--up,.g-tchip__v.up,.g-arrows--up,.lv-c--up{color:var(--up-t)}
+.down,.g-score__n.dn,.g-delta--down,.g-arr--down,.g-tchip__v.down,.g-arrows--down,.g-sub__h--down,.g-card__lbl--down,.lv-c--down{color:var(--dn-t)}
+.g-badge--down{color:var(--dn-t);border-color:color-mix(in srgb,var(--dn) 40%,transparent);background:color-mix(in srgb,var(--dn) 9%,transparent)}
+.g-tchip__v small{opacity:1}
+.lv-c i,.lv-tile__c i{font-style:normal;font-size:.8em;margin-right:5px}
+/* quiet trend: one hue, latest point marked */
+.ms{position:relative;display:block;width:112px;height:28px}
+.ms svg{display:block;width:100%;height:100%;overflow:visible}
+.ms path{fill:none;stroke:var(--muted-line);stroke-width:1.5;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.ms i{position:absolute;right:0;top:var(--ey);width:7px;height:7px;border-radius:50%;background:var(--cmp-a);box-shadow:0 0 0 2px var(--bg);transform:translate(50%,-50%)}
+/* stat tiles: sentence-case label, value, signed delta, 1-month trend */
+.lv-tile{gap:2px;padding:13px 14px 11px}
+.lv-tile__l{font-family:var(--f-body);font-size:.8rem;letter-spacing:0;text-transform:none;color:var(--muted);font-weight:500}
+.lv-tile__v{font-family:var(--f-display);font-size:1.14rem;font-weight:600;font-variant-numeric:normal;letter-spacing:-.01em;margin-top:2px}
+.lv-tile__c{font-family:var(--f-mono);font-size:.74rem}
+.lv-tile__sp{display:flex;align-items:flex-end;gap:6px;margin-top:6px}
+.lv-tile__sp .ms{flex:1;width:auto;height:24px}
+.lv-tile__sp small{font-family:var(--f-mono);font-size:.62rem;color:var(--dim)}
+/* table: sentence case, sortable headers */
+.lv-table .g-name small{font-family:var(--f-body);font-size:.74rem;letter-spacing:0;text-transform:none;color:var(--dim)}
+.lv-st{font-family:var(--f-body);font-size:.78rem}
+.lv-sort{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:6px;font:inherit;letter-spacing:inherit;text-transform:inherit;color:inherit}
+.lv-sort i{font-style:normal;opacity:.5}
+.lv-sort.on{color:var(--fg)}.lv-sort.on i{opacity:1}
+.lv-sort:focus-visible{outline:2px solid var(--blue-2);outline-offset:3px;border-radius:3px}
+.lv-t .ms{width:112px}
+/* What moved: diverging bars centred on zero, value at the tip */
+.mv{margin:4px 0 26px;padding:20px 22px 16px;border:1px solid var(--line);border-radius:18px;background:var(--panel)}
+.mv-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px;margin-bottom:12px}
+.mv-head h2{font-size:1.06rem;font-weight:600;letter-spacing:-.01em}
+.mv-head p{font-size:.8rem;color:var(--muted);margin:0}
+.mv-list{display:flex;flex-direction:column;gap:2px}
+.mv-row{all:unset;display:grid;grid-template-columns:minmax(120px,190px) 1fr;align-items:center;gap:14px;min-height:28px;padding:2px 6px;border-radius:8px;cursor:pointer;font-size:.86rem;box-sizing:border-box}
+.mv-row:hover,.mv-row:focus-visible{background:rgba(var(--glow),.07)}
+.mv-row:focus-visible{outline:2px solid var(--blue-2);outline-offset:1px}
+.mv-l{color:var(--fg);line-height:1.25}
+.mv-all{display:none}
+.mv-t{position:relative;height:16px}
+.mv-t::before{content:"";position:absolute;left:50%;top:-4px;bottom:-4px;width:1px;background:var(--line-2)}
+.mv-b{position:absolute;top:2px;height:12px;width:calc(var(--w) * .4%);min-width:2px}
+.mv-row--up .mv-b{left:50%;background:var(--up);border-radius:0 4px 4px 0}
+.mv-row--dn .mv-b{right:50%;background:var(--dn);border-radius:4px 0 0 4px}
+.mv-row--flat .mv-b{left:50%;background:var(--muted-line)}
+.mv-v{position:absolute;top:50%;transform:translateY(-50%);font-family:var(--f-mono);font-size:.74rem;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
+.mv-row--up .mv-v,.mv-row--flat .mv-v{left:calc(50% + var(--w) * .4% + 6px)}
+.mv-row--dn .mv-v{right:calc(50% + var(--w) * .4% + 6px)}
+.mv-row:hover .mv-v,.mv-row:focus-visible .mv-v{color:var(--fg)}
+/* history chart */
+.lc-ctl{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px 18px;margin-bottom:14px}
+.lc-ctl .lv-ranges{margin:0}
+.lc-cmp{display:inline-flex;align-items:center;gap:8px;font-size:.8rem;color:var(--muted)}
+.lc-cmp select{font:inherit;font-size:.82rem;color:var(--fg);background:var(--bg);border:1px solid var(--line-2);border-radius:999px;padding:6px 30px 6px 12px;appearance:none;-webkit-appearance:none;cursor:pointer;
+  background-image:linear-gradient(45deg,transparent 50%,currentColor 50%),linear-gradient(135deg,currentColor 50%,transparent 50%);background-position:calc(100% - 15px) 52%,calc(100% - 10px) 52%;background-size:5px 5px;background-repeat:no-repeat}
+.lc-cmp select:focus-visible{outline:2px solid var(--blue-2);outline-offset:2px}
+.lc-legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 18px;margin:0 0 10px;font-size:.82rem;color:var(--fg)}
+.lc-legend span{display:inline-flex;align-items:center;gap:8px}
+.lc-legend__n{color:var(--dim);font-family:var(--f-mono);font-size:.72rem}
+.lc-key{display:inline-block;width:16px;height:2px;border-radius:2px;flex:none}
+.lc-key--a{background:var(--cmp-a)}.lc-key--b{background:var(--cmp-b)}
+.lc{position:relative;display:grid;grid-template-columns:auto 1fr;grid-template-rows:220px auto;column-gap:10px;outline:none;padding-right:64px}
+.lc-tip__hint{display:none}
+.lc:focus-visible{outline:2px solid var(--blue-2);outline-offset:6px;border-radius:6px}
+.lc-y{position:relative;grid-row:1;min-width:42px}
+.lc-y span{position:absolute;right:0;transform:translateY(-50%);font-family:var(--f-mono);font-size:.68rem;color:var(--dim);white-space:nowrap;font-variant-numeric:tabular-nums}
+.lc-plot{position:relative;grid-row:1;grid-column:2;touch-action:pan-y;cursor:crosshair}
+.lc-plot svg{display:block;width:100%;height:100%;overflow:visible}
+.lc-grid line{stroke:var(--grid);stroke-width:1;vector-effect:non-scaling-stroke}
+.lc-line{fill:none;stroke-width:2;stroke-linejoin:round;stroke-linecap:round;vector-effect:non-scaling-stroke}
+.lc-line--a{stroke:var(--cmp-a)}.lc-line--b{stroke:var(--cmp-b)}
+.lc-area{fill:var(--cmp-a);opacity:.1}
+.lc-x{stroke:var(--line-2);stroke-width:1;vector-effect:non-scaling-stroke;opacity:0}
+.lc.is-reading .lc-x{opacity:1}
+.lc-dot{position:absolute;width:9px;height:9px;border-radius:50%;transform:translate(-50%,-50%);box-shadow:0 0 0 2px var(--bg);pointer-events:none}
+.lc-dot--a{background:var(--cmp-a)}.lc-dot--b{background:var(--cmp-b)}
+.lc-dot--hover{opacity:0;transition:opacity .12s}
+.lc.is-reading .lc-dot--hover{opacity:1}
+.lc-end{position:absolute;left:calc(100% + 10px);transform:translateY(-50%);font-family:var(--f-mono);font-size:.72rem;color:var(--fg);white-space:nowrap;font-variant-numeric:tabular-nums}
+.lc-xa{position:relative;grid-row:2;grid-column:2;height:22px;margin-top:6px}
+.lc-xa span{position:absolute;top:0;transform:translateX(-50%);font-family:var(--f-mono);font-size:.68rem;color:var(--dim);white-space:nowrap}
+.lc-xa span.is-first{transform:none}.lc-xa span.is-last{transform:translateX(-100%)}
+.lc-tip{position:absolute;z-index:4;top:6px;min-width:150px;display:flex;flex-direction:column;gap:4px;padding:9px 11px;border:1px solid var(--line-2);border-radius:10px;background:var(--panel);box-shadow:0 14px 30px -18px rgba(0,0,0,.45);pointer-events:none;opacity:0;transition:opacity .12s}
+.lc.is-reading .lc-tip{opacity:1}
+.lc-tip__d{font-family:var(--f-mono);font-size:.68rem;font-weight:400;color:var(--dim)}
+.lc-tip__r{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.lc-tip__r strong{font-family:var(--f-mono);font-size:.86rem;font-weight:600;color:var(--fg);font-variant-numeric:tabular-nums}
+.lc-tip__r em{font-style:normal;font-size:.76rem;color:var(--muted)}
+.lc-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+@media(max-width:700px){
+  .mv{padding:16px 14px 12px}.mv-row{grid-template-columns:104px 1fr;gap:8px;font-size:.8rem;min-height:32px}
+  .mv:not(.is-all) .mv-row.is-mid{display:none}
+  .mv-all{all:unset;display:block;margin:10px auto 2px;padding:8px 14px;border:1px solid var(--line-2);border-radius:999px;font-size:.8rem;color:var(--fg);cursor:pointer}
+  .mv-all:focus-visible{outline:2px solid var(--blue-2);outline-offset:2px}
+  .mv-b{width:calc(var(--w) * .3%)}.mv-row--up .mv-v,.mv-row--flat .mv-v{left:calc(50% + var(--w) * .3% + 5px)}.mv-row--dn .mv-v{right:calc(50% + var(--w) * .3% + 5px)}
+  .lc{grid-template-rows:auto 180px auto;padding-right:46px}.lc-y{min-width:34px;grid-row:2}.lc-plot{grid-row:2}.lc-xa{grid-row:3}
+  .lc-tip{position:static;grid-column:1/-1;grid-row:1;opacity:1;flex-direction:row;flex-wrap:wrap;align-items:center;gap:4px 14px;min-height:44px;margin-bottom:10px;padding:8px 10px;box-shadow:none}
+  .lc-tip__hint{display:block;font-size:.76rem;color:var(--dim)}.lc.is-reading .lc-tip__hint{display:none}
+  .lc-tip__d{flex-basis:100%}
+  .lc-xa span.is-mid{display:none}
+  .lc-ctl{flex-direction:column;align-items:flex-start}
+}
+@media(prefers-reduced-motion:reduce){.lc-dot--hover,.lc-tip{transition:none}}
 </style>
 <style>
 .nav__links a.is-here{color:var(--fg)}
@@ -1129,49 +1240,138 @@ document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==
   }
 
   /* ---------- 2 · MARKET ---------- */
-  /* ---------- 2 · MARKET — live public data (/ve-live.js feed, refreshed every 20 min) ---------- */
-  var MK = { group: "All", open: null, range: 66 };
+  /* ---------- 2 · MARKET — live public data (/ve-live.js feed, refreshed every 20 min) ----------
+     Design follows the dataviz method: polarity in a validated teal/orange pair (never red/green),
+     trend lines in one hue, hairline axes, value-first tooltips, every chart reachable by keyboard. */
+  var MK = { group: "All", open: null, range: 66, cmp: "", sort: "", dir: -1, idx: null };
   var GROUPS = ["All", "Equities", "Rates", "Energy", "Commodities", "FX", "AI leaders", "Crypto", "Macro"];
+  var MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  var CHART = null;   // the open chart's model, for the hover/keyboard layer
   function liveFeed() { return window.VELive && window.VELive.feed(); }
+  function dShort(iso, year) { var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(iso || "")); return m ? (+m[3]) + " " + MON[+m[2] - 1] + (year ? " " + m[1] : "") : esc(iso); }
+  function pctOf(x) { return (x.unit === "%" || x.unit === "bp") ? null : x.changePct; }
+  function vfmt(x, v) { return window.VELive.fmt({ value: v, dp: x.dp, unit: x.unit }); }
   function staticMarket() {
     var m = D.market || {};
     var rows = (m.rows || []).map(function (r) {
       return '<tr><td class="g-name">' + esc(r.k) + '</td><td class="g-score"><span class="g-score__n ' + (r.trend === "down" ? "dn" : "") + '">' + esc(r.v) + '</span></td><td class="g-note2">' + esc(r.note) + '</td><td>' + arrowHTML(r.trend) + '</td></tr>';
     }).join("");
-    return kind("Public market data", true) +
-      '<p class="g-note">Key numbers to watch · as of ' + niceDate(m.asOf) + ' · connecting to the live feed…</p>' +
+    return '<p class="g-note">Key numbers to watch · as of ' + niceDate(m.asOf) + ' · connecting to the live feed…</p>' +
       '<div class="g-tablewrap"><table class="g-table"><thead><tr><th>Signal</th><th>Latest</th><th>Why it matters</th><th><span class="g-th-sr">Trend</span></th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   }
   function statusHTML(x) {
-    if (x.stale) return '<span class="lv-st lv-st--stale" title="Source unavailable at the last refresh">last available</span>';
-    if (x.open === true) return '<span class="lv-st lv-st--open"><i></i>open</span>';
-    var d = x.asOf ? String(x.asOf).slice(0, 10) : "";
-    return '<span class="lv-st">' + (x.open === false ? "close · " : "") + esc(niceDate(d)) + '</span>';
+    if (x.stale) return '<span class="lv-st lv-st--stale" title="The source did not answer at the last refresh">Last available</span>';
+    if (x.open === true) return '<span class="lv-st lv-st--open"><i aria-hidden="true"></i>Open</span>';
+    return '<span class="lv-st">' + (x.open === false ? "Closed · " : "") + dShort(x.asOf) + '</span>';
+  }
+  /* a quiet one-hue trend with the latest point marked (the change itself sits in its own column) */
+  function mspark(pts, w, h) {
+    pts = (pts || []).filter(function (p) { return p && p[1] != null; });
+    if (pts.length < 3) return "";
+    var vs = pts.map(function (p) { return p[1]; }), lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs), rg = (hi - lo) || 1;
+    var Y = function (v) { return (h - 3 - ((v - lo) / rg) * (h - 6)); };
+    var d = vs.map(function (v, i) { return (i ? "L" : "M") + (i * w / (vs.length - 1)).toFixed(1) + " " + Y(v).toFixed(1); }).join("");
+    return '<span class="ms" style="--ey:' + (Y(vs[vs.length - 1]) / h * 100).toFixed(1) + '%"><svg viewBox="0 0 ' + w + ' ' + h + '" preserveAspectRatio="none" aria-hidden="true"><path d="' + d + '"/></svg><i></i></span>';
   }
   function trail(x) { return (x.daily && x.daily.length > 2) ? x.daily.slice(-MK.range) : (x.intraday || []); }
-  function bigChart(x) {
-    var pts = trail(x).filter(function (p) { return p && p[1] != null; });
-    if (pts.length < 3) return '<p class="g-note">History builds up with every refresh — the chart appears after a few updates.</p>';
-    var W = 640, H = 180, vs = pts.map(function (p) { return p[1]; }), lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs), rg = (hi - lo) || 1, st = W / (pts.length - 1);
-    var Y = function (v) { return (H - 10 - ((v - lo) / rg) * (H - 24)).toFixed(1); };
-    var d = vs.map(function (v, i) { return (i ? "L" : "M") + (i * st).toFixed(1) + " " + Y(v); }).join("");
-    var up = vs[vs.length - 1] >= vs[0], dp = x.dp;
-    var f = function (v) { return window.VELive.fmt({ value: v, dp: dp, unit: x.unit }); };
-    return '<div class="lv-chart lv-chart--' + (up ? "up" : "down") + '" data-pts="' + esc(JSON.stringify(pts)) + '" data-lo="' + lo + '" data-hi="' + hi + '">' +
-      '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="' + esc(x.label) + ' — ' + pts.length + ' points from ' + esc(pts[0][0]) + ' to ' + esc(pts[pts.length - 1][0]) + '">' +
-      '<path class="lv-chart__area" d="' + d + 'L' + W + ' ' + H + 'L0 ' + H + 'Z"/><path class="lv-chart__line" d="' + d + '"/>' +
-      '<line class="lv-chart__x" x1="0" x2="0" y1="0" y2="' + H + '" style="opacity:0"/></svg><span class="lv-chart__dot" aria-hidden="true"></span>' +
-      '<span class="lv-chart__hi">' + esc(f(hi)) + '</span><span class="lv-chart__lo">' + esc(f(lo)) + '</span>' +
-      '<span class="lv-chart__tip" aria-hidden="true"></span></div>';
+
+  /* What moved — one diverging bar per price signal, the last session's % change, centred on zero */
+  function movedHTML(list) {
+    var xs = list.filter(function (x) { return pctOf(x) != null && !x.stale; }).sort(function (a, b) { return pctOf(b) - pctOf(a); });
+    if (xs.length < 3) return "";
+    var mx = Math.max.apply(null, xs.map(function (x) { return Math.abs(pctOf(x)); })) || 1;
+    var many = xs.length > 12;
+    var rows = xs.map(function (x, i) {
+      var v = pctOf(x), w = (Math.abs(v) / mx * 100).toFixed(1), k = v > 0 ? "up" : v < 0 ? "dn" : "flat";
+      if (many && i >= 5 && i < xs.length - 5) k += " is-mid";
+      var txt = (v > 0 ? "+" : v < 0 ? "−" : "") + window.VELive.num(Math.abs(v), 2) + "%";
+      return '<button type="button" class="mv-row mv-row--' + k + '" data-open="' + esc(x.id) + '" style="--w:' + w + '" aria-label="' + esc(x.label + ", " + (v > 0 ? "up " : v < 0 ? "down " : "") + txt + ". Open its history") + '">' +
+        '<span class="mv-l">' + esc(x.label) + '</span><span class="mv-t"><span class="mv-b"></span><span class="mv-v">' + txt + '</span></span></button>';
+    }).join("");
+    return '<section class="mv" aria-labelledby="mvH"><div class="mv-head"><h2 id="mvH">What moved</h2><p>Last session, % change · rates and macro move in basis points, in the table below</p></div>' +
+      '<div class="mv-list">' + rows + '</div>' +
+      (many ? '<button type="button" class="mv-all" aria-expanded="false">Show all ' + xs.length + ' signals</button>' : "") + '</section>';
+  }
+
+  /* the history chart: one hue, or two signals indexed to 100 on one axis (never two scales) */
+  function niceTicks(lo, hi, n) {
+    var span = (hi - lo) || Math.abs(hi) || 1, raw = span / n, mag = Math.pow(10, Math.floor(Math.log10(raw))), e = raw / mag;
+    var step = (e >= 7.5 ? 10 : e >= 3.5 ? 5 : e >= 1.5 ? 2 : 1) * mag, a = Math.floor(lo / step) * step, b = Math.ceil(hi / step) * step, t = [];
+    for (var v = a; v <= b + step / 2; v += step) t.push(+v.toFixed(10));
+    return { lo: a, hi: b, t: t };
+  }
+  function chartModel(x) {
+    var a = trail(x).filter(function (p) { return p && p[1] != null; });
+    if (a.length < 3) return null;
+    var y = MK.cmp && MK.cmp !== x.id && window.VELive.get(MK.cmp);
+    if (y && y.daily && y.daily.length > 2 && x.daily && x.daily.length > 2) {
+      var mb = new Map(y.daily), common = a.filter(function (p) { return mb.has(p[0]) && mb.get(p[0]) != null; });
+      if (common.length >= 3) {
+        var a0 = common[0][1], b0 = mb.get(common[0][0]);
+        return { indexed: true, dates: common.map(function (p) { return p[0]; }), lines: [
+          { s: x, k: "a", raw: common.map(function (p) { return p[1]; }), v: common.map(function (p) { return p[1] / a0 * 100; }) },
+          { s: y, k: "b", raw: common.map(function (p) { return mb.get(p[0]); }), v: common.map(function (p) { return mb.get(p[0]) / b0 * 100; }) }] };
+      }
+    }
+    return { indexed: false, dates: a.map(function (p) { return p[0]; }), lines: [{ s: x, k: "a", raw: a.map(function (p) { return p[1]; }), v: a.map(function (p) { return p[1]; }) }] };
+  }
+  function chartHTML(x) {
+    var M = chartModel(x);
+    if (!M) { CHART = null; return '<p class="g-note">The history builds up with every refresh — the chart appears after a few updates.</p>'; }
+    var W = 640, H = 220, n = M.dates.length, all = [];
+    M.lines.forEach(function (l) { all = all.concat(l.v); });
+    var lo = Math.min.apply(null, all), hi = Math.max.apply(null, all), pad = (hi - lo) * 0.08 || Math.abs(hi) * 0.01 || 1;
+    var tk = niceTicks(lo - pad, hi + pad, 4), X = function (i) { return n > 1 ? i * W / (n - 1) : 0; }, Y = function (v) { return H - (v - tk.lo) / (tk.hi - tk.lo) * H; };
+    M.W = W; M.H = H; M.X = X; M.Y = Y; CHART = M;
+    /* round axis ticks: only as many decimals as the step needs */
+    var step = tk.t.length > 1 ? Math.abs(tk.t[1] - tk.t[0]) : 1, tdp = Math.max(0, Math.min(x.dp, -Math.floor(Math.log10(step) + 1e-9)));
+    var lab = function (v) { return M.indexed ? window.VELive.num(v, 0) : window.VELive.fmt({ value: v, dp: tdp, unit: x.unit === "%" || x.unit === "bp" ? x.unit : (x.unit && x.unit.charAt(0) === "$" ? "$" : "") }); };
+    var grid = tk.t.map(function (v) { return '<line x1="0" x2="' + W + '" y1="' + Y(v).toFixed(1) + '" y2="' + Y(v).toFixed(1) + '"/>'; }).join("");
+    var ylab = tk.t.map(function (v) { return '<span style="top:' + (Y(v) / H * 100).toFixed(2) + '%">' + esc(lab(v)) + '</span>'; }).join("");
+    var xi = n < 4 ? [0, n - 1] : [0, Math.round((n - 1) / 3), Math.round(2 * (n - 1) / 3), n - 1];
+    var xlab = xi.map(function (i, j) { return '<span class="' + (j === 0 ? "is-first" : j === xi.length - 1 ? "is-last" : "is-mid") + '" style="left:' + (X(i) / W * 100).toFixed(2) + '%">' + dShort(M.dates[i], j === 0 || j === xi.length - 1) + '</span>'; }).join("");
+    var paths = M.lines.map(function (l) {
+      var d = l.v.map(function (v, i) { return (i ? "L" : "M") + X(i).toFixed(1) + " " + Y(v).toFixed(1); }).join("");
+      return (M.lines.length === 1 ? '<path class="lc-area" d="' + d + 'L' + W + ' ' + H + 'L0 ' + H + 'Z"/>' : "") + '<path class="lc-line lc-line--' + l.k + '" d="' + d + '"/>';
+    }).join("");
+    var ends = M.lines.map(function (l) {
+      var v = l.v[n - 1], t = (Y(v) / H * 100).toFixed(2);
+      return '<i class="lc-dot lc-dot--' + l.k + ' lc-dot--end" style="left:100%;top:' + t + '%"></i><span class="lc-end" style="top:' + t + '%">' + esc(M.lines.length > 1 ? window.VELive.num(v, 1) : vfmt(l.s, l.raw[n - 1])) + '</span>';
+    }).join("");
+    var legend = M.lines.length > 1 ? '<div class="lc-legend">' + M.lines.map(function (l) { return '<span><i class="lc-key lc-key--' + l.k + '"></i>' + esc(l.s.label) + '</span>'; }).join("") + '<span class="lc-legend__n">Indexed: ' + dShort(M.dates[0], true) + ' = 100</span></div>' : "";
+    var first = M.lines[0], chg = first.v[n - 1] / first.v[0] - 1;
+    var summary = x.label + ", " + dShort(M.dates[0], true) + " to " + dShort(M.dates[n - 1], true) + ": " + vfmt(x, first.raw[0]) + " to " + vfmt(x, first.raw[n - 1]) + " (" + (chg >= 0 ? "+" : "−") + window.VELive.num(Math.abs(chg * 100), 1) + "%)" + (M.lines.length > 1 ? ", compared with " + M.lines[1].s.label : "") + ". Use the arrow keys to read each day.";
+    return legend + '<div class="lc" tabindex="0" role="img" aria-label="' + esc(summary) + '">' +
+      '<div class="lc-tip" aria-hidden="true"><span class="lc-tip__hint">Touch the chart to read a day</span></div>' +
+      '<div class="lc-y" aria-hidden="true">' + ylab + '</div>' +
+      '<div class="lc-plot"><svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" aria-hidden="true"><g class="lc-grid">' + grid + '</g>' + paths +
+      '<line class="lc-x" x1="0" x2="0" y1="0" y2="' + H + '"/></svg>' +
+      M.lines.map(function (l) { return '<i class="lc-dot lc-dot--' + l.k + ' lc-dot--hover"></i>'; }).join("") + ends + '</div>' +
+      '<div class="lc-xa" aria-hidden="true">' + xlab + '</div></div>' +
+      '<p class="lc-sr" aria-live="polite"></p>';
   }
   function detailHTML(x) {
     var r52 = (x.high52 != null && x.low52 != null && x.high52 > x.low52) ? Math.max(0, Math.min(100, (x.value - x.low52) / (x.high52 - x.low52) * 100)) : null;
     var ranges = (x.daily && x.daily.length > 22) ? [[22, "1M"], [66, "3M"], [130, "6M"], [260, "1Y"]].filter(function (r) { return x.daily.length >= r[0] * 0.6; }) : [];
+    var f = liveFeed(), peers = f ? f.series.filter(function (y) { return y.id !== x.id && y.daily && y.daily.length > 22 && y.unit !== "%" && y.unit !== "bp"; }) : [];
+    peers.sort(function (a, b) { return (a.group === x.group ? 0 : 1) - (b.group === x.group ? 0 : 1); });
+    var canCmp = x.daily && x.daily.length > 22 && x.unit !== "%" && x.unit !== "bp" && peers.length;
     return '<div class="lv-detail__in">' +
-      (ranges.length ? '<div class="lv-ranges" role="toolbar" aria-label="Chart range">' + ranges.map(function (r) { return '<button type="button" class="lv-range' + (MK.range === r[0] ? " on" : "") + '" data-range="' + r[0] + '" aria-pressed="' + (MK.range === r[0]) + '">' + r[1] + '</button>'; }).join("") + '</div>' : '<span class="lv-ranges__note">Intraday trail · last 7 days</span>') +
-      bigChart(x) +
-      '<div class="lv-meta">' + (r52 != null ? '<span class="lv-52"><em>52-week range</em><b>' + esc(window.VELive.fmt({ value: x.low52, dp: x.dp, unit: x.unit })) + '</b><span class="lv-52__bar"><i style="left:' + r52.toFixed(1) + '%"></i></span><b>' + esc(window.VELive.fmt({ value: x.high52, dp: x.dp, unit: x.unit })) + '</b></span>' : "") +
+      '<div class="lc-ctl">' +
+        (ranges.length ? '<div class="lv-ranges" role="group" aria-label="Chart range">' + ranges.map(function (r) { return '<button type="button" class="lv-range' + (MK.range === r[0] ? " on" : "") + '" data-range="' + r[0] + '" aria-pressed="' + (MK.range === r[0]) + '">' + r[1] + '</button>'; }).join("") + '</div>' : '<span class="lv-ranges__note">Intraday trail · last 7 days</span>') +
+        (canCmp ? '<label class="lc-cmp"><span>Compare with</span><select data-cmp><option value="">Nothing</option>' + peers.map(function (y) { return '<option value="' + esc(y.id) + '"' + (MK.cmp === y.id ? " selected" : "") + '>' + esc(y.label) + '</option>'; }).join("") + '</select></label>' : "") +
+      '</div>' + chartHTML(x) +
+      '<div class="lv-meta">' + (r52 != null ? '<span class="lv-52"><em>52-week range</em><b>' + esc(vfmt(x, x.low52)) + '</b><span class="lv-52__bar" role="img" aria-label="Now at ' + Math.round(r52) + '% of its 52-week range"><i style="left:' + r52.toFixed(1) + '%"></i></span><b>' + esc(vfmt(x, x.high52)) + '</b></span>' : "") +
       '<span>' + esc(x.why || "") + '</span><span class="lv-src">Source: ' + esc(x.source || "") + (x.asOf ? ' · ' + esc(String(x.asOf).replace("T", " ").slice(0, 16)) + (String(x.asOf).length > 10 ? " UTC" : "") : "") + '</span></div></div>';
+  }
+  function sortList(list) {
+    if (!MK.sort) return list;
+    var key = MK.sort === "name" ? function (x) { return x.label.toLowerCase(); } : function (x) { var p = pctOf(x); return p != null ? p : (x.changeBp != null ? x.changeBp / 1e4 : -1e9); };
+    return list.slice().sort(function (a, b) { var A = key(a), B = key(b); return (A < B ? -1 : A > B ? 1 : 0) * MK.dir; });
+  }
+  function thSort(id, label) {
+    var on = MK.sort === id, dirTxt = on ? (MK.dir > 0 ? "ascending" : "descending") : "none";
+    return '<th aria-sort="' + dirTxt + '"><button type="button" class="lv-sort' + (on ? " on" : "") + '" data-sort="' + id + '">' + label + '<i aria-hidden="true">' + (on ? (MK.dir > 0 ? "↑" : "↓") : "↕") + '</i></button></th>';
   }
   function panelMarket() {
     var f = liveFeed();
@@ -1181,46 +1381,71 @@ document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==
     var groups = GROUPS.filter(function (g) { return g === "All" || have[g]; });
     if (groups.indexOf(MK.group) < 0) MK.group = "All";
     var list = f.series.filter(function (x) { return MK.group === "All" || x.group === MK.group; });
-    var rows = list.map(function (x) {
+    var rows = sortList(list).map(function (x) {
       var c = L.chg(x), open = MK.open === x.id;
       return '<tr class="lv-row' + (open ? " is-open" : "") + '" data-id="' + esc(x.id) + '">' +
         '<td class="g-name"><button type="button" class="lv-name" aria-expanded="' + open + '"' + (open ? ' aria-controls="lvd-' + esc(x.id) + '"' : "") + '><b>' + esc(x.label) + '</b><small>' + esc(x.group) + '</small></button></td>' +
         '<td class="lv-v" data-v="' + esc(String(x.value)) + '">' + esc(L.fmt(x)) + '</td>' +
-        '<td class="lv-c lv-c--' + c.dir + '">' + (c.txt ? (c.dir === "up" ? "▲ " : c.dir === "down" ? "▼ " : "") + esc(c.txt) : "—") + '</td>' +
-        '<td class="lv-t">' + L.spark(trail(x).slice(-66), 112, 30) + '</td>' +
+        '<td class="lv-c lv-c--' + c.dir + '">' + (c.txt ? '<i aria-hidden="true">' + (c.dir === "up" ? "▲" : c.dir === "down" ? "▼" : "•") + '</i>' + esc(c.txt) : "—") + '</td>' +
+        '<td class="lv-t">' + mspark(trail(x).slice(-66), 112, 28) + '</td>' +
         '<td class="lv-s">' + statusHTML(x) + '<span class="lv-chev" aria-hidden="true"></span></td></tr>' +
         (open ? '<tr class="lv-detail" id="lvd-' + esc(x.id) + '"><td colspan="5">' + detailHTML(x) + '</td></tr>' : "");
     }).join("");
     var fresh = f.series.filter(function (x) { return !x.stale; }).length;
-    return kind("Live public data", true) +
-      '<div class="lv-head"><span class="lv-badge"><i></i>Live</span><span class="lv-upd">Updated <b id="lvAgo">' + esc(L.ago(f.updated)) + '</b> · refreshed every 20 minutes · ' + fresh + ' of ' + f.series.length + ' signals fresh · delayed quotes</span></div>' +
-      '<div class="lv-groups" role="toolbar" aria-label="Filter signals">' + groups.map(function (g) { return '<button type="button" class="g-subtab' + (MK.group === g ? " on" : "") + '" data-group="' + esc(g) + '" aria-pressed="' + (MK.group === g) + '">' + esc(g) + (g === "All" ? "" : ' <span class="lv-n">' + have[g] + '</span>') + '</button>'; }).join("") + '</div>' +
-      '<div class="g-tablewrap"><table class="g-table lv-table"><thead><tr><th>Signal</th><th>Latest</th><th>Change</th><th>Trend</th><th>Status</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
-      '<p class="g-note lv-foot">Sources: ' + esc((f.sources || []).join(" · ")) + '. Tap a signal for its history. FDK proprietary indices (GVI, Espresso, velocity readings) come from Francesco\'s notes.</p>';
+    return '<div class="lv-head"><span class="lv-badge"><i aria-hidden="true"></i>Live</span><span class="lv-upd">Updated <b id="lvAgo">' + esc(L.ago(f.updated)) + '</b> · refreshed every 20 minutes · ' + fresh + ' of ' + f.series.length + ' signals fresh · delayed quotes</span></div>' +
+      '<div class="lv-groups" role="group" aria-label="Filter signals">' + groups.map(function (g) { return '<button type="button" class="g-subtab' + (MK.group === g ? " on" : "") + '" data-group="' + esc(g) + '" aria-pressed="' + (MK.group === g) + '">' + esc(g) + (g === "All" ? "" : ' <span class="lv-n">' + have[g] + '</span>') + '</button>'; }).join("") + '</div>' +
+      movedHTML(list) +
+      '<div class="g-tablewrap"><table class="g-table lv-table"><caption class="g-th-sr">Live market signals' + (MK.group !== "All" ? " · " + esc(MK.group) : "") + '</caption><thead><tr>' + thSort("name", "Signal") + '<th>Latest</th>' + thSort("chg", "Change") + '<th>3-month trend</th><th>Status</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
+      '<p class="g-note lv-foot">Sources: ' + esc((f.sources || []).join(" · ")) + '. Open a signal for its history, or compare two. FDK proprietary indices (GVI, Espresso, velocity readings) come from Francesco\'s notes.</p>';
   }
-  /* market panel interactions: group filter, open a row, chart range, chart crosshair */
+  /* market panel interactions: group filter, sort, open a row, range, compare, chart crosshair (pointer + keyboard) */
   function wireMarket(panel, rerender) {
     panel.querySelectorAll("[data-group]").forEach(function (b) { b.addEventListener("click", function () { MK.group = b.getAttribute("data-group"); MK.open = null; rerender(); }); });
+    panel.querySelectorAll("[data-sort]").forEach(function (b) { b.addEventListener("click", function () { var id = b.getAttribute("data-sort"); if (MK.sort === id) MK.dir = -MK.dir; else { MK.sort = id; MK.dir = id === "name" ? 1 : -1; } rerender(); var nb = panel.querySelector('[data-sort="' + id + '"]'); if (nb) nb.focus(); }); });
+    panel.querySelectorAll(".mv-all").forEach(function (b) { b.addEventListener("click", function () { var m = b.closest(".mv"), on = !m.classList.contains("is-all"); m.classList.toggle("is-all", on); b.setAttribute("aria-expanded", String(on)); b.textContent = on ? "Show the top and bottom five" : "Show all " + m.querySelectorAll(".mv-row").length + " signals"; }); });
+    panel.querySelectorAll(".mv-row").forEach(function (b) { b.addEventListener("click", function () { MK.open = b.getAttribute("data-open"); MK.cmp = ""; rerender(MK.open); var r = panel.querySelector('.lv-row[data-id="' + MK.open + '"]'); if (r) r.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth" }); }); });
     panel.querySelectorAll(".lv-row").forEach(function (r) {
-      function toggle() { var id = r.getAttribute("data-id"); MK.open = MK.open === id ? null : id; rerender(id); }
-      r.addEventListener("click", toggle);   /* the name button gives keyboard and screen readers the same switch */
+      r.addEventListener("click", function () { var id = r.getAttribute("data-id"); if (MK.open !== id) MK.cmp = ""; MK.open = MK.open === id ? null : id; rerender(id); });
     });
     panel.querySelectorAll("[data-range]").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); MK.range = +b.getAttribute("data-range"); rerender(MK.open); }); });
-    panel.querySelectorAll(".lv-chart").forEach(function (c) {
-      var pts = JSON.parse(c.getAttribute("data-pts")), lo = +c.getAttribute("data-lo"), hi = +c.getAttribute("data-hi"), rg = (hi - lo) || 1;
-      var svg = c.querySelector("svg"), xl = c.querySelector(".lv-chart__x"), dot = c.querySelector(".lv-chart__dot"), tip = c.querySelector(".lv-chart__tip");
-      var id = c.closest(".lv-detail").previousElementSibling.getAttribute("data-id"), x = window.VELive.get(id) || {};
-      function at(ev) {
-        var b = svg.getBoundingClientRect(), i = Math.round(Math.max(0, Math.min(1, (ev.clientX - b.left) / b.width)) * (pts.length - 1)), p = pts[i];
-        var X = i * 640 / (pts.length - 1), Yv = 180 - 10 - ((p[1] - lo) / rg) * (180 - 24);
-        xl.setAttribute("x1", X); xl.setAttribute("x2", X); xl.style.opacity = 1;
-        dot.style.left = (X / 640 * 100) + "%"; dot.style.top = (Yv / 180 * 100) + "%"; dot.style.opacity = 1;
-        tip.textContent = window.VELive.fmt({ value: p[1], dp: x.dp, unit: x.unit }) + " · " + String(p[0]).replace("T", " ").slice(0, 16);
-        tip.style.left = Math.max(0, Math.min(b.width - 170, ev.clientX - b.left - 85)) + "px"; tip.style.opacity = 1;
+    panel.querySelectorAll("[data-cmp]").forEach(function (sel) { sel.addEventListener("click", function (e) { e.stopPropagation(); }); sel.addEventListener("change", function () { MK.cmp = sel.value; rerender(MK.open); var s2 = panel.querySelector("[data-cmp]"); if (s2) s2.focus(); }); });
+    panel.querySelectorAll(".lv-detail").forEach(function (d) { d.addEventListener("click", function (e) { e.stopPropagation(); }); });
+    var lc = panel.querySelector(".lc"); if (!lc || !CHART) return;
+    var M = CHART, plot = lc.querySelector(".lc-plot"), xl = lc.querySelector(".lc-x"), tip = lc.querySelector(".lc-tip"), sr = panel.querySelector(".lc-sr");
+    var dots = [].slice.call(lc.querySelectorAll(".lc-dot--hover")), n = M.dates.length;
+    function show(i, announce) {
+      i = Math.max(0, Math.min(n - 1, i)); MK.idx = i;
+      var X = M.X(i); xl.setAttribute("x1", X); xl.setAttribute("x2", X); lc.classList.add("is-reading");
+      dots.forEach(function (d, j) { d.style.left = (X / M.W * 100) + "%"; d.style.top = (M.Y(M.lines[j].v[i]) / M.H * 100) + "%"; });
+      tip.textContent = "";
+      var hint = document.createElement("span"); hint.className = "lc-tip__hint"; hint.textContent = "Touch the chart to read a day"; tip.appendChild(hint);
+      var h = document.createElement("b"); h.className = "lc-tip__d"; h.textContent = dShort(M.dates[i], true); tip.appendChild(h);
+      M.lines.forEach(function (l) {
+        var row = document.createElement("span"); row.className = "lc-tip__r";
+        var key = document.createElement("i"); key.className = "lc-key lc-key--" + l.k; row.appendChild(key);
+        var v = document.createElement("strong"); v.textContent = vfmt(l.s, l.raw[i]); row.appendChild(v);
+        var nm = document.createElement("em"); nm.textContent = l.s.label + (M.indexed ? " · " + window.VELive.num(l.v[i], 1) : ""); row.appendChild(nm);
+        tip.appendChild(row);
+      });
+      if (getComputedStyle(tip).position === "absolute") {
+        var w = plot.clientWidth, px = X / M.W * w, tw = tip.offsetWidth || 160;
+        tip.style.left = (plot.offsetLeft + Math.max(0, Math.min(w - tw, px + (px > w * 0.6 ? -tw - 12 : 12)))) + "px";
       }
-      c.addEventListener("pointermove", at); c.addEventListener("pointerdown", at);
-      c.addEventListener("pointerleave", function () { xl.style.opacity = 0; dot.style.opacity = 0; tip.style.opacity = 0; });
+      if (announce && sr) sr.textContent = dShort(M.dates[i], true) + ": " + M.lines.map(function (l) { return l.s.label + " " + vfmt(l.s, l.raw[i]); }).join(", ");
+    }
+    function hide() { lc.classList.remove("is-reading"); MK.idx = null; }
+    var phone = matchMedia("(max-width:700px)").matches;
+    function at(ev) { var b = plot.getBoundingClientRect(); show(Math.round(Math.max(0, Math.min(1, (ev.clientX - b.left) / b.width)) * (n - 1))); }
+    plot.addEventListener("pointermove", at); plot.addEventListener("pointerdown", at);
+    plot.addEventListener("pointerleave", function () { if (!phone) hide(); });
+    lc.addEventListener("keydown", function (e) {
+      var i = MK.idx == null ? n - 1 : MK.idx, j = e.key === "ArrowLeft" ? i - 1 : e.key === "ArrowRight" ? i + 1 : e.key === "Home" ? 0 : e.key === "End" ? n - 1 : e.key === "PageUp" ? i - 5 : e.key === "PageDown" ? i + 5 : null;
+      if (j === null) { if (e.key === "Escape") hide(); return; }
+      e.preventDefault(); show(j, true);
     });
+    lc.addEventListener("focus", function () { show(MK.idx == null ? n - 1 : MK.idx, true); });
+    lc.addEventListener("blur", function () { if (!phone) hide(); });
+    if (phone) show(n - 1);   /* phones: the readout row starts on the latest day */
   }
 
   /* ---------- 3 · VELOCITY ---------- */
@@ -1404,19 +1629,20 @@ document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==
         var xs = STRIP.map(function (id) { return window.VELive.get(id); }).filter(function (x) { return x && x.value != null; });
         if (!xs.length) return;
         el.innerHTML = xs.map(function (x) {
-          var c = window.VELive.chg(x);
-          return '<button type="button" class="lv-tile" data-open="' + esc(x.id) + '" aria-label="' + esc(x.label + " " + window.VELive.fmt(x) + " " + c.txt) + '">' +
-            '<span class="lv-tile__l">' + esc(SHORT[x.id] || x.label) + (x.open ? '<i class="lv-tile__open" title="market open"></i>' : "") + '</span>' +
-            '<span class="lv-tile__v">' + esc(window.VELive.fmt(x)) + '</span>' +
-            '<span class="lv-tile__c lv-c--' + c.dir + '">' + (c.txt ? (c.dir === "up" ? "▲ " : c.dir === "down" ? "▼ " : "") + esc(c.txt) : "&nbsp;") + '</span>' +
-            window.VELive.spark((x.daily || []).slice(-22), 120, 26, "lv-tile__sp") + '</button>';
+          var c = window.VELive.chg(x), per = x.unit === "%" ? "on the day" : "today";
+          var said = (SHORT[x.id] || x.label) + " " + window.VELive.fmt(x) + (c.txt ? ", " + (c.dir === "up" ? "up " : c.dir === "down" ? "down " : "") + c.txt.replace(/^[+−]/, "") + " " + per : "") + ". Open its history";
+          return '<button type="button" class="lv-tile" data-open="' + esc(x.id) + '" aria-label="' + esc(said) + '">' +
+            '<span class="lv-tile__l">' + esc(SHORT[x.id] || x.label) + (x.open ? '<i class="lv-tile__open" aria-hidden="true"></i>' : "") + '</span>' +
+            '<span class="lv-tile__v">' + esc(window.VELive.fmt({ value: x.value, dp: x.dp, unit: x.unit && x.unit.charAt(0) === "$" ? "$" : x.unit })) + '</span>' +
+            '<span class="lv-tile__c lv-c--' + c.dir + '">' + (c.txt ? '<i aria-hidden="true">' + (c.dir === "up" ? "▲" : c.dir === "down" ? "▼" : "•") + '</i>' + esc(c.txt) : "&nbsp;") + '</span>' +
+            '<span class="lv-tile__sp">' + mspark((x.daily || []).slice(-22), 120, 24) + '<small>1M</small></span></button>';
         }).join("");
         el.hidden = false;
       }
       /* a tile opens that signal in the Market tab */
       document.getElementById("lvStrip").addEventListener("click", function (e) {
         var b = e.target.closest("[data-open]"); if (!b) return;
-        var x = window.VELive.get(b.getAttribute("data-open")); MK.open = x ? x.id : null; MK.group = "All";
+        var x = window.VELive.get(b.getAttribute("data-open")); MK.open = x ? x.id : null; MK.group = "All"; MK.cmp = "";
         var t = document.getElementById("gtab-market"); if (t) t.click();
         var r = panel.querySelector('.lv-row[data-id="' + MK.open + '"]'); if (r) r.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth" });
       });
