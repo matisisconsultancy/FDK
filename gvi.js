@@ -29,6 +29,10 @@
     var cls = trend === "up" ? "up" : trend === "down" ? "down" : "flat";
     return '<span class="g-badge g-badge--' + cls + '">' + esc(tag) + "</span>";
   }
+  function srcLink(src) {
+    if (!src || !src.url) return "";
+    return '<p class="g-note g-src">From the note: <a href="' + esc(src.url) + '">' + esc(src.title) + ' →</a></p>';
+  }
   function scoreBar(score, max) {
     var pct = Math.max(0, Math.min(100, (score / (max || 100)) * 100));
     return '<span class="g-bar"><span class="g-bar__fill" style="width:' + pct + '%"></span></span>';
@@ -100,8 +104,16 @@
       '<div class="g-today__main"><span class="g-eyebrow">' + esc(t.edition || "") + ' · ' + esc(t.date || "") + '</span>' +
       '<h3 class="g-today__thesis">' + esc(t.thesis || "") + '</h3><p class="g-today__sub">' + esc(t.subtitle || "") + '</p>' +
       (t.standfirst ? '<p class="g-today__stand">“' + esc(t.standfirst) + '”</p>' : "") + '</div>' +
-      '<div class="g-today__gauge">' + gauge(t.velocityReading.score, t.velocityReading.max, t.velocityReading.label) + '</div>' +
-      '</div><div class="g-strip">' + strip + '</div>';
+      (t.velocityReading && typeof t.velocityReading.score === "number" ? '<div class="g-today__gauge">' + gauge(t.velocityReading.score, t.velocityReading.max, t.velocityReading.label) + '</div>' : "") +
+      '</div><div class="g-strip">' + strip + '</div>' + todayNotes(t);
+  }
+
+  function todayNotes(t) {
+    var n = t.notes || [];
+    if (!n.length) return srcLink(t.source);
+    return '<div class="g-sub"><h4 class="g-sub__h">In today\'s notes</h4><div class="g-chips">' + n.map(function (x) {
+      return '<a class="g-chip" href="' + esc(x.url) + '"><em>' + esc(x.slot || "") + '</em>' + esc(x.title) + (x.headline ? ' — ' + esc(x.headline) : "") + ' →</a>';
+    }).join("") + '</div></div>';
   }
 
   /* ---------- 2 · MARKET ---------- */
@@ -136,11 +148,11 @@
   ];
   function subBenchmark() {
     var b = D.corporateBenchmark || {};
-    var pillars = '<div class="g-sub"><h4 class="g-sub__h">Pillar leadership</h4><div class="g-chips">' +
+    var pillars = !(b.pillars && b.pillars.length) ? "" : '<div class="g-sub"><h4 class="g-sub__h">' + (b.source ? "Leadership groups" : "Pillar leadership") + '</h4><div class="g-chips">' +
       b.pillars.map(function (p) { return '<span class="g-chip"><em>' + esc(p.pillar) + '</em>' + esc(p.leaders.join(" · ")) + '</span>'; }).join("") + '</div></div>';
     return '<p class="g-note">' + esc(b.title) + ' · as of ' + esc(b.asOf) + '</p><div class="g-two">' +
       '<div><h4 class="g-sub__h g-sub__h--up">Top 10 velocity leaders</h4>' + benchTable(b.leaders, "up") + '</div>' +
-      '<div><h4 class="g-sub__h g-sub__h--down">10 corporate laggards</h4>' + benchTable(b.laggards, "down") + '</div></div>' + pillars;
+      '<div><h4 class="g-sub__h g-sub__h--down">10 corporate laggards</h4>' + benchTable(b.laggards, "down") + '</div></div>' + pillars + srcLink(b.source);
   }
   function subCorporates() {
     var c = daily.corporates;
@@ -184,14 +196,17 @@
     var e = D.indices.espresso;
     var rows = e.rows.map(function (r) {
       return '<tr><td class="g-rank">' + r.rank + '</td><td class="g-name"><span class="g-flag">' + (r.flag || "") + '</span>' + esc(r.name) + '<span class="g-sector">' + esc(r.note) + '</span></td>' +
-        '<td class="g-score"><span class="g-score__n">' + fmt(r.score) + '</span>' + scoreBar(r.score) + '</td></tr>';
+        '<td class="g-score">' + (typeof r.score === "number" ? '<span class="g-score__n">' + fmt(r.score) + '</span>' + scoreBar(r.score) : '<span class="g-note2">provisional</span>') + '</td></tr>';
     }).join("");
-    var vel = e.velocity.map(function (v) {
+    var vel = (e.drivers && e.drivers.length ? e.drivers.map(function (d) {
+      var w = parseFloat(d.weight) || 0;
+      return '<div class="g-vrow"><span class="g-vrow__n">' + esc(d.name) + (d.note ? '<span class="g-sector">' + esc(d.note) + '</span>' : "") + '</span><span class="g-vrow__s">' + esc(d.weight) + '</span><span class="g-bar g-bar--wide"><span class="g-bar__fill" style="width:' + (w * 4) + '%"></span></span></div>';
+    }) : (e.velocity || []).map(function (v) {
       return '<div class="g-vrow' + (v.highlight ? " g-vrow--hl" : "") + '"><span class="g-vrow__n">' + esc(v.name) + '</span><span class="g-vrow__s">' + v.score + '</span><span class="g-bar g-bar--wide"><span class="g-bar__fill" style="width:' + v.score + '%"></span></span></div>';
-    }).join("");
-    return '<p class="g-note">' + esc(e.title) + ' — ' + esc(e.subtitle) + ' · ' + esc(e.constant) + ' · as of ' + esc(e.asOf) + '</p>' +
-      '<div class="g-two g-two--wide"><div><h4 class="g-sub__h">Global Top 15 (Espresso Score)</h4><div class="g-tablewrap"><table class="g-table"><thead><tr><th>#</th><th>Country</th><th>Score</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
-      '<div><h4 class="g-sub__h">Espresso Velocity Reading</h4><div class="g-vlist">' + vel + '</div></div></div>';
+    })).join("");
+    return '<p class="g-note">' + esc(e.title) + ' — ' + esc(e.subtitle) + (e.constant ? ' · ' + esc(e.constant) : "") + ' · as of ' + esc(e.asOf) + '</p>' +
+      '<div class="g-two g-two--wide"><div><h4 class="g-sub__h">' + (e.provisional ? "Global Top 15 · provisional ordering" : "Global Top 15 (Espresso Score)") + '</h4><div class="g-tablewrap"><table class="g-table"><thead><tr><th>#</th><th>Country</th><th>Score</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
+      '<div><h4 class="g-sub__h">' + (e.drivers && e.drivers.length ? "The five drivers of velocity (weights)" : "Espresso Velocity Reading") + '</h4><div class="g-vlist">' + vel + '</div></div></div>' + srcLink(e.source);
   }
 
   /* ---------- 6 · NEXT ECONOMY ---------- */

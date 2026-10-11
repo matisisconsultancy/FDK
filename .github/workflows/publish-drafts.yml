@@ -42,6 +42,20 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: node scripts/process-drafts.mjs
 
+      # Dashboard-relevant notes (FDK GVI Corporate Benchmark, Global Velocity Index
+      # updates, the Espresso Index, the Morning View…) also feed the FDK Velocity
+      # Dashboard: their numbers are extracted into data/gvi/latest.json, linked back
+      # to the note, and gvi-data.js is rebuilt. Never blocks a publish.
+      - name: Feed GVI notes into the dashboard
+        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GVI_NOTES_MODEL: ${{ vars.GVI_NOTES_MODEL }}
+        run: |
+          node scripts/gvi-notes-ingest.mjs
+          node scripts/gvi-build.mjs
+
       # A new note goes live in English straight away; the dictionaries are
       # rebuilt so the shared copy around it still reads in ES/IT, and the log
       # lists exactly which new strings need translating.

@@ -726,6 +726,30 @@ button,.btn,.edm,.g-tab,.g-subtab,.door,.mm-tog,.snav__toggle,.themebtn,.snav__c
 }
 /* honest indicators: "The Latest" is a label, not live data — no pulse */
 .latest__pulse{animation:none;box-shadow:0 0 0 3px rgba(46,224,106,.22)}
+
+/* v25 · editions: Midday Pulse is a daytime (yellow) edition; The Close keeps the violet moon */
+:root{--b-sun:#f5b82e}
+.edm[data-f=midday]{--dc:var(--b-sun)}
+.edm.on[data-f=midday]{background:var(--b-sun);color:#2a1d00;border-color:var(--b-sun)}
+.edm.on[data-f=midday] .dot{background:#2a1d00}
+.sdot--midday{background:var(--b-sun)}
+.ph--midday{background:var(--b-sun);box-shadow:0 0 0 2px rgba(245,184,46,.32)}
+.note--midday{--nc:#7a5000;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(245,184,46,.5);background:linear-gradient(160deg,#fffaeb,#fdf0c8)}
+:root:not(.day) .note--midday{--nc:#f5c451;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(245,184,46,.34);background:linear-gradient(160deg,rgba(245,184,46,.13),rgba(245,184,46,.02) 60%),var(--panel)}
+/* notes that fed the dashboard today */
+.g-src{margin-top:18px;font-family:var(--f-mono);font-size:.75rem;color:var(--dim)}
+.g-src a{color:var(--blue-2);text-decoration:none;border-bottom:1px solid rgba(var(--glow),.35)}
+.g-src a:hover{border-color:var(--blue-2)}
+.g-prov{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--dim)}
+.g-tnotes{margin-top:22px}
+.g-tnotes__list{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(320px,100%),1fr));gap:12px}
+.g-tnote{position:relative;display:flex;flex-direction:column;gap:5px;padding:16px 44px 16px 18px;border:1px solid var(--line);border-radius:16px;background:var(--panel);color:var(--fg);text-decoration:none;transition:border-color .2s var(--ease),transform 160ms var(--ease-out)}
+.g-tnote em{font-style:normal;font-family:var(--f-mono);font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-2)}
+.g-tnote b{font-family:var(--f-display);font-weight:600;font-size:1.02rem}
+.g-tnote span{font-size:.86rem;color:var(--muted);font-weight:300}
+.g-tnote i{position:absolute;right:16px;top:50%;transform:translateY(-50%);font-style:normal;color:var(--blue-2)}
+.g-tnote:active{transform:scale(.985)}
+@media (hover:hover) and (pointer:fine){.g-tnote:hover{border-color:var(--line-2)}}
 [hidden]{display:none!important}
 .edmenu{gap:6px}
 .edm{padding:9px 14px}
@@ -1037,18 +1061,22 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 
 <div class="cring" id="cring" aria-hidden="true"></div>
 
-<script src="/posts.js?v=2a7734cade"></script>
-<script src="/gvi-data.js?v=2a7734cade"></script>
+<script src="/posts.js?v=pv2"></script>
+<script src="/gvi-data.js?v=pv2"></script>
 <script>
 // ---- The Daily from /posts.js: The Latest + the most recent note of each edition ----
 (function(){var P=(window.FDK_POSTS||[]).filter(function(p){var t=(p.title||'').trim();return t.length>10&&!/^in-?focus$/i.test(t)&&(p.slot||'').toLowerCase().indexOf('add this just')<0});
  var tot=document.getElementById('notesTotal');if(tot&&window.FDK_POSTS)tot.textContent=window.FDK_POSTS.length;
  if(!P.length)return;
- function fkey(p){var sl=(p.slot||'').toLowerCase(),t=((p.tag||'')+' '+(p.title||'')).toLowerCase();
-  if(sl.indexOf('week ahead')>=0||sl.indexOf('sunday')>=0||t.indexOf('week ahead')>=0)return 'week';
-  if(sl==='in focus'||sl==='in depth'||t.indexOf('big take')>=0)return 'focus';
+ function fkey(p){var sl=(p.slot||'').toLowerCase().trim();
+  if(/^(the week ahead|week ahead|sunday edition|monday brief)$/.test(sl))return 'week';
+  if(/^(in focus|in depth)$/.test(sl))return 'focus';
+  if(sl==='midday pulse')return 'midday';
+  if(/^(the close|night briefing|evening note|closing of the day)$/.test(sl)||p.kind==='night')return 'closing';
+  if(/^(morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl))return 'morning';
   var h=parseInt((p.time||'08:00').split(':')[0],10);return h<12?'morning':h<17?'midday':'closing'}
- var PH={morning:'sun',midday:'moon',closing:'moon',week:'week',focus:'focus'},NAME={morning:'Morning Brief',midday:'Midday Pulse',closing:'Closing of the Day',week:'The Week Ahead',focus:'In Focus · Big Take'};
+ function topic(p){var t=String(p.tag||'').split(' · ');return t.length>1?t[t.length-1]:''}
+ var PH={morning:'sun',midday:'midday',closing:'moon',week:'week',focus:'focus'},NAME={morning:'Morning Brief',midday:'Midday Pulse',closing:'The Close',week:'The Week Ahead',focus:'In Focus'};
  var COV=[['collision',/collision|shock|clash|divergen|bifurcat/],['reversal',/reversal|rotation|reorder|repricing/],['moonshot',/moonshot|age of|frontier/],['orbits',/supercycle|cycle|loop|compound/],['orbs',/two |dual|both /],['chip',/chip|nvidia|compute|semiconductor|gpu|cuda|data cent|economics test|stack|model/],['columns',/bank|mps|caltagirone|risiko|monte dei paschi|lender/],['globe',/china|u\.s\.|geopolit|sovereign|alliance|security order|global/],['city',/europe|european|eurozone|ital|architecture/],['terrain',/credit|bond|yield|treasur|rate|spread|hurdle|cost of capital|denominator|debt/],['reversal',/capital|flow|velocity|split/]];
  var ALL=['reversal','chip','collision','globe','columns','terrain','orbs','city','orbits','moonshot'],used={};
  function hash(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h}
@@ -1060,7 +1088,7 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
  function short(d){var m=/(\w+) (\d+), (\d{4})/.exec(d||'');return m?m[1].slice(0,3)+' '+m[2]+', '+m[3]:(d||'')}
  function card(p,feat){var k=fkey(p),slot=(p.slot||'').replace('U.s.','U.S.'),tag=feat?'h3':'h4';
   return '<a class="note note--'+k+(feat?' note--feat':'')+'" data-f="'+k+'" href="'+esc(p.url)+'"><div class="note__media"><img src="'+cover(p)+'" alt="" width="1280" height="720" loading="lazy" decoding="async">'+
-   '<span class="note__badge"><i class="ph ph--'+PH[k]+'" aria-hidden="true"></i>'+esc(p.time)+' · '+esc(slot)+'</span></div><div class="note__body"><span class="note__cat">'+NAME[k]+'</span><'+tag+'>'+esc(p.title)+'</'+tag+'><p>'+esc(p.excerpt)+'</p>'+
+   '<span class="note__badge"><i class="ph ph--'+PH[k]+'" aria-hidden="true"></i>'+esc(p.time)+' · '+esc(slot)+'</span></div><div class="note__body"><span class="note__cat">'+NAME[k]+(topic(p)?' · '+esc(topic(p)):'')+'</span><'+tag+'>'+esc(p.title)+'</'+tag+'><p>'+esc(p.excerpt)+'</p>'+
    '<div class="note__foot"><span>'+esc(short(p.date))+' · '+esc(p.read)+'</span><span class="note__go">'+(feat?'Read the note →':'Read →')+'</span></div></div></a>'}
  var latest=P[0],rest=P.slice(1),pick=[];
  ['morning','midday','focus','closing','week'].forEach(function(k){for(var i=0;i<rest.length;i++){if(fkey(rest[i])===k&&pick.indexOf(rest[i])<0){pick.push(rest[i]);return}}});
@@ -1329,6 +1357,17 @@ document.getElementById('subForm').addEventListener('submit',function(e){e.preve
   }
 
   /* ---------- 1 · TODAY ---------- */
+  function srcLink(src) {
+    if (!src || !src.url) return "";
+    return '<p class="g-src">From the note <a href="' + esc(src.url) + '">' + esc(src.title) + ' →</a></p>';
+  }
+  function todayNotes(t) {
+    var n = t.notes || [];
+    if (!n.length) return srcLink(t.source);
+    return '<div class="g-sub g-tnotes"><h3 class="g-sub__h">In today\'s notes</h3><div class="g-tnotes__list">' + n.map(function (x) {
+      return '<a class="g-tnote" href="' + esc(x.url) + '"><em>' + esc((x.slot || "").replace("U.s.", "U.S.")) + '</em><b>' + esc(x.title) + '</b>' + (x.headline ? '<span>' + esc(x.headline) + '</span>' : "") + '<i aria-hidden="true">→</i></a>';
+    }).join("") + '</div></div>';
+  }
   function panelToday() {
     var t = D.today || {};
     var strip = (t.strip || []).map(function (s) {
@@ -1339,8 +1378,8 @@ document.getElementById('subForm').addEventListener('submit',function(e){e.preve
       '<div class="g-today__main"><span class="g-eyebrow">' + esc(t.edition || "") + ' · ' + niceDate(t.date || "") + '</span>' +
       '<h3 class="g-today__thesis">' + esc(t.thesis || "") + '</h3><p class="g-today__sub">' + esc(t.subtitle || "") + '</p>' +
       (t.standfirst ? '<p class="g-today__stand">“' + esc(t.standfirst) + '”</p>' : "") + '</div>' +
-      '<div class="g-today__gauge">' + gauge(t.velocityReading.score, t.velocityReading.max, "Velocity reading") + '</div>' +
-      '</div><div class="g-strip">' + strip + '</div>';
+      (t.velocityReading && typeof t.velocityReading.score === "number" ? '<div class="g-today__gauge">' + gauge(t.velocityReading.score, t.velocityReading.max, "Velocity reading") + '</div>' : "") +
+      '</div><div class="g-strip">' + strip + '</div>' + todayNotes(t);
   }
 
   /* ---------- 2 · MARKET ---------- */
@@ -1377,11 +1416,11 @@ document.getElementById('subForm').addEventListener('submit',function(e){e.preve
   ];
   function subBenchmark() {
     var b = D.corporateBenchmark || {};
-    var pillars = '<div class="g-sub"><h4 class="g-sub__h">Pillar leadership</h4><div class="g-chips">' +
+    var pillars = !(b.pillars && b.pillars.length) ? "" : '<div class="g-sub"><h4 class="g-sub__h">' + (b.source ? "Leadership groups" : "Pillar leadership") + '</h4><div class="g-chips">' +
       b.pillars.map(function (p) { return '<span class="g-chip"><em>' + esc(p.pillar) + '</em>' + esc(p.leaders.join(" · ")) + '</span>'; }).join("") + '</div></div>';
     return '<p class="g-note">' + esc(b.title) + ' · as of ' + niceDate(b.asOf) + '</p><div class="g-two">' +
       '<div><h4 class="g-sub__h g-sub__h--up">Top 10 velocity leaders</h4>' + benchTable(b.leaders, "up") + '</div>' +
-      '<div><h4 class="g-sub__h g-sub__h--down">10 corporate laggards</h4>' + benchTable(b.laggards, "down") + '</div></div>' + pillars;
+      '<div><h4 class="g-sub__h g-sub__h--down">10 corporate laggards</h4>' + benchTable(b.laggards, "down") + '</div></div>' + pillars + srcLink(b.source);
   }
   function subCorporates() {
     var c = daily.corporates;
@@ -1426,15 +1465,18 @@ document.getElementById('subForm').addEventListener('submit',function(e){e.preve
     var e = D.indices.espresso;
     var rows = e.rows.map(function (r) {
       return '<tr><td class="g-rank">' + r.rank + '</td><td class="g-name"><span class="g-flag">' + (r.flag || "") + '</span>' + esc(r.name) + '<span class="g-sector">' + esc(r.note) + '</span></td>' +
-        '<td class="g-score"><span class="g-score__n">' + fmt(r.score) + '</span>' + barHTML(r.score) + '</td></tr>';
+        '<td class="g-score">' + (typeof r.score === "number" ? '<span class="g-score__n">' + fmt(r.score) + '</span>' + barHTML(r.score) : '<span class="g-prov">provisional</span>') + '</td></tr>';
     }).join("");
-    var vel = e.velocity.map(function (v) {
+    var vel = (e.drivers && e.drivers.length ? e.drivers.map(function (d) {
+      var w = parseFloat(d.weight) || 0;
+      return '<div class="g-vrow"><span class="g-vrow__n">' + esc(d.name) + (d.note ? '<span class="g-sector">' + esc(d.note) + '</span>' : "") + '</span><span></span><span class="g-vrow__s">' + esc(d.weight) + '</span>' + barHTML(w * 4, 100, true) + '</div>';
+    }) : (e.velocity || []).map(function (v) {
       return '<div class="g-vrow' + (v.highlight ? " g-vrow--hl" : "") + '"><span class="g-vrow__n">' + esc(v.name) + '</span><span></span><span class="g-vrow__s">' + v.score + '</span>' + barHTML(v.score, 100, true) + '</div>';
-    }).join("");
+    })).join("");
     return kind("FDK proprietary index") +
-      '<p class="g-note"><b class="g-idx">' + esc(e.title) + '</b> — ' + esc(e.subtitle) + ' · ' + esc(e.constant) + ' · as of ' + niceDate(e.asOf) + '</p>' +
-      '<div class="g-two g-two--wide"><div><h4 class="g-sub__h">Global Top 15 · Espresso Score</h4><div class="g-tablewrap"><table class="g-table g-table--sm"><thead><tr><th>#</th><th>Country</th><th>Score</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
-      '<div><h4 class="g-sub__h">Espresso Velocity Reading</h4><div class="g-vlist g-vlist--one">' + vel + '</div></div></div>';
+      '<p class="g-note"><b class="g-idx">' + esc(e.title) + '</b> — ' + esc(e.subtitle) + (e.constant ? ' · ' + esc(e.constant) : "") + ' · as of ' + niceDate(e.asOf) + '</p>' +
+      '<div class="g-two g-two--wide"><div><h4 class="g-sub__h">' + (e.provisional ? "Global Top 15 · provisional ordering" : "Global Top 15 · Espresso Score") + '</h4><div class="g-tablewrap"><table class="g-table g-table--sm"><thead><tr><th>#</th><th>Country</th><th>Score</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
+      '<div><h4 class="g-sub__h">' + (e.drivers && e.drivers.length ? "The five drivers of velocity · weights" : "Espresso Velocity Reading") + '</h4><div class="g-vlist g-vlist--one">' + vel + '</div></div></div>' + srcLink(e.source);
   }
 
   /* ---------- 6 · NEXT ECONOMY ---------- */
