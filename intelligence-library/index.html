@@ -11,159 +11,255 @@
   </script>
 
   <meta charset="UTF-8" />
-  <script src="/i18n-boot.js?v=c62ba01e52"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="The Intelligence Library — Francesco de Leo Kaufmann's daily field notes: day signals and night briefings, market closes and end-of-day summaries." />
-  <meta name="theme-color" content="#070a24" />
-  <title>The Velocity Edge · FDK EmpowerNet</title>
-
+  <script src="/i18n-boot.js?v=0568a95c9e"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>All notes · The Velocity Edge · FDK EmpowerNet</title>
+  <meta name="description" content="The complete archive of The Velocity Edge: every field note by Francesco de Leo Kaufmann — Morning Brief, Midday Pulse, The Close, Week Ahead and In Focus." />
+  <link rel="canonical" href="https://fdkempowernet.com/intelligence-library/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="FDK EmpowerNet" />
+  <meta property="og:title" content="All notes · The Velocity Edge · FDK EmpowerNet" />
+  <meta property="og:description" content="The complete archive of The Velocity Edge: every field note by Francesco de Leo Kaufmann." />
+  <meta property="og:url" content="https://fdkempowernet.com/intelligence-library/" />
+  <meta name="theme-color" content="#04070e" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
-  <link rel="stylesheet" href="/styles.css?v=c62ba01e52" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/velocityedge/ve.css?v=0568a95c9e" />
+  <link rel="stylesheet" href="/ve-nav.css?v=0568a95c9e" />
+  <style>
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    /* ---- archive (all notes) — cards, chips and colours come from /velocityedge/ve.css ---- */
+    .arc-hero{position:relative;overflow:hidden;padding:calc(150px + env(safe-area-inset-top,0px)) 0 clamp(36px,5vw,56px);
+      background:radial-gradient(90% 120% at 85% -10%,rgba(124,139,255,.20),transparent 60%),radial-gradient(70% 90% at 0% 0%,rgba(46,224,106,.10),transparent 60%),var(--bg)}
+    .arc-hero .eyebrow{display:inline-flex;align-items:center;gap:10px}
+    .arc-hero .eyebrow a{color:inherit;text-decoration:none}
+    .arc-hero .eyebrow a:hover{text-decoration:underline;text-underline-offset:3px}
+    .arc-hero h1{margin-top:18px;font-size:clamp(2.4rem,6.4vw,4.8rem);line-height:.98;letter-spacing:-.045em;max-width:15ch}
+    .arc-hero h1 em{font-family:var(--f-serif);font-style:italic;font-weight:400;letter-spacing:-.02em;color:var(--blue-2)}
+    .arc-hero p{margin-top:18px;max-width:620px;color:var(--muted);font-size:clamp(1rem,1.4vw,1.1rem)}
+    .arc-stats{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:26px;font-family:var(--f-mono);font-size:.78rem;color:var(--muted)}
+    .arc-stats b{color:var(--fg);font-weight:500}
+    .arc-tools{position:sticky;top:calc(92px + env(safe-area-inset-top,0px));z-index:20;padding:14px 0;background:rgba(var(--veil),.86);
+      backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-block:1px solid var(--line);transition:top .45s var(--ease)}
+    body.nav-up .arc-tools{top:0}
+    .arc-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:18px 28px;margin-top:28px}
+    .arc-row .arc-stats{margin-top:0}
+    .arc-tools__in{display:flex;align-items:center;gap:14px}
+    .arc-tools .edm .n{display:inline;opacity:1}
+    .arc-tools .edm:not(.on) .n{color:var(--muted)}
+    .arc-tools .edmenu{margin:0;flex:1;min-width:0}
+    .arc-search{position:relative;flex:none;width:min(340px,100%)}
+    .arc-search input{width:100%;font:inherit;font-size:.9rem;color:var(--fg);background:var(--panel);border:1px solid var(--line-2);border-radius:999px;padding:10px 16px 10px 40px;outline:none;transition:border-color .2s}
+    .arc-search input::placeholder{color:var(--dim)}
+    .arc-search input:focus-visible{border-color:var(--blue-2);box-shadow:0 0 0 3px rgba(var(--glow),.18)}
+    .arc-search svg{position:absolute;left:15px;top:50%;transform:translateY(-50%);color:var(--dim);pointer-events:none}
+    .arc{padding-block:clamp(30px,5vw,56px) clamp(60px,8vw,100px)}
+    .arc-m{margin-top:clamp(30px,4vw,46px)}
+    .arc-m:first-child{margin-top:0}
+    .arc-m__h{display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--line);
+      font-size:clamp(1.3rem,2.4vw,1.7rem);letter-spacing:-.02em}
+    .arc-m__h::first-letter{text-transform:uppercase}
+    .arc-m__h small{font-family:var(--f-mono);font-size:.75rem;font-weight:400;letter-spacing:.04em;color:var(--dim)}
+    .arc .note h3{font-size:1.14rem;line-height:1.22;letter-spacing:-.01em;color:inherit}
+    .arc .note:hover{transform:none;translate:none}
+    @media (hover:hover) and (pointer:fine){.arc .note:hover{border-color:rgba(174,184,255,.55);box-shadow:0 24px 50px -34px rgba(7,10,36,.7)}:root .arc .note.note--focus:hover{border-color:rgba(22,196,90,.7)}}
+    .arc-more{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:40px;text-align:center}
+    .arc-more__sub{font-family:var(--f-mono);font-size:.75rem;color:var(--dim);letter-spacing:.04em}
+    .arc-empty{padding:40px 0;color:var(--muted);text-align:center}
+    .arc-empty button{font:inherit;color:var(--blue-2);background:none;border:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+    .arc-foot{display:flex;flex-wrap:wrap;gap:8px 20px}
+    .arc-foot a{font-family:var(--f-mono);font-size:.76rem;color:var(--muted);text-decoration:none}
+    .arc-foot a:hover{color:var(--fg)}
+    @media(max-width:940px){.arc-tools{top:calc(84px + env(safe-area-inset-top,0px))}}
+    @media(max-width:760px){
+      .arc-hero{padding-top:calc(118px + env(safe-area-inset-top,0px))}
+      .arc-search{width:100%}
+      .arc-tools .wrap{padding-inline:0}
+      .arc-tools .edmenu{margin-inline:0;padding-inline:clamp(18px,5vw,48px);scroll-padding-inline:clamp(18px,5vw,48px)}
+      .arc-tools{top:calc(76px + env(safe-area-inset-top,0px))}
+    }
+    @media(max-width:420px){.arc-tools{top:calc(70px + env(safe-area-inset-top,0px))}}
+    @media(prefers-reduced-motion:reduce){.arc-tools{transition:none}}
+  </style>
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<script>(function(){var p=null;try{p=localStorage.getItem('ve-theme')}catch(e){}var h=new Date().getHours(),d=p==='day'?true:p==='night'?false:(h>=5&&h<18);document.documentElement.classList.toggle('day',d);var m=document.querySelector('meta[name="theme-color"]');if(m)m.content=d?'#ffffff':'#04070e'})();</script>
 
-  <header class="nav nav--solid" id="nav">
-    <div class="container nav__inner">
-      <a href="/" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor>
-        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="30" height="30"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span>
-        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
-      </a>
-      <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="/" data-cursor>Home</a>
-        <a href="/thesis" data-cursor>Thesis + Author</a>
-        <div class="nav__has-sub">
-          <a href="/library" class="nav__sub-toggle" data-cursor>Library <span class="nav__caret" aria-hidden="true"></span></a>
-          <div class="nav__submenu">
-            <a href="/the-european-pivot" data-cursor>The European Pivot</a>
-            <a href="/the-age-of-intelligent-motion" data-cursor>The Age of Intelligent Motion</a>
-            <a href="/the-rise-of-velocity" data-cursor>The Rise of Velocity</a>
-          </div>
+  <!-- VE-NAV · The Velocity Edge menu — generated by scripts/ve-nav.mjs, edit it there -->
+  <header class="snav" id="nav">
+    <div class="snav__wrap"><div class="snav__inner">
+      <a href="/velocityedge/" class="sbrand" aria-label="The Velocity Edge by FDK, home" data-no-i18n><span class="sbrand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="30" height="30"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span><span class="sbrand__text"><b>fdk</b><i>Velocity Edge</i></span></a>
+      <nav class="snav__links" id="navLinks" aria-label="The Velocity Edge">
+        <div class="snav__has-sub">
+          <a href="/velocityedge/#go-daily" class="snav__sub-toggle">The Daily <span class="snav__caret" aria-hidden="true"></span></a>
+          <div class="snav__submenu"><a href="/intelligence-library/?edition=morning" data-edition="morning"><i class="sdot sdot--morning" aria-hidden="true"></i>Morning Brief</a><a href="/intelligence-library/?edition=midday" data-edition="midday"><i class="sdot sdot--midday" aria-hidden="true"></i>Midday Pulse</a><a href="/intelligence-library/?edition=closing" data-edition="closing"><i class="sdot sdot--closing" aria-hidden="true"></i>The Close</a><a href="/intelligence-library/?edition=week" data-edition="week"><i class="sdot sdot--week" aria-hidden="true"></i>Week Ahead</a><a href="/intelligence-library/?edition=focus" data-edition="focus"><i class="sdot sdot--focus" aria-hidden="true"></i>In Focus</a><a href="/intelligence-library/" class="snav__submenu-all" data-edition="all" aria-current="page">All notes <span aria-hidden="true">↗</span></a></div>
         </div>
-        <a href="/#contact" data-cursor>Contact</a>
-        <a href="/intelligence-library" class="nav__cta magnetic" data-cursor>The Velocity Edge <span aria-hidden="true">→</span></a>
+        <a href="/velocityedge/#go-monitor">What we watch</a>
+        <div class="snav__has-sub">
+          <a href="/velocityedge/dashboard/" class="snav__sub-toggle">Dashboard <span class="snav__caret" aria-hidden="true"></span></a>
+          <div class="snav__submenu"><a href="/velocityedge/dashboard/#tab-today">Today</a><a href="/velocityedge/dashboard/#tab-market">Market</a><a href="/velocityedge/dashboard/#tab-velocity">Velocity</a><a href="/velocityedge/dashboard/#tab-rankings">Rankings</a><a href="/velocityedge/dashboard/#tab-indices">Indices</a><a href="/velocityedge/dashboard/#tab-next">Next Economy</a><a href="/velocityedge/dashboard/" class="snav__submenu-all">Open full dashboard <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <a href="/" class="snav__ext">FDK EmpowerNet <span aria-hidden="true">↗</span></a>
+        <a href="/velocityedge/#go-subscribe" class="snav__cta">Subscribe <span aria-hidden="true">→</span></a>
       </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
+      <button class="snav__toggle" id="veBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
+    </div></div>
   </header>
+  <div class="mmenu" id="mmenu" hidden><nav class="mmenu__in" aria-label="Menu">
+    <div class="mm-g" style="--i:0"><div class="mm-row"><a href="/velocityedge/#go-daily">The Daily</a><button class="mm-tog" type="button" aria-expanded="false" aria-controls="mmS1" aria-label="The Daily: show sections"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="mm-sub" id="mmS1" inert><div class="mm-sub__in"><div class="mmenu__books"><a href="/intelligence-library/?edition=morning" data-edition="morning"><i class="sdot sdot--morning" aria-hidden="true"></i>Morning Brief</a><a href="/intelligence-library/?edition=midday" data-edition="midday"><i class="sdot sdot--midday" aria-hidden="true"></i>Midday Pulse</a><a href="/intelligence-library/?edition=closing" data-edition="closing"><i class="sdot sdot--closing" aria-hidden="true"></i>The Close</a><a href="/intelligence-library/?edition=week" data-edition="week"><i class="sdot sdot--week" aria-hidden="true"></i>Week Ahead</a><a href="/intelligence-library/?edition=focus" data-edition="focus"><i class="sdot sdot--focus" aria-hidden="true"></i>In Focus</a><a href="/intelligence-library/" data-edition="all" aria-current="page">All notes <span aria-hidden="true">↗</span></a></div></div></div></div>
+    <a href="/velocityedge/#go-monitor" style="--i:1">What we watch</a>
+    <div class="mm-g" style="--i:2"><div class="mm-row"><a href="/velocityedge/dashboard/">Dashboard</a><button class="mm-tog" type="button" aria-expanded="false" aria-controls="mmS2" aria-label="Dashboard: show sections"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="mm-sub" id="mmS2" inert><div class="mm-sub__in"><div class="mmenu__books"><a href="/velocityedge/dashboard/#tab-today">Today</a><a href="/velocityedge/dashboard/#tab-market">Market</a><a href="/velocityedge/dashboard/#tab-velocity">Velocity</a><a href="/velocityedge/dashboard/#tab-rankings">Rankings</a><a href="/velocityedge/dashboard/#tab-indices">Indices</a><a href="/velocityedge/dashboard/#tab-next">Next Economy</a></div></div></div></div>
+    <a href="/" style="--i:3">FDK EmpowerNet<small>↗</small></a>
+    <a class="mmenu__cta" href="/velocityedge/#go-subscribe" style="--i:4">Subscribe <span aria-hidden="true">→</span></a>
+    <div class="mmenu__lang" role="group" aria-label="Language / Idioma / Lingua" data-no-i18n><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button><button type="button" data-lang="it" lang="it" aria-pressed="false">IT</button></div>
+    <span class="mmenu__foot" data-no-i18n>The Velocity Edge · by FDK EmpowerNet</span>
+  </nav></div>
+  <!-- /VE-NAV -->
 
-  <main>
-    <!-- JOURNAL HERO -->
-    <section class="journal-hero" id="top" data-mode="night">
-      <div class="journal-hero__sky" aria-hidden="true"><span class="jh-stars"></span></div>
-      <div class="container journal-hero__inner">
-        <div class="jclock reveal-up">
-          <span class="jclock__dot" aria-hidden="true"></span>
-          <span id="jGreeting">Good evening</span> · <span id="jClock">—:—</span> · <span class="jclock__live">live journal</span>
-        </div>
-        <h1 class="journal-hero__title" data-reveal-text>Field notes, from dawn to <span class="hl-green">close</span>.</h1>
-        <p class="journal-hero__sub reveal-up">Francesco writes through the day. <strong>Day notes</strong> capture signals as they happen; <strong>night notes</strong> close the day — market wraps, end-of-day reads and what to sleep on. One journal, two rhythms.</p>
-      </div>
-    </section>
-    <!-- LIVE MARKET TICKER (TradingView) -->
-    <aside class="mkt" id="mktTicker" aria-label="Live market indicators" data-no-i18n><div class="mkt__track"></div></aside>
-
-    <!-- FILTER + FEATURED -->
-    <section class="journal">
-      <div class="container">
-        <div class="jbar reveal-up">
-          <div class="jfilter" role="tablist" aria-label="Filter notes">
-            <button class="jfilter__btn is-active" data-filter="all" data-cursor>All notes</button>
-            <button class="jfilter__btn" data-filter="day" data-cursor><span class="jic jic--sun" aria-hidden="true"></span> Day</button>
-            <button class="jfilter__btn" data-filter="night" data-cursor><span class="jic jic--moon" aria-hidden="true"></span> Night</button>
-          </div>
-          <span class="jbar__count"><b id="jCount">3</b> notes · updated daily</span>
-        </div>
-
-        <!-- FEATURED (latest) -->
-        <a class="jfeatured jfeatured--day reveal-up" id="jFeatured" data-phase="dawn" href="/the-ai-reckoning-begins" data-cursor>
-          <span class="jfeatured__stars" aria-hidden="true"></span>
-          <div class="jfeatured__body">
-            <div class="jcard__top">
-              <span class="jtype jtype--day"><span class="jic jic--sun" aria-hidden="true"></span> Morning View · Markets</span>
-              <span class="jtime">June 26, 2026</span>
-            </div>
-            <h2 class="jfeatured__title">The AI Reckoning Begins</h2>
-            <p class="jfeatured__excerpt">Markets are repricing the winners before the economy does. The era when almost any AI narrative earned a valuation premium is ending — and a more disciplined market is taking its place.</p>
-            <div class="jcard__foot"><span class="jtags">Markets · AI · Macro</span><span class="jread">3 min read →</span></div>
-          </div>
-        </a>
-
-        <!-- NOTES GRID -->
-        <h3 class="journal__h">More notes</h3>
-        <div class="jgrid jgrid--pair" id="journalGrid">
-
-          <a class="jpost jpost--day" data-type="day" href="/the-great-ai-shakeout" data-cursor>
-            <div class="jpost__media"><img src="/assets/concept/bifurcation.svg?v=104" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 08:30 · Morning View</span></div>
-            <span class="jpost__tag">Day note · Markets</span>
-            <h3>The Great AI Shakeout</h3>
-            <p>Why capital is no longer rewarding AI exposure — it is rewarding AI economics. From enthusiasm to discipline.</p>
-            <span class="jpost__more">Read note →</span>
-          </a>
-
-          <a class="jpost jpost--day" data-type="day" href="/the-deflationary-rotation" data-cursor>
-            <div class="jpost__media"><img src="/assets/concept/rotation.svg?v=104" alt="" loading="lazy" onerror="this.closest('.jpost__media').classList.add('img--fail')"><span class="jpost__badge"><span class="jic jic--sun"></span> 08:00 · Today’s Edition</span></div>
-            <span class="jpost__tag">Day note · Markets</span>
-            <h3>The Deflationary Rotation</h3>
-            <p>Why the next phase of the AI supercycle will be about lower costs, higher margins and rising profits — not bigger models.</p>
-            <span class="jpost__more">Read note →</span>
-          </a>
-        </div>
-
-        <p class="journal__empty" id="journalEmpty" hidden>No notes in this view yet — check back after the next session.</p>
-      </div>
-    </section>
-
-    <!-- SUBSCRIBE -->
-    <section class="section jsub">
-      <div class="container">
-        <div class="jsub__inner reveal-up">
-          <div>
-            <span class="eyebrow eyebrow--light">Never miss a close</span>
-            <h2>The day note at dawn.<br>The night note at close.</h2>
-            <p>Both rhythms, delivered. The morning signals and the evening wrap, straight to your inbox.</p>
-            <a class="social-link jsub__social" href="https://www.linkedin.com/in/fdeleokaufmann/" target="_blank" rel="noopener" data-cursor aria-label="Follow Francesco de Leo Kaufmann on LinkedIn"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .78 23.2 0 22.22 0z"/></svg> Follow Francesco on LinkedIn</a>
-          </div>
-          <form class="jsub__form" id="subForm" novalidate>
-            <input id="subEmail" type="email" placeholder="name@company.com" aria-label="Work email" required />
-            <button type="submit" class="btn btn--brief" data-cursor>Subscribe</button>
-            <p class="form__status" id="subStatus" role="status" aria-live="polite"></p>
-          </form>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer__main">
-      <div class="footer__lead">
-        <span class="footer__label">Get in touch</span>
-        <a class="footer__email" href="mailto:info@fdkempowernet.com" data-cursor>info@fdkempowernet.com<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
-        <a class="social-link footer__social" href="https://www.linkedin.com/in/fdeleokaufmann/" target="_blank" rel="noopener" data-cursor aria-label="Francesco de Leo Kaufmann on LinkedIn"><svg viewBox="0 0 24 24" width="17" height="17" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.73v20.54C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.73V1.73C24 .78 23.2 0 22.22 0z"/></svg> Connect on LinkedIn</a>
-      </div>
-      <nav class="footer__nav" aria-label="Footer">
-        <a href="/" data-cursor>Home</a>
-        <a href="/thesis" data-cursor>Thesis + Author</a>
-        <a href="/library" data-cursor>Library</a>
-        <a href="/intelligence-library" data-cursor>The Velocity Edge</a>
-        <a href="/#contact" data-cursor>Contact</a>
-      </nav>
+<main id="top">
+  <header class="arc-hero"><div class="wrap">
+    <span class="eyebrow"><a href="/velocityedge/">The Velocity Edge</a> <span aria-hidden="true">·</span> Archive</span>
+    <h1>Every note, from dawn to <em>close</em>.</h1>
+    <p>The complete archive of the field notes by Francesco de Leo Kaufmann: the Morning Brief, the Midday Pulse, The Close, the Week Ahead and In Focus.</p>
+    <div class="arc-row">
+      <div class="arc-stats" data-no-i18n><span id="arcTotal"></span><span id="arcSpan"></span></div>
+  <label class="arc-search"><span class="sr-only">Search the notes</span><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg><input id="arcQ" type="search" autocomplete="off" spellcheck="false" placeholder="Search the notes" /></label>
     </div>
-    <div class="container footer__base">
-      <span class="footer__brand"><span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="26" height="26"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span><span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span></span>
-      <span class="footer__meta">© <span id="year">2026</span> FDK EmpowerNet · Mobility · Energy · Telecom</span>
-      <button type="button" class="footer__top-link" id="toTop" data-cursor>Back to top <span class="footer__top-ic" aria-hidden="true">↑</span></button>
-    </div>
-  </footer>
+  </div></header>
 
-  <script src="/i18n.js?v=c62ba01e52"></script>
-  <script src="/posts.js?v=c62ba01e52"></script>
-  <script src="/script.js?v=c62ba01e52"></script>
-  <script src="/market.js?v=c62ba01e52"></script>
+  <div class="arc-tools"><div class="wrap arc-tools__in">
+    <div class="edmenu" id="edmenu" role="toolbar" aria-label="Filter notes by edition">
+      <button class="edm on" type="button" data-f="all" aria-pressed="true">All notes<span class="n" data-no-i18n></span></button>
+      <button class="edm" type="button" data-f="morning" aria-pressed="false"><i class="dot" aria-hidden="true"></i>Morning Brief<span class="n" data-no-i18n></span></button>
+      <button class="edm" type="button" data-f="midday" aria-pressed="false"><i class="dot" aria-hidden="true"></i>Midday Pulse<span class="n" data-no-i18n></span></button>
+      <button class="edm" type="button" data-f="closing" aria-pressed="false"><i class="dot" aria-hidden="true"></i>The Close<span class="n" data-no-i18n></span></button>
+      <button class="edm" type="button" data-f="week" aria-pressed="false"><i class="dot" aria-hidden="true"></i>Week Ahead<span class="n" data-no-i18n></span></button>
+      <button class="edm" type="button" data-f="focus" aria-pressed="false"><i class="dot" aria-hidden="true"></i>In Focus<span class="n" data-no-i18n></span></button>
+    </div>
+  </div></div>
+
+  <section class="arc" aria-label="All notes"><div class="wrap">
+    <div id="arcList" aria-live="polite"></div>
+    <p class="arc-empty" id="arcEmpty" hidden data-no-i18n></p>
+    <div class="arc-more" id="arcMore" hidden>
+      <button class="btn btn--p notes__all" type="button" id="arcMoreBtn" data-no-i18n></button>
+      <span class="arc-more__sub" id="arcCount" data-no-i18n></span>
+    </div>
+    <noscript><p class="arc-empty">The archive needs JavaScript to list the notes.</p></noscript>
+  </div></section>
+
+  <section class="cta-band" id="subscribe"><div class="wrap cta-band__in">
+    <div><span class="eyebrow">Never miss a close</span><h2>The brief at dawn. The wrap at close.</h2></div>
+    <div class="cta-band__form">
+      <p>Both rhythms, delivered — straight to your inbox.</p>
+      <form class="subf" id="subForm" novalidate><input id="subEmail" type="email" placeholder="name@company.com" aria-label="Work email" required><button class="btn" type="submit">Subscribe</button></form>
+      <p class="mono" id="subMsg" role="status" aria-live="polite" style="font-size:.8rem;min-height:1em;margin-top:10px"></p>
+    </div>
+  </div></section>
+</main>
+
+<footer class="foot"><div class="wrap foot__in">
+  <span class="brand" data-no-i18n><svg viewBox="0 0 120 120" width="26" height="26" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg><span><b>fdk</b> <i>EmpowerNet</i></span></span>
+  <nav class="arc-foot" aria-label="Footer"><a href="/velocityedge/">The Velocity Edge</a><a href="/velocityedge/dashboard/">Velocity Dashboard</a><a href="/">FDK EmpowerNet</a><a href="/thesis">Thesis + Author</a><a href="/#contact">Contact</a></nav>
+  <span class="foot__meta">© <span id="year">2026</span> FDK EmpowerNet · Mobility · Energy · Telecom</span>
+</div></footer>
+
+<script src="/i18n.js?v=0568a95c9e"></script>
+<script src="/posts.js?v=0568a95c9e"></script>
+<script src="/ve-nav.js?v=0568a95c9e"></script>
+<script>
+/* ============================================================
+   The Velocity Edge · archive — every note from /posts.js,
+   grouped by month, filtered by edition and searchable.
+   Same edition rules and cards as /velocityedge/.
+   ============================================================ */
+(function(){
+ var ALL=(window.FDK_POSTS||[]).filter(function(p){var t=(p.title||'').trim();return p.url&&t.length>10&&!/^in-?focus$/i.test(t)&&(p.slot||'').toLowerCase().indexOf('add this just')<0});
+ var PAGE=24;
+ /* newest first by publication date and time; posts.js order breaks ties */
+ (function(){var MO={January:0,February:1,March:2,April:3,May:4,June:5,July:6,August:7,September:8,October:9,November:10,December:11};
+  function ts(p){var m=/(\w+) (\d+), (\d{4})/.exec(p.date||''),h=/(\d+):(\d+)/.exec(p.time||'');return m&&MO[m[1]]!=null?Date.UTC(+m[3],MO[m[1]],+m[2],h?+h[1]:0,h?+h[2]:0):0}
+  var ix=ALL.map(function(p,i){return {p:p,i:i,t:ts(p)}});ix.sort(function(a,b){return (b.t-a.t)||(a.i-b.i)});ALL=ix.map(function(x){return x.p})})();
+ function fkey(p){var sl=(p.slot||'').toLowerCase().trim();
+  if(/^(the week ahead|week ahead|sunday edition|monday brief)$/.test(sl))return 'week';
+  if(/^(in focus|in depth)$/.test(sl))return 'focus';
+  if(sl==='midday pulse')return 'midday';
+  if(/^(the close|night briefing|evening note|closing of the day)$/.test(sl)||p.kind==='night')return 'closing';
+  if(/^(morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl))return 'morning';
+  var h=parseInt((p.time||'08:00').split(':')[0],10);return h<12?'morning':h<17?'midday':'closing'}
+ function topic(p){var t=String(p.tag||'').split(' · ');return t.length>1?t[t.length-1]:''}
+ var PH={morning:'sun',midday:'midday',closing:'moon',week:'week',focus:'focus'},NAME={morning:'Morning Brief',midday:'Midday Pulse',closing:'The Close',week:'The Week Ahead',focus:'In Focus'};
+ /* brand covers by subject, never the same one on two neighbouring cards */
+ var COV=[['collision',/collision|shock|clash|divergen|bifurcat/],['reversal',/reversal|rotation|reorder|repricing/],['moonshot',/moonshot|age of|frontier/],['orbits',/supercycle|cycle|loop|compound/],['orbs',/two |dual|both /],['chip',/chip|nvidia|compute|semiconductor|gpu|cuda|data cent|economics test|stack|model/],['columns',/bank|mps|caltagirone|risiko|monte dei paschi|lender/],['globe',/china|u\.s\.|geopolit|sovereign|alliance|security order|global/],['city',/europe|european|eurozone|ital|architecture/],['terrain',/credit|bond|yield|treasur|rate|spread|hurdle|cost of capital|denominator|debt/],['reversal',/capital|flow|velocity|split/]];
+ var COVS=['reversal','chip','collision','globe','columns','terrain','orbs','city','orbits','moonshot'];
+ function hash(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return h}
+ function covers(list){var out=[],recent=[];list.forEach(function(p){var t=((p.title||'')+' '+(p.tag||'')+' '+(p.excerpt||'')).toLowerCase(),c=null;
+   for(var i=0;i<COV.length&&!c;i++)if(COV[i][1].test(t)&&recent.indexOf(COV[i][0])<0)c=COV[i][0];
+   if(!c){var k=hash(p.url||p.title||'');for(var j=0;j<COVS.length&&!c;j++){var n=COVS[(k+j)%COVS.length];if(recent.indexOf(n)<0)c=n}}
+   out.push(c);recent.push(c);if(recent.length>3)recent.shift()});return out}
+ function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+ var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+ function ym(p){var m=/(\w+) (\d+), (\d{4})/.exec(p.date||'');return m?{y:+m[3],m:MONTHS.indexOf(m[1])}:{y:0,m:-1}}
+ function lang(){return window.FDK_LANG||'en'}
+ var L={en:{notes:'notes',note:'note',more:'Load more notes',showing:'Showing {a} of {b}',none:'No notes match “{q}”.',noneEd:'No notes in this edition yet.',clear:'Show all notes',search:'Search the notes',total:'{n} notes',since:'since {d}'},
+  es:{notes:'notas',note:'nota',more:'Cargar más notas',showing:'Mostrando {a} de {b}',none:'Ninguna nota coincide con «{q}».',noneEd:'Todavía no hay notas en esta edición.',clear:'Ver todas las notas',search:'Buscar en las notas',total:'{n} notas',since:'desde {d}'},
+  it:{notes:'note',note:'nota',more:'Carica altre note',showing:'{a} di {b} note',none:'Nessuna nota corrisponde a «{q}».',noneEd:'Ancora nessuna nota in questa edizione.',clear:'Mostra tutte le note',search:'Cerca nelle note',total:'{n} note',since:'dal {d}'}};
+ function t(k,o){var s=(L[lang()]||L.en)[k]||L.en[k];for(var x in o)s=s.replace('{'+x+'}',o[x]);return s}
+ function monthLabel(y,m){try{return new Intl.DateTimeFormat(lang()==='en'?'en-US':lang(),{month:'long',year:'numeric'}).format(new Date(y,m,1))}catch(e){return MONTHS[m]+' '+y}}
+ function card(p,cv,d){var k=fkey(p),slot=(p.slot||'').replace('U.s.','U.S.'),tp=topic(p);
+  return '<a class="note note--'+k+(d!=null?' swap" style="--d:'+d+'ms':'')+'" data-f="'+k+'" href="'+esc(p.url)+'"><div class="note__media"><img src="/assets/notes/'+cv+'.webp" alt="" width="1280" height="720" loading="lazy" decoding="async">'+
+   '<span class="note__badge"><i class="ph ph--'+PH[k]+'" aria-hidden="true"></i>'+esc(p.time||'')+(p.time?' · ':'')+esc(slot)+'</span></div><div class="note__body"><span class="note__cat">'+NAME[k]+(tp?' · '+esc(tp):'')+'</span><h3>'+esc(p.title)+'</h3><p>'+esc(p.excerpt)+'</p>'+
+   '<div class="note__foot"><span>'+esc(p.date)+(p.read?' · '+esc(p.read):'')+'</span><span class="note__go">Read →</span></div></div></a>'}
+
+ var list=document.getElementById('arcList'),empty=document.getElementById('arcEmpty'),more=document.getElementById('arcMore'),moreBtn=document.getElementById('arcMoreBtn'),cnt=document.getElementById('arcCount'),q=document.getElementById('arcQ'),menu=document.getElementById('edmenu');
+ if(!list)return;
+ var KEYS=ALL.map(fkey),HAY=ALL.map(function(p){return ((p.title||'')+' '+(p.excerpt||'')+' '+(p.tag||'')+' '+(p.slot||'')).toLowerCase()});
+ var m0=/[?&]edition=(\w+)/.exec(location.search),F=m0&&NAME[m0[1]]?m0[1]:'all',Q='',shown=PAGE;
+
+ function match(){var out=[],qq=Q.toLowerCase().trim();for(var i=0;i<ALL.length;i++){if(F!=='all'&&KEYS[i]!==F)continue;if(qq&&HAY[i].indexOf(qq)<0)continue;out.push(ALL[i])}return out}
+ function counts(){var c={all:0};var qq=Q.toLowerCase().trim();for(var i=0;i<ALL.length;i++){if(qq&&HAY[i].indexOf(qq)<0)continue;c.all++;c[KEYS[i]]=(c[KEYS[i]]||0)+1}
+  [].forEach.call(menu.querySelectorAll('.edm'),function(b){var n=b.querySelector('.n'),f=b.getAttribute('data-f'),on=f===F;if(n)n.textContent=c[f]||0;b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on));
+   if(on&&menu.scrollWidth>menu.clientWidth){var x=b.offsetLeft-(menu.clientWidth-b.offsetWidth)/2;menu.scrollTo({left:Math.max(0,x),behavior:'auto'})}})}
+ function render(from){var res=match(),vis=res.slice(0,shown),cv=covers(vis),html='',cur=null,group=[],gi=0;
+  counts();
+  var MT={};res.forEach(function(p){var d=ym(p),k=d.y+'-'+d.m;MT[k]=(MT[k]||0)+1});
+  function flush(){if(!group.length)return;var n=MT[cur.y+'-'+cur.m]||group.length;html+='<section class="arc-m"><h2 class="arc-m__h" data-no-i18n><span>'+esc(monthLabel(cur.y,cur.m))+'</span><small>'+n+' '+(n===1?t('note'):t('notes'))+'</small></h2><div class="notes">'+group.join('')+'</div></section>';group=[]}
+  vis.forEach(function(p,i){var d=ym(p);if(!cur||d.y!==cur.y||d.m!==cur.m){flush();cur=d}group.push(card(p,cv[i],from!=null&&i>=from?Math.min(i-from,8)*40:null))});
+  flush();
+  list.innerHTML=html;
+  empty.hidden=res.length>0;
+  if(!res.length){empty.innerHTML=esc(Q?t('none',{q:Q}):t('noneEd'))+' <button type="button" id="arcClear">'+esc(t('clear'))+'</button>'}
+  more.hidden=res.length<=shown;moreBtn.textContent=t('more');cnt.textContent=t('showing',{a:Math.min(shown,res.length),b:res.length})}
+ function setF(f){F=f;shown=PAGE;render();try{history.replaceState(null,'',location.pathname+(f==='all'?'':'?edition='+f))}catch(e){}}
+ menu.addEventListener('click',function(e){var b=e.target.closest('.edm');if(b)setF(b.getAttribute('data-f'))});
+ /* menu shortcuts on this page filter in place */
+ document.addEventListener('click',function(e){var a=e.target.closest('a[data-edition]');if(!a)return;var f=a.getAttribute('data-edition');if(f!=='all'&&!NAME[f])return;e.preventDefault();setF(f);var tools=document.querySelector('.arc-tools');if(tools)window.scrollTo({top:Math.max(0,list.getBoundingClientRect().top+scrollY-200),behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})});
+ var tm=null;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(function(){Q=q.value;shown=PAGE;render()},140)});
+ empty.addEventListener('click',function(e){if(e.target.id==='arcClear'){q.value='';Q='';setF('all')}});
+ moreBtn.addEventListener('click',function(){var from=shown;shown+=PAGE;render(from)});
+ function head(){q.placeholder=t('search');var tot=document.getElementById('arcTotal'),sp=document.getElementById('arcSpan');if(tot)tot.innerHTML='<b>'+ALL.length+'</b> '+esc(t('notes'));
+  var last=ALL[ALL.length-1];if(sp&&last){var d=ym(last);sp.textContent=t('since',{d:monthLabel(d.y,d.m)})}}
+ head();render();
+ document.addEventListener('fdk:langchange',function(){head();render()});
+})();
+
+/* nav: hide on scroll down, back on scroll up (the filter bar follows it) */
+(function(){var n=document.getElementById('nav');if(!n)return;var last=scrollY||0,tk=false;
+ function up(){var sy=scrollY;n.classList.toggle('scrolled',sy>40);
+  if(sy>160&&sy>last+4&&!document.body.classList.contains('menu-open')){n.classList.add('snav--hidden');document.body.classList.add('nav-up')}
+  else if(sy<last-4||sy<=160){n.classList.remove('snav--hidden');document.body.classList.remove('nav-up')}last=sy;tk=false}
+ addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});up();})();
+
+/* newsletter — same Kit form as the rest of the site (FDK_FORMS.kitNewsletterFormId in /script.js); until it is set, sign-ups are only acknowledged */
+(function(){var f=document.getElementById('subForm');if(!f)return;var FORM_ID='YOUR_KIT_FORM_ID';
+ f.addEventListener('submit',function(e){e.preventDefault();var inp=document.getElementById('subEmail'),msg=document.getElementById('subMsg'),btn=f.querySelector('button[type=submit]'),v=(inp.value||'').trim();
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){msg.textContent='Please enter a valid email.';return}
+  function done(ok){if(btn){btn.disabled=false}if(ok)f.reset();msg.textContent=ok?'✓ Subscribed — the morning brief and the close are on their way.':'Something went wrong. Please try again in a moment.'}
+  if(btn)btn.disabled=true;
+  if(FORM_ID==='YOUR_KIT_FORM_ID'){done(true);return}
+  fetch('https://app.kit.com/forms/'+FORM_ID+'/subscriptions',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({email_address:v,fields:{source:'intelligence-library'}})}).then(function(r){done(r.ok)}).catch(function(){done(false)})});})();
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
 </body>
 </html>

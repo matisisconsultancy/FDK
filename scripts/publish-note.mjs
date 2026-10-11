@@ -13,6 +13,7 @@
    ============================================================================ */
 import fs from "node:fs";
 import path from "node:path";
+import { veNav } from "./ve-nav.mjs";
 
 const ROOT = process.cwd();
 const args = process.argv.slice(2);
@@ -256,29 +257,8 @@ for (const bl of blocks) {
 const { ver, ga } = reference();
 const gaHead = ga ? `  <!-- Google tag (gtag.js) -->\n  <script async src="https://www.googletagmanager.com/gtag/js?id=${ga}"></script>\n  <script>\n    window.dataLayer = window.dataLayer || [];\n    function gtag(){dataLayer.push(arguments);}\n    gtag('js', new Date());\n    gtag('config', '${ga}');\n  </script>\n\n` : "";
 
-const NAV = `  <header class="nav nav--solid" id="nav">
-    <div class="container nav__inner">
-      <a href="/" class="brand magnetic" aria-label="FDK EmpowerNet home" data-cursor>
-        <span class="brand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="30" height="30"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span>
-        <span class="brand__text"><b>fdk</b><i>EmpowerNet</i></span>
-      </a>
-      <nav class="nav__links" id="navLinks" aria-label="Primary">
-        <a href="/" data-cursor>Home</a>
-        <a href="/thesis" data-cursor>Thesis + Author</a>
-        <div class="nav__has-sub">
-          <a href="/library" class="nav__sub-toggle" data-cursor>Library <span class="nav__caret" aria-hidden="true"></span></a>
-          <div class="nav__submenu">
-            <a href="/the-european-pivot" data-cursor>The European Pivot</a>
-            <a href="/the-age-of-intelligent-motion" data-cursor>The Age of Intelligent Motion</a>
-            <a href="/the-rise-of-velocity" data-cursor>The Rise of Velocity</a>
-          </div>
-        </div>
-        <a href="/#contact" data-cursor>Contact</a>
-        <a href="/intelligence-library" class="nav__cta magnetic" data-cursor>The Velocity Edge <span aria-hidden="true">→</span></a>
-      </nav>
-      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-    </div>
-  </header>`;
+/* The Velocity Edge menu — one source for every note: scripts/ve-nav.mjs */
+const NAV = veNav();
 
 const FOOTER = `  <footer class="footer">
     <div class="container footer__main">
@@ -291,7 +271,7 @@ const FOOTER = `  <footer class="footer">
         <a href="/" data-cursor>Home</a>
         <a href="/thesis" data-cursor>Thesis + Author</a>
         <a href="/library" data-cursor>Library</a>
-        <a href="/intelligence-library" data-cursor>The Velocity Edge</a>
+        <a href="/velocityedge/" data-cursor>The Velocity Edge</a>
         <a href="/#contact" data-cursor>Contact</a>
       </nav>
     </div>
@@ -317,6 +297,7 @@ ${gaHead}  <meta charset="UTF-8" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="/styles.css?v=${ver}" />
+  <link rel="stylesheet" href="/ve-nav.css?v=${ver}" />
 </head>
 <body class="article-page">
   <div class="grain" aria-hidden="true"></div>
@@ -330,7 +311,7 @@ ${NAV}
       <div class="art-hero__grid" aria-hidden="true"></div>
       <div class="art-hero__glow" aria-hidden="true"></div>
       <div class="container art-hero__inner">
-        <a class="art-back reveal-up" href="/intelligence-library" data-cursor><span aria-hidden="true">←</span> The Velocity Edge</a>
+        <a class="art-back reveal-up" href="/velocityedge/" data-cursor><span aria-hidden="true">←</span> The Velocity Edge</a>
         <div class="art-kicker reveal-up">
           <span class="art-kicker__pulse" aria-hidden="true"></span>
           The Velocity Edge · ${esc(slot)}
@@ -376,7 +357,7 @@ ${art}        <div class="art-sign reveal-up">
           <h2>More field notes, from dawn to close.</h2>
           <p>Day signals and night briefings, published like a journal for board-level AI decisions.</p>
         </div>
-        <a href="/intelligence-library" class="btn btn--brief magnetic" data-cursor>Back to The Velocity Edge <span aria-hidden="true">→</span></a>
+        <a href="/velocityedge/" class="btn btn--brief magnetic" data-cursor>Back to The Velocity Edge <span aria-hidden="true">→</span></a>
       </div>
     </section>
   </main>
@@ -386,6 +367,7 @@ ${FOOTER}
   <script src="/i18n.js?v=${ver}"></script>
   <script src="/posts.js?v=${ver}"></script>
   <script src="/script.js?v=${ver}"></script>
+  <script src="/ve-nav.js?v=${ver}"></script>
 </body>
 </html>
 `;
