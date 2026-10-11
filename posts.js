@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-banking-reset",
+    title: "Europe’s Great Banking Reset",
+    excerpt: "The fight over Italian banks is escalating into a contest over European financial integration and capital productivity.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 11, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-take-weekend-edition",
     title: "Global Take: Weekend Edition",
     excerpt: "Why the AI revolution will compress the adjustment period dramatically—and concentrate financial returns even as technology diffuses faster than ever.",
