@@ -1,0 +1,74 @@
+name: Live market feed — FDK Velocity Dashboard
+
+# Refreshes every public number on the dashboard and writes one file,
+# live-data:market.json, that every page reads (no market API is called from
+# a visitor's browser, so free quotas hold whatever the traffic).
+# It lives on its own branch so the site is not redeployed every 20 minutes.
+
+on:
+  schedule:
+    - cron: "*/20 6-21 * * 1-5"      # weekdays, European open to U.S. close (UTC)
+    - cron: "5 0-5,22,23 * * 1-5"    # weekdays overnight: hourly
+    - cron: "15 */3 * * 0,6"         # weekend: crypto, yields carried
+  workflow_dispatch:
+    inputs:
+      probe:
+        description: "Only list which Twelve Data symbols the key covers"
+        type: boolean
+        default: false
+
+concurrency:
+  group: live-market
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  feed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout site (scripts)
+        uses: actions/checkout@v4
+        with:
+          ref: claude/eager-carson-vjorjg
+          path: site
+
+      - name: Checkout feed branch
+        run: |
+          git clone --depth 1 --branch live-data "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" feed \
+          || { mkdir feed && cd feed && git init -q && git checkout -q --orphan live-data \
+               && git remote add origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"; }
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Probe symbols
+        if: inputs.probe == true
+        env:
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
+        run: node site/scripts/live-market.mjs --probe
+
+      - name: Refresh feed
+        if: inputs.probe != true
+        env:
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
+          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+        run: node site/scripts/live-market.mjs --out feed/market.json
+
+      - name: Publish feed
+        if: inputs.probe != true
+        working-directory: feed
+        run: |
+          git config user.name  "velocity-feed-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          printf '# FDK live market feed\n\nAutomatically refreshed by .github/workflows/live-market.yml.\nRead by the FDK Velocity Dashboard at https://fdkempowernet.com/velocityedge/dashboard/\n' > README.md
+          git add -A
+          if git diff --cached --quiet; then echo "No change."; exit 0; fi
+          # keep the branch to a single commit: the feed carries its own history
+          git commit -q -m "Live feed $(date -u +%Y-%m-%dT%H:%MZ)"
+          if git rev-parse -q --verify HEAD~1 >/dev/null; then git reset -q --soft $(git rev-list --max-parents=0 HEAD) && git commit -q --amend -m "Live feed $(date -u +%Y-%m-%dT%H:%MZ)"; fi
+          git push -q -f origin HEAD:live-data
+          echo "Published live-data/market.json"
