@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-selection",
+    title: "The Great Capital Selection",
+    excerpt: "The next market leaders will be those converting investment into productive cash flow fastest — the five hidden patterns behind the Great Capital Selection.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 11, 2026",
+    read: "2 min read",
+    time: "18:00",
+    kind: "night"
+  },
+  {
     url: "/europes-great-banking-reset",
     title: "Europe’s Great Banking Reset",
     excerpt: "The fight over Italian banks is escalating into a contest over European financial integration and capital productivity.",

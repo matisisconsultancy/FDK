@@ -246,11 +246,19 @@ for (const bl of blocks) {
   else if (bl.name === "pull") art += pullHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "signals") art += signalsHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "patterns") art += patternsHTML(bl.arg, bl.buf) + "\n";
-  else if (bl.name === "section") art += sectionHead(bl.arg) + "\n";
+  else if (bl.name === "section") {
+    art += sectionHead(bl.arg) + "\n";
+    // the paragraphs written under a section heading belong to it
+    paras(bl.buf).forEach((p) => art += `        <p class="reveal-up">${inline(p)}</p>\n\n`);
+  }
   else if (bl.name === "rank") art += rankHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "takeaways") art += takeawaysHTML(bl.arg, bl.buf) + "\n";
   else if (bl.name === "para") paras(bl.buf).forEach((p) => art += `        <p class="reveal-up">${inline(p)}</p>\n\n`);
-  else if (bl.name === "close") art += `        <p class="art-close reveal-up">${paras(bl.buf).map(inline).join(" ")}</p>\n\n`;
+  else if (bl.name === "close") {
+    // "::close Sentence" keeps its sentence on the marker line; more lines may follow
+    const text = [bl.arg, ...paras(bl.buf)].filter(Boolean).map(inline).join(" ");
+    if (text) art += `        <p class="art-close reveal-up">${text}</p>\n\n`;
+  }
 }
 
 /* ---- assemble full page -------------------------------------------------- */
