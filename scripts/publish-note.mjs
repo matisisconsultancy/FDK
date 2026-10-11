@@ -13,7 +13,7 @@
    ============================================================================ */
 import fs from "node:fs";
 import path from "node:path";
-import { veNav } from "./ve-nav.mjs";
+import { veNav, editionOf, editionKicker } from "./ve-nav.mjs";
 
 const ROOT = process.cwd();
 const args = process.argv.slice(2);
@@ -306,16 +306,13 @@ ${gaHead}  <meta charset="UTF-8" />
 
 ${NAV}
 
-  <main class="art art--${kind}">
+  <main class="art art--${kind}" data-edition="${editionOf({ slot, time, kind })}">
     <header class="art-hero">
       <div class="art-hero__grid" aria-hidden="true"></div>
       <div class="art-hero__glow" aria-hidden="true"></div>
       <div class="container art-hero__inner">
         <a class="art-back reveal-up" href="/velocityedge/" data-cursor><span aria-hidden="true">←</span> The Velocity Edge</a>
-        <div class="art-kicker reveal-up">
-          <span class="art-kicker__pulse" aria-hidden="true"></span>
-          The Velocity Edge · ${esc(slot)}
-        </div>
+        ${editionKicker({ slot, time, kind })}
         <h1 class="art-title" data-reveal-text>${inline(title)}</h1>
         <p class="art-dek reveal-up">${inline(dek)}</p>
         <div class="art-meta reveal-up">

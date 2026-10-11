@@ -68,13 +68,44 @@ export function veNav({ archive = false } = {}) {
   <!-- /VE-NAV -->`;
 }
 
+/* ---- editions: the same rules as /velocityedge/ and the archive ---------- */
+export const EDITION_NAME = { morning: "Morning Brief", midday: "Midday Pulse", closing: "The Close", week: "The Week Ahead", focus: "In Focus" };
+export function editionOf(p) {
+  const sl = String(p.slot || "").toLowerCase().trim();
+  if (/^(the week ahead|week ahead|sunday edition|monday brief)$/.test(sl)) return "week";
+  if (/^(in focus|in depth)$/.test(sl)) return "focus";
+  if (sl === "midday pulse") return "midday";
+  if (/^(the close|night briefing|evening note|closing of the day)$/.test(sl) || p.kind === "night") return "closing";
+  if (/^(morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl)) return "morning";
+  const h = parseInt(String(p.time || "08:00").split(":")[0], 10);
+  return h < 12 ? "morning" : h < 17 ? "midday" : "closing";
+}
+const escH = (s) => String(s == null ? "" : s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+/* The note's edition label: symbol + "Edition · time" (+ the slot when it says something else). */
+export function editionKicker(p) {
+  const k = editionOf(p), name = EDITION_NAME[k], slot = String(p.slot || "").replace("U.s.", "U.S.").trim();
+  const parts = [name];
+  if (p.time) parts.push(p.time);
+  if (slot && slot.toLowerCase() !== name.toLowerCase() && slot.toLowerCase() !== name.replace(/^the /i, "").toLowerCase()) parts.push(slot);
+  return `<div class="art-kicker reveal-up">
+          <span class="art-kicker__pulse art-kicker__pulse--${k}" aria-hidden="true"></span>
+          ${parts.map(escH).join(" · ")}
+        </div>`;
+}
+
 /* ---- refresh existing pages ---------------------------------------------- */
 const OLD_HEADER = /  <header class="nav nav--solid" id="nav">[\s\S]*?<\/header>/;
 const VE_BLOCK = /  <!-- VE-NAV ·[\s\S]*?<!-- \/VE-NAV -->/;
 
 /* Note page: menu, its stylesheet and script, and every way back to The Velocity Edge. */
-export function applyToNote(src) {
+export function applyToNote(src, post) {
   let s = src;
+  if (post) {
+    const k = editionOf(post);
+    s = s.replace(/<main class="art art--(\w+)"(?: data-edition="\w+")?>/, (m, kind) => `<main class="art art--${kind}" data-edition="${k}">`);
+    s = s.replace(/<div class="art-kicker reveal-up">[\s\S]*?<\/div>/, () => editionKicker(post));
+    if (!s.includes(`data-edition="${k}"`)) throw new Error("edition not set");
+  }
   if (VE_BLOCK.test(s)) s = s.replace(VE_BLOCK, () => veNav());
   else if (OLD_HEADER.test(s)) s = s.replace(OLD_HEADER, () => veNav());
   else throw new Error("no menu found");
@@ -96,7 +127,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     const f = path.join(ROOT, p.url.replace(/^\/|\/$/g, ""), "index.html");
     if (!fs.existsSync(f)) continue;
     const src = fs.readFileSync(f, "utf8");
-    const out = applyToNote(src);
+    const out = applyToNote(src, p);
     if (out !== src) { fs.writeFileSync(f, out); n++; } else same++;
   }
   /* the archive keeps its own markup between the markers */
