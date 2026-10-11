@@ -10,6 +10,9 @@ on:
     - cron: "*/20 6-21 * * 1-5"      # weekdays, European open to U.S. close (UTC)
     - cron: "5 0-5,22,23 * * 1-5"    # weekdays overnight: hourly
     - cron: "15 */3 * * 0,6"         # weekend: crypto, yields carried
+  push:                               # a change to the feed itself runs it at once
+    branches: [claude/eager-carson-vjorjg]
+    paths: [scripts/live-market.mjs, .github/workflows/live-market.yml]
   workflow_dispatch:
     inputs:
       probe:
