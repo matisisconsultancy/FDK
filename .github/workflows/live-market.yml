@@ -51,14 +51,13 @@ jobs:
       - name: Probe symbols
         if: inputs.probe == true
         env:
-          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY || secrets.TWELVEDATA_API_KEY }}
         run: node site/scripts/live-market.mjs --probe
 
       - name: Refresh feed
         if: inputs.probe != true
         env:
-          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY }}
-          FRED_API_KEY: ${{ secrets.FRED_API_KEY }}
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY || secrets.TWELVEDATA_API_KEY }}
         run: node site/scripts/live-market.mjs --out feed/market.json
 
       - name: Publish feed

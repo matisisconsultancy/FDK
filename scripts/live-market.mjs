@@ -12,17 +12,18 @@
    Sources (no paid plan needed):
      · Twelve Data   — indices, stocks, commodities, FX
                        (key: TWELVE_DATA_KEY secret, else the public site key)
-     · U.S. Treasury — official daily par yield curve (2Y, 10Y, 30Y)
+     · Yahoo Finance — indices, futures, FX: intraday quote + a year of closes
+     · FRED          — official series, no key: Treasury yields, Fed funds,
+                       CPI, unemployment, high-yield spread, breakevens,
+                       and fallback closes for indices and oil
      · ECB           — €STR and euro-area 10Y government yield
      · CoinGecko     — Bitcoin, Ether
-     · FRED          — only if FRED_API_KEY is set: Fed funds, CPI,
-                       unemployment, high-yield spread, breakevens
 
    Proprietary FDK indices (GVI, Espresso, velocity readings) are NOT
    here: they come from Francesco's notes (scripts/gvi-notes-ingest.mjs).
 
      node scripts/live-market.mjs --out <dir>/market.json
-     node scripts/live-market.mjs --probe          # which symbols does the key cover?
+     node scripts/live-market.mjs --probe          # which sources answer for each series?
      node scripts/live-market.mjs --fixture f.json --out x.json   # offline test
    ============================================================ */
 import fs from "node:fs";
@@ -34,39 +35,49 @@ const OUT = arg("--out") || "market.json";
 const PROBE = args.includes("--probe");
 const FIXTURE = arg("--fixture");
 const TD_KEY = process.env.TWELVE_DATA_KEY || "348570cac4d04db0a36e15bc8b4f8833";
-const FRED_KEY = process.env.FRED_API_KEY || "";
 const NOW = new Date();
 const log = (...a) => console.log(...a);
 
 /* ---- what we track ------------------------------------------------------
-   td: Twelve Data symbol(s) in order of preference (first that answers wins);
-   tier "core" refreshes every run, "ext" every third run (free plan: 8 credits/min, 800/day). */
+   Each series lists its sources in order of preference; the first that answers wins.
+     y:    Yahoo Finance chart API (no key; intraday quote + one year of daily closes)
+     td:   Twelve Data (free plan covers U.S. stocks, FX and gold — not indices or oil)
+     fred: FRED graph CSV (no key; official daily/monthly series, one-day lag)
+     ecb:  ECB data API · cg: CoinGecko */
 export const SERIES = [
-  { id: "spx",   label: "S&P 500",           group: "Equities",    src: "td", td: ["SPX", "GSPC"],          dp: 2, tier: "core", why: "U.S. large caps — the AI earnings engine" },
-  { id: "ixic",  label: "Nasdaq Composite",  group: "Equities",    src: "td", td: ["IXIC"],                 dp: 2, tier: "core", why: "Growth and AI duration" },
-  { id: "dji",   label: "Dow Jones",         group: "Equities",    src: "td", td: ["DJI"],                  dp: 2, tier: "core", why: "Old-economy breadth" },
-  { id: "wti",   label: "WTI crude",         group: "Energy",      src: "td", td: ["WTI/USD"],              dp: 2, unit: "$/bbl", tier: "core", why: "U.S. inflation transmission" },
-  { id: "brent", label: "Brent crude",       group: "Energy",      src: "td", td: ["BRENT/USD", "XBR/USD"], dp: 2, unit: "$/bbl", tier: "core", why: "The global energy premium" },
-  { id: "gold",  label: "Gold",              group: "Commodities", src: "td", td: ["XAU/USD"],              dp: 2, unit: "$/oz", tier: "core", why: "Real yields and the geopolitical bid" },
-  { id: "eurusd",label: "EUR/USD",           group: "FX",          src: "td", td: ["EUR/USD"],              dp: 4, tier: "core", why: "The Europe–U.S. yield gap" },
-  { id: "usdjpy",label: "USD/JPY",           group: "FX",          src: "td", td: ["USD/JPY"],              dp: 2, tier: "core", why: "Carry and BOJ tightening" },
-  { id: "nvda",  label: "NVIDIA",            group: "AI leaders",  src: "td", td: ["NVDA"],                 dp: 2, unit: "$", tier: "ext", why: "The architecture of accelerated computing" },
-  { id: "msft",  label: "Microsoft",         group: "AI leaders",  src: "td", td: ["MSFT"],                 dp: 2, unit: "$", tier: "ext", why: "Enterprise AI monetization" },
-  { id: "tsm",   label: "TSMC (ADR)",        group: "AI leaders",  src: "td", td: ["TSM"],                  dp: 2, unit: "$", tier: "ext", why: "The manufacturing constraint on AI" },
-  { id: "asml",  label: "ASML (ADR)",        group: "AI leaders",  src: "td", td: ["ASML"],                 dp: 2, unit: "$", tier: "ext", why: "The technological gatekeeper" },
-  { id: "soxx",  label: "Semiconductors (SOXX ETF)", group: "AI leaders", src: "td", td: ["SOXX"],          dp: 2, unit: "$", tier: "ext", why: "The chip cycle in one line" },
-  { id: "us2y",  label: "U.S. 2Y Treasury",  group: "Rates",       src: "ust", col: "2 Yr",                 dp: 2, unit: "%", why: "Where the Fed is priced" },
-  { id: "us10y", label: "U.S. 10Y Treasury", group: "Rates",       src: "ust", col: "10 Yr",                dp: 2, unit: "%", why: "The world's discount rate" },
-  { id: "us30y", label: "U.S. 30Y Treasury", group: "Rates",       src: "ust", col: "30 Yr",                dp: 2, unit: "%", why: "Term premium for long-duration capex" },
-  { id: "estr",  label: "€STR",              group: "Rates",       src: "ecb", key: "EST/B.EU000A2X2A25.WT", dp: 3, unit: "%", why: "The euro overnight rate" },
-  { id: "ea10y", label: "Euro area 10Y (AAA)", group: "Rates",     src: "ecb", key: "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y", dp: 2, unit: "%", why: "Europe's risk-free long rate" },
-  { id: "btc",   label: "Bitcoin",           group: "Crypto",      src: "cg",  cg: "bitcoin",               dp: 0, unit: "$", why: "Liquidity at the margin" },
-  { id: "eth",   label: "Ether",             group: "Crypto",      src: "cg",  cg: "ethereum",              dp: 0, unit: "$", why: "Risk appetite in digital assets" },
-  { id: "fedfunds", label: "Fed funds (effective)", group: "Macro", src: "fred", fred: "DFF",               dp: 2, unit: "%", why: "The policy rate" },
-  { id: "cpi",   label: "U.S. CPI inflation", group: "Macro",      src: "fred", fred: "CPIAUCSL", yoy: true, dp: 1, unit: "%", why: "The inflation constraint" },
-  { id: "unrate",label: "U.S. unemployment", group: "Macro",       src: "fred", fred: "UNRATE",             dp: 1, unit: "%", why: "AI is growing, jobs are not" },
-  { id: "hy",    label: "U.S. high-yield spread", group: "Macro",  src: "fred", fred: "BAMLH0A0HYM2",       dp: 2, unit: "%", why: "The price of risky capital" },
-  { id: "be10",  label: "10Y breakeven inflation", group: "Macro", src: "fred", fred: "T10YIE",             dp: 2, unit: "%", why: "What markets expect inflation to be" },
+  { id: "spx",    label: "S&P 500",            group: "Equities",    src: [{ y: "^GSPC" }, { fred: "SP500" }],        dp: 2, why: "U.S. large caps — the AI earnings engine" },
+  { id: "ixic",   label: "Nasdaq Composite",   group: "Equities",    src: [{ y: "^IXIC" }, { fred: "NASDAQCOM" }],    dp: 2, why: "Growth and AI duration" },
+  { id: "dji",    label: "Dow Jones",          group: "Equities",    src: [{ y: "^DJI" }, { fred: "DJIA" }],          dp: 2, why: "Old-economy breadth" },
+  { id: "sx5e",   label: "Euro Stoxx 50",      group: "Equities",    src: [{ y: "^STOXX50E" }],                       dp: 2, why: "Europe's champions" },
+  { id: "dax",    label: "DAX",                group: "Equities",    src: [{ y: "^GDAXI" }],                          dp: 2, why: "Germany's industrial AI window" },
+  { id: "ftsemib",label: "FTSE MIB",           group: "Equities",    src: [{ y: "FTSEMIB.MI" }],                      dp: 2, why: "Italy: banks and the spread" },
+  { id: "n225",   label: "Nikkei 225",         group: "Equities",    src: [{ y: "^N225" }, { fred: "NIKKEI225" }],    dp: 2, why: "Japan, robotics and the yen" },
+  { id: "vix",    label: "VIX volatility",     group: "Equities",    src: [{ y: "^VIX" }, { fred: "VIXCLS" }],        dp: 2, why: "The price of fear" },
+  { id: "wti",    label: "WTI crude",          group: "Energy",      src: [{ y: "CL=F" }, { fred: "DCOILWTICO" }],    dp: 2, unit: "$/bbl", why: "U.S. inflation transmission" },
+  { id: "brent",  label: "Brent crude",        group: "Energy",      src: [{ y: "BZ=F" }, { fred: "DCOILBRENTEU" }],  dp: 2, unit: "$/bbl", why: "The global energy premium" },
+  { id: "natgas", label: "U.S. natural gas",   group: "Energy",      src: [{ y: "NG=F" }],                            dp: 3, unit: "$/MMBtu", why: "Power for data centres" },
+  { id: "gold",   label: "Gold",               group: "Commodities", src: [{ td: "XAU/USD" }, { y: "GC=F" }],          dp: 2, unit: "$/oz", why: "Real yields and the geopolitical bid" },
+  { id: "copper", label: "Copper",             group: "Commodities", src: [{ y: "HG=F" }],                            dp: 3, unit: "$/lb", why: "Electrification demand" },
+  { id: "eurusd", label: "EUR/USD",            group: "FX",          src: [{ td: "EUR/USD" }, { y: "EURUSD=X" }, { fred: "DEXUSEU" }], dp: 4, why: "The Europe–U.S. yield gap" },
+  { id: "usdjpy", label: "USD/JPY",            group: "FX",          src: [{ td: "USD/JPY" }, { y: "JPY=X" }, { fred: "DEXJPUS" }],    dp: 2, why: "Carry and BOJ tightening" },
+  { id: "dxy",    label: "U.S. dollar index",  group: "FX",          src: [{ y: "DX-Y.NYB" }],                        dp: 2, why: "Global dollar liquidity" },
+  { id: "nvda",   label: "NVIDIA",             group: "AI leaders",  src: [{ td: "NVDA" }, { y: "NVDA" }],             dp: 2, unit: "$", why: "The architecture of accelerated computing" },
+  { id: "msft",   label: "Microsoft",          group: "AI leaders",  src: [{ td: "MSFT" }, { y: "MSFT" }],             dp: 2, unit: "$", why: "Enterprise AI monetization" },
+  { id: "tsm",    label: "TSMC (ADR)",         group: "AI leaders",  src: [{ td: "TSM" }, { y: "TSM" }],               dp: 2, unit: "$", why: "The manufacturing constraint on AI" },
+  { id: "asml",   label: "ASML (ADR)",         group: "AI leaders",  src: [{ td: "ASML" }, { y: "ASML" }],             dp: 2, unit: "$", why: "The technological gatekeeper" },
+  { id: "sox",    label: "PHLX Semiconductor", group: "AI leaders",  src: [{ y: "^SOX" }, { td: "SOXX" }],             dp: 2, why: "The chip cycle in one line" },
+  { id: "us2y",   label: "U.S. 2Y Treasury",   group: "Rates",       src: [{ fred: "DGS2" }],                         dp: 2, unit: "%", why: "Where the Fed is priced" },
+  { id: "us10y",  label: "U.S. 10Y Treasury",  group: "Rates",       src: [{ fred: "DGS10" }],                        dp: 2, unit: "%", why: "The world's discount rate" },
+  { id: "us30y",  label: "U.S. 30Y Treasury",  group: "Rates",       src: [{ fred: "DGS30" }],                        dp: 2, unit: "%", why: "Term premium for long-duration capex" },
+  { id: "estr",   label: "€STR",               group: "Rates",       src: [{ ecb: "EST/B.EU000A2X2A25.WT" }],         dp: 3, unit: "%", why: "The euro overnight rate" },
+  { id: "ea10y",  label: "Euro area 10Y (AAA)",group: "Rates",       src: [{ ecb: "YC/B.U2.EUR.4F.G_N_A.SV_C_YM.SR_10Y" }], dp: 2, unit: "%", why: "Europe's risk-free long rate" },
+  { id: "btc",    label: "Bitcoin",            group: "Crypto",      src: [{ cg: "bitcoin" }],                        dp: 0, unit: "$", why: "Liquidity at the margin" },
+  { id: "eth",    label: "Ether",              group: "Crypto",      src: [{ cg: "ethereum" }],                       dp: 0, unit: "$", why: "Risk appetite in digital assets" },
+  { id: "fedfunds", label: "Fed funds (effective)", group: "Macro",  src: [{ fred: "DFF" }],                          dp: 2, unit: "%", why: "The policy rate" },
+  { id: "cpi",    label: "U.S. CPI inflation (YoY)", group: "Macro", src: [{ fred: "CPIAUCSL", yoy: true }],          dp: 1, unit: "%", why: "The inflation constraint" },
+  { id: "unrate", label: "U.S. unemployment",  group: "Macro",       src: [{ fred: "UNRATE" }],                       dp: 1, unit: "%", why: "AI is growing, jobs are not" },
+  { id: "hy",     label: "U.S. high-yield spread", group: "Macro",   src: [{ fred: "BAMLH0A0HYM2" }],                 dp: 2, unit: "%", why: "The price of risky capital" },
+  { id: "be10",   label: "10Y breakeven inflation", group: "Macro",  src: [{ fred: "T10YIE" }],                       dp: 2, unit: "%", why: "What markets expect inflation to be" },
 ];
 
 /* ---- helpers ------------------------------------------------------------- */
@@ -97,7 +108,7 @@ async function twelveData(symbols) {
   const out = {};
   for (const s of symbols) {
     const q = symbols.length === 1 ? d : d[s];
-    if (!q || q.status === "error" || q.code) { out[s] = { error: (q && q.message) || "no data" }; continue; }
+    if (!q || q.status === "error" || q.code || q.close == null) { out[s] = { error: (q && q.message) || "no data" }; continue; }
     out[s] = {
       value: num(q.close), prev: num(q.previous_close), change: num(q.change), changePct: num(q.percent_change),
       asOf: q.timestamp ? new Date(q.timestamp * 1000).toISOString() : null, open: q.is_market_open === true,
@@ -106,48 +117,70 @@ async function twelveData(symbols) {
   }
   return out;
 }
-async function twelveDaily(symbol) {
-  const d = await get(`https://api.twelvedata.com/time_series?symbol=${encodeURIComponent(symbol)}&interval=1day&outputsize=260&apikey=${TD_KEY}`);
-  if (!d || d.status === "error" || !Array.isArray(d.values)) throw new Error((d && d.message) || "no series");
-  return d.values.map((v) => [v.datetime.slice(0, 10), num(v.close)]).filter((x) => x[1] != null).reverse();
+/* Yahoo Finance chart API: the latest quote plus a year of daily closes in one call */
+async function yahoo(sym) {
+  let d;
+  for (const host of ["query1", "query2"]) {
+    try { d = await get(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=1y&interval=1d&includePrePost=false`); break; }
+    catch (e) { if (host === "query2") throw e; }
+  }
+  const r = d && d.chart && d.chart.result && d.chart.result[0];
+  if (!r || !r.meta) throw new Error((d && d.chart && d.chart.error && d.chart.error.description) || "no data");
+  const m = r.meta, ts = r.timestamp || [], cl = (r.indicators && r.indicators.quote && r.indicators.quote[0] && r.indicators.quote[0].close) || [];
+  const daily = []; ts.forEach((t, i) => { if (cl[i] != null) daily.push([new Date((t + (m.gmtoffset || 0)) * 1000).toISOString().slice(0, 10), round(cl[i], 6)]); });
+  const value = num(m.regularMarketPrice);
+  if (value == null) throw new Error("no price");
+  const asOfDate = m.regularMarketTime ? new Date((m.regularMarketTime + (m.gmtoffset || 0)) * 1000).toISOString().slice(0, 10) : null;
+  // previous close = the last daily close before the quote's own trading day
+  let prev = null; for (let i = daily.length - 1; i >= 0; i--) if (!asOfDate || daily[i][0] < asOfDate) { prev = daily[i][1]; break; }
+  const p = m.currentTradingPeriod && m.currentTradingPeriod.regular, now = Date.now() / 1000;
+  if (daily.length && asOfDate && daily[daily.length - 1][0] === asOfDate) daily[daily.length - 1][1] = value; else if (asOfDate) daily.push([asOfDate, value]);
+  return {
+    value, prev, change: prev != null ? round(value - prev, 6) : null, changePct: prev ? round((value / prev - 1) * 100, 2) : null,
+    asOf: m.regularMarketTime ? new Date(m.regularMarketTime * 1000).toISOString() : null,
+    open: p ? now >= p.start && now < p.end : null,
+    high52: num(m.fiftyTwoWeekHigh), low52: num(m.fiftyTwoWeekLow), daily: daily.slice(-260),
+  };
 }
-async function treasury() {
-  const y = NOW.getUTCFullYear();
-  const url = (yr) => `https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/${yr}/all?type=daily_treasury_yield_curve&field_tdr_date_value=${yr}&page&_format=csv`;
-  let rows = csvRows(await get(url(y), { json: false }));
-  if (rows.length < 40) { try { rows = rows.concat(csvRows(await get(url(y - 1), { json: false }))); } catch { /* fine */ } }
-  // rows come newest first, dates as MM/DD/YYYY
-  const iso = (d) => { const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(d); return m ? `${m[3]}-${m[1]}-${m[2]}` : d; };
-  return rows.map((r) => ({ date: iso(r.Date), r })).filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x.date)).sort((a, b) => a.date.localeCompare(b.date));
+/* FRED graph CSV — official series, no key needed */
+async function fredCsv(id, yoy) {
+  const start = `${NOW.getUTCFullYear() - 2}-01-01`;
+  const text = await get(`https://fred.stlouisfed.org/graph/fredgraph.csv?id=${id}&cosd=${start}`, { json: false, timeout: 40000 });
+  let pts = csvRows(text).map((r) => { const k = Object.keys(r); return [r[k[0]], num(r[k[1]])]; }).filter((x) => /^\d{4}-\d{2}-\d{2}$/.test(x[0]) && x[1] != null);
+  if (yoy) { const by = new Map(pts); pts = pts.map(([d, v]) => { const b = by.get(`${+d.slice(0, 4) - 1}${d.slice(4)}`); return b ? [d, round((v / b - 1) * 100, 2)] : null; }).filter(Boolean); }
+  if (pts.length < 2) throw new Error("no observations");
+  const [d1, v1] = pts[pts.length - 1], [, v0] = pts[pts.length - 2];
+  return { value: v1, prev: v0, change: round(v1 - v0, 4), changePct: v0 ? round((v1 / v0 - 1) * 100, 2) : null, asOf: d1, daily: pts.slice(-260) };
 }
 async function ecb(key) {
-  const text = await get(`https://data-api.ecb.europa.eu/service/data/${key}?lastNObservations=260&format=csvdata`, { json: false });
-  return csvRows(text).map((r) => [r.TIME_PERIOD, num(r.OBS_VALUE)]).filter((x) => x[1] != null);
+  const text = await get(`https://data-api.ecb.europa.eu/service/data/${key}?lastNObservations=260&format=csvdata`, { json: false, timeout: 40000 });
+  const pts = csvRows(text).map((r) => [r.TIME_PERIOD, num(r.OBS_VALUE)]).filter((x) => x[1] != null);
+  if (pts.length < 2) throw new Error("no observations");
+  const [d1, v1] = pts[pts.length - 1], [, v0] = pts[pts.length - 2];
+  return { value: v1, prev: v0, change: round(v1 - v0, 4), asOf: d1, daily: pts };
 }
 async function coingecko(ids) {
-  const d = await get(`https://api.coingecko.com/api/v3/simple/price?ids=${ids.join(",")}&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true`);
-  return d;
+  return get(`https://api.coingecko.com/api/v3/simple/price?ids=${ids.join(",")}&vs_currencies=usd&include_24hr_change=true&include_last_updated_at=true`);
 }
 async function coingeckoDaily(id) {
   const d = await get(`https://api.coingecko.com/api/v3/coins/${id}/market_chart?vs_currency=usd&days=365&interval=daily`);
   const seen = new Map();
-  for (const [t, v] of d.prices || []) seen.set(new Date(t).toISOString().slice(0, 10), v);
+  for (const [t, v] of d.prices || []) seen.set(new Date(t).toISOString().slice(0, 10), round(v, 2));
   return [...seen.entries()];
 }
-async function fred(id) {
-  const d = await get(`https://api.stlouisfed.org/fred/series/observations?series_id=${id}&api_key=${FRED_KEY}&file_type=json&observation_start=${NOW.getUTCFullYear() - 2}-01-01`);
-  return (d.observations || []).map((o) => [o.date, num(o.value)]).filter((x) => x[1] != null);
-}
+const SOURCE_NAME = { y: "Yahoo Finance", td: "Twelve Data", fred: "FRED · St. Louis Fed", ecb: "European Central Bank", cg: "CoinGecko" };
+const RATE_UNIT = (s) => s.unit === "%";
 
-/* ---- probe: which Twelve Data symbols does this key cover? -------------- */
+/* ---- probe: which symbols answer? ----------------------------------------- */
 if (PROBE) {
-  const cands = [...new Set(SERIES.filter((s) => s.src === "td").flatMap((s) => s.td).concat(["NDX", "GDAXI", "DAX", "FTSEMIB", "SX5E", "STOXX50E", "N225", "VIX", "XAG/USD", "NG/USD", "BTC/USD"]))];
-  for (let i = 0; i < cands.length; i += 8) {
-    if (i) await sleep(62000);
+  for (const s of SERIES) for (const src of s.src) {
+    const [k, v] = Object.entries(src)[0];
     try {
-      const r = await twelveData(cands.slice(i, i + 8));
-      for (const [s, q] of Object.entries(r)) log(q.error ? `✗ ${s.padEnd(10)} ${q.error}` : `✓ ${s.padEnd(10)} ${q.value}  (${q.changePct}%)  ${q.asOf}`);
-    } catch (e) { log("batch failed:", e.message); }
+      const r = k === "y" ? await yahoo(v) : k === "fred" ? await fredCsv(v, src.yoy) : k === "ecb" ? await ecb(v) : k === "td" ? (await twelveData([v]))[v] : null;
+      if (!r) continue;
+      log(r.error ? `✗ ${s.id.padEnd(9)} ${k}:${v} ${r.error}` : `✓ ${s.id.padEnd(9)} ${k}:${v} ${r.value} (${r.changePct ?? r.change}) ${r.asOf} d${(r.daily || []).length}`);
+    } catch (e) { log(`✗ ${s.id.padEnd(9)} ${k}:${v} ${e.message}`); }
+    if (k === "td") await sleep(8000);
   }
   process.exit(0);
 }
@@ -159,77 +192,59 @@ const run = (prevFeed.run || 0) + 1;
 const fixture = FIXTURE ? JSON.parse(fs.readFileSync(FIXTURE, "utf8")) : null;
 const results = {};   // id -> {value, prev, change, changePct, asOf, source, daily?, open?}
 const errors = [];
-
-async function step(name, fn) { try { await fn(); } catch (e) { errors.push(`${name}: ${e.message}`); log(`✗ ${name}: ${e.message}`); } }
+const today = NOW.toISOString().slice(0, 10);
 
 if (fixture) Object.assign(results, fixture);
 else {
-  /* Twelve Data — core every run, the AI leaders every third run */
-  /* markets are shut at the weekend: keep Friday's close and save the quota */
+  /* markets are shut at the weekend: keep Friday's close, save the Twelve Data quota */
   const weekend = [0, 6].includes(NOW.getUTCDay()) && !process.env.FORCE_TD;
-  const tdSeries = SERIES.filter((s) => s.src === "td" && (!weekend || !prevById[s.id]) && (s.tier === "core" || run % 3 === 1 || !prevById[s.id]));
-  const pick = (s) => (prevById[s.id] && prevById[s.id].symbol) || s.td[0];
-  const batches = []; for (let i = 0; i < tdSeries.length; i += 8) batches.push(tdSeries.slice(i, i + 8));
-  for (let b = 0; b < batches.length; b++) {
-    if (b) await sleep(62000);
-    await step(`twelvedata batch ${b + 1}`, async () => {
-      const r = await twelveData(batches[b].map(pick));
-      for (const s of batches[b]) {
-        const sym = pick(s), q = r[sym];
-        if (q && !q.error && q.value != null) results[s.id] = { ...q, source: "Twelve Data", symbol: sym };
-        else errors.push(`twelvedata ${s.id} (${sym}): ${q ? q.error : "missing"}`);
-      }
-    });
+  /* 1 · Twelve Data, one batch (free plan: 8 symbols a minute) */
+  const tdWant = SERIES.filter((s) => s.src[0].td && (!weekend || !prevById[s.id])).slice(0, 8);
+  let td = {};
+  if (tdWant.length) {
+    try { td = await twelveData(tdWant.map((s) => s.src[0].td)); }
+    catch (e) { errors.push(`twelvedata: ${e.message}`); }
   }
-  /* once a day: daily closes for the charts (1 credit per symbol) */
-  const today = NOW.toISOString().slice(0, 10);
-  const needDaily = SERIES.filter((s) => s.src === "td" && results[s.id] && (!prevById[s.id] || prevById[s.id].dailyAt !== today)).slice(0, 7);
-  if (needDaily.length) {
-    await sleep(62000);
-    for (const s of needDaily) await step(`daily ${s.id}`, async () => { results[s.id].daily = await twelveDaily(results[s.id].symbol); results[s.id].dailyAt = today; });
-  }
-  /* U.S. Treasury */
-  await step("treasury", async () => {
-    const rows = await treasury();
-    for (const s of SERIES.filter((x) => x.src === "ust")) {
-      const pts = rows.map((x) => [x.date, num(x.r[s.col])]).filter((p) => p[1] != null);
-      if (pts.length < 2) continue;
-      const [d1, v1] = pts[pts.length - 1], [, v0] = pts[pts.length - 2];
-      results[s.id] = { value: v1, prev: v0, change: round(v1 - v0, 3), changeBp: Math.round((v1 - v0) * 100), asOf: d1, source: "U.S. Treasury", daily: pts.slice(-260) };
+  for (const s of SERIES) {
+    let got = null, used = null;
+    for (const src of s.src) {
+      const [k, v] = Object.entries(src)[0];
+      try {
+        if (k === "td") { const q = td[v]; if (q && !q.error) got = q; else if (q && q.error) errors.push(`${s.id} td:${v}: ${q.error}`); }
+        else if (k === "y") { got = await yahoo(v); await sleep(400); }
+        else if (k === "fred") got = await fredCsv(v, src.yoy);
+        else if (k === "ecb") got = await ecb(v);
+        else if (k === "cg") continue;    // batched below
+      } catch (e) { errors.push(`${s.id} ${k}:${v}: ${e.message}`); got = null; }
+      if (got && got.value != null) { used = k; got.symbol = v; break; }
     }
-  });
-  /* ECB */
-  for (const s of SERIES.filter((x) => x.src === "ecb")) await step(`ecb ${s.id}`, async () => {
-    const pts = await ecb(s.key);
-    if (pts.length < 2) throw new Error("no observations");
-    const [d1, v1] = pts[pts.length - 1], [, v0] = pts[pts.length - 2];
-    results[s.id] = { value: v1, prev: v0, change: round(v1 - v0, 3), changeBp: Math.round((v1 - v0) * 100), asOf: d1, source: "European Central Bank", daily: pts };
-  });
+    if (!got) continue;
+    got.source = SOURCE_NAME[used];
+    /* a Twelve Data quote has no history: borrow the daily closes once a day */
+    if (used === "td") {
+      const p = prevById[s.id];
+      if (p && p.dailyAt === today && p.daily && p.daily.length) { got.daily = p.daily; got.dailyAt = today; }
+      else {
+        const alt = s.src.find((x) => x.y || x.fred);
+        if (alt) { try { const h = alt.y ? await yahoo(alt.y) : await fredCsv(alt.fred); got.daily = h.daily; got.dailyAt = today; } catch (e) { errors.push(`${s.id} history: ${e.message}`); } }
+      }
+    } else got.dailyAt = today;
+    results[s.id] = got;
+  }
   /* CoinGecko */
-  await step("coingecko", async () => {
-    const cg = SERIES.filter((x) => x.src === "cg");
-    const d = await coingecko(cg.map((s) => s.cg));
+  const cg = SERIES.filter((x) => x.src[0].cg);
+  try {
+    const d = await coingecko(cg.map((s) => s.src[0].cg));
     for (const s of cg) {
-      const q = d[s.cg]; if (!q) continue;
-      results[s.id] = { value: q.usd, changePct: round(q.usd_24h_change, 2), asOf: q.last_updated_at ? new Date(q.last_updated_at * 1000).toISOString() : NOW.toISOString(), source: "CoinGecko", open: true };
-      if (!prevById[s.id] || prevById[s.id].dailyAt !== NOW.toISOString().slice(0, 10)) {
-        await sleep(1500);
-        try { results[s.id].daily = await coingeckoDaily(s.cg); results[s.id].dailyAt = NOW.toISOString().slice(0, 10); } catch (e) { errors.push(`coingecko daily ${s.id}: ${e.message}`); }
-      }
+      const q = d[s.src[0].cg]; if (!q) continue;
+      const r = { value: q.usd, changePct: round(q.usd_24h_change, 2), asOf: q.last_updated_at ? new Date(q.last_updated_at * 1000).toISOString() : NOW.toISOString(), source: SOURCE_NAME.cg, open: true };
+      const p = prevById[s.id];
+      if (p && p.dailyAt === today && p.daily && p.daily.length) { r.daily = p.daily; r.dailyAt = today; }
+      else { await sleep(1500); try { r.daily = await coingeckoDaily(s.src[0].cg); r.dailyAt = today; } catch (e) { errors.push(`${s.id} history: ${e.message}`); } }
+      if (r.daily && r.daily.length) r.daily[r.daily.length - 1] = [today, q.usd];
+      results[s.id] = r;
     }
-  });
-  /* FRED — optional */
-  if (FRED_KEY) {
-    for (const s of SERIES.filter((x) => x.src === "fred")) await step(`fred ${s.id}`, async () => {
-      let pts = await fred(s.fred);
-      if (s.yoy) {   // monthly index → year-on-year %
-        const by = new Map(pts); pts = pts.map(([d, v]) => { const y = `${+d.slice(0, 4) - 1}${d.slice(4)}`; const b = by.get(y); return b ? [d, round((v / b - 1) * 100, 2)] : null; }).filter(Boolean);
-      }
-      if (pts.length < 2) throw new Error("no observations");
-      const [d1, v1] = pts[pts.length - 1], [, v0] = pts[pts.length - 2];
-      results[s.id] = { value: v1, prev: v0, change: round(v1 - v0, 3), asOf: d1, source: "FRED · Federal Reserve Bank of St. Louis", daily: pts.slice(-260) };
-    });
-  } else log("· FRED_API_KEY not set — macro series (Fed funds, CPI, unemployment, HY spread, breakevens) skipped");
+  } catch (e) { errors.push(`coingecko: ${e.message}`); }
 }
 
 /* ---- assemble: carry the last good value forward when a source is down --- */
@@ -251,7 +266,8 @@ for (const s of SERIES) {
   }
   series.push({
     id: s.id, label: s.label, group: s.group, unit: s.unit || "", dp: s.dp, why: s.why,
-    value, prev: base.prev != null ? round(base.prev, 4) : null, change, changePct, changeBp: base.changeBp ?? null,
+    value, prev: base.prev != null ? round(base.prev, 4) : null, change, changePct: s.unit === "%" ? null : changePct,
+    changeBp: base.changeBp ?? (s.unit === "%" && change != null ? Math.round(change * 100) : null),
     asOf: base.asOf || null, open: base.open ?? null, source: base.source, symbol: base.symbol || undefined,
     high52: base.high52 ?? null, low52: base.low52 ?? null,
     stale: !r, checkedAt: NOW.toISOString(),
