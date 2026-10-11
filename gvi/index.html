@@ -11,7 +11,7 @@
   </script>
 
   <meta charset="UTF-8" />
-  <script src="/i18n-boot.js?v=28cf2e385c"></script>
+  <script src="/i18n-boot.js?v=cb53f7b5b4"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="The FDK Global Velocity Index (GVI) — live country, corporate and industry velocity rankings on a 0–100 scale. The Velocity Edge, by Francesco de Leo Kaufmann." />
   <meta name="theme-color" content="#070a24" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" /></noscript>
-  <link rel="stylesheet" href="/styles.css?v=28cf2e385c" />
+  <link rel="stylesheet" href="/styles.css?v=cb53f7b5b4" />
 
   <style>
     /* ---- GVI dashboard (scoped) ---- */
@@ -129,7 +129,7 @@
 
     /* update banner (how it works) */
     .gvi-how { border:1px dashed rgba(46,224,106,.4); border-radius:16px; padding:22px 26px; margin-top:44px; background:rgba(46,224,106,.04); }
-    .gvi-how h3 { font-family:var(--font-display); font-weight:500; color:var(--green); margin:0 0 8px; font-size:1.05rem; }
+    .gvi-how h2 { font-family:var(--font-display); font-weight:500; color:var(--green); margin:0 0 8px; font-size:1.05rem; }
     .gvi-how p, .gvi-how li { color:rgba(255,255,255,.72); font-size:.92rem; }
     .gvi-how code { font-family:var(--font-mono); color:#fff; background:rgba(255,255,255,.08); padding:1px 6px; border-radius:5px; }
 
@@ -156,6 +156,7 @@
     .g-score__n.dn { color:var(--g-red); }
 
     .g-velhead { display:flex; align-items:center; gap:26px; flex-wrap:wrap; margin-bottom:20px; }
+    .g-two > *, .g-panel, .g-subpanel { min-width:0; }  /* grid items may shrink: wide tables scroll inside their wrapper, not the page */
     .g-vlist { display:flex; flex-direction:column; gap:11px; }
     .g-vrow { display:grid; grid-template-columns:1fr auto auto; gap:8px 12px; align-items:center; }
     .g-vrow__n { color:rgba(255,255,255,.88); font-size:.92rem; }
@@ -218,7 +219,7 @@
         </div>
 
         <div class="gvi-how">
-          <h3>How this stays updated — automatically</h3>
+          <h2>How this stays updated — automatically</h2>
           <p>FDK sends the daily edition to the Telegram publisher bot. The infographic in that message is read by a vision model, which updates the source data, extends each sparkline and rebuilds the dashboard — while the caption is published as the article. One message, both updated. No transcription, no design work.</p>
         </div>
       </div>
@@ -247,9 +248,9 @@
     </div>
   </footer>
 
-  <script src="/i18n.js?v=28cf2e385c"></script>
-  <script src="/script.js?v=28cf2e385c"></script>
-  <script src="/gvi-data.js?v=28cf2e385c"></script>
-  <script src="/gvi.js?v=28cf2e385c"></script>
+  <script src="/i18n.js?v=cb53f7b5b4"></script>
+  <script src="/script.js?v=cb53f7b5b4"></script>
+  <script src="/gvi-data.js?v=cb53f7b5b4"></script>
+  <script src="/gvi.js?v=cb53f7b5b4"></script>
 </body>
 </html>

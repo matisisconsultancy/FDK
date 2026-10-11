@@ -66,7 +66,7 @@
         '</td><td class="g-score"><span class="g-score__n">' + fmt(r.score) + '</span>' + scoreBar(r.score) + '</td><td>' + deltaHTML(r.delta, r.trend) +
         '</td><td class="g-mom">' + badge(r.tag, r.trend) + '</td><td class="g-sparkcell">' + sparkline(r.spark, r.trend) + '</td></tr>';
     }).join("");
-    return '<div class="g-tablewrap"><table class="g-table"><thead><tr><th>#</th><th>Country</th><th>GVI</th><th>Δ</th><th>Momentum</th><th>Trend</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+    return '<div class="g-tablewrap" tabindex="0"><table class="g-table"><thead><tr><th>#</th><th>Country</th><th>GVI</th><th>Δ</th><th>Momentum</th><th>Trend</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   }
   function benchTable(list, kind) {
     var rows = list.map(function (r) {
@@ -74,7 +74,7 @@
         (r.note ? '<span class="g-sector">' + esc(r.note) + '</span>' : "") + '</td>' +
         '<td class="g-score"><span class="g-score__n">' + fmt(r.score) + '</span>' + scoreBar(r.score) + '</td><td>' + deltaHTML(r.delta, r.trend) + '</td></tr>';
     }).join("");
-    return '<div class="g-tablewrap"><table class="g-table"><thead><tr><th>#</th><th>' + (kind === "down" ? "Laggard" : "Leader") + '</th><th>GVI</th><th>Δ</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+    return '<div class="g-tablewrap" tabindex="0"><table class="g-table"><thead><tr><th>#</th><th>' + (kind === "down" ? "Laggard" : "Leader") + '</th><th>GVI</th><th>Δ</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   }
   function miniRank(list, key) {
     return '<ol class="g-mini">' + list.map(function (r) {
@@ -86,7 +86,7 @@
       return '<tr><td class="g-rank">' + r.rank + '</td><td class="g-name">' + esc(r.name) + (showSector && r.sector ? '<span class="g-sector">' + esc(r.sector) + '</span>' : "") +
         '</td><td class="g-score"><span class="g-score__n">' + fmt(r.score) + '</span></td><td>' + deltaHTML(r.delta, r.trend) + '</td></tr>';
     }).join("");
-    return '<div class="g-tablewrap"><table class="g-table"><thead><tr><th>#</th><th>Name</th><th>GVI</th><th>Δ</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+    return '<div class="g-tablewrap" tabindex="0"><table class="g-table"><thead><tr><th>#</th><th>Name</th><th>GVI</th><th>Δ</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   }
   function cardsGrid(items, headFn, bodyFn) {
     return '<div class="g-cards">' + items.map(function (it) {
@@ -102,7 +102,7 @@
     }).join("");
     return '<div class="g-today">' +
       '<div class="g-today__main"><span class="g-eyebrow">' + esc(t.edition || "") + ' · ' + esc(t.date || "") + '</span>' +
-      '<h3 class="g-today__thesis">' + esc(t.thesis || "") + '</h3><p class="g-today__sub">' + esc(t.subtitle || "") + '</p>' +
+      '<h2 class="g-today__thesis">' + esc(t.thesis || "") + '</h2><p class="g-today__sub">' + esc(t.subtitle || "") + '</p>' +
       (t.standfirst ? '<p class="g-today__stand">“' + esc(t.standfirst) + '”</p>' : "") + '</div>' +
       (t.velocityReading && typeof t.velocityReading.score === "number" ? '<div class="g-today__gauge">' + gauge(t.velocityReading.score, t.velocityReading.max, t.velocityReading.label) + '</div>' : "") +
       '</div><div class="g-strip">' + strip + '</div>' + todayNotes(t);
@@ -111,7 +111,7 @@
   function todayNotes(t) {
     var n = t.notes || [];
     if (!n.length) return srcLink(t.source);
-    return '<div class="g-sub"><h4 class="g-sub__h">In today\'s notes</h4><div class="g-chips">' + n.map(function (x) {
+    return '<div class="g-sub"><h2 class="g-sub__h">In today\'s notes</h2><div class="g-chips">' + n.map(function (x) {
       return '<a class="g-chip" href="' + esc(x.url) + '"><em>' + esc(x.slot || "") + '</em>' + esc(x.title) + (x.headline ? ' — ' + esc(x.headline) : "") + ' →</a>';
     }).join("") + '</div></div>';
   }
@@ -123,7 +123,7 @@
       return '<tr><td class="g-name">' + esc(r.k) + '</td><td class="g-score"><span class="g-score__n ' + (r.trend === "down" ? "dn" : "") + '">' + esc(r.v) + '</span></td><td class="g-note2">' + esc(r.note) + '</td><td>' + arrow(r.trend) + '</td></tr>';
     }).join("");
     return '<p class="g-note">Public market signals · as of ' + esc(m.asOf) + ' · auto-updatable from a market data API</p>' +
-      '<div class="g-tablewrap"><table class="g-table g-table--mkt"><thead><tr><th>Signal</th><th>Latest</th><th>Why it matters</th><th></th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+      '<div class="g-tablewrap" tabindex="0"><table class="g-table g-table--mkt"><thead><tr><th>Signal</th><th>Latest</th><th>Why it matters</th><th style="position:relative"><span style="position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Trend</span></th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   }
 
   /* ---------- 3 · VELOCITY ---------- */
@@ -148,16 +148,16 @@
   ];
   function subBenchmark() {
     var b = D.corporateBenchmark || {};
-    var pillars = !(b.pillars && b.pillars.length) ? "" : '<div class="g-sub"><h4 class="g-sub__h">' + (b.source ? "Leadership groups" : "Pillar leadership") + '</h4><div class="g-chips">' +
+    var pillars = !(b.pillars && b.pillars.length) ? "" : '<div class="g-sub"><h2 class="g-sub__h">' + (b.source ? "Leadership groups" : "Pillar leadership") + '</h2><div class="g-chips">' +
       b.pillars.map(function (p) { return '<span class="g-chip"><em>' + esc(p.pillar) + '</em>' + esc(p.leaders.join(" · ")) + '</span>'; }).join("") + '</div></div>';
     return '<p class="g-note">' + esc(b.title) + ' · as of ' + esc(b.asOf) + '</p><div class="g-two">' +
-      '<div><h4 class="g-sub__h g-sub__h--up">Top 10 velocity leaders</h4>' + benchTable(b.leaders, "up") + '</div>' +
-      '<div><h4 class="g-sub__h g-sub__h--down">10 corporate laggards</h4>' + benchTable(b.laggards, "down") + '</div></div>' + pillars + srcLink(b.source);
+      '<div><h2 class="g-sub__h g-sub__h--up">Top 10 velocity leaders</h2>' + benchTable(b.leaders, "up") + '</div>' +
+      '<div><h2 class="g-sub__h g-sub__h--down">10 corporate laggards</h2>' + benchTable(b.laggards, "down") + '</div></div>' + pillars + srcLink(b.source);
   }
   function subCorporates() {
     var c = daily.corporates;
     return '<p class="g-note">Global corporate average <strong>' + fmt(c.average.score) + '</strong> ' + deltaHTML(c.average.delta, c.average.trend) + ' · as of ' + esc(c.asOf) + '</p>' +
-      '<div class="g-two"><div><h4 class="g-sub__h g-sub__h--up">Top 15</h4>' + corpTable(c.top, true) + '</div><div><h4 class="g-sub__h g-sub__h--down">Bottom 10</h4>' + corpTable(c.bottom, true) + '</div></div>';
+      '<div class="g-two"><div><h2 class="g-sub__h g-sub__h--up">Top 15</h2>' + corpTable(c.top, true) + '</div><div><h2 class="g-sub__h g-sub__h--down">Bottom 10</h2>' + corpTable(c.bottom, true) + '</div></div>';
   }
   function subIndustries() {
     var w = weekly.industries;
@@ -180,9 +180,9 @@
   function subBanks() {
     var w = weekly.banks;
     return '<p class="g-note">European banks average <strong>' + fmt(w.europeanBanksAverage.score) + '</strong> ' + deltaHTML(w.europeanBanksAverage.delta, "up") + ' · week ending ' + esc(w.weekEnding) + '</p>' +
-      '<div class="g-two"><div><h4 class="g-sub__h g-sub__h--up">Top 5 (Europe)</h4>' + benchTable(w.topOverall.map(function (b) { return { rank: b.rank, name: b.bank + " · " + b.country, score: b.score, delta: b.delta, trend: b.trend }; }), "up") + '</div>' +
-      '<div><h4 class="g-sub__h g-sub__h--down">Bottom 5 (Europe)</h4>' + benchTable(w.bottomOverall.map(function (b) { return { rank: b.rank, name: b.bank + " · " + b.country, score: b.score, delta: b.delta, trend: b.trend }; }), "down") + '</div></div>' +
-      '<div class="g-sub"><h4 class="g-sub__h">Leaders by country</h4>' + cardsGrid(w.countries, function (co) {
+      '<div class="g-two"><div><h2 class="g-sub__h g-sub__h--up">Top 5 (Europe)</h2>' + benchTable(w.topOverall.map(function (b) { return { rank: b.rank, name: b.bank + " · " + b.country, score: b.score, delta: b.delta, trend: b.trend }; }), "up") + '</div>' +
+      '<div><h2 class="g-sub__h g-sub__h--down">Bottom 5 (Europe)</h2>' + benchTable(w.bottomOverall.map(function (b) { return { rank: b.rank, name: b.bank + " · " + b.country, score: b.score, delta: b.delta, trend: b.trend }; }), "down") + '</div></div>' +
+      '<div class="g-sub"><h2 class="g-sub__h">Leaders by country</h2>' + cardsGrid(w.countries, function (co) {
         return '<span class="g-card__title">' + esc(co.name) + '</span><span class="g-card__score">' + fmt(co.countryAvgGVI) + '</span>';
       }, function (co) { return miniRank(co.top); }) + '</div>';
   }
@@ -205,8 +205,8 @@
       return '<div class="g-vrow' + (v.highlight ? " g-vrow--hl" : "") + '"><span class="g-vrow__n">' + esc(v.name) + '</span><span class="g-vrow__s">' + v.score + '</span><span class="g-bar g-bar--wide"><span class="g-bar__fill" style="width:' + v.score + '%"></span></span></div>';
     })).join("");
     return '<p class="g-note">' + esc(e.title) + ' — ' + esc(e.subtitle) + (e.constant ? ' · ' + esc(e.constant) : "") + ' · as of ' + esc(e.asOf) + '</p>' +
-      '<div class="g-two g-two--wide"><div><h4 class="g-sub__h">' + (e.provisional ? "Global Top 15 · provisional ordering" : "Global Top 15 (Espresso Score)") + '</h4><div class="g-tablewrap"><table class="g-table"><thead><tr><th>#</th><th>Country</th><th>Score</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
-      '<div><h4 class="g-sub__h">' + (e.drivers && e.drivers.length ? "The five drivers of velocity (weights)" : "Espresso Velocity Reading") + '</h4><div class="g-vlist">' + vel + '</div></div></div>' + srcLink(e.source);
+      '<div class="g-two g-two--wide"><div><h2 class="g-sub__h">' + (e.provisional ? "Global Top 15 · provisional ordering" : "Global Top 15 (Espresso Score)") + '</h2><div class="g-tablewrap" tabindex="0"><table class="g-table"><thead><tr><th>#</th><th>Country</th><th>Score</th></tr></thead><tbody>' + rows + '</tbody></table></div></div>' +
+      '<div><h2 class="g-sub__h">' + (e.drivers && e.drivers.length ? "The five drivers of velocity (weights)" : "Espresso Velocity Reading") + '</h2><div class="g-vlist">' + vel + '</div></div></div>' + srcLink(e.source);
   }
 
   /* ---------- 6 · NEXT ECONOMY ---------- */
@@ -216,7 +216,7 @@
       return '<tr><td class="g-name">' + esc(r.k) + '</td><td class="g-note2">' + esc(r.latest) + '</td><td>' + arrow(r.trend) + '</td><td class="g-mom">' + badge(r.reading, r.trend) + '</td></tr>';
     }).join("");
     return '<p class="g-note">' + esc(n.title) + ' · ' + esc(n.hypothesis) + ' · as of ' + esc(n.asOf) + '</p>' +
-      '<div class="g-tablewrap"><table class="g-table g-table--mkt"><thead><tr><th>Indicator</th><th>Latest</th><th></th><th>NERC reading</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
+      '<div class="g-tablewrap" tabindex="0"><table class="g-table g-table--mkt"><thead><tr><th>Indicator</th><th>Latest</th><th style="position:relative"><span style="position:absolute;left:0;top:0;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">Trend</span></th><th>NERC reading</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
       '<p class="g-foot">Full analysis (6 themes, key takeaways, implications) is published to <a href="/intelligence-library">The Velocity Edge</a>.</p>';
   }
 
@@ -231,8 +231,8 @@
   ];
 
   function build() {
-    var tabsHTML = TABS.map(function (t, i) { return '<button class="g-tab' + (i === 0 ? " is-active" : "") + '" data-tab="' + t.id + '">' + esc(t.label) + "</button>"; }).join("");
-    mount.innerHTML = '<div class="g-tabs" role="tablist">' + tabsHTML + '</div><div class="g-panel" id="gviPanel"></div>' +
+    var tabsHTML = TABS.map(function (t, i) { return '<button class="g-tab' + (i === 0 ? " is-active" : "") + '" role="tab" id="gtab-' + t.id + '" aria-controls="gviPanel" aria-selected="' + (i === 0) + '" data-tab="' + t.id + '">' + esc(t.label) + "</button>"; }).join("");
+    mount.innerHTML = '<div class="g-tabs" role="tablist" aria-label="Dashboard sections">' + tabsHTML + '</div><div class="g-panel" id="gviPanel" role="tabpanel" tabindex="0"></div>' +
       '<p class="g-foot">Source: ' + esc(D.meta.source) + ' · Data as of ' + esc(D.meta.updated) + ' · FDK proprietary readings on a 0–100 scale · illustrative, subject to revision.</p>';
     var panel = document.getElementById("gviPanel");
     function wireSub() {
@@ -249,8 +249,9 @@
     function show(id) { var t = TABS.filter(function (x) { return x.id === id; })[0] || TABS[0]; panel.innerHTML = t.render(); if (id === "rankings") wireSub(); }
     mount.querySelectorAll(".g-tab").forEach(function (btn) {
       btn.addEventListener("click", function () {
-        mount.querySelectorAll(".g-tab").forEach(function (b) { b.classList.remove("is-active"); });
-        btn.classList.add("is-active"); show(btn.getAttribute("data-tab"));
+        mount.querySelectorAll(".g-tab").forEach(function (b) { b.classList.remove("is-active"); b.setAttribute("aria-selected", "false"); });
+        btn.classList.add("is-active"); btn.setAttribute("aria-selected", "true");
+        panel.setAttribute("aria-labelledby", btn.id); show(btn.getAttribute("data-tab"));
       });
     });
     show(TABS[0].id);

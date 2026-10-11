@@ -734,8 +734,16 @@ button,.btn,.edm,.g-tab,.g-subtab,.door,.mm-tog,.snav__toggle,.themebtn,.snav__c
 .edm.on[data-f=midday] .dot{background:#2a1d00}
 .sdot--midday{background:var(--b-sun)}
 .ph--midday{background:var(--b-sun);box-shadow:0 0 0 2px rgba(245,184,46,.32)}
-.note--midday{--nc:#7a5000;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(245,184,46,.5);background:linear-gradient(160deg,#fffaeb,#fdf0c8)}
-:root:not(.day) .note--midday{--nc:#f5c451;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(245,184,46,.34);background:linear-gradient(160deg,rgba(245,184,46,.13),rgba(245,184,46,.02) 60%),var(--panel)}
+/* v26 · one card for every edition; only the badge symbol tells them apart (yellow sun = Midday Pulse) */
+:root .note.note--morning,:root .note.note--midday,:root .note.note--closing,:root .note.note--week{--nc:var(--b-peri);--nm:rgba(255,255,255,.74);--nd:rgba(255,255,255,.58);
+  color:#fff;border:1px solid rgba(124,139,255,.28);background:linear-gradient(160deg,#121a4d,#070a24)}
+:root .note.note--week .note__cat{background:none;-webkit-background-clip:border-box;background-clip:border-box;color:var(--nc)}
+/* In Focus is the special edition: a light, mint card (night: a mint-tinted card) */
+:root .note.note--focus{--nc:#0a6b36;--nm:#3d5a49;--nd:#53705f;color:#0b1f13;border:1px solid rgba(22,196,90,.42);background:linear-gradient(160deg,#f2fdf6,#d8f4e2)}
+:root:not(.day) .note.note--focus{--nc:#5ff09a;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(46,224,106,.4);background:linear-gradient(160deg,rgba(46,224,106,.16),rgba(46,224,106,.03) 60%),var(--panel)}
+/* cards stay aligned on hover: no lift, a quiet border and image response instead */
+#daily .note:hover{transform:none;translate:none}
+@media (hover:hover) and (pointer:fine){#daily .note:hover{border-color:rgba(174,184,255,.55);box-shadow:0 24px 50px -34px rgba(7,10,36,.7)}:root #daily .note.note--focus:hover{border-color:rgba(22,196,90,.7)}}
 /* notes that fed the dashboard today */
 .g-src{margin-top:18px;font-family:var(--f-mono);font-size:.75rem;color:var(--dim)}
 .g-src a{color:var(--blue-2);text-decoration:none;border-bottom:1px solid rgba(var(--glow),.35)}
@@ -1061,8 +1069,8 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 
 <div class="cring" id="cring" aria-hidden="true"></div>
 
-<script src="/posts.js?v=28cf2e385c"></script>
-<script src="/gvi-data.js?v=28cf2e385c"></script>
+<script src="/posts.js?v=cb53f7b5b4"></script>
+<script src="/gvi-data.js?v=cb53f7b5b4"></script>
 <script>
 // ---- The Daily from /posts.js: The Latest + the most recent note of each edition ----
 (function(){var P=(window.FDK_POSTS||[]).filter(function(p){var t=(p.title||'').trim();return t.length>10&&!/^in-?focus$/i.test(t)&&(p.slot||'').toLowerCase().indexOf('add this just')<0});
