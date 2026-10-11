@@ -19,18 +19,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/europes-great-banking-reset",
-    title: "Europe’s Great Banking Reset",
-    excerpt: "",
-    tag: "In Focus",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "October 11, 2026",
-    read: "12 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/in-focus-european-banking-watch",
     title: "In Focus: European Banking Watch",
     excerpt: "UniCredit versus Intesa Sanpaolo — two rival architectures for the future of European banking.",
@@ -2611,6 +2599,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
