@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-take-weekend-edition",
+    title: "Global Take: Weekend Edition",
+    excerpt: "Why the AI revolution will compress the adjustment period dramatically—and concentrate financial returns even as technology diffuses faster than ever.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 11, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/global-take-the-weekend-edition",
     title: "Global Take: The Weekend Edition",
     excerpt: "Why the coming deflationary boom may first trigger the most unforgiving capital repricing in a generation.",
