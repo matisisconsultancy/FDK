@@ -777,6 +777,81 @@ body.menu-open .demo,body.menu-open .demo-note{display:none}
   .cring{display:none!important}
 }
 
+
+
+/* ---- live strip above the tabs ---- */
+.lv-strip{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:10px;margin:0 0 26px}
+.lv-tile{position:relative;display:flex;flex-direction:column;gap:3px;text-align:left;min-width:0;padding:12px 12px 10px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--fg);cursor:pointer;font:inherit;overflow:hidden;transition:border-color .2s,transform 160ms var(--ease-out)}
+.lv-tile:active{transform:scale(.98)}
+.lv-tile:focus-visible{outline:2px solid var(--blue-2);outline-offset:2px}
+@media (hover:hover) and (pointer:fine){.lv-tile:hover{border-color:var(--line-2)}}
+.lv-tile__l{display:flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lv-tile__open{width:6px;height:6px;border-radius:50%;background:var(--green);flex:none;animation:lvPulse 1.6s ease-in-out infinite}
+.lv-tile__v{font-family:var(--f-mono);font-size:1rem;font-variant-numeric:tabular-nums;white-space:nowrap}
+.lv-tile__c{font-family:var(--f-mono);font-size:.72rem;white-space:nowrap}
+.lv-tile__sp{width:100%;height:22px;margin-top:4px}
+@media(max-width:1100px){.lv-strip{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:600px){.lv-strip{display:flex;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:none;margin-inline:calc(-1 * clamp(18px,5vw,48px));padding-inline:clamp(18px,5vw,48px)}.lv-strip::-webkit-scrollbar{display:none}.lv-tile{flex:0 0 46%;scroll-snap-align:start}}
+/* ---- live market panel ---- */
+.g-th-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.lv-head{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin:6px 0 16px}
+.lv-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#06240f;background:#2ee06a;border-radius:999px;padding:5px 12px 5px 10px}
+.lv-badge i{width:7px;height:7px;border-radius:50%;background:#06240f;animation:lvPulse 1.6s ease-in-out infinite}
+@keyframes lvPulse{0%,100%{opacity:1}50%{opacity:.25}}
+.lv-upd{font-family:var(--f-mono);font-size:.76rem;color:var(--muted)}
+.lv-upd b{color:var(--fg);font-weight:500}
+.lv-groups{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.lv-n{opacity:.6;margin-left:4px}
+.lv-table .g-name b{display:block;font-weight:500;color:var(--fg)}
+.lv-table .g-name small{display:block;font-family:var(--f-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);margin-top:2px}
+.lv-row{cursor:pointer;transition:background-color .2s}
+.lv-row:hover,.lv-row:focus-visible,.lv-row.is-open{background:rgba(var(--glow),.06)}
+.lv-name{all:unset;display:block;cursor:pointer;text-align:left}
+.lv-name:focus-visible{outline:2px solid var(--blue-2);outline-offset:4px;border-radius:4px}
+.lv-v{font-family:var(--f-mono);font-variant-numeric:tabular-nums;color:var(--fg);white-space:nowrap;font-size:.95rem}
+.lv-c{font-family:var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap;font-size:.84rem}
+.lv-c--up{color:var(--green)}.lv-c--down{color:var(--red)}.lv-c--flat{color:var(--dim)}
+.lv-t{width:120px}
+.vl-spark{display:block}
+.vl-spark__line{fill:none;stroke-width:1.6;vector-effect:non-scaling-stroke}
+.vl-spark--up .vl-spark__line{stroke:var(--green)}.vl-spark--down .vl-spark__line{stroke:var(--red)}
+.vl-spark__area{opacity:.12}.vl-spark--up .vl-spark__area{fill:var(--green)}.vl-spark--down .vl-spark__area{fill:var(--red)}
+.lv-s{white-space:nowrap;position:relative;padding-right:28px!important}
+.lv-st{font-family:var(--f-mono);font-size:.72rem;color:var(--dim)}
+.lv-st--open{color:var(--green);display:inline-flex;align-items:center;gap:6px}
+.lv-st--open i{width:6px;height:6px;border-radius:50%;background:currentColor;animation:lvPulse 1.6s ease-in-out infinite}
+.lv-st--stale{color:#b7791f}
+.lv-chev{position:absolute;right:10px;top:50%;width:7px;height:7px;border-right:1.5px solid var(--dim);border-bottom:1.5px solid var(--dim);transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease)}
+.lv-row.is-open .lv-chev{transform:translateY(-30%) rotate(225deg)}
+.lv-flash{animation:lvFlash 1.4s var(--ease)}
+@keyframes lvFlash{0%{background:rgba(46,224,106,.35)}100%{background:transparent}}
+.lv-detail td{padding:0!important;background:rgba(var(--glow),.04)}
+.lv-detail__in{padding:16px 18px 18px;animation:lvIn .35s var(--ease)}
+@keyframes lvIn{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+.lv-ranges{display:flex;gap:6px;margin-bottom:10px}
+.lv-range{font-family:var(--f-mono);font-size:.72rem;color:var(--muted);background:none;border:1px solid var(--line-2);border-radius:999px;padding:5px 11px;cursor:pointer}
+.lv-range.on{background:var(--blue);border-color:var(--blue);color:var(--blue-ink)}
+.lv-ranges__note{display:block;font-family:var(--f-mono);font-size:.7rem;color:var(--dim);margin-bottom:10px}
+.lv-chart{position:relative;height:180px;touch-action:pan-y}
+.lv-chart svg{width:100%;height:100%;display:block;overflow:visible}
+.lv-chart__line{fill:none;stroke-width:2;vector-effect:non-scaling-stroke}
+.lv-chart--up .lv-chart__line{stroke:var(--green)}.lv-chart--down .lv-chart__line{stroke:var(--red)}
+.lv-chart__area{opacity:.1}.lv-chart--up .lv-chart__area{fill:var(--green)}.lv-chart--down .lv-chart__area{fill:var(--red)}
+.lv-chart__x{stroke:var(--line-2);stroke-width:1;vector-effect:non-scaling-stroke}
+.lv-chart__dot{position:absolute;width:10px;height:10px;border-radius:50%;background:var(--fg);border:2px solid var(--bg);transform:translate(-50%,-50%);opacity:0;pointer-events:none;transition:opacity .15s}
+.lv-chart__hi,.lv-chart__lo{position:absolute;right:0;font-family:var(--f-mono);font-size:.68rem;color:var(--dim);background:var(--bg);padding:0 4px;border-radius:4px}
+.lv-chart__hi{top:0}.lv-chart__lo{bottom:0}
+.lv-chart__tip{position:absolute;top:-6px;width:170px;white-space:nowrap;text-align:center;font-family:var(--f-mono);font-size:.72rem;color:var(--fg);background:var(--panel);border:1px solid var(--line-2);border-radius:8px;padding:4px 6px;opacity:0;pointer-events:none;transition:opacity .15s}
+.lv-meta{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;margin-top:14px;font-size:.84rem;color:var(--muted)}
+.lv-src{font-family:var(--f-mono);font-size:.72rem;color:var(--dim)}
+.lv-52{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-mono);font-size:.74rem}
+.lv-52 em{font-style:normal;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;font-size:.66rem}
+.lv-52 b{font-weight:500;color:var(--fg)}
+.lv-52__bar{position:relative;width:110px;height:4px;border-radius:4px;background:var(--line-2)}
+.lv-52__bar i{position:absolute;top:50%;width:10px;height:10px;border-radius:50%;background:var(--blue-2);transform:translate(-50%,-50%)}
+.lv-foot{margin-top:14px}
+@media(max-width:700px){.lv-table{min-width:0!important;width:100%}.lv-t,.lv-s,.lv-table thead th:nth-child(4),.lv-table thead th:nth-child(5){display:none}.lv-table td,.lv-table th{padding-left:10px!important;padding-right:10px!important}.lv-v{font-size:.88rem}}
+@media(prefers-reduced-motion:reduce){.lv-badge i,.lv-st--open i,.lv-flash,.lv-detail__in{animation:none}}
 </style>
 <style>
 .nav__links a.is-here{color:var(--fg)}
@@ -843,7 +918,7 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 </section>
 
 <!-- DASHBOARD -->
-<div class="wrap dh__body"><div id="gviDash"></div></div>
+<div class="wrap dh__body"><div class="lv-strip" id="lvStrip" aria-label="Live market signals" hidden></div><div id="gviDash"></div></div>
 </main>
 
 <!-- FOOTER -->
@@ -855,7 +930,9 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 
 <div class="cring" id="cring" aria-hidden="true"></div>
 
-<script src="/gvi-data.js?v=733ef64f92"></script>
+<script src="/gvi-data.js?v=8f79f5fbab"></script>
+<script>window.VE_LIVE_FULL=true;</script>
+<script src="/ve-live.js?v=8f79f5fbab"></script>
 <script>
 // hero signal flow (same as home, lighter); colours follow the day/night theme
 (function(){var cv=document.getElementById('flow');if(!cv)return;var x=cv.getContext('2d'),w,h,P=[],reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
@@ -1052,14 +1129,98 @@ document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==
   }
 
   /* ---------- 2 · MARKET ---------- */
-  function panelMarket() {
+  /* ---------- 2 · MARKET — live public data (/ve-live.js feed, refreshed every 20 min) ---------- */
+  var MK = { group: "All", open: null, range: 66 };
+  var GROUPS = ["All", "Equities", "Rates", "Energy", "Commodities", "FX", "AI leaders", "Crypto", "Macro"];
+  function liveFeed() { return window.VELive && window.VELive.feed(); }
+  function staticMarket() {
     var m = D.market || {};
-    var rows = m.rows.map(function (r) {
+    var rows = (m.rows || []).map(function (r) {
       return '<tr><td class="g-name">' + esc(r.k) + '</td><td class="g-score"><span class="g-score__n ' + (r.trend === "down" ? "dn" : "") + '">' + esc(r.v) + '</span></td><td class="g-note2">' + esc(r.note) + '</td><td>' + arrowHTML(r.trend) + '</td></tr>';
     }).join("");
     return kind("Public market data", true) +
-      '<p class="g-note">Key numbers to watch · as of ' + niceDate(m.asOf) + ' · auto-updatable from a market data API</p>' +
-      '<div class="g-tablewrap"><table class="g-table"><thead><tr><th>Signal</th><th>Latest</th><th>Why it matters</th><th></th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+      '<p class="g-note">Key numbers to watch · as of ' + niceDate(m.asOf) + ' · connecting to the live feed…</p>' +
+      '<div class="g-tablewrap"><table class="g-table"><thead><tr><th>Signal</th><th>Latest</th><th>Why it matters</th><th><span class="g-th-sr">Trend</span></th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+  }
+  function statusHTML(x) {
+    if (x.stale) return '<span class="lv-st lv-st--stale" title="Source unavailable at the last refresh">last available</span>';
+    if (x.open === true) return '<span class="lv-st lv-st--open"><i></i>open</span>';
+    var d = x.asOf ? String(x.asOf).slice(0, 10) : "";
+    return '<span class="lv-st">' + (x.open === false ? "close · " : "") + esc(niceDate(d)) + '</span>';
+  }
+  function trail(x) { return (x.daily && x.daily.length > 2) ? x.daily.slice(-MK.range) : (x.intraday || []); }
+  function bigChart(x) {
+    var pts = trail(x).filter(function (p) { return p && p[1] != null; });
+    if (pts.length < 3) return '<p class="g-note">History builds up with every refresh — the chart appears after a few updates.</p>';
+    var W = 640, H = 180, vs = pts.map(function (p) { return p[1]; }), lo = Math.min.apply(null, vs), hi = Math.max.apply(null, vs), rg = (hi - lo) || 1, st = W / (pts.length - 1);
+    var Y = function (v) { return (H - 10 - ((v - lo) / rg) * (H - 24)).toFixed(1); };
+    var d = vs.map(function (v, i) { return (i ? "L" : "M") + (i * st).toFixed(1) + " " + Y(v); }).join("");
+    var up = vs[vs.length - 1] >= vs[0], dp = x.dp;
+    var f = function (v) { return window.VELive.fmt({ value: v, dp: dp, unit: x.unit }); };
+    return '<div class="lv-chart lv-chart--' + (up ? "up" : "down") + '" data-pts="' + esc(JSON.stringify(pts)) + '" data-lo="' + lo + '" data-hi="' + hi + '">' +
+      '<svg viewBox="0 0 ' + W + ' ' + H + '" preserveAspectRatio="none" role="img" aria-label="' + esc(x.label) + ' — ' + pts.length + ' points from ' + esc(pts[0][0]) + ' to ' + esc(pts[pts.length - 1][0]) + '">' +
+      '<path class="lv-chart__area" d="' + d + 'L' + W + ' ' + H + 'L0 ' + H + 'Z"/><path class="lv-chart__line" d="' + d + '"/>' +
+      '<line class="lv-chart__x" x1="0" x2="0" y1="0" y2="' + H + '" style="opacity:0"/></svg><span class="lv-chart__dot" aria-hidden="true"></span>' +
+      '<span class="lv-chart__hi">' + esc(f(hi)) + '</span><span class="lv-chart__lo">' + esc(f(lo)) + '</span>' +
+      '<span class="lv-chart__tip" aria-hidden="true"></span></div>';
+  }
+  function detailHTML(x) {
+    var r52 = (x.high52 != null && x.low52 != null && x.high52 > x.low52) ? Math.max(0, Math.min(100, (x.value - x.low52) / (x.high52 - x.low52) * 100)) : null;
+    var ranges = (x.daily && x.daily.length > 22) ? [[22, "1M"], [66, "3M"], [130, "6M"], [260, "1Y"]].filter(function (r) { return x.daily.length >= r[0] * 0.6; }) : [];
+    return '<div class="lv-detail__in">' +
+      (ranges.length ? '<div class="lv-ranges" role="toolbar" aria-label="Chart range">' + ranges.map(function (r) { return '<button type="button" class="lv-range' + (MK.range === r[0] ? " on" : "") + '" data-range="' + r[0] + '" aria-pressed="' + (MK.range === r[0]) + '">' + r[1] + '</button>'; }).join("") + '</div>' : '<span class="lv-ranges__note">Intraday trail · last 7 days</span>') +
+      bigChart(x) +
+      '<div class="lv-meta">' + (r52 != null ? '<span class="lv-52"><em>52-week range</em><b>' + esc(window.VELive.fmt({ value: x.low52, dp: x.dp, unit: x.unit })) + '</b><span class="lv-52__bar"><i style="left:' + r52.toFixed(1) + '%"></i></span><b>' + esc(window.VELive.fmt({ value: x.high52, dp: x.dp, unit: x.unit })) + '</b></span>' : "") +
+      '<span>' + esc(x.why || "") + '</span><span class="lv-src">Source: ' + esc(x.source || "") + (x.asOf ? ' · ' + esc(String(x.asOf).replace("T", " ").slice(0, 16)) + (String(x.asOf).length > 10 ? " UTC" : "") : "") + '</span></div></div>';
+  }
+  function panelMarket() {
+    var f = liveFeed();
+    if (!f) return staticMarket();
+    var L = window.VELive, have = {};
+    f.series.forEach(function (x) { have[x.group] = (have[x.group] || 0) + 1; });
+    var groups = GROUPS.filter(function (g) { return g === "All" || have[g]; });
+    if (groups.indexOf(MK.group) < 0) MK.group = "All";
+    var list = f.series.filter(function (x) { return MK.group === "All" || x.group === MK.group; });
+    var rows = list.map(function (x) {
+      var c = L.chg(x), open = MK.open === x.id;
+      return '<tr class="lv-row' + (open ? " is-open" : "") + '" data-id="' + esc(x.id) + '">' +
+        '<td class="g-name"><button type="button" class="lv-name" aria-expanded="' + open + '"' + (open ? ' aria-controls="lvd-' + esc(x.id) + '"' : "") + '><b>' + esc(x.label) + '</b><small>' + esc(x.group) + '</small></button></td>' +
+        '<td class="lv-v" data-v="' + esc(String(x.value)) + '">' + esc(L.fmt(x)) + '</td>' +
+        '<td class="lv-c lv-c--' + c.dir + '">' + (c.txt ? (c.dir === "up" ? "▲ " : c.dir === "down" ? "▼ " : "") + esc(c.txt) : "—") + '</td>' +
+        '<td class="lv-t">' + L.spark(trail(x).slice(-66), 112, 30) + '</td>' +
+        '<td class="lv-s">' + statusHTML(x) + '<span class="lv-chev" aria-hidden="true"></span></td></tr>' +
+        (open ? '<tr class="lv-detail" id="lvd-' + esc(x.id) + '"><td colspan="5">' + detailHTML(x) + '</td></tr>' : "");
+    }).join("");
+    var fresh = f.series.filter(function (x) { return !x.stale; }).length;
+    return kind("Live public data", true) +
+      '<div class="lv-head"><span class="lv-badge"><i></i>Live</span><span class="lv-upd">Updated <b id="lvAgo">' + esc(L.ago(f.updated)) + '</b> · refreshed every 20 minutes · ' + fresh + ' of ' + f.series.length + ' signals fresh · delayed quotes</span></div>' +
+      '<div class="lv-groups" role="toolbar" aria-label="Filter signals">' + groups.map(function (g) { return '<button type="button" class="g-subtab' + (MK.group === g ? " on" : "") + '" data-group="' + esc(g) + '" aria-pressed="' + (MK.group === g) + '">' + esc(g) + (g === "All" ? "" : ' <span class="lv-n">' + have[g] + '</span>') + '</button>'; }).join("") + '</div>' +
+      '<div class="g-tablewrap"><table class="g-table lv-table"><thead><tr><th>Signal</th><th>Latest</th><th>Change</th><th>Trend</th><th>Status</th></tr></thead><tbody>' + rows + '</tbody></table></div>' +
+      '<p class="g-note lv-foot">Sources: ' + esc((f.sources || []).join(" · ")) + '. Tap a signal for its history. FDK proprietary indices (GVI, Espresso, velocity readings) come from Francesco\'s notes.</p>';
+  }
+  /* market panel interactions: group filter, open a row, chart range, chart crosshair */
+  function wireMarket(panel, rerender) {
+    panel.querySelectorAll("[data-group]").forEach(function (b) { b.addEventListener("click", function () { MK.group = b.getAttribute("data-group"); MK.open = null; rerender(); }); });
+    panel.querySelectorAll(".lv-row").forEach(function (r) {
+      function toggle() { var id = r.getAttribute("data-id"); MK.open = MK.open === id ? null : id; rerender(id); }
+      r.addEventListener("click", toggle);   /* the name button gives keyboard and screen readers the same switch */
+    });
+    panel.querySelectorAll("[data-range]").forEach(function (b) { b.addEventListener("click", function (e) { e.stopPropagation(); MK.range = +b.getAttribute("data-range"); rerender(MK.open); }); });
+    panel.querySelectorAll(".lv-chart").forEach(function (c) {
+      var pts = JSON.parse(c.getAttribute("data-pts")), lo = +c.getAttribute("data-lo"), hi = +c.getAttribute("data-hi"), rg = (hi - lo) || 1;
+      var svg = c.querySelector("svg"), xl = c.querySelector(".lv-chart__x"), dot = c.querySelector(".lv-chart__dot"), tip = c.querySelector(".lv-chart__tip");
+      var id = c.closest(".lv-detail").previousElementSibling.getAttribute("data-id"), x = window.VELive.get(id) || {};
+      function at(ev) {
+        var b = svg.getBoundingClientRect(), i = Math.round(Math.max(0, Math.min(1, (ev.clientX - b.left) / b.width)) * (pts.length - 1)), p = pts[i];
+        var X = i * 640 / (pts.length - 1), Yv = 180 - 10 - ((p[1] - lo) / rg) * (180 - 24);
+        xl.setAttribute("x1", X); xl.setAttribute("x2", X); xl.style.opacity = 1;
+        dot.style.left = (X / 640 * 100) + "%"; dot.style.top = (Yv / 180 * 100) + "%"; dot.style.opacity = 1;
+        tip.textContent = window.VELive.fmt({ value: p[1], dp: x.dp, unit: x.unit }) + " · " + String(p[0]).replace("T", " ").slice(0, 16);
+        tip.style.left = Math.max(0, Math.min(b.width - 170, ev.clientX - b.left - 85)) + "px"; tip.style.opacity = 1;
+      }
+      c.addEventListener("pointermove", at); c.addEventListener("pointerdown", at);
+      c.addEventListener("pointerleave", function () { xl.style.opacity = 0; dot.style.opacity = 0; tip.style.opacity = 0; });
+    });
   }
 
   /* ---------- 3 · VELOCITY ---------- */
@@ -1217,13 +1378,61 @@ document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==
       });
       showSub(RANK_SUB[0].id);
     }
-    function show(id) {
+    var current = TABS[0].id;
+    function show(id, quiet) {
       var t = TABS.filter(function (x) { return x.id === id; })[0] || TABS[0];
+      current = t.id;
       panel.setAttribute("aria-labelledby", "gtab-" + t.id);
       panel.innerHTML = t.render();
-      panel.classList.remove("g-panel--in"); void panel.offsetWidth; panel.classList.add("g-panel--in");
+      if (!quiet) { panel.classList.remove("g-panel--in"); void panel.offsetWidth; panel.classList.add("g-panel--in"); }
       if (id === "rankings") wireSub();
+      if (id === "market") wireMarket(panel, function (focusId) {
+        var keep = panel.querySelector(".g-tablewrap"), sx = keep ? keep.scrollLeft : 0;
+        show("market", true);
+        var w = panel.querySelector(".g-tablewrap"); if (w) w.scrollLeft = sx;
+        if (focusId) { var r = panel.querySelector('.lv-row[data-id="' + focusId + '"] .lv-name'); if (r) r.focus({ preventScroll: true }); }
+      });
       animate(panel);
+    }
+    /* live feed: refresh the chip, and the market panel in place (values that moved flash) */
+    if (window.VELive) {
+      var prevV = {};
+      var STRIP = ["spx", "ixic", "sx5e", "us10y", "brent", "gold", "eurusd", "btc"];
+      var SHORT = { spx: "S&P 500", ixic: "Nasdaq", sx5e: "Euro Stoxx 50", us10y: "US 10Y", brent: "Brent", gold: "Gold", eurusd: "EUR/USD", btc: "Bitcoin" };
+      function strip() {
+        var el = document.getElementById("lvStrip"); if (!el) return;
+        var xs = STRIP.map(function (id) { return window.VELive.get(id); }).filter(function (x) { return x && x.value != null; });
+        if (!xs.length) return;
+        el.innerHTML = xs.map(function (x) {
+          var c = window.VELive.chg(x);
+          return '<button type="button" class="lv-tile" data-open="' + esc(x.id) + '" aria-label="' + esc(x.label + " " + window.VELive.fmt(x) + " " + c.txt) + '">' +
+            '<span class="lv-tile__l">' + esc(SHORT[x.id] || x.label) + (x.open ? '<i class="lv-tile__open" title="market open"></i>' : "") + '</span>' +
+            '<span class="lv-tile__v">' + esc(window.VELive.fmt(x)) + '</span>' +
+            '<span class="lv-tile__c lv-c--' + c.dir + '">' + (c.txt ? (c.dir === "up" ? "▲ " : c.dir === "down" ? "▼ " : "") + esc(c.txt) : "&nbsp;") + '</span>' +
+            window.VELive.spark((x.daily || []).slice(-22), 120, 26, "lv-tile__sp") + '</button>';
+        }).join("");
+        el.hidden = false;
+      }
+      /* a tile opens that signal in the Market tab */
+      document.getElementById("lvStrip").addEventListener("click", function (e) {
+        var b = e.target.closest("[data-open]"); if (!b) return;
+        var x = window.VELive.get(b.getAttribute("data-open")); MK.open = x ? x.id : null; MK.group = "All";
+        var t = document.getElementById("gtab-market"); if (t) t.click();
+        var r = panel.querySelector('.lv-row[data-id="' + MK.open + '"]'); if (r) r.scrollIntoView({ block: "center", behavior: matchMedia("(prefers-reduced-motion:reduce)").matches ? "auto" : "smooth" });
+      });
+      window.VELive.on(function (f) {
+        strip();
+        var a = document.getElementById("gviAsOf");
+        if (a) a.textContent = "Live · market data " + window.VELive.ago(f.updated);
+        if (current === "market") show("market", true);
+        panel.querySelectorAll(".lv-v[data-v]").forEach(function (td) {
+          var id = td.parentNode.getAttribute("data-id"), v = td.getAttribute("data-v");
+          if (prevV[id] != null && prevV[id] !== v) { td.classList.remove("lv-flash"); void td.offsetWidth; td.classList.add("lv-flash"); }
+          prevV[id] = v;
+        });
+      });
+      setInterval(function () { var f = window.VELive.feed(), el = document.getElementById("lvAgo"), a = document.getElementById("gviAsOf");
+        if (!f) return; if (el) el.textContent = window.VELive.ago(f.updated); if (a) a.textContent = "Live · market data " + window.VELive.ago(f.updated); }, 30000);
     }
     function select(btn, focus) {
       tabs.forEach(function (b) { var on = b === btn; b.classList.toggle("is-active", on); b.setAttribute("aria-selected", String(on)); b.tabIndex = on ? 0 : -1; });

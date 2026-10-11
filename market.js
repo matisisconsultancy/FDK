@@ -3,27 +3,32 @@
    - Elegant "pill" chips per indicator.
    - Smooth, continuous transform-based marquee motion (like the
      original brand marquee), AND finger-draggable / swipeable.
-   - Live data via Twelve Data (free key). Until a key is set it
-     shows clearly-marked sample values so the layout looks right.
+   - Live data from the shared FDK feed (live-data/market.json,
+     refreshed every 20 minutes by GitHub Actions). If it cannot be
+     reached it shows clearly-marked sample values.
    ============================================================ */
 (function () {
   "use strict";
 
   var CFG = {
-    // ← Paste your FREE Twelve Data API key (twelvedata.com → Dashboard → API Key)
-    key: "348570cac4d04db0a36e15bc8b4f8833",
-    refreshMs: 90000,
-    cacheMs: 60000,
+    /* One shared feed for every page, refreshed every 20 minutes by
+       .github/workflows/live-market.yml — no market API is called from the
+       browser, so the free quotas hold whatever the traffic. */
+    feed: "https://raw.githubusercontent.com/matisisconsultancy/FDK/live-data/ticker.json",
+    refreshMs: 120000,
+    cacheMs: 600000,
     speed: 0.045,   // px per ms (~45px/s) — matches the brand marquee feel
     items: [
-      { s: "WTI/USD",   l: "Oil · WTI",   dp: 2, d: 78.42,  c: 0.82 },
-      { s: "BRENT/USD", l: "Brent",       dp: 2, d: 82.15,  c: 0.64 },
-      { s: "EUR/USD",   l: "EUR/USD",     dp: 4, d: 1.0842, c: -0.18 },
-      { s: "XAU/USD",   l: "Gold",        dp: 2, d: 2338.40, c: 0.42 },
-      { s: "BTC/USD",   l: "Bitcoin",     dp: 0, d: 67240,  c: 1.90 },
-      { s: "NVDA",      l: "Nvidia",      dp: 2, d: 126.36, c: 1.12 },
-      { s: "SPX",       l: "S&P 500",     dp: 0, d: 5460,   c: 0.31 },
-      { s: "NDX",       l: "Nasdaq 100",  dp: 0, d: 19180,  c: 0.44 }
+      { s: "spx",    l: "S&P 500",     dp: 0, d: 5460,   c: 0.31 },
+      { s: "ixic",   l: "Nasdaq",      dp: 0, d: 19180,  c: 0.44 },
+      { s: "sx5e",   l: "Euro Stoxx 50", dp: 0, d: 5100, c: 0.20 },
+      { s: "us10y",  l: "US 10Y",      dp: 2, d: 4.25,   c: 0.02, rate: true },
+      { s: "brent",  l: "Brent",       dp: 2, d: 82.15,  c: 0.64 },
+      { s: "wti",    l: "Oil · WTI",   dp: 2, d: 78.42,  c: 0.82 },
+      { s: "eurusd", l: "EUR/USD",     dp: 4, d: 1.0842, c: -0.18 },
+      { s: "gold",   l: "Gold",        dp: 2, d: 2338.40, c: 0.42 },
+      { s: "btc",    l: "Bitcoin",     dp: 0, d: 67240,  c: 1.90 },
+      { s: "nvda",   l: "Nvidia",      dp: 2, d: 126.36, c: 1.12 }
     ]
   };
 
@@ -41,10 +46,11 @@
     var dir = chg > 0 ? "up" : (chg < 0 ? "down" : "flat");
     var arrow = chg > 0 ? "▲" : (chg < 0 ? "▼" : "•");
     var sign = chg > 0 ? "+" : "";
+    var ch = chg == null ? "" : (it.rate ? sign + Math.round(chg) + " bp" : sign + Number(chg).toFixed(2) + "%");
     return '<span class="mpill">' +
       '<span class="mpill__l">' + it.l + '</span>' +
-      '<span class="mpill__px">' + fmt(price, it.dp) + '</span>' +
-      '<span class="mpill__ch mpill__ch--' + dir + '">' + arrow + ' ' + sign + Number(chg).toFixed(2) + '%</span>' +
+      '<span class="mpill__px">' + fmt(price, it.dp) + (it.rate ? "%" : "") + '</span>' +
+      (ch ? '<span class="mpill__ch mpill__ch--' + dir + '">' + arrow + ' ' + ch + '</span>' : "") +
       '</span>';
   }
   function render(map, live) {
@@ -64,34 +70,33 @@
   }
 
   function getCache() {
-    try { var j = JSON.parse(localStorage.getItem("fdk_mkt") || "null"); if (j && Date.now() - j.t < CFG.cacheMs) return j.m; } catch (e) {}
+    try { var j = JSON.parse(localStorage.getItem("fdk_mkt2") || "null"); if (j && Date.now() - j.t < CFG.cacheMs) return j.m; } catch (e) {}
     return null;
   }
-  function setCache(m) { try { localStorage.setItem("fdk_mkt", JSON.stringify({ t: Date.now(), m: m })); } catch (e) {} }
+  function setCache(m) { try { localStorage.setItem("fdk_mkt2", JSON.stringify({ t: Date.now(), m: m })); } catch (e) {} }
 
-  function parse(data) {
-    var map = {};
+  function parse(feed) {
+    var map = {}, by = {};
+    (feed && feed.series || []).forEach(function (x) { by[x.id] = x; });
     CFG.items.forEach(function (it) {
-      var q = data[it.s] || (data.symbol === it.s ? data : null);
-      if (q && q.close != null && q.percent_change != null && !q.code) {
-        map[it.s] = { price: parseFloat(q.close), chg: parseFloat(q.percent_change) };
-      }
+      var x = by[it.s];
+      if (!x || x.value == null) return;
+      var chg = it.rate ? (x.changeBp != null ? x.changeBp : null) : x.changePct;
+      map[it.s] = { price: x.value, chg: chg };
     });
     return map;
   }
   function fetchLive() {
-    if (!CFG.key || CFG.key === "YOUR_TWELVEDATA_KEY") { render(null, false); return; }
     var cached = getCache();
-    if (cached) { render(cached, true); return; }
-    var syms = CFG.items.map(function (i) { return i.s; }).join(",");
-    fetch("https://api.twelvedata.com/quote?symbol=" + encodeURIComponent(syms) + "&apikey=" + CFG.key)
-      .then(function (r) { return r.json(); })
+    if (cached) render(cached, true);
+    fetch(CFG.feed + "?m=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
       .then(function (d) {
         var map = parse(d);
         if (Object.keys(map).length) { setCache(map); render(map, true); }
-        else render(null, false);
+        else if (!cached) render(null, false);
       })
-      .catch(function () { render(null, false); });
+      .catch(function () { if (!cached) render(null, false); });
   }
 
   /* ---- smooth transform marquee + finger drag ---- */

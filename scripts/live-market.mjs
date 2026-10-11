@@ -138,7 +138,8 @@ async function yahoo(sym) {
   return {
     value, prev, change: prev != null ? round(value - prev, 6) : null, changePct: prev ? round((value / prev - 1) * 100, 2) : null,
     asOf: m.regularMarketTime ? new Date(m.regularMarketTime * 1000).toISOString() : null,
-    open: p ? now >= p.start && now < p.end : null,
+    /* "open" only when the session is running AND the quote is fresh (futures report odd sessions at weekends) */
+    open: p ? now >= p.start && now < p.end && m.regularMarketTime && now - m.regularMarketTime < 2700 : null,
     high52: num(m.fiftyTwoWeekHigh), low52: num(m.fiftyTwoWeekLow), daily: daily.slice(-260),
   };
 }
@@ -281,7 +282,7 @@ if (s2 && s10) {
   const m2 = new Map(s2.daily); const pts = s10.daily.filter(([d]) => m2.has(d)).map(([d, v]) => [d, Math.round((v - m2.get(d)) * 100)]);
   if (pts.length >= 2) {
     const [d1, v1] = pts[pts.length - 1], [, v0] = pts[pts.length - 2];
-    series.push({ id: "curve", label: "U.S. curve 10Y−2Y", group: "Rates", unit: "bp", dp: 0, why: "Recession signal and the price of time", value: v1, prev: v0, change: v1 - v0, changePct: null, changeBp: v1 - v0, asOf: d1, source: "U.S. Treasury (derived)", stale: s10.stale, checkedAt: NOW.toISOString(), daily: pts, intraday: [] });
+    series.push({ id: "curve", label: "U.S. curve 10Y−2Y", group: "Rates", unit: "bp", dp: 0, why: "Recession signal and the price of time", value: v1, prev: v0, change: v1 - v0, changePct: null, changeBp: v1 - v0, asOf: d1, source: "FRED · St. Louis Fed (derived)", stale: s10.stale, checkedAt: NOW.toISOString(), daily: pts, intraday: [] });
   }
 }
 
@@ -294,6 +295,9 @@ const feed = {
 };
 fs.mkdirSync(path.dirname(path.resolve(OUT)), { recursive: true });
 fs.writeFileSync(OUT, JSON.stringify(feed));
+/* a light twin for tickers on every page: latest values only, no history */
+const lite = { ...feed, series: series.map(({ daily, intraday, dailyAt, why, ...x }) => x) };
+fs.writeFileSync(path.join(path.dirname(path.resolve(OUT)), "ticker.json"), JSON.stringify(lite));
 log(`✓ live feed: ${series.length} series (${series.filter((s) => !s.stale).length} fresh, ${series.filter((s) => s.stale).length} carried) → ${OUT}`);
 if (errors.length) log(`  ${errors.length} source issue(s):\n  - ` + errors.join("\n  - "));
 if (process.env.GITHUB_STEP_SUMMARY) {

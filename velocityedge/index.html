@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#04070e" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/velocityedge/ve.css?v=733ef64f92" />
+  <link rel="stylesheet" href="/velocityedge/ve.css?v=8f79f5fbab" />
 </head>
 <body>
 <script>(function(){var m=/^#tab-([\w-]+)$/.exec(location.hash||'');if(!m)return;var id=m[1];
@@ -209,8 +209,9 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 
 <div class="cring" id="cring" aria-hidden="true"></div>
 
-<script src="/posts.js?v=733ef64f92"></script>
-<script src="/gvi-data.js?v=733ef64f92"></script>
+<script src="/posts.js?v=8f79f5fbab"></script>
+<script src="/gvi-data.js?v=8f79f5fbab"></script>
+<script src="/ve-live.js?v=8f79f5fbab"></script>
 <script>
 // ---- The Daily from /posts.js: The Latest + the most recent note of each edition ----
 (function(){var P=(window.FDK_POSTS||[]).filter(function(p){var t=(p.title||'').trim();return t.length>10&&!/^in-?focus$/i.test(t)&&(p.slot||'').toLowerCase().indexOf('add this just')<0});
@@ -267,21 +268,17 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 function tick(){var d=new Date(),h=d.getHours();document.getElementById('greet').textContent=h>=5&&h<12?'Good morning':h>=12&&h<18?'Good afternoon':h>=18&&h<22?'Good evening':'Working late';document.getElementById('clk').textContent=d.toLocaleTimeString('en-GB')}
 tick();setInterval(tick,1000);
 
-// ticker
-(function(){var el=document.getElementById('mkt');if(!el)return;
- var KEY='348570cac4d04db0a36e15bc8b4f8833',IT=[{s:'WTI/USD',l:'WTI',dp:2},{s:'BRENT/USD',l:'BRENT',dp:2},{s:'EUR/USD',l:'EUR/USD',dp:4},{s:'XAU/USD',l:'GOLD',dp:2},{s:'BTC/USD',l:'BTC',dp:0},{s:'NVDA',l:'NVDA',dp:2},{s:'SPX',l:'S&P 500',dp:0},{s:'NDX',l:'NASDAQ 100',dp:0}];
- var SAMPLE={'WTI/USD':[78.42,.82],'BRENT/USD':[82.15,.64],'EUR/USD':[1.0842,-.18],'XAU/USD':[2338.4,.42],'BTC/USD':[67240,1.9],'NVDA':[126.36,1.12],'SPX':[5460,.31],'NDX':[19180,.44]};
- function fmt(n,dp){return Number(n).toLocaleString('en-US',{minimumFractionDigits:dp,maximumFractionDigits:dp})}
- function render(map,live){var h=live?'':'<span class="pill"><b class="tk">Sample data</b></span>';
-  IT.forEach(function(it){var q=map&&map[it.s];if(live&&!q)return;var p=q?q.price:SAMPLE[it.s][0],c=q?q.chg:SAMPLE[it.s][1],up=c>=0;
-   h+='<span class="pill"><b class="tk">'+it.l+'</b> '+fmt(p,it.dp)+' <b class="'+(up?'up':'down')+'">'+(up?'▲':'▼')+' '+(up?'+':'')+Number(c).toFixed(2)+'%</b></span>'});
-  el.innerHTML=h+h}
- var cached=null;try{var j=JSON.parse(localStorage.getItem('fdk_mkt')||'null');if(j&&Date.now()-j.t<60000)cached=j.m}catch(e){}
- if(cached){render(cached,true);return}
- render(null,false);
- fetch('https://api.twelvedata.com/quote?symbol='+encodeURIComponent(IT.map(function(i){return i.s}).join(','))+'&apikey='+KEY).then(function(r){return r.json()}).then(function(d){var map={};
-  IT.forEach(function(it){var q=d[it.s]||(d.symbol===it.s?d:null);if(q&&q.close!=null&&q.percent_change!=null&&!q.code)map[it.s]={price:parseFloat(q.close),chg:parseFloat(q.percent_change)}});
-  if(Object.keys(map).length){try{localStorage.setItem('fdk_mkt',JSON.stringify({t:Date.now(),m:map}))}catch(e){}render(map,true)}}).catch(function(){});})();
+// ticker + gateway market rail: the shared live feed (/ve-live.js), refreshed every 20 minutes
+(function(){var el=document.getElementById('mkt');if(!el||!window.VELive)return;
+ var IDS=['spx','ixic','sx5e','dax','ftsemib','us10y','brent','wti','gold','eurusd','btc','nvda','vix'];
+ var SHORT={spx:'S&P 500',ixic:'NASDAQ',sx5e:'EURO STOXX 50',dax:'DAX',ftsemib:'FTSE MIB',us10y:'US 10Y',brent:'BRENT',wti:'WTI',gold:'GOLD',eurusd:'EUR/USD',btc:'BTC',nvda:'NVDA',vix:'VIX'};
+ function esc(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+ function pill(x){var c=VELive.chg(x),dir=c.dir==='down'?'down':'up';return '<span class="pill"><b class="tk">'+esc(SHORT[x.id]||x.label)+'</b> '+esc(VELive.fmt(x))+(c.txt?' <b class="'+dir+'">'+(c.dir==='down'?'▼':c.dir==='up'?'▲':'•')+' '+esc(c.txt)+'</b>':'')+'</span>'}
+ VELive.on(function(f){var xs=IDS.map(function(id){return VELive.get(id)}).filter(function(x){return x&&x.value!=null});if(!xs.length)return;
+  var h='<span class="pill"><b class="tk">Live</b> '+esc(VELive.ago(f.updated))+'</span>'+xs.map(pill).join('');el.innerHTML=h+h;
+  var g=document.getElementById('gate'),R=g&&g.querySelectorAll('.rail');if(!R||!R[0])return;
+  var r1=xs.map(function(x){var c=VELive.chg(x);return '<span><em>'+esc(x.label)+'</em><b>'+esc(VELive.fmt(x))+'</b>'+(c.dir==='up'?'<i class="up">▲</i>':c.dir==='down'?'<i class="dn">▼</i>':'<i class="fl">■</i>')+(c.txt?'<small>'+esc(c.txt)+'</small>':'')+'</span>'}).join('');
+  R[0].innerHTML=r1+r1;});})();
 
 
 
