@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-pervasive",
+    title: "The Age of Pervasive",
+    excerpt: "Apple, Meta and Agentic AI mark the start of the Age of Pervasive Intelligence — and a new global contest for economic power.",
+    tag: "In Focus · Intelligence",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-corporate-intelligence-2026-10-12",
     title: "Global Corporate Intelligence",
     excerpt: "As innovation accelerates and capital turns selective, the GVI benchmark maps who is creating the Next Economy — and who is accumulating commitments faster than advantage.",
