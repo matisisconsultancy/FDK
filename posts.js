@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/two-consequential-developments-since-9-october",
+    title: "Two Consequential Developments Since 9 October",
+    excerpt: "Rotterdam lands its first anchor AI customer while Europe's telecoms press Brussels for spectrum reform.",
+    tag: "The Close · AI Infrastructure",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "5 min read",
+    time: "18:20",
+    kind: "night"
+  },
+  {
     url: "/the-age-of-pervasive-intelligence",
     title: "The Age of Pervasive Intelligence",
     excerpt: "Apple, Meta and agentic AI mark the start of a new global contest for technological and economic power.",
