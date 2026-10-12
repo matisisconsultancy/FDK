@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-08
 date: October 8, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 05:16
+format: ai
 tag: Capital
 dek: The AI Supercycle has entered a new phase: intelligence infrastructure is beginning to **compete directly with governments** for ==long-duration capital==.
 epigraph: The world is not running out of intelligence. It is discovering that financing intelligence has a cost for everyone else.

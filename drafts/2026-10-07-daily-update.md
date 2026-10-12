@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-07
 date: October 7, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 04:55
+format: ai
 tag: Capital
 dek: The world is announcing AI capacity faster than it is converting that capacity into **measurable economic output** — and the GVI now rewards ==execution, not announcements==.
 epigraph: Intelligence will become abundant. Execution will remain scarce. Own the scarcity.

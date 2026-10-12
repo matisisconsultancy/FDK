@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-12
 date: October 12, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 07:16
+format: ai
 tag: Capital
 dek: The AI Supercycle enters the **age of strategic infrastructure**, where the next advantage belongs not to those who build the most intelligence, but to those who can keep it operating—and ==earning==—under adverse conditions.
 epigraph: Intelligence creates potential. Resilience preserves its value. Productivity determines its return.

@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-09-30
 date: September 30, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: The AI Supercycle is not slowing — but its **cost of capital is rising faster than its cost of intelligence is falling**, and that ==changes everything==.
 epigraph: Intelligence is getting cheaper. Capital is getting more expensive. The winners will own the spread.

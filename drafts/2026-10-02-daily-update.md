@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-02
 date: October 2, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: Global productive velocity is **accelerating** just as the financing architecture behind the AI Supercycle is being ==repriced==.
 epigraph: The first AI winners sold intelligence. The next will prove that intelligence is bankable.

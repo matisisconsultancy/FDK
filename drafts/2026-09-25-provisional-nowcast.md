@@ -1,8 +1,10 @@
 ---
-title: Provisional Nowcast
-slug: provisional-nowcast
+title: GVI Provisional Nowcast
+slug: gvi-provisional-nowcast-2026-09-25
 date: September 25, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: The AI Supercycle is no longer constrained by demand — it is increasingly constrained by the ==price of capital and the availability of power==.
 epigraph: The scarce asset is not simply compute; it is financeable compute.

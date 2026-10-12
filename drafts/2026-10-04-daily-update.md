@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-04
 date: October 4, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: The AI cycle is approaching a transition from **capital formation** to ==economic proof== — and the next scarce asset is not intelligence, but the evidence that intelligence earns its cost of capital.
 epigraph: The next phase will not be decided by how much intelligence the world can build, but by how quickly it can pay for itself.

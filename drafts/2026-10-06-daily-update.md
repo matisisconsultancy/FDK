@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-06
 date: October 6, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: Growth is holding, but the price of growth is not — the AI Supercycle is running into the ==cost of capital==.
 epigraph: The next AI winners will not own the most intelligence. They will own the widest productivity spread.

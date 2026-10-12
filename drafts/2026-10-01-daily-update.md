@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-01
 date: October 1, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Macro
 dek: AI demand is now transmitting visibly from compute into **exports, factories, memory, networking and power**, even as the global cost of capital stays ==restrictive==.
 epigraph: The first AI fortune was made by building intelligence. The next will be made by owning what intelligence cannot scale without.

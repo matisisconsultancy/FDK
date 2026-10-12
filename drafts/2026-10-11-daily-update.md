@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-11
 date: October 11, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:19
+format: ai
 tag: Capital
 dek: AI is accelerating global trade, but the next Great Split will be decided by **who captures the value** — not simply ==who produces it==.
 epigraph: The next scarcity is not intelligence. It is ownership of the value intelligence creates.

@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-10
 date: October 10, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 05:02
+format: ai
 tag: Macro
 dek: The next Great Split is moving from financial markets into the industrial economy, where **capital and intelligence are abundant** but the ability to convert them into ==productive output== is becoming sharply uneven.
 epigraph: Capital creates potential. Intelligence creates capability. Industrial productivity creates wealth.

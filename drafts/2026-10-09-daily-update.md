@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-10-09
 date: October 9, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 06:20
+format: ai
 tag: Capital
 dek: Intelligence is becoming abundant; the ==capital to industrialise it== is becoming increasingly **concentrated**.
 epigraph: Intelligence is becoming abundant. The capital to turn it into power is not. Own the conversion.

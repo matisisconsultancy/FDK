@@ -2,7 +2,9 @@
 title: Global Corporate Intelligence
 slug: global-corporate-intelligence
 date: October 11, 2026
-slot: FDK GVI Corporate Benchmark
+slot: GVI
+time: 08:21
+format: ai
 tag: Capital
 dek: Record profits, expensive capital and a new corporate pecking order are separating the companies converting technological acceleration into ==lasting economic power== from those discovering that investment alone no longer guarantees advantage.
 epigraph: The world is not running out of innovation. It is entering an era in which innovation must justify its cost of capital.

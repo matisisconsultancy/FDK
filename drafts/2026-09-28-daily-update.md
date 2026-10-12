@@ -1,8 +1,10 @@
 ---
-title: Daily Update
-slug: daily-update
+title: GVI Daily Update
+slug: gvi-daily-update-2026-09-28
 date: September 28, 2026
-slot: FDK Global Velocity Index
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: AI velocity remains strong, but the ==financial hurdle is rising faster== — and the next phase will reward those who can **convert intelligence into returns**.
 epigraph: The next winners will not build intelligence fastest. They will convert it into returns fastest.

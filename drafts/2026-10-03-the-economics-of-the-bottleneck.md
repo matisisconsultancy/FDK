@@ -2,7 +2,9 @@
 title: The Economics of the Bottleneck
 slug: the-economics-of-the-bottleneck
 date: October 3, 2026
-slot: FDK GVI Corporate Benchmark
+slot: GVI
+time: 08:00
+format: ai
 tag: Capital
 dek: Friday's evidence did not overturn the ranking — it **strengthened the thesis behind it**, as the AI economy shifts from model superiority toward ==scarce physical capacity, control layers and financial endurance==.
 epigraph: Scarcity creates the advantage. Resilience keeps it. Cash proves it.
