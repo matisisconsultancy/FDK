@@ -1,28 +1,33 @@
 name: Live market feed — FDK Velocity Dashboard
 
 # Refreshes every public number on the dashboard and writes one file,
-# live-data:market.json, that every page reads (no market API is called from
-# a visitor's browser, so free quotas hold whatever the traffic).
-# It lives on its own branch so the site is not redeployed every 20 minutes.
+# live-data:market.json (+ the light ticker.json), that every page reads — no
+# market API is called from a visitor's browser, so free quotas hold whatever
+# the traffic. It lives on its own branch so the site is not redeployed.
+#
+# GitHub skips many scheduled runs at busy times, so a run does not refresh
+# once and stop: it keeps the feed fresh for up to ~5h50m (every 15 minutes
+# while markets trade — weekdays 06:00–22:00 UTC — hourly otherwise). Anchors
+# every 3 hours hand over to each other (a newer run replaces the older), so a
+# few skipped schedules never leave the feed stale.
 
 on:
   schedule:
-    - cron: "*/20 6-21 * * 1-5"      # weekdays, European open to U.S. close (UTC)
-    - cron: "5 0-5,22,23 * * 1-5"    # weekdays overnight: hourly
-    - cron: "15 */3 * * 0,6"         # weekend: crypto, yields carried
-  push:                               # a change to the feed itself runs it at once
+    - cron: "7 */3 * * *"             # anchors at 00:07, 03:07, … UTC (off-peak minute)
+    - cron: "37 7,13,19 * * 1-5"      # spare anchors on weekdays
+  push:                               # a change to the feed itself runs it once at once
     branches: [claude/eager-carson-vjorjg]
     paths: [scripts/live-market.mjs, .github/workflows/live-market.yml]
   workflow_dispatch:
     inputs:
       probe:
-        description: "Only list which Twelve Data symbols the key covers"
+        description: "Only list which sources answer for each series"
         type: boolean
         default: false
 
 concurrency:
-  group: live-market
-  cancel-in-progress: false
+  group: live-market-${{ github.event_name == 'schedule' && 'loop' || 'once' }}
+  cancel-in-progress: ${{ github.event_name == 'schedule' }}
 
 permissions:
   contents: write
@@ -30,7 +35,7 @@ permissions:
 jobs:
   feed:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 355
     steps:
       - name: Checkout site (scripts)
         uses: actions/checkout@v4
@@ -54,23 +59,31 @@ jobs:
           TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY || secrets.TWELVEDATA_API_KEY }}
         run: node site/scripts/live-market.mjs --probe
 
-      - name: Refresh feed
-        if: inputs.probe != true
-        env:
-          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY || secrets.TWELVEDATA_API_KEY }}
-        run: node site/scripts/live-market.mjs --out feed/market.json
-
-      - name: Publish feed
+      - name: Keep the feed fresh
         if: inputs.probe != true
         working-directory: feed
+        env:
+          TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY || secrets.TWELVEDATA_API_KEY }}
+          LOOP: ${{ github.event_name == 'schedule' && '1' || '0' }}
         run: |
           git config user.name  "velocity-feed-bot"
           git config user.email "matisisconsultancy@gmail.com"
           printf '# FDK live market feed\n\nAutomatically refreshed by .github/workflows/live-market.yml.\nRead by the FDK Velocity Dashboard at https://fdkempowernet.com/velocityedge/dashboard/\n' > README.md
-          git add -A
-          if git diff --cached --quiet; then echo "No change."; exit 0; fi
-          # keep the branch to a single commit: the feed carries its own history
-          git commit -q -m "Live feed $(date -u +%Y-%m-%dT%H:%MZ)"
-          if git rev-parse -q --verify HEAD~1 >/dev/null; then git reset -q --soft $(git rev-list --max-parents=0 HEAD) && git commit -q --amend -m "Live feed $(date -u +%Y-%m-%dT%H:%MZ)"; fi
-          git push -q -f origin HEAD:live-data
-          echo "Published live-data/market.json"
+          publish() {
+            git add -A
+            if git diff --cached --quiet; then echo "No change."; return 0; fi
+            git commit -q -m "Live feed $(date -u +%Y-%m-%dT%H:%MZ)"
+            # keep the branch to a single commit: the feed carries its own history
+            if git rev-parse -q --verify HEAD~1 >/dev/null; then git reset -q --soft "$(git rev-list --max-parents=0 HEAD | tail -1)" && git commit -q --amend -m "Live feed $(date -u +%Y-%m-%dT%H:%MZ)"; fi
+            git push -q -f origin HEAD:live-data && echo "Published $(date -u +%H:%M)Z"
+          }
+          end=$(( $(date +%s) + 350*60 ))
+          while :; do
+            node ../site/scripts/live-market.mjs --out market.json || echo "::warning::refresh failed, keeping the last feed"
+            publish || echo "::warning::publish failed"
+            [ "$LOOP" = "1" ] || break
+            dow=$(date -u +%u); hr=$(date -u +%H)
+            if [ "$dow" -le 5 ] && [ "$hr" -ge 6 ] && [ "$hr" -lt 22 ]; then gap=900; else gap=3600; fi
+            [ $(( $(date +%s) + gap + 120 )) -lt "$end" ] || break
+            sleep "$gap"
+          done
