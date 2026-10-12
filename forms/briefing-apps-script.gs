@@ -146,7 +146,7 @@ function autoReply_(lead) {
       : "") +
     "Warm regards,\n" +
     CONFIG.BRAND_NAME + "\n" +
-    "Francesco de Leo Kaufmann";
+    "Francesco De Leo Kaufmann";
 
   MailApp.sendEmail({
     to: lead.email,

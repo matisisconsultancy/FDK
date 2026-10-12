@@ -231,3 +231,30 @@ body:has(.art[data-edition="week"]) .scroll-progress { background: linear-gradie
 .mmenu__in > a.mmenu__cta { background: var(--ve-sky); color: var(--ve-deep); box-shadow: 0 10px 26px -10px rgba(48, 155, 255, .75); }
 .snav .lang-switch__btn.is-active { color: var(--ve-deep); background: var(--ve-sky); }
 .mmenu__lang button[aria-pressed="true"] { color: var(--ve-deep); background: var(--ve-sky); border-color: var(--ve-sky); }
+
+/* ============================================================
+   v30 · Note pages: brand sky blue replaces the green accents
+   (highlights, numbers, labels, signals, logo marks, the cursor
+   ring, the brief button). Stays green: the FdK author badge and
+   the edition marks (Morning Brief / In Focus band, label, dot).
+   ============================================================ */
+body:has(main.art) { --green: #309bff; --green-deep: #1a6fd0; --green-dim: rgba(48, 155, 255, .16); }
+body:has(main.art) .art-author__badge { background: linear-gradient(140deg, #2ee06a, #16c45a); }
+body:has(.art[data-edition="morning"]) .scroll-progress, body:has(.art[data-edition="focus"]) .scroll-progress { background: #2ee06a; box-shadow: 0 0 12px #2ee06a; }
+.art[data-edition] .art-section-head__num, .art[data-edition] .art-pull__label { color: var(--green); }
+.art--day[data-edition] .art-section-head__num, .art--day[data-edition] .art-pull__label { color: var(--green-deep); }
+body:has(main.art) .cursor-ring { border-color: rgba(48, 155, 255, .75); }
+body:has(main.art) .cursor-ring.is-hover { background: rgba(48, 155, 255, .08); border-color: rgba(48, 155, 255, .85); }
+body:has(main.art) .cursor-ring.is-down { background: rgba(48, 155, 255, .16); }
+.art .signal:hover, .art .pattern:hover { border-color: rgba(48, 155, 255, .34); }
+.art .signal.is-open { border-color: rgba(48, 155, 255, .45); background: linear-gradient(160deg, rgba(48, 155, 255, .07), rgba(255, 255, 255, .015)); }
+.art--day .signal.is-open { border-color: rgba(26, 111, 208, .45); background: linear-gradient(160deg, rgba(48, 155, 255, .08), rgba(17, 20, 46, .015)); }
+.art .pattern:hover { background: rgba(48, 155, 255, .05); }
+.art .pattern:hover .pattern__ghost { color: rgba(48, 155, 255, .12); }
+.art .takeaways__list li::before { background: rgba(48, 155, 255, .14); }
+.art .art-matrix__item--accent { border-color: rgba(48, 155, 255, .45); background: rgba(48, 155, 255, .07); }
+.art .art-next__inner { background: linear-gradient(120deg, rgba(48, 155, 255, .12), rgba(124, 139, 255, .12)); }
+body:has(main.art) .btn--brief { background: #309bff; color: #070a24; box-shadow: 0 12px 32px -12px rgba(48, 155, 255, .55), inset 0 1px 0 rgba(255, 255, 255, .4); }
+body:has(main.art) .btn--brief:hover { background: #5cb0ff; box-shadow: 0 18px 40px -12px rgba(48, 155, 255, .75), inset 0 1px 0 rgba(255, 255, 255, .5); }
+.art .art-matrix__s { background: rgba(48, 155, 255, .1); border-color: rgba(48, 155, 255, .3); }
+body:has(main.art--night) .hl-green, .art--night .hl-green { color: #309bff; }

@@ -694,7 +694,7 @@
           '<span class="reader__eyebrow" data-r="eyebrow">Opening chapter · Preview</span>' +
           '<h2 class="reader__title" data-r="title"></h2>' +
           '<p class="reader__sub" data-r="sub"></p>' +
-          '<span class="reader__byline" data-r="byline">Francesco de Leo Kaufmann · FDK EmpowerNet</span>' +
+          '<span class="reader__byline" data-r="byline">Francesco De Leo Kaufmann · FDK EmpowerNet</span>' +
           '<p class="reader__chapter" data-r="chapter"></p>' +
           '<div class="reader__body" data-r="teaser"></div>' +
           '<div data-r="gatewrap"></div>' +

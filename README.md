@@ -16,7 +16,7 @@ fast and deploys anywhere (GitHub Pages, Netlify, Vercel, S3, …).
   - Four concepts — Velocity Capitalism, Structural Bifurcation, The Repricing,
     The Civic Platform.
   - *"The board is moving but the thesis is missing"* — three insight cards.
-  - Founder — Francesco de Leo Kaufmann.
+  - Founder — Francesco De Leo Kaufmann.
   - Intelligence Library — briefing cards.
   - Contact — *Request an Executive Briefing* form.
 - **Dynamic touches** — animated hero gradient, scroll-reveal (IntersectionObserver),

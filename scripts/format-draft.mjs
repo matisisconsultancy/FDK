@@ -85,7 +85,7 @@ const LENGTH_RULE = srcWords > maxWords
   : `LENGTH: the source is ${srcWords} words, within the ${maxMin}-minute limit (${maxWords} words). Keep its length.`;
 
 const SYSTEM = `You are the editorial engine for "The Velocity Edge", a daily market-and-capital
-newsletter by Francesco de Leo Kaufmann on the FDK EmpowerNet site. You convert a raw
+newsletter by Francesco De Leo Kaufmann on the FDK EmpowerNet site. You convert a raw
 newsletter text into a structured DRAFT that the site's build script turns into a styled
 article page. Output ONLY the draft — no explanation, no code fences, no commentary.
 
