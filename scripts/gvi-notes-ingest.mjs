@@ -3,12 +3,17 @@
    FDK · GVI notes → dashboard
    ----------------------------------------------------------------------------
    The FDK Velocity Dashboard reads data/gvi/latest.json (built into gvi-data.js).
-   The daily GVI notes (FDK GVI Corporate Benchmark, Global Velocity Index
-   updates, the Espresso Index, the Morning View …) carry the same numbers as
-   text. This step reads every recently published, dashboard-relevant note that
-   has not been ingested yet, extracts its data with Claude (text, strict JSON)
-   and merges it into the matching dashboard section, with a link back to the
-   note it came from.
+   The GVI notes (FDK GVI Corporate Benchmark, Global Velocity Index updates,
+   the Espresso Index, nowcasts, rankings, the Next Economy Research Centre)
+   carry the same numbers as text. This step reads every recently published
+   one that has not been ingested yet, extracts its data with Claude (text,
+   strict JSON) and merges it into the matching dashboard section, with a link
+   back to the note it came from.
+
+   RULE (editor's instruction): not every note sent through Telegram feeds the
+   dashboard — only notes titled GVI or about the data/indices Francesco works
+   on. The edition (Morning View, Midday Pulse, The Close …) never qualifies a
+   note on its own; its title, slot or tag must name one of those indices.
 
    Runs in .github/workflows/publish-drafts.yml right after a note is published,
    then scripts/gvi-build.mjs regenerates gvi-data.js.
@@ -49,7 +54,7 @@ const FLAGS = { "United States":"🇺🇸","China":"🇨🇳","South Korea":"�
 const RELEVANT = /\bgvi\b|global velocity index|corporate benchmark|espresso index|nowcast|velocity reading|country rankings|corporate rankings|next economy (dashboard|research)|global cities/i;
 function isRelevant(p) {
   const hay = `${p.slot} ${p.tag} ${p.title}`;
-  return RELEVANT.test(hay) || /^morning view$/i.test(p.slot || "");
+  return RELEVANT.test(hay);   // the edition alone (e.g. Morning View) never qualifies a note
 }
 
 /* ---- the extraction contract ------------------------------------------------ */
@@ -81,8 +86,7 @@ kind "corporate-daily" — daily global corporate rankings (top / bottom / secto
   "bottom":[{"rank":N,"name":"","sector":"","score":N,"delta":N,"trend":""}],
   "sectors":[{"rank":N,"name":"","score":N,"delta":N,"trend":""}]}
 
-kind "today" — the day's headline for the dashboard's Today panel (always include it for a Morning View or a
-daily GVI note):
+kind "today" — the day's headline for the dashboard's Today panel (include it for a daily GVI / index note):
  {"kind":"today","date":"","edition":"","thesis":"the note's title","subtitle":"the note's one-line dek, plain text",
   "standfirst":"the note's epigraph or key quote","velocityReading":{"score":N,"max":100,"label":""}|null,
   "strip":[{"label":"short label","value":"as printed, e.g. 5.24%","delta":null,"trend":"up|flat|down"}],
