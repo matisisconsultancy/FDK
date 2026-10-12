@@ -93,6 +93,8 @@ var TXT = {
                 en: function (ed, t) { return "✅ <b>Received</b> · " + ed + ": «" + t + "»\nPublishing — I'll notify you here as soon as it's online (~1–2 min)."; } },
   noLabel:    { it: function (ed) { return "ℹ️ Nessuna etichetta nella prima riga: ho scelto " + ed + " in base all'ora. Usa la testata «The Velocity Edge — &lt;Etichetta&gt; | data | FDK»."; },
                 en: function (ed) { return "ℹ️ No label on the first line: I chose " + ed + " by the time. Use the masthead «The Velocity Edge — &lt;Label&gt; | date | FDK»."; } },
+  rejected:   { it: function (t, why) { return "⛔ <b>Non pubblicata:</b> «" + t + "»" + (why ? "\nMotivo: " + why : "") + "\nCorreggi e rimandala."; },
+                en: function (t, why) { return "⛔ <b>Not published:</b> «" + t + "»" + (why ? "\nReason: " + why : "") + "\nFix it and send it again."; } },
   seeStatus:  { it: "🔗 Stato", en: "🔗 Status" },
   online:     { it: function (t) { return "🟢 <b>È online:</b> «" + t + "»\n👇 Copia o inoltra questo messaggio per condividerlo:"; },
                 en: function (t) { return "🟢 <b>It's live:</b> «" + t + "»\n👇 Copy or forward this message to share it:"; } },
@@ -278,6 +280,12 @@ function processPendingConfirms_() {
       tgSend_(e.chatId, L("online")(escapeHtml_(e.title || e.slug)));
       tgSend_(e.chatId, buildShare_(e.title || e.slug, e.url, e.edition || ""));
       continue;
+    }
+    // Set aside by the site (title not valid, same text already online…):
+    // say so at once, with the reason, instead of waiting in silence.
+    if (e.type === "publish" && !live && e.draft) {
+      var why = rejectedReason_(e.draft);
+      if (why !== null) { tgSend_(e.chatId, L("rejected")(escapeHtml_(e.title || e.slug), escapeHtml_(why))); continue; }
     }
     if (e.type === "delete" && !live) {
       tgSend_(e.chatId, L("deleted")(escapeHtml_(e.slug)));
@@ -533,7 +541,8 @@ function processMessage_(msg) {
   // Length is not the bot's business: a note over its reading time (5 min,
   // 10 for In Focus / The Week Ahead) is condensed by scripts/format-draft.mjs.
 
-  addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label });
+  addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label,
+                       draft: when.iso + "-" + slug + ".md" });
 }
 
 // Split the incoming text into { title, body, dateObj, edition, hadMasthead }.
@@ -547,20 +556,48 @@ function parseHeader_(text) {
   var first = (lines[i] || "").trim();
 
   var mast = detectMasthead_(first);
+  var t = titleAt_(lines, mast ? i + 1 : i);
   if (mast) {
-    var j = i + 1;
-    while (j < lines.length && !lines[j].trim()) j++; // title = next non-empty
-    var title = (lines[j] || "").trim();
-    var body;
-    if (title) body = lines.slice(j + 1).join("\n").trim();
-    else       body = lines.slice(i + 1).join("\n").trim();
-    return { title: title, body: body, dateObj: mast.dateObj, edition: mast.edition, hadMasthead: true };
+    var body = t.title ? lines.slice(t.next).join("\n").trim() : lines.slice(i + 1).join("\n").trim();
+    return { title: t.title, body: body, dateObj: mast.dateObj, edition: mast.edition, hadMasthead: true };
   }
   return {
-    title: first,
-    body: lines.slice(i + 1).join("\n").trim(),
+    title: t.title,
+    body: lines.slice(t.next).join("\n").trim(),
     dateObj: null, edition: null, hadMasthead: false,
   };
+}
+
+// The title from line `j` on, as a reader sees it on the page:
+//  · a topic strip above it ("Global Markets · AI Supercycle · Energy · Europe")
+//    or a lone label ("IN FOCUS", "INTELLIGENCE |") is skipped, not taken as title;
+//  · a headline set in capitals and wrapped over two lines ("THE AGE OF
+//    PERVASIVE" / "INTELLIGENCE") is joined back into one.
+// Returns { title, next } — `next` is the first line of the body.
+function titleAt_(lines, j) {
+  var nonEmpty = function (k) { while (k < lines.length && !lines[k].trim()) k++; return k; };
+  j = nonEmpty(j);
+  for (var guard = 0; guard < 3 && j < lines.length; guard++) {
+    var l = lines[j].trim();
+    var strip = (l.match(/[·•|]/g) || []).length >= 2;
+    var label = /^(the\s+)?(morning\s+(brief|view)|midday(\s+pulse)?|the\s+close|(the\s+)?week\s+ahead|in\s+focus|gvi)\s*([|—–:\-].*)?$/i.test(l) && l === l.toUpperCase();
+    var nextIdx = nonEmpty(j + 1);
+    if (!(strip || label) || nextIdx >= lines.length) break;
+    j = nextIdx;
+  }
+  var title = (lines[j] || "").trim();
+  var next = j + 1;
+  var caps = function (x) { var letters = x.replace(/[^A-Za-z]/g, ""); return letters.length > 0 && letters === letters.toUpperCase(); };
+  var k = nonEmpty(j + 1);
+  if (title && k < lines.length) {
+    var cont = lines[k].trim();
+    if (caps(title) && caps(cont) && cont.split(/\s+/).length <= 3 && !/[.!?:;]$/.test(cont) &&
+        (title + " " + cont).split(/\s+/).length <= 12 && !/[·•|]/.test(cont)) {
+      title = title + " " + cont;
+      next = k + 1;
+    }
+  }
+  return { title: title, next: next };
 }
 
 // Detect a masthead line and pull its date + edition. Handles both "|" and
@@ -802,6 +839,20 @@ function readToken_() {
   var prop = PropertiesService.getScriptProperties().getProperty("GITHUB_TOKEN");
   if (!prop) throw new Error("GITHUB_TOKEN no configurado (CONFIG o Script Properties).");
   return prop;
+}
+
+// If the site set the draft aside (drafts/rejected/<file>), its reason
+// (front-matter "rejected:"), "" when none is given; null when not rejected.
+function rejectedReason_(file) {
+  var res = UrlFetchApp.fetch("https://api.github.com/repos/" + CONFIG.GITHUB_REPO + "/contents/drafts/rejected/" +
+    encodeURIComponent(file) + "?ref=" + encodeURIComponent(CONFIG.GITHUB_BRANCH), {
+    method: "get", muteHttpExceptions: true,
+    headers: { Authorization: "Bearer " + readToken_(), Accept: "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" },
+  });
+  if (res.getResponseCode() !== 200) return null;
+  var txt = Utilities.newBlob(Utilities.base64Decode(JSON.parse(res.getContentText()).content.replace(/\s/g, ""))).getDataAsString("UTF-8");
+  var m = txt.match(/^rejected:\s*(.+)$/m);
+  return m ? m[1].trim() : "";
 }
 
 function commitFile_(filePath, contentStr, message) {

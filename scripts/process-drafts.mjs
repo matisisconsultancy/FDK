@@ -68,6 +68,59 @@ const failed = [];
 // produces; they must never reach the live site regardless of which bot sent
 // them. Returns a reason string when junk, else null.
 const MONTHS = "january|february|march|april|may|june|july|august|september|october|november|december";
+// A draft set aside goes to drafts/rejected/ with its reason in the
+// front-matter ("rejected: …"), which the Telegram bot reads back to Francesco.
+function setAside(file, reason) {
+  const REJECTED = path.join(DRAFTS, "rejected");
+  fs.mkdirSync(REJECTED, { recursive: true });
+  const src = fs.readFileSync(path.join(DRAFTS, file), "utf8");
+  const out = /^---\n/.test(src) ? src.replace(/^---\n/, `---\nrejected: ${reason}\n`) : `---\nrejected: ${reason}\n---\n\n${src}`;
+  fs.writeFileSync(path.join(REJECTED, file), out);
+  fs.rmSync(path.join(DRAFTS, file));
+}
+
+// The title as a reader sees it (same rule as titleAt_ in the Telegram bot):
+// a topic strip ("Global Markets · AI Supercycle · Energy") or a lone label
+// line is not the title, and a capitals headline wrapped over two lines
+// ("THE AGE OF PERVASIVE" / "INTELLIGENCE") is one title. Repairs drafts sent
+// by an older copy of the bot; returns true when it changed the draft.
+function repairTitle(file) {
+  const src = fs.readFileSync(path.join(DRAFTS, file), "utf8");
+  const m = src.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!m || !/(^|\n)\s*format\s*:\s*ai\b/i.test(m[1])) return false;
+  const get = (k) => ((m[1].match(new RegExp(`(?:^|\\n)${k}\\s*:\\s*(.+)`)) || [])[1] || "").trim();
+  const title = get("title");
+  const lines = m[2].split("\n");
+  const caps = (x) => { const l = x.replace(/[^A-Za-z]/g, ""); return l.length > 0 && l === l.toUpperCase(); };
+  const nonEmpty = (k) => { while (k < lines.length && !lines[k].trim()) k++; return k; };
+  let newTitle = null, from = 0;
+  if ((title.match(/[·•|]/g) || []).length >= 2) {
+    // the topic strip was taken as title: the headline is the first short line of the body
+    let j = nonEmpty(0);
+    if (j < lines.length) {
+      const l = lines[j].trim();
+      if (l.split(/\s+/).length <= 12 && !/[.!?]$/.test(l) && !/[·•|]/.test(l)) { newTitle = l; from = j + 1; }
+    }
+  } else {
+    // a capitals headline cut after its first line: the rest opens the body
+    const k = nonEmpty(0);
+    const cont = (lines[k] || "").trim();
+    if (cont && caps(cont) && cont.split(/\s+/).length <= 3 && !/[.!?:;]$/.test(cont) && !/[·•|]/.test(cont) &&
+        !/^(in focus|gvi|midday pulse|the close|morning brief|the week ahead)$/i.test(cont) &&
+        (title + " " + cont).split(/\s+/).length <= 12) { newTitle = `${title} ${cont}`; from = k + 1; }
+  }
+  if (!newTitle) return false;
+  const MINOR = new Set(["a","an","and","as","at","but","by","for","if","in","nor","of","on","or","per","the","to","up","via","vs"]);
+  const words = newTitle.toLowerCase().split(/\s+/);
+  const tc = words.map((w, i) => (i > 0 && i < words.length - 1 && MINOR.has(w)) ? w
+    : (/^(ai|gvi|us|eu|uk|gdp)$/.test(w) ? w.toUpperCase() : w.charAt(0).toUpperCase() + w.slice(1))).join(" ");
+  const slug = tc.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f]/g, "").replace(/[’'"]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const fm = m[1].replace(/^title\s*:.*$/m, `title: ${tc}`).replace(/^slug\s*:.*$/m, `slug: ${slug}`);
+  fs.writeFileSync(path.join(DRAFTS, file), `---\n${fm}\n---\n\n${lines.slice(from).join("\n").replace(/^\n+/, "")}`);
+  console.log(`→ title repaired: ${JSON.stringify(title)} → ${JSON.stringify(tc)} (/${slug}/)`);
+  return true;
+}
+
 function looksJunkTitle(title) {
   const t = String(title || "").trim();
   if (!t) return "empty title";
@@ -118,6 +171,7 @@ for (const file of pending) {
   const rel = path.join("drafts", file);
   console.log(`\n━━━ processing ${rel} ━━━`);
   try {
+    repairTitle(file);
     const norm = fs.readFileSync(path.join(DRAFTS, file), "utf8").replace(/\r\n/g, "\n");
     const fmMatch = norm.match(/^---\n([\s\S]*?)\n---/);
     const hasFM = !!fmMatch;
@@ -151,9 +205,7 @@ for (const file of pending) {
     const titleLine = finalFm ? ((finalFm[1].match(/(?:^|\n)\s*title\s*:\s*(.+)/) || [])[1] || "").trim() : "";
     const junkReason = looksJunkTitle(titleLine);
     if (junkReason) {
-      const REJECTED = path.join(DRAFTS, "rejected");
-      fs.mkdirSync(REJECTED, { recursive: true });
-      fs.renameSync(path.join(DRAFTS, file), path.join(REJECTED, file));
+      setAside(file, `titolo non valido (${junkReason})`);
       console.warn(`⛔ rejected ${file}: ${junkReason} — title ${JSON.stringify(titleLine)} → drafts/rejected/`);
       failed.push(file);
       continue;
@@ -161,9 +213,7 @@ for (const file of pending) {
 
     const addr = resolveSlug(file);
     if (!addr.ok) {
-      const REJECTED = path.join(DRAFTS, "rejected");
-      fs.mkdirSync(REJECTED, { recursive: true });
-      fs.renameSync(path.join(DRAFTS, file), path.join(REJECTED, file));
+      setAside(file, `stesso testo di una nota già online (${addr.reason})`);
       console.warn(`⛔ set aside ${file}: ${addr.reason} → drafts/rejected/`);
       failed.push(file);
       continue;
