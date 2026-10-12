@@ -5,17 +5,18 @@ name: Live market feed — FDK Velocity Dashboard
 # market API is called from a visitor's browser, so free quotas hold whatever
 # the traffic. It lives on its own branch so the site is not redeployed.
 #
-# GitHub skips many scheduled runs at busy times, so a run does not refresh
-# once and stop: it keeps the feed fresh for up to ~5h50m (every 15 minutes
-# while markets trade — weekdays 06:00–22:00 UTC — hourly otherwise). Anchors
-# every 3 hours hand over to each other (a newer run replaces the older), so a
-# few skipped schedules never leave the feed stale.
+# GitHub skips most scheduled runs on this repository, so a run does not
+# refresh once and stop: it keeps the feed fresh for up to ~5h50m (every 15
+# minutes while markets trade — weekdays 06:00–22:00 UTC — hourly otherwise)
+# and then starts the next run itself (workflow_dispatch with GITHUB_TOKEN),
+# so the chain never depends on the scheduler. The schedules only restart the
+# chain if it ever breaks; a newer run always replaces the older one.
 
 on:
   schedule:
     - cron: "7 */3 * * *"             # anchors at 00:07, 03:07, … UTC (off-peak minute)
     - cron: "37 7,13,19 * * 1-5"      # spare anchors on weekdays
-  push:                               # a change to the feed itself runs it once at once
+  push:                               # a change to the feed restarts the chain with the new code
     branches: [claude/eager-carson-vjorjg]
     paths: [scripts/live-market.mjs, .github/workflows/live-market.yml]
   workflow_dispatch:
@@ -26,11 +27,12 @@ on:
         default: false
 
 concurrency:
-  group: live-market-${{ github.event_name == 'schedule' && 'loop' || 'once' }}
-  cancel-in-progress: ${{ github.event_name == 'schedule' }}
+  group: live-market-${{ inputs.probe == true && 'probe' || 'loop' }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
+  actions: write     # to start the next run of the chain
 
 jobs:
   feed:
@@ -64,7 +66,7 @@ jobs:
         working-directory: feed
         env:
           TWELVE_DATA_KEY: ${{ secrets.TWELVE_DATA_KEY || secrets.TWELVEDATA_API_KEY }}
-          LOOP: ${{ github.event_name == 'schedule' && '1' || '0' }}
+          LOOP: "1"
         run: |
           git config user.name  "velocity-feed-bot"
           git config user.email "matisisconsultancy@gmail.com"
@@ -87,3 +89,9 @@ jobs:
             [ $(( $(date +%s) + gap + 120 )) -lt "$end" ] || break
             sleep "$gap"
           done
+
+      - name: Start the next run
+        if: inputs.probe != true && !cancelled()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run live-market.yml --repo "${{ github.repository }}" --ref claude/eager-carson-vjorjg
