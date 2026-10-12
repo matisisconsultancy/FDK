@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/test-note-for-the-new-publishing-rules",
+    title: "Test Note for the New Publishing Rules",
+    excerpt: "A short test of the publishing pipeline.",
+    tag: "Morning Brief",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "2 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-collision",
     title: "The Great Collision",
     excerpt: "When AI, energy and sovereign debt redefine the global investment cycle, the next rotation will reward those who can finance growth, not simply those who build it.",
