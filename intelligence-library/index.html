@@ -253,13 +253,13 @@
   else if(sy<last-4||sy<=160){n.classList.remove('snav--hidden');document.body.classList.remove('nav-up')}last=sy;tk=false}
  addEventListener('scroll',function(){if(!tk){tk=true;requestAnimationFrame(up)}},{passive:true});up();})();
 
-/* newsletter — same Kit form as the rest of the site (FDK_FORMS.kitNewsletterFormId in /script.js); until it is set, sign-ups are only acknowledged */
-(function(){var f=document.getElementById('subForm');if(!f)return;var FORM_ID='YOUR_KIT_FORM_ID';
+/* newsletter — sign-ups are emailed to info@fdkempowernet.com (FormSubmit); if a Kit form ID is set, Kit is used instead */
+(function(){var f=document.getElementById('subForm');if(!f)return;var FORM_ID='YOUR_KIT_FORM_ID',INBOX='info@fdkempowernet.com';
  f.addEventListener('submit',function(e){e.preventDefault();var inp=document.getElementById('subEmail'),msg=document.getElementById('subMsg'),btn=f.querySelector('button[type=submit]'),v=(inp.value||'').trim();
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){msg.textContent='Please enter a valid email.';return}
   function done(ok){if(btn){btn.disabled=false}if(ok)f.reset();msg.textContent=ok?'✓ Subscribed — the morning brief and the close are on their way.':'Something went wrong. Please try again in a moment.'}
   if(btn)btn.disabled=true;
-  if(FORM_ID==='YOUR_KIT_FORM_ID'){done(true);return}
+  if(FORM_ID==='YOUR_KIT_FORM_ID'){fetch('https://formsubmit.co/ajax/'+INBOX,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({email:v,source:'archive',page:location.href,_subject:'New subscriber — The Velocity Edge',_template:'table',_captcha:'false'})}).then(function(r){return r.json().catch(function(){return {}})}).then(function(j){done(String(j.success)==='true')}).catch(function(){done(false)});return}
   fetch('https://app.kit.com/forms/'+FORM_ID+'/subscriptions',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({email_address:v,fields:{source:'intelligence-library'}})}).then(function(r){done(r.ok)}).catch(function(){done(false)})});})();
 document.getElementById('year').textContent=new Date().getFullYear();
 </script>

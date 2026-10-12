@@ -398,13 +398,13 @@ document.addEventListener('click',function(e){if(e.defaultPrevented||e.button!==
 
 // subscribe demo
 (function(){var f=document.getElementById('subForm');if(!f)return;
- // Kit / ConvertKit newsletter form ID (same one as FDK_FORMS.kitNewsletterFormId in /script.js). Until it is set, sign-ups are only acknowledged.
- var FORM_ID='YOUR_KIT_FORM_ID';
+ // Sign-ups are emailed to info@fdkempowernet.com (FormSubmit). If a Kit / ConvertKit form ID is set, Kit is used instead.
+ var FORM_ID='YOUR_KIT_FORM_ID',INBOX='info@fdkempowernet.com';
  f.addEventListener('submit',function(e){e.preventDefault();var inp=document.getElementById('subEmail'),msg=document.getElementById('subMsg'),btn=f.querySelector('button[type=submit]'),v=(inp.value||'').trim();
   if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v)){msg.textContent='Please enter a valid email.';return}
   function done(ok){if(btn){btn.disabled=false;btn.textContent='Subscribe'}if(ok)f.reset();msg.textContent=ok?'✓ Subscribed — the morning brief and the close are on their way.':'Something went wrong. Please try again in a moment.'}
   if(btn){btn.disabled=true;btn.textContent='Subscribing…'}
-  if(FORM_ID==='YOUR_KIT_FORM_ID'){done(true);return}
+  if(FORM_ID==='YOUR_KIT_FORM_ID'){fetch('https://formsubmit.co/ajax/'+INBOX,{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({email:v,source:'velocityedge',page:location.href,_subject:'New subscriber — The Velocity Edge',_template:'table',_captcha:'false'})}).then(function(r){return r.json().catch(function(){return {}})}).then(function(j){done(String(j.success)==='true')}).catch(function(){done(false)});return}
   fetch('https://app.kit.com/forms/'+FORM_ID+'/subscriptions',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},body:JSON.stringify({email_address:v,fields:{source:'velocityedge'}})}).then(function(r){done(r.ok)}).catch(function(){done(false)})});})();
 </script>
 
