@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/central-banks-ai-watch-2026-10-12",
+    title: "Central Banks & AI Watch",
+    excerpt: "As the IMF–World Bank meetings open in Bangkok, AI supports demand before its productivity gains are broadly distributed — and supervisors must prepare.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-great-collision",
     title: "The Great Collision",
     excerpt: "When AI, energy and sovereign debt redefine the global investment cycle, the next rotation will reward those who can finance growth, not simply those who build it.",
