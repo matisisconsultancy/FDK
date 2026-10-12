@@ -109,8 +109,13 @@ function pickCover() {
   return best;
 }
 const kind = fm.kind || slotCfg.kind;
-const time = fm.time || slotCfg.time ||
-  new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
+// The time shown on the note is when it is published (site time zone, as the
+// Telegram bot). A note dated another day (e.g. published late) keeps its
+// edition's usual hour instead.
+const nowIn = (opts) => new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Madrid", ...opts }).format(new Date());
+const todayLong = nowIn({ month: "long", day: "numeric", year: "numeric" });
+const nowHM = new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
+const time = fm.time || (date.replace(/\s+/g, " ").trim() === todayLong ? nowHM : (slotCfg.time || nowHM));
 const tag = fm.tag ? `${slot} · ${fm.tag}` : slot;
 const slug = fm.slug || kebab(title);
 const excerpt = (fm.excerpt || dek).replace(/<[^>]+>/g, "").replace(/\*\*|==|(?<![*])\*(?![*])/g, "");

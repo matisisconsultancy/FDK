@@ -15,7 +15,7 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
     date: "October 12, 2026",
     read: "10 min read",
-    time: "08:00",
+    time: "14:12",
     kind: "day"
   },
   {
@@ -27,7 +27,7 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
     date: "October 12, 2026",
     read: "5 min read",
-    time: "12:30",
+    time: "14:07",
     kind: "day"
   },
   {
