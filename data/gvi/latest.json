@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-11",
+    "updated": "2026-10-12",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -73,7 +73,8 @@
       "the-ai-economics-test",
       "todays-espresso-index",
       "global-corporate-intelligence",
-      "the-great-capital-selection"
+      "the-great-capital-selection",
+      "the-morning-view-monday"
     ]
   },
   "daily": {
@@ -2995,56 +2996,56 @@
     }
   },
   "today": {
-    "date": "2026-10-11",
-    "edition": "The Close",
-    "thesis": "The Great Capital Selection",
-    "subtitle": "When acceleration meets the cost of money: AI-driven earnings and infrastructure investment are accelerating, but elevated energy prices and bond yields are making financing increasingly selective.",
-    "standfirst": "The next financial divide is between those who convert acceleration into returns and those who merely finance it.",
+    "date": "2026-10-12",
+    "edition": "Morning View · Capital",
+    "thesis": "The Morning View: Monday",
+    "subtitle": "AI is sustaining global growth, but capital markets are turning selective — the next competitive divide will be decided by who converts technological investment into economic productivity.",
+    "standfirst": "The next economy will be won not by those who invest the most, but by those who transform investment into productivity the fastest.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "S&P 500 (Oct 9 close)",
-        "value": "7,811.54",
-        "delta": "+1.2% wk",
-        "trend": "up"
-      },
-      {
-        "label": "Nasdaq Composite (Oct 9 close)",
-        "value": "27,366.17",
+        "label": "IMF global growth 2026",
+        "value": "3.0%",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "US 10Y Treasury",
-        "value": "5.24%",
+        "label": "Money-market inflows, latest week",
+        "value": "$153.8B",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Brent / barrel",
-        "value": "≈$104",
+        "label": "U.S. 10-year yield, recent peak",
+        "value": "5.3645%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "S&P 500 weekly",
-        "value": "+1.2%",
+        "label": "TSMC Q3 profit forecast",
+        "value": "$23.4B (+65% YoY)",
         "delta": null,
         "trend": "up"
+      },
+      {
+        "label": "Brent",
+        "value": "US$103.38",
+        "delta": null,
+        "trend": "down"
       }
     ],
     "source": {
-      "title": "The Great Capital Selection",
-      "url": "/the-great-capital-selection",
-      "date": "2026-10-11",
-      "slot": "The Close"
+      "title": "The Morning View: Monday",
+      "url": "/the-morning-view-monday",
+      "date": "2026-10-12",
+      "slot": "Morning View"
     },
     "notes": [
       {
-        "title": "The Great Capital Selection",
-        "url": "/the-great-capital-selection",
-        "slot": "The Close",
-        "headline": "Five hidden patterns: AI abundance meets capital scarcity, power becomes a financial constraint, and the next valuation test is productivity proof."
+        "title": "The Morning View: Monday",
+        "url": "/the-morning-view-monday",
+        "slot": "Morning View",
+        "headline": "AI investment sustains ~3% global growth, but capital turns selective: $153.8B into money funds, U.S. 10-year above 5%, and the premium shifts to productive capital."
       }
     ]
   },

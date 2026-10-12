@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-morning-view-monday",
+    title: "The Morning View: Monday",
+    excerpt: "AI sustains global growth while capital turns selective — the next divide is who converts investment into productivity.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "9 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-selection",
     title: "The Great Capital Selection",
     excerpt: "The next market leaders will be those converting investment into productive cash flow fastest — the five hidden patterns behind the Great Capital Selection.",
