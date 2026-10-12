@@ -71,6 +71,19 @@ for (const k of PRESERVE_KEYS) if (preFM[k]) preserve[k] = preFM[k];
 // The prose the model formats: the body only (never the pinned front-matter).
 const prose = preBody.trim() || raw;
 
+/* ---- reading-time limit ("Istruzioni per le note") ----------------------------
+   No note goes over 5 minutes of reading (≈1,000 words at 200 words a minute);
+   In Focus and The Week Ahead may reach 10 (≈2,000), never more. A longer text
+   is condensed by the model to fit. */
+const WPM = 200;
+const slotName = String(preserve.slot || preFM.slot || "").toLowerCase();
+const maxMin = /in focus|week ahead/.test(slotName) ? 10 : 5;
+const maxWords = maxMin * WPM;
+const srcWords = prose.split(/\s+/).filter(Boolean).length;
+const LENGTH_RULE = srcWords > maxWords
+  ? `LENGTH: the source is ${srcWords} words; the published note must read in ${maxMin} minutes or less — at most ${maxWords} words of body text. Condense to fit: cut background, repetition and secondary examples first; keep the thesis, every key number and the close.`
+  : `LENGTH: the source is ${srcWords} words, within the ${maxMin}-minute limit (${maxWords} words). Keep its length.`;
+
 const SYSTEM = `You are the editorial engine for "The Velocity Edge", a daily market-and-capital
 newsletter by Francesco de Leo Kaufmann on the FDK EmpowerNet site. You convert a raw
 newsletter text into a structured DRAFT that the site's build script turns into a styled
@@ -113,8 +126,8 @@ THE AUTHOR'S FORMAT (notes are written to "Istruzioni per le note"; map it, neve
   - GVI notes: keep the data date and "verified"/"provisional" line in a paragraph, and copy every ranking line
     ("Rank. Name — score (change)", "N/V" included) exactly, as "- " lines in a ::takeaways block per ranking,
     headed with the index name. Never round, re-rank or drop a row.
-  - Keep the author's length: do not add sections, background or takeaways the text does not contain.
-    A short note stays short. If the text refers to an earlier note of the day, keep that reference as written.
+  - Keep the author's length unless the LENGTH line says to condense: do not add sections, background or
+    takeaways the text does not contain. A short note stays short. Never exceed the LENGTH limit. If the text refers to an earlier note of the day, keep that reference as written.
 
 INLINE: **bold**, *italic*, ==green highlight==. Keep it tasteful — a few highlights, not many.
 
@@ -128,7 +141,7 @@ const body = {
   thinking: { type: "adaptive" },
   system: SYSTEM,
   messages: [
-    { role: "user", content: `Convert this newsletter text into the draft format:\n\n${prose}` },
+    { role: "user", content: `${LENGTH_RULE}\n\nConvert this newsletter text into the draft format:\n\n${prose}` },
   ],
 };
 

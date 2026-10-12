@@ -83,11 +83,12 @@ var CONFIG = {
   // ---- Mensaje para compartir (bilingüe EN–IT) ----
   // Refleja el sello del artículo en el sitio ("The Velocity Edge · {edición}")
   // para que TODO concuerde. Usa {edition}, {title} y {url}.
-  // Límite de palabras por edición (mismas cifras que "Istruzioni per le note").
-  // Si una nota lo supera, el bot lo avisa en el recibo; la nota se publica igual.
+  // Límite por edición (mismas cifras que "Istruzioni per le note"): 5 minutos
+  // de lectura (≈1.000 palabras a 200/min); In Focus y The Week Ahead hasta 10
+  // (≈2.000). Si una nota lo supera, el bot lo avisa y el formateador la condensa.
   WORD_LIMITS: {
-    "Morning Brief": 600, "Midday Pulse": 400, "The Close": 600,
-    "The Week Ahead": 700, "In Focus": 1000, "GVI": 600,
+    "Morning Brief": 1000, "Midday Pulse": 1000, "The Close": 1000, "GVI": 1000,
+    "The Week Ahead": 2000, "In Focus": 2000,
   },
 
   SHARE_TEMPLATE:
@@ -98,8 +99,8 @@ var CONFIG = {
 var TXT = {
   received:   { it: function (ed, t) { return "✅ <b>Ricevuto</b> · " + ed + ": «" + t + "»\nStiamo pubblicando — ti avviso qui appena è online (~1–2 min)."; },
                 en: function (ed, t) { return "✅ <b>Received</b> · " + ed + ": «" + t + "»\nPublishing — I'll notify you here as soon as it's online (~1–2 min)."; } },
-  tooLong:    { it: function (ed, n, max) { return "📏 Nota lunga: " + n + " parole, il limite per " + ed + " è " + max + ". Viene pubblicata lo stesso; la prossima volta accorciala."; },
-                en: function (ed, n, max) { return "📏 Long note: " + n + " words, the limit for " + ed + " is " + max + ". It is published anyway; trim the next one."; } },
+  tooLong:    { it: function (ed, n, max) { return "📏 Nota lunga: ~" + Math.round(n / 200) + " min di lettura (" + n + " parole); il massimo per " + ed + " è " + (max / 200) + " min. Viene condensata automaticamente: la prossima volta accorciala tu."; },
+                en: function (ed, n, max) { return "📏 Long note: ~" + Math.round(n / 200) + " min read (" + n + " words); the maximum for " + ed + " is " + (max / 200) + " min. It is condensed automatically: trim the next one yourself."; } },
   noLabel:    { it: function (ed) { return "ℹ️ Nessuna etichetta nella prima riga: ho scelto " + ed + " in base all'ora. Usa la testata «The Velocity Edge — &lt;Etichetta&gt; | data | FDK»."; },
                 en: function (ed) { return "ℹ️ No label on the first line: I chose " + ed + " by the time. Use the masthead «The Velocity Edge — &lt;Label&gt; | date | FDK»."; } },
   seeStatus:  { it: "🔗 Stato", en: "🔗 Status" },

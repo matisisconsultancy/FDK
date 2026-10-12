@@ -115,6 +115,9 @@ const tag = fm.tag ? `${slot} · ${fm.tag}` : slot;
 const slug = fm.slug || kebab(title);
 const excerpt = (fm.excerpt || dek).replace(/<[^>]+>/g, "").replace(/\*\*|==|(?<![*])\*(?![*])/g, "");
 const read = fm.read || estimateRead(body);
+// "Istruzioni per le note": 5 minutes at most, 10 for In Focus / The Week Ahead.
+const maxRead = /in focus|week ahead/i.test(slot) ? 10 : 5;
+if (parseInt(read, 10) > maxRead) warn(`${read} is over the ${maxRead}-minute limit for ${slot}.`);
 
 function estimateRead(text) {
   const words = text.split(/\s+/).filter(Boolean).length;
