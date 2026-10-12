@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-shocks",
+    title: "The Age of Shocks",
+    excerpt: "The 2026 Nobel to Hall and Woodford frames a world where shock absorption, not growth, prices capital.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/global-corporate-intelligence-2026-10-12",
     title: "Global Corporate Intelligence",
     excerpt: "As innovation accelerates and capital turns selective, the GVI benchmark maps who is creating the Next Economy — and who is accumulating commitments faster than advantage.",
