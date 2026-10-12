@@ -887,3 +887,12 @@ body.menu-open .demo,body.menu-open .demo-note{display:none}
 :root .note.note--gvi{--nc:var(--b-ice-ink);--nm:#3d5a6b;--nd:#4f6e80;color:#06253a;border:1px solid rgba(11,95,134,.28);background:linear-gradient(160deg,#f1faff,#d9f0fb)}
 :root:not(.day) .note.note--gvi{--nc:#9fdcff;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(127,214,255,.4);background:linear-gradient(160deg,rgba(127,214,255,.16),rgba(127,214,255,.03) 60%),var(--panel)}
 @media (hover:hover) and (pointer:fine){:root #daily .note.note--gvi:hover,:root .arc .note.note--gvi:hover{border-color:rgba(127,214,255,.8)}}
+/* v29 · brand sky blue in the menu — logo, "Velocity Edge", Subscribe, language switch */
+:root{--b-sky:#309bff}
+.snav .sbrand__mark,.mmenu .sbrand__mark{color:var(--b-sky)}
+.snav .sbrand__text i{color:var(--b-sky)}
+.snav__cta{background:var(--b-sky);box-shadow:0 10px 26px -10px rgba(48,155,255,.75)}
+@media (hover:hover) and (pointer:fine){.snav__cta:hover{background:#fff;box-shadow:0 16px 32px -12px rgba(48,155,255,.6)}}
+.mmenu__in > a.mmenu__cta{background:var(--b-sky);color:var(--b-deep);box-shadow:0 10px 26px -10px rgba(48,155,255,.75)}
+.snav .lang-switch__btn.is-active{color:var(--b-deep);background:var(--b-sky)}
+.mmenu__lang button[aria-pressed="true"]{color:var(--b-deep);background:var(--b-sky);border-color:var(--b-sky)}

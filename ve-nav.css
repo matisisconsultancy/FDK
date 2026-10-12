@@ -218,3 +218,16 @@ body:has(.art[data-edition="week"]) .scroll-progress { background: linear-gradie
 .vcards-all a { font-family: var(--ve-mono); font-size: .8rem; letter-spacing: .04em; text-decoration: none; color: inherit; opacity: .8; border-bottom: 1px solid currentColor; padding-bottom: 2px; }
 .vcards-all a:hover { opacity: 1; }
 @media (prefers-reduced-motion: reduce) { .vcard, .vcard__media img { transition: none; } }
+
+/* ============================================================
+   v29 · Brand sky blue in the menu — logo, "Velocity Edge",
+   Subscribe and the language switch (#309bff, from the brand file)
+   ============================================================ */
+:root { --ve-sky: #309bff; }
+.snav .sbrand__mark, .mmenu .sbrand__mark { color: var(--ve-sky); }
+.snav .sbrand__text i { color: var(--ve-sky); }
+.snav__cta { background: var(--ve-sky); color: var(--ve-deep) !important; box-shadow: 0 10px 26px -10px rgba(48, 155, 255, .75); }
+@media (hover: hover) and (pointer: fine) { .snav__cta:hover { background: #fff; box-shadow: 0 16px 32px -12px rgba(48, 155, 255, .6); } }
+.mmenu__in > a.mmenu__cta { background: var(--ve-sky); color: var(--ve-deep); box-shadow: 0 10px 26px -10px rgba(48, 155, 255, .75); }
+.snav .lang-switch__btn.is-active { color: var(--ve-deep); background: var(--ve-sky); }
+.mmenu__lang button[aria-pressed="true"] { color: var(--ve-deep); background: var(--ve-sky); border-color: var(--ve-sky); }
