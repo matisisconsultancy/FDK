@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-corporate-intelligence-2026-10-12",
+    title: "Global Corporate Intelligence",
+    excerpt: "As innovation accelerates and capital turns selective, the GVI benchmark maps who is creating the Next Economy — and who is accumulating commitments faster than advantage.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "5 min read",
+    time: "13:13",
+    kind: "day"
+  },
+  {
     url: "/central-banks-ai-watch-2026-10-12",
     title: "Central Banks & AI Watch",
     excerpt: "As the IMF–World Bank meetings open in Bangkok, AI supports demand before its productivity gains are broadly distributed — and supervisors must prepare.",

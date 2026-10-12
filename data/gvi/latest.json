@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-11",
+    "updated": "2026-10-12",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -75,7 +75,8 @@
       "global-corporate-intelligence",
       "the-great-capital-selection",
       "the-morning-view-monday",
-      "global-brief"
+      "global-brief",
+      "global-corporate-intelligence-2026-10-12"
     ]
   },
   "daily": {
@@ -2997,56 +2998,56 @@
     }
   },
   "today": {
-    "date": "2026-10-11",
-    "edition": "The Close",
-    "thesis": "The Great Capital Selection",
-    "subtitle": "When acceleration meets the cost of money: AI-driven earnings and infrastructure investment are accelerating, but elevated energy prices and bond yields are making financing increasingly selective.",
-    "standfirst": "The next financial divide is between those who convert acceleration into returns and those who merely finance it.",
+    "date": "2026-10-12",
+    "edition": "GVI · Capital",
+    "thesis": "Global Corporate Intelligence",
+    "subtitle": "The capacity to innovate and the capacity to finance innovation are becoming two distinct competitive advantages.",
+    "standfirst": "The defining competition is shifting from the race to innovate toward the capacity to compound the returns from innovation.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "S&P 500 (Oct 9 close)",
-        "value": "7,811.54",
-        "delta": "+1.2% wk",
-        "trend": "up"
-      },
-      {
-        "label": "Nasdaq Composite (Oct 9 close)",
-        "value": "27,366.17",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "US 10Y Treasury",
+        "label": "US 10-year yield (Oct 9)",
         "value": "5.24%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Brent / barrel",
-        "value": "≈$104",
+        "label": "NVIDIA quarterly revenue",
+        "value": "$96.2B (+106% y/y)",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "S&P 500 weekly",
-        "value": "+1.2%",
+        "label": "TSMC September revenue",
+        "value": "+54.6%",
         "delta": null,
         "trend": "up"
+      },
+      {
+        "label": "Samsung operating profit guidance",
+        "value": "~KRW107.4T",
+        "delta": null,
+        "trend": "flat"
+      },
+      {
+        "label": "T-Mobile after SpaceX spectrum move",
+        "value": "~-13%",
+        "delta": null,
+        "trend": "down"
       }
     ],
     "source": {
-      "title": "The Great Capital Selection",
-      "url": "/the-great-capital-selection",
-      "date": "2026-10-11",
-      "slot": "The Close"
+      "title": "Global Corporate Intelligence",
+      "url": "/global-corporate-intelligence-2026-10-12",
+      "date": "2026-10-12",
+      "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Great Capital Selection",
-        "url": "/the-great-capital-selection",
-        "slot": "The Close",
-        "headline": "Five hidden patterns: AI abundance meets capital scarcity, power becomes a financial constraint, and the next valuation test is productivity proof."
+        "title": "Global Corporate Intelligence",
+        "url": "/global-corporate-intelligence-2026-10-12",
+        "slot": "GVI",
+        "headline": "NVIDIA 97, TSMC 95 and Microsoft 94 lead; Nissan 49, Porsche 51 and Stellantis 54 trail (provisional, carried forward from October 11)"
       }
     ]
   },
@@ -3152,88 +3153,88 @@
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-10",
+    "asOf": "2026-10-12",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
         "rank": 1,
         "name": "NVIDIA",
         "score": 97,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The architecture of accelerated computing"
+        "note": "Revenue $96.2B, up 106%; 75% GAAP gross margin"
       },
       {
         "rank": 2,
         "name": "TSMC",
         "score": 95,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The manufacturing constraint on global AI"
+        "note": "September revenue up 54.6%"
       },
       {
         "rank": 3,
         "name": "Microsoft",
         "score": 94,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The enterprise monetization platform"
+        "note": null
       },
       {
         "rank": 4,
         "name": "Broadcom",
         "score": 93,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The custom-silicon alternative"
+        "note": "AI semiconductor revenue $16.7B, up 221%"
       },
       {
         "rank": 5,
         "name": "Alphabet",
         "score": 91,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "AI across an existing global ecosystem"
+        "note": "Google Cloud up 82% to $24.8B"
       },
       {
         "rank": 6,
         "name": "Amazon",
         "score": 90,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Infrastructure scale meets operational productivity"
+        "note": "AWS up 37% to $42.2B"
       },
       {
         "rank": 7,
         "name": "ASML",
         "score": 89,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The technological gatekeeper"
+        "note": "Q2 revenue €9.3B; FY outlook €43–45B"
       },
       {
         "rank": 8,
         "name": "CATL",
         "score": 88,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The energy-storage accelerator"
+        "note": "H1 energy-storage revenue up ~87.5%"
       },
       {
         "rank": 9,
         "name": "Samsung Electronics",
         "score": 87,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The memory supercycle"
+        "note": "Guided to roughly KRW107.4T operating profit"
       },
       {
         "rank": 10,
         "name": "Schneider Electric",
         "score": 86,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "The industrial infrastructure beneficiary"
+        "note": "H1 revenue €21.2B, +14% organic"
       }
     ],
     "laggards": [
@@ -3241,134 +3242,99 @@
         "rank": 1,
         "name": "Nissan",
         "score": 49,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Automotive: financing new platforms while defending margins"
+        "note": null
       },
       {
         "rank": 2,
         "name": "Porsche AG",
         "score": 51,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Deliveries −16% in nine months, −33% in China"
+        "note": "Deliveries down 16% (−33% in China); the automotive trap"
       },
       {
         "rank": 3,
         "name": "Stellantis",
         "score": 54,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "H1 adjusted operating margin of 2.1%"
+        "note": null
       },
       {
         "rank": 4,
         "name": "Intel",
         "score": 56,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Revenue +25% in Q2, still highly capital-intensive"
+        "note": null
       },
       {
         "rank": 5,
         "name": "Volkswagen Group",
         "score": 58,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "H1 operating profit down about 12%"
+        "note": null
       },
       {
         "rank": 6,
         "name": "Bayer",
         "score": 60,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Net financial debt of about €33.6bn"
+        "note": null
       },
       {
         "rank": 7,
         "name": "Boeing",
         "score": 62,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "FCF negative for the half, $45.9bn of debt"
+        "note": "H1 free cash flow −$823M against $45.9B of debt; the restructuring trap"
       },
       {
         "rank": 8,
         "name": "Vodafone",
         "score": 64,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Telecoms: satellite-terrestrial networks reprice incumbents"
+        "note": null
       },
       {
         "rank": 9,
         "name": "AT&T",
         "score": 66,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Shares −9.8% on October 9"
+        "note": "Telecom selloff on October 9"
       },
       {
         "rank": 10,
         "name": "Verizon",
         "score": 67,
-        "delta": "N/V",
+        "delta": 0,
         "trend": "flat",
-        "note": "Shares −8.7% on October 9"
+        "note": "Telecom selloff on October 9"
       }
     ],
     "pillars": [
       {
-        "pillar": "Strongest commercial conversion",
+        "pillar": "Industrial accelerators",
         "leaders": [
-          "NVIDIA",
-          "Microsoft",
-          "Broadcom",
-          "TSMC"
-        ]
-      },
-      {
-        "pillar": "Revenue acceleration vs. capital intensity",
-        "leaders": [
-          "Alphabet",
-          "Amazon"
-        ]
-      },
-      {
-        "pillar": "Essential infrastructure",
-        "leaders": [
-          "Amazon",
-          "ASML"
-        ]
-      },
-      {
-        "pillar": "Energy, manufacturing & physical infrastructure",
-        "leaders": [
+          "ASML",
           "CATL",
           "Samsung Electronics",
           "Schneider Electric"
-        ]
-      },
-      {
-        "pillar": "Challengers beyond the Top 10",
-        "leaders": [
-          "SK hynix",
-          "AMD",
-          "BYD",
-          "Tencent",
-          "Alibaba",
-          "Siemens",
-          "ABB",
-          "Hitachi"
         ]
       }
     ],
     "source": {
       "title": "Global Corporate Intelligence",
-      "url": "/global-corporate-intelligence",
-      "date": "2026-10-10",
-      "slot": "FDK GVI Corporate Benchmark"
+      "url": "/global-corporate-intelligence-2026-10-12",
+      "date": "2026-10-12",
+      "slot": "GVI"
     }
   },
   "indices": {
