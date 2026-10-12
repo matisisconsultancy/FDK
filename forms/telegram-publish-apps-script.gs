@@ -72,8 +72,10 @@ var CONFIG = {
   // sitio (debe existir en scripts/publish-note.mjs). `label` = nombre que se
   // muestra en el mensaje para compartir.
   // `label` = slot para que coincida EXACTAMENTE con la etiqueta del sitio.
+  // Solo se usa si la nota NO trae la testata con la etiqueta (ver
+  // "Istruzioni per le note": riga 1 = "The Velocity Edge — <Etichetta> | data | FDK").
   EDITIONS: [
-    { from: 0,  slot: "Morning View", label: "Morning View" }, // 00:00–11:59
+    { from: 0,  slot: "Morning Brief", label: "Morning Brief" }, // 00:00–11:59
     { from: 12, slot: "Midday Pulse", label: "Midday Pulse" }, // 12:00–17:59
     { from: 18, slot: "The Close",    label: "The Close"    }, // 18:00–23:59
   ],
@@ -81,6 +83,13 @@ var CONFIG = {
   // ---- Mensaje para compartir (bilingüe EN–IT) ----
   // Refleja el sello del artículo en el sitio ("The Velocity Edge · {edición}")
   // para que TODO concuerde. Usa {edition}, {title} y {url}.
+  // Límite de palabras por edición (mismas cifras que "Istruzioni per le note").
+  // Si una nota lo supera, el bot lo avisa en el recibo; la nota se publica igual.
+  WORD_LIMITS: {
+    "Morning Brief": 600, "Midday Pulse": 400, "The Close": 600,
+    "The Week Ahead": 700, "In Focus": 1000, "GVI": 600,
+  },
+
   SHARE_TEMPLATE:
     "📖 The Velocity Edge · {edition}\n\n«{title}»\n\nRead it · Leggilo 👉 {url}",
 };
@@ -89,6 +98,10 @@ var CONFIG = {
 var TXT = {
   received:   { it: function (ed, t) { return "✅ <b>Ricevuto</b> · " + ed + ": «" + t + "»\nStiamo pubblicando — ti avviso qui appena è online (~1–2 min)."; },
                 en: function (ed, t) { return "✅ <b>Received</b> · " + ed + ": «" + t + "»\nPublishing — I'll notify you here as soon as it's online (~1–2 min)."; } },
+  tooLong:    { it: function (ed, n, max) { return "📏 Nota lunga: " + n + " parole, il limite per " + ed + " è " + max + ". Viene pubblicata lo stesso; la prossima volta accorciala."; },
+                en: function (ed, n, max) { return "📏 Long note: " + n + " words, the limit for " + ed + " is " + max + ". It is published anyway; trim the next one."; } },
+  noLabel:    { it: function (ed) { return "ℹ️ Nessuna etichetta nella prima riga: ho scelto " + ed + " in base all'ora. Usa la testata «The Velocity Edge — &lt;Etichetta&gt; | data | FDK»."; },
+                en: function (ed) { return "ℹ️ No label on the first line: I chose " + ed + " by the time. Use the masthead «The Velocity Edge — &lt;Label&gt; | date | FDK»."; } },
   seeStatus:  { it: "🔗 Stato", en: "🔗 Status" },
   online:     { it: function (t) { return "🟢 <b>È online:</b> «" + t + "»\n👇 Copia o inoltra questo messaggio per condividerlo:"; },
                 en: function (t) { return "🟢 <b>It's live:</b> «" + t + "»\n👇 Copy or forward this message to share it:"; } },
@@ -442,9 +455,18 @@ function processMessage_(msg) {
   var parsed = parseHeader_(raw);
 
   var title, article;
-  if (got.title && got.title.trim()) {
-    // A document caption is the explicit title; strip a masthead from the body.
-    title = got.title.trim();
+  // A document caption is the title only when it reads like one: a caption
+  // that is a masthead / label ("In Focus", "GVI") gives the edition, and one
+  // that cleans to under three words ("FDK’s Take" → "Take") is ignored — the
+  // title is then read from the document, as for plain text.
+  var cap = String(got.title || "").trim();
+  if (cap && !parsed.edition) {
+    var capMast = detectMasthead_(cap);
+    if (capMast && /^(Morning Brief|Midday Pulse|The Close|The Week Ahead|In Focus|GVI)$/.test(capMast.edition || "")) { parsed.edition = capMast.edition; if (!parsed.dateObj) parsed.dateObj = capMast.dateObj; }
+  }
+  if (cap && (detectMasthead_(cap) || cleanTitle_(cap).split(/\s+/).filter(Boolean).length < 3)) cap = "";
+  if (cap) {
+    title = cap;
     article = parsed.hadMasthead ? parsed.body : raw;
   } else {
     title = parsed.title;
@@ -506,6 +528,10 @@ function processMessage_(msg) {
   // once we've verified the URL is actually live (see processPendingConfirms_).
   // Receipt only — no link at all. The link arrives when the note is live.
   tgSend_(chatId, L("received")(escapeHtml_(ed.label), escapeHtml_(title)));
+  if (!parsed.edition) tgSend_(chatId, L("noLabel")(escapeHtml_(ed.label)));
+  var maxWords = (CONFIG.WORD_LIMITS || {})[ed.slot];
+  var nWords = String(article || "").split(/\s+/).filter(Boolean).length;
+  if (maxWords && nWords > maxWords) tgSend_(chatId, L("tooLong")(escapeHtml_(ed.label), nWords, maxWords));
 
   addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label });
 }
@@ -551,7 +577,7 @@ function detectMasthead_(line) {
   var bare = line.replace(new RegExp(DATE, "g"), "").replace(/\bfdk\b/gi, "")
                  .replace(/the\s+velocity\s+edge/gi, "").replace(/[|—–:]/g, " ")
                  .replace(/\s{2,}/g, " ").trim();
-  var editionOnly = /^(the\s+)?(closing(\s+of\s+the\s+day)?|the\s+close|morning\s+view|morning\s+note|midday(\s+pulse)?|in\s+focus|night\s+briefing|evening(\s+note)?|market\s+watch|breaking\s+news|(daily\s+|provisional\s+)?nowcast|executive\s+synthesis|sunday\s+edition|today'?s?\s+edition|the\s+week\s+ahead)$/i.test(bare);
+  var editionOnly = /^(the\s+)?(closing(\s+of\s+the\s+day)?|the\s+close|morning\s+(view|note|brief)|midday(\s+pulse)?|in\s+focus|night\s+briefing|evening(\s+note)?|market\s+watch|breaking\s+news|(daily\s+|provisional\s+)?nowcast|executive\s+synthesis|sunday\s+edition|today'?s?\s+edition|(the\s+)?week\s+ahead|gvi)$/i.test(bare);
   var looks = /the velocity edge/i.test(line) || /\bFDK\b/i.test(line) ||
               (/[|—–:]/.test(line) && hasDate) || editionOnly || (hasDate && bare === "");
   if (!looks) return null;
@@ -560,32 +586,27 @@ function detectMasthead_(line) {
   var dm = line.match(new RegExp(DATE));
   if (dm) { var d = new Date(dm[0]); if (!isNaN(d.getTime())) dateObj = d; }
 
-  // Split on | — – : and pick the segment that is the edition (not the brand,
-  // not the date, not "FDK").
+  // Split on | — – : ; the edition is the first segment that is one of the six labels.
   var segs = line.split(/\s*[|—–:]\s*/);
-  var edition = null;
-  for (var i = 0; i < segs.length; i++) {
-    var seg = String(segs[i] || "").trim();
-    if (!seg) continue;
-    if (/^the\s+velocity\s+edge$/i.test(seg)) continue;
-    if (/^fdk$/i.test(seg)) continue;
-    if (new RegExp("^" + DATE + "$").test(seg)) continue; // the date segment
-    edition = seg; break;
-  }
-  return { dateObj: dateObj, edition: edition ? normalizeEdition_(edition) : null };
+  for (var k = 0; k < segs.length; k++) { var ne = normalizeEdition_(segs[k]); if (ne) return { dateObj: dateObj, edition: ne }; }
+  return { dateObj: dateObj, edition: null };
 }
 
 // Map whatever edition wording the note uses to a canonical site slot, so the
 // note is classified and time-stamped correctly (Morning View / Midday Pulse /
 // The Close…). Unknown editions are kept (tidied) as-is.
+// The six labels of "Istruzioni per le note": Morning Brief, Midday Pulse,
+// The Close, The Week Ahead, In Focus, GVI.
 function normalizeEdition_(ed) {
   var e = String(ed || "").toLowerCase();
-  if (/clos/.test(e)) return "The Close";              // The Close / Closing of the Day
-  if (/morning/.test(e)) return "Morning View";
-  if (/midday|mid-day|midday pulse/.test(e)) return "Midday Pulse";
+  if (/\bgvi\b|global velocity index|nowcast|espresso index|corporate benchmark|country rankings/.test(e)) return "GVI";
+  if (/week\s*ahead/.test(e)) return "The Week Ahead";
   if (/in\s*focus/.test(e)) return "In Focus";
+  if (/clos/.test(e)) return "The Close";              // The Close / Closing of the Day
+  if (/morning/.test(e)) return "Morning Brief";       // Morning Brief / Morning View
+  if (/midday|mid-day/.test(e)) return "Midday Pulse";
   if (/night|evening|midnight/.test(e)) return "The Close";
-  return toTitleCase_(ed);
+  return null;   // not one of the six labels → chosen by the time, and the bot says so
 }
 
 // Pull a "Month D, YYYY" date out of free text (title or masthead), if present.
@@ -605,8 +626,12 @@ function cleanTitle_(t) {
   t = t.replace(/^\s*(mon|tues|wednes|thurs|fri|satur|sun)day\b\s*,?\s*/i, ""); // weekday prefix
   t = t.replace(/[A-Za-z]+\s+\d{1,2},?\s*\d{4}/g, "");     // dates "Month D, YYYY"
   t = t.replace(/\d{1,2}\s+[A-Za-z]+\s+\d{4}/g, "");       // dates "DD Month YYYY"
-  t = t.replace(/\bfdk\b/gi, "");
-  t = t.replace(/the\s+velocity\s+edge/gi, "");
+  t = t.replace(/\bfdk(['’]s)?\b/gi, "");
+  t = t.replace(/the\s+velocity\s+edge(['’]s)?/gi, "");
+  // An edition name in front of the title belongs to line 1, not the title
+  // ("Midday Pulse: Oil Slips" → "Oil Slips"); GVI stays, it names the index.
+  t = t.replace(/^\s*(the\s+)?(morning\s+(brief|view|note)|midday(\s+pulse)?|the\s+close|closing\s+of\s+the\s+day|(the\s+)?week\s+ahead|in\s+focus)\s*[|—–:\-]\s*/i, "");
+  t = t.replace(/^[\s'’‘`"“”«»]+/, "");                 // never start with a quote or apostrophe
   var parts = t.split(/\s*[|—–]\s*/).map(function (x) { return x.trim(); }).filter(Boolean);
   t = parts.join(": ");
   t = t.replace(/\s{2,}/g, " ").replace(/^[\s:,\-]+|[\s:,\-]+$/g, "").trim();

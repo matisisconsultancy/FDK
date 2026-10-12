@@ -63,6 +63,8 @@ Return ONE JSON object, no prose, no code fences: {"updates":[ ... ]}. Include o
 actually contains data for; return {"updates":[]} if it has none. Never invent numbers: copy them exactly from
 the note. When the note says a change is not available (e.g. "N/V"), use the string "N/V" for delta and "flat"
 for trend. Use null for anything the note does not state. Dates are YYYY-MM-DD (the note's reporting date).
+House format ("Istruzioni per le note"): a line "Scores as of <date>" gives asOf; "verified" / "provisional" says
+whether the data is final (provisional: true when it says provisional); ranking lines read "Rank. Name — score (change)".
 
 kind "corporate-benchmark" — a ranked list of corporate GVI scores (leaders and/or laggards):
  {"kind":"corporate-benchmark","asOf":"","title":"GVI Corporate Benchmark",
@@ -85,6 +87,14 @@ kind "corporate-daily" — daily global corporate rankings (top / bottom / secto
   "top":[{"rank":N,"name":"","sector":"","score":N,"delta":N,"trend":""}],
   "bottom":[{"rank":N,"name":"","sector":"","score":N,"delta":N,"trend":""}],
   "sectors":[{"rank":N,"name":"","score":N,"delta":N,"trend":""}]}
+
+kind "velocity" — a Velocity Reading / nowcast: one overall 0–100 reading and the forces behind it:
+ {"kind":"velocity","asOf":"","overall":{"score":N,"max":100,"label":"e.g. Morning Velocity Reading"},
+  "rows":[{"name":"force or driver","score":N,"trend":"up|flat|down"}]}
+
+kind "next-economy" — a Next Economy Research Centre (NERC) reading: a hypothesis and its indicators:
+ {"kind":"next-economy","asOf":"","title":"Next Economy Dashboard","hypothesis":"the hypothesis as stated",
+  "rows":[{"k":"indicator","latest":"latest value as printed","trend":"up|flat|down","reading":"short interpretation"}]}
 
 kind "today" — the day's headline for the dashboard's Today panel (include it for a daily GVI / index note):
  {"kind":"today","date":"","edition":"","thesis":"the note's title","subtitle":"the note's one-line dek, plain text",
@@ -187,6 +197,19 @@ function merge(store, u, src) {
       const cur = store.daily.corporates || {};
       if (!newer(u.asOf, cur.asOf)) return null;
       store.daily.corporates = { asOf: u.asOf, average: u.average, top: u.top || [], bottom: u.bottom || [], sectors: u.sectors || [], source };
+      return u.asOf;
+    }
+    case "velocity": {
+      const cur = store.velocity || {};
+      if (!newer(u.asOf, cur.asOf) || !u.overall || typeof u.overall.score !== "number") return null;
+      store.velocity = { asOf: u.asOf, overall: Object.assign({ max: 100 }, u.overall), scale: cur.scale || "0 = constrained · 100 = unconstrained",
+        rows: (u.rows || []).map((r) => ({ name: r.name, score: r.score, arrows: Math.max(1, Math.min(4, Math.round((r.score || 0) / 25))), trend: r.trend || "flat" })), source };
+      return u.asOf;
+    }
+    case "next-economy": {
+      const cur = store.nextEconomy || {};
+      if (!newer(u.asOf, cur.asOf) || !(u.rows || []).length) return null;
+      store.nextEconomy = { asOf: u.asOf, title: u.title || cur.title || "Next Economy Dashboard", hypothesis: u.hypothesis || "", rows: u.rows, source };
       return u.asOf;
     }
     case "today": {

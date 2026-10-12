@@ -76,7 +76,7 @@ export function editionOf(p) {
   if (/^(in focus|in depth)$/.test(sl)) return "focus";
   if (sl === "midday pulse") return "midday";
   if (/^(the close|night briefing|evening note|closing of the day)$/.test(sl) || p.kind === "night") return "closing";
-  if (/^(morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl)) return "morning";
+  if (/^(morning brief|morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl)) return "morning";
   const h = parseInt(String(p.time || "08:00").split(":")[0], 10);
   return h < 12 ? "morning" : h < 17 ? "midday" : "closing";
 }

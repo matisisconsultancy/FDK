@@ -65,7 +65,7 @@ function forceFrontMatter(draft, forced) {
 }
 
 const { fm: preFM, body: preBody } = parseFrontMatter(raw);
-const PRESERVE_KEYS = ["title", "slug", "date", "slot", "tag", "dek", "epigraph", "excerpt"];
+const PRESERVE_KEYS = ["title", "slug", "date", "slot", "time", "tag", "dek", "epigraph", "excerpt"];
 const preserve = {};
 for (const k of PRESERVE_KEYS) if (preFM[k]) preserve[k] = preFM[k];
 // The prose the model formats: the body only (never the pinned front-matter).
@@ -81,8 +81,9 @@ The draft is front-matter (between --- lines) followed by a body of blocks.
 FRONT-MATTER (required keys: title, date, slot, dek):
   title:   a short, editorial headline (Title Case). Reuse the newsletter's headline if it has one.
   date:    the edition date as "Month D, YYYY" (e.g. July 18, 2026).
-  slot:    one of exactly — Morning View, Morning Note, Today's Edition, The Week Ahead,
-           Breaking News, Night Briefing, Evening Note, The Close. Infer from the text; default "Morning View".
+  slot:    one of exactly — Morning Brief, Midday Pulse, The Close, The Week Ahead, In Focus, GVI.
+           Use the label on the masthead line ("The Velocity Edge — <Label> | <date> | FDK") if there is one;
+           a title starting with "GVI" means GVI. Otherwise infer from the text; default "Morning Brief".
   dek:     one-sentence standfirst; you may use **bold** and ==green== inline emphasis.
   tag:     OPTIONAL single topical word/phrase appended after the slot (e.g. "Macro", "Capital", "Energy").
   epigraph: OPTIONAL one-line quotable epigraph.
@@ -103,11 +104,23 @@ BODY BLOCKS (all optional, use only what the material supports, keep the author'
   - ::takeaways Key takeaways | subhead  → bullet lines starting with "- ".
   - ::close  → the final closing line (may use ==green==).
 
+THE AUTHOR'S FORMAT (notes are written to "Istruzioni per le note"; map it, never rewrite it):
+  - A masthead line "The Velocity Edge — <Label> | <date> | FDK" is metadata: use it for slot/date, never as text.
+  - The first 2–3 sentences (the thesis) → the leading paragraphs.
+  - Lines "VALUE :: what it is" → the ::stats block, unchanged (at most 4).
+  - A short line on its own followed by paragraphs is a section heading → ::section Heading, then its paragraphs.
+  - The last line "Velocity Insight: …" → ::close (drop the "Velocity Insight:" prefix).
+  - GVI notes: keep the data date and "verified"/"provisional" line in a paragraph, and copy every ranking line
+    ("Rank. Name — score (change)", "N/V" included) exactly, as "- " lines in a ::takeaways block per ranking,
+    headed with the index name. Never round, re-rank or drop a row.
+  - Keep the author's length: do not add sections, background or takeaways the text does not contain.
+    A short note stays short. If the text refers to an earlier note of the day, keep that reference as written.
+
 INLINE: **bold**, *italic*, ==green highlight==. Keep it tasteful — a few highlights, not many.
 
 STYLE: authoritative, calm, board-level. Preserve every concrete fact, figure and name from
 the source. Do not invent statistics. Structure the piece so it reads like the site's existing
-notes: a lead, a data strip, a few signals or a section or two, key takeaways, a close.`;
+notes: a lead, a data strip, a section or two, a close — using only the blocks the author's text supports.`;
 
 const body = {
   model: MODEL,

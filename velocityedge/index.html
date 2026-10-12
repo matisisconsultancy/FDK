@@ -26,7 +26,7 @@
   <meta name="theme-color" content="#04070e" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/velocityedge/ve.css?v=83d4f69a0a" />
+  <link rel="stylesheet" href="/velocityedge/ve.css?v=2a3eea6246" />
 </head>
 <body>
 <script>(function(){var m=/^#tab-([\w-]+)$/.exec(location.hash||'');if(!m)return;var id=m[1];
@@ -209,9 +209,9 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
 
 <div class="cring" id="cring" aria-hidden="true"></div>
 
-<script src="/posts.js?v=83d4f69a0a"></script>
-<script src="/gvi-data.js?v=83d4f69a0a"></script>
-<script src="/ve-live.js?v=83d4f69a0a"></script>
+<script src="/posts.js?v=2a3eea6246"></script>
+<script src="/gvi-data.js?v=2a3eea6246"></script>
+<script src="/ve-live.js?v=2a3eea6246"></script>
 <script>
 // ---- The Daily from /posts.js: The Latest + the most recent note of each edition ----
 (function(){var P=(window.FDK_POSTS||[]).filter(function(p){var t=(p.title||'').trim();return t.length>10&&!/^in-?focus$/i.test(t)&&(p.slot||'').toLowerCase().indexOf('add this just')<0});
@@ -222,7 +222,7 @@ addEventListener('pageshow',function(e){if(e.persisted)return;top()});})();</scr
   if(/^(in focus|in depth)$/.test(sl))return 'focus';
   if(sl==='midday pulse')return 'midday';
   if(/^(the close|night briefing|evening note|closing of the day)$/.test(sl)||p.kind==='night')return 'closing';
-  if(/^(morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl))return 'morning';
+  if(/^(morning brief|morning view|morning note|today.s edition|daily nowcast|provisional nowcast)$/.test(sl))return 'morning';
   var h=parseInt((p.time||'08:00').split(':')[0],10);return h<12?'morning':h<17?'midday':'closing'}
  function topic(p){var t=String(p.tag||'').split(' · ');return t.length>1?t[t.length-1]:''}
  var PH={morning:'sun',midday:'midday',closing:'moon',week:'week',focus:'focus'},NAME={morning:'Morning Brief',midday:'Midday Pulse',closing:'The Close',week:'The Week Ahead',focus:'In Focus'};

@@ -1,8 +1,8 @@
 ---
-title: ’S Take
-slug: s-take
+title: The Great Collision
+slug: the-great-collision
 date: October 12, 2026
-slot: Morning View
+slot: Morning Brief
 tag: Macro
 dek: Three structural forces—AI, energy and sovereign debt—are converging into a single repricing event that will determine the next market rotation, the direction of global capital flows and ==Europe's place in the new economic order==.
 epigraph: AI is no longer simply transforming the economy. It is becoming the mechanism through which geopolitical risk, energy scarcity and financial capital are repriced.

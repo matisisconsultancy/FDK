@@ -68,6 +68,9 @@ function looksJunkTitle(title) {
   if (new RegExp("^(" + MONTHS + ")\\s+\\d{1,2},?\\s+\\d{4}\\b", "i").test(t)) return "date as title";
   if (/\|\s*fdk\b/i.test(t) || /^the velocity edge\b/i.test(t)) return "masthead as title";
   if (/·.*·.*·/.test(t)) return "section list as title";
+  // Same title rules as "Istruzioni per le note" (and the Telegram bot).
+  if (/^['’‘`"“”«»]/.test(t)) return "title starts with a quote or apostrophe";
+  if (/^(the\s+)?(morning\s+(brief|view|note)|midday(\s+pulse)?|the\s+close|(the\s+)?week\s+ahead|in\s+focus|gvi)$/i.test(t)) return "edition name as title";
   if (/prueba de que est[aá] funcionando|funcionando el publicador/i.test(t)) return "test note";
   return null;
 }

@@ -46,6 +46,7 @@ function reference() {
 
 /* ---- slot -> kind / time / default tag ---------------------------------- */
 const SLOTS = {
+  "Morning Brief":  { kind: "day",   time: "08:00" },
   "Morning View":   { kind: "day",   time: "08:00" },
   "Morning Note":   { kind: "day",   time: "07:15" },
   "Today’s Edition":{ kind: "day",   time: "08:00" },
@@ -62,6 +63,8 @@ const SLOTS = {
   "Night Briefing": { kind: "night", time: "21:30" },
   "Evening Note":   { kind: "night", time: "21:00" },
   "The Close":      { kind: "night", time: "21:00" },
+  // GVI notes (dashboard data) have no fixed hour: they take the time they are published.
+  "GVI":            { kind: "day",   time: null },
 };
 
 /* ---- parse front-matter + body ------------------------------------------ */
@@ -106,7 +109,8 @@ function pickCover() {
   return best;
 }
 const kind = fm.kind || slotCfg.kind;
-const time = fm.time || slotCfg.time;
+const time = fm.time || slotCfg.time ||
+  new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/Madrid", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).format(new Date());
 const tag = fm.tag ? `${slot} · ${fm.tag}` : slot;
 const slug = fm.slug || kebab(title);
 const excerpt = (fm.excerpt || dek).replace(/<[^>]+>/g, "").replace(/\*\*|==|(?<![*])\*(?![*])/g, "");
