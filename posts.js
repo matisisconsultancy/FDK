@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/s-take",
+    title: "’S Take",
+    excerpt: "Geopolitics, energy scarcity and sovereign debt are beginning to reinforce one another — and testing the limits of the AI investment boom.",
+    tag: "Global Macro & Capital Markets · Macro",
+    slot: "Global Macro & Capital Markets",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "11 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-brief",
     title: "Global Brief",
     excerpt: "The AI Supercycle is entering a decisive financial phase as credit discipline, energy costs and rising yields begin to discriminate between investments.",
