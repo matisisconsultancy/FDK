@@ -74,6 +74,7 @@ function relatedCards() {
   if (!list.length) return;
   function fkey(p) {
     var sl = (p.slot || "").toLowerCase().trim();
+    if (/^(gvi|fdk gvi corporate benchmark|fdk global velocity index|daily nowcast|provisional nowcast|gvi global cities signature survey)$/.test(sl) || /^(gvi\b|global velocity index\b)|espresso index/i.test(p.title || "")) return "gvi";
     if (/^(the week ahead|week ahead|sunday edition|monday brief)$/.test(sl)) return "week";
     if (/^(in focus|in depth)$/.test(sl)) return "focus";
     if (sl === "midday pulse") return "midday";
@@ -82,7 +83,7 @@ function relatedCards() {
     var h = parseInt((p.time || "08:00").split(":")[0], 10);
     return h < 12 ? "morning" : h < 17 ? "midday" : "closing";
   }
-  var NAME = { morning: "Morning Brief", midday: "Midday Pulse", closing: "The Close", week: "The Week Ahead", focus: "In Focus" };
+  var NAME = { morning: "Morning Brief", midday: "Midday Pulse", closing: "The Close", week: "The Week Ahead", focus: "In Focus", gvi: "GVI" };
   var COV = [["collision", /collision|shock|clash|divergen|bifurcat/], ["reversal", /reversal|rotation|reorder|repricing/], ["moonshot", /moonshot|age of|frontier/], ["orbits", /supercycle|cycle|loop|compound/], ["orbs", /two |dual|both /], ["chip", /chip|nvidia|compute|semiconductor|gpu|cuda|data cent|economics test|stack|model/], ["columns", /bank|mps|caltagirone|risiko|monte dei paschi|lender/], ["globe", /china|u\.s\.|geopolit|sovereign|alliance|security order|global/], ["city", /europe|european|eurozone|ital|architecture/], ["terrain", /credit|bond|yield|treasur|rate|spread|hurdle|cost of capital|denominator|debt/], ["reversal", /capital|flow|velocity|split/]];
   var ALL = ["reversal", "chip", "collision", "globe", "columns", "terrain", "orbs", "city", "orbits", "moonshot"], used = {};
   function hash(s) { var h = 0; for (var i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) >>> 0; return h; }

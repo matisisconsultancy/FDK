@@ -877,3 +877,13 @@ body.menu-open .demo,body.menu-open .demo-note{display:none}
   .hero h1 .w>i,[data-rise] .w>i{transform:none!important;animation:none!important}
   .cring{display:none!important}
 }
+/* v28 · GVI — Francesco's indices, glacier sky blue, a diamond (the only angular mark) */
+:root{--b-ice:#7fd6ff;--b-ice-ink:#0b5f86}
+.edm[data-f=gvi] .dot{border-radius:1px;width:8px;height:8px;transform:rotate(45deg);background:var(--b-ice);box-shadow:0 0 6px rgba(127,214,255,.6)}
+.edm.on[data-f=gvi]{background:var(--b-ice);color:#06253a;border-color:var(--b-ice)}
+.edm.on[data-f=gvi] .dot{background:#06253a;box-shadow:none}
+.ph--gvi{border-radius:1px;width:8px;height:8px;transform:rotate(45deg);background:var(--b-ice);box-shadow:0 0 0 2px rgba(127,214,255,.3)}
+.sdot--gvi{border-radius:1px;width:7px;height:7px;transform:rotate(45deg);background:var(--b-ice)}
+:root .note.note--gvi{--nc:var(--b-ice-ink);--nm:#3d5a6b;--nd:#4f6e80;color:#06253a;border:1px solid rgba(11,95,134,.28);background:linear-gradient(160deg,#f1faff,#d9f0fb)}
+:root:not(.day) .note.note--gvi{--nc:#9fdcff;--nm:var(--muted);--nd:var(--dim);color:var(--fg);border-color:rgba(127,214,255,.4);background:linear-gradient(160deg,rgba(127,214,255,.16),rgba(127,214,255,.03) 60%),var(--panel)}
+@media (hover:hover) and (pointer:fine){:root #daily .note.note--gvi:hover,:root .arc .note.note--gvi:hover{border-color:rgba(127,214,255,.8)}}

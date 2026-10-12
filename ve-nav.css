@@ -71,6 +71,7 @@
 .sdot--closing { background: transparent; box-shadow: inset -3px 0 0 0 var(--ve-peri), 0 0 0 1px rgba(174, 184, 255, .35); }
 .sdot--week { background: linear-gradient(135deg, var(--ve-green), var(--ve-indigo)); }
 .sdot--focus { background: transparent; border: 2px solid var(--ve-green); }
+.sdot--gvi { width: 7px; height: 7px; border-radius: 1px; transform: rotate(45deg); background: #7fd6ff; }
 
 /* ---------- mobile menu: accordion, every group closed ---------- */
 .mmenu { position: fixed; inset: 0; z-index: 89; background: #04070e; color: #e9eef8; display: flex; flex-direction: column; overflow-y: auto; overscroll-behavior: contain;
@@ -122,13 +123,16 @@ body.menu-open { overflow: hidden; }
    <main class="art" data-edition="morning|midday|closing|week|focus">
    Morning Brief green · Midday Pulse yellow · The Close violet moon
    · Week Ahead green-indigo · In Focus green ring (mint, the special one)
+   · GVI glacier sky blue with a diamond (Francesco's indices)
    ============================================================ */
 .art[data-edition] { --ed: #2ee06a; --ed-2: #2ee06a; --ed-ink: #0f7a3c; --ed-soft: rgba(46, 224, 106, .1); --ed-line: rgba(46, 224, 106, .34); --ed-glow: rgba(46, 224, 106, .2); }
 .art[data-edition="midday"] { --ed: #f5b82e; --ed-2: #f5b82e; --ed-ink: #8a5a00; --ed-soft: rgba(245, 184, 46, .13); --ed-line: rgba(245, 184, 46, .5); --ed-glow: rgba(245, 184, 46, .3); }
 .art[data-edition="closing"] { --ed: #aeb8ff; --ed-2: #7c8bff; --ed-ink: #4a52c8; --ed-soft: rgba(124, 139, 255, .12); --ed-line: rgba(124, 139, 255, .42); --ed-glow: rgba(124, 139, 255, .22); }
 .art[data-edition="week"] { --ed: #2ee06a; --ed-2: #7c8bff; --ed-ink: #3a48c9; --ed-soft: rgba(124, 139, 255, .1); --ed-line: rgba(124, 139, 255, .38); --ed-glow: rgba(124, 139, 255, .18); }
 .art[data-edition="focus"] { --ed: #2ee06a; --ed-2: #2ee06a; --ed-ink: #0a6b36; --ed-soft: rgba(22, 196, 90, .12); --ed-line: rgba(22, 196, 90, .45); --ed-glow: rgba(46, 224, 106, .22); }
+.art[data-edition="gvi"] { --ed: #7fd6ff; --ed-2: #4fb8ea; --ed-ink: #0b5f86; --ed-soft: rgba(127, 214, 255, .14); --ed-line: rgba(79, 184, 234, .5); --ed-glow: rgba(127, 214, 255, .28); }
 /* dark pages: the light tint reads best */
+.art--night[data-edition="gvi"] { --ed-ink: #9fdcff; }
 .art--night[data-edition] { --ed-ink: #5ff09a; }
 .art--night[data-edition="midday"] { --ed-ink: #f5c451; }
 .art--night[data-edition="closing"] { --ed-ink: #c3caff; }
@@ -143,6 +147,7 @@ body.menu-open { overflow: hidden; }
 /* the reading-progress bar takes the edition colour too */
 body:has(.art[data-edition="midday"]) .scroll-progress { background: #f5b82e; box-shadow: 0 0 12px #f5b82e; }
 body:has(.art[data-edition="closing"]) .scroll-progress { background: #aeb8ff; box-shadow: 0 0 12px #7c8bff; }
+body:has(.art[data-edition="gvi"]) .scroll-progress { background: #7fd6ff; box-shadow: 0 0 12px #7fd6ff; }
 body:has(.art[data-edition="week"]) .scroll-progress { background: linear-gradient(90deg, #2ee06a, #7c8bff); box-shadow: 0 0 12px rgba(124, 139, 255, .8); }
 .art[data-edition] .art-section-head__num, .art[data-edition] .art-pull__label { color: var(--ed-ink); }
 .art[data-edition] .art-meta__tag { border-color: var(--ed-line); }
@@ -154,11 +159,15 @@ body:has(.art[data-edition="week"]) .scroll-progress { background: linear-gradie
 .art--night .art-kicker__pulse--closing { box-shadow: inset -4px 0 0 0 #aeb8ff, 0 0 0 1px rgba(174, 184, 255, .45); }
 .art-kicker__pulse--week { background: linear-gradient(135deg, #2ee06a, #7c8bff); animation: none; box-shadow: 0 0 0 3px rgba(124, 139, 255, .16); }
 .art-kicker__pulse--focus { width: 11px; height: 11px; background: transparent; border: 2px solid #16c45a; animation: none; box-shadow: 0 0 9px rgba(46, 224, 106, .55); }
+.art-kicker__pulse--gvi { width: 9px; height: 9px; border-radius: 1px; transform: rotate(45deg); background: #7fd6ff; animation: none; box-shadow: 0 0 8px rgba(127, 214, 255, .7); }
 @keyframes veSunPulse { 0% { box-shadow: 0 0 0 0 rgba(245, 184, 46, .6); } 100% { box-shadow: 0 0 0 10px rgba(245, 184, 46, 0); } }
 
 /* In Focus is the special edition: a mint hero, like its card */
 .art--day[data-edition="focus"] .art-hero { background: radial-gradient(120% 90% at 50% -10%, #dcf6e5 0%, #f2fdf6 45%, #ffffff 75%); }
 .art--night[data-edition="focus"] .art-hero { background: radial-gradient(120% 90% at 50% -10%, #12402a 0%, #070a24 62%); }
+/* GVI: a glacier sky */
+.art--day[data-edition="gvi"] .art-hero { background: radial-gradient(120% 90% at 50% -10%, #d9f0fb 0%, #f1faff 45%, #ffffff 75%); }
+.art--night[data-edition="gvi"] .art-hero { background: radial-gradient(120% 90% at 50% -10%, #12405a 0%, #070a24 62%); }
 /* The Close: a night sky */
 .art--night[data-edition="closing"] .art-hero { background: radial-gradient(120% 90% at 50% -10%, #1d2466 0%, #070a24 62%); }
 
@@ -179,7 +188,10 @@ body:has(.art[data-edition="week"]) .scroll-progress { background: linear-gradie
 .vcard:focus-visible { outline: 2px solid #2ee06a; outline-offset: 3px; }
 .vcard--focus { --nc: #0a6b36; --nm: #3d5a49; --nd: #53705f; color: #0b1f13; border-color: rgba(22, 196, 90, .42); background: linear-gradient(160deg, #f2fdf6, #d8f4e2); }
 .art--night .vcard--focus { --nc: #5ff09a; --nm: rgba(233, 238, 248, .74); --nd: rgba(233, 238, 248, .6); color: #e9eef8; border-color: rgba(46, 224, 106, .4); background: linear-gradient(160deg, rgba(46, 224, 106, .16), rgba(46, 224, 106, .03) 60%), #0a1122; }
+.vcard--gvi { --nc: #0b5f86; --nm: #3d5a6b; --nd: #4f6e80; color: #06253a; border-color: rgba(11, 95, 134, .28); background: linear-gradient(160deg, #f1faff, #d9f0fb); }
+.art--night .vcard--gvi { --nc: #9fdcff; --nm: rgba(233, 238, 248, .74); --nd: rgba(233, 238, 248, .6); color: #e9eef8; border-color: rgba(127, 214, 255, .4); background: linear-gradient(160deg, rgba(127, 214, 255, .16), rgba(127, 214, 255, .03) 60%), #0a1122; }
 @media (hover: hover) and (pointer: fine) {
+  .vcard--gvi:hover { border-color: rgba(127, 214, 255, .8); }
   .vcard:hover { border-color: rgba(174, 184, 255, .55); box-shadow: 0 24px 50px -34px rgba(7, 10, 36, .7); }
   .vcard--focus:hover { border-color: rgba(22, 196, 90, .7); }
   .vcard:hover .vcard__media img { transform: scale(1.04); }
@@ -194,6 +206,7 @@ body:has(.art[data-edition="week"]) .scroll-progress { background: linear-gradie
 .vcard__ph--midday { background: #f5b82e; box-shadow: 0 0 0 2px rgba(245, 184, 46, .32); }
 .vcard__ph--closing { background: transparent; box-shadow: inset -3px 0 0 0 #aeb8ff; }
 .vcard__ph--week { background: linear-gradient(135deg, #2ee06a, #7c8bff); }
+.vcard__ph--gvi { width: 8px; height: 8px; border-radius: 1px; transform: rotate(45deg); background: #7fd6ff; box-shadow: 0 0 0 2px rgba(127, 214, 255, .3); }
 .vcard__ph--focus { border: 2px solid #2ee06a; box-shadow: 0 0 8px rgba(46, 224, 106, .6); }
 .vcard__body { display: flex; flex-direction: column; gap: 10px; padding: 20px 22px 22px; flex: 1; min-width: 0; }
 .vcard__cat { font-family: var(--ve-mono); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; font-weight: 500; color: var(--nc); }

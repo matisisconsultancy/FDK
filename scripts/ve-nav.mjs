@@ -22,7 +22,7 @@ const CHEV = `<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke
 
 export const EDITIONS = [
   ["morning", "Morning Brief"], ["midday", "Midday Pulse"], ["closing", "The Close"],
-  ["week", "Week Ahead"], ["focus", "In Focus"],
+  ["week", "Week Ahead"], ["focus", "In Focus"], ["gvi", "GVI"],
 ];
 const TABS = [["today", "Today"], ["market", "Market"], ["velocity", "Velocity"], ["rankings", "Rankings"], ["indices", "Indices"], ["next", "Next Economy"]];
 
@@ -69,9 +69,11 @@ export function veNav({ archive = false } = {}) {
 }
 
 /* ---- editions: the same rules as /velocityedge/ and the archive ---------- */
-export const EDITION_NAME = { morning: "Morning Brief", midday: "Midday Pulse", closing: "The Close", week: "The Week Ahead", focus: "In Focus" };
+export const EDITION_NAME = { morning: "Morning Brief", midday: "Midday Pulse", closing: "The Close", week: "The Week Ahead", focus: "In Focus", gvi: "GVI" };
 export function editionOf(p) {
   const sl = String(p.slot || "").toLowerCase().trim();
+  // GVI: the notes that carry Francesco's indices (same rule in /ve-nav.js, the archive and /velocityedge/)
+  if (/^(gvi|fdk gvi corporate benchmark|fdk global velocity index|daily nowcast|provisional nowcast|gvi global cities signature survey)$/.test(sl) || /^(gvi\b|global velocity index\b)|espresso index/i.test(p.title || "")) return "gvi";
   if (/^(the week ahead|week ahead|sunday edition|monday brief)$/.test(sl)) return "week";
   if (/^(in focus|in depth)$/.test(sl)) return "focus";
   if (sl === "midday pulse") return "midday";
