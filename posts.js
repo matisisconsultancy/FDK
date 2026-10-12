@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-intelligence-takes-command-of-markets",
+    title: "The Cost of Intelligence Takes Command of Markets",
+    excerpt: "An oil shock, expensive sovereign debt and a narrow equity rally are forcing investors to separate technological leadership from productive capital formation.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "4 min read",
+    time: "19:45",
+    kind: "night"
+  },
+  {
     url: "/gvi-daily-update-2026-10-12",
     title: "GVI Daily Update",
     excerpt: "As drone strikes hit data centres and financing divides widen, resilience becomes the new premium in the AI investment cycle.",
