@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-collision",
+    title: "The Great Collision",
+    excerpt: "When AI, energy and sovereign debt redefine the global investment cycle, the next rotation will reward those who can finance growth, not simply those who build it.",
+    tag: "Morning Brief · Macro",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "7 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/global-brief",
     title: "Global Brief",
     excerpt: "The AI Supercycle is entering a decisive financial phase as credit discipline, energy costs and rising yields begin to discriminate between investments.",
