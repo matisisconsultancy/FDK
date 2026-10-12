@@ -24,6 +24,13 @@ const hasKey = !!process.env.ANTHROPIC_API_KEY;
 if (!fs.existsSync(DRAFTS)) { console.log("No drafts/ directory — nothing to do."); process.exit(0); }
 fs.mkdirSync(PUBLISHED, { recursive: true });
 
+// Tell the workflow what changed: `published` new notes, `changed` = published
+// + unpublished (a deletion alone must still be committed and deployed).
+const signal = (published, unpublished) => {
+  if (process.env.GITHUB_OUTPUT)
+    fs.appendFileSync(process.env.GITHUB_OUTPUT, `published=${published}\nchanged=${published + unpublished}\n`);
+};
+
 const run = (script, extra = []) =>
   execFileSync("node", [path.join("scripts", script), ...extra], { stdio: ["ignore", "inherit", "inherit"], cwd: ROOT });
 
@@ -49,6 +56,7 @@ const pending = fs.readdirSync(DRAFTS)
 
 if (!pending.length) {
   console.log(unpublished.length ? `Unpublished ${unpublished.length} note(s); no drafts to publish.` : "No pending drafts.");
+  signal(0, unpublished.length);
   process.exit(0);
 }
 
@@ -73,6 +81,37 @@ function looksJunkTitle(title) {
   if (/^(the\s+)?(morning\s+(brief|view|note)|midday(\s+pulse)?|the\s+close|(the\s+)?week\s+ahead|in\s+focus|gvi)$/i.test(t)) return "edition name as title";
   if (/prueba de que est[aá] funcionando|funcionando el publicador/i.test(t)) return "test note";
   return null;
+}
+
+// ---- same address as a note already online ----------------------------------
+// Recurring titles ("Daily Update", "The Next Economy Research Centre", …) give
+// the same slug every time. The same text sent again is a duplicate and is set
+// aside; a new note gets the date in its address (daily-update-2026-10-12,
+// then -2, -3 …), which is also what the Telegram bot announces.
+const wordsOf = (t) => new Set(String(t).toLowerCase().replace(/<[^>]+>/g, " ").match(/[a-z]{5,}/g) || []);
+function sameText(body, slug) {
+  const page = path.join(ROOT, slug, "index.html");
+  if (!fs.existsSync(page)) return false;
+  const live = wordsOf(fs.readFileSync(page, "utf8")), mine = [...wordsOf(body)];
+  return mine.length > 20 && mine.filter((w) => live.has(w)).length / mine.length >= 0.85;
+}
+function resolveSlug(file) {
+  const src = fs.readFileSync(path.join(DRAFTS, file), "utf8");
+  const m = src.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+  if (!m) return { ok: true };
+  const get = (k) => ((m[1].match(new RegExp(`(?:^|\\n)\\s*${k}\\s*:\\s*(.+)`)) || [])[1] || "").trim();
+  const slug = get("slug"), body = m[2];
+  if (!slug) return { ok: true };
+  const base = slug.replace(/-\d{4}-\d{2}-\d{2}(-\d+)?$/, "");
+  for (const s of new Set([base, slug])) if (sameText(body, s)) return { ok: false, reason: `same text as /${s}/, already online` };
+  if (!fs.existsSync(path.join(ROOT, slug))) return { ok: true };
+  const d = new Date(get("date") + " 12:00 UTC");
+  const iso = isNaN(d) ? new Date().toISOString().slice(0, 10) : d.toISOString().slice(0, 10);
+  let next = `${base}-${iso}`;
+  for (let n = 2; fs.existsSync(path.join(ROOT, next)); n++) next = `${base}-${iso}-${n}`;
+  fs.writeFileSync(path.join(DRAFTS, file), src.replace(/^slug\s*:.*$/m, `slug: ${next}`));
+  console.log(`→ /${slug}/ already holds another note — this one is published as /${next}/`);
+  return { ok: true };
 }
 
 for (const file of pending) {
@@ -120,6 +159,16 @@ for (const file of pending) {
       continue;
     }
 
+    const addr = resolveSlug(file);
+    if (!addr.ok) {
+      const REJECTED = path.join(DRAFTS, "rejected");
+      fs.mkdirSync(REJECTED, { recursive: true });
+      fs.renameSync(path.join(DRAFTS, file), path.join(REJECTED, file));
+      console.warn(`⛔ set aside ${file}: ${addr.reason} → drafts/rejected/`);
+      failed.push(file);
+      continue;
+    }
+
     run("publish-note.mjs", [rel]);
 
     // capture the slug the publisher just added (top entry of posts.js)
@@ -151,6 +200,6 @@ console.log("\n" + summary);
 if (process.env.GITHUB_STEP_SUMMARY) fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, summary);
 
 // signal whether anything changed (for the workflow to decide to commit)
-if (process.env.GITHUB_OUTPUT) fs.appendFileSync(process.env.GITHUB_OUTPUT, `published=${published.length}\n`);
+signal(published.length, unpublished.length);
 
 process.exit(0);

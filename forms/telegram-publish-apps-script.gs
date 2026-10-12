@@ -499,6 +499,16 @@ function processMessage_(msg) {
   var when = (parsed.dateObj || titleDate) ? dateParts_(parsed.dateObj || titleDate) : todayParts_();
   var ed = parsed.edition ? { slot: parsed.edition, label: parsed.edition } : editionFor_(new Date());
 
+  // A recurring title ("Daily Update", "The Next Economy Research Centre"…)
+  // already has a note at its address: this one gets the date in its address
+  // (daily-update-2026-10-12, then -2, -3…) — the same rule the site applies —
+  // so the link we announce is the new note, never the old one.
+  if (urlIsLive_(CONFIG.SITE_BASE + "/" + slug + "/")) {
+    var baseSlug = slug;
+    slug = baseSlug + "-" + when.iso;
+    for (var n = 2; n < 20 && urlIsLive_(CONFIG.SITE_BASE + "/" + slug + "/"); n++) slug = baseSlug + "-" + when.iso + "-" + n;
+  }
+
   // ---- build + commit the draft (title/slug pinned; body AI-formatted) ----
   var draft =
     "---\n" +

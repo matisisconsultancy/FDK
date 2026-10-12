@@ -60,7 +60,7 @@ jobs:
       # rebuilt so the shared copy around it still reads in ES/IT, and the log
       # lists exactly which new strings need translating.
       - name: Rebuild translation dictionaries
-        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         run: |
           node scripts/i18n-build.mjs
           echo "--- strings awaiting translation ---"
@@ -71,7 +71,7 @@ jobs:
       # language the reader picks, which looks like a broken switcher. Surface
       # the count on the run summary instead of burying it in the log.
       - name: Report untranslated notes
-        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         run: |
           if node scripts/i18n-build.mjs --check > /tmp/i18n-check.txt 2>&1; then
             echo "### Translations complete" >> "$GITHUB_STEP_SUMMARY"
@@ -90,7 +90,7 @@ jobs:
           fi
 
       - name: Commit and push
-        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         run: |
           git config user.name  "velocity-edge-bot"
           git config user.email "matisisconsultancy@gmail.com"
@@ -99,7 +99,7 @@ jobs:
             echo "Nothing to commit."
             exit 0
           fi
-          git commit -m "Publish ${{ steps.process.outputs.published }} note(s) from drafts"
+          git commit -m "Publish ${{ steps.process.outputs.published }} note(s) from drafts (${{ steps.process.outputs.changed }} change(s))"
           for attempt in 1 2 3 4; do
             git pull --rebase --autostash origin "${{ github.ref_name }}" || true
             if git push origin "HEAD:${{ github.ref_name }}"; then
@@ -113,7 +113,7 @@ jobs:
           exit 1
 
       - name: Ensure Pages deployment (self-heal transient GitHub timeouts)
-        if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         continue-on-error: true   # best-effort: never fail the publish over this
         env:
           GH_TOKEN: ${{ github.token }}
