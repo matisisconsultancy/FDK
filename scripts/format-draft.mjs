@@ -135,41 +135,49 @@ STYLE: authoritative, calm, board-level. Preserve every concrete fact, figure an
 the source. Do not invent statistics. Structure the piece so it reads like the site's existing
 notes: a lead, a data strip, a section or two, a close — using only the blocks the author's text supports.`;
 
-const body = {
-  model: MODEL,
-  max_tokens: 8000,
-  thinking: { type: "adaptive" },
-  system: SYSTEM,
-  messages: [
-    { role: "user", content: `${LENGTH_RULE}\n\nConvert this newsletter text into the draft format:\n\n${prose}` },
-  ],
-};
-
-const res = await fetch(API, {
-  method: "POST",
-  headers: {
-    "x-api-key": key,
-    "anthropic-version": "2023-06-01",
-    "content-type": "application/json",
-  },
-  body: JSON.stringify(body),
-});
-
-if (!res.ok) {
-  const text = await res.text();
-  console.error(`✖ Anthropic API error ${res.status}: ${text}`);
-  process.exit(1);
+async function ask(messages) {
+  const res = await fetch(API, {
+    method: "POST",
+    headers: {
+      "x-api-key": key,
+      "anthropic-version": "2023-06-01",
+      "content-type": "application/json",
+    },
+    body: JSON.stringify({ model: MODEL, max_tokens: 8000, thinking: { type: "adaptive" }, system: SYSTEM, messages }),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    console.error(`✖ Anthropic API error ${res.status}: ${text}`);
+    process.exit(1);
+  }
+  const data = await res.json();
+  return (data.content || [])
+    .filter((b) => b.type === "text")
+    .map((b) => b.text)
+    .join("")
+    .trim()
+    .replace(/^```[a-z]*\n?/i, "")
+    .replace(/\n?```$/i, "")
+    .trim();
 }
+// Words of the draft body — what scripts/publish-note.mjs counts for "N min read".
+const bodyWords = (draft) => (draft.replace(/^---\n[\s\S]*?\n---\n?/, "").match(/\S+/g) || []).length;
 
-const data = await res.json();
-let out = (data.content || [])
-  .filter((b) => b.type === "text")
-  .map((b) => b.text)
-  .join("")
-  .trim()
-  .replace(/^```[a-z]*\n?/i, "")
-  .replace(/\n?```$/i, "")
-  .trim();
+const ask1 = `${LENGTH_RULE}\n\nConvert this newsletter text into the draft format:\n\n${prose}`;
+let out = await ask([{ role: "user", content: ask1 }]);
+
+// The limit is enforced, not just requested: a draft still over it goes back
+// to the model to be condensed (twice at most), so no note exceeds its minutes.
+for (let round = 1; round <= 2 && out.startsWith("---") && bodyWords(out) > maxWords; round++) {
+  const n = bodyWords(out), target = Math.floor(maxWords * 0.9);
+  console.error(`… draft is ${n} words, over the ${maxMin}-minute limit (${maxWords}) — condensing (round ${round})`);
+  out = await ask([
+    { role: "user", content: ask1 },
+    { role: "assistant", content: out },
+    { role: "user", content: `This draft is ${n} words; the limit is ${maxWords}. Return the same draft condensed to about ${target} words of body text: same front-matter and block format, keep the thesis, every key number and the close; cut background, repetition and secondary examples.` },
+  ]);
+}
+if (out.startsWith("---")) console.error(`✓ body ${bodyWords(out)} words (limit ${maxWords}, ${maxMin} min)`);
 
 if (!out.startsWith("---")) {
   console.error("✖ Model did not return a valid front-matter draft. Got:\n" + out.slice(0, 400));

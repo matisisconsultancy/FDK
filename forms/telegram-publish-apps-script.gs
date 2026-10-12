@@ -83,14 +83,6 @@ var CONFIG = {
   // ---- Mensaje para compartir (bilingüe EN–IT) ----
   // Refleja el sello del artículo en el sitio ("The Velocity Edge · {edición}")
   // para que TODO concuerde. Usa {edition}, {title} y {url}.
-  // Límite por edición (mismas cifras que "Istruzioni per le note"): 5 minutos
-  // de lectura (≈1.000 palabras a 200/min); In Focus y The Week Ahead hasta 10
-  // (≈2.000). Si una nota lo supera, el bot lo avisa y el formateador la condensa.
-  WORD_LIMITS: {
-    "Morning Brief": 1000, "Midday Pulse": 1000, "The Close": 1000, "GVI": 1000,
-    "The Week Ahead": 2000, "In Focus": 2000,
-  },
-
   SHARE_TEMPLATE:
     "📖 The Velocity Edge · {edition}\n\n«{title}»\n\nRead it · Leggilo 👉 {url}",
 };
@@ -99,8 +91,6 @@ var CONFIG = {
 var TXT = {
   received:   { it: function (ed, t) { return "✅ <b>Ricevuto</b> · " + ed + ": «" + t + "»\nStiamo pubblicando — ti avviso qui appena è online (~1–2 min)."; },
                 en: function (ed, t) { return "✅ <b>Received</b> · " + ed + ": «" + t + "»\nPublishing — I'll notify you here as soon as it's online (~1–2 min)."; } },
-  tooLong:    { it: function (ed, n, max) { return "📏 Nota lunga: ~" + Math.round(n / 200) + " min di lettura (" + n + " parole); il massimo per " + ed + " è " + (max / 200) + " min. Viene condensata automaticamente: la prossima volta accorciala tu."; },
-                en: function (ed, n, max) { return "📏 Long note: ~" + Math.round(n / 200) + " min read (" + n + " words); the maximum for " + ed + " is " + (max / 200) + " min. It is condensed automatically: trim the next one yourself."; } },
   noLabel:    { it: function (ed) { return "ℹ️ Nessuna etichetta nella prima riga: ho scelto " + ed + " in base all'ora. Usa la testata «The Velocity Edge — &lt;Etichetta&gt; | data | FDK»."; },
                 en: function (ed) { return "ℹ️ No label on the first line: I chose " + ed + " by the time. Use the masthead «The Velocity Edge — &lt;Label&gt; | date | FDK»."; } },
   seeStatus:  { it: "🔗 Stato", en: "🔗 Status" },
@@ -530,9 +520,8 @@ function processMessage_(msg) {
   // Receipt only — no link at all. The link arrives when the note is live.
   tgSend_(chatId, L("received")(escapeHtml_(ed.label), escapeHtml_(title)));
   if (!parsed.edition) tgSend_(chatId, L("noLabel")(escapeHtml_(ed.label)));
-  var maxWords = (CONFIG.WORD_LIMITS || {})[ed.slot];
-  var nWords = String(article || "").split(/\s+/).filter(Boolean).length;
-  if (maxWords && nWords > maxWords) tgSend_(chatId, L("tooLong")(escapeHtml_(ed.label), nWords, maxWords));
+  // Length is not the bot's business: a note over its reading time (5 min,
+  // 10 for In Focus / The Week Ahead) is condensed by scripts/format-draft.mjs.
 
   addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label });
 }
