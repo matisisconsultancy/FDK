@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-pervasive-intelligence",
+    title: "The Age of Pervasive Intelligence",
+    excerpt: "Apple, Meta and agentic AI mark the start of a new global contest for technological and economic power.",
+    tag: "In Focus · Technology",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "10 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-age-of-shocks",
     title: "The Age of Shocks",
     excerpt: "The 2026 Nobel to Hall and Woodford frames a world where shock absorption, not growth, prices capital.",
