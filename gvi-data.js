@@ -80,33 +80,51 @@ window.GVI_DATA = {
       "the-great-capital-selection",
       "the-morning-view-monday",
       "global-brief",
-      "global-corporate-intelligence-2026-10-12"
+      "global-corporate-intelligence-2026-10-12",
+      "gvi-daily-update-2026-10-08",
+      "gvi-daily-update-2026-10-09",
+      "gvi-daily-update-2026-10-10",
+      "global-corporate-intelligence-2026-10-11",
+      "gvi-daily-update-2026-10-11",
+      "gvi-daily-update-2026-10-12"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
-      "score": 107.3,
-      "delta": 0.2,
-      "deltaPct": "+0.19%",
+      "score": 108,
+      "delta": 0,
+      "deltaPct": null,
       "trend": "up",
-      "trend30d": "Accelerating",
-      "asOf": "2026-07-29",
-      "improving": 7,
-      "declining": 0,
-      "coverage": 15
+      "trend30d": null,
+      "asOf": "2026-10-12",
+      "improving": null,
+      "declining": null,
+      "coverage": 15,
+      "source": {
+        "title": "GVI Daily Update",
+        "url": "/gvi-daily-update-2026-10-12",
+        "date": "2026-10-12",
+        "slot": "GVI"
+      }
     },
     "countries": {
-      "asOf": "2026-07-29",
+      "asOf": "2026-10-12",
+      "source": {
+        "title": "GVI Daily Update",
+        "url": "/gvi-daily-update-2026-10-12",
+        "date": "2026-10-12",
+        "slot": "GVI"
+      },
       "rows": [
         {
-          "rank": 1,
+          "rank": null,
           "flag": "🇺🇸",
           "name": "United States",
-          "score": 93.4,
-          "delta": 0.2,
-          "trend": "up",
-          "tag": "Accelerating",
+          "score": 94,
+          "delta": 0,
+          "trend": "flat",
+          "tag": "AI leadership; financing and energy constraints",
           "spark": [
             92.1,
             92.3,
@@ -115,273 +133,12 @@ window.GVI_DATA = {
             92.8,
             93,
             93.2,
-            93.4
-          ]
-        },
-        {
-          "rank": 2,
-          "flag": "🇨🇳",
-          "name": "China",
-          "score": 91,
-          "delta": 0.1,
-          "trend": "up",
-          "tag": "Accelerating strongly",
-          "spark": [
-            89.4,
-            89.8,
-            90.1,
-            90.3,
-            90.5,
-            90.7,
-            90.9,
-            91
-          ]
-        },
-        {
-          "rank": 3,
-          "flag": "🇰🇷",
-          "name": "South Korea",
-          "score": 87.8,
-          "delta": 0.1,
-          "trend": "up",
-          "tag": "Accelerating very strongly",
-          "spark": [
-            86.2,
-            86.6,
-            87,
-            87.2,
-            87.4,
-            87.5,
-            87.7,
-            87.8
-          ]
-        },
-        {
-          "rank": 4,
-          "flag": "🇯🇵",
-          "name": "Japan",
-          "score": 84.9,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Accelerating",
-          "spark": [
-            84.1,
-            84.3,
-            84.5,
-            84.6,
-            84.7,
-            84.8,
-            84.9,
-            84.9
-          ]
-        },
-        {
-          "rank": 5,
-          "flag": "🇩🇪",
-          "name": "Germany",
-          "score": 82.8,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Improving",
-          "spark": [
-            82.4,
-            82.5,
-            82.6,
-            82.6,
-            82.7,
-            82.7,
-            82.8,
-            82.8
-          ]
-        },
-        {
-          "rank": 6,
-          "flag": "🇬🇧",
-          "name": "United Kingdom",
-          "score": 82.1,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Accelerating moderately",
-          "spark": [
-            81.6,
-            81.7,
-            81.8,
-            81.9,
-            82,
-            82,
-            82.1,
-            82.1
-          ]
-        },
-        {
-          "rank": 7,
-          "flag": "🇫🇷",
-          "name": "France",
-          "score": 81.6,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Accelerating strongly",
-          "spark": [
-            80.9,
-            81.1,
-            81.2,
-            81.3,
-            81.4,
-            81.5,
-            81.6,
-            81.6
-          ]
-        },
-        {
-          "rank": 8,
-          "flag": "🇨🇭",
-          "name": "Switzerland",
-          "score": 80.7,
-          "delta": 0,
-          "trend": "flat",
-          "tag": "Stable-positive",
-          "spark": [
-            80.5,
-            80.6,
-            80.6,
-            80.7,
-            80.6,
-            80.7,
-            80.7,
-            80.7
-          ]
-        },
-        {
-          "rank": 9,
-          "flag": "🇳🇱",
-          "name": "Netherlands",
-          "score": 80.1,
-          "delta": 0,
-          "trend": "flat",
-          "tag": "Stable",
-          "spark": [
-            80,
-            80,
-            80.1,
-            80,
-            80.1,
-            80.1,
-            80.1,
-            80.1
-          ]
-        },
-        {
-          "rank": 10,
-          "flag": "🇸🇪",
-          "name": "Sweden",
-          "score": 78.9,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Accelerating moderately",
-          "spark": [
-            78.3,
-            78.5,
-            78.6,
-            78.7,
-            78.8,
-            78.8,
-            78.9,
-            78.9
-          ]
-        },
-        {
-          "rank": 11,
-          "flag": "🇩🇰",
-          "name": "Denmark",
-          "score": 77.8,
-          "delta": 0,
-          "trend": "flat",
-          "tag": "Stable-positive",
-          "spark": [
-            77.4,
-            77.5,
-            77.6,
-            77.6,
-            77.7,
-            77.7,
-            77.8,
-            77.8
-          ]
-        },
-        {
-          "rank": 12,
-          "flag": "🇳🇴",
-          "name": "Norway",
-          "score": 77.2,
-          "delta": 0,
-          "trend": "flat",
-          "tag": "Stable-positive",
-          "spark": [
-            76.9,
-            77,
-            77,
-            77.1,
-            77.1,
-            77.2,
-            77.2,
-            77.2
-          ]
-        },
-        {
-          "rank": 13,
-          "flag": "🇪🇸",
-          "name": "Spain",
-          "score": 74.6,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Improving",
-          "spark": [
-            74.1,
-            74.2,
-            74.3,
-            74.4,
-            74.5,
-            74.5,
-            74.6,
-            74.6
-          ]
-        },
-        {
-          "rank": 14,
-          "flag": "🇦🇹",
-          "name": "Austria",
-          "score": 72.5,
-          "delta": 0,
-          "trend": "flat",
-          "tag": "Stable",
-          "spark": [
-            72.3,
-            72.3,
-            72.4,
-            72.4,
-            72.5,
-            72.5,
-            72.5,
-            72.5
-          ]
-        },
-        {
-          "rank": 15,
-          "flag": "🇮🇹",
-          "name": "Italy",
-          "score": 71.8,
-          "delta": 0,
-          "trend": "up",
-          "tag": "Improving slowly",
-          "spark": [
-            71.5,
-            71.6,
-            71.6,
-            71.7,
-            71.7,
-            71.8,
-            71.8,
-            71.8
+            93.4,
+            94,
+            94,
+            94,
+            94,
+            94
           ]
         }
       ]
@@ -3052,6 +2809,12 @@ window.GVI_DATA = {
         "url": "/global-corporate-intelligence-2026-10-12",
         "slot": "GVI",
         "headline": "NVIDIA 97, TSMC 95 and Microsoft 94 lead; Nissan 49, Porsche 51 and Stellantis 54 trail (provisional, carried forward from October 11)"
+      },
+      {
+        "title": "GVI Daily Update",
+        "url": "/gvi-daily-update-2026-10-12",
+        "slot": "GVI",
+        "headline": "No country-level change qualifies today: all 15 scores are carried forward and headline GVI stays at 108.0 provisionally, while the note stresses infrastructure resilience, long-duration financing and sovereign-debt constraints."
       }
     ]
   },
