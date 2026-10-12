@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/global-brief",
+    title: "Global Brief",
+    excerpt: "The AI Supercycle is entering a decisive financial phase as credit discipline, energy costs and rising yields begin to discriminate between investments.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 12, 2026",
+    read: "6 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-morning-view-monday",
     title: "The Morning View: Monday",
     excerpt: "AI sustains global growth while capital turns selective — the next divide is who converts investment into productivity.",

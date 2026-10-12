@@ -78,7 +78,8 @@ window.GVI_DATA = {
       "todays-espresso-index",
       "global-corporate-intelligence",
       "the-great-capital-selection",
-      "the-morning-view-monday"
+      "the-morning-view-monday",
+      "global-brief"
     ]
   },
   "daily": {
@@ -3002,45 +3003,45 @@ window.GVI_DATA = {
   "today": {
     "date": "2026-10-12",
     "edition": "Morning View · Capital",
-    "thesis": "The Morning View: Monday",
-    "subtitle": "AI is sustaining global growth, but capital markets are turning selective — the next competitive divide will be decided by who converts technological investment into economic productivity.",
-    "standfirst": "The next economy will be won not by those who invest the most, but by those who transform investment into productivity the fastest.",
+    "thesis": "Global Brief",
+    "subtitle": "AI is sustaining global growth even as capital markets begin to set the limits — the decisive variable is no longer the spend, but the spread between returns and the cost of capital.",
+    "standfirst": "AI capex built the trade. ROIC will price it.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "IMF global growth 2026",
-        "value": "3.0%",
+        "label": "IMF global growth",
+        "value": "~3%",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "Money-market inflows, latest week",
-        "value": "$153.8B",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "U.S. 10-year yield, recent peak",
-        "value": "5.3645%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "TSMC Q3 profit forecast",
-        "value": "$23.4B (+65% YoY)",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Brent",
-        "value": "US$103.38",
+        "label": "AI debt issuance (Sep)",
+        "value": "$23B",
         "delta": null,
         "trend": "down"
+      },
+      {
+        "label": "Brent crude",
+        "value": "$103",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "US headline CPI (Oct 14e)",
+        "value": "3.7%",
+        "delta": null,
+        "trend": "flat"
+      },
+      {
+        "label": "S&P 500 Q3 earnings growth",
+        "value": ">30%",
+        "delta": null,
+        "trend": "up"
       }
     ],
     "source": {
-      "title": "The Morning View: Monday",
-      "url": "/the-morning-view-monday",
+      "title": "Global Brief",
+      "url": "/global-brief",
       "date": "2026-10-12",
       "slot": "Morning View"
     },
@@ -3050,6 +3051,12 @@ window.GVI_DATA = {
         "url": "/the-morning-view-monday",
         "slot": "Morning View",
         "headline": "AI investment sustains ~3% global growth, but capital turns selective: $153.8B into money funds, U.S. 10-year above 5%, and the premium shifts to productive capital."
+      },
+      {
+        "title": "Global Brief",
+        "url": "/global-brief",
+        "slot": "Morning View",
+        "headline": "AI is sustaining growth near 3%, but rising yields and credit discipline make the spread between ROIC and WACC the decisive variable."
       }
     ]
   },
