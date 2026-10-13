@@ -31,29 +31,30 @@
   <link rel="stylesheet" href="/styles.css?v=ca7080e6f7" />
   <style>
     /* PREVIEW · Earth hero — not on the live home until approved.
-       The Earth is a close horizon rising from the bottom; the words sit in the dark space above it. */
-    .hero--earth { align-items: flex-start; padding: clamp(150px, 21vh, 210px) 0 0; min-height: max(100svh, 760px); }
-    .hero--earth .hero__canvas { opacity: .45; -webkit-mask-image: linear-gradient(#000 0 45%, transparent 70%); mask-image: linear-gradient(#000 0 45%, transparent 70%); }
-    .hero--earth .hero__glow { background: radial-gradient(60% 40% at 50% 100%, rgba(48,130,255,.16), transparent 70%); }
-    .hero__earth { position: absolute; z-index: 1; pointer-events: none; left: 50%; top: max(71%, 640px);
-      width: max(118vw, 1180px); aspect-ratio: 3 / 1; transform: translate(-50%, -17.5%); mix-blend-mode: screen; }
-    .hero__earth-video { width: 100%; height: 100%; object-fit: cover; display: block; }
-    /* calm zone behind the words: a soft navy veil, not a box */
+       Real NASA DSCOVR/EPIC photographs of the whole Earth, centred behind the headline. */
+    .hero--earth .hero__canvas { opacity: .35; }
+    .hero--earth .hero__glow { background: radial-gradient(50% 50% at 50% 52%, rgba(60,140,255,.10), transparent 70%); }
+    .hero__earth { position: absolute; z-index: 1; pointer-events: none; left: 50%; top: 53%;
+      width: min(108vh, 1180px, 150vw); aspect-ratio: 1; transform: translate(-50%, -50%); mix-blend-mode: screen; }
+    .hero__earth-video { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .78; }
+    /* thin blue atmosphere around the photo */
+    .hero__earth::before { content: ""; position: absolute; inset: 4%; border-radius: 50%;
+      box-shadow: 0 0 60px 6px rgba(70,150,255,.22), 0 0 160px 30px rgba(40,110,255,.10); }
+    /* the words: a soft navy veil where they sit, so the Earth never fights the type */
     .hero__veil { position: absolute; inset: 0; z-index: 1; pointer-events: none;
-      background: radial-gradient(70% 46% at 50% 30%, rgba(5,7,26,.72), rgba(5,7,26,.35) 55%, transparent 80%); }
+      background: radial-gradient(48% 34% at 50% 47%, rgba(5,7,26,.62), rgba(5,7,26,.30) 60%, transparent 100%); }
     .hero--earth .hero__inner { z-index: 2; }
     .hero--earth .hero__title { font-weight: 500; letter-spacing: -1.8px; }
-    .hero--earth .hero__line { color: #fff; text-shadow: 0 2px 28px rgba(4,6,22,.85), 0 1px 3px rgba(4,6,22,.6); }
-    .hero--earth .hero__accent { text-shadow: 0 2px 28px rgba(4,6,22,.85), 0 0 40px rgba(46,224,106,.22); }
-    .hero--earth .hero__lead { color: #eef0f8; font-size: clamp(1rem, 1.35vw, 1.14rem); max-width: 700px; text-wrap: pretty; text-shadow: 0 1px 18px rgba(4,6,22,.95), 0 1px 2px rgba(4,6,22,.8); }
-    .hero--earth .hero__actions { margin-top: 40px; }
-    .hero--earth .btn--ghost { background: rgba(7,10,36,.72); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-color: rgba(255,255,255,.28); }
+    .hero--earth .hero__line { color: #fff; text-shadow: 0 2px 30px rgba(4,6,22,.9), 0 1px 4px rgba(4,6,22,.7); }
+    .hero--earth .hero__accent { text-shadow: 0 2px 30px rgba(4,6,22,.9), 0 1px 4px rgba(4,6,22,.6); }
+    .hero--earth .hero__lead { color: #fff; font-weight: 450; font-size: clamp(1rem, 1.35vw, 1.14rem); max-width: 680px; text-wrap: pretty;
+      text-shadow: 0 1px 16px rgba(4,6,22,1), 0 1px 3px rgba(4,6,22,.9); }
+    .hero--earth .btn--ghost { background: rgba(7,10,36,.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-color: rgba(255,255,255,.3); }
     .hero--earth .hero__side { color: rgba(255,255,255,.5); }
     @media (max-width: 760px) {
-      .hero--earth { padding-top: 128px; min-height: 0; padding-bottom: 62vw; }
-      .hero__earth { top: auto; bottom: 0; width: 270vw; transform: translate(-50%, 26%); }
+      .hero__earth { width: 150vw; top: 50%; }
       .hero--earth .hero__title { letter-spacing: -1px; }
-      .hero__veil { background: radial-gradient(120% 60% at 50% 34%, rgba(5,7,26,.7), transparent 85%); }
+      .hero__veil { background: radial-gradient(90% 46% at 50% 50%, rgba(5,7,26,.62), rgba(5,7,26,.25) 70%, transparent 100%); }
     }
     @media (prefers-reduced-motion: reduce) { .hero__earth-video { display: none; } .hero__earth { background: url(/assets/earth-loop-poster.jpg) center / cover; } }
   </style>
