@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-intelligence-2026-10-13",
+    title: "The Great Repricing of Intelligence",
+    excerpt: "The AI Supercycle faces its first systemic financial test as valuations, credit and sovereign yields reprice the cost of intelligence.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "4 min read",
+    time: "20:47",
+    kind: "night"
+  },
+  {
+    url: "/europes-ai-infrastructure-race-turns-transnational",
+    title: "Europe’s AI Infrastructure Race Turns Transnational",
+    excerpt: "French cloud expands into the Nordics, Milan gains a sovereign-cloud region, and Italy's Gigafactory coalition weighs a broader cross-border architecture.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "7 min read",
+    time: "20:47",
+    kind: "day"
+  },
+  {
     url: "/the-battle-for-the-ai-native-human-interface",
     title: "The Battle for the AI-Native Human Interface",
     excerpt: "Agentic AI is shifting computing's center of gravity from applications to autonomous agents — and redrawing the competitive map for Apple, Meta and OpenAI.",
