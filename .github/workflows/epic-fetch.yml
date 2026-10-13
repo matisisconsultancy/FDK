@@ -1,0 +1,57 @@
+name: Fetch NASA EPIC Earth photos (home video source)
+
+# One-off helper for the home preview: downloads one full day of real
+# NASA DSCOVR/EPIC natural-colour photos of the whole Earth (public domain)
+# into tmp-epic/, so the rotating-Earth loop is built from real photographs.
+# tmp-epic/ is removed again once the video is made.
+
+on:
+  push:
+    branches: [claude/eager-carson-vjorjg]
+    paths: [".github/workflows/epic-fetch.yml"]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Pick the recent day with the most photos and download it
+        run: |
+          set -euo pipefail
+          API=https://epic.gsfc.nasa.gov/api/natural
+          curl -fsSL "$API/all" -o all.json
+          best=""; bestn=0
+          for d in $(jq -r '.[].date' all.json | sort -r | head -n 60); do
+            n=$(curl -fsSL "$API/date/$d" | jq length || echo 0)
+            echo "$d $n"
+            if [ "$n" -gt "$bestn" ]; then best=$d; bestn=$n; fi
+          done
+          echo "best day: $best ($bestn photos)"
+          mkdir -p tmp-epic
+          curl -fsSL "$API/date/$best" -o tmp-epic/meta.json
+          y=${best:0:4}; m=${best:5:2}; dd=${best:8:2}
+          for img in $(jq -r '.[].image' tmp-epic/meta.json); do
+            curl -fsSL "https://epic.gsfc.nasa.gov/archive/natural/$y/$m/$dd/png/$img.png" -o "/tmp/$img.png"
+            ffmpeg -hide_banner -loglevel error -y -i "/tmp/$img.png" -q:v 2 "tmp-epic/$img.jpg"
+            rm -f "/tmp/$img.png"
+          done
+          ls -la tmp-epic
+
+      - name: Commit the photos
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add tmp-epic
+          git commit -m "EPIC: real NASA photos of one Earth rotation (temporary, for the home video)"
+          for i in 1 2 3 4; do
+            git pull --rebase origin "${{ github.ref_name }}" && git push origin "HEAD:${{ github.ref_name }}" && exit 0
+            sleep $((i * 5))
+          done
+          exit 1
