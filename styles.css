@@ -1241,3 +1241,8 @@ picture { display: block; }
 .mpill__ch--down { color: #ff5d63; }
 .mpill__ch--flat { color: rgba(255,255,255,0.5); }
 .mpill--tag { color: rgba(255,255,255,0.4); font-size: 0.6rem; letter-spacing: 1.4px; background: none; border-color: rgba(255,255,255,0.12); padding: 6px 12px; }
+
+/* The Velocity Edge buttons take its sky blue (#309bff) — menu and "Read The Velocity Edge" */
+a.nav__cta[href="/velocityedge/"], a.btn--brief[href="/velocityedge/"] { background: #309bff; color: #070a24 !important; box-shadow: 0 10px 26px -10px rgba(48, 155, 255, .75); }
+a.nav__cta[href="/velocityedge/"]:hover { background: #fff; box-shadow: 0 16px 32px -12px rgba(48, 155, 255, .6); }
+a.btn--brief[href="/velocityedge/"]:hover { background: #5cb0ff; box-shadow: 0 18px 40px -12px rgba(48, 155, 255, .75), inset 0 1px 0 rgba(255, 255, 255, .5); }
