@@ -65,6 +65,9 @@
     //    Google Sheet, emails your team, and auto-replies to the
     //    client. Paste the deployment URL ending in "/exec".
     briefingEndpoint: "YOUR_APPS_SCRIPT_URL",
+    // Until the Apps Script above is deployed, briefing requests are emailed
+    // here through FormSubmit (same inbox as The Velocity Edge sign-ups).
+    briefingInbox: "info@fdkempowernet.com",
   };
   const isConfigured = (v, placeholder) => !!v && v !== placeholder;
 
@@ -162,8 +165,10 @@
   let revealIO = null;
   if ("IntersectionObserver" in window && !reduceMotion) {
     revealIO = new IntersectionObserver((entries) => {
-      entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); revealIO.unobserve(e.target); } });
-    }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
+      // .reveal-img starts fully clipped (clip-path), so Chrome reports an
+      // intersection ratio of 0 for it: reveal it as soon as it enters the view.
+      entries.forEach((e) => { if (e.isIntersecting && (e.intersectionRatio >= 0.18 || e.target.classList.contains("reveal-img"))) { e.target.classList.add("in"); revealIO.unobserve(e.target); } });
+    }, { threshold: [0, 0.18], rootMargin: "0px 0px -8% 0px" });
   }
   // Observe reveal targets (works for static and dynamically-injected nodes).
   const revealObserve = (els) => els.forEach((el) => { if (revealIO) revealIO.observe(el); else el.classList.add("in"); });
@@ -1015,12 +1020,6 @@
         }
       };
 
-      // Not configured yet → keep the friendly confirmation (demo mode).
-      if (!isConfigured(FDK_FORMS.briefingEndpoint, "YOUR_APPS_SCRIPT_URL")) {
-        setTimeout(() => done(true), 700);
-        return;
-      }
-
       const payload = {
         name: name,
         email: email,
@@ -1030,6 +1029,23 @@
         source: "briefingForm",
         page: location.href,
       };
+      // No Apps Script deployed → the request is emailed to the inbox (FormSubmit).
+      if (!isConfigured(FDK_FORMS.briefingEndpoint, "YOUR_APPS_SCRIPT_URL")) {
+        try {
+          const res = await fetch("https://formsubmit.co/ajax/" + FDK_FORMS.briefingInbox, {
+            method: "POST",
+            headers: { "Content-Type": "application/json", Accept: "application/json" },
+            body: JSON.stringify(Object.assign({}, payload, {
+              _subject: "Executive Briefing request — " + (payload.company || name),
+              _replyto: email, _template: "table", _captcha: "false",
+            })),
+          });
+          const j = await res.json().catch(() => ({}));
+          if (String(j.success) !== "true" && j.message && window.console) console.warn("Briefing form: " + j.message);
+          done(res.ok && String(j.success) === "true");
+        } catch (e) { done(false); }
+        return;
+      }
       try {
         const res = await fetch(FDK_FORMS.briefingEndpoint, {
           method: "POST",
