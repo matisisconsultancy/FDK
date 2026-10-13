@@ -145,6 +145,13 @@ reads as a broken switcher rather than as missing translation. The workflow
 now says so on the run summary with the count of strings still waiting, so
 it is visible instead of buried in the log.
 
+## 🔎 Search Console (SEO)
+
+`node scripts/seo-build.mjs` gives every indexable page a self-referencing
+`<link rel="canonical">` and rewrites `sitemap.xml` to list exactly those pages
+(pages with `noindex` and deleted pages drop out). `publish-drafts.yml` runs it
+before every commit; `--check` reports what is stale without writing.
+
 ## 🚀 Run locally
 
 ```bash

@@ -312,6 +312,7 @@ ${gaHead}  <meta charset="UTF-8" />
   <meta name="description" content="${esc(excerpt)} The Velocity Edge, by Francesco De Leo Kaufmann." />
   <meta name="theme-color" content="#ffffff" />
   <title>${esc(title)} · The Velocity Edge · FDK EmpowerNet</title>
+  <link rel="canonical" href="https://fdkempowernet.com/${slug}/" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

@@ -89,6 +89,12 @@ jobs:
             } >> "$GITHUB_STEP_SUMMARY"
           fi
 
+      # Canonical tags on every indexable page and a sitemap.xml that lists
+      # exactly those pages — so Search Console sees new notes and no 404s.
+      - name: Refresh canonical tags and sitemap
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
+        run: node scripts/seo-build.mjs
+
       - name: Commit and push
         if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         run: |
