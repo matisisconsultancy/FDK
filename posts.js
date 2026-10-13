@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-boom-has-become-a-systemic-credit-risk",
+    title: "The AI Boom Has Become a Systemic Credit Risk",
+    excerpt: "The IMF flags AI, sovereign and cyber risk as one interconnected threat as supervisors move on autonomous systems.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "4 min read",
+    time: "11:54",
+    kind: "day"
+  },
+  {
     url: "/the-ai-hardware-divide-is-becoming-structural",
     title: "The AI Hardware Divide Is Becoming Structural",
     excerpt: "China turns chip restrictions into domestic substitution as two AI capital markets emerge.",
