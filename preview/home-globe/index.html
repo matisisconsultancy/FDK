@@ -36,9 +36,10 @@
     .hero--earth .hero__glow { background: radial-gradient(50% 50% at 50% 52%, rgba(60,140,255,.10), transparent 70%); }
     .hero__earth { position: absolute; z-index: 1; pointer-events: none; left: 50%; top: 53%;
       width: min(108vh, 1180px, 150vw); aspect-ratio: 1; transform: translate(-50%, -50%); mix-blend-mode: screen; }
-    .hero__earth-video { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .78; }
+    .hero__earth-video { width: 100%; height: 100%; object-fit: cover; display: block; opacity: .78;
+      -webkit-mask-image: radial-gradient(circle closest-side, #000 89.2%, transparent 90.6%); mask-image: radial-gradient(circle closest-side, #000 89.2%, transparent 90.6%); }
     /* thin blue atmosphere around the photo */
-    .hero__earth::before { content: ""; position: absolute; inset: 4%; border-radius: 50%;
+    .hero__earth::before { content: ""; position: absolute; inset: 5.4%; border-radius: 50%;
       box-shadow: 0 0 60px 6px rgba(70,150,255,.22), 0 0 160px 30px rgba(40,110,255,.10); }
     /* the words: a soft navy veil where they sit, so the Earth never fights the type */
     .hero__veil { position: absolute; inset: 0; z-index: 1; pointer-events: none;
@@ -56,7 +57,7 @@
       .hero--earth .hero__title { letter-spacing: -1px; }
       .hero__veil { background: radial-gradient(90% 46% at 50% 50%, rgba(5,7,26,.62), rgba(5,7,26,.25) 70%, transparent 100%); }
     }
-    @media (prefers-reduced-motion: reduce) { .hero__earth-video { display: none; } .hero__earth { background: url(/assets/earth-loop-poster.jpg) center / cover; } }
+    @media (prefers-reduced-motion: reduce) { .hero__earth-video { display: none; } .hero__earth { background: url(/assets/earth-epic-v1-poster.jpg) center / cover; } }
   </style>
 </head>
 <body>
@@ -113,9 +114,9 @@
       <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
       <!-- PREVIEW · rotating Earth (loop) -->
       <div class="hero__earth" aria-hidden="true">
-        <video class="hero__earth-video" autoplay muted loop playsinline preload="auto" poster="/assets/earth-loop-poster.jpg">
-          <source src="/assets/earth-loop.webm" type="video/webm" />
-          <source src="/assets/earth-loop.mp4" type="video/mp4" />
+        <video class="hero__earth-video" autoplay muted loop playsinline preload="auto" poster="/assets/earth-epic-v1-poster.jpg">
+          <source src="/assets/earth-epic-v1.webm" type="video/webm" />
+          <source src="/assets/earth-epic-v1.mp4" type="video/mp4" />
         </video>
       </div>
       <div class="hero__veil" aria-hidden="true"></div>
