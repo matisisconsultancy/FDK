@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-hardware-divide-is-becoming-structural",
+    title: "The AI Hardware Divide Is Becoming Structural",
+    excerpt: "China turns chip restrictions into domestic substitution as two AI capital markets emerge.",
+    tag: "In Focus · AI",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "6 min read",
+    time: "11:32",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-intelligence",
     title: "The Great Repricing of Intelligence",
     excerpt: "The AI supercycle is accelerating while its financial foundations are tested; the next rotation rewards productivity, not scarcity.",
