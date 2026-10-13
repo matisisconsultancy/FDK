@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-becomes-a-financial-stability-test",
+    title: "The AI Supercycle Becomes a Financial Stability Test",
+    excerpt: "The IMF warns that AI simultaneously supports global growth and creates new financial-system vulnerabilities.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "5 min read",
+    time: "14:36",
+    kind: "day"
+  },
+  {
     url: "/the-ai-boom-has-become-a-systemic-credit-risk",
     title: "The AI Boom Has Become a Systemic Credit Risk",
     excerpt: "The IMF flags AI, sovereign and cyber risk as one interconnected threat as supervisors move on autonomous systems.",
