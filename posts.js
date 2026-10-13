@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-13",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The next rotation will distinguish companies controlling the economics of intelligence from those merely financing its expansion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "5 min read",
+    time: "06:02",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-velocity-index-the-32-country-growth-divide",
     title: "GVI: Global Velocity Index: The 32-Country Growth Divide",
     excerpt: "The IMF confirms resilient global growth driven by a shrinking set of economies — the next Great Split is about who can industrialise intelligence.",
