@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-velocity-index-the-32-country-growth-divide",
+    title: "GVI: Global Velocity Index: The 32-Country Growth Divide",
+    excerpt: "The IMF confirms resilient global growth driven by a shrinking set of economies — the next Great Split is about who can industrialise intelligence.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "5 min read",
+    time: "04:56",
+    kind: "day"
+  },
+  {
     url: "/the-cost-of-intelligence-takes-command-of-markets",
     title: "The Cost of Intelligence Takes Command of Markets",
     excerpt: "An oil shock, expensive sovereign debt and a narrow equity rally are forcing investors to separate technological leadership from productive capital formation.",
