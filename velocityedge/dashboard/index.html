@@ -979,6 +979,15 @@ body.menu-open .demo,body.menu-open .demo-note{display:none}
 .dh__body{padding-block:clamp(36px,5vw,60px) clamp(60px,8vw,100px)}
 .demo-note{position:fixed;left:50%;transform:translateX(-50%);bottom:14px;z-index:90;background:var(--toast);border:1px solid var(--line-2);
   border-radius:999px;padding:8px 16px;font-family:var(--f-mono);font-size:.75rem;letter-spacing:.04em;color:var(--blue-2);backdrop-filter:blur(8px);max-width:92vw;text-align:center}
+/* v29 · brand sky blue in the menu — logo, "Velocity Edge", Subscribe, language switch */
+:root{--b-sky:#309bff}
+.snav .sbrand__mark,.mmenu .sbrand__mark{color:var(--b-sky)}
+.snav .sbrand__text i{color:var(--b-sky)}
+.snav__cta{background:var(--b-sky);box-shadow:0 10px 26px -10px rgba(48,155,255,.75)}
+@media (hover:hover) and (pointer:fine){.snav__cta:hover{background:#fff;box-shadow:0 16px 32px -12px rgba(48,155,255,.6)}}
+.mmenu__in > a.mmenu__cta{background:var(--b-sky);color:var(--b-deep);box-shadow:0 10px 26px -10px rgba(48,155,255,.75)}
+.snav .lang-switch__btn.is-active{color:var(--b-deep);background:var(--b-sky)}
+.mmenu__lang button[aria-pressed="true"]{color:var(--b-deep);background:var(--b-sky);border-color:var(--b-sky)}
 </style>
 <script>(function(){function tc(){var day=document.documentElement.classList.contains('day'),m=document.querySelector('meta[name="theme-color"]');if(!m){m=document.createElement('meta');m.name='theme-color';(document.head||document.documentElement).appendChild(m)}m.content=day?'#ffffff':'#04070e'}tc();new MutationObserver(tc).observe(document.documentElement,{attributes:true,attributeFilter:['class']})})();</script>
 <script>(function(){var done=false,H0=location.hash||'';try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}
