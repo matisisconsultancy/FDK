@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-banking-reset-2026-10-13",
+    title: "Europe’s Great Banking Reset",
+    excerpt: "How Europe's financial reordering will shape its next industrial revolution.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "8 min read",
+    time: "09:57",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-13",
     title: "The Next Economy Research Centre",
     excerpt: "The IMF raises 2026 global growth to 3.1% but warns the AI investment cycle could transmit financial instability — strengthening the Great Split thesis.",
