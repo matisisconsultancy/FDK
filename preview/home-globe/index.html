@@ -30,21 +30,31 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" /></noscript>
   <link rel="stylesheet" href="/styles.css?v=ca7080e6f7" />
   <style>
-    /* PREVIEW · Earth hero — not on the live home until approved */
-    .hero__earth { position: absolute; z-index: 1; pointer-events: none; left: 50%; top: 50%;
-      width: min(92vh, 1000px, 118vw); aspect-ratio: 1; transform: translate(-50%, -50%); mix-blend-mode: screen; opacity: .62; }
+    /* PREVIEW · Earth hero — not on the live home until approved.
+       The Earth is a close horizon rising from the bottom; the words sit in the dark space above it. */
+    .hero--earth { align-items: flex-start; padding: clamp(150px, 21vh, 210px) 0 0; min-height: max(100svh, 760px); }
+    .hero--earth .hero__canvas { opacity: .45; -webkit-mask-image: linear-gradient(#000 0 45%, transparent 70%); mask-image: linear-gradient(#000 0 45%, transparent 70%); }
+    .hero--earth .hero__glow { background: radial-gradient(60% 40% at 50% 100%, rgba(48,130,255,.16), transparent 70%); }
+    .hero__earth { position: absolute; z-index: 1; pointer-events: none; left: 50%; top: max(71%, 640px);
+      width: max(118vw, 1180px); aspect-ratio: 3 / 1; transform: translate(-50%, -17.5%); mix-blend-mode: screen; }
     .hero__earth-video { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .hero__earth::after { content: ""; position: absolute; inset: 0; border-radius: 50%;
-      background: radial-gradient(closest-side, rgba(7,10,36,.55), rgba(7,10,36,.18) 70%, transparent 100%); }
-    /* horizon: the Earth rises from the bottom of the hero */
-    .hero--horizon .hero__earth { top: auto; bottom: 0; width: min(150vw, 1500px); transform: translate(-50%, 64%); opacity: .95; }
-    .hero--horizon .hero__earth::after { background: none; }
-    .hero--horizon .hero__inner { transform: translateY(-9vh); }
-    .hero--horizon .hero__lead { text-shadow: 0 1px 14px rgba(7,10,36,.9); }
-    .preview-switch { position: fixed; z-index: 60; left: 50%; bottom: 18px; transform: translateX(-50%); display: flex; gap: 6px; padding: 6px;
-      border-radius: 999px; background: rgba(7,10,36,.82); border: 1px solid rgba(255,255,255,.14); backdrop-filter: blur(8px); font: 500 .74rem/1 Inter, sans-serif; letter-spacing: .06em; text-transform: uppercase; }
-    .preview-switch a { color: rgba(255,255,255,.7); padding: 9px 14px; border-radius: 999px; text-decoration: none; }
-    .preview-switch a[aria-current] { background: #2ee06a; color: #070a24; }
+    /* calm zone behind the words: a soft navy veil, not a box */
+    .hero__veil { position: absolute; inset: 0; z-index: 1; pointer-events: none;
+      background: radial-gradient(70% 46% at 50% 30%, rgba(5,7,26,.72), rgba(5,7,26,.35) 55%, transparent 80%); }
+    .hero--earth .hero__inner { z-index: 2; }
+    .hero--earth .hero__title { font-weight: 500; letter-spacing: -1.8px; }
+    .hero--earth .hero__line { color: #fff; text-shadow: 0 2px 28px rgba(4,6,22,.85), 0 1px 3px rgba(4,6,22,.6); }
+    .hero--earth .hero__accent { text-shadow: 0 2px 28px rgba(4,6,22,.85), 0 0 40px rgba(46,224,106,.22); }
+    .hero--earth .hero__lead { color: #eef0f8; font-size: clamp(1rem, 1.35vw, 1.14rem); max-width: 700px; text-wrap: pretty; text-shadow: 0 1px 18px rgba(4,6,22,.95), 0 1px 2px rgba(4,6,22,.8); }
+    .hero--earth .hero__actions { margin-top: 40px; }
+    .hero--earth .btn--ghost { background: rgba(7,10,36,.72); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-color: rgba(255,255,255,.28); }
+    .hero--earth .hero__side { color: rgba(255,255,255,.5); }
+    @media (max-width: 760px) {
+      .hero--earth { padding-top: 128px; min-height: 0; padding-bottom: 62vw; }
+      .hero__earth { top: auto; bottom: 0; width: 270vw; transform: translate(-50%, 26%); }
+      .hero--earth .hero__title { letter-spacing: -1px; }
+      .hero__veil { background: radial-gradient(120% 60% at 50% 34%, rgba(5,7,26,.7), transparent 85%); }
+    }
     @media (prefers-reduced-motion: reduce) { .hero__earth-video { display: none; } .hero__earth { background: url(/assets/earth-loop-poster.jpg) center / cover; } }
   </style>
 </head>
@@ -98,7 +108,7 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero" id="home">
+    <section class="hero hero--earth" id="home">
       <canvas class="hero__canvas" id="heroCanvas" aria-hidden="true"></canvas>
       <!-- PREVIEW · rotating Earth (loop) -->
       <div class="hero__earth" aria-hidden="true">
@@ -107,6 +117,7 @@
           <source src="/assets/earth-loop.mp4" type="video/mp4" />
         </video>
       </div>
+      <div class="hero__veil" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
       <span class="hero__side hero__side--l" aria-hidden="true">EST · EUROPE</span>
       <span class="hero__side hero__side--r" aria-hidden="true">AI · STRATEGY</span>
@@ -354,17 +365,8 @@
   <script src="/posts.js?v=ca7080e6f7"></script>
   <script src="/script.js?v=ca7080e6f7"></script>
   <script src="/market.js?v=ca7080e6f7"></script>
-  <nav class="preview-switch" aria-label="Preview">
-    <a href="?v=centre" data-v="centre">Earth · centre</a>
-    <a href="?v=horizon" data-v="horizon">Earth · horizon</a>
-  </nav>
   <script>
-    (function () {
-      var v = new URLSearchParams(location.search).get('v') === 'horizon' ? 'horizon' : 'centre';
-      if (v === 'horizon') document.getElementById('home').classList.add('hero--horizon');
-      var a = document.querySelector('.preview-switch [data-v="' + v + '"]'); if (a) a.setAttribute('aria-current', 'page');
-      if (matchMedia('(prefers-reduced-motion: reduce)').matches) { var vid = document.querySelector('.hero__earth-video'); if (vid) vid.pause(); }
-    })();
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) { var v = document.querySelector('.hero__earth-video'); if (v) v.removeAttribute('autoplay'), v.pause(); }
   </script>
 </body>
 </html>
