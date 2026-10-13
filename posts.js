@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-battle-for-the-ai-native-human-interface",
+    title: "The Battle for the AI-Native Human Interface",
+    excerpt: "Agentic AI is shifting computing's center of gravity from applications to autonomous agents — and redrawing the competitive map for Apple, Meta and OpenAI.",
+    tag: "In Focus · AI",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "7 min read",
+    time: "15:38",
+    kind: "day"
+  },
+  {
     url: "/the-great-bifurcation-of-intelligence",
     title: "The Great Bifurcation of Intelligence",
     excerpt: "Apple's integrated intelligence and Meta's ambient intelligence are two economic models for deploying AI at global scale — and the real prize is enterprise agentic execution.",
