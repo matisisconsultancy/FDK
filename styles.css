@@ -1259,3 +1259,7 @@ a.btn--brief[href="/velocityedge/"]:hover, a.btn--brief[href="/intelligence-libr
   .founderteaser--portrait .founderteaser__grid { grid-template-columns: 1fr; }
   .founderteaser__photo { order: -1; justify-self: start; max-width: 340px; max-height: none; aspect-ratio: 4 / 5; }
 }
+
+/* Thesis + Author: the founder portrait in its natural colours (was a blue duotone) */
+.fbio__media img { filter: none; object-position: 50% 15%; }
+.fbio__media::after { display: none; }
