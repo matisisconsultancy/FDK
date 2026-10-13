@@ -84,7 +84,8 @@
       "gvi-daily-update-2026-10-11",
       "gvi-daily-update-2026-10-12",
       "gvi-global-velocity-index-the-32-country-growth-divide",
-      "gvi-corporate-benchmark-2026-10-13"
+      "gvi-corporate-benchmark-2026-10-13",
+      "the-next-economy-research-centre-2026-10-13"
     ]
   },
   "daily": {
@@ -3438,76 +3439,64 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-09-14",
+    "asOf": "2026-10-13",
     "title": "Next Economy Dashboard",
-    "hypothesis": "NERC Hypothesis 05 — The AI Absorption Multiplier",
+    "hypothesis": "The Great Split: the distinction is no longer between economies that invest in AI and those that do not, but between those capable of transforming AI investment into productive capacity and those accumulating financial exposure without equivalent productivity gains.",
     "rows": [
       {
-        "k": "AI-linked equities",
-        "latest": "SoftBank -13.2%, Kioxia -9.8%",
+        "k": "Projected global GDP growth 2026 (IMF)",
+        "latest": "3.1% (from 3.0% in July)",
+        "trend": "up",
+        "reading": "AI investment is supporting aggregate growth despite the energy shock."
+      },
+      {
+        "k": "Hyperscaler share of investment-grade bond issuance",
+        "latest": "~10% (vs <1% in 2024)",
+        "trend": "up",
+        "reading": "AI financing has become central to credit markets, creating a financial-stability channel."
+      },
+      {
+        "k": "Countries accounting for 95% of global growth",
+        "latest": "32 (down from 54 in April)",
         "trend": "down",
-        "reading": "Assurance risk priced"
+        "reading": "The benefits of AI are narrowing geographically, so the split is becoming geographical."
       },
       {
-        "k": "Frontier AI pacing",
-        "latest": "CEOs support slower growth",
+        "k": "AI-related trade growth 2023–2025",
+        "latest": "29% (overall global trade 8.3%)",
         "trend": "up",
-        "reading": "Deployment split"
+        "reading": "Without AI-related trade, overall growth would have been about 4.6%."
       },
       {
-        "k": "Anthropic economics",
-        "latest": "Op. profit (2nd qtr), >80% margins",
-        "trend": "up",
-        "reading": "Strong fundamentals"
-      },
-      {
-        "k": "Industrial AI",
-        "latest": "IMTS 2026, Physical AI demos",
-        "trend": "up",
-        "reading": "Integration accelerating"
-      },
-      {
-        "k": "US data-centre pipeline",
-        "latest": "~158 GW",
-        "trend": "up",
-        "reading": "Execution challenge"
-      },
-      {
-        "k": "Europe data-centre pipeline",
-        "latest": "~66 GW",
-        "trend": "up",
-        "reading": "Grid and labor constraint"
-      },
-      {
-        "k": "Hyperscaler investment",
-        "latest": "~3% U.S. GDP (2027-29 est.)",
-        "trend": "up",
-        "reading": "Macro-scale capital shock"
-      },
-      {
-        "k": "Korea power financing",
-        "latest": "$18.7B prepayment rejected",
+        "k": "Nvidia share of China data-centre accelerator shipments, H1 2026",
+        "latest": "34% (Huawei 28%)",
         "trend": "down",
-        "reading": "Contested financing"
+        "reading": "Nvidia units were down 44% year over year, and non-GPU accelerators overtook GPUs by volume. The figures measure units, not performance or revenue."
       },
       {
-        "k": "Construction labor (US)",
-        "latest": "~439,000 workers short",
-        "trend": "down",
-        "reading": "Complementary scarcity"
-      },
-      {
-        "k": "China HBM constraint",
-        "latest": "No verified easing today",
-        "trend": "flat",
-        "reading": "Baseline unchanged"
-      },
-      {
-        "k": "EU public-sector AI",
-        "latest": "Three GenAI pilots launched",
+        "k": "Banks with weak capital under IMF adverse scenario",
+        "latest": "~22% of global banking assets (from 18%)",
         "trend": "up",
-        "reading": "Policy to market"
+        "reading": "A hypothetical stress-test result, not a current breach."
+      },
+      {
+        "k": "Tencent H1 capital expenditure",
+        "latest": "~96.3 billion yuan",
+        "trend": "up",
+        "reading": "More than double the 2025 level. Tencent is marketing a four-tranche offering of at least $4.5 billion."
+      },
+      {
+        "k": "Eurozone 2026 growth forecast",
+        "latest": "1.1% (from 0.9%)",
+        "trend": "up",
+        "reading": "Upgraded, but still far from US and Chinese scale. Europe needs to capture more domestic value added."
       }
-    ]
+    ],
+    "source": {
+      "title": "The Next Economy Research Centre",
+      "url": "/the-next-economy-research-centre-2026-10-13",
+      "date": "2026-10-13",
+      "slot": "Morning Brief"
+    }
   }
 }

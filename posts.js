@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-13",
+    title: "The Next Economy Research Centre",
+    excerpt: "The IMF raises 2026 global growth to 3.1% but warns the AI investment cycle could transmit financial instability — strengthening the Great Split thesis.",
+    tag: "Morning Brief · Macro",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "4 min read",
+    time: "08:05",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-enters-price-discovery",
     title: "The Great Split Enters Price Discovery",
     excerpt: "AI keeps financing global growth, but the market is beginning to separate technological leadership from sustainable financial returns.",
