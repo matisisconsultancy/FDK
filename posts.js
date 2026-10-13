@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-bifurcation-of-intelligence",
+    title: "The Great Bifurcation of Intelligence",
+    excerpt: "Apple's integrated intelligence and Meta's ambient intelligence are two economic models for deploying AI at global scale — and the real prize is enterprise agentic execution.",
+    tag: "In Focus · AI",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "9 min read",
+    time: "14:43",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-becomes-a-financial-stability-test",
     title: "The AI Supercycle Becomes a Financial Stability Test",
     excerpt: "The IMF warns that AI simultaneously supports global growth and creates new financial-system vulnerabilities.",
