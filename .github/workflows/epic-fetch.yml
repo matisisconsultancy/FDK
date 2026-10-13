@@ -4,6 +4,7 @@ name: Fetch NASA EPIC Earth photos (home video source)
 # NASA DSCOVR/EPIC natural-colour photos of the whole Earth (public domain)
 # into tmp-epic/, so the rotating-Earth loop is built from real photographs.
 # tmp-epic/ is removed again once the video is made.
+# (re-run: bump this line) v2
 
 on:
   push:
@@ -25,6 +26,7 @@ jobs:
       - name: Pick the recent day with the most photos and download it
         run: |
           set -euo pipefail
+          pip install --quiet pillow
           API=https://epic.gsfc.nasa.gov/api/natural
           curl -fsSL "$API/all" -o all.json
           best=""; bestn=0
@@ -39,7 +41,7 @@ jobs:
           y=${best:0:4}; m=${best:5:2}; dd=${best:8:2}
           for img in $(jq -r '.[].image' tmp-epic/meta.json); do
             curl -fsSL "https://epic.gsfc.nasa.gov/archive/natural/$y/$m/$dd/png/$img.png" -o "/tmp/$img.png"
-            ffmpeg -hide_banner -loglevel error -y -i "/tmp/$img.png" -q:v 2 "tmp-epic/$img.jpg"
+            python3 -c "from PIL import Image; Image.open('/tmp/$img.png').convert('RGB').save('tmp-epic/$img.jpg', quality=92)"
             rm -f "/tmp/$img.png"
           done
           ls -la tmp-epic
