@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-intelligence",
+    title: "The Great Repricing of Intelligence",
+    excerpt: "The AI supercycle is accelerating while its financial foundations are tested; the next rotation rewards productivity, not scarcity.",
+    tag: "Morning Brief · Macro",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "5 min read",
+    time: "11:25",
+    kind: "day"
+  },
+  {
     url: "/europes-great-banking-reset-2026-10-13",
     title: "Europe’s Great Banking Reset",
     excerpt: "How Europe's financial reordering will shape its next industrial revolution.",
