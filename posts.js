@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-enters-price-discovery",
+    title: "The Great Split Enters Price Discovery",
+    excerpt: "AI keeps financing global growth, but the market is beginning to separate technological leadership from sustainable financial returns.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 13, 2026",
+    read: "5 min read",
+    time: "07:44",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-13",
     title: "GVI Corporate Benchmark",
     excerpt: "The next rotation will distinguish companies controlling the economics of intelligence from those merely financing its expansion.",
