@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-collision-of-capital-and-compute",
+    title: "The Great Collision of Capital and Compute",
+    excerpt: "ASML confirms demand toward 2030 while the IMF and IEA expose the financial and physical limits of the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "5 min read",
+    time: "15:09",
+    kind: "day"
+  },
+  {
     url: "/the-ai-boom-meets-a-monetary-policy-pause",
     title: "The AI Boom Meets a Monetary Policy Pause",
     excerpt: "Singapore pauses while the ECB warns AI may suppress wages before it lifts productivity — the Great Split enters a new phase.",
