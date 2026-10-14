@@ -87,7 +87,8 @@
       "gvi-corporate-benchmark-2026-10-13",
       "the-next-economy-research-centre-2026-10-13",
       "gvi-global-velocity-index-the-productivity-premium",
-      "gvi-corporate-benchmark-2026-10-14"
+      "gvi-corporate-benchmark-2026-10-14",
+      "the-next-economy-research-centre-2026-10-14"
     ]
   },
   "daily": {
@@ -3451,63 +3452,75 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-13",
+    "asOf": "2026-10-14",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The Great Split: the distinction is no longer between economies that invest in AI and those that do not, but between those capable of transforming AI investment into productive capacity and those accumulating financial exposure without equivalent productivity gains.",
+    "hypothesis": "The technology sets the opportunity. The capital structure sets the risk. Cash flow determines who wins. AI moves from Stage I infrastructure inflation (compute, energy and capital demand rising) to Stage II industrial-AI productivity (deployment and automation lowering unit costs).",
     "rows": [
       {
-        "k": "Projected global GDP growth 2026 (IMF)",
-        "latest": "3.1% (from 3.0% in July)",
+        "k": "ASML Q3 revenue",
+        "latest": "€11.66B (+55% YoY)",
         "trend": "up",
-        "reading": "AI investment is supporting aggregate growth despite the energy shock."
+        "reading": "Scarcity is moving upstream into chip equipment; the bottleneck extends into 2028."
       },
       {
-        "k": "Hyperscaler share of investment-grade bond issuance",
-        "latest": "~10% (vs <1% in 2024)",
+        "k": "ASML Q3 net income",
+        "latest": "€4.96B (+134% YoY)",
         "trend": "up",
-        "reading": "AI financing has become central to credit markets, creating a financial-stability channel."
+        "reading": "Scarcity profits accrue to equipment suppliers today."
       },
       {
-        "k": "Countries accounting for 95% of global growth",
-        "latest": "32 (down from 54 in April)",
+        "k": "ASML Q3 gross margin",
+        "latest": "57.5%",
+        "trend": "flat",
+        "reading": "Exceptional returns for suppliers; the note gives no change figure."
+      },
+      {
+        "k": "ASML FY2026 revenue outlook",
+        "latest": "€44–45B (raised)",
+        "trend": "up",
+        "reading": "Planned 2027–2028 capacity may be insufficient; some customers are discussing 2029–2030 orders."
+      },
+      {
+        "k": "CoreWeave capital raised vs obligations",
+        "latest": ">$35B raised vs ~$52B obligations",
+        "trend": "up",
+        "reading": "AI infrastructure is moving deeper into institutional credit; maturities and equipment economics may not align."
+      },
+      {
+        "k": "CoreWeave free cash flow",
+        "latest": "Negative through 2028 (expected)",
         "trend": "down",
-        "reading": "The benefits of AI are narrowing geographically, so the split is becoming geographical."
+        "reading": "Growth depends on capital; the 8 GW-by-2030 target is an ambition, not operating capacity."
       },
       {
-        "k": "AI-related trade growth 2023–2025",
-        "latest": "29% (overall global trade 8.3%)",
+        "k": "US AI capex going to imports",
+        "latest": "~70% (Reuters estimate)",
+        "trend": "flat",
+        "reading": "Investment can lift CapEx and valuations without matching domestic value added."
+      },
+      {
+        "k": "US trade deficit (August)",
+        "latest": "$105.6B",
         "trend": "up",
-        "reading": "Without AI-related trade, overall growth would have been about 4.6%."
+        "reading": "Imported servers and semiconductors weigh on domestic value conversion."
       },
       {
-        "k": "Nvidia share of China data-centre accelerator shipments, H1 2026",
-        "latest": "34% (Huawei 28%)",
-        "trend": "down",
-        "reading": "Nvidia units were down 44% year over year, and non-GPU accelerators overtook GPUs by volume. The figures measure units, not performance or revenue."
+        "k": "Eurozone 2026 growth vs global (IMF)",
+        "latest": "~1.1% vs 3.1%",
+        "trend": "flat",
+        "reading": "Europe must raise productivity of existing industrial assets and attract private capital."
       },
       {
-        "k": "Banks with weak capital under IMF adverse scenario",
-        "latest": "~22% of global banking assets (from 18%)",
-        "trend": "up",
-        "reading": "A hypothetical stress-test result, not a current breach."
-      },
-      {
-        "k": "Tencent H1 capital expenditure",
-        "latest": "~96.3 billion yuan",
-        "trend": "up",
-        "reading": "More than double the 2025 level. Tencent is marketing a four-tranche offering of at least $4.5 billion."
-      },
-      {
-        "k": "Eurozone 2026 growth forecast",
-        "latest": "1.1% (from 0.9%)",
-        "trend": "up",
-        "reading": "Upgraded, but still far from US and Chinese scale. Europe needs to capture more domestic value added."
+        "k": "Industrial-AI productivity inflection",
+        "latest": "None independently verified today",
+        "trend": "flat",
+        "reading": "The Stage I to Stage II transition remains the critical uncertainty."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-13",
-      "date": "2026-10-13",
+      "url": "/the-next-economy-research-centre-2026-10-14",
+      "date": "2026-10-14",
       "slot": "Morning Brief"
     }
   }

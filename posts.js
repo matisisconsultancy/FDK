@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-14",
+    title: "The Next Economy Research Centre",
+    excerpt: "Record chip profits, widening credit exposure and a global battle for the capital financing AI.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "5 min read",
+    time: "09:15",
+    kind: "day"
+  },
+  {
     url: "/the-big-shift",
     title: "The Big Shift",
     excerpt: "Can AI-driven productivity rise faster than the cost of financing it? That one contest now decides equity leadership, credit quality and Europe's competitiveness.",
