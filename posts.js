@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-banking-endgame-the-second-order-revolution",
+    title: "Europe’s Banking Endgame: The Second-Order Revolution",
+    excerpt: "How the ISS intervention, the MPS contest and UniCredit's Commerzbank bid converge into one European capital-allocation shock.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "8 min read",
+    time: "09:43",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-14",
     title: "The Next Economy Research Centre",
     excerpt: "Record chip profits, widening credit exposure and a global battle for the capital financing AI.",
