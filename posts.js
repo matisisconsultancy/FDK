@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-hits-the-semiconductor-ceiling",
+    title: "Europe’s AI Race Hits the Semiconductor Ceiling",
+    excerpt: "ASML flags a structural supply constraint while NVIDIA extends from compute into applications across Europe.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "5 min read",
+    time: "19:50",
+    kind: "day"
+  },
+  {
     url: "/the-great-collision-of-capital-and-compute",
     title: "The Great Collision of Capital and Compute",
     excerpt: "ASML confirms demand toward 2030 while the IMF and IEA expose the financial and physical limits of the AI Supercycle.",
