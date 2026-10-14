@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-shift",
+    title: "The Big Shift",
+    excerpt: "Can AI-driven productivity rise faster than the cost of financing it? That one contest now decides equity leadership, credit quality and Europe's competitiveness.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "5 min read",
+    time: "07:45",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-14",
     title: "GVI Corporate Benchmark",
     excerpt: "Why the next economy is repricing corporate leadership around capital productivity, not announced investment.",
