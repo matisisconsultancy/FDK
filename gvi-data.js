@@ -90,7 +90,8 @@ window.GVI_DATA = {
       "gvi-global-velocity-index-the-32-country-growth-divide",
       "gvi-corporate-benchmark-2026-10-13",
       "the-next-economy-research-centre-2026-10-13",
-      "gvi-global-velocity-index-the-productivity-premium"
+      "gvi-global-velocity-index-the-productivity-premium",
+      "gvi-corporate-benchmark-2026-10-14"
     ]
   },
   "daily": {
@@ -2997,6 +2998,12 @@ window.GVI_DATA = {
         "url": "/gvi-global-velocity-index-the-productivity-premium",
         "slot": "GVI",
         "headline": "GVI holds at 108.0 as a provisional carry-forward with no score or ranking changes; the US (94.0), China (91.2) and South Korea (88.8) lead the country scorecard."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-10-14",
+        "slot": "GVI",
+        "headline": "NVIDIA 96, TSMC 95 and Microsoft 95 lead; all scores unchanged as the AI cycle shifts to financial selection"
       }
     ]
   },
@@ -3102,16 +3109,16 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-13",
+    "asOf": "2026-10-14",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
         "rank": 1,
         "name": "NVIDIA",
         "score": 96,
-        "delta": -1,
-        "trend": "down",
-        "note": "Fiscal Q2 2027 revenue $96.2B, up 106%, but China alternatives weaken geographic optionality."
+        "delta": 0,
+        "trend": "flat",
+        "note": "Fiscal Q2 2027 revenue $96.2B (+106%); Data Center $89B"
       },
       {
         "rank": 2,
@@ -3119,15 +3126,15 @@ window.GVI_DATA = {
         "score": 95,
         "delta": 0,
         "trend": "flat",
-        "note": "Broader chip-design competition can strengthen demand for its advanced manufacturing."
+        "note": "September revenue +54.6%; nine-month 2026 revenue ~NT$3.90T (+41.1%)"
       },
       {
         "rank": 3,
         "name": "Microsoft",
         "score": 95,
-        "delta": 1,
-        "trend": "up",
-        "note": "Gains on Maia 300; $19.6B fiscal Q4 2026 free cash flow."
+        "delta": 0,
+        "trend": "flat",
+        "note": "FCF $19.6B; Microsoft 365 Copilot above 30M paid seats"
       },
       {
         "rank": 4,
@@ -3135,7 +3142,7 @@ window.GVI_DATA = {
         "score": 93,
         "delta": 0,
         "trend": "flat",
-        "note": "One of five strongest structural positions."
+        "note": "AI semiconductor revenue $16.7B (+221%); flags capital as next constraint"
       },
       {
         "rank": 5,
@@ -3143,7 +3150,7 @@ window.GVI_DATA = {
         "score": 91,
         "delta": 0,
         "trend": "flat",
-        "note": "One of five strongest structural positions."
+        "note": null
       },
       {
         "rank": 6,
@@ -3151,7 +3158,7 @@ window.GVI_DATA = {
         "score": 90,
         "delta": 0,
         "trend": "flat",
-        "note": "Essential to the broader infrastructure architecture."
+        "note": null
       },
       {
         "rank": 7,
@@ -3159,7 +3166,7 @@ window.GVI_DATA = {
         "score": 89,
         "delta": 0,
         "trend": "flat",
-        "note": "Essential to infrastructure; may benefit from competing computing architectures."
+        "note": "€9.3B quarterly revenue at 54% gross margin; Oct 14 report a key test"
       },
       {
         "rank": 8,
@@ -3167,7 +3174,7 @@ window.GVI_DATA = {
         "score": 88,
         "delta": 0,
         "trend": "flat",
-        "note": "Anchors energy storage."
+        "note": null
       },
       {
         "rank": 9,
@@ -3175,7 +3182,7 @@ window.GVI_DATA = {
         "score": 87,
         "delta": 0,
         "trend": "flat",
-        "note": "Anchors manufacturing."
+        "note": null
       },
       {
         "rank": 10,
@@ -3183,7 +3190,7 @@ window.GVI_DATA = {
         "score": 86,
         "delta": 0,
         "trend": "flat",
-        "note": "Anchors industrial systems."
+        "note": "Industrial AI integrator"
       }
     ],
     "laggards": [
@@ -3193,7 +3200,7 @@ window.GVI_DATA = {
         "score": 49,
         "delta": 0,
         "trend": "flat",
-        "note": "Lowest score in the benchmark; lower rank does not imply financial distress."
+        "note": null
       },
       {
         "rank": 2,
@@ -3201,7 +3208,7 @@ window.GVI_DATA = {
         "score": 51,
         "delta": 0,
         "trend": "flat",
-        "note": "Deliveries down 16% over nine months, China down 33%."
+        "note": null
       },
       {
         "rank": 3,
@@ -3209,7 +3216,7 @@ window.GVI_DATA = {
         "score": 54,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged on the day."
+        "note": null
       },
       {
         "rank": 4,
@@ -3217,15 +3224,15 @@ window.GVI_DATA = {
         "score": 56,
         "delta": 0,
         "trend": "flat",
-        "note": "Has the technology; challenge is converting it into adequate returns."
+        "note": null
       },
       {
         "rank": 5,
         "name": "Volkswagen Group",
         "score": 57,
-        "delta": -1,
-        "trend": "down",
-        "note": "Cut on Q3 deliveries down 14.3%, China down 38.5%."
+        "delta": 0,
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 6,
@@ -3233,7 +3240,7 @@ window.GVI_DATA = {
         "score": 60,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged on the day."
+        "note": null
       },
       {
         "rank": 7,
@@ -3241,7 +3248,7 @@ window.GVI_DATA = {
         "score": 62,
         "delta": 0,
         "trend": "flat",
-        "note": "Has the engineering; challenge is converting it into adequate returns."
+        "note": null
       },
       {
         "rank": 8,
@@ -3249,7 +3256,7 @@ window.GVI_DATA = {
         "score": 64,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged on the day."
+        "note": null
       },
       {
         "rank": 9,
@@ -3257,7 +3264,7 @@ window.GVI_DATA = {
         "score": 66,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged on the day."
+        "note": null
       },
       {
         "rank": 10,
@@ -3265,7 +3272,7 @@ window.GVI_DATA = {
         "score": 67,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged on the day."
+        "note": null
       }
     ],
     "pillars": [
@@ -3280,25 +3287,20 @@ window.GVI_DATA = {
         ]
       },
       {
-        "pillar": "Essential to broader infrastructure architecture",
+        "pillar": "Industrial AI integrators",
         "leaders": [
-          "Amazon",
-          "ASML"
-        ]
-      },
-      {
-        "pillar": "Energy storage, manufacturing and industrial systems",
-        "leaders": [
-          "CATL",
-          "Samsung Electronics",
-          "Schneider Electric"
+          "Schneider Electric",
+          "Siemens",
+          "ABB",
+          "Hitachi",
+          "GE Vernova"
         ]
       }
     ],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-13",
-      "date": "2026-10-13",
+      "url": "/gvi-corporate-benchmark-2026-10-14",
+      "date": "2026-10-14",
       "slot": "GVI"
     }
   },

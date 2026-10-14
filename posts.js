@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-14",
+    title: "GVI Corporate Benchmark",
+    excerpt: "Why the next economy is repricing corporate leadership around capital productivity, not announced investment.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "5 min read",
+    time: "07:06",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-velocity-index-the-productivity-premium",
     title: "GVI: Global Velocity Index: The Productivity Premium",
     excerpt: "GVI holds at 108.0 as new evidence from Germany, Japan, China, Europe and the IMF exposes a widening gap between AI ambition and economic execution.",
