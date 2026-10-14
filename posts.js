@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-is-financing-both-rivals",
+    title: "The AI Supercycle Is Financing Both Rivals",
+    excerpt: "Technological competition and economic interdependence are advancing simultaneously across the two AI economies.",
+    tag: "In Focus · AI",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "4 min read",
+    time: "12:18",
+    kind: "day"
+  },
+  {
     url: "/europes-banking-endgame-the-second-order-revolution",
     title: "Europe’s Banking Endgame: The Second-Order Revolution",
     excerpt: "How the ISS intervention, the MPS contest and UniCredit's Commerzbank bid converge into one European capital-allocation shock.",
