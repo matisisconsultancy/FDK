@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-boom-meets-a-monetary-policy-pause",
+    title: "The AI Boom Meets a Monetary Policy Pause",
+    excerpt: "Singapore pauses while the ECB warns AI may suppress wages before it lifts productivity — the Great Split enters a new phase.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "7 min read",
+    time: "13:41",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-is-financing-both-rivals",
     title: "The AI Supercycle Is Financing Both Rivals",
     excerpt: "Technological competition and economic interdependence are advancing simultaneously across the two AI economies.",
