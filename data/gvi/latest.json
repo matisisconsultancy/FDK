@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-13",
+    "updated": "2026-10-14",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -85,7 +85,8 @@
       "gvi-daily-update-2026-10-12",
       "gvi-global-velocity-index-the-32-country-growth-divide",
       "gvi-corporate-benchmark-2026-10-13",
-      "the-next-economy-research-centre-2026-10-13"
+      "the-next-economy-research-centre-2026-10-13",
+      "gvi-global-velocity-index-the-productivity-premium"
     ]
   },
   "daily": {
@@ -96,23 +97,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-13",
+      "asOf": "2026-10-14",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "GVI: Global Velocity Index: The 32-Country Growth Divide",
-        "url": "/gvi-global-velocity-index-the-32-country-growth-divide",
-        "date": "2026-10-13",
+        "title": "GVI: Global Velocity Index: The Productivity Premium",
+        "url": "/gvi-global-velocity-index-the-productivity-premium",
+        "date": "2026-10-14",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-13",
+      "asOf": "2026-10-14",
       "source": {
-        "title": "GVI: Global Velocity Index: The 32-Country Growth Divide",
-        "url": "/gvi-global-velocity-index-the-32-country-growth-divide",
-        "date": "2026-10-13",
+        "title": "GVI: Global Velocity Index: The Productivity Premium",
+        "url": "/gvi-global-velocity-index-the-productivity-premium",
+        "date": "2026-10-14",
         "slot": "GVI"
       },
       "rows": [
@@ -123,7 +124,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI leadership; growth resilience",
+          "tag": "AI leadership; credit resilient, financing risks elevated",
           "spark": [
             92.1,
             92.3,
@@ -133,6 +134,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -148,8 +150,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI investment strong; growth forecast lower",
+          "tag": "Industrial strength; producer-cost pressures accelerating",
           "spark": [
+            91.2,
             91.2
           ]
         },
@@ -160,8 +163,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor strength; market volatility",
+          "tag": "Exceptional semiconductor activity; valuation volatility",
           "spark": [
+            88.8,
             88.8
           ]
         },
@@ -172,8 +176,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Physical-AI momentum; monetary constraints",
+          "tag": "Industrial capability; persistent imported inflation",
           "spark": [
+            84.9,
             84.9
           ]
         },
@@ -184,8 +189,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial recovery; energy exposure",
+          "tag": "Industrial recovery; energy and data-access constraints",
           "spark": [
+            83.4,
             83.4
           ]
         },
@@ -196,8 +202,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Growth outlook upgraded; financing restrictive",
+          "tag": "Restrictive long-term financing",
           "spark": [
+            82.2,
             82.2
           ]
         },
@@ -208,8 +215,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Innovation potential; sovereign constraints",
+          "tag": "AI ecosystem expansion; sovereign constraints",
           "spark": [
+            81.2,
             81.2
           ]
         },
@@ -222,6 +230,7 @@
           "trend": "flat",
           "tag": "Stable-positive",
           "spark": [
+            80.7,
             80.7
           ]
         },
@@ -232,8 +241,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Manufacturing and semiconductor strength",
+          "tag": "Machinery and semiconductor ecosystem strength",
           "spark": [
+            80.6,
             80.6
           ]
         },
@@ -244,8 +254,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Improving industrial momentum",
+          "tag": "Improving industrial momentum; new AI-capacity plans",
           "spark": [
+            79.2,
             79.2
           ]
         },
@@ -256,8 +267,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Stable-positive",
+          "tag": "Stable; new AI-capacity plans",
           "spark": [
+            77.8,
             77.8
           ]
         },
@@ -270,6 +282,7 @@
           "trend": "flat",
           "tag": "Energy advantage",
           "spark": [
+            77.1,
             77.1
           ]
         },
@@ -280,8 +293,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Infrastructure pipeline; execution pending",
+          "tag": "Strong infrastructure pipeline; execution pending",
           "spark": [
+            75,
             75
           ]
         },
@@ -294,6 +308,7 @@
           "trend": "flat",
           "tag": "Stabilising",
           "spark": [
+            72.4,
             72.4
           ]
         },
@@ -306,6 +321,7 @@
           "trend": "flat",
           "tag": "Weak industrial momentum",
           "spark": [
+            71.6,
             71.6
           ]
         }
@@ -2927,62 +2943,56 @@
     }
   },
   "today": {
-    "date": "2026-10-13",
-    "edition": "GVI · Macro",
-    "thesis": "GVI: Global Velocity Index: The 32-Country Growth Divide",
-    "subtitle": "The AI Supercycle is sustaining global growth while concentrating its benefits in an increasingly narrow group of economies.",
-    "standfirst": "Capital builds intelligence. Industrial adoption converts it into productivity.",
+    "date": "2026-10-14",
+    "edition": "GVI · Capital",
+    "thesis": "GVI: Global Velocity Index: The Productivity Premium",
+    "subtitle": "The AI Supercycle nears a financial inflection point where advantage belongs to economies that convert compute, data and energy into productive economic value — not those announcing the largest investments.",
+    "standfirst": "The AI Supercycle will be valued through economic conversion, not technological expenditure.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI (provisional)",
+        "label": "GVI (provisional carry-forward)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "IMF 2026 global growth",
-        "value": "3.1%",
+        "label": "German Sept inflation",
+        "value": "3.3%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Countries driving 95% of growth",
-        "value": "32",
+        "label": "Japan Sept PPI",
+        "value": "6.8%",
         "delta": null,
         "trend": "down"
       },
       {
-        "label": "Brent crude",
-        "value": "$106.65",
-        "delta": "+1.8%",
+        "label": "German AI value at risk by 2034 (ifo scenario)",
+        "value": "€155 billion",
+        "delta": null,
+        "trend": "flat"
+      },
+      {
+        "label": "Global banking assets at weak-buffer banks (IMF stress test)",
+        "value": "22%",
+        "delta": null,
         "trend": "up"
-      },
-      {
-        "label": "Adverse AI scenario, 2028 output",
-        "value": "−1.1%",
-        "delta": null,
-        "trend": "down"
       }
     ],
     "source": {
-      "title": "GVI: Global Velocity Index: The 32-Country Growth Divide",
-      "url": "/gvi-global-velocity-index-the-32-country-growth-divide",
-      "date": "2026-10-13",
+      "title": "GVI: Global Velocity Index: The Productivity Premium",
+      "url": "/gvi-global-velocity-index-the-productivity-premium",
+      "date": "2026-10-14",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: Global Velocity Index: The 32-Country Growth Divide",
-        "url": "/gvi-global-velocity-index-the-32-country-growth-divide",
+        "title": "GVI: Global Velocity Index: The Productivity Premium",
+        "url": "/gvi-global-velocity-index-the-productivity-premium",
         "slot": "GVI",
-        "headline": "GVI carried forward provisionally at 108.0 with no ranking changes; the US (94.0), China (91.2) and South Korea (88.8) lead, as the IMF shows 32 countries now generating 95% of global growth."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-10-13",
-        "slot": "GVI",
-        "headline": "NVIDIA 96, TSMC 95 and Microsoft 95 lead; Nissan 49 and Porsche AG 51 trail."
+        "headline": "GVI holds at 108.0 as a provisional carry-forward with no score or ranking changes; the US (94.0), China (91.2) and South Korea (88.8) lead the country scorecard."
       }
     ]
   },

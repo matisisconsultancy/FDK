@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-velocity-index-the-productivity-premium",
+    title: "GVI: Global Velocity Index: The Productivity Premium",
+    excerpt: "GVI holds at 108.0 as new evidence from Germany, Japan, China, Europe and the IMF exposes a widening gap between AI ambition and economic execution.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "5 min read",
+    time: "07:01",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-intelligence-2026-10-13",
     title: "The Great Repricing of Intelligence",
     excerpt: "The AI Supercycle faces its first systemic financial test as valuations, credit and sovereign yields reprice the cost of intelligence.",
