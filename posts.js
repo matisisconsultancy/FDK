@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/inflation-exposes-the-cost-of-the-ai-supercycle",
+    title: "Inflation Exposes the Cost of the AI Supercycle",
+    excerpt: "Demand for AI infrastructure accelerates even as the financing conditions to sustain it deteriorate — the next Great Split in capital allocation.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 14, 2026",
+    read: "4 min read",
+    time: "19:55",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-hits-the-semiconductor-ceiling",
     title: "Europe’s AI Race Hits the Semiconductor Ceiling",
     excerpt: "ASML flags a structural supply constraint while NVIDIA extends from compute into applications across Europe.",
