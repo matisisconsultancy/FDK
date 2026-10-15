@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-credit-stress-reshapes-the-global-capital-cycle",
+    title: "AI Credit Stress Reshapes the Global Capital Cycle",
+    excerpt: "Record chip profits, a global semiconductor selloff and AI credit stress mark the start of the Great Financial Selection.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "4 min read",
+    time: "21:18",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-meets-the-capital-test",
     title: "Europe’s AI Race Meets the Capital Test",
     excerpt: "Three signals since October 14 point to a tougher financing environment for Europe's AI infrastructure ambitions.",
