@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-capital-conversion-test",
+    title: "GVI Corporate Benchmark the Capital-conversion Test",
+    excerpt: "The FDK GVI Corporate Benchmark for October 15, 2026 — the rotation from financial duration toward economic conversion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "5 min read",
+    time: "06:05",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-inflation-intelligence-collision",
     title: "GVI: The Inflation: Intelligence Collision",
     excerpt: "China's technology exports surge as US inflation reprices capital-intensive AI, with the GVI held at 108.0.",

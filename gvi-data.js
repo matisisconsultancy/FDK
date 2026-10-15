@@ -93,7 +93,8 @@ window.GVI_DATA = {
       "gvi-global-velocity-index-the-productivity-premium",
       "gvi-corporate-benchmark-2026-10-14",
       "the-next-economy-research-centre-2026-10-14",
-      "gvi-the-inflation-intelligence-collision"
+      "gvi-the-inflation-intelligence-collision",
+      "gvi-corporate-benchmark-the-capital-conversion-test"
     ]
   },
   "daily": {
@@ -3120,198 +3121,212 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-14",
+    "asOf": "2026-10-15",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
         "rank": 1,
-        "name": "NVIDIA",
-        "score": 96,
-        "delta": 0,
+        "name": "TSMC",
+        "score": 99.5,
+        "delta": -0.1,
         "trend": "flat",
-        "note": "Fiscal Q2 2027 revenue $96.2B (+106%); Data Center $89B"
+        "note": "Defines frontier manufacturing velocity; record quarterly revenue."
       },
       {
         "rank": 2,
-        "name": "TSMC",
-        "score": 95,
-        "delta": 0,
-        "trend": "flat",
-        "note": "September revenue +54.6%; nine-month 2026 revenue ~NT$3.90T (+41.1%)"
+        "name": "Microsoft",
+        "score": 99.2,
+        "delta": -0.1,
+        "trend": "down",
+        "note": "Converts infrastructure investment into enterprise distribution and recurring relationships."
       },
       {
         "rank": 3,
-        "name": "Microsoft",
-        "score": 95,
-        "delta": 0,
-        "trend": "flat",
-        "note": "FCF $19.6B; Microsoft 365 Copilot above 30M paid seats"
+        "name": "Amazon",
+        "score": 99,
+        "delta": -0.2,
+        "trend": "down",
+        "note": "Converts infrastructure investment into enterprise distribution and recurring relationships."
       },
       {
         "rank": 4,
-        "name": "Broadcom",
-        "score": 93,
-        "delta": 0,
+        "name": "Schneider Electric",
+        "score": 98.6,
+        "delta": 0.2,
         "trend": "flat",
-        "note": "AI semiconductor revenue $16.7B (+221%); flags capital as next constraint"
+        "note": "Electricity, distribution and grid capacity for AI."
       },
       {
         "rank": 5,
-        "name": "Alphabet",
-        "score": 91,
-        "delta": 0,
-        "trend": "flat",
-        "note": null
+        "name": "ASML",
+        "score": 98.1,
+        "delta": null,
+        "trend": "up",
+        "note": "New entrant after its October 14 outlook upgrade."
       },
       {
         "rank": 6,
-        "name": "Amazon",
-        "score": 90,
+        "name": "Nvidia",
+        "score": 98,
         "delta": 0,
-        "trend": "flat",
-        "note": null
+        "trend": "down",
+        "note": "Shapes accelerated-computing economics."
       },
       {
         "rank": 7,
-        "name": "ASML",
-        "score": 89,
+        "name": "Broadcom",
+        "score": 97.8,
         "delta": 0,
-        "trend": "flat",
-        "note": "€9.3B quarterly revenue at 54% gross margin; Oct 14 report a key test"
+        "trend": "down",
+        "note": "Shapes accelerated-computing economics."
       },
       {
         "rank": 8,
-        "name": "CATL",
-        "score": 88,
+        "name": "Palantir",
+        "score": 97.4,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Embeds AI into operational workflows."
       },
       {
         "rank": 9,
-        "name": "Samsung Electronics",
-        "score": 87,
-        "delta": 0,
+        "name": "Siemens Energy",
+        "score": 97.3,
+        "delta": 0.1,
         "trend": "flat",
-        "note": null
+        "note": "Physical architecture of AI: grid capacity and resilience."
       },
       {
         "rank": 10,
-        "name": "Schneider Electric",
-        "score": 86,
+        "name": "Siemens AG",
+        "score": 97.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Industrial AI integrator"
+        "note": "Embeds AI into operational workflows."
       }
     ],
     "laggards": [
       {
         "rank": 1,
-        "name": "Nissan",
-        "score": 49,
-        "delta": 0,
-        "trend": "flat",
-        "note": null
+        "name": "Volkswagen",
+        "score": 61.8,
+        "delta": -0.5,
+        "trend": "down",
+        "note": "Q3 deliveries down 14.3%; China deliveries down 38.5%."
       },
       {
         "rank": 2,
-        "name": "Porsche AG",
-        "score": 51,
-        "delta": 0,
+        "name": "Nissan",
+        "score": 63.4,
+        "delta": -0.2,
         "trend": "flat",
-        "note": null
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 3,
         "name": "Stellantis",
-        "score": 54,
-        "delta": 0,
-        "trend": "flat",
-        "note": null
+        "score": 65.2,
+        "delta": 0.4,
+        "trend": "up",
+        "note": "Leapmotor collaboration adds optionality; benefits not yet demonstrated."
       },
       {
         "rank": 4,
-        "name": "Intel",
-        "score": 56,
+        "name": "Warner Bros. Discovery",
+        "score": 67.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 5,
-        "name": "Volkswagen Group",
-        "score": 57,
+        "name": "Adidas",
+        "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 6,
-        "name": "Bayer",
-        "score": 60,
-        "delta": 0,
-        "trend": "flat",
-        "note": null
+        "name": "BASF",
+        "score": 68.9,
+        "delta": -0.5,
+        "trend": "down",
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 7,
-        "name": "Boeing",
-        "score": 62,
-        "delta": 0,
+        "name": "Honda",
+        "score": 69.8,
+        "delta": -0.2,
         "trend": "flat",
-        "note": null
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 8,
-        "name": "Vodafone",
-        "score": 64,
+        "name": "Prudential plc",
+        "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 9,
-        "name": "AT&T",
-        "score": 66,
-        "delta": 0,
-        "trend": "flat",
-        "note": null
+        "name": "Porsche AG",
+        "score": 70.8,
+        "delta": -0.4,
+        "trend": "down",
+        "note": "Low relative structural velocity."
       },
       {
         "rank": 10,
-        "name": "Verizon",
-        "score": 67,
+        "name": "Cellnex",
+        "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Low relative structural velocity."
       }
     ],
     "pillars": [
       {
-        "pillar": "Strongest structural positions",
+        "pillar": "Frontier manufacturing",
         "leaders": [
-          "NVIDIA",
-          "TSMC",
-          "Microsoft",
-          "Broadcom",
-          "Alphabet"
+          "TSMC"
         ]
       },
       {
-        "pillar": "Industrial AI integrators",
+        "pillar": "Infrastructure-to-enterprise conversion",
+        "leaders": [
+          "Microsoft",
+          "Amazon"
+        ]
+      },
+      {
+        "pillar": "Physical architecture of AI",
         "leaders": [
           "Schneider Electric",
-          "Siemens",
-          "ABB",
-          "Hitachi",
-          "GE Vernova"
+          "Siemens Energy"
+        ]
+      },
+      {
+        "pillar": "Accelerated-computing economics",
+        "leaders": [
+          "Nvidia",
+          "Broadcom"
+        ]
+      },
+      {
+        "pillar": "AI in operational workflows",
+        "leaders": [
+          "Palantir",
+          "Siemens AG"
         ]
       }
     ],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-14",
-      "date": "2026-10-14",
+      "title": "GVI Corporate Benchmark the Capital-conversion Test",
+      "url": "/gvi-corporate-benchmark-the-capital-conversion-test",
+      "date": "2026-10-15",
       "slot": "GVI"
     }
   },
