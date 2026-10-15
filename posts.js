@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-return-spread",
+    title: "The AI Return Spread",
+    excerpt: "AI revenues accelerate while infrastructure financing costs diverge — the AI Return Spread becomes the defining market variable.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "5 min read",
+    time: "08:51",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-the-capital-conversion-test",
     title: "GVI Corporate Benchmark the Capital-conversion Test",
     excerpt: "The FDK GVI Corporate Benchmark for October 15, 2026 — the rotation from financial duration toward economic conversion.",
