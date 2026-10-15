@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-first-ai-credit-shock",
+    title: "The First AI Credit Shock",
+    excerpt: "Rising financing costs are repricing the AI boom's architecture, separating capital creators from capital casualties.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "3 min read",
+    time: "10:33",
+    kind: "day"
+  },
+  {
     url: "/europes-new-capital-order-the-great-reallocation",
     title: "Europe’s New Capital Order: The Great Reallocation",
     excerpt: "Fiscal pressure, sovereign risk and Industrial AI financing are converging to reshape Europe's banking hierarchy.",
