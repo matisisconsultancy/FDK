@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-meets-its-capital-reckoning",
+    title: "The AI Supercycle Meets Its Capital Reckoning",
+    excerpt: "AI revenues keep expanding, but investors will no longer finance that expansion at any price.",
+    tag: "Midday Pulse · Credit",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "3 min read",
+    time: "14:45",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-meets-its-credit-constraint",
     title: "The AI Supercycle Meets Its Credit Constraint",
     excerpt: "U.S. AI infrastructure meets rising financing costs as China redesigns computing economics and TSMC demand stays extraordinary.",
