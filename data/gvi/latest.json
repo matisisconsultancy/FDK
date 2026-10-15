@@ -90,7 +90,8 @@
       "gvi-corporate-benchmark-2026-10-14",
       "the-next-economy-research-centre-2026-10-14",
       "gvi-the-inflation-intelligence-collision",
-      "gvi-corporate-benchmark-the-capital-conversion-test"
+      "gvi-corporate-benchmark-the-capital-conversion-test",
+      "the-next-economy-research-centre-2026-10-15"
     ]
   },
   "daily": {
@@ -3477,75 +3478,63 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-14",
+    "asOf": "2026-10-15",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The technology sets the opportunity. The capital structure sets the risk. Cash flow determines who wins. AI moves from Stage I infrastructure inflation (compute, energy and capital demand rising) to Stage II industrial-AI productivity (deployment and automation lowering unit costs).",
+    "hypothesis": "The AI Supercycle is not ending. Its financial selection mechanism is becoming more powerful.",
     "rows": [
       {
-        "k": "ASML Q3 revenue",
-        "latest": "€11.66B (+55% YoY)",
+        "k": "US annual CPI inflation (September)",
+        "latest": "3.7% (vs 3.4% in August)",
         "trend": "up",
-        "reading": "Scarcity is moving upstream into chip equipment; the bottleneck extends into 2028."
+        "reading": "Energy shock feeding inflation persistence; gasoline up 9.1% accounts for over half the headline increase."
       },
       {
-        "k": "ASML Q3 net income",
-        "latest": "€4.96B (+134% YoY)",
+        "k": "30-year Treasury yield",
+        "latest": "~5.63% (briefly, Wednesday)",
         "trend": "up",
-        "reading": "Scarcity profits accrue to equipment suppliers today."
+        "reading": "Higher long-term yields are tightening AI credit conditions."
+      },
+      {
+        "k": "CoreWeave bond secondary-market yield",
+        "latest": "~15% (issued in June at 9.625%)",
+        "trend": "up",
+        "reading": "Material repricing of AI operator financing; high confidence in observed prices."
       },
       {
         "k": "ASML Q3 gross margin",
-        "latest": "57.5%",
-        "trend": "flat",
-        "reading": "Exceptional returns for suppliers; the note gives no change figure."
-      },
-      {
-        "k": "ASML FY2026 revenue outlook",
-        "latest": "€44–45B (raised)",
+        "latest": "57.5% on record quarterly revenue (€11.66bn)",
         "trend": "up",
-        "reading": "Planned 2027–2028 capacity may be insufficient; some customers are discussing 2029–2030 orders."
+        "reading": "Equipment demand is persistent; suppliers monetize scarcity while operators carry the capital burden."
       },
       {
-        "k": "CoreWeave capital raised vs obligations",
-        "latest": ">$35B raised vs ~$52B obligations",
-        "trend": "up",
-        "reading": "AI infrastructure is moving deeper into institutional credit; maturities and equipment economics may not align."
-      },
-      {
-        "k": "CoreWeave free cash flow",
-        "latest": "Negative through 2028 (expected)",
+        "k": "Nasdaq Composite, October 14",
+        "latest": "−1.9%",
         "trend": "down",
-        "reading": "Growth depends on capital; the 8 GW-by-2030 target is an ambition, not operating capacity."
+        "reading": "Selloff hit leveraged AI operators hardest (CoreWeave ~−15%, Dell >−11%, Nebius ~−10%, Oracle nearly −9%)."
       },
       {
-        "k": "US AI capex going to imports",
-        "latest": "~70% (Reuters estimate)",
+        "k": "Brent futures vs North Sea Dated",
+        "latest": "~$107 vs ~$134",
         "trend": "flat",
-        "reading": "Investment can lift CapEx and valuations without matching domestic value added."
+        "reading": "Wide gap reflects severe physical-market constraints; diesel shortages could persist into 2027."
       },
       {
-        "k": "US trade deficit (August)",
-        "latest": "$105.6B",
+        "k": "IEA global oil demand 2026",
+        "latest": "~−2.6 million bpd",
+        "trend": "down",
+        "reading": "Supply expected to fall ~5.8 million bpd on average; oil tightness is not an electricity or gas shortage."
+      },
+      {
+        "k": "China September exports",
+        "latest": "+36.3% y/y; surplus ~$133.5bn; semiconductor exports >+100%",
         "trend": "up",
-        "reading": "Imported servers and semiconductors weigh on domestic value conversion."
-      },
-      {
-        "k": "Eurozone 2026 growth vs global (IMF)",
-        "latest": "~1.1% vs 3.1%",
-        "trend": "flat",
-        "reading": "Europe must raise productivity of existing industrial assets and attract private capital."
-      },
-      {
-        "k": "Industrial-AI productivity inflection",
-        "latest": "None independently verified today",
-        "trend": "flat",
-        "reading": "The Stage I to Stage II transition remains the critical uncertainty."
+        "reading": "Capital formation is redistributing industrial returns geographically; not proof of a broad domestic recovery."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-14",
-      "date": "2026-10-14",
+      "url": "/the-next-economy-research-centre-2026-10-15",
+      "date": "2026-10-15",
       "slot": "Morning Brief"
     }
   }

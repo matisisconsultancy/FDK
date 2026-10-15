@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-15",
+    title: "The Next Economy Research Centre",
+    excerpt: "Accelerating AI infrastructure demand collides with deteriorating financial conditions as the bond market becomes the Supercycle's new disciplining force.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "5 min read",
+    time: "08:54",
+    kind: "day"
+  },
+  {
     url: "/the-ai-return-spread",
     title: "The AI Return Spread",
     excerpt: "AI revenues accelerate while infrastructure financing costs diverge — the AI Return Spread becomes the defining market variable.",
