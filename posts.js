@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-is-now-in-the-data",
+    title: "The Great Split Is Now in the Data",
+    excerpt: "The Fed, the Bank of England, the FSB and the IMF each mark a consequential shift in the policy response to the AI Supercycle.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "9 min read",
+    time: "12:21",
+    kind: "day"
+  },
+  {
     url: "/the-first-ai-credit-shock",
     title: "The First AI Credit Shock",
     excerpt: "Rising financing costs are repricing the AI boom's architecture, separating capital creators from capital casualties.",
