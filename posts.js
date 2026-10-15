@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-inflation-intelligence-collision",
+    title: "GVI: The Inflation: Intelligence Collision",
+    excerpt: "China's technology exports surge as US inflation reprices capital-intensive AI, with the GVI held at 108.0.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "5 min read",
+    time: "05:37",
+    kind: "day"
+  },
+  {
     url: "/inflation-exposes-the-cost-of-the-ai-supercycle",
     title: "Inflation Exposes the Cost of the AI Supercycle",
     excerpt: "Demand for AI infrastructure accelerates even as the financing conditions to sustain it deteriorate — the next Great Split in capital allocation.",
