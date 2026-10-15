@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-meets-the-capital-test",
+    title: "Europe’s AI Race Meets the Capital Test",
+    excerpt: "Three signals since October 14 point to a tougher financing environment for Europe's AI infrastructure ambitions.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "4 min read",
+    time: "19:28",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-meets-its-capital-reckoning",
     title: "The AI Supercycle Meets Its Capital Reckoning",
     excerpt: "AI revenues keep expanding, but investors will no longer finance that expansion at any price.",
