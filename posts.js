@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-meets-its-credit-constraint",
+    title: "The AI Supercycle Meets Its Credit Constraint",
+    excerpt: "U.S. AI infrastructure meets rising financing costs as China redesigns computing economics and TSMC demand stays extraordinary.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "5 min read",
+    time: "13:39",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-is-now-in-the-data",
     title: "The Great Split Is Now in the Data",
     excerpt: "The Fed, the Bank of England, the FSB and the IMF each mark a consequential shift in the policy response to the AI Supercycle.",
