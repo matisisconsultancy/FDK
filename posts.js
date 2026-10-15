@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-new-capital-order-the-great-reallocation",
+    title: "Europe’s New Capital Order: The Great Reallocation",
+    excerpt: "Fiscal pressure, sovereign risk and Industrial AI financing are converging to reshape Europe's banking hierarchy.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 15, 2026",
+    read: "9 min read",
+    time: "10:23",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-15",
     title: "The Next Economy Research Centre",
     excerpt: "Accelerating AI infrastructure demand collides with deteriorating financial conditions as the bond market becomes the Supercycle's new disciplining force.",
