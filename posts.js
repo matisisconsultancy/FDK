@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-is-redrawing-the-monetary-policy-frontier",
+    title: "AI Is Redrawing the Monetary Policy Frontier",
+    excerpt: "Warsh separates the AI demand shock from the productivity dividend, the G7 moves to stress-test AI cyber risk, and the IMF documents Europe's widening gap.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "9 min read",
+    time: "13:11",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-corporate-credit",
     title: "The Great Split Reaches Corporate Credit",
     excerpt: "As CoreWeave bonds reprice and Schneider raises guidance, markets begin to separate those who finance AI from those who convert it into cash.",
