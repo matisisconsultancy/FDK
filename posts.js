@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-rotation-begins-below-the-surface",
+    title: "The Great Rotation Begins Below the Surface",
+    excerpt: "Three developments reveal the next evolution of the global financial regime as capital reallocates within AI.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "5 min read",
+    time: "15:06",
+    kind: "day"
+  },
+  {
     url: "/ai-is-redrawing-the-monetary-policy-frontier",
     title: "AI Is Redrawing the Monetary Policy Frontier",
     excerpt: "Warsh separates the AI demand shock from the productivity dividend, the G7 moves to stress-test AI cyber risk, and the IMF documents Europe's widening gap.",
