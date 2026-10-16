@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-great-cash-flow-divide",
+    title: "GVI: The Great Cash-Flow Divide",
+    excerpt: "TSMC's record profits, an AI credit correction and Europe's uneven output expose a widening split between those who capture the profits of intelligence and those who cannot finance it.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "5 min read",
+    time: "06:22",
+    kind: "day"
+  },
+  {
     url: "/ai-credit-stress-reshapes-the-global-capital-cycle",
     title: "AI Credit Stress Reshapes the Global Capital Cycle",
     excerpt: "Record chip profits, a global semiconductor selloff and AI credit stress mark the start of the Great Financial Selection.",

@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-15",
+    "updated": "2026-10-16",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -91,7 +91,8 @@
       "the-next-economy-research-centre-2026-10-14",
       "gvi-the-inflation-intelligence-collision",
       "gvi-corporate-benchmark-the-capital-conversion-test",
-      "the-next-economy-research-centre-2026-10-15"
+      "the-next-economy-research-centre-2026-10-15",
+      "gvi-the-great-cash-flow-divide"
     ]
   },
   "daily": {
@@ -102,23 +103,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-15",
+      "asOf": "2026-10-16",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "GVI: The Inflation: Intelligence Collision",
-        "url": "/gvi-the-inflation-intelligence-collision",
-        "date": "2026-10-15",
+        "title": "GVI: The Great Cash-Flow Divide",
+        "url": "/gvi-the-great-cash-flow-divide",
+        "date": "2026-10-16",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-15",
+      "asOf": "2026-10-16",
       "source": {
-        "title": "GVI: The Inflation: Intelligence Collision",
-        "url": "/gvi-the-inflation-intelligence-collision",
-        "date": "2026-10-15",
+        "title": "GVI: The Great Cash-Flow Divide",
+        "url": "/gvi-the-great-cash-flow-divide",
+        "date": "2026-10-16",
         "slot": "GVI"
       },
       "rows": [
@@ -129,7 +130,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Smart Capital deteriorating; AI leadership intact",
+          "tag": "AI leadership intact; financing risks intensify",
           "spark": [
             92.1,
             92.3,
@@ -139,6 +140,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -156,8 +158,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Technology exports accelerating; domestic demand weaker",
+          "tag": "Strong technology-export momentum; domestic conversion critical",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2
@@ -170,8 +173,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor strength; valuation pressures",
+          "tag": "Semiconductor strength; financial-market stress rises sharply",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8
@@ -184,8 +188,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Machinery investment improving; inflation constraints",
+          "tag": "Advanced manufacturing strength; AI valuation pressures",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9
@@ -198,8 +203,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial recovery; energy and financing constraints",
+          "tag": "Industrial stabilisation remains fragile",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4
@@ -212,8 +218,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Restrictive financing; modest growth",
+          "tag": "Growth resilience improving; services lead",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2
@@ -226,8 +233,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Innovation strengths; sovereign-debt pressure",
+          "tag": "Industrial momentum weak; sovereign financing constrained",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2
@@ -240,8 +248,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Stable-positive",
+          "tag": "Stable; no new qualifying observation",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7
@@ -254,8 +263,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong machinery and semiconductor ecosystem",
+          "tag": "Strongest sustained industrial acceleration in covered Europe",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6
@@ -268,8 +278,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Improving industrial momentum",
+          "tag": "Industrial rebound; monthly volatility elevated",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2
@@ -282,8 +293,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Stable-positive",
+          "tag": "Positive annual industrial momentum",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8
@@ -296,8 +308,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy advantage",
+          "tag": "Energy advantage; industrial activity uneven",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1
@@ -310,8 +323,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Infrastructure investment strong; conversion pending",
+          "tag": "Positive annual output trend; latest monthly contraction",
           "spark": [
+            75,
             75,
             75,
             75
@@ -324,8 +338,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Stabilising",
+          "tag": "Industrial momentum remains weak",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4
@@ -338,8 +353,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Weak industrial momentum; transformation challenge",
+          "tag": "Industrial contraction persists; capital conversion the challenge",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6
@@ -2963,56 +2979,56 @@
     }
   },
   "today": {
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "edition": "GVI · Capital",
-    "thesis": "GVI: The Inflation: Intelligence Collision",
-    "subtitle": "The AI Supercycle has reached a financial threshold — China's export engine accelerates while a renewed US inflation shock forces a repricing of capital-intensive AI.",
-    "standfirst": "Intelligence is accelerating; the advantage goes to those who convert it into cash faster than inflation raises the cost of capital.",
+    "thesis": "GVI: The Great Cash-Flow Divide",
+    "subtitle": "The AI Supercycle has reached a decisive inflection point — technological profitability is accelerating while markets become increasingly selective about who can finance the next phase.",
+    "standfirst": "The next Great Split will be decided by the conversion of intelligence into cash flow, not the accumulation of computing capacity.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "FDK Global Velocity Index",
+        "label": "FDK GVI (provisional)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "US September CPI",
-        "value": "3.7%",
+        "label": "TSMC Q3 net profit",
+        "value": "+68.7%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "China September exports (y/y)",
-        "value": "36.3%",
+        "label": "US PPI, Sep m/m",
+        "value": "+1.3%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "China trade surplus",
-        "value": "$133.5 billion",
+        "label": "Euro-area industrial production, Aug",
+        "value": "−0.5%",
         "delta": null,
-        "trend": "flat"
+        "trend": "down"
       },
       {
-        "label": "Japan August core machinery orders (m/m)",
-        "value": "5.2%",
+        "label": "UK real GDP, 3m to Aug",
+        "value": "+0.7%",
         "delta": null,
         "trend": "up"
       }
     ],
     "source": {
-      "title": "GVI: The Inflation: Intelligence Collision",
-      "url": "/gvi-the-inflation-intelligence-collision",
-      "date": "2026-10-15",
+      "title": "GVI: The Great Cash-Flow Divide",
+      "url": "/gvi-the-great-cash-flow-divide",
+      "date": "2026-10-16",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: The Inflation: Intelligence Collision",
-        "url": "/gvi-the-inflation-intelligence-collision",
+        "title": "GVI: The Great Cash-Flow Divide",
+        "url": "/gvi-the-great-cash-flow-divide",
         "slot": "GVI",
-        "headline": "GVI held at 108.0 (provisional carry-forward) as China's exports surge 36.3% and US inflation rises to 3.7%; the US leads the country scorecard at 94.0."
+        "headline": "GVI held at a provisional 108.0 with no country-score or ranking changes; the US (94.0), China (91.2) and South Korea (88.8) lead as TSMC profits surge while AI credit is repriced."
       }
     ]
   },
