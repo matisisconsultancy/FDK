@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/breaking-inflection-china-moves-to-control-the-ai-it-exports",
+    title: "BREAKING INFLECTION: China Moves to Control the AI It Exports",
+    excerpt: "China adds selective export controls to its open-model strategy, reshaping the next phase of the AI Supercycle.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "3 min read",
+    time: "11:52",
+    kind: "day"
+  },
+  {
     url: "/europes-new-capital-order-the-great-power-shift",
     title: "Europe’s New Capital Order: The Great Power Shift",
     excerpt: "As UniCredit nears Commerzbank and the MPS vote looms, Europe's banking contest moves from control to capital productivity.",
