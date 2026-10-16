@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-100-billion-illusion",
+    title: "The $100 Billion Illusion",
+    excerpt: "The AI Supercycle is not running out of demand — it is confronting the distance between promises, capacity and financeable cash flows.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "6 min read",
+    time: "19:46",
+    kind: "day"
+  },
+  {
     url: "/ai-credit-fractures-as-industrial-profits-accelerate",
     title: "AI Credit Fractures as Industrial Profits Accelerate",
     excerpt: "As AI credit tightens, capital rotates from financing computing capacity toward the industrial systems that make intelligence productive.",
