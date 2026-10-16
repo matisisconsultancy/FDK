@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-new-capital-order-the-great-power-shift",
+    title: "Europe’s New Capital Order: The Great Power Shift",
+    excerpt: "As UniCredit nears Commerzbank and the MPS vote looms, Europe's banking contest moves from control to capital productivity.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "4 min read",
+    time: "11:13",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-16",
     title: "The Next Economy Research Centre",
     excerpt: "TSMC profits soar, US producer inflation accelerates and Europe adopts competitiveness conclusions as the AI Supercycle splits along financial lines.",
