@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-16",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The October 16 GVI benchmark marks a shift from capital consumption to capital conversion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "4 min read",
+    time: "06:25",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-great-cash-flow-divide",
     title: "GVI: The Great Cash-Flow Divide",
     excerpt: "TSMC's record profits, an AI credit correction and Europe's uneven output expose a widening split between those who capture the profits of intelligence and those who cannot finance it.",
