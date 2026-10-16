@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-credit-fractures-as-industrial-profits-accelerate",
+    title: "AI Credit Fractures as Industrial Profits Accelerate",
+    excerpt: "As AI credit tightens, capital rotates from financing computing capacity toward the industrial systems that make intelligence productive.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "5 min read",
+    time: "19:41",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-capital-race-reprices-power-and-demand",
     title: "Europe’s AI Capital Race Reprices Power and Demand",
     excerpt: "Germany organizes industrial demand, France captures infrastructure revenue, and Italy tackles power costs as Europe's AI contest matures.",
