@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-corporate-credit",
+    title: "The Great Split Reaches Corporate Credit",
+    excerpt: "As CoreWeave bonds reprice and Schneider raises guidance, markets begin to separate those who finance AI from those who convert it into cash.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "5 min read",
+    time: "13:05",
+    kind: "day"
+  },
+  {
     url: "/breaking-inflection-china-moves-to-control-the-ai-it-exports",
     title: "BREAKING INFLECTION: China Moves to Control the AI It Exports",
     excerpt: "China adds selective export controls to its open-model strategy, reshaping the next phase of the AI Supercycle.",
