@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-capital-race-reprices-power-and-demand",
+    title: "Europe’s AI Capital Race Reprices Power and Demand",
+    excerpt: "Germany organizes industrial demand, France captures infrastructure revenue, and Italy tackles power costs as Europe's AI contest matures.",
+    tag: "In Focus · Europe",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "4 min read",
+    time: "18:16",
+    kind: "day"
+  },
+  {
     url: "/the-great-rotation-begins-below-the-surface",
     title: "The Great Rotation Begins Below the Surface",
     excerpt: "Three developments reveal the next evolution of the global financial regime as capital reallocates within AI.",
