@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-ai-capital",
+    title: "The Great Repricing of AI Capital",
+    excerpt: "Record semiconductor profit meets rising financing stress — the Great Split moves from technology to capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "5 min read",
+    time: "07:45",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-16",
     title: "GVI Corporate Benchmark",
     excerpt: "The October 16 GVI benchmark marks a shift from capital consumption to capital conversion.",
