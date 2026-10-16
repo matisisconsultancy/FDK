@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-16",
+    title: "The Next Economy Research Centre",
+    excerpt: "TSMC profits soar, US producer inflation accelerates and Europe adopts competitiveness conclusions as the AI Supercycle splits along financial lines.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 16, 2026",
+    read: "4 min read",
+    time: "08:04",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-ai-capital",
     title: "The Great Repricing of AI Capital",
     excerpt: "Record semiconductor profit meets rising financing stress — the Great Split moves from technology to capital.",

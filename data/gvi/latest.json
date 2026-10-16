@@ -93,7 +93,8 @@
       "gvi-corporate-benchmark-the-capital-conversion-test",
       "the-next-economy-research-centre-2026-10-15",
       "gvi-the-great-cash-flow-divide",
-      "gvi-corporate-benchmark-2026-10-16"
+      "gvi-corporate-benchmark-2026-10-16",
+      "the-next-economy-research-centre-2026-10-16"
     ]
   },
   "daily": {
@@ -3502,63 +3503,63 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-15",
+    "asOf": "2026-10-16",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The AI Supercycle is not ending. Its financial selection mechanism is becoming more powerful.",
+    "hypothesis": "The AI Supercycle is a financial differentiation between technological production, infrastructure financing and productive deployment: strong demand no longer guarantees that every project can secure economically sustainable financing.",
     "rows": [
       {
-        "k": "US annual CPI inflation (September)",
-        "latest": "3.7% (vs 3.4% in August)",
+        "k": "TSMC Q3 2026 net income growth",
+        "latest": "+68.7% (NT$763.1B)",
         "trend": "up",
-        "reading": "Energy shock feeding inflation persistence; gasoline up 9.1% accounts for over half the headline increase."
+        "reading": "Technological scarcity is translating into substantial operating returns; strong manufacturing demand confirmed."
       },
       {
-        "k": "30-year Treasury yield",
-        "latest": "~5.63% (briefly, Wednesday)",
+        "k": "TSMC Q3 revenue",
+        "latest": "$46.72B (+41.2% YoY); Q4 guidance $52.3–54.3B",
         "trend": "up",
-        "reading": "Higher long-term yields are tightening AI credit conditions."
+        "reading": "Leading-edge demand remains exceptionally strong; 66.4% gross margin."
       },
       {
-        "k": "CoreWeave bond secondary-market yield",
-        "latest": "~15% (issued in June at 9.625%)",
+        "k": "US annual producer-price inflation, September",
+        "latest": "+6.3% (+1.3% monthly)",
         "trend": "up",
-        "reading": "Material repricing of AI operator financing; high confidence in observed prices."
+        "reading": "Material new inflation evidence; financing selectivity reinforced, systemic credit distress not established."
       },
       {
-        "k": "ASML Q3 gross margin",
-        "latest": "57.5% on record quarterly revenue (€11.66bn)",
+        "k": "US core PPI (ex food, energy, trade), September",
+        "latest": "+0.5% vs 0.3% in August",
         "trend": "up",
-        "reading": "Equipment demand is persistent; suppliers monetize scarcity while operators carry the capital burden."
+        "reading": "Core pressure is accelerating alongside energy (+10.8%) and gasoline (+20.3%)."
       },
       {
-        "k": "Nasdaq Composite, October 14",
-        "latest": "−1.9%",
-        "trend": "down",
-        "reading": "Selloff hit leveraged AI operators hardest (CoreWeave ~−15%, Dell >−11%, Nebius ~−10%, Oracle nearly −9%)."
+        "k": "Schneider Electric Q3 revenue",
+        "latest": "€11.46B record",
+        "trend": "up",
+        "reading": "Industrial earnings strong; full-year organic revenue target raised to 12–14%, data-centre demand up at a triple-digit rate."
       },
       {
-        "k": "Brent futures vs North Sea Dated",
-        "latest": "~$107 vs ~$134",
+        "k": "EU strategic-sector AI adoption",
+        "latest": "18% in 2025 (7% in 2021)",
+        "trend": "up",
+        "reading": "Diffusion of AI tools is advancing, but economy-wide productivity inflection is unconfirmed."
+      },
+      {
+        "k": "Asian data-centre M&A",
+        "latest": "~$21.3B",
         "trend": "flat",
-        "reading": "Wide gap reflects severe physical-market constraints; diesel shortages could persist into 2027."
+        "reading": "Deal activity continues even as several developers delay or abandon public-market transactions."
       },
       {
-        "k": "IEA global oil demand 2026",
-        "latest": "~−2.6 million bpd",
-        "trend": "down",
-        "reading": "Supply expected to fall ~5.8 million bpd on average; oil tightness is not an electricity or gas shortage."
-      },
-      {
-        "k": "China September exports",
-        "latest": "+36.3% y/y; surplus ~$133.5bn; semiconductor exports >+100%",
+        "k": "IEA collective stock release",
+        "latest": "~330M barrels released; ~100M remaining to be accelerated",
         "trend": "up",
-        "reading": "Capital formation is redistributing industrial returns geographically; not proof of a broad domestic recovery."
+        "reading": "Total expected to exceed the original 400M-barrel program; energy shock raises construction, transport and borrowing costs."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-15",
-      "date": "2026-10-15",
+      "url": "/the-next-economy-research-centre-2026-10-16",
+      "date": "2026-10-16",
       "slot": "Morning Brief"
     }
   }
