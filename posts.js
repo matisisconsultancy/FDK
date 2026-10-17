@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-cities",
+    title: "The Great Repricing of Cities",
+    excerpt: "The weekly GVI Global Cities survey finds the edge moving from attracting AI capital to converting it into productive infrastructure.",
+    tag: "GVI · Cities",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "12:27",
+    kind: "day"
+  },
+  {
     url: "/the-age-of-pervasive-intelligence-2026-10-17-2",
     title: "The Age of Pervasive Intelligence",
     excerpt: "Computing is ceasing to be a separate activity — and the next migration of value will favor whoever controls intelligent execution.",

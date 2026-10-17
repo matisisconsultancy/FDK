@@ -101,7 +101,8 @@ window.GVI_DATA = {
       "the-next-economy-research-centre-2026-10-16",
       "gvi-the-great-capital-reckoning",
       "gvi-corporate-benchmark-the-big-take",
-      "the-next-economy-research-centre-2026-10-17"
+      "the-next-economy-research-centre-2026-10-17",
+      "the-great-repricing-of-cities"
     ]
   },
   "daily": {
@@ -3044,6 +3045,12 @@ window.GVI_DATA = {
         "url": "/gvi-corporate-benchmark-the-big-take",
         "slot": "GVI",
         "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.0 lead; Schneider Electric rises 0.3 to 98.9 on AI-driven industrial demand"
+      },
+      {
+        "title": "The Great Repricing of Cities",
+        "url": "/the-great-repricing-of-cities",
+        "slot": "GVI",
+        "headline": "Singapore 92.76, New York 92.23 and London 91.75 lead the provisional Top 50 Global Cities; Seoul tops urban velocity at 96.9."
       }
     ]
   },
