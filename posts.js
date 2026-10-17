@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-collision-2026-10-17",
+    title: "The Great Capital Collision",
+    excerpt: "Global capital is beginning to distinguish between producing intelligence, financing its infrastructure and turning it into economic value.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "20:04",
+    kind: "night"
+  },
+  {
     url: "/the-great-repricing-of-intelligence-2026-10-17",
     title: "The Great Repricing of Intelligence",
     excerpt: "AI keeps accelerating even as the financial foundations of the Supercycle become less forgiving.",
