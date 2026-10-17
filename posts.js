@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-17",
+    title: "The Next Economy Research Centre",
+    excerpt: "The AI Supercycle enters a regime where capital, technology control and energy cost decide who converts intelligence into wealth.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "4 min read",
+    time: "07:51",
+    kind: "day"
+  },
+  {
     url: "/the-60-billion-test-of-ai-finance",
     title: "The $60 Billion Test of AI Finance",
     excerpt: "AI is becoming an investable infrastructure system as credit, energy and sovereignty redefine the cost of intelligence.",

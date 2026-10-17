@@ -96,7 +96,8 @@
       "gvi-corporate-benchmark-2026-10-16",
       "the-next-economy-research-centre-2026-10-16",
       "gvi-the-great-capital-reckoning",
-      "gvi-corporate-benchmark-the-big-take"
+      "gvi-corporate-benchmark-the-big-take",
+      "the-next-economy-research-centre-2026-10-17"
     ]
   },
   "daily": {
@@ -3469,63 +3470,69 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-16",
+    "asOf": "2026-10-17",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The AI Supercycle is a financial differentiation between technological production, infrastructure financing and productive deployment: strong demand no longer guarantees that every project can secure economically sustainable financing.",
+    "hypothesis": "The AI Supercycle is entering a new regime in which the availability of capital, the control of technology and the cost of energy increasingly determine which companies and economies can convert artificial intelligence into productive wealth.",
     "rows": [
       {
-        "k": "TSMC Q3 2026 net income growth",
-        "latest": "+68.7% (NT$763.1B)",
+        "k": "US FY2026 fiscal deficit",
+        "latest": "$1.99T (up $217B on FY2025; ~6.2% of GDP)",
         "trend": "up",
-        "reading": "Technological scarcity is translating into substantial operating returns; strong manufacturing demand confirmed."
+        "reading": "Large sovereign deficit does not automatically crowd out private AI investment; issuer differentiation is widening."
+      },
+      {
+        "k": "US debt-service expenditure",
+        "latest": "~$1.36T (up ~12%, record level)",
+        "trend": "up",
+        "reading": "Rising fiscal burden is part of a visible financial constraint."
+      },
+      {
+        "k": "CoreWeave 2031 bond yield",
+        "latest": "Briefly above 16%; CDS above 1,000 bp",
+        "trend": "up",
+        "reading": "Material financial repricing; generalized distress not established."
+      },
+      {
+        "k": "CoreWeave share price",
+        "latest": "About -25% over five sessions to Oct 16",
+        "trend": "down",
+        "reading": "Companies dependent on successive funding rounds are vulnerable to repricing."
       },
       {
         "k": "TSMC Q3 revenue",
-        "latest": "$46.72B (+41.2% YoY); Q4 guidance $52.3–54.3B",
+        "latest": "$46.72B; net income growth 68.7%; gross margin 66.4%",
         "trend": "up",
-        "reading": "Leading-edge demand remains exceptionally strong; 66.4% gross margin."
+        "reading": "Semiconductor demand baseline unchanged; strongest evidence of robust demand."
       },
       {
-        "k": "US annual producer-price inflation, September",
-        "latest": "+6.3% (+1.3% monthly)",
+        "k": "China strategic technology controls",
+        "latest": "40 technologies proposed (23 AI-related); 14 prohibited, 26 restricted; consultation to Nov 15",
         "trend": "up",
-        "reading": "Material new inflation evidence; financing selectivity reinforced, systemic credit distress not established."
+        "reading": "Material new Chinese policy proposal; the contest broadens to the full AI stack."
       },
       {
-        "k": "US core PPI (ex food, energy, trade), September",
-        "latest": "+0.5% vs 0.3% in August",
+        "k": "Brent crude",
+        "latest": "$109.86 (Oct 16, up ~3.7%; WTI $101.41)",
         "trend": "up",
-        "reading": "Core pressure is accelerating alongside energy (+10.8%) and gasoline (+20.3%)."
+        "reading": "Material energy-price shock; structural electricity constraints unchanged."
       },
       {
-        "k": "Schneider Electric Q3 revenue",
-        "latest": "€11.46B record",
+        "k": "World Bank metals and minerals support",
+        "latest": "$19B planned across FY2026–2030",
         "trend": "up",
-        "reading": "Industrial earnings strong; full-year organic revenue target raised to 12–14%, data-centre demand up at a triple-digit rate."
+        "reading": "The contest extends to strategic inputs; resource holders may seek more domestic processing."
       },
       {
-        "k": "EU strategic-sector AI adoption",
-        "latest": "18% in 2025 (7% in 2021)",
-        "trend": "up",
-        "reading": "Diffusion of AI tools is advancing, but economy-wide productivity inflection is unconfirmed."
-      },
-      {
-        "k": "Asian data-centre M&A",
-        "latest": "~$21.3B",
+        "k": "EU financing architecture",
+        "latest": "Summit conclusions finalized; 2028–2034 budget not adopted",
         "trend": "flat",
-        "reading": "Deal activity continues even as several developers delay or abandon public-market transactions."
-      },
-      {
-        "k": "IEA collective stock release",
-        "latest": "~330M barrels released; ~100M remaining to be accelerated",
-        "trend": "up",
-        "reading": "Total expected to exceed the original 400M-barrel program; energy shock raises construction, transport and borrowing costs."
+        "reading": "European financing architecture remains unresolved."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-16",
-      "date": "2026-10-16",
+      "url": "/the-next-economy-research-centre-2026-10-17",
+      "date": "2026-10-17",
       "slot": "Morning Brief"
     }
   }
