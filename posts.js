@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-invisible-rate-hike-is-already-underway",
+    title: "The Invisible Rate Hike Is Already Underway",
+    excerpt: "Lagarde concedes markets are tightening policy as AI credit reprices and Europe risks importing higher rates while exporting savings.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "7 min read",
+    time: "12:39",
+    kind: "day"
+  },
+  {
     url: "/americas-open-model-counteroffensive-changes-the-ai-race",
     title: "America’s Open-Model Counteroffensive Changes the AI Race",
     excerpt: "Meta's open-weight release and Taiwan's chip controls reframe the U.S.–China AI competition around the economics of accessible intelligence.",
