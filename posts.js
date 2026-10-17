@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-remaining-regulatory-procedures-and-offer-conditions-are-expected-to-be-completed-around-year-end",
+    title: "The Remaining Regulatory Procedures and Offer Conditions Are Expected to Be Completed Around Year-end.",
+    excerpt: "The ECB clears UniCredit's path to Commerzbank as markets begin pricing capital productivity over acquisition volume.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "09:31",
+    kind: "day"
+  },
+  {
     url: "/the-age-of-pervasive-intelligence-2026-10-17",
     title: "The Age of Pervasive Intelligence",
     excerpt: "Agentic AI is moving intelligence across devices, vehicles and infrastructure — and rewriting where economic power accumulates.",
