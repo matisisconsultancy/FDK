@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-great-capital-reckoning",
+    title: "GVI: The Great Capital Reckoning",
+    excerpt: "The age of AI abundance is arriving, and the age of financial reckoning has begun.",
+    tag: "GVI · AI",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "2 min read",
+    time: "05:12",
+    kind: "day"
+  },
+  {
     url: "/the-100-billion-illusion",
     title: "The $100 Billion Illusion",
     excerpt: "The AI Supercycle is not running out of demand — it is confronting the distance between promises, capacity and financeable cash flows.",
