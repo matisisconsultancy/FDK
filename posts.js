@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-collision",
+    title: "The Great Capital Collision",
+    excerpt: "Technological demand stays strong, but the capacity to finance, deploy and monetize it is becoming increasingly concentrated.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "08:02",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-17",
     title: "The Next Economy Research Centre",
     excerpt: "The AI Supercycle enters a regime where capital, technology control and energy cost decide who converts intelligence into wealth.",
