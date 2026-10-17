@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-60-billion-test-of-ai-finance",
+    title: "The $60 Billion Test of AI Finance",
+    excerpt: "AI is becoming an investable infrastructure system as credit, energy and sovereignty redefine the cost of intelligence.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "07:47",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-the-big-take",
     title: "GVI Corporate Benchmark the Big Take",
     excerpt: "The emerging corporate divide is not technology versus industry — it is capital consumption versus capital conversion.",
