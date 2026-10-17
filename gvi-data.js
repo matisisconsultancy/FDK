@@ -99,7 +99,8 @@ window.GVI_DATA = {
       "gvi-the-great-cash-flow-divide",
       "gvi-corporate-benchmark-2026-10-16",
       "the-next-economy-research-centre-2026-10-16",
-      "gvi-the-great-capital-reckoning"
+      "gvi-the-great-capital-reckoning",
+      "gvi-corporate-benchmark-the-big-take"
     ]
   },
   "daily": {
@@ -2992,7 +2993,38 @@ window.GVI_DATA = {
     "subtitle": "The AI Supercycle is not running out of intelligence — it is approaching a reckoning over who can finance its expansion.",
     "standfirst": "The age of AI abundance is arriving. The age of financial reckoning has begun.",
     "velocityReading": null,
-    "strip": [],
+    "strip": [
+      {
+        "label": "Top-10 composite",
+        "value": "98.26/100",
+        "delta": "+0.03",
+        "trend": "up"
+      },
+      {
+        "label": "TSMC",
+        "value": "99.7",
+        "delta": "0.0",
+        "trend": "up"
+      },
+      {
+        "label": "Schneider Electric",
+        "value": "98.9",
+        "delta": "+0.3",
+        "trend": "up"
+      },
+      {
+        "label": "Volkswagen",
+        "value": "61.8",
+        "delta": "0.0",
+        "trend": "down"
+      },
+      {
+        "label": "CoreWeave bond yields",
+        "value": "~15%",
+        "delta": null,
+        "trend": "up"
+      }
+    ],
     "source": {
       "title": "GVI: The Great Capital Reckoning",
       "url": "/gvi-the-great-capital-reckoning",
@@ -3005,6 +3037,12 @@ window.GVI_DATA = {
         "url": "/gvi-the-great-capital-reckoning",
         "slot": "GVI",
         "headline": "The note argues the AI Supercycle faces a capital reckoning that will split cash-generative leaders from debt-dependent challengers; it publishes no scores or rankings."
+      },
+      {
+        "title": "GVI Corporate Benchmark the Big Take",
+        "url": "/gvi-corporate-benchmark-the-big-take",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.0 lead; Schneider Electric rises 0.3 to 98.9 on AI-driven industrial demand"
       }
     ]
   },
@@ -3110,16 +3148,16 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-16",
+    "asOf": "2026-10-17",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
         "rank": 1,
         "name": "TSMC",
         "score": 99.7,
-        "delta": 0.2,
+        "delta": 0,
         "trend": "up",
-        "note": "Strengthened after its October 15 earnings announcement"
+        "note": null
       },
       {
         "rank": 2,
@@ -3127,7 +3165,7 @@ window.GVI_DATA = {
         "score": 99.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Central to AI distribution and enterprise monetization"
+        "note": null
       },
       {
         "rank": 3,
@@ -3135,31 +3173,31 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "flat",
-        "note": "Central to AI distribution and enterprise monetization"
+        "note": null
       },
       {
         "rank": 4,
         "name": "Schneider Electric",
-        "score": 98.6,
-        "delta": 0,
-        "trend": "flat",
-        "note": "Enables AI deployment across physical infrastructure"
+        "score": 98.9,
+        "delta": 0.3,
+        "trend": "up",
+        "note": "October 16 results show AI demand translating into industrial revenue"
       },
       {
         "rank": 5,
         "name": "ASML",
         "score": 98.2,
-        "delta": 0.1,
+        "delta": 0,
         "trend": "up",
-        "note": "Upgraded for demonstrated execution and manufacturing scarcity"
+        "note": null
       },
       {
         "rank": 6,
         "name": "Nvidia",
         "score": 97.9,
-        "delta": -0.1,
+        "delta": 0,
         "trend": "down",
-        "note": "Marginal risk adjustment for financing vulnerabilities in its ecosystem"
+        "note": null
       },
       {
         "rank": 7,
@@ -3167,7 +3205,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Controls critical computational capabilities"
+        "note": null
       },
       {
         "rank": 8,
@@ -3175,7 +3213,7 @@ window.GVI_DATA = {
         "score": 97.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Operational AI deployment layer"
+        "note": null
       },
       {
         "rank": 9,
@@ -3183,7 +3221,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Enables AI deployment across physical infrastructure"
+        "note": null
       },
       {
         "rank": 10,
@@ -3191,7 +3229,7 @@ window.GVI_DATA = {
         "score": 97.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Enables AI deployment across industry"
+        "note": null
       }
     ],
     "laggards": [
@@ -3200,8 +3238,8 @@ window.GVI_DATA = {
         "name": "Volkswagen",
         "score": 61.8,
         "delta": 0,
-        "trend": "flat",
-        "note": "Q3 deliveries declined 14.3%"
+        "trend": "down",
+        "note": "Q3 deliveries down 14.3%, China down 38.5%"
       },
       {
         "rank": 2,
@@ -3209,15 +3247,15 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Difficult technological transition and execution constraints"
+        "note": null
       },
       {
         "rank": 3,
         "name": "Stellantis",
         "score": 65.2,
         "delta": 0,
-        "trend": "flat",
-        "note": "Competitive pressure on established automakers"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 4,
@@ -3225,7 +3263,7 @@ window.GVI_DATA = {
         "score": 67.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Low relative structural velocity in the cohort"
+        "note": null
       },
       {
         "rank": 5,
@@ -3233,7 +3271,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Low relative structural velocity in the cohort"
+        "note": null
       },
       {
         "rank": 6,
@@ -3241,7 +3279,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "flat",
-        "note": "Capital intensity and difficult transition"
+        "note": null
       },
       {
         "rank": 7,
@@ -3249,7 +3287,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Difficult technological transition in autos"
+        "note": null
       },
       {
         "rank": 8,
@@ -3257,15 +3295,15 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Low relative structural velocity in the cohort"
+        "note": null
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
-        "delta": -0.1,
+        "delta": 0,
         "trend": "down",
-        "note": "Nine-month deliveries declined 16%"
+        "note": null
       },
       {
         "rank": 10,
@@ -3273,50 +3311,14 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Capital intensity and execution constraints"
+        "note": null
       }
     ],
-    "pillars": [
-      {
-        "pillar": "AI distribution and enterprise monetization",
-        "leaders": [
-          "Microsoft",
-          "Amazon"
-        ]
-      },
-      {
-        "pillar": "Critical computational capabilities",
-        "leaders": [
-          "ASML",
-          "Nvidia",
-          "Broadcom"
-        ]
-      },
-      {
-        "pillar": "Physical infrastructure and industry deployment",
-        "leaders": [
-          "Schneider Electric",
-          "Siemens Energy",
-          "Siemens AG"
-        ]
-      },
-      {
-        "pillar": "Operational AI deployment layer",
-        "leaders": [
-          "Palantir"
-        ]
-      },
-      {
-        "pillar": "Manufacturing leadership",
-        "leaders": [
-          "TSMC"
-        ]
-      }
-    ],
+    "pillars": [],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-16",
-      "date": "2026-10-16",
+      "title": "GVI Corporate Benchmark the Big Take",
+      "url": "/gvi-corporate-benchmark-the-big-take",
+      "date": "2026-10-17",
       "slot": "GVI"
     }
   },

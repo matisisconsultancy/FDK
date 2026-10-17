@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-big-take",
+    title: "GVI Corporate Benchmark the Big Take",
+    excerpt: "The emerging corporate divide is not technology versus industry — it is capital consumption versus capital conversion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "4 min read",
+    time: "06:16",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-2026-10-17",
     title: "The Great Split",
     excerpt: "The K-shaped economy is no longer describing winners and losers — it is becoming the mechanism that produces them.",
