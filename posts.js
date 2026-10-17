@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-pervasive-intelligence-2026-10-17",
+    title: "The Age of Pervasive Intelligence",
+    excerpt: "Agentic AI is moving intelligence across devices, vehicles and infrastructure — and rewriting where economic power accumulates.",
+    tag: "In Focus · Technology",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "9 min read",
+    time: "09:28",
+    kind: "day"
+  },
+  {
     url: "/2-why-now-three-economic-forces-are-converging",
     title: "2: Why Now: Three Economic Forces Are Converging",
     excerpt: "Why the Apple–Meta alliance signals the rise of sovereign personal computing.",
