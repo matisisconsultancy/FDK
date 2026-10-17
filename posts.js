@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/americas-open-model-counteroffensive-changes-the-ai-race",
+    title: "America’s Open-Model Counteroffensive Changes the AI Race",
+    excerpt: "Meta's open-weight release and Taiwan's chip controls reframe the U.S.–China AI competition around the economics of accessible intelligence.",
+    tag: "In Focus · AI Supercycle",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "3 min read",
+    time: "12:32",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-cities",
     title: "The Great Repricing of Cities",
     excerpt: "The weekly GVI Global Cities survey finds the edge moving from attracting AI capital to converting it into productive infrastructure.",
