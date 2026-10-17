@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/second-order-impact-the-consolidation-process-becomes-more-selective-potentially-increasing-the-strategic-relevance-of-independent-savings-and-banking-franchises",
+    title: "Second-order Impact: The Consolidation Process Becomes More Selective, Potentially Increasing the Strategic Relevance of Independent Savings and Banking Franchises.",
+    excerpt: "The ECB clears UniCredit's path to Commerzbank as markets begin repricing Europe's banking hierarchy around capital productivity.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "09:34",
+    kind: "day"
+  },
+  {
     url: "/the-remaining-regulatory-procedures-and-offer-conditions-are-expected-to-be-completed-around-year-end",
     title: "The Remaining Regulatory Procedures and Offer Conditions Are Expected to Be Completed Around Year-end.",
     excerpt: "The ECB clears UniCredit's path to Commerzbank as markets begin pricing capital productivity over acquisition volume.",
