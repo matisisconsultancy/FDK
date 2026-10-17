@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-pervasive-intelligence-2026-10-17-2",
+    title: "The Age of Pervasive Intelligence",
+    excerpt: "Computing is ceasing to be a separate activity — and the next migration of value will favor whoever controls intelligent execution.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "11:53",
+    kind: "day"
+  },
+  {
     url: "/second-order-impact-the-consolidation-process-becomes-more-selective-potentially-increasing-the-strategic-relevance-of-independent-savings-and-banking-franchises",
     title: "Second-order Impact: The Consolidation Process Becomes More Selective, Potentially Increasing the Strategic Relevance of Independent Savings and Banking Franchises.",
     excerpt: "The ECB clears UniCredit's path to Commerzbank as markets begin repricing Europe's banking hierarchy around capital productivity.",
