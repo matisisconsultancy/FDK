@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-intelligence-2026-10-17",
+    title: "The Great Repricing of Intelligence",
+    excerpt: "AI keeps accelerating even as the financial foundations of the Supercycle become less forgiving.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "13:10",
+    kind: "day"
+  },
+  {
     url: "/the-invisible-rate-hike-is-already-underway",
     title: "The Invisible Rate Hike Is Already Underway",
     excerpt: "Lagarde concedes markets are tightening policy as AI credit reprices and Europe risks importing higher rates while exporting savings.",
