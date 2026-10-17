@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/2-why-now-three-economic-forces-are-converging",
+    title: "2: Why Now: Three Economic Forces Are Converging",
+    excerpt: "Why the Apple–Meta alliance signals the rise of sovereign personal computing.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "08:52",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-collision",
     title: "The Great Capital Collision",
     excerpt: "Technological demand stays strong, but the capacity to finance, deploy and monetize it is becoming increasingly concentrated.",
