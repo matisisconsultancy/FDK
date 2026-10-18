@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-architecture-of-financial-trust",
+    title: "The Great Split Reaches the Architecture of Financial Trust",
+    excerpt: "Three October 17 central-bank interventions expose a widening gap between autonomous AI finance and the frameworks meant to govern it.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "12:06",
+    kind: "day"
+  },
+  {
     url: "/europe-at-the-crossroads",
     title: "Europe at the Crossroads",
     excerpt: "France's social revolt and sovereign-risk premiums collide with the capital demands of the AI Supercycle.",
