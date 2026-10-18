@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-divide",
+    title: "Europe’s Great Divide",
+    excerpt: "Three converging pressures threaten to split the Eurozone into two divergent economic futures as the AI Supercycle begins.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "15:08",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-grid-and-the-streets",
     title: "The Great Split Reaches the Grid and the Streets",
     excerpt: "Three Sunday developments reveal a more selective, capital-intensive phase of the AI Supercycle.",
