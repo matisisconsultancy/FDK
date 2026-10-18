@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-enters-the-cost-of-capital-era",
+    title: "The Great Split Enters the Cost-of-capital Era",
+    excerpt: "Capital is not abandoning AI — it is repricing which business models can finance it and convert capacity into cash flow.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "08:35",
+    kind: "day"
+  },
+  {
     url: "/the-2-trillion-hurdle",
     title: "The $2 Trillion Hurdle",
     excerpt: "Sovereign debt and the financial requirements of the AI supercycle are now on a collision course.",
