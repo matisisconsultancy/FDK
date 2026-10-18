@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-gigafactory-race-is-becoming-a-capital-war",
+    title: "Europe’s AI Gigafactory Race Is Becoming a Capital War",
+    excerpt: "Italy, Spain and France are building rival national models for AI capital formation as Europe's gigafactory race enters its decisive phase.",
+    tag: "In Focus · AI Sovereignty",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "20:25",
+    kind: "day"
+  },
+  {
     url: "/europes-great-divide",
     title: "Europe’s Great Divide",
     excerpt: "Three converging pressures threaten to split the Eurozone into two divergent economic futures as the AI Supercycle begins.",
