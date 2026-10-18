@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-hits-the-grid-wall",
+    title: "Europe’s AI Race Hits the Grid Wall",
+    excerpt: "Microsoft's exit from a British data-center project and Spain's grid congestion expose the gap between announced and deliverable computing capacity.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "6 min read",
+    time: "20:35",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-gigafactory-race-is-becoming-a-capital-war",
     title: "Europe’s AI Gigafactory Race Is Becoming a Capital War",
     excerpt: "Italy, Spain and France are building rival national models for AI capital formation as Europe's gigafactory race enters its decisive phase.",
