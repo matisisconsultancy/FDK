@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
+    title: "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
+    excerpt: "GVI holds at 108.0 as IMF, ECB, China and the Bank of England redraw the fault lines of the intelligence economy.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "4 min read",
+    time: "06:11",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-collision-2026-10-17",
     title: "The Great Capital Collision",
     excerpt: "Global capital is beginning to distinguish between producing intelligence, financing its infrastructure and turning it into economic value.",
