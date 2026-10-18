@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-banking-divide-becomes-a-capital-test",
+    title: "Europe’s Banking Divide Becomes a Capital Test",
+    excerpt: "The next market leaders will be defined not by the institutions they acquire, but by the economic returns they generate.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "4 min read",
+    time: "09:35",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-enters-the-cost-of-capital-era",
     title: "The Great Split Enters the Cost-of-capital Era",
     excerpt: "Capital is not abandoning AI — it is repricing which business models can finance it and convert capacity into cash flow.",
