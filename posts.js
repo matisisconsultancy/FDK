@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-territorial-fracture",
+    title: "Europe’s Great Territorial Fracture",
+    excerpt: "A strategic agenda for investors, Brussels and national governments as AI, sovereign risk and territorial divergence converge.",
+    tag: "Midday Pulse · Strategy",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "12:28",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-architecture-of-financial-trust",
     title: "The Great Split Reaches the Architecture of Financial Trust",
     excerpt: "Three October 17 central-bank interventions expose a widening gap between autonomous AI finance and the frameworks meant to govern it.",
