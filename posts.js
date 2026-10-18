@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-grid-and-the-streets",
+    title: "The Great Split Reaches the Grid and the Streets",
+    excerpt: "Three Sunday developments reveal a more selective, capital-intensive phase of the AI Supercycle.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "13:12",
+    kind: "day"
+  },
+  {
     url: "/europes-great-territorial-fracture",
     title: "Europe’s Great Territorial Fracture",
     excerpt: "A strategic agenda for investors, Brussels and national governments as AI, sovereign risk and territorial divergence converge.",
