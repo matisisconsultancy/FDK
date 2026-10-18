@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-power-bottleneck-reprices-the-ai-boom",
+    title: "The Power Bottleneck Reprices the AI Boom",
+    excerpt: "The next investment premium belongs to companies that convert intelligence from a technological promise into operational, financially productive capacity.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "23:03",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-hits-the-grid-wall",
     title: "Europe’s AI Race Hits the Grid Wall",
     excerpt: "Microsoft's exit from a British data-center project and Spain's grid congestion expose the gap between announced and deliverable computing capacity.",
