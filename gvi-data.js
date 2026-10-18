@@ -103,7 +103,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-the-big-take",
       "the-next-economy-research-centre-2026-10-17",
       "the-great-repricing-of-cities",
-      "gvi-global-velocity-index-the-sovereign-cost-of-intelligence"
+      "gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
+      "gvi-corporate-benchmark-2026-10-18"
     ]
   },
   "daily": {
@@ -3160,7 +3161,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-17",
+    "asOf": "2026-10-18",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3169,7 +3170,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Strongest demonstrated converter of innovation into earnings; Q3 revenue +50.9% (NT$)"
       },
       {
         "rank": 2,
@@ -3177,7 +3178,7 @@ window.GVI_DATA = {
         "score": 99.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Central to enterprise AI distribution and deployment"
       },
       {
         "rank": 3,
@@ -3185,15 +3186,15 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Central to enterprise AI distribution and deployment"
       },
       {
         "rank": 4,
         "name": "Schneider Electric",
         "score": 98.9,
-        "delta": 0.3,
+        "delta": 0,
         "trend": "up",
-        "note": "October 16 results show AI demand translating into industrial revenue"
+        "note": "Clearest evidence of AI productivity extending into physical infrastructure; 16.9% organic growth"
       },
       {
         "rank": 5,
@@ -3201,7 +3202,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "€11.7B quarterly sales; indispensable infrastructure element"
       },
       {
         "rank": 6,
@@ -3209,7 +3210,7 @@ window.GVI_DATA = {
         "score": 97.9,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Controls indispensable computational infrastructure"
       },
       {
         "rank": 7,
@@ -3217,7 +3218,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Controls indispensable computational infrastructure"
       },
       {
         "rank": 8,
@@ -3225,7 +3226,7 @@ window.GVI_DATA = {
         "score": 97.4,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Extends AI into operational deployment"
       },
       {
         "rank": 9,
@@ -3233,7 +3234,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Extends AI transformation into energy systems"
       },
       {
         "rank": 10,
@@ -3241,7 +3242,7 @@ window.GVI_DATA = {
         "score": 97.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Extends AI transformation into industrial automation"
       }
     ],
     "laggards": [
@@ -3251,7 +3252,7 @@ window.GVI_DATA = {
         "score": 61.8,
         "delta": 0,
         "trend": "down",
-        "note": "Q3 deliveries down 14.3%, China down 38.5%"
+        "note": "Q3 vehicle deliveries down 14.3%"
       },
       {
         "rank": 2,
@@ -3259,7 +3260,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Pressure in established automotive manufacturing"
       },
       {
         "rank": 3,
@@ -3267,7 +3268,7 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Pressure in established automotive manufacturing"
       },
       {
         "rank": 4,
@@ -3299,7 +3300,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Pressure in established automotive manufacturing"
       },
       {
         "rank": 8,
@@ -3315,7 +3316,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Deliveries down 16% in first nine months of 2026"
       },
       {
         "rank": 10,
@@ -3326,11 +3327,42 @@ window.GVI_DATA = {
         "note": null
       }
     ],
-    "pillars": [],
+    "pillars": [
+      {
+        "pillar": "Technology leadership with earnings conversion",
+        "leaders": [
+          "TSMC"
+        ]
+      },
+      {
+        "pillar": "Enterprise AI distribution and deployment",
+        "leaders": [
+          "Microsoft",
+          "Amazon"
+        ]
+      },
+      {
+        "pillar": "Physical and computational infrastructure",
+        "leaders": [
+          "Schneider Electric",
+          "ASML",
+          "Nvidia",
+          "Broadcom"
+        ]
+      },
+      {
+        "pillar": "Energy systems, industrial automation and operational deployment",
+        "leaders": [
+          "Siemens Energy",
+          "Siemens AG",
+          "Palantir"
+        ]
+      }
+    ],
     "source": {
-      "title": "GVI Corporate Benchmark the Big Take",
-      "url": "/gvi-corporate-benchmark-the-big-take",
-      "date": "2026-10-17",
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-10-18",
+      "date": "2026-10-18",
       "slot": "GVI"
     }
   },

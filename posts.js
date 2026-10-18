@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-18",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The FDK GVI Corporate Benchmark for October 18, 2026, with full rankings and capital-allocation implications.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "4 min read",
+    time: "06:13",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
     title: "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
     excerpt: "GVI holds at 108.0 as IMF, ECB, China and the Bank of England redraw the fault lines of the intelligence economy.",
