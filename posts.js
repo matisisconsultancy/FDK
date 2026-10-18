@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-2-trillion-hurdle",
+    title: "The $2 Trillion Hurdle",
+    excerpt: "Sovereign debt and the financial requirements of the AI supercycle are now on a collision course.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "08:23",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-18",
     title: "The Next Economy Research Centre",
     excerpt: "Record computing demand meets the physical, financial and political limits of deployment.",
