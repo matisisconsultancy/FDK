@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-18",
+    title: "The Next Economy Research Centre",
+    excerpt: "Record computing demand meets the physical, financial and political limits of deployment.",
+    tag: "Morning Brief · AI Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "5 min read",
+    time: "08:13",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-18",
     title: "GVI Corporate Benchmark",
     excerpt: "The FDK GVI Corporate Benchmark for October 18, 2026, with full rankings and capital-allocation implications.",

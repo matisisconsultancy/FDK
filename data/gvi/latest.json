@@ -100,7 +100,8 @@
       "the-next-economy-research-centre-2026-10-17",
       "the-great-repricing-of-cities",
       "gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
-      "gvi-corporate-benchmark-2026-10-18"
+      "gvi-corporate-benchmark-2026-10-18",
+      "the-next-economy-research-centre-2026-10-18"
     ]
   },
   "daily": {
@@ -3513,69 +3514,81 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-17",
+    "asOf": "2026-10-18",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The AI Supercycle is entering a new regime in which the availability of capital, the control of technology and the cost of energy increasingly determine which companies and economies can convert artificial intelligence into productive wealth.",
+    "hypothesis": "The most consequential development in the AI Supercycle is the widening gap between the computing capacity the world intends to build and the productive capacity it can actually deliver.",
     "rows": [
       {
-        "k": "US FY2026 fiscal deficit",
-        "latest": "$1.99T (up $217B on FY2025; ~6.2% of GDP)",
-        "trend": "up",
-        "reading": "Large sovereign deficit does not automatically crowd out private AI investment; issuer differentiation is widening."
+        "k": "Major US AI projects affected by delays or cancellations (2026, FT)",
+        "latest": "At least 47",
+        "trend": "flat",
+        "reading": "Market is starting to price execution risk; the build-out is not collapsing."
       },
       {
-        "k": "US debt-service expenditure",
-        "latest": "~$1.36T (up ~12%, record level)",
-        "trend": "up",
-        "reading": "Rising fiscal burden is part of a visible financial constraint."
+        "k": "Planned capacity directly delayed by restrictions",
+        "latest": "~1.5 GW (7.6% of 20.1 GW restricted); ~2.3 GW incl. statewide rules",
+        "trend": "flat",
+        "reading": "The two estimates measure different phenomena and cannot be combined."
       },
       {
-        "k": "CoreWeave 2031 bond yield",
-        "latest": "Briefly above 16%; CDS above 1,000 bp",
-        "trend": "up",
-        "reading": "Material financial repricing; generalized distress not established."
-      },
-      {
-        "k": "CoreWeave share price",
-        "latest": "About -25% over five sessions to Oct 16",
-        "trend": "down",
-        "reading": "Companies dependent on successive funding rounds are vulnerable to repricing."
+        "k": "CoreWeave bond yields",
+        "latest": "~15–16%; default protection ~1,200 bps on ~$50B debt",
+        "trend": "flat",
+        "reading": "Issuer-specific stress, but a clear signal that markets penalize capital-intensive uncertainty."
       },
       {
         "k": "TSMC Q3 revenue",
-        "latest": "$46.72B; net income growth 68.7%; gross margin 66.4%",
+        "latest": "$46.72B, 66.4% gross margin, net income +68.7%",
         "trend": "up",
-        "reading": "Semiconductor demand baseline unchanged; strongest evidence of robust demand."
+        "reading": "Exceptional demand for advanced manufacturing, not equal profitability across the value chain."
       },
       {
-        "k": "China strategic technology controls",
-        "latest": "40 technologies proposed (23 AI-related); 14 prohibited, 26 restricted; consultation to Nov 15",
-        "trend": "up",
-        "reading": "Material new Chinese policy proposal; the contest broadens to the full AI stack."
-      },
-      {
-        "k": "Brent crude",
-        "latest": "$109.86 (Oct 16, up ~3.7%; WTI $101.41)",
-        "trend": "up",
-        "reading": "Material energy-price shock; structural electricity constraints unchanged."
-      },
-      {
-        "k": "World Bank metals and minerals support",
-        "latest": "$19B planned across FY2026–2030",
-        "trend": "up",
-        "reading": "The contest extends to strategic inputs; resource holders may seek more domestic processing."
-      },
-      {
-        "k": "EU financing architecture",
-        "latest": "Summit conclusions finalized; 2028–2034 budget not adopted",
+        "k": "ASML quarterly revenue",
+        "latest": "€11.66B at 57.5% margin",
         "trend": "flat",
-        "reading": "European financing architecture remains unresolved."
+        "reading": "Upstream baseline remains strong."
+      },
+      {
+        "k": "Nvidia RTX Spark laptops",
+        "latest": "Up to 128 GB unified memory, from ~$2,399",
+        "trend": "up",
+        "reading": "Expands local AI options without showing enterprise migration from data centres."
+      },
+      {
+        "k": "AI use in strategic European sectors (JRC)",
+        "latest": "18% in 2025, up from 7% in 2021",
+        "trend": "up",
+        "reading": "Mostly accessible general-purpose AI, not deep industrial integration."
+      },
+      {
+        "k": "Brent crude (Oct 16)",
+        "latest": "$109.86",
+        "trend": "flat",
+        "reading": "Oil is not a proxy for European electricity costs."
+      },
+      {
+        "k": "IEA coordinated emergency oil release",
+        "latest": "~330M barrels released; ~100M remaining accelerated (20M+ diesel)",
+        "trend": "flat",
+        "reading": "Emergency response is ongoing."
+      },
+      {
+        "k": "China technology export catalogue revision (proposal)",
+        "latest": "40 strategic technologies, 23 AI-related",
+        "trend": "flat",
+        "reading": "Transfer controls increasingly cover models and software, not hardware alone; final restrictions not yet adopted."
+      },
+      {
+        "k": "Eurozone financing conditions (ECB, Oct 17)",
+        "latest": "Tighter than September assumptions on rising long-term yields",
+        "trend": "up",
+        "reading": "Costlier capital makes long-duration investment in energy, defence, manufacturing and AI harder."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-17",
-      "date": "2026-10-17",
+      "url": "/the-next-economy-research-centre-2026-10-18",
+      "date": "2026-10-18",
       "slot": "Morning Brief"
     }
   }
