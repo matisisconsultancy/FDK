@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-at-the-crossroads",
+    title: "Europe at the Crossroads",
+    excerpt: "France's social revolt and sovereign-risk premiums collide with the capital demands of the AI Supercycle.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 18, 2026",
+    read: "4 min read",
+    time: "11:53",
+    kind: "day"
+  },
+  {
     url: "/europes-banking-divide-becomes-a-capital-test",
     title: "Europe’s Banking Divide Becomes a Capital Test",
     excerpt: "The next market leaders will be defined not by the institutions they acquire, but by the economic returns they generate.",
