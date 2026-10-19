@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-19",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The FDK GVI Corporate Benchmark for October 19, 2026 — leaders, laggards and the second-order effects reshaping AI velocity.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "4 min read",
+    time: "06:56",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-velocity-index-the-great-conversion-divide",
     title: "GVI: Global Velocity Index: The Great Conversion Divide",
     excerpt: "China's Q3 GDP beats consensus even as investment contracts, reframing the AI Supercycle around economic conversion rather than production.",

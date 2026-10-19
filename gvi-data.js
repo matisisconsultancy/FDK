@@ -106,7 +106,8 @@ window.GVI_DATA = {
       "gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
       "gvi-corporate-benchmark-2026-10-18",
       "the-next-economy-research-centre-2026-10-18",
-      "gvi-global-velocity-index-the-great-conversion-divide"
+      "gvi-global-velocity-index-the-great-conversion-divide",
+      "gvi-corporate-benchmark-2026-10-19"
     ]
   },
   "daily": {
@@ -3073,6 +3074,12 @@ window.GVI_DATA = {
         "url": "/gvi-global-velocity-index-the-great-conversion-divide",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard; China's Q3 GDP beats at 4.5% while investment contracts 7.2%."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-10-19",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.0 lead; Volkswagen 61.8, Nissan 63.4 and Stellantis 65.2 trail"
       }
     ]
   },
@@ -3178,7 +3185,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-18",
+    "asOf": "2026-10-19",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3187,7 +3194,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "up",
-        "note": "Strongest demonstrated converter of innovation into earnings; Q3 revenue +50.9% (NT$)"
+        "note": "Q3 revenue growth 50.9%, net-income growth 68.7%"
       },
       {
         "rank": 2,
@@ -3195,7 +3202,7 @@ window.GVI_DATA = {
         "score": 99.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Central to enterprise AI distribution and deployment"
+        "note": "Stable; power risk watch after Nscale Essex withdrawal report"
       },
       {
         "rank": 3,
@@ -3203,7 +3210,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "flat",
-        "note": "Central to enterprise AI distribution and deployment"
+        "note": "Stable; anchors enterprise AI distribution"
       },
       {
         "rank": 4,
@@ -3211,7 +3218,7 @@ window.GVI_DATA = {
         "score": 98.9,
         "delta": 0,
         "trend": "up",
-        "note": "Clearest evidence of AI productivity extending into physical infrastructure; 16.9% organic growth"
+        "note": "16.9% organic quarterly growth"
       },
       {
         "rank": 5,
@@ -3219,7 +3226,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "€11.7B quarterly sales; indispensable infrastructure element"
+        "note": "Equipment demand exceeds planned 2027–28 capacity"
       },
       {
         "rank": 6,
@@ -3227,7 +3234,7 @@ window.GVI_DATA = {
         "score": 97.9,
         "delta": 0,
         "trend": "down",
-        "note": "Controls indispensable computational infrastructure"
+        "note": "Financial momentum softening"
       },
       {
         "rank": 7,
@@ -3235,7 +3242,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Controls indispensable computational infrastructure"
+        "note": "Stable; foundational computing architectures"
       },
       {
         "rank": 8,
@@ -3243,7 +3250,7 @@ window.GVI_DATA = {
         "score": 97.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Extends AI into operational deployment"
+        "note": "Stable; connects intelligence with operational deployment"
       },
       {
         "rank": 9,
@@ -3251,7 +3258,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Extends AI transformation into energy systems"
+        "note": "Stable; connects intelligence with physical deployment"
       },
       {
         "rank": 10,
@@ -3259,7 +3266,7 @@ window.GVI_DATA = {
         "score": 97.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Extends AI transformation into industrial automation"
+        "note": "Stable; connects intelligence with physical deployment"
       }
     ],
     "laggards": [
@@ -3268,8 +3275,8 @@ window.GVI_DATA = {
         "name": "Volkswagen",
         "score": 61.8,
         "delta": 0,
-        "trend": "down",
-        "note": "Q3 vehicle deliveries down 14.3%"
+        "trend": "flat",
+        "note": "Global deliveries down 14.3% in the quarter"
       },
       {
         "rank": 2,
@@ -3277,15 +3284,15 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Pressure in established automotive manufacturing"
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 3,
         "name": "Stellantis",
         "score": 65.2,
         "delta": 0,
-        "trend": "up",
-        "note": "Pressure in established automotive manufacturing"
+        "trend": "flat",
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 4,
@@ -3293,7 +3300,7 @@ window.GVI_DATA = {
         "score": 67.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 5,
@@ -3301,7 +3308,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 6,
@@ -3309,7 +3316,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 7,
@@ -3317,7 +3324,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Pressure in established automotive manufacturing"
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 8,
@@ -3325,15 +3332,15 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Lowest-scoring cohort"
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "down",
-        "note": "Deliveries down 16% in first nine months of 2026"
+        "trend": "flat",
+        "note": "Nine-month decline of 16%"
       },
       {
         "rank": 10,
@@ -3341,34 +3348,39 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Lowest-scoring cohort"
       }
     ],
     "pillars": [
       {
-        "pillar": "Technology leadership with earnings conversion",
+        "pillar": "Highest-scoring corporation",
         "leaders": [
           "TSMC"
         ]
       },
       {
-        "pillar": "Enterprise AI distribution and deployment",
+        "pillar": "Enterprise AI distribution",
         "leaders": [
           "Microsoft",
           "Amazon"
         ]
       },
       {
-        "pillar": "Physical and computational infrastructure",
+        "pillar": "Strategic infrastructure",
         "leaders": [
           "Schneider Electric",
-          "ASML",
+          "ASML"
+        ]
+      },
+      {
+        "pillar": "Foundational computing architectures",
+        "leaders": [
           "Nvidia",
           "Broadcom"
         ]
       },
       {
-        "pillar": "Energy systems, industrial automation and operational deployment",
+        "pillar": "Intelligence meets physical and operational deployment",
         "leaders": [
           "Siemens Energy",
           "Siemens AG",
@@ -3378,8 +3390,8 @@ window.GVI_DATA = {
     ],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-18",
-      "date": "2026-10-18",
+      "url": "/gvi-corporate-benchmark-2026-10-19",
+      "date": "2026-10-19",
       "slot": "GVI"
     }
   },
