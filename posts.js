@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-france-shakes-europe-trembles",
+    title: "When France Shakes, Europe Trembles",
+    excerpt: "The Eurozone's first systemic stress test of a new political era, as French unrest begins to reprice sovereign credibility.",
+    tag: "In Focus · Sovereign Risk",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "10 min read",
+    time: "19:04",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-capital-race-enters-the-credit-divide",
     title: "Europe’s AI Capital Race Enters the Credit Divide",
     excerpt: "Germany mobilizes institutional capital, Siemens advances factory automation, and Spain confronts concentrated AI-compute credit risk.",
