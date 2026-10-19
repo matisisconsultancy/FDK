@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-banking-ambition-meets-the-fiscal-wall",
+    title: "Europe’s Banking Ambition Meets the Fiscal Wall",
+    excerpt: "Europe's banking endgame is becoming a contest between national fiscal extraction and continental capital formation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "9 min read",
+    time: "10:31",
+    kind: "day"
+  },
+  {
     url: "/the-ai-credit-shock-is-repricing-global-growth",
     title: "The AI Credit Shock Is Repricing Global Growth",
     excerpt: "The AI Supercycle has reached a financial inflection point where financing, delivery and monetization matter more than adoption.",
