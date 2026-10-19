@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-divide-goes-global",
+    title: "The Great Capital Divide Goes Global",
+    excerpt: "Three economies, three capital regimes — and a new division over who can finance transformation.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "5 min read",
+    time: "23:07",
+    kind: "night"
+  },
+  {
     url: "/when-france-shakes-europe-trembles",
     title: "When France Shakes, Europe Trembles",
     excerpt: "The Eurozone's first systemic stress test of a new political era, as French unrest begins to reprice sovereign credibility.",
