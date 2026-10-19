@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/frances-shock-europes-sovereign-repricing",
+    title: "France’s Shock, Europe’s Sovereign Repricing",
+    excerpt: "How a French OAT selloff could migrate into European bank funding and raise Europe's cost of capital.",
+    tag: "In Focus · Sovereign Debt",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "8 min read",
+    time: "23:55",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-divide-goes-global",
     title: "The Great Capital Divide Goes Global",
     excerpt: "Three economies, three capital regimes — and a new division over who can finance transformation.",
