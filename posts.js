@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-financial-divergence",
+    title: "The Great AI Financial Divergence",
+    excerpt: "U.S.-China AI competition enters a phase of financial divergence as semiconductor earnings, infrastructure investment and software efficiency redistribute the economics of intelligence.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "8 min read",
+    time: "15:06",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture",
     title: "Europe's Great Fracture",
     excerpt: "Why we are launching a daily European crisis watch as France's fiscal and political stress begins repricing capital across the continent.",
