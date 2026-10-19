@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-velocity-index-the-great-conversion-divide",
+    title: "GVI: Global Velocity Index: The Great Conversion Divide",
+    excerpt: "China's Q3 GDP beats consensus even as investment contracts, reframing the AI Supercycle around economic conversion rather than production.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "5 min read",
+    time: "06:04",
+    kind: "day"
+  },
+  {
     url: "/the-power-bottleneck-reprices-the-ai-boom",
     title: "The Power Bottleneck Reprices the AI Boom",
     excerpt: "The next investment premium belongs to companies that convert intelligence from a technological promise into operational, financially productive capacity.",

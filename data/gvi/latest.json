@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-18",
+    "updated": "2026-10-19",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -101,7 +101,8 @@
       "the-great-repricing-of-cities",
       "gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
       "gvi-corporate-benchmark-2026-10-18",
-      "the-next-economy-research-centre-2026-10-18"
+      "the-next-economy-research-centre-2026-10-18",
+      "gvi-global-velocity-index-the-great-conversion-divide"
     ]
   },
   "daily": {
@@ -112,23 +113,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
-        "url": "/gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
-        "date": "2026-10-18",
+        "title": "GVI: Global Velocity Index: The Great Conversion Divide",
+        "url": "/gvi-global-velocity-index-the-great-conversion-divide",
+        "date": "2026-10-19",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-18",
+      "asOf": "2026-10-19",
       "source": {
-        "title": "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
-        "url": "/gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
-        "date": "2026-10-18",
+        "title": "GVI: Global Velocity Index: The Great Conversion Divide",
+        "url": "/gvi-global-velocity-index-the-great-conversion-divide",
+        "date": "2026-10-19",
         "slot": "GVI"
       },
       "rows": [
@@ -139,7 +140,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI leadership; rising capital-selectivity",
+          "tag": "AI leadership; financing discipline intensifies",
           "spark": [
             92.1,
             92.3,
@@ -149,6 +150,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -168,8 +170,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial AI acceleration; technology-transfer controls",
+          "tag": "Industrial and GDP momentum improving; investment weak",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -184,8 +187,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor leadership; financial-market volatility",
+          "tag": "Semiconductor strength; financial-market pressure",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -200,8 +204,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial automation; elevated input costs",
+          "tag": "Industrial automation opportunity; capital constraints",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -216,8 +221,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial conversion challenged by financing and energy",
+          "tag": "Industrial conversion remains uneven",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -232,8 +238,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Digital-services strength; agentic-AI governance concerns",
+          "tag": "Digital-services resilience; financing restrictive",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -248,8 +255,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial infrastructure opportunity; sovereign constraints",
+          "tag": "Industrial AI opportunities; fiscal uncertainty",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -270,6 +278,7 @@
             80.7,
             80.7,
             80.7,
+            80.7,
             80.7
           ]
         },
@@ -286,6 +295,7 @@
             80.6,
             80.6,
             80.6,
+            80.6,
             80.6
           ]
         },
@@ -296,8 +306,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial acceleration; infrastructure opportunities",
+          "tag": "Positive industrial momentum",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -312,8 +323,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy and digital-infrastructure advantages",
+          "tag": "Energy and digital infrastructure advantages",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -334,6 +346,7 @@
             77.1,
             77.1,
             77.1,
+            77.1,
             77.1
           ]
         },
@@ -344,8 +357,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI infrastructure investment; execution pending",
+          "tag": "AI infrastructure pipeline; productive conversion pending",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -360,8 +374,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial stabilisation remains uncertain",
+          "tag": "Industrial stabilisation uncertain",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -376,8 +391,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Weak industrial momentum; transformation constraints",
+          "tag": "Weak manufacturing momentum; implementation challenge",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3003,56 +3019,56 @@
     }
   },
   "today": {
-    "date": "2026-10-18",
-    "edition": "GVI · Capital",
-    "thesis": "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
-    "subtitle": "The AI Supercycle is entering a phase where financial sovereignty, technological control and access to productive capital become inseparable.",
-    "standfirst": "Technological leadership creates opportunity; financial sovereignty determines who keeps it.",
+    "date": "2026-10-19",
+    "edition": "GVI · Macro",
+    "thesis": "GVI: Global Velocity Index: The Great Conversion Divide",
+    "subtitle": "China's industrial engine is accelerating faster than its domestic economy can absorb, as tightening AI financing and the World Bank's small-AI thesis point toward an emerging reallocation of technological value.",
+    "standfirst": "Intelligence is diffusing, but capital is concentrating.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI (provisional carry-forward)",
+        "label": "China Q3 GDP",
+        "value": "4.5%",
+        "delta": "+0.2pp",
+        "trend": "up"
+      },
+      {
+        "label": "China Sept industrial production",
+        "value": "5.5%",
+        "delta": "+0.3pp",
+        "trend": "up"
+      },
+      {
+        "label": "China Sept retail sales",
+        "value": "1.1%",
+        "delta": "+0.7pp",
+        "trend": "up"
+      },
+      {
+        "label": "China Jan–Sep fixed-asset investment",
+        "value": "−7.2%",
+        "delta": "unchanged",
+        "trend": "flat"
+      },
+      {
+        "label": "FDK Global Velocity Index (provisional)",
         "value": "108.0",
         "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "EU Aug trade deficit",
-        "value": "€25.2B",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "China proposed controls",
-        "value": "40 technologies",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "AI-related controls",
-        "value": "23",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "US country score",
-        "value": "94.0",
-        "delta": "N/V",
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
-      "url": "/gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
-      "date": "2026-10-18",
+      "title": "GVI: Global Velocity Index: The Great Conversion Divide",
+      "url": "/gvi-global-velocity-index-the-great-conversion-divide",
+      "date": "2026-10-19",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: Global Velocity Index: The Sovereign Cost of Intelligence",
-        "url": "/gvi-global-velocity-index-the-sovereign-cost-of-intelligence",
+        "title": "GVI: Global Velocity Index: The Great Conversion Divide",
+        "url": "/gvi-global-velocity-index-the-great-conversion-divide",
         "slot": "GVI",
-        "headline": "GVI holds at 108.0 (provisional carry-forward) with no verified country-score changes; United States 94.0, China 91.2 and South Korea 88.8 lead as Smart Capital remains the principal decelerator."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard; China's Q3 GDP beats at 4.5% while investment contracts 7.2%."
       }
     ]
   },
