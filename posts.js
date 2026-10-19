@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture",
+    title: "Europe's Great Fracture",
+    excerpt: "Why we are launching a daily European crisis watch as France's fiscal and political stress begins repricing capital across the continent.",
+    tag: "Midday Pulse · Sovereign Risk",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "5 min read",
+    time: "14:04",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-fracture-is-accelerating",
     title: "The Great Capital Fracture Is Accelerating",
     excerpt: "The Great Split is moving from a technological divide to the defining financial architecture of the Next Economy.",
