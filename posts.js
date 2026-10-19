@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-real-economy",
+    title: "The Great Split Reaches the Real Economy",
+    excerpt: "China's two-speed economy, the AI capex test and French sovereign stress reveal one structural divide — productive capacity outrunning economic absorption.",
+    tag: "Morning Brief · Macro",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "4 min read",
+    time: "07:54",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-19",
     title: "GVI Corporate Benchmark",
     excerpt: "The FDK GVI Corporate Benchmark for October 19, 2026 — leaders, laggards and the second-order effects reshaping AI velocity.",
