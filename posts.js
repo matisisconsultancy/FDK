@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-19",
+    title: "The Next Economy Research Centre",
+    excerpt: "Microsoft's withdrawal from Nscale's Loughton project makes grid risk a named commercial consequence for the first time.",
+    tag: "Morning Brief · Energy",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "4 min read",
+    time: "08:25",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-real-economy",
     title: "The Great Split Reaches the Real Economy",
     excerpt: "China's two-speed economy, the AI capex test and French sovereign stress reveal one structural divide — productive capacity outrunning economic absorption.",

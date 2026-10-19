@@ -107,7 +107,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-10-18",
       "the-next-economy-research-centre-2026-10-18",
       "gvi-global-velocity-index-the-great-conversion-divide",
-      "gvi-corporate-benchmark-2026-10-19"
+      "gvi-corporate-benchmark-2026-10-19",
+      "the-next-economy-research-centre-2026-10-19"
     ]
   },
   "daily": {
@@ -3546,81 +3547,81 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-18",
+    "asOf": "2026-10-19",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The most consequential development in the AI Supercycle is the widening gap between the computing capacity the world intends to build and the productive capacity it can actually deliver.",
+    "hypothesis": "The AI Supercycle now turns on a single constraint — the gap between contracted demand and deliverable computing capacity.",
     "rows": [
       {
-        "k": "Major US AI projects affected by delays or cancellations (2026, FT)",
-        "latest": "At least 47",
-        "trend": "flat",
-        "reading": "Market is starting to price execution risk; the build-out is not collapsing."
+        "k": "Nvidia GPUs planned at Loughton (Microsoft–Nscale)",
+        "latest": "23,000 GPUs (50 MW, scalable to 90 MW)",
+        "trend": "down",
+        "reading": "Microsoft terminated its agreement; grid connection reportedly slipped to the 2030s. Causality is unconfirmed."
       },
       {
-        "k": "Planned capacity directly delayed by restrictions",
-        "latest": "~1.5 GW (7.6% of 20.1 GW restricted); ~2.3 GW incl. statewide rules",
-        "trend": "flat",
-        "reading": "The two estimates measure different phenomena and cannot be combined."
+        "k": "UK grid connection applications (Ofgem)",
+        "latest": "125 GW, up from ~41 GW in under a year",
+        "trend": "up",
+        "reading": "Data centres account for at least 80 GW, with ~73 GW in the queue. These are requests, not validated demand."
       },
       {
-        "k": "CoreWeave bond yields",
-        "latest": "~15–16%; default protection ~1,200 bps on ~$50B debt",
-        "trend": "flat",
-        "reading": "Issuer-specific stress, but a clear signal that markets penalize capital-intensive uncertainty."
+        "k": "Brent crude",
+        "latest": "~$107.83 (−1.8% on Oct 19)",
+        "trend": "down",
+        "reading": "The retreat reflects possible Russian supply developments and is not evidence the energy shock has ended."
       },
       {
         "k": "TSMC Q3 revenue",
-        "latest": "$46.72B, 66.4% gross margin, net income +68.7%",
+        "latest": "$46.72B, net income +68.7% YoY, gross margin 66.4%",
         "trend": "up",
-        "reading": "Exceptional demand for advanced manufacturing, not equal profitability across the value chain."
+        "reading": "Manufacturers are capturing the boom's profits."
       },
       {
-        "k": "ASML quarterly revenue",
-        "latest": "€11.66B at 57.5% margin",
-        "trend": "flat",
-        "reading": "Upstream baseline remains strong."
+        "k": "Philadelphia Semiconductor Index (prior week)",
+        "latest": "−11.4%",
+        "trend": "down",
+        "reading": "Strong chip earnings coexist with market weakness, so returns are uneven."
       },
       {
-        "k": "Nvidia RTX Spark laptops",
-        "latest": "Up to 128 GB unified memory, from ~$2,399",
+        "k": "CXMT nine-month revenue (company estimate)",
+        "latest": "CNY 265–270B vs ~32.1B a year earlier; net profit CNY 131–132.5B vs ~5.3B loss",
         "trend": "up",
-        "reading": "Expands local AI options without showing enterprise migration from data centres."
+        "reading": "Memory-price upswing; preliminary company estimates, not audited."
       },
       {
-        "k": "AI use in strategic European sectors (JRC)",
-        "latest": "18% in 2025, up from 7% in 2021",
+        "k": "AI adoption in strategic sectors (EU JRC)",
+        "latest": "18% in 2025, from 7% in 2021 (~20% across business)",
         "trend": "up",
-        "reading": "Mostly accessible general-purpose AI, not deep industrial integration."
+        "reading": "Much of it reflects general-purpose tools, not deep integration."
       },
       {
-        "k": "Brent crude (Oct 16)",
-        "latest": "$109.86",
-        "trend": "flat",
-        "reading": "Oil is not a proxy for European electricity costs."
-      },
-      {
-        "k": "IEA coordinated emergency oil release",
-        "latest": "~330M barrels released; ~100M remaining accelerated (20M+ diesel)",
-        "trend": "flat",
-        "reading": "Emergency response is ongoing."
-      },
-      {
-        "k": "China technology export catalogue revision (proposal)",
-        "latest": "40 strategic technologies, 23 AI-related",
-        "trend": "flat",
-        "reading": "Transfer controls increasingly cover models and software, not hardware alone; final restrictions not yet adopted."
-      },
-      {
-        "k": "Eurozone financing conditions (ECB, Oct 17)",
-        "latest": "Tighter than September assumptions on rising long-term yields",
+        "k": "China Q3 GDP growth",
+        "latest": "+4.5% YoY (consensus 4.4%)",
         "trend": "up",
-        "reading": "Costlier capital makes long-duration investment in energy, defence, manufacturing and AI harder."
+        "reading": "High-tech manufacturing +14.3% and industrial robot output +29.1% YTD."
+      },
+      {
+        "k": "China private investment",
+        "latest": "−10.4%",
+        "trend": "down",
+        "reading": "Weak domestic demand sits beside strong advanced production, the Great Split within one economy."
+      },
+      {
+        "k": "China property development",
+        "latest": "−20.6%",
+        "trend": "down",
+        "reading": "It reinforces the reliance on external markets."
+      },
+      {
+        "k": "EU 2028–2034 budget (European Council, Oct 16)",
+        "latest": "No final agreement",
+        "trend": "flat",
+        "reading": "Priorities were reaffirmed, but financing, grids, permitting and industrial strategy remain uncoordinated."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-18",
-      "date": "2026-10-18",
+      "url": "/the-next-economy-research-centre-2026-10-19",
+      "date": "2026-10-19",
       "slot": "Morning Brief"
     }
   }
