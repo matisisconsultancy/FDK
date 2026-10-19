@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-fracture-is-accelerating",
+    title: "The Great Capital Fracture Is Accelerating",
+    excerpt: "The Great Split is moving from a technological divide to the defining financial architecture of the Next Economy.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "5 min read",
+    time: "13:09",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-is-splitting-the-yield-curve",
     title: "The AI Supercycle Is Splitting the Yield Curve",
     excerpt: "The same AI Supercycle is now inflationary in Japan, disinflationary in US bond markets, and fragmenting in Europe.",
