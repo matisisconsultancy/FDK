@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-fracture-is-accelerating-2026-10-19-2",
+    title: "The Great Capital Fracture Is Accelerating",
+    excerpt: "Five developments on October 19 reveal The Great Split hardening from a technological divide into a financial regime.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "4 min read",
+    time: "17:20",
+    kind: "day"
+  },
+  {
     url: "/the-full-report",
     title: "The Full Report",
     excerpt: "Five dispersed but interconnected shocks reveal a widening divergence in the capacity to deploy capital productively.",
