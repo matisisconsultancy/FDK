@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-is-splitting-the-yield-curve",
+    title: "The AI Supercycle Is Splitting the Yield Curve",
+    excerpt: "The same AI Supercycle is now inflationary in Japan, disinflationary in US bond markets, and fragmenting in Europe.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "8 min read",
+    time: "11:54",
+    kind: "day"
+  },
+  {
     url: "/europes-banking-ambition-meets-the-fiscal-wall",
     title: "Europe’s Banking Ambition Meets the Fiscal Wall",
     excerpt: "Europe's banking endgame is becoming a contest between national fiscal extraction and continental capital formation.",
