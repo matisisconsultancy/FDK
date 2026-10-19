@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-fracture-is-accelerating-2026-10-19",
+    title: "The Great Capital Fracture Is Accelerating",
+    excerpt: "A new midday format combining institutional financial intelligence, geopolitical developments, hidden patterns, second-order effects and forward-looking investment implications.",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "2 min read",
+    time: "17:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-ai-financial-divergence",
     title: "The Great AI Financial Divergence",
     excerpt: "U.S.-China AI competition enters a phase of financial divergence as semiconductor earnings, infrastructure investment and software efficiency redistribute the economics of intelligence.",
