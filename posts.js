@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-capital-race-enters-the-credit-divide",
+    title: "Europe’s AI Capital Race Enters the Credit Divide",
+    excerpt: "Germany mobilizes institutional capital, Siemens advances factory automation, and Spain confronts concentrated AI-compute credit risk.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "7 min read",
+    time: "17:56",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-fracture-is-accelerating-2026-10-19-2",
     title: "The Great Capital Fracture Is Accelerating",
     excerpt: "Five developments on October 19 reveal The Great Split hardening from a technological divide into a financial regime.",
