@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-credit-shock-is-repricing-global-growth",
+    title: "The AI Credit Shock Is Repricing Global Growth",
+    excerpt: "The AI Supercycle has reached a financial inflection point where financing, delivery and monetization matter more than adoption.",
+    tag: "The Week Ahead · Capital",
+    slot: "The Week Ahead",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "10 min read",
+    time: "08:43",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-19",
     title: "The Next Economy Research Centre",
     excerpt: "Microsoft's withdrawal from Nscale's Loughton project makes grid risk a named commercial consequence for the first time.",
