@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-full-report",
+    title: "The Full Report",
+    excerpt: "Five dispersed but interconnected shocks reveal a widening divergence in the capacity to deploy capital productively.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 19, 2026",
+    read: "5 min read",
+    time: "17:06",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-fracture-is-accelerating-2026-10-19",
     title: "The Great Capital Fracture Is Accelerating",
     excerpt: "A new midday format combining institutional financial intelligence, geopolitical developments, hidden patterns, second-order effects and forward-looking investment implications.",
