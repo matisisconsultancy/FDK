@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-hurdle-rate-divide",
+    title: "The Great Hurdle Rate Divide",
+    excerpt: "Record orders, expensive capital and sovereign risk reveal a global economy splitting along the hurdle rate.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "4 min read",
+    time: "19:48",
+    kind: "night"
+  },
+  {
     url: "/germanys-ai-investment-surge-exposes-europes-demand-divide",
     title: "Germany’s AI Investment Surge Exposes Europe’s Demand Divide",
     excerpt: "Europe's AI race shifts from financing infrastructure to allocating capital, compute and industrial demand efficiently enough to compete with American hyperscalers.",
