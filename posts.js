@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cloud-outage-that-exposes-financial-dependence",
+    title: "The Cloud Outage That Exposes Financial Dependence",
+    excerpt: "A Google Cloud outage and new UK labour data sharpen the central-bank response to the AI Supercycle.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "6 min read",
+    time: "12:36",
+    kind: "day"
+  },
+  {
     url: "/the-35-billion-ai-paradox",
     title: "The $35 Billion AI Paradox",
     excerpt: "China's reported $35 billion Nvidia orders expose a dependency even as DeepSeek keeps shifting the cost of intelligence.",
