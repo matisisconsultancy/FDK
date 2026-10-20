@@ -106,7 +106,8 @@
       "gvi-corporate-benchmark-2026-10-19",
       "the-next-economy-research-centre-2026-10-19",
       "gvi-global-velocity-index-the-balance-sheet-divide",
-      "gvi-corporate-benchmark-2026-10-20"
+      "gvi-corporate-benchmark-2026-10-20",
+      "the-next-economy-research-centre-2026-10-20"
     ]
   },
   "daily": {
@@ -3533,81 +3534,75 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-19",
-    "title": "Next Economy Dashboard",
-    "hypothesis": "The AI Supercycle now turns on a single constraint — the gap between contracted demand and deliverable computing capacity.",
+    "asOf": "2026-10-20",
+    "title": "The Next Economy Research Centre",
+    "hypothesis": "The first AI economy is built with capital; the second will be defined by productivity.",
     "rows": [
       {
-        "k": "Nvidia GPUs planned at Loughton (Microsoft–Nscale)",
-        "latest": "23,000 GPUs (50 MW, scalable to 90 MW)",
-        "trend": "down",
-        "reading": "Microsoft terminated its agreement; grid connection reportedly slipped to the 2030s. Causality is unconfirmed."
+        "k": "Siemens Erlangen: engineering effort reduction",
+        "latest": "Up to 85%",
+        "trend": "up",
+        "reading": "Company-reported, application-specific; not a verified macro productivity inflection."
       },
       {
-        "k": "UK grid connection applications (Ofgem)",
-        "latest": "125 GW, up from ~41 GW in under a year",
+        "k": "Siemens Erlangen: annual productivity gain",
+        "latest": "~7% per year",
         "trend": "up",
-        "reading": "Data centres account for at least 80 GW, with ~73 GW in the queue. These are requests, not validated demand."
+        "reading": "Backed by €500M transformation investment through 2030."
+      },
+      {
+        "k": "ABB Q3 orders",
+        "latest": "$12.06B (+40% y/y)",
+        "trend": "up",
+        "reading": "AI infrastructure demand is converting into supplier orders; book-to-bill about 1.24."
+      },
+      {
+        "k": "ABB operational EBITA",
+        "latest": "$2.03B (+24%), 20.8% margin",
+        "trend": "up",
+        "reading": "Equipment suppliers capture earnings early in the cycle."
+      },
+      {
+        "k": "ABB return on capital employed",
+        "latest": "29.9%",
+        "trend": "flat",
+        "reading": "Strong capital efficiency at the supplier stage; operating cash flow $1.86B."
+      },
+      {
+        "k": "OVHcloud levered free cash flow",
+        "latest": "+€24.7M (from −€27.0M)",
+        "trend": "up",
+        "reading": "First positive annual figure since the 2021 IPO; modest relative to €1.15B revenue."
+      },
+      {
+        "k": "S&P estimate of six US tech firms' AI capex, 2025–2030",
+        "latest": ">$7T",
+        "trend": "up",
+        "reading": "Interconnected financing may create AI exposures not visible in reported debt; no downgrades announced."
+      },
+      {
+        "k": "Nscale–Anthropic compute deal (reported)",
+        "latest": "$45B, ~460 MW, unsigned",
+        "trend": "flat",
+        "reading": "Demand is substantial, but bankability depends on location, financing and execution."
       },
       {
         "k": "Brent crude",
-        "latest": "~$107.83 (−1.8% on Oct 19)",
-        "trend": "down",
-        "reading": "The retreat reflects possible Russian supply developments and is not evidence the energy shock has ended."
-      },
-      {
-        "k": "TSMC Q3 revenue",
-        "latest": "$46.72B, net income +68.7% YoY, gross margin 66.4%",
-        "trend": "up",
-        "reading": "Manufacturers are capturing the boom's profits."
-      },
-      {
-        "k": "Philadelphia Semiconductor Index (prior week)",
-        "latest": "−11.4%",
-        "trend": "down",
-        "reading": "Strong chip earnings coexist with market weakness, so returns are uneven."
-      },
-      {
-        "k": "CXMT nine-month revenue (company estimate)",
-        "latest": "CNY 265–270B vs ~32.1B a year earlier; net profit CNY 131–132.5B vs ~5.3B loss",
-        "trend": "up",
-        "reading": "Memory-price upswing; preliminary company estimates, not audited."
-      },
-      {
-        "k": "AI adoption in strategic sectors (EU JRC)",
-        "latest": "18% in 2025, from 7% in 2021 (~20% across business)",
-        "trend": "up",
-        "reading": "Much of it reflects general-purpose tools, not deep integration."
-      },
-      {
-        "k": "China Q3 GDP growth",
-        "latest": "+4.5% YoY (consensus 4.4%)",
-        "trend": "up",
-        "reading": "High-tech manufacturing +14.3% and industrial robot output +29.1% YTD."
-      },
-      {
-        "k": "China private investment",
-        "latest": "−10.4%",
-        "trend": "down",
-        "reading": "Weak domestic demand sits beside strong advanced production, the Great Split within one economy."
-      },
-      {
-        "k": "China property development",
-        "latest": "−20.6%",
-        "trend": "down",
-        "reading": "It reinforces the reliance on external markets."
-      },
-      {
-        "k": "EU 2028–2034 budget (European Council, Oct 16)",
-        "latest": "No final agreement",
+        "latest": "~$109.5/bbl",
         "trend": "flat",
-        "reading": "Priorities were reaffirmed, but financing, grids, permitting and industrial strategy remain uncoordinated."
+        "reading": "Held near this level; structural grid-capacity constraints remain unresolved."
+      },
+      {
+        "k": "EU AI Gigafactories program",
+        "latest": "Up to 7 facilities, >€30B",
+        "trend": "flat",
+        "reading": "Program objectives, not committed capital; risk of infrastructure without industrial transformation."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-19",
-      "date": "2026-10-19",
+      "url": "/the-next-economy-research-centre-2026-10-20",
+      "date": "2026-10-20",
       "slot": "Morning Brief"
     }
   }
