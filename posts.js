@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-the-future-is-rising",
+    title: "The Price of the Future Is Rising",
+    excerpt: "Sovereign risk, AI infrastructure costs and the energy premium are splitting the economy between those who can finance the future and those who cannot.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "5 min read",
+    time: "16:10",
+    kind: "day"
+  },
+  {
     url: "/reuters-reported-that-the-french-oat-bund-spread-increased-by-approximately-5-5-basis-points-to-152-5-basis-points-during-tuesdays-morning-trading",
     title: "Reuters Reported That the French OAT: Bund Spread Increased by Approximately 5.5 Basis Points to 152.5 Basis Points During Tuesday’s Morning Trading.",
     excerpt: "France's crisis moves from politics to capital markets, as its spread over Germany overtakes Italy's.",
