@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-35-billion-ai-paradox",
+    title: "The $35 Billion AI Paradox",
+    excerpt: "China's reported $35 billion Nvidia orders expose a dependency even as DeepSeek keeps shifting the cost of intelligence.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "5 min read",
+    time: "12:29",
+    kind: "day"
+  },
+  {
     url: "/the-banking-endgame-becomes-a-sovereign-test",
     title: "The Banking Endgame Becomes a Sovereign Test",
     excerpt: "Intesa moves toward MPS as Italian bank taxes stall and sovereign spreads widen — the consolidation cycle enters a decisive phase.",
