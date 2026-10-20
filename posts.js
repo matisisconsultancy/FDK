@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/germanys-ai-investment-surge-exposes-europes-demand-divide",
+    title: "Germany’s AI Investment Surge Exposes Europe’s Demand Divide",
+    excerpt: "Europe's AI race shifts from financing infrastructure to allocating capital, compute and industrial demand efficiently enough to compete with American hyperscalers.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "8 min read",
+    time: "17:59",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-the-future-is-rising",
     title: "The Price of the Future Is Rising",
     excerpt: "Sovereign risk, AI infrastructure costs and the energy premium are splitting the economy between those who can finance the future and those who cannot.",
