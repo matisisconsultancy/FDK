@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-rally-that-credit-refuses-to-confirm",
+    title: "The Rally That Credit Refuses to Confirm",
+    excerpt: "The Great Split enters its capital-productivity phase as industrial AI accelerates while infrastructure credit comes under pressure.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "5 min read",
+    time: "08:51",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-20",
     title: "The Next Economy Research Centre",
     excerpt: "Industrial AI starts delivering operating value as markets probe the financing risk behind the computing build-out.",
