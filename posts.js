@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-banking-endgame-becomes-a-sovereign-test",
+    title: "The Banking Endgame Becomes a Sovereign Test",
+    excerpt: "Intesa moves toward MPS as Italian bank taxes stall and sovereign spreads widen — the consolidation cycle enters a decisive phase.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "10 min read",
+    time: "11:18",
+    kind: "day"
+  },
+  {
     url: "/the-rally-that-credit-refuses-to-confirm",
     title: "The Rally That Credit Refuses to Confirm",
     excerpt: "The Great Split enters its capital-productivity phase as industrial AI accelerates while infrastructure credit comes under pressure.",
