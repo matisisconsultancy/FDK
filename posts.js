@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-risk-2026-10-20",
+    title: "The Great Repricing of Risk",
+    excerpt: "An AI IPO selloff, a $1 billion tech hedge fund and France's appeal to short sellers point to one structural shift in how markets finance risk.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "8 min read",
+    time: "23:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-risk",
     title: "The Great Repricing of Risk",
     excerpt: "Elice's collapse, a $1B tech hedge fund, and France as a short — three signs of one regime change from beta to dispersion.",
