@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-velocity-index-the-balance-sheet-divide",
+    title: "GVI: Global Velocity Index: The Balance-Sheet Divide",
+    excerpt: "Capital keeps expanding, but rising AI-financing scrutiny and deteriorating European sovereign conditions are reshaping who can fund transformation.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "5 min read",
+    time: "06:26",
+    kind: "day"
+  },
+  {
     url: "/frances-shock-europes-sovereign-repricing",
     title: "France’s Shock, Europe’s Sovereign Repricing",
     excerpt: "How a French OAT selloff could migrate into European bank funding and raise Europe's cost of capital.",
