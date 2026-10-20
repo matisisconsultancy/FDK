@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-risk",
+    title: "The Great Repricing of Risk",
+    excerpt: "Elice's collapse, a $1B tech hedge fund, and France as a short — three signs of one regime change from beta to dispersion.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "9 min read",
+    time: "22:44",
+    kind: "day"
+  },
+  {
     url: "/the-great-hurdle-rate-divide",
     title: "The Great Hurdle Rate Divide",
     excerpt: "Record orders, expensive capital and sovereign risk reveal a global economy splitting along the hurdle rate.",
