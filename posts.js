@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-20",
+    title: "GVI Corporate Benchmark",
+    excerpt: "TSMC leads the FDK GVI cohort as competition moves from capital consumption to capital conversion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "5 min read",
+    time: "06:30",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-velocity-index-the-balance-sheet-divide",
     title: "GVI: Global Velocity Index: The Balance-Sheet Divide",
     excerpt: "Capital keeps expanding, but rising AI-financing scrutiny and deteriorating European sovereign conditions are reshaping who can fund transformation.",
