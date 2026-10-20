@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-divide",
+    title: "The Great Capital Divide",
+    excerpt: "As financing tightens, the market is pricing technological growth, infrastructure capital and sovereign risk at increasingly different rates.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 20, 2026",
+    read: "5 min read",
+    time: "07:49",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-20",
     title: "GVI Corporate Benchmark",
     excerpt: "TSMC leads the FDK GVI cohort as competition moves from capital consumption to capital conversion.",
