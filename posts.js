@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-at-the-edge-of-history",
+    title: "Europe at the Edge of History",
+    excerpt: "Berlin's AI optimism and Paris's sovereign crisis expose Europe's defining race between productivity and the cost of capital.",
+    tag: "Midday Pulse · Europe",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "5 min read",
+    time: "13:33",
+    kind: "day"
+  },
+  {
     url: "/france-breaks-five-percent-as-ai-splits-in-two",
     title: "France Breaks Five Percent as AI Splits in Two",
     excerpt: "France's borrowing costs cross 5% while AI demand surges — the Great Split enters its most consequential phase.",
