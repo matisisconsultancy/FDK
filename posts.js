@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/france-breaks-five-percent-as-ai-splits-in-two",
+    title: "France Breaks Five Percent as AI Splits in Two",
+    excerpt: "France's borrowing costs cross 5% while AI demand surges — the Great Split enters its most consequential phase.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "5 min read",
+    time: "13:16",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-shield-has-an-expiration-risk",
     title: "Europe’s AI Shield Has an Expiration Risk",
     excerpt: "New ECB research shows Europe's resilience is real but not yet structural, as Britain and Japan expose the other side of the AI monetary transition.",
