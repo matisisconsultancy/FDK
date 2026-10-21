@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-shifts-from-megawatts-to-tokens",
+    title: "Europe’s AI Race Shifts From Megawatts to Tokens",
+    excerpt: "NVIDIA's GTC Berlin announcements could reshape how Europe's AI infrastructure creates economic value.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "7 min read",
+    time: "17:38",
+    kind: "day"
+  },
+  {
     url: "/the-sovereign-domino",
     title: "The Sovereign Domino",
     excerpt: "Why a French sovereign shock could follow financial exposures into the Eurozone banking system before it is visible in growth.",
