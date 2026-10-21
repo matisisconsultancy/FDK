@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-sovereign-domino",
+    title: "The Sovereign Domino",
+    excerpt: "Why a French sovereign shock could follow financial exposures into the Eurozone banking system before it is visible in growth.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "7 min read",
+    time: "15:31",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-10-21",
     title: "Europe’s Great Fracture",
     excerpt: "Why France's rising sovereign risk premium threatens the financing conditions of the whole eurozone.",
