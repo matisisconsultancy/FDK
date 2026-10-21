@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-price-of-acceleration",
+    title: "GVI: The Price of Acceleration",
+    excerpt: "Record Korean chip exports and ABB's order book confirm strong AI foundations, even as German inflation and French spreads reveal a tightening capital constraint.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "5 min read",
+    time: "04:57",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-risk-2026-10-20",
     title: "The Great Repricing of Risk",
     excerpt: "An AI IPO selloff, a $1 billion tech hedge fund and France's appeal to short sellers point to one structural shift in how markets finance risk.",

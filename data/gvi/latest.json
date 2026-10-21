@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-20",
+    "updated": "2026-10-21",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -107,34 +107,35 @@
       "the-next-economy-research-centre-2026-10-19",
       "gvi-global-velocity-index-the-balance-sheet-divide",
       "gvi-corporate-benchmark-2026-10-20",
-      "the-next-economy-research-centre-2026-10-20"
+      "the-next-economy-research-centre-2026-10-20",
+      "gvi-the-price-of-acceleration"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": null,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-20",
+      "asOf": "2026-10-21",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "GVI: Global Velocity Index: The Balance-Sheet Divide",
-        "url": "/gvi-global-velocity-index-the-balance-sheet-divide",
-        "date": "2026-10-20",
+        "title": "GVI: The Price of Acceleration",
+        "url": "/gvi-the-price-of-acceleration",
+        "date": "2026-10-21",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-20",
+      "asOf": "2026-10-21",
       "source": {
-        "title": "GVI: Global Velocity Index: The Balance-Sheet Divide",
-        "url": "/gvi-global-velocity-index-the-balance-sheet-divide",
-        "date": "2026-10-20",
+        "title": "GVI: The Price of Acceleration",
+        "url": "/gvi-the-price-of-acceleration",
+        "date": "2026-10-21",
         "slot": "GVI"
       },
       "rows": [
@@ -145,7 +146,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI innovation strong; financing scrutiny rising",
+          "tag": "Infrastructure demand strong; financing scrutiny",
           "spark": [
             92.1,
             92.3,
@@ -155,6 +156,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -176,8 +178,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial momentum positive; domestic investment weak",
+          "tag": "AI demand strong; computing-access constraints",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -194,8 +197,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor strength; market volatility",
+          "tag": "Exceptional semiconductor acceleration; financial volatility",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -212,8 +216,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial automation opportunity; market pressure",
+          "tag": "Strong technology exports; annual growth moderating",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -230,8 +235,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial-AI implementation ambitions strengthening",
+          "tag": "Industrial opportunity; producer-price pressure intensifies",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -248,8 +254,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Digital infrastructure opportunities; capital selectivity",
+          "tag": "Employment stabilising; vacancies weakening",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -266,8 +273,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign financing pressure intensifying",
+          "tag": "Sovereign financing risk elevated",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -284,8 +292,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Stable",
+          "tag": "Strong industrial-infrastructure earnings",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -302,8 +311,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Machinery and semiconductor ecosystem resilience",
+          "tag": "Semiconductor equipment and machinery strength",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -320,8 +330,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive industrial momentum",
+          "tag": "Industrial momentum positive",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -338,8 +349,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy and computing advantages",
+          "tag": "Energy and digital infrastructure advantages",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -364,6 +376,7 @@
             77.1,
             77.1,
             77.1,
+            77.1,
             77.1
           ]
         },
@@ -374,8 +387,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Infrastructure pipeline; economic conversion pending",
+          "tag": "Infrastructure pipeline; conversion pending",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -392,8 +406,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial stabilisation uncertain",
+          "tag": "Industrial recovery uncertain",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -410,8 +425,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Manufacturing weakness; sovereign-risk exposure",
+          "tag": "Manufacturing weakness; financing resilience critical",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3039,62 +3055,56 @@
     }
   },
   "today": {
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "edition": "GVI · Capital",
-    "thesis": "GVI: Global Velocity Index: The Balance-Sheet Divide",
-    "subtitle": "The AI Supercycle is entering a phase of financial selection, where sovereign spreads and infrastructure liabilities increasingly decide who can convert intelligence into durable returns.",
-    "standfirst": "Intelligence determines the frontier; capital discipline determines who can hold it.",
+    "thesis": "GVI: The Price of Acceleration",
+    "subtitle": "The AI Supercycle is accelerating industrial production faster than financial markets are willing to finance it — and industrial velocity and financial velocity are diverging.",
+    "standfirst": "The ultimate scarcity of the AI Supercycle is becoming the capacity to finance sustained technological acceleration while preserving the economic returns that make acceleration possible.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI (provisional)",
+        "label": "Global Velocity Index (provisional baseline)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "France 10Y yield",
-        "value": "~4.9%",
-        "delta": "~+13 bps",
-        "trend": "up"
-      },
-      {
-        "label": "France–Bund spread",
-        "value": "146 bps",
+        "label": "Korea chip exports, Oct 1–20 y/y",
+        "value": "+222.5%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Italy 10Y yield",
-        "value": "~4.58%",
+        "label": "Japan exports, Sept",
+        "value": "+16.7%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "KOSPI (intraday)",
-        "value": "-3.61%",
+        "label": "German producer prices, Sept",
+        "value": "+6.7%",
         "delta": null,
-        "trend": "down"
+        "trend": "up"
+      },
+      {
+        "label": "French 10-yr spread over Bunds",
+        "value": "150 bps",
+        "delta": null,
+        "trend": "up"
       }
     ],
     "source": {
-      "title": "GVI: Global Velocity Index: The Balance-Sheet Divide",
-      "url": "/gvi-global-velocity-index-the-balance-sheet-divide",
-      "date": "2026-10-20",
+      "title": "GVI: The Price of Acceleration",
+      "url": "/gvi-the-price-of-acceleration",
+      "date": "2026-10-21",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: Global Velocity Index: The Balance-Sheet Divide",
-        "url": "/gvi-global-velocity-index-the-balance-sheet-divide",
+        "title": "GVI: The Price of Acceleration",
+        "url": "/gvi-the-price-of-acceleration",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead; scores carried forward with no ranking changes as European sovereign spreads widen."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-10-20",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.0 lead; Nvidia (+0.1) receives the only upgrade."
+        "headline": "US 94.0, China 91.2 and South Korea 88.8 lead the country scorecard as industrial velocity outpaces financial velocity; score changes are not calculated."
       }
     ]
   },
