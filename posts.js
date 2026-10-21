@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-bottleneck-economy",
+    title: "The Bottleneck Economy",
+    excerpt: "Demand for intelligence keeps accelerating while the physical and financial systems required to deliver it tighten.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "5 min read",
+    time: "08:42",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-21",
     title: "The Next Economy Research Centre",
     excerpt: "Record AI revenues collide with grid delays as the market begins pricing deliverable capacity over announced capacity.",
