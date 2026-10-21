@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/barclays-and-european-banking-the-credit-transmission-test",
+    title: "Barclays and European Banking: The Credit Transmission Test",
+    excerpt: "Earnings confirm AI demand is real, but sovereign spreads, energy prices and financing costs now decide who can deliver it.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "4 min read",
+    time: "20:38",
+    kind: "night"
+  },
+  {
     url: "/the-intelligence-rally-meets-the-sovereign-wall",
     title: "The Intelligence Rally Meets the Sovereign Wall",
     excerpt: "AI profits accelerate as sovereign risk, energy inflation and infrastructure execution keep raising the cost of capital.",
