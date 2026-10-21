@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-shield-has-an-expiration-risk",
+    title: "Europe’s AI Shield Has an Expiration Risk",
+    excerpt: "New ECB research shows Europe's resilience is real but not yet structural, as Britain and Japan expose the other side of the AI monetary transition.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "10 min read",
+    time: "12:27",
+    kind: "day"
+  },
+  {
     url: "/deepseek-opens-the-engine-america-faces-the-capital-test",
     title: "Deepseek Opens the Engine. America Faces the Capital Test.",
     excerpt: "Three developments on October 20–21 sharpen a widening asymmetry between America's frontier capital and China's diffusion economics.",
