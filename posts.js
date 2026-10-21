@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-21",
+    title: "GVI Corporate Benchmark",
+    excerpt: "When the AI ecosystem becomes its own financier, the test shifts from growth to independent cash returns.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "5 min read",
+    time: "07:02",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-price-of-acceleration",
     title: "GVI: The Price of Acceleration",
     excerpt: "Record Korean chip exports and ABB's order book confirm strong AI foundations, even as German inflation and French spreads reveal a tightening capital constraint.",

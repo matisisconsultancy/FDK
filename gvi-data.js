@@ -112,7 +112,8 @@ window.GVI_DATA = {
       "gvi-global-velocity-index-the-balance-sheet-divide",
       "gvi-corporate-benchmark-2026-10-20",
       "the-next-economy-research-centre-2026-10-20",
-      "gvi-the-price-of-acceleration"
+      "gvi-the-price-of-acceleration",
+      "gvi-corporate-benchmark-2026-10-21"
     ]
   },
   "daily": {
@@ -3109,6 +3110,12 @@ window.GVI_DATA = {
         "url": "/gvi-the-price-of-acceleration",
         "slot": "GVI",
         "headline": "US 94.0, China 91.2 and South Korea 88.8 lead the country scorecard as industrial velocity outpaces financial velocity; score changes are not calculated."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-10-21",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.1 lead; Volkswagen at 61.6 trails the laggards"
       }
     ]
   },
@@ -3214,7 +3221,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-20",
+    "asOf": "2026-10-21",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3223,23 +3230,23 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "up",
-        "note": "Structural leadership"
+        "note": "Manufacturing leadership"
       },
       {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.2,
         "delta": 0,
-        "trend": "flat",
-        "note": "Selective expansion"
+        "trend": "up",
+        "note": "Sovereign AI expansion"
       },
       {
         "rank": 3,
         "name": "Amazon",
-        "score": 99,
-        "delta": 0,
-        "trend": "down",
-        "note": "Cash-conversion watch"
+        "score": 99.1,
+        "delta": 0.1,
+        "trend": "up",
+        "note": "Ecosystem acceleration; only leadership upgrade today"
       },
       {
         "rank": 4,
@@ -3247,7 +3254,7 @@ window.GVI_DATA = {
         "score": 98.9,
         "delta": 0,
         "trend": "up",
-        "note": "Infrastructure acceleration"
+        "note": "Physical AI infrastructure"
       },
       {
         "rank": 5,
@@ -3255,15 +3262,15 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Structural leadership"
+        "note": "Semiconductor equipment"
       },
       {
         "rank": 6,
         "name": "Nvidia",
         "score": 98,
-        "delta": 0.1,
+        "delta": 0,
         "trend": "up",
-        "note": "Architectural expansion"
+        "note": "Platform expansion; credit risk"
       },
       {
         "rank": 7,
@@ -3271,7 +3278,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Structural momentum"
+        "note": "Structural growth"
       },
       {
         "rank": 8,
@@ -3279,15 +3286,15 @@ window.GVI_DATA = {
         "score": 97.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Deployment expansion"
+        "note": "Operational AI deployment"
       },
       {
         "rank": 9,
         "name": "Siemens Energy",
         "score": 97.3,
         "delta": 0,
-        "trend": "flat",
-        "note": "Infrastructure expansion"
+        "trend": "up",
+        "note": "Power infrastructure"
       },
       {
         "rank": 10,
@@ -3295,17 +3302,17 @@ window.GVI_DATA = {
         "score": 97.2,
         "delta": 0,
         "trend": "up",
-        "note": "Industrial AI opportunity"
+        "note": "Industrial AI"
       }
     ],
     "laggards": [
       {
         "rank": 1,
         "name": "Volkswagen Group",
-        "score": 61.8,
-        "delta": 0,
-        "trend": "flat",
-        "note": "Q3 global deliveries fell 14.3%, including a 38.5% contraction in China"
+        "score": 61.6,
+        "delta": -0.2,
+        "trend": "down",
+        "note": "Execution pressure; ID. UNYX 08 sales far below target"
       },
       {
         "rank": 2,
@@ -3313,15 +3320,15 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Restructuring"
       },
       {
         "rank": 3,
         "name": "Stellantis",
         "score": 65.2,
         "delta": 0,
-        "trend": "flat",
-        "note": "Leapmotor partnership creates optionality"
+        "trend": "up",
+        "note": "Strategic rebuilding"
       },
       {
         "rank": 4,
@@ -3329,7 +3336,7 @@ window.GVI_DATA = {
         "score": 67.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Mixed transition"
       },
       {
         "rank": 5,
@@ -3337,15 +3344,15 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Operational execution"
       },
       {
         "rank": 6,
         "name": "BASF",
         "score": 68.9,
         "delta": 0,
-        "trend": "flat",
-        "note": null
+        "trend": "down",
+        "note": "Energy competitiveness"
       },
       {
         "rank": 7,
@@ -3353,7 +3360,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Technology transition"
       },
       {
         "rank": 8,
@@ -3361,15 +3368,15 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Digital transformation"
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "flat",
-        "note": "Deliveries down 16% over the first nine months of 2026"
+        "trend": "down",
+        "note": "Demand pressure"
       },
       {
         "rank": 10,
@@ -3377,23 +3384,23 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Infrastructure consolidation"
       }
     ],
     "pillars": [
       {
-        "pillar": "The Three Defining Accelerators",
+        "pillar": "Three accelerators defining the cohort",
         "leaders": [
           "TSMC",
-          "Schneider Electric",
-          "Nvidia"
+          "Amazon",
+          "Microsoft"
         ]
       }
     ],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-20",
-      "date": "2026-10-20",
+      "url": "/gvi-corporate-benchmark-2026-10-21",
+      "date": "2026-10-21",
       "slot": "GVI"
     }
   },
