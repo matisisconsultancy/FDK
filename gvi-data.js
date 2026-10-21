@@ -113,7 +113,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-10-20",
       "the-next-economy-research-centre-2026-10-20",
       "gvi-the-price-of-acceleration",
-      "gvi-corporate-benchmark-2026-10-21"
+      "gvi-corporate-benchmark-2026-10-21",
+      "the-next-economy-research-centre-2026-10-21"
     ]
   },
   "daily": {
@@ -3555,75 +3556,99 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-20",
-    "title": "The Next Economy Research Centre",
-    "hypothesis": "The first AI economy is built with capital; the second will be defined by productivity.",
+    "asOf": "2026-10-21",
+    "title": "Next Economy Dashboard",
+    "hypothesis": "The AI supercycle is producing record revenues, but electricity delays are beginning to destroy financial value, and the market is learning to tell the difference. Capital determines what can be financed; electricity determines what can be delivered.",
     "rows": [
       {
-        "k": "Siemens Erlangen: engineering effort reduction",
-        "latest": "Up to 85%",
-        "trend": "up",
-        "reading": "Company-reported, application-specific; not a verified macro productivity inflection."
+        "k": "NextDC equity (early trading)",
+        "latest": "−44%",
+        "trend": "down",
+        "reading": "Grid delay hit contracted revenue and repriced the equity; liquidity of A$8.675B means it is not imminent distress."
       },
       {
-        "k": "Siemens Erlangen: annual productivity gain",
-        "latest": "~7% per year",
-        "trend": "up",
-        "reading": "Backed by €500M transformation investment through 2030."
+        "k": "NextDC FY2027 net revenue guidance",
+        "latest": "A$475–500M (from A$615–640M)",
+        "trend": "down",
+        "reading": "Cut of roughly 22% at the midpoint after Jemena suspended upgrades for the M3 Melbourne facility."
       },
       {
-        "k": "ABB Q3 orders",
-        "latest": "$12.06B (+40% y/y)",
-        "trend": "up",
-        "reading": "AI infrastructure demand is converting into supplier orders; book-to-bill about 1.24."
+        "k": "NextDC FY2027 underlying EBITDA guidance",
+        "latest": "A$245–265M (from A$385–410M)",
+        "trend": "down",
+        "reading": "Cut of roughly 36% at the midpoint; the next grid supply increase is not expected until fiscal 2028."
       },
       {
-        "k": "ABB operational EBITA",
-        "latest": "$2.03B (+24%), 20.8% margin",
-        "trend": "up",
-        "reading": "Equipment suppliers capture earnings early in the cycle."
+        "k": "NextDC contracted revenue deferred",
+        "latest": "~A$140M",
+        "trend": "down",
+        "reading": "Deferred commissioning, with service-level credits and, in some cases, customer termination rights."
       },
       {
-        "k": "ABB return on capital employed",
-        "latest": "29.9%",
+        "k": "Supermicro preliminary Q1 FY27 revenue",
+        "latest": "$18.5–19.5B (from $14.5–15.5B)",
+        "trend": "up",
+        "reading": "Hardware demand is accelerating; gross margin is expected at 12–12.5%. Final results are due November 3."
+      },
+      {
+        "k": "SpaceX Q3 AI revenue",
+        "latest": "$7.56B (from ~$813M a year earlier)",
+        "trend": "up",
+        "reading": "Rapid revenue from renting existing computing capacity; consolidated revenue was $14.58B, up 161%."
+      },
+      {
+        "k": "SpaceX quarterly capital expenditure",
+        "latest": "$19.6B (~$16.4B AI infrastructure)",
+        "trend": "up",
+        "reading": "Expected to rise further; durable returns depend on incremental margins, depreciation, customer concentration and free cash flow."
+      },
+      {
+        "k": "Hyperscaler 2026 CapEx (IEA)",
+        "latest": ">$700B",
         "trend": "flat",
-        "reading": "Strong capital efficiency at the supplier stage; operating cash flow $1.86B."
+        "reading": "Financial capital is moving faster than physical infrastructure; grid-connection queues in some jurisdictions exceed existing peak demand, though they include speculative and duplicated applications."
       },
       {
-        "k": "OVHcloud levered free cash flow",
-        "latest": "+€24.7M (from −€27.0M)",
+        "k": "TSMC / ASML baseline",
+        "latest": "TSMC $46.72B revenue (66.4% margin); ASML €11.66B (57.5% margin)",
+        "trend": "flat",
+        "reading": "The semiconductor baseline is unchanged."
+      },
+      {
+        "k": "Eurozone industrial production (August)",
+        "latest": "−0.5% m/m, −1.1% y/y",
+        "trend": "down",
+        "reading": "Weak industrial output despite strong AI-related earnings."
+      },
+      {
+        "k": "STOXX 600 Q3 earnings growth (LSEG I/B/E/S)",
+        "latest": "+20.7% y/y (technology near 33%)",
         "trend": "up",
-        "reading": "First positive annual figure since the 2021 IPO; modest relative to €1.15B revenue."
+        "reading": "Partly driven by energy profits and data-centre suppliers; Europe may capture value via ASML, ABB, Schneider Electric and Siemens."
       },
       {
-        "k": "S&P estimate of six US tech firms' AI capex, 2025–2030",
-        "latest": ">$7T",
+        "k": "Elice (South Korea) debut",
+        "latest": "~−32%",
+        "trend": "down",
+        "reading": "The market is becoming more selective rather than uniformly distressed."
+      },
+      {
+        "k": "CoreWeave 2031 bond yield",
+        "latest": "nearly 16%",
+        "trend": "flat",
+        "reading": "Financing for developers is demanding; it points to selection, not uniform distress."
+      },
+      {
+        "k": "Siemens–Nvidia Erlangen demonstration",
+        "latest": "up to 85% less engineering effort; up to 20% production-planning savings",
         "trend": "up",
-        "reading": "Interconnected financing may create AI exposures not visible in reported debt; no downgrades announced."
-      },
-      {
-        "k": "Nscale–Anthropic compute deal (reported)",
-        "latest": "$45B, ~460 MW, unsigned",
-        "trend": "flat",
-        "reading": "Demand is substantial, but bankability depends on location, financing and execution."
-      },
-      {
-        "k": "Brent crude",
-        "latest": "~$109.5/bbl",
-        "trend": "flat",
-        "reading": "Held near this level; structural grid-capacity constraints remain unresolved."
-      },
-      {
-        "k": "EU AI Gigafactories program",
-        "latest": "Up to 7 facilities, >€30B",
-        "trend": "flat",
-        "reading": "Program objectives, not committed capital; risk of infrastructure without industrial transformation."
+        "reading": "Gains are specific to certain workflows, not economy-wide."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-20",
-      "date": "2026-10-20",
+      "url": "/the-next-economy-research-centre-2026-10-21",
+      "date": "2026-10-21",
       "slot": "Morning Brief"
     }
   }

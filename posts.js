@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-21",
+    title: "The Next Economy Research Centre",
+    excerpt: "Record AI revenues collide with grid delays as the market begins pricing deliverable capacity over announced capacity.",
+    tag: "Morning Brief · Energy",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "5 min read",
+    time: "07:57",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-21",
     title: "GVI Corporate Benchmark",
     excerpt: "When the AI ecosystem becomes its own financier, the test shifts from growth to independent cash returns.",
