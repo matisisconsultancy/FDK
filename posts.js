@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/frances-existential-test",
+    title: "France’s Existential Test",
+    excerpt: "The French sovereign repricing is real; eurozone contagion is not yet established.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "7 min read",
+    time: "09:15",
+    kind: "day"
+  },
+  {
     url: "/the-bottleneck-economy",
     title: "The Bottleneck Economy",
     excerpt: "Demand for intelligence keeps accelerating while the physical and financial systems required to deliver it tighten.",
