@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-at-the-crossroads-of-financial-power",
+    title: "Europe at the Crossroads of Financial Power",
+    excerpt: "Europe enters a defining confrontation over who determines the cost of capital, where it is invested and who captures the returns.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "8 min read",
+    time: "12:13",
+    kind: "day"
+  },
+  {
     url: "/frances-existential-test",
     title: "France’s Existential Test",
     excerpt: "The French sovereign repricing is real; eurozone contagion is not yet established.",
