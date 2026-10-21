@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-10-21",
+    title: "Europe’s Great Fracture",
+    excerpt: "Why France's rising sovereign risk premium threatens the financing conditions of the whole eurozone.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "7 min read",
+    time: "15:20",
+    kind: "day"
+  },
+  {
     url: "/europe-at-the-edge-of-history",
     title: "Europe at the Edge of History",
     excerpt: "Berlin's AI optimism and Paris's sovereign crisis expose Europe's defining race between productivity and the cost of capital.",
