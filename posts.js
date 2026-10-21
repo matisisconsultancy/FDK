@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/deepseek-opens-the-engine-america-faces-the-capital-test",
+    title: "Deepseek Opens the Engine. America Faces the Capital Test.",
+    excerpt: "Three developments on October 20–21 sharpen a widening asymmetry between America's frontier capital and China's diffusion economics.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "4 min read",
+    time: "12:18",
+    kind: "day"
+  },
+  {
     url: "/europe-at-the-crossroads-of-financial-power",
     title: "Europe at the Crossroads of Financial Power",
     excerpt: "Europe enters a defining confrontation over who determines the cost of capital, where it is invested and who captures the returns.",
