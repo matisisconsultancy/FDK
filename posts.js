@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-rally-meets-the-sovereign-wall",
+    title: "The Intelligence Rally Meets the Sovereign Wall",
+    excerpt: "AI profits accelerate as sovereign risk, energy inflation and infrastructure execution keep raising the cost of capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "4 min read",
+    time: "20:33",
+    kind: "night"
+  },
+  {
     url: "/beyond-intelligence-the-next-frontier-of-ai",
     title: "Beyond Intelligence: The Next Frontier of AI",
     excerpt: "A potential Tesla–SpaceX combination brings the migration from intelligence to execution into sharp focus.",
