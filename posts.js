@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/beyond-intelligence-the-next-frontier-of-ai",
+    title: "Beyond Intelligence: The Next Frontier of AI",
+    excerpt: "A potential Tesla–SpaceX combination brings the migration from intelligence to execution into sharp focus.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 21, 2026",
+    read: "8 min read",
+    time: "19:29",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-race-shifts-from-megawatts-to-tokens",
     title: "Europe’s AI Race Shifts From Megawatts to Tokens",
     excerpt: "NVIDIA's GTC Berlin announcements could reshape how Europe's AI infrastructure creates economic value.",
