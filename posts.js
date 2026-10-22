@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-payroll",
+    title: "The Great Split Reaches the Payroll",
+    excerpt: "Barclays cuts 5,000 jobs as AI reshapes its operating model — and hands central banks a new monetary question.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "12:34",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-has-a-new-price",
     title: "The Great Split Has a New Price",
     excerpt: "Capital is not retreating — it is becoming radically more selective, as rising borrowing costs collide with the capital intensity of the AI and industrial transitions.",
