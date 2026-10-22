@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-10-22",
+    title: "Europe’s Great Fracture",
+    excerpt: "France's bond-market deterioration reaches a historic threshold as sovereign spreads widen across the eurozone.",
+    tag: "Midday Pulse · Sovereign Risk",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "14:16",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-collision-2026-10-22",
     title: "The Great Capital Collision",
     excerpt: "AI, energy insecurity and sovereign debt collide in a historic repricing of capital and economic power.",
