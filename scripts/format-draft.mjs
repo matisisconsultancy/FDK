@@ -116,6 +116,10 @@ BODY BLOCKS (all optional, use only what the material supports, keep the author'
   - ::section Heading | hint  → a numbered section header, followed by paragraphs.
   - ::takeaways Key takeaways | subhead  → bullet lines starting with "- ".
   - ::close  → the final closing line (may use ==green==).
+  - ::signal → REQUIRED on every note: "The signal", the note read in one minute. Exactly 5 or 6 lines "- point",
+        each one sentence of at most 25 words, the most important first; start each with a few **bold** words.
+        Use ONLY facts, figures and conclusions that are in the text — never add, round or reinterpret anything.
+        Place it right after the leading paragraphs (the site shows it at the top of the note).
 
 THE AUTHOR'S FORMAT (notes are written to "Istruzioni per le note"; map it, never rewrite it):
   - A masthead line "The Velocity Edge — <Label> | <date> | FDK" is metadata: use it for slot/date, never as text.

@@ -246,11 +246,22 @@ function takeawaysHTML(arg, buf) {
   return `        <section class="takeaways reveal-up">\n          <div class="takeaways__head">\n            <span class="takeaways__label">${inline(label)}</span>${subHTML}\n          </div>\n          <ul class="takeaways__list">\n${items}\n          </ul>\n        </section>\n`;
 }
 
+/* "The signal": the note in 5–6 points, read in one minute (CRM fdk23).
+   Written anywhere in the draft as "::signal" + "- point" lines; always shown
+   first, with a link down to the full note. */
+function signalBoxHTML(buf) {
+  const pts = buf.map((l) => l.match(/^[-*]\s+(.*)$/)).filter(Boolean).slice(0, 6).map((x) => `            <li>${inline(x[1])}</li>`).join("\n");
+  if (!pts) return "";
+  return `        <aside class="art-signal reveal-up" aria-label="The signal: this note in one minute">\n          <div class="art-signal__head"><span class="art-signal__label">The signal</span><span class="art-signal__time">1 min</span></div>\n          <ol class="art-signal__list">\n${pts}\n          </ol>\n          <a class="art-signal__more" href="#read">Read the full note <span aria-hidden="true">↓</span></a>\n        </aside>\n\n`;
+}
+const signalBlock = blocks.find((b) => b.name === "signal");
+
 let art = "";
 if (fm.epigraph) art += `        <p class="art-epigraph reveal-up">“${inline(fm.epigraph)}”</p>\n\n`;
+if (signalBlock) art += signalBoxHTML(signalBlock.buf);
 leadParas.forEach((p, idx) => {
   const cls = idx === 0 ? "art-lead reveal-up" : "reveal-up";
-  art += `        <p class="${cls}">${inline(p)}</p>\n\n`;
+  art += `        <p class="${cls}"${idx === 0 && signalBlock ? ' id="read"' : ""}>${inline(p)}</p>\n\n`;
 });
 let statsBlock = "";
 for (const bl of blocks) {

@@ -258,3 +258,15 @@ body:has(main.art) .btn--brief { background: #309bff; color: #070a24; box-shadow
 body:has(main.art) .btn--brief:hover { background: #5cb0ff; box-shadow: 0 18px 40px -12px rgba(48, 155, 255, .75), inset 0 1px 0 rgba(255, 255, 255, .5); }
 .art .art-matrix__s { background: rgba(48, 155, 255, .1); border-color: rgba(48, 155, 255, .3); }
 body:has(main.art--night) .hl-green, .art--night .hl-green { color: #309bff; }
+
+/* "The signal" — the note in 5–6 points, one minute (scripts/publish-note.mjs, ::signal) */
+.art-signal { margin: 8px 0 48px; padding: 28px clamp(22px, 3.4vw, 36px); border-radius: 22px; background: linear-gradient(150deg, #11173f, #0a0e2c); border: 1px solid rgba(48, 155, 255, .35); box-shadow: 0 24px 60px -36px rgba(10, 14, 44, .55); }
+.art-signal__head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 16px; }
+.art-signal__label { font-family: var(--font-mono, "JetBrains Mono", monospace); font-size: .74rem; letter-spacing: 2px; text-transform: uppercase; color: #309bff; }
+.art-signal__time { font-family: var(--font-mono, "JetBrains Mono", monospace); font-size: .72rem; letter-spacing: 1px; color: rgba(255, 255, 255, .55); border: 1px solid rgba(255, 255, 255, .18); border-radius: 999px; padding: 4px 10px; }
+.art-signal__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; counter-reset: sig; }
+.art-signal__list li { position: relative; padding-left: 40px; font-size: 1.02rem; line-height: 1.5; color: rgba(255, 255, 255, .88); counter-increment: sig; }
+.art-signal__list li::before { content: counter(sig, decimal-leading-zero); position: absolute; left: 0; top: 1px; font-family: var(--font-mono, "JetBrains Mono", monospace); font-size: .82rem; font-weight: 600; color: #309bff; }
+.art-signal__list strong { color: #fff; }
+.art-signal__more { display: inline-flex; gap: 8px; margin-top: 18px; font-size: .9rem; font-weight: 600; color: #309bff; text-decoration: none; }
+.art-signal__more:hover { text-decoration: underline; text-underline-offset: 4px; }
