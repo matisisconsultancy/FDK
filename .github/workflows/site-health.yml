@@ -1,0 +1,124 @@
+name: Site health — fdkempowernet.com
+
+# Weekly check of what keeps the site trustworthy, written to
+# reports/site-health.md (and the run summary):
+#   · HTTPS certificate expiry and domain registration expiry
+#   · Core Web Vitals (Lighthouse, mobile) on the home, /markets and the latest note
+#   · broken links, internal and external, across every published page
+# Nothing on the site changes; only the report is committed.
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"   # Mondays 06:17 UTC
+  workflow_dispatch: {}
+  push:
+    branches: [claude/eager-carson-vjorjg]
+    paths: [".github/workflows/site-health.yml"]
+
+concurrency:
+  group: site-health
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/eager-carson-vjorjg
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Certificate and domain
+        id: dates
+        run: |
+          set +e
+          CERT=$(echo | openssl s_client -servername fdkempowernet.com -connect fdkempowernet.com:443 2>/dev/null | openssl x509 -noout -enddate -issuer 2>/dev/null)
+          CERT_END=$(echo "$CERT" | sed -n 's/^notAfter=//p')
+          CERT_BY=$(echo "$CERT" | sed -n 's/^issuer=.*O *= *\([^,]*\).*/\1/p')
+          DOMAIN_END=$(curl -fsSL https://rdap.verisign.com/com/v1/domain/fdkempowernet.com | jq -r '.events[] | select(.eventAction=="expiration") | .eventDate' 2>/dev/null)
+          REGISTRAR=$(curl -fsSL https://rdap.verisign.com/com/v1/domain/fdkempowernet.com | jq -r '[.entities[]? | select(.roles[]?=="registrar") | .vcardArray[1][]? | select(.[0]=="fn") | .[3]][0] // ""' 2>/dev/null)
+          {
+            echo "cert_end=${CERT_END:-unknown}"; echo "cert_by=${CERT_BY:-unknown}"
+            echo "domain_end=${DOMAIN_END:-unknown}"; echo "registrar=${REGISTRAR:-unknown}"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Core Web Vitals (Lighthouse, mobile)
+        run: |
+          set +e
+          LATEST=$(node -e 'const w={};new Function("window",require("fs").readFileSync("posts.js","utf8"))(w);console.log("https://fdkempowernet.com"+w.FDK_POSTS[0].url.replace(/\/?$/,"/"))')
+          echo "page|score|LCP|CLS|TBT" > /tmp/cwv.txt
+          for URL in https://fdkempowernet.com/ https://fdkempowernet.com/markets/ "$LATEST"; do
+            npx -y lighthouse@12 "$URL" --quiet --only-categories=performance --output=json --output-path=/tmp/lh.json \
+              --chrome-flags="--headless=new --no-sandbox" >/dev/null 2>&1
+            node -e '
+              const r=JSON.parse(require("fs").readFileSync("/tmp/lh.json","utf8")),a=r.audits;
+              console.log([process.argv[1], Math.round(r.categories.performance.score*100), a["largest-contentful-paint"].displayValue,
+                a["cumulative-layout-shift"].displayValue, a["total-blocking-time"].displayValue].join("|"))' "$URL" >> /tmp/cwv.txt \
+              || echo "$URL|error|||" >> /tmp/cwv.txt
+          done
+          cat /tmp/cwv.txt
+
+      - name: Broken links
+        id: links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress --max-concurrency 24 --timeout 20 --max-retries 2
+            --accept 200..=299,403,429
+            --root-dir ${{ github.workspace }}
+            --exclude-path drafts --exclude-path preview --exclude-path node_modules
+            --exclude "googletagmanager|fonts.gstatic|fonts.googleapis|linkedin.com|x.com|twitter.com"
+            './**/index.html'
+          output: /tmp/links.md
+          fail: false
+
+      - name: Write the report
+        env:
+          CERT_END: ${{ steps.dates.outputs.cert_end }}
+          CERT_BY: ${{ steps.dates.outputs.cert_by }}
+          DOMAIN_END: ${{ steps.dates.outputs.domain_end }}
+          REGISTRAR: ${{ steps.dates.outputs.registrar }}
+        run: |
+          mkdir -p reports
+          {
+            echo "# Site health · fdkempowernet.com"
+            echo ""
+            echo "Checked $(date -u '+%Y-%m-%d %H:%M UTC') by .github/workflows/site-health.yml"
+            echo ""
+            echo "## Certificate and domain"
+            echo ""
+            echo "| | |"; echo "|---|---|"
+            echo "| HTTPS certificate expires | ${CERT_END} (${CERT_BY}) |"
+            echo "| Domain registration expires | ${DOMAIN_END} |"
+            echo "| Registrar | ${REGISTRAR} |"
+            echo ""
+            echo "## Core Web Vitals (Lighthouse, mobile)"
+            echo ""
+            echo "| Page | Performance | LCP | CLS | TBT |"; echo "|---|---|---|---|---|"
+            tail -n +2 /tmp/cwv.txt | awk -F'|' '{print "| "$1" | "$2" | "$3" | "$4" | "$5" |"}'
+            echo ""
+            echo "## Links"
+            echo ""
+            cat /tmp/links.md 2>/dev/null || echo "Link check did not run."
+          } > reports/site-health.md
+          cat reports/site-health.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the report
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add reports/site-health.md
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Site health report $(date -u +%Y-%m-%d)"
+          for i in 1 2 3 4; do
+            git pull -q --rebase origin claude/eager-carson-vjorjg && git push -q origin HEAD:claude/eager-carson-vjorjg && exit 0
+            sleep $((i * 5))
+          done
+          exit 1

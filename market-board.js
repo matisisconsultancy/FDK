@@ -1,8 +1,10 @@
 /* ============================================================
    FDK · Live market board renderer
-   Fetches data/market/quotes.json (refreshed daily by the
-   GitHub Action) and paints grouped quote cards with price,
-   daily % change and a sparkline. No API key in the browser.
+   Reads the live market feed (live-data branch, refreshed every
+   15 minutes in market hours by .github/workflows/live-market.yml,
+   the same feed as the Velocity Dashboard) and paints grouped quote
+   cards with price, daily % change and a sparkline. Falls back to
+   data/market/quotes.json only if the live feed cannot be reached.
    ============================================================ */
 (function () {
   "use strict";
@@ -65,10 +67,10 @@
     }).join("");
     var when = data.updated ? new Date(data.updated).toLocaleString(loc() === "en-US" ? "en-GB" : loc(), { dateStyle: "medium", timeStyle: "short" }) : "—";
     var tag = data.provider === "sample"
-      ? '<span class="mb-badge mb-badge--sample">Sample data — set TWELVEDATA_API_KEY to go live</span>'
+      ? '<span class="mb-badge mb-badge--sample">Indicative data</span>'
       : '<span class="mb-badge">Live · ' + esc(data.provider || "market data") + '</span>';
     mount.innerHTML = '<div class="mb-meta">' + tag + '<span class="mb-updated">Updated ' + esc(when) + '</span></div>' + html +
-      '<p class="mb-foot">Quotes refreshed automatically by a scheduled job. Prices may be delayed. For information only — not investment advice.</p>';
+      '<p class="mb-foot">Quotes refreshed automatically every 15 minutes during market hours. Prices may be delayed. For information only — not investment advice.</p>';
   }
 
   function fail(msg) {
@@ -78,8 +80,24 @@
   var lastData = null;
   document.addEventListener("fdk:langchange", function () { if (lastData) render(lastData); });
 
-  fetch("/data/market/quotes.json?t=" + Date.now())
-    .then(function (r) { if (!r.ok) throw new Error("quotes.json not found (" + r.status + ")"); return r.json(); })
+  /* live feed → the board's quote shape */
+  var LIVE = "https://raw.githubusercontent.com/matisisconsultancy/FDK/live-data/market.json";
+  function fromLive(d) {
+    var items = (d.series || []).filter(function (x) { return x && x.value != null; }).map(function (x) {
+      var daily = (x.daily || []).slice(-30).map(function (r) { return Array.isArray(r) ? r[1] : r; }).filter(function (v) { return typeof v === "number"; });
+      return { label: x.label, symbol: (x.symbol || x.id || "").replace(/^\^/, ""), group: x.group || "Markets", price: x.value,
+        chg: x.changePct != null ? x.changePct : null, currency: "", spark: daily, stale: !!x.stale };
+    });
+    var src = (d.sources || []).map(function (s) { return String(typeof s === "string" ? s : (s && s.name) || "").replace(/\s*\(.*?\)|\s*·.*$/g, "").trim(); })
+      .filter(function (s, i, a) { return s && a.indexOf(s) === i; }).slice(0, 4);
+    return { updated: d.updated, provider: src.length ? src.join(", ") : "Yahoo Finance, FRED", items: items };
+  }
+  fetch(LIVE + "?m=" + Math.floor(Date.now() / 60000), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("live feed " + r.status); return r.json(); })
+    .then(function (d) { var b = fromLive(d); if (!b.items.length) throw new Error("empty live feed"); return b; })
+    .catch(function () {
+      return fetch("/data/market/quotes.json?t=" + Date.now()).then(function (r) { if (!r.ok) throw new Error("quotes.json not found (" + r.status + ")"); return r.json(); });
+    })
     .then(function (d) { lastData = d; render(d); })
-    .catch(function (e) { fail("Market data unavailable — " + e.message + ". The daily job writes data/market/quotes.json."); });
+    .catch(function (e) { fail("Market data unavailable — " + e.message + "."); });
 })();

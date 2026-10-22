@@ -9,10 +9,11 @@ name: Update live market data
 # (Free key at twelvedata.com. For intraday/real-time across many tickers,
 #  the paid Grow plan lifts the 8 req/min · 800/day free limits.)
 
+# PAUSED (22 Oct 2026): the TWELVEDATA_API_KEY secret was never set, so every
+# scheduled run failed. The /markets board now reads the live feed written by
+# live-market.yml (Yahoo Finance, FRED, ECB…); run this by hand only if a
+# Twelve Data key is added.
 on:
-  schedule:
-    - cron: "0 6 * * 1-5"    # 06:00 UTC weekdays (pre-EU open)
-    - cron: "5 20 * * 1-5"   # 20:05 UTC weekdays (after US close)
   workflow_dispatch: {}
 
 concurrency:
