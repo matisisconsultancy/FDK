@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-time-to-production-economy",
+    title: "GVI Corporate Benchmark the Time-to-production Economy",
+    excerpt: "The FDK GVI Corporate Benchmark for October 22, 2026 — rankings, accelerators and the shift from announced capacity to demonstrated output.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "07:27",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-sovereign-silicon-squeeze",
     title: "GVI: The Sovereign: Silicon Squeeze",
     excerpt: "US tech earnings, Britain's inflation shock and France's bond repricing reveal that financial resilience now determines who can sustain AI acceleration.",

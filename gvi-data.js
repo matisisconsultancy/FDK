@@ -115,7 +115,8 @@ window.GVI_DATA = {
       "gvi-the-price-of-acceleration",
       "gvi-corporate-benchmark-2026-10-21",
       "the-next-economy-research-centre-2026-10-21",
-      "gvi-the-sovereign-silicon-squeeze"
+      "gvi-the-sovereign-silicon-squeeze",
+      "gvi-corporate-benchmark-the-time-to-production-economy"
     ]
   },
   "daily": {
@@ -3127,6 +3128,12 @@ window.GVI_DATA = {
         "url": "/gvi-the-sovereign-silicon-squeeze",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead; the capacity to finance AI becomes the binding constraint"
+      },
+      {
+        "title": "GVI Corporate Benchmark the Time-to-production Economy",
+        "url": "/gvi-corporate-benchmark-the-time-to-production-economy",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.1 lead; Nvidia's DSX POD puts time-to-production in focus"
       }
     ]
   },
@@ -3232,7 +3239,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-21",
+    "asOf": "2026-10-22",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3240,7 +3247,7 @@ window.GVI_DATA = {
         "name": "TSMC",
         "score": 99.7,
         "delta": 0,
-        "trend": "up",
+        "trend": "flat",
         "note": "Manufacturing leadership"
       },
       {
@@ -3248,40 +3255,40 @@ window.GVI_DATA = {
         "name": "Microsoft",
         "score": 99.2,
         "delta": 0,
-        "trend": "up",
-        "note": "Sovereign AI expansion"
+        "trend": "flat",
+        "note": "Enterprise monetization"
       },
       {
         "rank": 3,
         "name": "Amazon",
         "score": 99.1,
-        "delta": 0.1,
+        "delta": 0,
         "trend": "up",
-        "note": "Ecosystem acceleration; only leadership upgrade today"
+        "note": "Ecosystem expansion"
       },
       {
         "rank": 4,
         "name": "Schneider Electric",
-        "score": 98.9,
-        "delta": 0,
+        "score": 99,
+        "delta": 0.1,
         "trend": "up",
-        "note": "Physical AI infrastructure"
+        "note": "Infrastructure acceleration"
       },
       {
         "rank": 5,
+        "name": "Nvidia",
+        "score": 98.3,
+        "delta": 0.3,
+        "trend": "up",
+        "note": "Architecture and deployment"
+      },
+      {
+        "rank": 6,
         "name": "ASML",
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Semiconductor equipment"
-      },
-      {
-        "rank": 6,
-        "name": "Nvidia",
-        "score": 98,
-        "delta": 0,
-        "trend": "up",
-        "note": "Platform expansion; credit risk"
+        "note": "Semiconductor scarcity"
       },
       {
         "rank": 7,
@@ -3289,7 +3296,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Structural growth"
+        "note": "Custom silicon"
       },
       {
         "rank": 8,
@@ -3297,7 +3304,7 @@ window.GVI_DATA = {
         "score": 97.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Operational AI deployment"
+        "note": "Operational AI"
       },
       {
         "rank": 9,
@@ -3305,13 +3312,13 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Power infrastructure"
+        "note": "Grid infrastructure"
       },
       {
         "rank": 10,
         "name": "Siemens AG",
-        "score": 97.2,
-        "delta": 0,
+        "score": 97.3,
+        "delta": 0.1,
         "trend": "up",
         "note": "Industrial AI"
       }
@@ -3321,9 +3328,9 @@ window.GVI_DATA = {
         "rank": 1,
         "name": "Volkswagen Group",
         "score": 61.6,
-        "delta": -0.2,
+        "delta": 0,
         "trend": "down",
-        "note": "Execution pressure; ID. UNYX 08 sales far below target"
+        "note": null
       },
       {
         "rank": 2,
@@ -3331,7 +3338,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Restructuring"
+        "note": null
       },
       {
         "rank": 3,
@@ -3339,7 +3346,7 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "up",
-        "note": "Strategic rebuilding"
+        "note": null
       },
       {
         "rank": 4,
@@ -3347,7 +3354,7 @@ window.GVI_DATA = {
         "score": 67.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Mixed transition"
+        "note": null
       },
       {
         "rank": 5,
@@ -3355,7 +3362,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Operational execution"
+        "note": null
       },
       {
         "rank": 6,
@@ -3363,7 +3370,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "down",
-        "note": "Energy competitiveness"
+        "note": null
       },
       {
         "rank": 7,
@@ -3371,7 +3378,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Technology transition"
+        "note": null
       },
       {
         "rank": 8,
@@ -3379,7 +3386,7 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Digital transformation"
+        "note": null
       },
       {
         "rank": 9,
@@ -3387,7 +3394,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "down",
-        "note": "Demand pressure"
+        "note": null
       },
       {
         "rank": 10,
@@ -3395,23 +3402,33 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Infrastructure consolidation"
+        "note": null
       }
     ],
     "pillars": [
       {
-        "pillar": "Three accelerators defining the cohort",
+        "pillar": "Time-to-production",
         "leaders": [
-          "TSMC",
-          "Amazon",
-          "Microsoft"
+          "Nvidia"
+        ]
+      },
+      {
+        "pillar": "Enterprise cash conversion",
+        "leaders": [
+          "SAP"
+        ]
+      },
+      {
+        "pillar": "Power infrastructure platform",
+        "leaders": [
+          "Iberdrola"
         ]
       }
     ],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-21",
-      "date": "2026-10-21",
+      "title": "GVI Corporate Benchmark the Time-to-production Economy",
+      "url": "/gvi-corporate-benchmark-the-time-to-production-economy",
+      "date": "2026-10-22",
       "slot": "GVI"
     }
   },
