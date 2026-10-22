@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-sovereign-silicon-squeeze",
+    title: "GVI: The Sovereign: Silicon Squeeze",
+    excerpt: "US tech earnings, Britain's inflation shock and France's bond repricing reveal that financial resilience now determines who can sustain AI acceleration.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "07:24",
+    kind: "day"
+  },
+  {
     url: "/barclays-and-european-banking-the-credit-transmission-test",
     title: "Barclays and European Banking: The Credit Transmission Test",
     excerpt: "Earnings confirm AI demand is real, but sovereign spreads, energy prices and financing costs now decide who can deliver it.",
