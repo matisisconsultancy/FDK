@@ -116,7 +116,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-10-21",
       "the-next-economy-research-centre-2026-10-21",
       "gvi-the-sovereign-silicon-squeeze",
-      "gvi-corporate-benchmark-the-time-to-production-economy"
+      "gvi-corporate-benchmark-the-time-to-production-economy",
+      "the-next-economy-research-centre-2026-10-22"
     ]
   },
   "daily": {
@@ -3583,99 +3584,75 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-21",
+    "asOf": "2026-10-22",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The AI supercycle is producing record revenues, but electricity delays are beginning to destroy financial value, and the market is learning to tell the difference. Capital determines what can be financed; electricity determines what can be delivered.",
+    "hypothesis": "The technology to produce intelligence is getting faster and cheaper, while the capital and power to deploy it grow more demanding.",
     "rows": [
       {
-        "k": "NextDC equity (early trading)",
-        "latest": "−44%",
-        "trend": "down",
-        "reading": "Grid delay hit contracted revenue and repriced the equity; liquidity of A$8.675B means it is not imminent distress."
-      },
-      {
-        "k": "NextDC FY2027 net revenue guidance",
-        "latest": "A$475–500M (from A$615–640M)",
-        "trend": "down",
-        "reading": "Cut of roughly 22% at the midpoint after Jemena suspended upgrades for the M3 Melbourne facility."
-      },
-      {
-        "k": "NextDC FY2027 underlying EBITDA guidance",
-        "latest": "A$245–265M (from A$385–410M)",
-        "trend": "down",
-        "reading": "Cut of roughly 36% at the midpoint; the next grid supply increase is not expected until fiscal 2028."
-      },
-      {
-        "k": "NextDC contracted revenue deferred",
-        "latest": "~A$140M",
-        "trend": "down",
-        "reading": "Deferred commissioning, with service-level credits and, in some cases, customer termination rights."
-      },
-      {
-        "k": "Supermicro preliminary Q1 FY27 revenue",
-        "latest": "$18.5–19.5B (from $14.5–15.5B)",
+        "k": "Lam Research quarterly revenue",
+        "latest": "$8.22B (up from $6.72B), +22% QoQ",
         "trend": "up",
-        "reading": "Hardware demand is accelerating; gross margin is expected at 12–12.5%. Final results are due November 3."
+        "reading": "Record quarter with a 40% GAAP operating margin; suppliers are monetizing equipment demand now."
       },
       {
-        "k": "SpaceX Q3 AI revenue",
-        "latest": "$7.56B (from ~$813M a year earlier)",
+        "k": "Besi Q3 orders",
+        "latest": "€342.6M, +96% YoY",
         "trend": "up",
-        "reading": "Rapid revenue from renting existing computing capacity; consolidated revenue was $14.58B, up 161%."
+        "reading": "Above the €298M consensus; semiconductor-equipment strength continues."
       },
       {
-        "k": "SpaceX quarterly capital expenditure",
-        "latest": "$19.6B (~$16.4B AI infrastructure)",
+        "k": "Nvidia DSX POD deployment time",
+        "latest": "~6 months to as little as 14 days at prepared sites",
+        "trend": "down",
+        "reading": "Claimed compression of time to productive intelligence; availability expected early 2027, and grid and permitting delays remain."
+      },
+      {
+        "k": "Power efficiency (Nvidia MaxLPS / Nscale)",
+        "latest": "Up to 30% less power for equal output; +49% inference throughput in a 264 kW budget",
         "trend": "up",
-        "reading": "Expected to rise further; durable returns depend on incremental margins, depreciation, customer concentration and free cash flow."
+        "reading": "Raises output within existing electricity allocations but does not resolve grid access."
       },
       {
-        "k": "Hyperscaler 2026 CapEx (IEA)",
-        "latest": ">$700B",
+        "k": "France 10-year OAT yield",
+        "latest": "~5%, highest since 2002",
+        "trend": "up",
+        "reading": "Up ~8 bp on the session and 20+ bp over the week; sovereign financing is becoming a strategic constraint."
+      },
+      {
+        "k": "France–Germany 10-year spread",
+        "latest": "~150 bp (15-year high near 160)",
+        "trend": "up",
+        "reading": "Approaching the 15-year high; leveraged developers face more demanding conditions."
+      },
+      {
+        "k": "Tesla 2026 capex",
+        "latest": "~$20B vs prior outlook above $25B",
+        "trend": "down",
+        "reading": "Q3 free cash flow of $1.53B partly reflects spending below plan; net income fell 43% YoY."
+      },
+      {
+        "k": "NextDC M3 Melbourne",
+        "latest": "Delayed to FY2028",
+        "trend": "down",
+        "reading": "Shows grid access remains a binding constraint on AI deployment."
+      },
+      {
+        "k": "EU AI Gigafactories",
+        "latest": "Up to 7 facilities, over €30B (up to €10B public, ≥€20B private)",
         "trend": "flat",
-        "reading": "Financial capital is moving faster than physical infrastructure; grid-connection queues in some jurisdictions exceed existing peak demand, though they include speculative and duplicated applications."
+        "reading": "A program target, not committed capital."
       },
       {
-        "k": "TSMC / ASML baseline",
-        "latest": "TSMC $46.72B revenue (66.4% margin); ASML €11.66B (57.5% margin)",
+        "k": "Lam Research revenue geography",
+        "latest": "China 35%, South Korea 20%, Taiwan 18% (73% combined); Europe 4%",
         "trend": "flat",
-        "reading": "The semiconductor baseline is unchanged."
-      },
-      {
-        "k": "Eurozone industrial production (August)",
-        "latest": "−0.5% m/m, −1.1% y/y",
-        "trend": "down",
-        "reading": "Weak industrial output despite strong AI-related earnings."
-      },
-      {
-        "k": "STOXX 600 Q3 earnings growth (LSEG I/B/E/S)",
-        "latest": "+20.7% y/y (technology near 33%)",
-        "trend": "up",
-        "reading": "Partly driven by energy profits and data-centre suppliers; Europe may capture value via ASML, ABB, Schneider Electric and Siemens."
-      },
-      {
-        "k": "Elice (South Korea) debut",
-        "latest": "~−32%",
-        "trend": "down",
-        "reading": "The market is becoming more selective rather than uniformly distressed."
-      },
-      {
-        "k": "CoreWeave 2031 bond yield",
-        "latest": "nearly 16%",
-        "trend": "flat",
-        "reading": "Financing for developers is demanding; it points to selection, not uniform distress."
-      },
-      {
-        "k": "Siemens–Nvidia Erlangen demonstration",
-        "latest": "up to 85% less engineering effort; up to 20% production-planning savings",
-        "trend": "up",
-        "reading": "Gains are specific to certain workflows, not economy-wide."
+        "reading": "Asian dominance in equipment demand; Europe remains indispensable in lithography, software, power systems and physical AI."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-21",
-      "date": "2026-10-21",
+      "url": "/the-next-economy-research-centre-2026-10-22",
+      "date": "2026-10-22",
       "slot": "Morning Brief"
     }
   }
