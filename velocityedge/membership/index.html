@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Membership · The Velocity Edge · FDK EmpowerNet</title>
+  <meta name="description" content="The Velocity Edge membership: every note at four depths — the one-minute signal, the daily note, the deep reading and the full paper." />
+  <meta name="theme-color" content="#04070e" />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/ve-nav.css?v=8117e33b67" />
+  <style>
+    /* ============================================================
+       The Velocity Edge · Membership (PREVIEW — noindex)
+       Tiers, the paywall line and one real note at four depths.
+       Prices are indicative until validated with Francesco.
+       ============================================================ */
+    :root {
+      --bg: #04070e; --bg2: #08101f; --card: #0b1426; --line: rgba(255,255,255,.10); --line2: rgba(255,255,255,.18);
+      --ink: #f4f7fc; --soft: #b8c3d6; --mute: #7f8ca3;
+      --sky: #309bff; --sky-deep: #1a6fd0; --glacier: #7fd6ff; --green: #2ee06a; --sun: #f5b82e;
+      --display: "Space Grotesk", -apple-system, BlinkMacSystemFont, sans-serif;
+      --body: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+      --serif: "Fraunces", Georgia, serif;
+      --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+      --ease: cubic-bezier(.16,1,.3,1);
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 400 16px/1.6 var(--body); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    a { color: inherit; }
+    .wrap { max-width: 1180px; margin: 0 auto; padding-inline: 24px; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; font: 500 .72rem/1 var(--mono); letter-spacing: .14em; text-transform: uppercase; color: var(--glacier); }
+    .eyebrow::before { content: ""; width: 18px; height: 1px; background: currentColor; opacity: .7; }
+    h1, h2, h3 { font-family: var(--display); font-weight: 500; letter-spacing: -.02em; margin: 0; }
+    .sec { padding: clamp(72px, 10vw, 128px) 0 0; }
+    .sec__head { max-width: 760px; margin-bottom: 40px; }
+    .sec__head h2 { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.08; margin-top: 18px; text-wrap: balance; }
+    .sec__head p { color: var(--soft); font-size: 1.05rem; margin: 18px 0 0; text-wrap: pretty; }
+    .preview-flag { position: fixed; z-index: 95; right: 16px; bottom: 16px; font: 500 .68rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase;
+      padding: 9px 12px; border-radius: 999px; background: rgba(245,184,46,.14); color: var(--sun); border: 1px solid rgba(245,184,46,.35); backdrop-filter: blur(8px); }
+
+    /* hero */
+    .hero { position: relative; padding: calc(150px + env(safe-area-inset-top, 0px)) 0 0; overflow: hidden; }
+    .hero::before { content: ""; position: absolute; inset: -20% -10% auto; height: 640px; pointer-events: none;
+      background: radial-gradient(45% 60% at 70% 30%, rgba(48,155,255,.20), transparent 70%), radial-gradient(35% 50% at 15% 10%, rgba(127,214,255,.10), transparent 70%); }
+    .hero__in { position: relative; max-width: 900px; }
+    .hero h1 { font-size: clamp(2.4rem, 6.4vw, 4.8rem); line-height: 1.02; margin-top: 22px; text-wrap: balance; }
+    .hero h1 em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--glacier); }
+    .hero p { color: var(--soft); font-size: clamp(1.02rem, 1.5vw, 1.18rem); max-width: 640px; margin: 26px 0 0; text-wrap: pretty; }
+    .depths { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; padding: 0; list-style: none; }
+    .depths a { display: inline-flex; align-items: baseline; gap: 8px; padding: 11px 16px; border-radius: 999px; border: 1px solid var(--line2); text-decoration: none; font: 500 .9rem/1 var(--display); transition: border-color .3s, background .3s; }
+    .depths a b { font: 600 1.05rem/1 var(--mono); color: var(--sky); }
+    .depths a:hover { border-color: var(--sky); background: rgba(48,155,255,.08); }
+
+    /* one note, four depths */
+    .reader { border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(180deg, var(--bg2), var(--bg)); overflow: hidden; }
+    .reader__bar { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); }
+    .reader__tab { appearance: none; border: 0; background: none; color: var(--mute); padding: 18px 12px 16px; text-align: left; cursor: pointer; position: relative; font: inherit; transition: color .25s, background .25s; }
+    .reader__tab + .reader__tab { border-left: 1px solid var(--line); }
+    .reader__tab b { display: block; font: 600 clamp(1.3rem, 3vw, 1.9rem)/1 var(--mono); color: inherit; }
+    .reader__tab span { display: block; margin-top: 8px; font: 500 .74rem/1.3 var(--mono); letter-spacing: .08em; text-transform: uppercase; }
+    .reader__tab i { display: block; margin-top: 6px; font-style: normal; font-size: .8rem; color: var(--mute); }
+    .reader__tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--sky); transform: scaleX(0); transform-origin: left; transition: transform .45s var(--ease); }
+    .reader__tab[aria-selected="true"] { color: var(--ink); background: rgba(48,155,255,.06); }
+    .reader__tab[aria-selected="true"] b { color: var(--sky); }
+    .reader__tab[aria-selected="true"]::after { transform: scaleX(1); }
+    .reader__tab:focus-visible { outline: 2px solid var(--sky); outline-offset: -4px; }
+    .panel { padding: clamp(24px, 4vw, 48px); }
+    .panel[hidden] { display: none; }
+    .panel__meta { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font: 500 .74rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mute); margin-bottom: 22px; }
+    .tier-tag { padding: 6px 10px; border-radius: 999px; border: 1px solid currentColor; }
+    .tier-tag--free { color: var(--green); } .tier-tag--ind { color: var(--glacier); } .tier-tag--pro { color: var(--sky); } .tier-tag--inst { color: var(--sun); }
+    .note-kicker { font: 500 .78rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--sky); }
+    .note-title { font-size: clamp(1.6rem, 3.4vw, 2.5rem); line-height: 1.1; margin: 12px 0 0; text-wrap: balance; }
+    .note-dek { color: var(--soft); font-size: 1.06rem; margin: 14px 0 0; max-width: 760px; }
+    .note-body { max-width: 760px; margin-top: 26px; color: #dfe6f2; }
+    .note-body p { margin: 0 0 16px; }
+    .note-body h3 { font-size: 1.25rem; margin: 30px 0 10px; }
+    .note-body strong { color: #fff; }
+    .points { list-style: none; padding: 0; margin: 26px 0 0; display: grid; gap: 14px; max-width: 780px; counter-reset: pt; }
+    .points li { position: relative; padding: 16px 18px 16px 58px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.02); counter-increment: pt; }
+    .points li::before { content: counter(pt, decimal-leading-zero); position: absolute; left: 18px; top: 16px; font: 600 .9rem/1.6 var(--mono); color: var(--sky); }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin: 26px 0; max-width: 820px; }
+    .stat { border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+    .stat b { display: block; font: 600 1.45rem/1.1 var(--mono); color: var(--glacier); }
+    .stat span { display: block; margin-top: 8px; font-size: .82rem; color: var(--soft); line-height: 1.45; }
+    .gate { position: relative; }
+    .gate__fade { position: relative; max-height: 300px; overflow: hidden; }
+    .gate__fade::after { content: ""; position: absolute; inset: auto 0 0; height: 200px; background: linear-gradient(transparent, var(--bg)); }
+    .gate__cta { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: center; justify-content: space-between; margin-top: 8px; padding: 20px 22px; border-radius: 16px;
+      border: 1px solid rgba(48,155,255,.35); background: rgba(48,155,255,.07); max-width: 820px; }
+    .gate__cta p { margin: 0; color: var(--soft); font-size: .95rem; max-width: 460px; }
+    .gate__cta p b { color: var(--ink); }
+    .btn { appearance: none; border: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; padding: 0 20px; border-radius: 999px;
+      font: 600 .92rem/1 var(--display); text-decoration: none; background: var(--sky); color: #04101f; transition: transform .25s var(--ease), background .25s; }
+    .btn:hover { background: #59b0ff; transform: translateY(-1px); }
+    .btn:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+    .btn--ghost { background: transparent; color: var(--ink); border: 1px solid var(--line2); }
+    .btn--ghost:hover { background: rgba(255,255,255,.06); }
+    .btn--sun { background: var(--sun); color: #1b1300; }
+    .btn--sun:hover { background: #ffc94d; }
+    .toc { list-style: none; padding: 0; margin: 22px 0 0; max-width: 780px; border-top: 1px solid var(--line); }
+    .toc li { display: grid; grid-template-columns: 44px 1fr auto; gap: 14px; align-items: baseline; padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .toc li > span:first-child { font: 600 .85rem/1 var(--mono); color: var(--sun); }
+    .toc li em { font-style: normal; color: var(--mute); font: 500 .74rem/1 var(--mono); }
+    .toc small { display: block; color: var(--mute); font-size: .86rem; margin-top: 4px; }
+
+    /* plans */
+    .bill { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; border: 1px solid var(--line2); margin-bottom: 26px; }
+    .bill button { appearance: none; border: 0; background: none; color: var(--soft); font: 500 .85rem/1 var(--display); padding: 10px 16px; border-radius: 999px; cursor: pointer; }
+    .bill button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+    .bill small { color: var(--green); font-weight: 600; margin-left: 4px; }
+    .plans { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .plan { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 20px; padding: 26px 22px; background: var(--card); position: relative; }
+    .plan--hot { border-color: rgba(48,155,255,.6); box-shadow: 0 0 0 1px rgba(48,155,255,.25), 0 24px 60px -30px rgba(48,155,255,.5); }
+    .plan__badge { position: absolute; top: -11px; left: 22px; font: 600 .66rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; background: var(--sky); color: #04101f; padding: 6px 9px; border-radius: 999px; }
+    .plan h3 { font-size: 1.2rem; }
+    .plan__depth { margin-top: 6px; font: 500 .74rem/1.3 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--mute); }
+    .plan__price { margin: 22px 0 4px; font: 600 2.4rem/1 var(--display); letter-spacing: -.03em; }
+    .plan__price small { font: 500 .85rem/1 var(--body); color: var(--mute); letter-spacing: 0; margin-left: 4px; }
+    .plan__note { min-height: 1.4em; font-size: .8rem; color: var(--mute); }
+    .plan ul { list-style: none; padding: 0; margin: 20px 0 24px; display: grid; gap: 10px; font-size: .92rem; color: var(--soft); flex: 1; }
+    .plan li { position: relative; padding-left: 24px; line-height: 1.45; }
+    .plan li::before { content: ""; position: absolute; left: 2px; top: .5em; width: 10px; height: 6px; border-left: 2px solid var(--sky); border-bottom: 2px solid var(--sky); transform: rotate(-45deg); }
+    .plan li.plus { color: var(--ink); }
+    .plan .btn { width: 100%; }
+    .inst { margin-top: 14px; display: grid; grid-template-columns: 1.2fr 1fr auto; gap: 24px; align-items: center; padding: 28px; border-radius: 20px;
+      border: 1px solid rgba(245,184,46,.35); background: linear-gradient(120deg, rgba(245,184,46,.08), rgba(245,184,46,.01)); }
+    .inst h3 { font-size: 1.4rem; }
+    .inst p { margin: 8px 0 0; color: var(--soft); font-size: .95rem; }
+    .inst ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: .9rem; color: var(--soft); }
+    .inst li::before { content: "◆"; color: var(--sun); font-size: .7rem; margin-right: 10px; }
+
+    /* paywall line */
+    .wall { width: 100%; border-collapse: collapse; font-size: .92rem; }
+    .wall-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 18px; }
+    .wall th, .wall td { padding: 14px 16px; text-align: center; border-bottom: 1px solid var(--line); white-space: nowrap; }
+    .wall th:first-child, .wall td:first-child { text-align: left; white-space: normal; min-width: 240px; color: var(--soft); }
+    .wall thead th { font: 600 .74rem/1.2 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mute); background: rgba(255,255,255,.02); }
+    .wall tbody tr:last-child td { border-bottom: 0; }
+    .wall .y { color: var(--sky); font-weight: 700; } .wall .n { color: rgba(255,255,255,.22); }
+    .wall .lim { font: 500 .78rem/1 var(--mono); color: var(--glacier); }
+    .wall .grp td { font: 600 .7rem/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--glacier); background: rgba(127,214,255,.04); text-align: left; }
+
+    /* the daily grid */
+    .grid-day { list-style: none; padding: 0; margin: 0; display: grid; gap: 0; border-left: 1px solid var(--line2); margin-left: 8px; }
+    .grid-day li { position: relative; display: grid; grid-template-columns: 92px 1fr auto; gap: 18px; align-items: baseline; padding: 18px 0 18px 26px; border-bottom: 1px solid var(--line); }
+    .grid-day li::before { content: ""; position: absolute; left: -6px; top: 25px; width: 11px; height: 11px; border-radius: 50%; background: var(--bg); border: 2px solid var(--c, var(--sky)); }
+    .grid-day time { font: 600 .95rem/1 var(--mono); color: var(--c, var(--sky)); }
+    .grid-day b { font: 500 1.05rem/1.3 var(--display); }
+    .grid-day p { margin: 4px 0 0; color: var(--mute); font-size: .88rem; }
+    .pk { font: 600 .66rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 6px 9px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
+    .packs { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-top: 30px; }
+    .pack { border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
+    .pack b { font: 600 .78rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
+    .pack p { margin: 10px 0 0; color: var(--soft); font-size: .88rem; }
+
+    /* reserve dialog */
+    dialog { border: 1px solid var(--line2); border-radius: 22px; background: var(--bg2); color: var(--ink); padding: 0; width: min(520px, calc(100vw - 32px)); }
+    dialog::backdrop { background: rgba(2,4,10,.7); backdrop-filter: blur(4px); }
+    .dlg { padding: 28px; }
+    .dlg h3 { font-size: 1.4rem; }
+    .dlg p { color: var(--soft); font-size: .92rem; margin: 8px 0 18px; }
+    .dlg label { display: block; font: 500 .72rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--mute); margin: 14px 0 7px; }
+    .dlg input, .dlg select { width: 100%; min-height: 46px; border-radius: 12px; border: 1px solid var(--line2); background: var(--bg); color: var(--ink); font: 400 1rem var(--body); padding: 0 14px; }
+    .dlg input:focus, .dlg select:focus { outline: 2px solid var(--sky); outline-offset: 1px; }
+    .dlg__row { display: flex; gap: 10px; justify-content: flex-end; margin-top: 22px; }
+    .dlg__msg { min-height: 1.4em; font-size: .9rem; margin-top: 12px; }
+    .fine { color: var(--mute); font-size: .82rem; text-align: center; padding: 70px 0 110px; max-width: 720px; margin: 0 auto; }
+
+    @media (max-width: 980px) {
+      .plans, .packs { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .inst { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .reader__bar { grid-template-columns: repeat(2, 1fr); }
+      .reader__tab:nth-child(3) { border-left: 0; }
+      .reader__tab:nth-child(n+3) { border-top: 1px solid var(--line); }
+      .plans, .packs { grid-template-columns: 1fr; }
+      .grid-day li { grid-template-columns: 64px 1fr; }
+      .grid-day li .pk { grid-column: 2; justify-self: start; margin-top: 6px; }
+      .toc li { grid-template-columns: 34px 1fr; } .toc li em { grid-column: 2; }
+    }
+    @media (max-width: 640px) { .preview-flag { position: absolute; top: calc(98px + env(safe-area-inset-top, 0px)); bottom: auto; right: 16px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+  </style>
+</head>
+<body>
+  <!-- VE-NAV · The Velocity Edge menu — generated by scripts/ve-nav.mjs, edit it there -->
+  <header class="snav" id="nav">
+    <div class="snav__wrap"><div class="snav__inner">
+      <a href="/velocityedge/" class="sbrand" aria-label="The Velocity Edge by FDK, home" data-no-i18n><span class="sbrand__mark" aria-hidden="true"><svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" width="30" height="30"><path d="M16 18H96L110 7"/><path d="M16 18V104"/><path d="M16 53H40"/><path d="M40 18V104"/><path d="M40 18A44 43 0 0 1 40 104"/><path d="M16 104H96L110 115"/><path d="M40 61L82 22"/><path d="M40 61L88 101"/></svg></span><span class="sbrand__text"><b>fdk</b><i>Velocity Edge</i></span></a>
+      <nav class="snav__links" id="navLinks" aria-label="The Velocity Edge">
+        <div class="snav__has-sub">
+          <a href="/velocityedge/#go-daily" class="snav__sub-toggle">The Daily <span class="snav__caret" aria-hidden="true"></span></a>
+          <div class="snav__submenu"><a href="/intelligence-library/?edition=morning" data-edition="morning"><i class="sdot sdot--morning" aria-hidden="true"></i>Morning Brief</a><a href="/intelligence-library/?edition=midday" data-edition="midday"><i class="sdot sdot--midday" aria-hidden="true"></i>Midday Pulse</a><a href="/intelligence-library/?edition=closing" data-edition="closing"><i class="sdot sdot--closing" aria-hidden="true"></i>The Close</a><a href="/intelligence-library/?edition=week" data-edition="week"><i class="sdot sdot--week" aria-hidden="true"></i>Week Ahead</a><a href="/intelligence-library/?edition=focus" data-edition="focus"><i class="sdot sdot--focus" aria-hidden="true"></i>In Focus</a><a href="/intelligence-library/?edition=gvi" data-edition="gvi"><i class="sdot sdot--gvi" aria-hidden="true"></i>GVI</a><a href="/intelligence-library/" class="snav__submenu-all" data-edition="all">All notes <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <a href="/velocityedge/#go-monitor">What we watch</a>
+        <div class="snav__has-sub">
+          <a href="/velocityedge/dashboard/" class="snav__sub-toggle">Dashboard <span class="snav__caret" aria-hidden="true"></span></a>
+          <div class="snav__submenu"><a href="/velocityedge/dashboard/#tab-today">Today</a><a href="/velocityedge/dashboard/#tab-market">Market</a><a href="/velocityedge/dashboard/#tab-velocity">Velocity</a><a href="/velocityedge/dashboard/#tab-rankings">Rankings</a><a href="/velocityedge/dashboard/#tab-indices">Indices</a><a href="/velocityedge/dashboard/#tab-next">Next Economy</a><a href="/velocityedge/dashboard/" class="snav__submenu-all">Open full dashboard <span aria-hidden="true">↗</span></a></div>
+        </div>
+        <a href="/" class="snav__ext">FDK EmpowerNet <span aria-hidden="true">↗</span></a>
+        <a href="/velocityedge/#go-subscribe" class="snav__cta">Subscribe <span aria-hidden="true">→</span></a>
+      </nav>
+      <button class="snav__toggle" id="veBurger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mmenu"><span></span><span></span><span></span></button>
+    </div></div>
+  </header>
+  <div class="mmenu" id="mmenu" hidden><nav class="mmenu__in" aria-label="Menu">
+    <div class="mm-g" style="--i:0"><div class="mm-row"><a href="/velocityedge/#go-daily">The Daily</a><button class="mm-tog" type="button" aria-expanded="false" aria-controls="mmS1" aria-label="The Daily: show sections"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="mm-sub" id="mmS1" inert><div class="mm-sub__in"><div class="mmenu__books"><a href="/intelligence-library/?edition=morning" data-edition="morning"><i class="sdot sdot--morning" aria-hidden="true"></i>Morning Brief</a><a href="/intelligence-library/?edition=midday" data-edition="midday"><i class="sdot sdot--midday" aria-hidden="true"></i>Midday Pulse</a><a href="/intelligence-library/?edition=closing" data-edition="closing"><i class="sdot sdot--closing" aria-hidden="true"></i>The Close</a><a href="/intelligence-library/?edition=week" data-edition="week"><i class="sdot sdot--week" aria-hidden="true"></i>Week Ahead</a><a href="/intelligence-library/?edition=focus" data-edition="focus"><i class="sdot sdot--focus" aria-hidden="true"></i>In Focus</a><a href="/intelligence-library/?edition=gvi" data-edition="gvi"><i class="sdot sdot--gvi" aria-hidden="true"></i>GVI</a><a href="/intelligence-library/" data-edition="all">All notes <span aria-hidden="true">↗</span></a></div></div></div></div>
+    <a href="/velocityedge/#go-monitor" style="--i:1">What we watch</a>
+    <div class="mm-g" style="--i:2"><div class="mm-row"><a href="/velocityedge/dashboard/">Dashboard</a><button class="mm-tog" type="button" aria-expanded="false" aria-controls="mmS2" aria-label="Dashboard: show sections"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button></div><div class="mm-sub" id="mmS2" inert><div class="mm-sub__in"><div class="mmenu__books"><a href="/velocityedge/dashboard/#tab-today">Today</a><a href="/velocityedge/dashboard/#tab-market">Market</a><a href="/velocityedge/dashboard/#tab-velocity">Velocity</a><a href="/velocityedge/dashboard/#tab-rankings">Rankings</a><a href="/velocityedge/dashboard/#tab-indices">Indices</a><a href="/velocityedge/dashboard/#tab-next">Next Economy</a></div></div></div></div>
+    <a href="/" style="--i:3">FDK EmpowerNet<small>↗</small></a>
+    <a class="mmenu__cta" href="/velocityedge/#go-subscribe" style="--i:4">Subscribe <span aria-hidden="true">→</span></a>
+    <div class="mmenu__lang" role="group" aria-label="Language / Idioma / Lingua" data-no-i18n><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button><button type="button" data-lang="it" lang="it" aria-pressed="false">IT</button></div>
+    <span class="mmenu__foot" data-no-i18n>The Velocity Edge · by FDK EmpowerNet</span>
+  </nav></div>
+  <!-- /VE-NAV -->
+
+<main>
+  <section class="hero"><div class="wrap hero__in">
+    <span class="eyebrow">The Velocity Edge · Membership</span>
+    <h1>Read the Next Economy at <em>the depth you need.</em></h1>
+    <p>Every note from Francesco De Leo Kaufmann exists at four depths: the one-minute signal, the daily note, the deep reading and the full paper. The signal is free. Each step deeper is a membership.</p>
+    <ul class="depths" aria-label="The four depths">
+      <li><a href="#depths" data-depth="1"><b>1</b> min · the signal</a></li>
+      <li><a href="#depths" data-depth="5"><b>5</b> min · the note</a></li>
+      <li><a href="#depths" data-depth="10"><b>10</b> min · the deep reading</a></li>
+      <li><a href="#depths" data-depth="50"><b>50</b> min · the full paper</a></li>
+    </ul>
+  </div></section>
+
+  <!-- ONE NOTE, FOUR DEPTHS -->
+  <section class="sec" id="depths"><div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">One note, four depths</span>
+      <h2>The same intelligence, from one minute to the full paper.</h2>
+      <p>A real In Focus note of 21 October 2026, shown the way each member would read it.</p>
+    </div>
+
+    <div class="reader">
+      <div class="reader__bar" role="tablist" aria-label="Reading depth">
+        <button class="reader__tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><b>1′</b><span>The signal</span><i>Free</i></button>
+        <button class="reader__tab" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><b>5′</b><span>The note</span><i>Individual</i></button>
+        <button class="reader__tab" role="tab" id="t10" aria-controls="p10" aria-selected="false" tabindex="-1"><b>10′</b><span>The deep reading</span><i>Professional</i></button>
+        <button class="reader__tab" role="tab" id="t50" aria-controls="p50" aria-selected="false" tabindex="-1"><b>50′</b><span>The full paper</span><i>Executive · Institutional</i></button>
+      </div>
+
+      <!-- 1 minute: free -->
+      <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+        <div class="panel__meta"><span class="tier-tag tier-tag--free">Free</span><span>45–60 seconds</span><span>Delivered 07:00 · email & web</span></div>
+        <div class="note-kicker">In Focus · 21 October 2026</div>
+        <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk</h3>
+        <ol class="points">
+          <li><strong>Europe’s resilience is real, but not yet structural.</strong> New ECB research credits AI investment, energy diversification and fiscal stimulus for weathering the 2026 energy shock.</li>
+          <li><strong>Energy is becoming a competitive asset.</strong> Gas set Spain’s electricity price in about 80% of hours in 2020 — just above 20% in 2026.</li>
+          <li><strong>The growth is partly imported.</strong> Global AI capital formation lifts European technology exports; Europe benefits from a supercycle it does not control.</li>
+          <li><strong>Output is decoupling from employment</strong> in software, while AI-equipment manufacturing still adds jobs.</li>
+          <li><strong>Monetary divergence deepens.</strong> UK inflation rose to 3.5%; the Bank of Japan names AI demand as a source of price pressure.</li>
+          <li><strong>The decisive transition</strong> is from AI-supported resilience to AI-generated productivity — before the investment boom slows.</li>
+        </ol>
+        <div class="gate__cta" style="margin-top:26px">
+          <p><b>Want the reasoning behind the six points?</b> The full note, its data and the investment implications are part of the membership.</p>
+          <button class="btn" type="button" data-show="5">Read the 5-minute note →</button>
+        </div>
+      </div>
+
+      <!-- 5 minutes: Individual -->
+      <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
+        <div class="panel__meta"><span class="tier-tag tier-tag--ind">Individual</span><span>About 5 minutes</span><span>Every daily note, in full</span></div>
+        <div class="note-kicker">In Focus · 21 October 2026</div>
+        <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk</h3>
+        <p class="note-dek">Europe has proven it can withstand the energy shock — the open question is whether the AI Supercycle is financing a new productive economy or merely concealing the structural weaknesses of the existing one.</p>
+        <div class="stats">
+          <div class="stat"><b>4.7%</b><span>ECB forecast for global trade growth in 2026, against 2% expected in December 2025</span></div>
+          <div class="stat"><b>80% → 20%</b><span>Share of hours when gas set Spanish electricity prices, 2020 → first nine months of 2026</span></div>
+          <div class="stat"><b>3.5%</b><span>UK annual inflation in September, up from 3.1% in August</span></div>
+          <div class="stat"><b>1.25%</b><span>Bank of Japan policy rate, with further tightening signalled</span></div>
+        </div>
+        <div class="gate"><div class="gate__fade note-body">
+          <p>The difference between resilience and structural competitiveness is becoming decisive. A consequential new assessment from the European Central Bank reveals that AI investment, energy diversification and fiscal stimulus have helped Europe withstand the 2026 energy shock. But much of that resilience depends on external investment demand and temporary policy support rather than established domestic productivity gains.</p>
+          <p>Meanwhile, fresh British inflation data strengthen the case for monetary tightening, while the Bank of Japan explicitly identifies AI-driven industrial demand as a contributor to rising prices. The Great Split is entering a more consequential monetary phase: economies are beginning to diverge according to whether AI creates durable productive capacity or merely provides temporary demand.</p>
+          <h3>The hidden pattern</h3>
+          <p><strong>Global AI capital formation → European technology exports → higher industrial activity → greater economic resilience.</strong> But this transmission remains vulnerable to investment decisions outside Europe.</p>
+        </div>
+        <div class="gate__cta">
+          <p><b>Individual · €16 a month.</b> Every Morning Brief, Midday Pulse and Close in full, every day.</p>
+          <button class="btn" type="button" data-reserve="Individual">Become a member</button>
+        </div></div>
+      </div>
+
+      <!-- 10 minutes: Professional -->
+      <div class="panel" role="tabpanel" id="p10" aria-labelledby="t10" hidden>
+        <div class="panel__meta"><span class="tier-tag tier-tag--pro">Professional</span><span>About 10 minutes</span><span>In Focus · Week Ahead · GVI</span></div>
+        <div class="note-kicker">In Focus · the deep reading</div>
+        <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk</h3>
+        <p class="note-dek">Six sections, the second-order effects and five takeaways for investors and European policymakers.</p>
+        <ol class="toc" aria-label="Sections of the deep reading">
+          <li><span>01</span><div>The ECB: Europe’s resilience is real — but not yet structural<small>Three forces, one warning</small></div><em>2 min</em></li>
+          <li><span>02</span><div>The hidden pattern: an AI Supercycle Europe does not fully control<small>A transmission it does not own</small></div><em>1 min</em></li>
+          <li><span>03</span><div>The labour-market divide: output decouples from employment<small>A divergence consistent with the Great Split</small></div><em>2 min</em></li>
+          <li><span>04</span><div>The Bank of England and Bank of Japan: two monetary warnings<small>The other side of the AI monetary transition</small></div><em>2 min</em></li>
+          <li><span>05</span><div>The next rotation: second-order effects and investment implications<small>A more differentiated investment regime</small></div><em>1 min</em></li>
+          <li><span>06</span><div>Five key takeaways · The final take<small>From dependence to domestic capital formation</small></div><em>2 min</em></li>
+        </ol>
+        <div class="gate__cta" style="margin-top:24px">
+          <p><b>Professional · €30 a month.</b> Everything in Individual, plus every In Focus deep reading, The Week Ahead and the GVI rankings with the full Velocity Dashboard.</p>
+          <button class="btn" type="button" data-reserve="Professional">Become a member</button>
+        </div>
+      </div>
+
+      <!-- 50 minutes: Executive / Institutional -->
+      <div class="panel" role="tabpanel" id="p50" aria-labelledby="t50" hidden>
+        <div class="panel__meta"><span class="tier-tag tier-tag--inst">Executive · Institutional</span><span>About 50 minutes</span><span>Monthly paper · PDF · methodology</span></div>
+        <div class="note-kicker">The full paper · illustrative outline</div>
+        <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk — the full paper</h3>
+        <p class="note-dek">The note becomes a paper: the data behind each claim, the method, country by country, and what it means for a balance sheet.</p>
+        <ol class="toc" aria-label="Outline of the full paper">
+          <li><span>I</span><div>Executive summary<small>The thesis on one page, for a board</small></div><em>3 min</em></li>
+          <li><span>II</span><div>The evidence<small>ECB research of 21 October, ONS, Bank of Japan testimony — sources and charts</small></div><em>10 min</em></li>
+          <li><span>III</span><div>Method<small>How the Global Velocity Index reads resilience versus productivity</small></div><em>8 min</em></li>
+          <li><span>IV</span><div>Country by country<small>Euro area, Spain, France, Germany, United Kingdom, Japan</small></div><em>12 min</em></li>
+          <li><span>V</span><div>Sectors and the next rotation<small>Equipment suppliers, AI adopters, energy infrastructure, sovereign debt</small></div><em>10 min</em></li>
+          <li><span>VI</span><div>Scenarios and signals to watch<small>What would confirm or break the thesis</small></div><em>7 min</em></li>
+        </ol>
+        <div class="gate__cta" style="margin-top:24px;border-color:rgba(245,184,46,.4);background:rgba(245,184,46,.06)">
+          <p><b>Executive · €50 a month</b> includes the monthly paper. <b>Institutional</b> members commission papers on their own questions, with a 1:1 briefing.</p>
+          <button class="btn btn--sun" type="button" data-reserve="Executive">Request access</button>
+        </div>
+      </div>
+    </div>
+  </div></section>
+
+  <!-- PLANS -->
+  <section class="sec" id="plans"><div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">Membership</span>
+      <h2>Four ways in. One for every depth.</h2>
+      <p>Founding members keep their price for as long as they stay.</p>
+    </div>
+    <div class="bill" role="group" aria-label="Billing">
+      <button type="button" data-bill="m" aria-pressed="true">Monthly</button>
+      <button type="button" data-bill="y" aria-pressed="false">Yearly <small>2 months free</small></button>
+    </div>
+    <div class="plans">
+      <article class="plan">
+        <h3>Signal</h3><div class="plan__depth">1 minute</div>
+        <div class="plan__price">€0</div><div class="plan__note">Always free</div>
+        <ul>
+          <li>The one-minute signal of every note</li>
+          <li>Five to six key points, every morning</li>
+          <li>The public Velocity Dashboard</li>
+          <li>One full note a week</li>
+        </ul>
+        <a class="btn btn--ghost" href="/velocityedge/#go-subscribe">Subscribe free</a>
+      </article>
+      <article class="plan">
+        <h3>Individual</h3><div class="plan__depth">5 minutes</div>
+        <div class="plan__price" data-m="€16" data-y="€160">€16<small>/ month</small></div><div class="plan__note" data-m="" data-y="€160 billed yearly"></div>
+        <ul>
+          <li class="plus">Everything in Signal</li>
+          <li>Every daily note in full: Morning Brief, Midday Pulse, The Close</li>
+          <li>The full archive of notes</li>
+          <li>EN · ES · IT</li>
+        </ul>
+        <button class="btn btn--ghost" type="button" data-reserve="Individual">Reserve a founding place</button>
+      </article>
+      <article class="plan plan--hot">
+        <span class="plan__badge">Most chosen</span>
+        <h3>Professional</h3><div class="plan__depth">10 minutes</div>
+        <div class="plan__price" data-m="€30" data-y="€300">€30<small>/ month</small></div><div class="plan__note" data-m="" data-y="€300 billed yearly"></div>
+        <ul>
+          <li class="plus">Everything in Individual</li>
+          <li>Every In Focus deep reading</li>
+          <li>The Week Ahead, every Sunday</li>
+          <li>GVI rankings and the full Velocity Dashboard</li>
+          <li>Sector watches: AI, central banks, European banking</li>
+        </ul>
+        <button class="btn" type="button" data-reserve="Professional">Reserve a founding place</button>
+      </article>
+      <article class="plan">
+        <h3>Executive</h3><div class="plan__depth">50 minutes</div>
+        <div class="plan__price" data-m="€50" data-y="€500">€50<small>/ month</small></div><div class="plan__note" data-m="" data-y="€500 billed yearly"></div>
+        <ul>
+          <li class="plus">Everything in Professional</li>
+          <li>The monthly full paper, with method and data</li>
+          <li>PDF editions to share with your board</li>
+          <li>A quarterly live briefing with Francesco</li>
+        </ul>
+        <button class="btn btn--ghost" type="button" data-reserve="Executive">Reserve a founding place</button>
+      </article>
+    </div>
+    <div class="inst">
+      <div><span class="eyebrow" style="color:var(--sun)">Institutional</span><h3 style="margin-top:12px">For banks, funds, boards and governments.</h3>
+        <p>The full research, commissioned on your questions, for your whole team.</p></div>
+      <ul>
+        <li>Papers on your own questions</li>
+        <li>1:1 briefings with Francesco De Leo Kaufmann</li>
+        <li>Custom indicators and GVI country cuts</li>
+        <li>Seats for the whole leadership team</li>
+      </ul>
+      <button class="btn btn--sun" type="button" data-reserve="Institutional">Request a proposal</button>
+    </div>
+  </div></section>
+
+  <!-- THE PAYWALL LINE -->
+  <section class="sec" id="wall"><div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">What is free, what is membership</span>
+      <h2>The signal builds the habit. The depth is the product.</h2>
+      <p>Notes signed by Francesco stay visible to everyone at one minute. The reasoning, the indicators and the method sit behind the line.</p>
+    </div>
+    <div class="wall-scroll"><table class="wall">
+      <thead><tr><th scope="col">What you get</th><th scope="col">Signal</th><th scope="col">Individual</th><th scope="col">Professional</th><th scope="col">Executive</th><th scope="col">Institutional</th></tr></thead>
+      <tbody>
+        <tr class="grp"><td colspan="6">The Daily</td></tr>
+        <tr><td>One-minute signal of every note</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Morning Brief · Midday Pulse · The Close, in full</td><td class="lim">1 a week</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>In Focus deep readings</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>The Week Ahead</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr class="grp"><td colspan="6">Indicators</td></tr>
+        <tr><td>Public Velocity Dashboard (markets, live)</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>GVI rankings, history and country detail</td><td class="lim">Top 5</td><td class="lim">Top 5</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Methodology paper of the indices</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Custom indicators and country cuts</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr class="grp"><td colspan="6">Depth and access</td></tr>
+        <tr><td>Monthly full paper (PDF)</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Live briefing with Francesco</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="lim">Quarterly</td><td class="lim">1:1</td></tr>
+        <tr><td>Papers commissioned on your questions</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr><td>Seats</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="lim">Team</td></tr>
+      </tbody>
+    </table></div>
+  </div></section>
+
+  <!-- THE DAILY GRID -->
+  <section class="sec" id="grid"><div class="wrap">
+    <div class="sec__head">
+      <span class="eyebrow">The daily grid</span>
+      <h2>From the 05:00 newscast to the close: one product line.</h2>
+      <p>What Francesco already produces every day, grouped into packages each membership unlocks.</p>
+    </div>
+    <ol class="grid-day">
+      <li style="--c:var(--glacier)"><time>05:00</time><div><b>Newscast</b><p>What happened overnight, before markets open.</p></div><span class="pk" style="color:var(--green)">Signal</span></li>
+      <li style="--c:var(--sun)"><time>07:00</time><div><b>Morning Brief</b><p>The day’s thesis, the numbers and what to watch.</p></div><span class="pk" style="color:var(--glacier)">Daily Pack</span></li>
+      <li style="--c:var(--sky)"><time>Morning</time><div><b>Sector watches</b><p>Italian and European banking · U.S.–China AI Watch · Central Banks AI Watch.</p></div><span class="pk" style="color:var(--sky)">Sector Pack</span></li>
+      <li style="--c:#f7d046"><time>12:00</time><div><b>Midday Pulse</b><p>What moved in the morning session and why.</p></div><span class="pk" style="color:var(--glacier)">Daily Pack</span></li>
+      <li style="--c:#7c8bff"><time>17:00</time><div><b>In Focus</b><p>The deep reading of the day’s decisive theme.</p></div><span class="pk" style="color:var(--sky)">Deep Pack</span></li>
+      <li style="--c:var(--glacier)"><time>Daily</time><div><b>GVI · Global Velocity Index</b><p>Country, city and corporate rankings, with the daily nowcast.</p></div><span class="pk" style="color:var(--sky)">Index Pack</span></li>
+      <li style="--c:#aeb8ff"><time>Close</time><div><b>The Close</b><p>The wrap of the day for the people who move capital.</p></div><span class="pk" style="color:var(--glacier)">Daily Pack</span></li>
+      <li style="--c:var(--sun)"><time>Sunday</time><div><b>The Week Ahead</b><p>The calendar, the risks and the positioning for the week.</p></div><span class="pk" style="color:var(--sky)">Deep Pack</span></li>
+    </ol>
+    <div class="packs">
+      <div class="pack"><b style="color:var(--green)">Signal</b><p>The one-minute version of everything above. Free.</p></div>
+      <div class="pack"><b style="color:var(--glacier)">Daily Pack</b><p>Morning Brief, Midday Pulse and The Close in full. Individual.</p></div>
+      <div class="pack"><b style="color:var(--sky)">Sector · Deep · Index</b><p>Sector watches, In Focus, Week Ahead and GVI. Professional.</p></div>
+      <div class="pack"><b style="color:var(--sun)">Papers</b><p>The monthly paper and the method. Executive and Institutional.</p></div>
+    </div>
+  </div></section>
+
+  <p class="fine">Preview for validation. Prices and contents are indicative and will be confirmed before launch; checkout is not active yet. Reservations reach the FDK EmpowerNet team at info@fdkempowernet.com.</p>
+</main>
+
+<div class="preview-flag" aria-hidden="true">Preview · not public</div>
+
+<dialog id="reserve" aria-labelledby="rT">
+  <form class="dlg" id="rForm" method="dialog" novalidate>
+    <h3 id="rT">Reserve a founding place</h3>
+    <p>No payment today. We will write to you before launch with the founding price.</p>
+    <label for="rTier">Membership</label>
+    <select id="rTier" name="tier">
+      <option>Individual</option><option>Professional</option><option>Executive</option><option>Institutional</option>
+    </select>
+    <label for="rName">Name</label>
+    <input id="rName" name="name" autocomplete="name" required />
+    <label for="rMail">Work email</label>
+    <input id="rMail" name="email" type="email" autocomplete="email" required />
+    <label for="rOrg">Organisation <span style="text-transform:none;letter-spacing:0">(optional)</span></label>
+    <input id="rOrg" name="org" autocomplete="organization" />
+    <div class="dlg__msg" id="rMsg" role="status" aria-live="polite"></div>
+    <div class="dlg__row">
+      <button class="btn btn--ghost" type="button" id="rClose">Close</button>
+      <button class="btn" type="submit" id="rSend">Reserve</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/ve-nav.js?v=8117e33b67"></script>
+<script>
+(function () {
+  /* depth tabs (WAI-ARIA tabs: arrows move between depths) */
+  var tabs = [].slice.call(document.querySelectorAll('.reader__tab'));
+  function show(id, focus) {
+    tabs.forEach(function (t) {
+      var on = t.id === 't' + id;
+      t.setAttribute('aria-selected', String(on)); t.tabIndex = on ? 0 : -1;
+      document.getElementById(t.getAttribute('aria-controls')).hidden = !on;
+      if (on && focus) t.focus();
+    });
+  }
+  tabs.forEach(function (t, i) {
+    t.addEventListener('click', function () { show(t.id.slice(1)); });
+    t.addEventListener('keydown', function (e) {
+      var d = e.key === 'ArrowRight' ? 1 : e.key === 'ArrowLeft' ? -1 : 0; if (!d) return;
+      e.preventDefault(); show(tabs[(i + d + tabs.length) % tabs.length].id.slice(1), true);
+    });
+  });
+  [].forEach.call(document.querySelectorAll('[data-show]'), function (b) { b.addEventListener('click', function () { show(b.getAttribute('data-show'), true); }); });
+  [].forEach.call(document.querySelectorAll('[data-depth]'), function (a) { a.addEventListener('click', function () { show(a.getAttribute('data-depth')); }); });
+
+  /* monthly / yearly */
+  [].forEach.call(document.querySelectorAll('[data-bill]'), function (b) {
+    b.addEventListener('click', function () {
+      var y = b.getAttribute('data-bill') === 'y';
+      [].forEach.call(document.querySelectorAll('[data-bill]'), function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      [].forEach.call(document.querySelectorAll('.plan__price[data-m]'), function (p) { p.innerHTML = p.getAttribute(y ? 'data-y' : 'data-m') + '<small>/ ' + (y ? 'year' : 'month') + '</small>'; });
+      [].forEach.call(document.querySelectorAll('.plan__note[data-m]'), function (p) { p.textContent = p.getAttribute(y ? 'data-y' : 'data-m'); });
+    });
+  });
+
+  /* reserve a founding place → info@ (FormSubmit, as the site's other forms) */
+  var dlg = document.getElementById('reserve'), form = document.getElementById('rForm'), msg = document.getElementById('rMsg'), send = document.getElementById('rSend');
+  var INBOX = 'info@fdkempowernet.com';
+  [].forEach.call(document.querySelectorAll('[data-reserve]'), function (b) {
+    b.addEventListener('click', function () {
+      document.getElementById('rTier').value = b.getAttribute('data-reserve'); msg.textContent = ''; send.disabled = false;
+      if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', '');
+      document.getElementById('rName').focus();
+    });
+  });
+  document.getElementById('rClose').addEventListener('click', function () { dlg.close(); });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = form.name.value.trim(), email = form.email.value.trim();
+    if (!name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.style.color = '#ff8a80'; msg.textContent = 'Please add your name and a valid email.'; return; }
+    send.disabled = true; msg.style.color = 'var(--soft)'; msg.textContent = 'Sending…';
+    fetch('https://formsubmit.co/ajax/' + INBOX, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+      body: JSON.stringify({ name: name, email: email, organisation: form.org.value.trim(), membership: form.tier.value, page: location.href,
+        _subject: 'Founding membership request — ' + form.tier.value, _replyto: email, _template: 'table', _captcha: 'false' }) })
+      .then(function (r) { return r.json().catch(function () { return {}; }); })
+      .then(function (j) {
+        if (String(j.success) === 'true') { msg.style.color = 'var(--green)'; msg.textContent = 'Thank you. Your place is reserved — we will write to you before launch.'; form.reset(); }
+        else { if (j.message && window.console) console.warn('Reserve: ' + j.message); msg.style.color = '#ff8a80'; msg.textContent = 'Something went wrong. Please write to info@fdkempowernet.com.'; send.disabled = false; }
+      })
+      .catch(function () { msg.style.color = '#ff8a80'; msg.textContent = 'Something went wrong. Please write to info@fdkempowernet.com.'; send.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
