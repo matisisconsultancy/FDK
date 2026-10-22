@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-10-22-2",
+    title: "Europe’s Great Fracture",
+    excerpt: "France's sovereign stress tests whether Europe can prevent repricing from fragmenting its capital markets.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "14:45",
+    kind: "day"
+  },
+  {
     url: "/the-october-demonstrations-do-not-produce-sustained-economic-disruption-and-european-markets-continue-distinguishing-french-sovereign-risk-from-broader-monetary-union-stability",
     title: "The October Demonstrations Do Not Produce Sustained Economic Disruption, and European Markets Continue Distinguishing French Sovereign Risk From Broader Monetary-union Stability.",
     excerpt: "Cross-country spread widening signals a shift from a French fiscal problem to a test of Europe's financial architecture.",
