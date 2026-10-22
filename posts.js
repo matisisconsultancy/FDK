@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-has-a-new-price",
+    title: "The Great Split Has a New Price",
+    excerpt: "Capital is not retreating — it is becoming radically more selective, as rising borrowing costs collide with the capital intensity of the AI and industrial transitions.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "08:56",
+    kind: "day"
+  },
+  {
     url: "/the-145-billion-5-divide",
     title: "The $145 Billion: 5% Divide",
     excerpt: "Meta races toward $145B in capex as French yields breach 5%, exposing a structural split in the cost of capital.",
