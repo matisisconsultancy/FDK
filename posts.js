@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-15-billion-inflection",
+    title: "The $15 Billion Inflection",
+    excerpt: "Three developments on October 21–22 refine the U.S.–China AI thesis: capital, deployment and supply-chain leverage.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "12:51",
+    kind: "day"
+  },
+  {
     url: "/the-new-laws-of-corporate-power",
     title: "The New Laws of Corporate Power",
     excerpt: "The FDK GVI Corporate Benchmark maps the shift from accumulating technology to converting it into productivity, cash flow and returns.",
