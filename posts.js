@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/italys-hidden-sovereign-risk",
+    title: "Italy’s Hidden Sovereign Risk",
+    excerpt: "Italy can outperform France in the bond market and still become structurally weaker because of the French crisis.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "10 min read",
+    time: "18:57",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-race-the-great-infrastructure-divide",
     title: "Europe’s AI Race: The Great Infrastructure Divide",
     excerpt: "$3.5 billion in new financing, €1.5 billion in network orders, and a growing physical infrastructure bottleneck.",
