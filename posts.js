@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-collision-2026-10-22-2",
+    title: "The Great Capital Collision",
+    excerpt: "Three signals — a Nasdaq selloff, French spreads and $113 Brent — mark a financial regime change.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "21:48",
+    kind: "night"
+  },
+  {
     url: "/italys-hidden-sovereign-risk",
     title: "Italy’s Hidden Sovereign Risk",
     excerpt: "Italy can outperform France in the bond market and still become structurally weaker because of the French crisis.",
