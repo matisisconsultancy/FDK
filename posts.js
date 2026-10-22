@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-european-capital-realignment",
+    title: "The Great European Capital Realignment",
+    excerpt: "Rising French yields are reshaping the economics of Europe's banking endgame before earnings even move.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "2 min read",
+    time: "12:58",
+    kind: "day"
+  },
+  {
     url: "/the-15-billion-inflection",
     title: "The $15 Billion Inflection",
     excerpt: "Three developments on October 21–22 refine the U.S.–China AI thesis: capital, deployment and supply-chain leverage.",
