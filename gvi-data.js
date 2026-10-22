@@ -117,7 +117,8 @@ window.GVI_DATA = {
       "the-next-economy-research-centre-2026-10-21",
       "gvi-the-sovereign-silicon-squeeze",
       "gvi-corporate-benchmark-the-time-to-production-economy",
-      "the-next-economy-research-centre-2026-10-22"
+      "the-next-economy-research-centre-2026-10-22",
+      "the-new-laws-of-corporate-power"
     ]
   },
   "daily": {
@@ -3135,6 +3136,12 @@ window.GVI_DATA = {
         "url": "/gvi-corporate-benchmark-the-time-to-production-economy",
         "slot": "GVI",
         "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.1 lead; Nvidia's DSX POD puts time-to-production in focus"
+      },
+      {
+        "title": "The New Laws of Corporate Power",
+        "url": "/the-new-laws-of-corporate-power",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.1 lead the GVI Corporate Benchmark; Volkswagen 61.6 trails."
       }
     ]
   },
@@ -3249,7 +3256,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Manufacturing leadership"
+        "note": "Manufacturing dominance; strongest economic converter"
       },
       {
         "rank": 2,
@@ -3257,7 +3264,7 @@ window.GVI_DATA = {
         "score": 99.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Enterprise monetization"
+        "note": "Enterprise AI"
       },
       {
         "rank": 3,
@@ -3273,7 +3280,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0.1,
         "trend": "up",
-        "note": "Infrastructure acceleration"
+        "note": "Energy infrastructure"
       },
       {
         "rank": 5,
@@ -3281,7 +3288,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0.3,
         "trend": "up",
-        "note": "Architecture and deployment"
+        "note": "Deployment acceleration; principal accelerator"
       },
       {
         "rank": 6,
@@ -3289,7 +3296,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Semiconductor scarcity"
+        "note": "Semiconductor equipment"
       },
       {
         "rank": 7,
@@ -3313,7 +3320,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Grid infrastructure"
+        "note": "Power infrastructure"
       },
       {
         "rank": 10,
@@ -3327,10 +3334,10 @@ window.GVI_DATA = {
     "laggards": [
       {
         "rank": 1,
-        "name": "Volkswagen Group",
+        "name": "Volkswagen",
         "score": 61.6,
         "delta": 0,
-        "trend": "down",
+        "trend": "flat",
         "note": null
       },
       {
@@ -3346,7 +3353,7 @@ window.GVI_DATA = {
         "name": "Stellantis",
         "score": 65.2,
         "delta": 0,
-        "trend": "up",
+        "trend": "flat",
         "note": null
       },
       {
@@ -3370,7 +3377,7 @@ window.GVI_DATA = {
         "name": "BASF",
         "score": 68.9,
         "delta": 0,
-        "trend": "down",
+        "trend": "flat",
         "note": null
       },
       {
@@ -3383,7 +3390,7 @@ window.GVI_DATA = {
       },
       {
         "rank": 8,
-        "name": "Prudential plc",
+        "name": "Prudential",
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
@@ -3394,7 +3401,7 @@ window.GVI_DATA = {
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "down",
+        "trend": "flat",
         "note": null
       },
       {
@@ -3408,27 +3415,44 @@ window.GVI_DATA = {
     ],
     "pillars": [
       {
-        "pillar": "Time-to-production",
+        "pillar": "Strongest economic converter",
+        "leaders": [
+          "TSMC"
+        ]
+      },
+      {
+        "pillar": "Principal accelerator",
         "leaders": [
           "Nvidia"
         ]
       },
       {
-        "pillar": "Enterprise cash conversion",
+        "pillar": "Dominant ecosystem orchestrators",
         "leaders": [
-          "SAP"
+          "Microsoft",
+          "Amazon"
         ]
       },
       {
-        "pillar": "Power infrastructure platform",
+        "pillar": "Positioned for the next industrial wave",
         "leaders": [
-          "Iberdrola"
+          "Schneider Electric",
+          "ASML",
+          "Siemens"
+        ]
+      },
+      {
+        "pillar": "Rest of the leadership group",
+        "leaders": [
+          "Broadcom",
+          "Palantir",
+          "Siemens Energy"
         ]
       }
     ],
     "source": {
-      "title": "GVI Corporate Benchmark the Time-to-production Economy",
-      "url": "/gvi-corporate-benchmark-the-time-to-production-economy",
+      "title": "The New Laws of Corporate Power",
+      "url": "/the-new-laws-of-corporate-power",
       "date": "2026-10-22",
       "slot": "GVI"
     }

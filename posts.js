@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-laws-of-corporate-power",
+    title: "The New Laws of Corporate Power",
+    excerpt: "The FDK GVI Corporate Benchmark maps the shift from accumulating technology to converting it into productivity, cash flow and returns.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "12:47",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-payroll",
     title: "The Great Split Reaches the Payroll",
     excerpt: "Barclays cuts 5,000 jobs as AI reshapes its operating model — and hands central banks a new monetary question.",
