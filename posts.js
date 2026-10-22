@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-great-infrastructure-divide",
+    title: "Europe’s AI Race: The Great Infrastructure Divide",
+    excerpt: "$3.5 billion in new financing, €1.5 billion in network orders, and a growing physical infrastructure bottleneck.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "8 min read",
+    time: "17:48",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-10-22-2",
     title: "Europe’s Great Fracture",
     excerpt: "France's sovereign stress tests whether Europe can prevent repricing from fragmenting its capital markets.",
