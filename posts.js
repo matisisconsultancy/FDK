@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-october-demonstrations-do-not-produce-sustained-economic-disruption-and-european-markets-continue-distinguishing-french-sovereign-risk-from-broader-monetary-union-stability",
+    title: "The October Demonstrations Do Not Produce Sustained Economic Disruption, and European Markets Continue Distinguishing French Sovereign Risk From Broader Monetary-union Stability.",
+    excerpt: "Cross-country spread widening signals a shift from a French fiscal problem to a test of Europe's financial architecture.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "4 min read",
+    time: "14:19",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-10-22",
     title: "Europe’s Great Fracture",
     excerpt: "France's bond-market deterioration reaches a historic threshold as sovereign spreads widen across the eurozone.",
