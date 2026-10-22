@@ -1,0 +1,71 @@
+name: Translate backlog — ES / IT
+
+# Run by hand (Actions → "Translate backlog — ES / IT" → Run workflow).
+# Translates the strings that still have no Spanish or Italian entry, newest
+# notes first, with scripts/i18n-translate.mjs, rebuilds the dictionaries and
+# commits them. "max_words" caps one run (empty = everything; the whole
+# backlog of ~300,000 words is estimated at about $24 with Claude Opus 5.5).
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_words:
+        description: "Words to translate in this run (empty = all)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Only report what is missing and the estimated cost"
+        type: boolean
+        default: false
+
+concurrency:
+  group: translate-backlog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/eager-carson-vjorjg
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Translate
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          MAX_WORDS: ${{ inputs.max_words }}
+          DRY: ${{ inputs.dry_run }}
+        run: |
+          ARGS=""
+          [ -n "$MAX_WORDS" ] && ARGS="--max-words $MAX_WORDS"
+          [ "$DRY" = "true" ] && ARGS="$ARGS --dry-run"
+          node scripts/i18n-translate.mjs $ARGS | tee /tmp/translate.log
+          { echo "### Translation"; echo '```'; cat /tmp/translate.log | tail -6; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Rebuild dictionaries and check wording
+        if: inputs.dry_run != true
+        run: |
+          node scripts/i18n-build.mjs | tail -3
+          node scripts/i18n-lint.mjs || echo "::warning::house-wording check flagged some translations (see log)"
+
+      - name: Commit
+        if: inputs.dry_run != true
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add -A
+          git diff --cached --quiet && { echo "Nothing to commit."; exit 0; }
+          git commit -q -m "Translate the ES/IT backlog (i18n-translate)"
+          for i in 1 2 3 4; do
+            git pull -q --rebase --autostash origin claude/eager-carson-vjorjg && git push -q origin HEAD:claude/eager-carson-vjorjg && exit 0
+            sleep $((i * 5))
+          done
+          exit 1

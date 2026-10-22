@@ -17,6 +17,12 @@ concurrency:
   group: publish-drafts-${{ github.ref_name }}
   cancel-in-progress: false
 
+# Machine translation of new notes into ES/IT (scripts/i18n-translate.mjs).
+# "true" turns it on: each publish translates the newest untranslated strings,
+# up to ~4,000 words (a few cents), so the backlog also shrinks run by run.
+env:
+  AUTO_TRANSLATE: "false"
+
 permissions:
   contents: write
   actions: write   # allow re-running the Pages build on transient GitHub timeouts
@@ -65,6 +71,19 @@ jobs:
           node scripts/i18n-build.mjs
           echo "--- strings awaiting translation ---"
           node scripts/i18n-extract.mjs
+
+      # The new note's strings are translated into ES/IT with Claude in the house
+      # style (glossary, "usted", HTML kept intact) and merged into the
+      # dictionaries. Never blocks a publish: a failure leaves the note in English.
+      - name: Translate new strings into ES and IT
+        if: env.AUTO_TRANSLATE == 'true' && steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          node scripts/i18n-translate.mjs --max-words 4000
+          node scripts/i18n-build.mjs
+          node scripts/i18n-lint.mjs || echo "::warning::house-wording check flagged some translations (see log)"
 
       # Publishing never waits for translation, but it must not be silent about
       # it either: until a note is translated it renders in English whichever
