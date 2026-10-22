@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-145-billion-5-divide",
+    title: "The $145 Billion: 5% Divide",
+    excerpt: "Meta races toward $145B in capex as French yields breach 5%, exposing a structural split in the cost of capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 22, 2026",
+    read: "5 min read",
+    time: "07:57",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-22",
     title: "The Next Economy Research Centre",
     excerpt: "Nvidia industrializes the AI factory as semiconductor profits surge and France's 10-year yield hits 5%.",
