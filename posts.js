@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-10-23",
+    title: "Europe’s Great Fracture",
+    excerpt: "France's sovereign shock is becoming a test of the eurozone's financial stability and Europe's next investment cycle.",
+    tag: "In Focus · Sovereign Risk",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "9 min read",
+    time: "14:14",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Three simultaneous claims on the same selective pool of capital — AI, energy and sovereign debt — define the morning of October 23.",
