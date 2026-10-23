@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-capital-reckoning",
+    title: "The AI Capital Reckoning",
+    excerpt: "America leads the AI frontier; China is challenging its economics; markets are now pricing the cost of the difference.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "4 min read",
+    time: "12:44",
+    kind: "day"
+  },
+  {
     url: "/ai-becomes-a-central-bank-stress-scenario",
     title: "AI Becomes a Central-bank Stress Scenario",
     excerpt: "The AI Supercycle has entered a new phase of monetary and financial scrutiny, as the BOJ and RBA fold AI risk into their frameworks.",
