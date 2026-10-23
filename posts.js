@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Three simultaneous claims on the same selective pool of capital — AI, energy and sovereign debt — define the morning of October 23.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "13:33",
+    kind: "day"
+  },
+  {
     url: "/the-ai-capital-reckoning",
     title: "The AI Capital Reckoning",
     excerpt: "America leads the AI frontier; China is challenging its economics; markets are now pricing the cost of the difference.",
