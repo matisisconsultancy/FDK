@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-credibility",
+    title: "The Great Repricing of Credibility",
+    excerpt: "France's sovereign crisis, $117 Brent and a contested AI investment cycle converge on a single constraint.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "19:55",
+    kind: "night"
+  },
+  {
     url: "/europes-next-sovereign-debt-crisis",
     title: "Europe’s Next Sovereign Debt Crisis",
     excerpt: "France's political crisis risks becoming Europe's sovereign credit problem, with Italy as the critical transmission test.",
