@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/spains-european-inflection-point",
+    title: "Spain’s European Inflection Point",
+    excerpt: "The Velocity Edge begins five weeks of dedicated coverage of Spain's November 29 general election.",
+    tag: "The Close · Eurozone",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "4 min read",
+    time: "20:34",
+    kind: "night"
+  },
+  {
     url: "/the-great-repricing-of-credibility",
     title: "The Great Repricing of Credibility",
     excerpt: "France's sovereign crisis, $117 Brent and a contested AI investment cycle converge on a single constraint.",
