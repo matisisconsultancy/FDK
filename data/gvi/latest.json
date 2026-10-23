@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-22",
+    "updated": "2026-10-23",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -114,34 +114,35 @@
       "gvi-the-sovereign-silicon-squeeze",
       "gvi-corporate-benchmark-the-time-to-production-economy",
       "the-next-economy-research-centre-2026-10-22",
-      "the-new-laws-of-corporate-power"
+      "the-new-laws-of-corporate-power",
+      "gvi-the-great-credibility-test"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": null,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-22",
+      "asOf": "2026-10-23",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "GVI: The Sovereign: Silicon Squeeze",
-        "url": "/gvi-the-sovereign-silicon-squeeze",
-        "date": "2026-10-22",
+        "title": "GVI: The Great Credibility Test",
+        "url": "/gvi-the-great-credibility-test",
+        "date": "2026-10-23",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-22",
+      "asOf": "2026-10-23",
       "source": {
-        "title": "GVI: The Sovereign: Silicon Squeeze",
-        "url": "/gvi-the-sovereign-silicon-squeeze",
-        "date": "2026-10-22",
+        "title": "GVI: The Great Credibility Test",
+        "url": "/gvi-the-great-credibility-test",
+        "date": "2026-10-23",
         "slot": "GVI"
       },
       "rows": [
@@ -152,7 +153,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong AI revenues; capital intensity rising",
+          "tag": "AI leadership; financial repricing",
           "spark": [
             92.1,
             92.3,
@@ -162,6 +163,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -185,8 +187,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial momentum positive; domestic conversion uneven",
+          "tag": "Industrial strength; weak domestic conversion",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -205,8 +208,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Exceptional semiconductor demand; restrictive monetary policy",
+          "tag": "Semiconductor acceleration; valuation stress",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -225,8 +229,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial technology strengths; financing sensitivity",
+          "tag": "Technology exports; financial volatility",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -245,8 +250,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial-AI potential; energy-cost constraints",
+          "tag": "Industrial-AI opportunity; energy constraints",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -265,8 +271,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Inflation and fiscal pressures intensifying",
+          "tag": "Proprietary-data investment; fiscal pressures",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -285,8 +292,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign financing deterioration",
+          "tag": "Sovereign risk deteriorating; industry improving",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -305,8 +313,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong industrial technology positioning",
+          "tag": "Industrial strength; stable structural outlook",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -325,8 +334,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor equipment and industrial strength",
+          "tag": "Semiconductor innovation accelerating",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -355,6 +365,7 @@
             79.2,
             79.2,
             79.2,
+            79.2,
             79.2
           ]
         },
@@ -365,8 +376,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy and digital infrastructure advantages",
+          "tag": "Energy and computing advantages",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -395,6 +407,7 @@
             77.1,
             77.1,
             77.1,
+            77.1,
             77.1
           ]
         },
@@ -405,8 +418,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Computing investment pipeline; conversion pending",
+          "tag": "Relative sovereign-financing resilience",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -435,6 +449,7 @@
             72.4,
             72.4,
             72.4,
+            72.4,
             72.4
           ]
         },
@@ -445,8 +460,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Weak industrial momentum; capital efficiency critical",
+          "tag": "Sovereign contagion sensitivity increasing",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3076,68 +3092,56 @@
     }
   },
   "today": {
-    "date": "2026-10-22",
+    "date": "2026-10-23",
     "edition": "GVI · Capital",
-    "thesis": "GVI: The Sovereign: Silicon Squeeze",
-    "subtitle": "The AI Supercycle is generating extraordinary revenues while the capacity to finance intelligence becomes as decisive as the capacity to produce it.",
-    "standfirst": "The next Great Split is moving toward the balance sheet.",
+    "thesis": "GVI: The Great Credibility Test",
+    "subtitle": "Technological velocity is still accelerating, but sovereign credibility is deteriorating — and markets are now pricing the financial capacity to sustain the AI Supercycle.",
+    "standfirst": "Intelligence sets the pace; credibility decides whether the pace can hold.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "FDK Global Velocity Index (provisional baseline)",
+        "label": "FDK GVI (provisional)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "Meta Q3 revenue",
-        "value": "$64.60bn",
-        "delta": "+26%",
+        "label": "France OAT–Bund spread",
+        "value": "177.7 bps",
+        "delta": null,
         "trend": "up"
       },
       {
-        "label": "Meta quarterly free cash flow",
-        "value": "−$2.12bn",
+        "label": "Besi Q3 orders",
+        "value": "+96%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Eurozone consumer confidence",
+        "value": "−17.9",
         "delta": null,
         "trend": "down"
       },
       {
-        "label": "French 10-year yield",
-        "value": "5.002%",
+        "label": "Nasdaq Oct 22",
+        "value": "−2.6%",
         "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "UK September CPI",
-        "value": "3.5%",
-        "delta": null,
-        "trend": "up"
+        "trend": "down"
       }
     ],
     "source": {
-      "title": "GVI: The Sovereign: Silicon Squeeze",
-      "url": "/gvi-the-sovereign-silicon-squeeze",
-      "date": "2026-10-22",
+      "title": "GVI: The Great Credibility Test",
+      "url": "/gvi-the-great-credibility-test",
+      "date": "2026-10-23",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: The Sovereign: Silicon Squeeze",
-        "url": "/gvi-the-sovereign-silicon-squeeze",
+        "title": "GVI: The Great Credibility Test",
+        "url": "/gvi-the-great-credibility-test",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead; the capacity to finance AI becomes the binding constraint"
-      },
-      {
-        "title": "GVI Corporate Benchmark the Time-to-production Economy",
-        "url": "/gvi-corporate-benchmark-the-time-to-production-economy",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.1 lead; Nvidia's DSX POD puts time-to-production in focus"
-      },
-      {
-        "title": "The New Laws of Corporate Power",
-        "url": "/the-new-laws-of-corporate-power",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.2 and Amazon 99.1 lead the GVI Corporate Benchmark; Volkswagen 61.6 trails."
+        "headline": "GVI holds at a provisional 108.0 with no country changes, as France's spread hits a 2011 high while semiconductor orders surge."
       }
     ]
   },

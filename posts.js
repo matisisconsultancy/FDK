@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-great-credibility-test",
+    title: "GVI: The Great Credibility Test",
+    excerpt: "France's risk premium hits 2011 crisis levels as semiconductor orders surge — the AI Supercycle meets its financial test.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "06:11",
+    kind: "day"
+  },
+  {
     url: "/europes-crisis-of-credibility",
     title: "Europe’s Crisis of Credibility",
     excerpt: "France's bond yields hit a near-quarter-century high, and the deeper danger is a slow erosion of political and fiscal credibility across Europe.",
