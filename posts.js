@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-sovereign-price-of-financial-power",
+    title: "The Sovereign Price of Financial Power",
+    excerpt: "Europe's banking consolidation enters a new regime as sovereign risk reprices the cost of acquiring, funding and integrating scale.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "9 min read",
+    time: "11:09",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing",
     title: "The Great Repricing",
     excerpt: "AI, sovereign debt and energy are repricing together as markets rediscover the cost of money.",
