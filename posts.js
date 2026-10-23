@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/whatever-it-takes-is-no-longer-enough",
+    title: "Whatever It Takes Is No Longer Enough",
+    excerpt: "France's widening spreads are the warning; Europe's economic and political model is what is now at stake.",
+    tag: "Morning Brief · Europe",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "06:34",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-great-credibility-test",
     title: "GVI: The Great Credibility Test",
     excerpt: "France's risk premium hits 2011 crisis levels as semiconductor orders surge — the AI Supercycle meets its financial test.",
