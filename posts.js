@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-next-sovereign-debt-crisis",
+    title: "Europe’s Next Sovereign Debt Crisis",
+    excerpt: "France's political crisis risks becoming Europe's sovereign credit problem, with Italy as the critical transmission test.",
+    tag: "The Close · Sovereign Risk",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "19:51",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-sovereign-capital-test",
     title: "Europe’s AI Race: The Sovereign Capital Test",
     excerpt: "Three October 23 developments reframe Europe's Gigafactory race as a contest of capital structure, not capital access.",
