@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-sovereign-capital-test",
+    title: "Europe’s AI Race: The Sovereign Capital Test",
+    excerpt: "Three October 23 developments reframe Europe's Gigafactory race as a contest of capital structure, not capital access.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "8 min read",
+    time: "18:10",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-10-23",
     title: "Europe’s Great Fracture",
     excerpt: "France's sovereign shock is becoming a test of the eurozone's financial stability and Europe's next investment cycle.",
