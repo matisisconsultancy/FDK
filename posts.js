@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-algorithmic-battle-for-spain",
+    title: "The Algorithmic Battle for Spain",
+    excerpt: "How AI-generated content, political spectacle and cross-border confrontation are reshaping Spain's November 29 election.",
+    tag: "The Close · Politics",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "20:41",
+    kind: "night"
+  },
+  {
     url: "/spains-european-inflection-point",
     title: "Spain’s European Inflection Point",
     excerpt: "The Velocity Edge begins five weeks of dedicated coverage of Spain's November 29 general election.",
