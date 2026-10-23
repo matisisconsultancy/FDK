@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-becomes-a-central-bank-stress-scenario",
+    title: "AI Becomes a Central-bank Stress Scenario",
+    excerpt: "The AI Supercycle has entered a new phase of monetary and financial scrutiny, as the BOJ and RBA fold AI risk into their frameworks.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "9 min read",
+    time: "12:37",
+    kind: "day"
+  },
+  {
     url: "/the-sovereign-price-of-financial-power",
     title: "The Sovereign Price of Financial Power",
     excerpt: "Europe's banking consolidation enters a new regime as sovereign risk reprices the cost of acquiring, funding and integrating scale.",
