@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-23",
+    title: "The Next Economy Research Centre",
+    excerpt: "The simultaneous repricing of American technology risk and European sovereign risk is reshaping the Great Split.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 23, 2026",
+    read: "5 min read",
+    time: "08:31",
+    kind: "day"
+  },
+  {
     url: "/the-5-crossover",
     title: "The 5% Crossover",
     excerpt: "France's 10-year yield overtakes the U.S. Treasury as the Great Split enters its sovereign-financial phase.",

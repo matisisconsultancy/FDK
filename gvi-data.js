@@ -119,7 +119,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-the-time-to-production-economy",
       "the-next-economy-research-centre-2026-10-22",
       "the-new-laws-of-corporate-power",
-      "gvi-the-great-credibility-test"
+      "gvi-the-great-credibility-test",
+      "the-next-economy-research-centre-2026-10-23"
     ]
   },
   "daily": {
@@ -3612,75 +3613,63 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-22",
+    "asOf": "2026-10-23",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The technology to produce intelligence is getting faster and cheaper, while the capital and power to deploy it grow more demanding.",
+    "hypothesis": "AI's financing crisis is meeting Europe's sovereign risk, and capital is becoming the new competitive frontier, discriminating between economies that can finance productive intelligence and those whose financial structures constrain it.",
     "rows": [
       {
-        "k": "Lam Research quarterly revenue",
-        "latest": "$8.22B (up from $6.72B), +22% QoQ",
-        "trend": "up",
-        "reading": "Record quarter with a 40% GAAP operating margin; suppliers are monetizing equipment demand now."
-      },
-      {
-        "k": "Besi Q3 orders",
-        "latest": "€342.6M, +96% YoY",
-        "trend": "up",
-        "reading": "Above the €298M consensus; semiconductor-equipment strength continues."
-      },
-      {
-        "k": "Nvidia DSX POD deployment time",
-        "latest": "~6 months to as little as 14 days at prepared sites",
+        "k": "Meta Q3 free cash flow",
+        "latest": "−$2.12B (CapEx $34.91B vs operating cash flow $32.79B; revenue +26%)",
         "trend": "down",
-        "reading": "Claimed compression of time to productive intelligence; availability expected early 2027, and grid and permitting delays remain."
+        "reading": "Strong revenue growth coexists with investment pressure, so financial selectivity now reaches the hyperscalers."
       },
       {
-        "k": "Power efficiency (Nvidia MaxLPS / Nscale)",
-        "latest": "Up to 30% less power for equal output; +49% inference throughput in a 264 kW budget",
+        "k": "Meta 5-year CDS",
+        "latest": "114.79 bps (record)",
         "trend": "up",
-        "reading": "Raises output within existing electricity allocations but does not resolve grid access."
+        "reading": "Credit markets are pricing the scale and timing of AI investment against cash generation."
       },
       {
-        "k": "France 10-year OAT yield",
-        "latest": "~5%, highest since 2002",
+        "k": "French–German 10-year spread",
+        "latest": "177.7 bps (widest since 2011)",
         "trend": "up",
-        "reading": "Up ~8 bp on the session and 20+ bp over the week; sovereign financing is becoming a strategic constraint."
+        "reading": "European sovereign risk is repricing and broadening, with Italy, Belgium, Greece and Spain all wider."
       },
       {
-        "k": "France–Germany 10-year spread",
-        "latest": "~150 bp (15-year high near 160)",
+        "k": "France 10-year yield",
+        "latest": "5.1415% (highest since July 2002)",
         "trend": "up",
-        "reading": "Approaching the 15-year high; leveraged developers face more demanding conditions."
+        "reading": "Costlier domestic capital threatens productive investment in Europe."
       },
       {
-        "k": "Tesla 2026 capex",
-        "latest": "~$20B vs prior outlook above $25B",
+        "k": "US 10-year yield",
+        "latest": "~4.96%",
         "trend": "down",
-        "reading": "Q3 free cash flow of $1.53B partly reflects spending below plan; net income fell 43% YoY."
+        "reading": "Safe-haven demand into Treasuries as US tech equities fell, so capital is diverging rather than just tightening."
       },
       {
-        "k": "NextDC M3 Melbourne",
-        "latest": "Delayed to FY2028",
+        "k": "Nasdaq Composite",
+        "latest": "−2.6% (October 22)",
         "trend": "down",
-        "reading": "Shows grid access remains a binding constraint on AI deployment."
+        "reading": "American technology risk is being repriced alongside European sovereign risk."
       },
       {
-        "k": "EU AI Gigafactories",
-        "latest": "Up to 7 facilities, over €30B (up to €10B public, ≥€20B private)",
+        "k": "Nebius Citigroup facility",
+        "latest": "$3.5B, 364-day, SOFR+275 bps",
         "trend": "flat",
-        "reading": "A program target, not committed capital."
+        "reading": "AI credit remains open but differentiated by issuer, maturity and structure; Nebius shares still fell ~7%."
       },
       {
-        "k": "Lam Research revenue geography",
-        "latest": "China 35%, South Korea 20%, Taiwan 18% (73% combined); Europe 4%",
-        "trend": "flat",
-        "reading": "Asian dominance in equipment demand; Europe remains indispensable in lithography, software, power systems and physical AI."
+        "k": "Brent crude",
+        "latest": "~$113.75 per barrel",
+        "trend": "up",
+        "reading": "Higher energy and logistics costs raise the capital needed to build infrastructure and the hurdle on long-duration investment."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-22",
-      "date": "2026-10-22",
+      "url": "/the-next-economy-research-centre-2026-10-23",
+      "date": "2026-10-23",
       "slot": "Morning Brief"
     }
   }
