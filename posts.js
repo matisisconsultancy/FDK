@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-city-enters-the-discount-rate",
+    title: "GVI: The City Enters the Discount Rate",
+    excerpt: "France's financing shock drops Paris to seventh as GVI tests whether cities can convert intelligence into capital.",
+    tag: "GVI · Cities",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "14:14",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-10-24",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Sovereign stress, energy inflation and AI leverage are competing for the same expensive capital.",

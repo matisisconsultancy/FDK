@@ -123,7 +123,8 @@ window.GVI_DATA = {
       "the-next-economy-research-centre-2026-10-23",
       "gvi-the-great-transmission-test",
       "the-contagion-velocity-index",
-      "the-next-economy-research-centre-2026-10-24"
+      "the-next-economy-research-centre-2026-10-24",
+      "gvi-the-city-enters-the-discount-rate"
     ]
   },
   "daily": {
@@ -3171,6 +3172,12 @@ window.GVI_DATA = {
         "url": "/the-contagion-velocity-index",
         "slot": "GVI",
         "headline": "France is the epicentre with OAT–Bund spreads at 171–178 bp; Italy and Belgium lead the first contagion perimeter ahead of the ECB's October 30 meeting."
+      },
+      {
+        "title": "GVI: The City Enters the Discount Rate",
+        "url": "/gvi-the-city-enters-the-discount-rate",
+        "slot": "GVI",
+        "headline": "Singapore 92.78, New York 92.15 and London 91.61 lead; Paris falls to seventh (−0.74) on France's sovereign-financing shock."
       }
     ]
   },
