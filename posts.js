@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-10-24",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Sovereign stress, energy inflation and AI leverage are competing for the same expensive capital.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "13:40",
+    kind: "day"
+  },
+  {
     url: "/the-sovereign-price-of-financial-power-2026-10-24",
     title: "The Sovereign Price of Financial Power",
     excerpt: "Italy's banking endgame has become a test of three competing forms of financial power ahead of the October 29 MPS vote.",
