@@ -122,7 +122,8 @@ window.GVI_DATA = {
       "gvi-the-great-credibility-test",
       "the-next-economy-research-centre-2026-10-23",
       "gvi-the-great-transmission-test",
-      "the-contagion-velocity-index"
+      "the-contagion-velocity-index",
+      "the-next-economy-research-centre-2026-10-24"
     ]
   },
   "daily": {
@@ -3636,63 +3637,93 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-23",
+    "asOf": "2026-10-24",
     "title": "Next Economy Dashboard",
-    "hypothesis": "AI's financing crisis is meeting Europe's sovereign risk, and capital is becoming the new competitive frontier, discriminating between economies that can finance productive intelligence and those whose financial structures constrain it.",
+    "hypothesis": "The AI economy is shifting from a competition for computing capacity to a competition for financeable, energized and commercially productive computing capacity.",
     "rows": [
       {
-        "k": "Meta Q3 free cash flow",
-        "latest": "−$2.12B (CapEx $34.91B vs operating cash flow $32.79B; revenue +26%)",
-        "trend": "down",
-        "reading": "Strong revenue growth coexists with investment pressure, so financial selectivity now reaches the hyperscalers."
-      },
-      {
-        "k": "Meta 5-year CDS",
-        "latest": "114.79 bps (record)",
+        "k": "Global corporate credit spread",
+        "latest": "129 bps (Oct 22)",
         "trend": "up",
-        "reading": "Credit markets are pricing the scale and timing of AI investment against cash generation."
+        "reading": "Widest since May 2025. A broad index reading, not an AI-specific default cycle."
       },
       {
-        "k": "French–German 10-year spread",
-        "latest": "177.7 bps (widest since 2011)",
+        "k": "BofA data-centre spending forecast",
+        "latest": "~$1T in 2026; $2.1T annually by 2028",
         "trend": "up",
-        "reading": "European sovereign risk is repricing and broadening, with Italy, Belgium, Greece and Spain all wider."
+        "reading": "Demand for computing infrastructure keeps expanding."
       },
       {
-        "k": "France 10-year yield",
-        "latest": "5.1415% (highest since July 2002)",
+        "k": "Brent crude settlement",
+        "latest": "$116.72 (Oct 23), +3.14% d/d, ~+6% w/w",
         "trend": "up",
-        "reading": "Costlier domestic capital threatens productive investment in Europe."
+        "reading": "Renewed energy shock raises operating-cost risk for AI infrastructure."
       },
       {
-        "k": "US 10-year yield",
-        "latest": "~4.96%",
-        "trend": "down",
-        "reading": "Safe-haven demand into Treasuries as US tech equities fell, so capital is diverging rather than just tightening."
+        "k": "Data-centre fuel-cell investment (Rystad)",
+        "latest": "$2.8B in 2025 → ~$30B by 2030",
+        "trend": "up",
+        "reading": "Electricity is becoming an asset class."
       },
       {
-        "k": "Nasdaq Composite",
-        "latest": "−2.6% (October 22)",
-        "trend": "down",
-        "reading": "American technology risk is being repriced alongside European sovereign risk."
+        "k": "Fuel-cell manufacturing capacity (Rystad)",
+        "latest": "~1.8 GW → ~4 GW by 2030; ~9 GW of orders and frameworks",
+        "trend": "up",
+        "reading": "About 40% of US data-centre capacity may consider dedicated power."
       },
       {
-        "k": "Nebius Citigroup facility",
-        "latest": "$3.5B, 364-day, SOFR+275 bps",
+        "k": "US grid connection lead time",
+        "latest": "3–6 years in parts of the US",
         "trend": "flat",
-        "reading": "AI credit remains open but differentiated by issuer, maturity and structure; Nebius shares still fell ~7%."
+        "reading": "Pushes developers toward on-site generation."
       },
       {
-        "k": "Brent crude",
-        "latest": "~$113.75 per barrel",
+        "k": "Bloom Energy Q3",
+        "latest": "Revenue $1.236B (+138.1% YoY); GAAP operating income $225.4M; FCF ≈ −$180.6M",
         "trend": "up",
-        "reading": "Higher energy and logistics costs raise the capital needed to build infrastructure and the hurdle on long-duration investment."
+        "reading": "Demand is confirmed, but suppliers of grid alternatives are themselves capital-intensive."
+      },
+      {
+        "k": "Moody's France rating",
+        "latest": "Aa3 affirmed, negative outlook (Oct 23)",
+        "trend": "flat",
+        "reading": "Downgrade avoided, but fiscal and political pressure is unresolved."
+      },
+      {
+        "k": "French-German 10-year spread",
+        "latest": "~178 bps (Oct 22); French 10-year briefly above 5.14%",
+        "trend": "up",
+        "reading": "A stable rating does not guarantee stable borrowing costs."
+      },
+      {
+        "k": "Chinese orders for Nvidia RTX PRO 5500",
+        "latest": "More than $35B (ByteDance, Alibaba, Tencent; reported)",
+        "trend": "up",
+        "reading": "Orders are not deliveries, and Nvidia warns it may not meet the volumes."
+      },
+      {
+        "k": "Siemens/Nvidia industrial AI claims",
+        "latest": "Up to 50× more chip-design alternatives; electrothermal workflows in under 5 minutes; Delta timelines cut by up to 50%",
+        "trend": "up",
+        "reading": "Company-reported and not independently verified across the industry. Economy-wide productivity inflection unconfirmed."
+      },
+      {
+        "k": "American Express restructuring",
+        "latest": "~3,500 employees (5% of workforce)",
+        "trend": "flat",
+        "reading": "Workforce cuts alone do not prove higher total-factor productivity."
+      },
+      {
+        "k": "EU AI Gigafactories programme",
+        "latest": "Up to 7 facilities; more than €30B (up to €10B public, at least €20B private); tender closes Nov 12",
+        "trend": "flat",
+        "reading": "Europe's strengths lie in lithography, electrical infrastructure, industrial engineering and software."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-23",
-      "date": "2026-10-23",
+      "url": "/the-next-economy-research-centre-2026-10-24",
+      "date": "2026-10-24",
       "slot": "Morning Brief"
     }
   }

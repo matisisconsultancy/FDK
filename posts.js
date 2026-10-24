@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-24",
+    title: "The Next Economy Research Centre",
+    excerpt: "Widening credit spreads, a renewed energy shock and the rise of on-site power are redrawing the economics of AI infrastructure.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "4 min read",
+    time: "08:26",
+    kind: "day"
+  },
+  {
     url: "/the-contagion-velocity-index",
     title: "The Contagion Velocity Index",
     excerpt: "A new daily framework for measuring the speed, transmission and financial consequences of European contagion.",
