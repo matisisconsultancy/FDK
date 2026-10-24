@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-scarcity-divide",
+    title: "The Great AI Scarcity Divide",
+    excerpt: "Three developments on October 22–24 reveal a more complex AI competitive architecture, where scarcity is moving up the value chain.",
+    tag: "Midday Pulse · AI Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "14:20",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-city-enters-the-discount-rate",
     title: "GVI: The City Enters the Discount Rate",
     excerpt: "France's financing shock drops Paris to seventh as GVI tests whether cities can convert intelligence into capital.",
