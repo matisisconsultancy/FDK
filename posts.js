@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-squeeze",
+    title: "The Great Capital Squeeze",
+    excerpt: "France's ratings reprieve buys time, not credibility — stay defensive and favor productive strength over financial fragility.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "09:43",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-has-crossed-into-credit",
     title: "The Great Repricing Has Crossed Into Credit",
     excerpt: "France avoids a downgrade, AI credit widens, oil spikes and eurozone momentum fades as the Great Split turns financial.",
