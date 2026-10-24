@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-great-transmission-test",
+    title: "GVI: The Great Transmission Test",
+    excerpt: "France dodges a downgrade even as its economy contracts, the US stays strong, and energy costs raise the price of transformation.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "06:33",
+    kind: "day"
+  },
+  {
     url: "/the-algorithmic-battle-for-spain",
     title: "The Algorithmic Battle for Spain",
     excerpt: "How AI-generated content, political spectacle and cross-border confrontation are reshaping Spain's November 29 election.",
