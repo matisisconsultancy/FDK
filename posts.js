@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-reprieve-that-did-not-end-the-repricing",
+    title: "The Reprieve That Did Not End the Repricing",
+    excerpt: "A rating reprieve settles nothing as France, energy and AI financing tighten the conditions for capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "19:44",
+    kind: "night"
+  },
+  {
     url: "/the-architecture-of-financial-intelligence",
     title: "The Architecture of Financial Intelligence",
     excerpt: "Why the future of markets will be defined not by the information we possess, but by our ability to visualize the forces that move capital.",
