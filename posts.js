@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-sovereign-price-of-financial-power-2026-10-24",
+    title: "The Sovereign Price of Financial Power",
+    excerpt: "Italy's banking endgame has become a test of three competing forms of financial power ahead of the October 29 MPS vote.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "8 min read",
+    time: "10:39",
+    kind: "day"
+  },
+  {
     url: "/the-great-capital-squeeze",
     title: "The Great Capital Squeeze",
     excerpt: "France's ratings reprieve buys time, not credibility — stay defensive and favor productive strength over financial fragility.",
