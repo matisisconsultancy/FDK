@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-contagion-velocity-index",
+    title: "The Contagion Velocity Index",
+    excerpt: "A new daily framework for measuring the speed, transmission and financial consequences of European contagion.",
+    tag: "GVI · Systemic Risk",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "07:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-great-transmission-test",
     title: "GVI: The Great Transmission Test",
     excerpt: "France dodges a downgrade even as its economy contracts, the US stays strong, and energy costs raise the price of transformation.",

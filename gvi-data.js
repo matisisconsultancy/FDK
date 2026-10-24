@@ -121,7 +121,8 @@ window.GVI_DATA = {
       "the-new-laws-of-corporate-power",
       "gvi-the-great-credibility-test",
       "the-next-economy-research-centre-2026-10-23",
-      "gvi-the-great-transmission-test"
+      "gvi-the-great-transmission-test",
+      "the-contagion-velocity-index"
     ]
   },
   "daily": {
@@ -3163,6 +3164,12 @@ window.GVI_DATA = {
         "url": "/gvi-the-great-transmission-test",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional rankings; no ranking changes independently established as France holds Aa3 amid PMI contraction."
+      },
+      {
+        "title": "The Contagion Velocity Index",
+        "url": "/the-contagion-velocity-index",
+        "slot": "GVI",
+        "headline": "France is the epicentre with OAT–Bund spreads at 171–178 bp; Italy and Belgium lead the first contagion perimeter ahead of the ECB's October 30 meeting."
       }
     ]
   },
