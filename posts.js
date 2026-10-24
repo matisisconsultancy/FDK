@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-architecture-of-financial-intelligence",
+    title: "The Architecture of Financial Intelligence",
+    excerpt: "Why the future of markets will be defined not by the information we possess, but by our ability to visualize the forces that move capital.",
+    tag: "In Focus · Intelligence",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "7 min read",
+    time: "15:39",
+    kind: "day"
+  },
+  {
     url: "/the-ecb-draws-the-ai-contagion-map",
     title: "The Ecb Draws the AI Contagion Map",
     excerpt: "AI financing is becoming a system-wide risk just as the ECB faces rising inflation expectations and weaker growth.",
