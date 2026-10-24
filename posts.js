@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-has-crossed-into-credit",
+    title: "The Great Repricing Has Crossed Into Credit",
+    excerpt: "France avoids a downgrade, AI credit widens, oil spikes and eurozone momentum fades as the Great Split turns financial.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 24, 2026",
+    read: "5 min read",
+    time: "08:52",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-24",
     title: "The Next Economy Research Centre",
     excerpt: "Widening credit spreads, a renewed energy shock and the rise of on-site power are redrawing the economics of AI infrastructure.",
