@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-causality-engine-lab",
+    title: "The Causality Engine Lab",
+    excerpt: "Inside The Causality Engine Lab — the science of economic transmission in the Velocity Age.",
+    tag: "In Focus · Intelligence",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "8 min read",
+    time: "19:53",
+    kind: "day"
+  },
+  {
     url: "/europes-next-sovereign-shock",
     title: "Europe’s Next Sovereign Shock",
     excerpt: "A French political crisis is becoming a test of European sovereign risk, with Belgium, Italy and Spain next in line.",
