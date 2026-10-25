@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-10-25",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Sovereign, geopolitical and AI-financing stress are converging on the global cost of capital.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "4 min read",
+    time: "13:10",
+    kind: "day"
+  },
+  {
     url: "/the-capital-veto",
     title: "The Capital Veto",
     excerpt: "Norges opposes MPS's expansion, Bank of Italy warns on capital, and France's crisis persists — European banking shifts from control to capital productivity.",
