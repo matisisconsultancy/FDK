@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-veto",
+    title: "The Capital Veto",
+    excerpt: "Norges opposes MPS's expansion, Bank of Italy warns on capital, and France's crisis persists — European banking shifts from control to capital productivity.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "8 min read",
+    time: "12:10",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-capital-2026-10-25",
     title: "The Great Repricing of Capital",
     excerpt: "A defining week tests sovereign stability, central-bank room and whether the AI supercycle can finance itself.",
