@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-capital-2026-10-25",
+    title: "The Great Repricing of Capital",
+    excerpt: "A defining week tests sovereign stability, central-bank room and whether the AI supercycle can finance itself.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "4 min read",
+    time: "08:04",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-25",
     title: "The Next Economy Research Centre",
     excerpt: "Only about 35% of nearly 500 GW of announced US data-centre capacity may materialize, moving the market from capital formation to capital productivity.",
