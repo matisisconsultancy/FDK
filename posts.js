@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-10-25",
+    title: "Europe’s Great Fracture",
+    excerpt: "France, the lessons of 2008, and the financial repricing of Europe's future.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "8 min read",
+    time: "15:35",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-10-25",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Sovereign, geopolitical and AI-financing stress are converging on the global cost of capital.",
