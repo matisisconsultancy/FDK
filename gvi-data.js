@@ -125,7 +125,8 @@ window.GVI_DATA = {
       "the-contagion-velocity-index",
       "the-next-economy-research-centre-2026-10-24",
       "gvi-the-city-enters-the-discount-rate",
-      "gvi-the-sovereign-transmission-threshold"
+      "gvi-the-sovereign-transmission-threshold",
+      "the-next-economy-research-centre-2026-10-25"
     ]
   },
   "daily": {
@@ -3648,93 +3649,81 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-24",
+    "asOf": "2026-10-25",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The AI economy is shifting from a competition for computing capacity to a competition for financeable, energized and commercially productive computing capacity.",
+    "hypothesis": "The next Great Split is not between companies that invest in AI and those that do not, but between capital formation and capital productivity.",
     "rows": [
       {
-        "k": "Global corporate credit spread",
-        "latest": "129 bps (Oct 22)",
-        "trend": "up",
-        "reading": "Widest since May 2025. A broad index reading, not an AI-specific default cycle."
+        "k": "Announced US data-centre pipeline",
+        "latest": "~500 GW",
+        "trend": null,
+        "reading": "The announced pipeline is not the investable infrastructure pipeline."
       },
       {
-        "k": "BofA data-centre spending forecast",
-        "latest": "~$1T in 2026; $2.1T annually by 2028",
-        "trend": "up",
-        "reading": "Demand for computing infrastructure keeps expanding."
+        "k": "Modeled realization rate (Bernstein)",
+        "latest": "~35%",
+        "trend": null,
+        "reading": "Implies roughly 170–175 GW completed. A modeled estimate, not observed cancellations."
       },
       {
-        "k": "Brent crude settlement",
-        "latest": "$116.72 (Oct 23), +3.14% d/d, ~+6% w/w",
+        "k": "UK electricity connection applications",
+        "latest": "41 GW to 125 GW",
         "trend": "up",
-        "reading": "Renewed energy shock raises operating-cost risk for AI infrastructure."
+        "reading": "Demand applications rose in under a year. Grid constraint becomes an allocation problem."
       },
       {
-        "k": "Data-centre fuel-cell investment (Rystad)",
-        "latest": "$2.8B in 2025 → ~$30B by 2030",
-        "trend": "up",
-        "reading": "Electricity is becoming an asset class."
+        "k": "UK data centres in connections queue",
+        "latest": "~73 GW",
+        "trend": null,
+        "reading": "Data centres account for at least 80 GW of applications. Ofgem's proposed commitment fees and milestones could improve allocation."
       },
       {
-        "k": "Fuel-cell manufacturing capacity (Rystad)",
-        "latest": "~1.8 GW → ~4 GW by 2030; ~9 GW of orders and frameworks",
-        "trend": "up",
-        "reading": "About 40% of US data-centre capacity may consider dedicated power."
+        "k": "Cardiff development objections",
+        "latest": "1,200+",
+        "trend": null,
+        "reading": "Public acceptance is an economic variable that affects the probability of completion."
       },
       {
-        "k": "US grid connection lead time",
-        "latest": "3–6 years in parts of the US",
+        "k": "Semiconductor demand (TSMC, ASML, Lam, Besi)",
+        "latest": "Strong Q3 results",
         "trend": "flat",
-        "reading": "Pushes developers toward on-site generation."
+        "reading": "Demand is intact, but no newly verified October 25 release shows further acceleration. Strong chips do not mean every project goes live."
       },
       {
-        "k": "Bloom Energy Q3",
-        "latest": "Revenue $1.236B (+138.1% YoY); GAAP operating income $225.4M; FCF ≈ −$180.6M",
-        "trend": "up",
-        "reading": "Demand is confirmed, but suppliers of grid alternatives are themselves capital-intensive."
+        "k": "Siemens Erlangen engineering effort",
+        "latest": "up to 85% reduction",
+        "trend": null,
+        "reading": "Company-reported, for selected activities. Not an aggregate productivity gain."
       },
       {
-        "k": "Moody's France rating",
-        "latest": "Aa3 affirmed, negative outlook (Oct 23)",
+        "k": "Siemens Erlangen planning-cost savings",
+        "latest": "up to 20%",
+        "trend": null,
+        "reading": "Company-reported application-level result."
+      },
+      {
+        "k": "France sovereign rating (Moody's)",
+        "latest": "Aa3, negative outlook (Oct 23)",
         "trend": "flat",
-        "reading": "Downgrade avoided, but fiscal and political pressure is unresolved."
+        "reading": "Removes an immediate downgrade catalyst but leaves underlying risks unresolved."
       },
       {
-        "k": "French-German 10-year spread",
-        "latest": "~178 bps (Oct 22); French 10-year briefly above 5.14%",
+        "k": "France 10-year yield",
+        "latest": ">5%",
         "trend": "up",
-        "reading": "A stable rating does not guarantee stable borrowing costs."
+        "reading": "The Bund spread widened sharply, raising the cost of long-duration AI capital in Europe."
       },
       {
-        "k": "Chinese orders for Nvidia RTX PRO 5500",
-        "latest": "More than $35B (ByteDance, Alibaba, Tencent; reported)",
-        "trend": "up",
-        "reading": "Orders are not deliveries, and Nvidia warns it may not meet the volumes."
-      },
-      {
-        "k": "Siemens/Nvidia industrial AI claims",
-        "latest": "Up to 50× more chip-design alternatives; electrothermal workflows in under 5 minutes; Delta timelines cut by up to 50%",
-        "trend": "up",
-        "reading": "Company-reported and not independently verified across the industry. Economy-wide productivity inflection unconfirmed."
-      },
-      {
-        "k": "American Express restructuring",
-        "latest": "~3,500 employees (5% of workforce)",
-        "trend": "flat",
-        "reading": "Workforce cuts alone do not prove higher total-factor productivity."
-      },
-      {
-        "k": "EU AI Gigafactories programme",
-        "latest": "Up to 7 facilities; more than €30B (up to €10B public, at least €20B private); tender closes Nov 12",
-        "trend": "flat",
-        "reading": "Europe's strengths lie in lithography, electrical infrastructure, industrial engineering and software."
+        "k": "France 2026 deficit forecast",
+        "latest": "~5.4% of GDP",
+        "trend": null,
+        "reading": "Unrest amplifies existing vulnerabilities rather than creating a new sovereign problem."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-24",
-      "date": "2026-10-24",
+      "url": "/the-next-economy-research-centre-2026-10-25",
+      "date": "2026-10-25",
       "slot": "Morning Brief"
     }
   }

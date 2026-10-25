@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-25",
+    title: "The Next Economy Research Centre",
+    excerpt: "Only about 35% of nearly 500 GW of announced US data-centre capacity may materialize, moving the market from capital formation to capital productivity.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "5 min read",
+    time: "07:59",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-sovereign-transmission-threshold",
     title: "GVI: The Sovereign Transmission Threshold",
     excerpt: "France avoids a downgrade, but weekend unrest keeps sovereign risk at the centre of Europe's capital-velocity test.",
