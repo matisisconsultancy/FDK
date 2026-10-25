@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-the-higher-hurdle",
+    title: "The Age of the Higher Hurdle",
+    excerpt: "Energy inflation, France's fiscal crisis and the AI financing cycle are reinforcing one another into a more demanding cost of capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "5 min read",
+    time: "20:27",
+    kind: "night"
+  },
+  {
     url: "/the-causality-engine-lab",
     title: "The Causality Engine Lab",
     excerpt: "Inside The Causality Engine Lab — the science of economic transmission in the Velocity Age.",
