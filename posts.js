@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-next-sovereign-shock",
+    title: "Europe’s Next Sovereign Shock",
+    excerpt: "A French political crisis is becoming a test of European sovereign risk, with Belgium, Italy and Spain next in line.",
+    tag: "The Week Ahead · Europe",
+    slot: "The Week Ahead",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "10 min read",
+    time: "19:37",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-10-25",
     title: "Europe’s Great Fracture",
     excerpt: "France, the lessons of 2008, and the financial repricing of Europe's future.",
