@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-sovereign-transmission-threshold",
+    title: "GVI: The Sovereign Transmission Threshold",
+    excerpt: "France avoids a downgrade, but weekend unrest keeps sovereign risk at the centre of Europe's capital-velocity test.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 25, 2026",
+    read: "5 min read",
+    time: "05:07",
+    kind: "day"
+  },
+  {
     url: "/the-reprieve-that-did-not-end-the-repricing",
     title: "The Reprieve That Did Not End the Repricing",
     excerpt: "A rating reprieve settles nothing as France, energy and AI financing tighten the conditions for capital.",
