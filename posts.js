@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-financing-divide",
+    title: "The Great Financing Divide",
+    excerpt: "A relief rally that is not the all-clear, as capital rotates from consumption into productivity.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "07:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-cost-of-velocity",
     title: "GVI: The Cost of Velocity",
     excerpt: "The AI Supercycle moves from an investment race toward a contest over the economics of sustained acceleration.",
