@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-veto-enters-the-market",
+    title: "The Capital Veto Enters the Market",
+    excerpt: "Italy's banking consolidation enters its decisive week as the October 29 MPS vote tests whether ownership still equals economic power.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "7 min read",
+    time: "10:17",
+    kind: "day"
+  },
+  {
     url: "/europes-defining-crossroads",
     title: "Europe’s Defining Crossroads",
     excerpt: "Sovereign stress, energy pressure and the AI Supercycle could reshape Europe's economic architecture and its place in the next global order.",
