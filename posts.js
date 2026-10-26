@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/anthropics-ipo-the-ai-supercycle-reveals-its-economic-architecture",
+    title: "Anthropic’s IPO: The AI Supercycle Reveals Its Economic Architecture",
+    excerpt: "Anthropic's S-1 moves the AI Supercycle from measuring investment to measuring the returns that investment generates.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "8 min read",
+    time: "17:52",
+    kind: "day"
+  },
+  {
     url: "/the-great-ai-capital-reset",
     title: "The Great AI Capital Reset",
     excerpt: "A structural week that tests whether AI capital can earn attractive incremental returns, not just scale.",
