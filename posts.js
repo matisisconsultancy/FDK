@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-10-26",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Meta's $95B recapitalization, tightening Eurozone credit and Europe's energy shock reveal a new financial regime for the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "15:03",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-credit-divide",
     title: "Europe’s AI Credit Divide",
     excerpt: "Europe is building the capacity to allocate capital faster while its companies find that capital harder to obtain.",
