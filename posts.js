@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-cost-of-velocity",
+    title: "GVI: The Cost of Velocity",
+    excerpt: "The AI Supercycle moves from an investment race toward a contest over the economics of sustained acceleration.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "07:21",
+    kind: "day"
+  },
+  {
     url: "/the-age-of-the-higher-hurdle",
     title: "The Age of the Higher Hurdle",
     excerpt: "Energy inflation, France's fiscal crisis and the AI financing cycle are reinforcing one another into a more demanding cost of capital.",

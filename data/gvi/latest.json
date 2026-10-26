@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-25",
+    "updated": "2026-10-26",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -122,34 +122,35 @@
       "the-next-economy-research-centre-2026-10-24",
       "gvi-the-city-enters-the-discount-rate",
       "gvi-the-sovereign-transmission-threshold",
-      "the-next-economy-research-centre-2026-10-25"
+      "the-next-economy-research-centre-2026-10-25",
+      "gvi-the-cost-of-velocity"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": "N/V",
-      "deltaPct": null,
+      "delta": null,
+      "deltaPct": "",
       "trend": "up",
-      "trend30d": null,
-      "asOf": "2026-10-25",
+      "trend30d": "",
+      "asOf": "2026-10-26",
       "improving": null,
       "declining": null,
-      "coverage": null,
+      "coverage": 15,
       "source": {
-        "title": "GVI: The Sovereign Transmission Threshold",
-        "url": "/gvi-the-sovereign-transmission-threshold",
-        "date": "2026-10-25",
+        "title": "GVI: The Cost of Velocity",
+        "url": "/gvi-the-cost-of-velocity",
+        "date": "2026-10-26",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-25",
+      "asOf": "2026-10-26",
       "source": {
-        "title": "GVI: The Sovereign Transmission Threshold",
-        "url": "/gvi-the-sovereign-transmission-threshold",
-        "date": "2026-10-25",
+        "title": "GVI: The Cost of Velocity",
+        "url": "/gvi-the-cost-of-velocity",
+        "date": "2026-10-26",
         "slot": "GVI"
       },
       "rows": [
@@ -160,7 +161,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Technological leadership; energy and financing pressure",
+          "tag": "AI leadership; cash-conversion test approaching",
           "spark": [
             92.1,
             92.3,
@@ -170,6 +171,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -196,8 +198,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Innovation positive; governance restrictions increasing",
+          "tag": "Industrial strength; policy uncertainty",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -219,8 +222,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong semiconductor position; capital selectivity",
+          "tag": "Semiconductor strength; capital distribution in focus",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -242,8 +246,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial technology strengths; stable",
+          "tag": "Industrial capabilities; cybersecurity and energy risks",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -265,8 +270,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial recovery remains fragile",
+          "tag": "Industrial-AI opportunity; energy constraints",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -288,8 +294,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Digital-services strength; inflation and fiscal constraints",
+          "tag": "AI security investment; fiscal pressure",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -311,8 +318,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "High sovereign and political risk; downgrade avoided",
+          "tag": "Elevated sovereign risk; persistent political uncertainty",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -347,6 +355,7 @@
             80.7,
             80.7,
             80.7,
+            80.7,
             80.7
           ]
         },
@@ -357,8 +366,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor-equipment advantages",
+          "tag": "Advanced semiconductor-equipment strengths",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -380,8 +390,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive industrial fundamentals",
+          "tag": "Industrial capabilities; financing sensitivity",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -403,8 +414,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy and digital infrastructure strengths",
+          "tag": "Energy and digital infrastructure advantages",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -426,8 +438,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy advantage",
+          "tag": "Energy resilience",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -449,8 +462,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative financing resilience; political uncertainty",
+          "tag": "Relative financing resilience; European spillover exposure",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -485,6 +499,7 @@
             72.4,
             72.4,
             72.4,
+            72.4,
             72.4
           ]
         },
@@ -495,8 +510,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign-spillover sensitivity; political stability remains a buffer",
+          "tag": "Energy-cost exposure; sovereign transmission risk",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3129,56 +3145,56 @@
     }
   },
   "today": {
-    "date": "2026-10-25",
-    "edition": "GVI · Capital",
-    "thesis": "GVI: The Sovereign Transmission Threshold",
-    "subtitle": "France has avoided an immediate ratings shock, but it has not escaped the deterioration in fiscal credibility and political stability that investors are pricing into its sovereign debt.",
-    "standfirst": "Sovereign credibility is no longer merely a measure of financial stability — it is becoming a determinant of national economic velocity.",
+    "date": "2026-10-26",
+    "edition": "GVI · Global Velocity",
+    "thesis": "GVI: The Cost of Velocity",
+    "subtitle": "The next phase of global competition will be decided not by the capacity to produce intelligence, but by the ability to finance its deployment, protect its infrastructure and convert acceleration into sustainable returns.",
+    "standfirst": "Technology creates the possibility of acceleration; productive conversion decides whether it lasts.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI (provisional baseline)",
+        "label": "GVI reference (provisional)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "France rating (Moody's)",
-        "value": "Aa3, negative outlook",
+        "label": "Brent crude",
+        "value": "$114.88",
+        "delta": "-1.6%",
+        "trend": "down"
+      },
+      {
+        "label": "UK AI-security funding",
+        "value": "£600m",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "OAT–Bund spread (intraday Oct 22)",
-        "value": "177.7 bps",
+        "label": "SK Hynix reported special dividend",
+        "value": "16tn won",
         "delta": null,
-        "trend": "up"
+        "trend": "flat"
       },
       {
-        "label": "Demonstrators across France, Oct 24",
+        "label": "France protesters (Oct 24)",
         "value": "410,000",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "Brent crude (Oct 23 settlement)",
-        "value": "$116.72",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "GVI: The Sovereign Transmission Threshold",
-      "url": "/gvi-the-sovereign-transmission-threshold",
-      "date": "2026-10-25",
+      "title": "GVI: The Cost of Velocity",
+      "url": "/gvi-the-cost-of-velocity",
+      "date": "2026-10-26",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: The Sovereign Transmission Threshold",
-        "url": "/gvi-the-sovereign-transmission-threshold",
+        "title": "GVI: The Cost of Velocity",
+        "url": "/gvi-the-cost-of-velocity",
         "slot": "GVI",
-        "headline": "France keeps Aa3 with a negative outlook; provisional rankings carried forward with no validated changes, led by US 94.0, China 91.2 and South Korea 88.8"
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead provisional rankings as financing the cost of velocity becomes the constraint"
       }
     ]
   },
