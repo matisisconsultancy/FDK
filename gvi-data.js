@@ -127,7 +127,8 @@ window.GVI_DATA = {
       "gvi-the-city-enters-the-discount-rate",
       "gvi-the-sovereign-transmission-threshold",
       "the-next-economy-research-centre-2026-10-25",
-      "gvi-the-cost-of-velocity"
+      "gvi-the-cost-of-velocity",
+      "the-next-economy-research-centre-2026-10-26"
     ]
   },
   "daily": {
@@ -3665,81 +3666,63 @@ window.GVI_DATA = {
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-25",
+    "asOf": "2026-10-26",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The next Great Split is not between companies that invest in AI and those that do not, but between capital formation and capital productivity.",
+    "hypothesis": "The Great Split is evolving from a competition in technological capacity into a competition in capital resilience.",
     "rows": [
       {
-        "k": "Announced US data-centre pipeline",
-        "latest": "~500 GW",
-        "trend": null,
-        "reading": "The announced pipeline is not the investable infrastructure pipeline."
-      },
-      {
-        "k": "Modeled realization rate (Bernstein)",
-        "latest": "~35%",
-        "trend": null,
-        "reading": "Implies roughly 170–175 GW completed. A modeled estimate, not observed cancellations."
-      },
-      {
-        "k": "UK electricity connection applications",
-        "latest": "41 GW to 125 GW",
+        "k": "SpaceX GPU debt financing (management-reported)",
+        "latest": "$40B",
         "trend": "up",
-        "reading": "Demand applications rose in under a year. Grid constraint becomes an allocation problem."
+        "reading": "Management-reported and not independently verified. Closing status, pricing and terms are unclear."
       },
       {
-        "k": "UK data centres in connections queue",
-        "latest": "~73 GW",
-        "trend": null,
-        "reading": "Data centres account for at least 80 GW of applications. Ofgem's proposed commitment fees and milestones could improve allocation."
-      },
-      {
-        "k": "Cardiff development objections",
-        "latest": "1,200+",
-        "trend": null,
-        "reading": "Public acceptance is an economic variable that affects the probability of completion."
-      },
-      {
-        "k": "Semiconductor demand (TSMC, ASML, Lam, Besi)",
-        "latest": "Strong Q3 results",
-        "trend": "flat",
-        "reading": "Demand is intact, but no newly verified October 25 release shows further acceleration. Strong chips do not mean every project goes live."
-      },
-      {
-        "k": "Siemens Erlangen engineering effort",
-        "latest": "up to 85% reduction",
-        "trend": null,
-        "reading": "Company-reported, for selected activities. Not an aggregate productivity gain."
-      },
-      {
-        "k": "Siemens Erlangen planning-cost savings",
-        "latest": "up to 20%",
-        "trend": null,
-        "reading": "Company-reported application-level result."
-      },
-      {
-        "k": "France sovereign rating (Moody's)",
-        "latest": "Aa3, negative outlook (Oct 23)",
-        "trend": "flat",
-        "reading": "Removes an immediate downgrade catalyst but leaves underlying risks unresolved."
-      },
-      {
-        "k": "France 10-year yield",
-        "latest": ">5%",
+        "k": "SpaceX Q3 revenue",
+        "latest": "$14.58B (+161% YoY)",
         "trend": "up",
-        "reading": "The Bund spread widened sharply, raising the cost of long-duration AI capital in Europe."
+        "reading": "Diversified Starlink and launch revenue may support financing flexibility. It does not establish unrestricted cash for debt service."
       },
       {
-        "k": "France 2026 deficit forecast",
-        "latest": "~5.4% of GDP",
-        "trend": null,
-        "reading": "Unrest amplifies existing vulnerabilities rather than creating a new sovereign problem."
+        "k": "SpaceX AI-related revenue",
+        "latest": "$7.56B (~52% of total)",
+        "trend": "up",
+        "reading": "About half of revenue is now AI-related."
+      },
+      {
+        "k": "Nebius senior secured facility",
+        "latest": "$3.5B, Term SOFR +275bps, 364-day",
+        "trend": "flat",
+        "reading": "Specialized providers can still borrow, so AI credit is selective rather than closed. The short maturity matters."
+      },
+      {
+        "k": "SK Hynix potential special dividend",
+        "latest": "~₩16T (reported)",
+        "trend": "up",
+        "reading": "Chipmakers reap profits from the cycle while infrastructure operators commit capital. Details are due October 28."
+      },
+      {
+        "k": "AI adoption in strategic European sectors (JRC)",
+        "latest": "18% in 2025 (7% in 2021)",
+        "trend": "up",
+        "reading": "Much of the rise reflects general-purpose AI, not organizational transformation. No economy-wide productivity inflection."
+      },
+      {
+        "k": "Brent crude",
+        "latest": "~$114.48/bbl (-1.9%)",
+        "trend": "down",
+        "reading": "A moderation on Qatar-Iran diplomacy, not a resolution."
+      },
+      {
+        "k": "Europe AI Gigafactories funding",
+        "latest": "€10B public aiming to mobilize €20B+ private",
+        "trend": "flat",
+        "reading": "Up to seven facilities. EuroHPC deadlines are Lot 2 on December 3, 2026 and Lot 1 on February 4, 2027. Execution depends on financing and electricity."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-25",
-      "date": "2026-10-25",
+      "url": "/the-next-economy-research-centre-2026-10-26",
+      "date": "2026-10-26",
       "slot": "Morning Brief"
     }
   }

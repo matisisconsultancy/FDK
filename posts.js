@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-26",
+    title: "The Next Economy Research Centre",
+    excerpt: "The AI Supercycle is becoming a competition in capital resilience, not just computing capacity.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "08:13",
+    kind: "day"
+  },
+  {
     url: "/the-great-financing-divide",
     title: "The Great Financing Divide",
     excerpt: "A relief rally that is not the all-clear, as capital rotates from consumption into productivity.",
