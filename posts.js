@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-credit-divide",
+    title: "Europe’s AI Credit Divide",
+    excerpt: "Europe is building the capacity to allocate capital faster while its companies find that capital harder to obtain.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "8 min read",
+    time: "14:35",
+    kind: "day"
+  },
+  {
     url: "/the-great-ai-revenue-divide",
     title: "The Great AI Revenue Divide",
     excerpt: "France's sovereign relief rally eases acute risk, but energy inflation and selective credit leave Europe's deeper problem unresolved.",
