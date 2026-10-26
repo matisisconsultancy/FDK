@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-capital-reset",
+    title: "The Great AI Capital Reset",
+    excerpt: "A structural week that tests whether AI capital can earn attractive incremental returns, not just scale.",
+    tag: "The Week Ahead · AI Supercycle",
+    slot: "The Week Ahead",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "7 min read",
+    time: "16:22",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-10-26",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Meta's $95B recapitalization, tightening Eurozone credit and Europe's energy shock reveal a new financial regime for the AI Supercycle.",
