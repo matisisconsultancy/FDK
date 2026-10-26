@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-revenue-divide",
+    title: "The Great AI Revenue Divide",
+    excerpt: "France's sovereign relief rally eases acute risk, but energy inflation and selective credit leave Europe's deeper problem unresolved.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "14:26",
+    kind: "day"
+  },
+  {
     url: "/the-capital-veto-enters-the-market",
     title: "The Capital Veto Enters the Market",
     excerpt: "Italy's banking consolidation enters its decisive week as the October 29 MPS vote tests whether ownership still equals economic power.",
