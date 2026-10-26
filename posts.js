@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-price-of-growth",
+    title: "The New Price of Growth",
+    excerpt: "AI credit, energy insecurity and sovereign-debt stress are converging to reprice the cost of building the next economy.",
+    tag: "The Week Ahead · Capital",
+    slot: "The Week Ahead",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "9 min read",
+    time: "08:38",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-26",
     title: "The Next Economy Research Centre",
     excerpt: "The AI Supercycle is becoming a competition in capital resilience, not just computing capacity.",
