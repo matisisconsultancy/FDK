@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-week-capital-chooses-sides",
+    title: "The Week Capital Chooses Sides",
+    excerpt: "Global markets enter a decisive week as AI earnings, French sovereign credibility and three central-bank decisions test the Great Split's capital-productivity phase.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "09:30",
+    kind: "day"
+  },
+  {
     url: "/the-new-price-of-growth",
     title: "The New Price of Growth",
     excerpt: "AI credit, energy insecurity and sovereign-debt stress are converging to reprice the cost of building the next economy.",
