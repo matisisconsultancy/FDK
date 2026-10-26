@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-day-the-ai-supercycle-met-the-capital-markets",
+    title: "The Day the AI Supercycle Met the Capital Markets",
+    excerpt: "Two landmark AI financings and a divided global market signal a new, more demanding regime for capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "5 min read",
+    time: "20:25",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-power-becomes-the-new-capital",
     title: "Europe’s AI Race: Power Becomes the New Capital",
     excerpt: "Spain draws a €7.4bn proposal, SWI launches an AI compute platform, and a European energy shock reprices Gigafactory economics.",
