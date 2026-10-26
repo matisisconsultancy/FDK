@@ -1,6 +1,6 @@
 # Site health · fdkempowernet.com
 
-Checked 2026-10-22 14:02 UTC by .github/workflows/site-health.yml
+Checked 2026-10-26 13:07 UTC by .github/workflows/site-health.yml
 
 ## Certificate and domain
 
@@ -14,9 +14,9 @@ Checked 2026-10-22 14:02 UTC by .github/workflows/site-health.yml
 
 | Page | Performance | LCP | CLS | TBT |
 |---|---|---|---|---|
-| https://fdkempowernet.com/ | 51 | 6.2 s | 0.002 | 710 ms |
-| https://fdkempowernet.com/markets/ | 78 | 1.5 s | 0.378 | 230 ms |
-| https://fdkempowernet.com/europes-great-fracture-2026-10-22-2/ | 76 | 4.9 s | 0.009 | 180 ms |
+| https://fdkempowernet.com/ | 46 | 6.2 s | 0.002 | 680 ms |
+| https://fdkempowernet.com/markets/ | 100 | 1.1 s | 0 | 70 ms |
+| https://fdkempowernet.com/the-capital-veto-enters-the-market/ | 80 | 5.1 s | 0.007 | 70 ms |
 
 ## Links
 
@@ -24,12 +24,12 @@ Checked 2026-10-22 14:02 UTC by .github/workflows/site-health.yml
 
 | Status         | Count |
 |----------------|-------|
-| 🔍 Total       | 19817 |
-| 🔗 Unique      | 462   |
-| ✅ Successful  | 18644 |
+| 🔍 Total       | 22261 |
+| 🔗 Unique      | 556   |
+| ✅ Successful  | 20947 |
 | ⏳ Timeouts    | 0     |
 | 🔀 Redirected  | 0     |
-| 👻 Excluded    | 1171  |
+| 👻 Excluded    | 1312  |
 | ❓ Unknown     | 0     |
 | 🚫 Errors      | 2     |
 | ⛔ Unsupported | 0     |
@@ -44,4 +44,4 @@ Checked 2026-10-22 14:02 UTC by .github/workflows/site-health.yml
 
 * [503] <https://www.amazon.com/s?k=The+European+Pivot+Kaufmann> (at 172:20) | Rejected status code: 503 Service Unavailable
 
-[Full Github Actions output](https://github.com/matisisconsultancy/FDK/actions/runs/39792129813?check_suite_focus=true)
+[Full Github Actions output](https://github.com/matisisconsultancy/FDK/actions/runs/40327768140?check_suite_focus=true)
