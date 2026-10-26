@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-defining-crossroads",
+    title: "Europe’s Defining Crossroads",
+    excerpt: "Sovereign stress, energy pressure and the AI Supercycle could reshape Europe's economic architecture and its place in the next global order.",
+    tag: "In Focus · Europe",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 26, 2026",
+    read: "10 min read",
+    time: "10:11",
+    kind: "day"
+  },
+  {
     url: "/the-week-capital-chooses-sides",
     title: "The Week Capital Chooses Sides",
     excerpt: "Global markets enter a decisive week as AI earnings, French sovereign credibility and three central-bank decisions test the Great Split's capital-productivity phase.",
