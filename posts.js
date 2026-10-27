@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-price-of-intelligence",
+    title: "The New Price of Intelligence",
+    excerpt: "Anthropic opens its books, Meta prepares a $95B raise, Brazil suffers a historic shock, and the AI economy enters its financial disclosure age.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "5 min read",
+    time: "09:27",
+    kind: "day"
+  },
+  {
     url: "/the-global-fracture-of-political-confidence",
     title: "The Global Fracture of Political Confidence",
     excerpt: "Whether today's unrest is a series of isolated incidents or an early sign of a structural transformation that reprices sovereign risk.",
