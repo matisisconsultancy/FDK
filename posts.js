@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/capital-moves-before-control",
+    title: "Capital Moves Before Control",
+    excerpt: "Unipol's €2.46bn raise, sovereign relief and continental scale are reshaping Europe's financial hierarchy before the October 29 MPS vote.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "9 min read",
+    time: "08:59",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-balance-sheet",
     title: "The Great Split Reaches the Balance Sheet",
     excerpt: "Anthropic's IPO, Meta's $95bn plan and new GPU-backed credit mark a shift in how the AI Supercycle is funded — and who captures its returns.",
