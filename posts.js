@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-global-fracture-of-political-confidence",
+    title: "The Global Fracture of Political Confidence",
+    excerpt: "Whether today's unrest is a series of isolated incidents or an early sign of a structural transformation that reprices sovereign risk.",
+    tag: "In Focus · Sovereign Risk",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "5 min read",
+    time: "09:23",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-27",
     title: "The Next Economy Research Centre",
     excerpt: "Anthropic files to go public and Meta launches a $95 billion fundraising plan as AI financing moves to the public markets.",
