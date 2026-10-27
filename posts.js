@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-capital-divide",
+    title: "The Great AI Capital Divide",
+    excerpt: "A material inflection in the U.S.–China AI competition as financial architecture becomes the third competitive dimension.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "5 min read",
+    time: "12:09",
+    kind: "day"
+  },
+  {
     url: "/the-new-price-of-intelligence",
     title: "The New Price of Intelligence",
     excerpt: "Anthropic opens its books, Meta prepares a $95B raise, Brazil suffers a historic shock, and the AI economy enters its financial disclosure age.",
