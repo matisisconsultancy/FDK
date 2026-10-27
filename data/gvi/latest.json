@@ -125,7 +125,8 @@
       "the-next-economy-research-centre-2026-10-25",
       "gvi-the-cost-of-velocity",
       "the-next-economy-research-centre-2026-10-26",
-      "gvi-the-great-ai-capital-reckoning"
+      "gvi-the-great-ai-capital-reckoning",
+      "the-next-economy-research-centre-2026-10-27"
     ]
   },
   "daily": {
@@ -3678,63 +3679,87 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-26",
+    "asOf": "2026-10-27",
     "title": "Next Economy Dashboard",
-    "hypothesis": "The Great Split is evolving from a competition in technological capacity into a competition in capital resilience.",
+    "hypothesis": "Whether revenues from intelligence grow faster than the financial obligations required to produce it.",
     "rows": [
       {
-        "k": "SpaceX GPU debt financing (management-reported)",
-        "latest": "$40B",
+        "k": "Anthropic H1 2026 revenue",
+        "latest": "$16.29B (~14× the $1.16B of the prior-year period)",
         "trend": "up",
-        "reading": "Management-reported and not independently verified. Closing status, pricing and terms are unclear."
+        "reading": "Extraordinary revenue growth disclosed in the S-1."
       },
       {
-        "k": "SpaceX Q3 revenue",
-        "latest": "$14.58B (+161% YoY)",
+        "k": "Anthropic revenue-to-compute ratio",
+        "latest": "2.08× (Q2 2026), vs 1.40× in Q1 2026 and 0.57× in Q2 2025",
         "trend": "up",
-        "reading": "Diversified Starlink and launch revenue may support financing flexibility. It does not establish unrestricted cash for debt service."
+        "reading": "Revenue is growing faster than recognized compute cost. This is not a gross margin and can deteriorate as new commitments go live."
       },
       {
-        "k": "SpaceX AI-related revenue",
-        "latest": "$7.56B (~52% of total)",
+        "k": "Anthropic Q2 operating income",
+        "latest": "+$974M",
         "trend": "up",
-        "reading": "About half of revenue is now AI-related."
+        "reading": "A new operating-profit milestone."
       },
       {
-        "k": "Nebius senior secured facility",
-        "latest": "$3.5B, Term SOFR +275bps, 364-day",
+        "k": "Anthropic H1 net loss",
+        "latest": "$80.7B (~$72.4B noncash fair-value charges)",
         "trend": "flat",
-        "reading": "Specialized providers can still borrow, so AI credit is selective rather than closed. The short maturity matters."
+        "reading": "The headline loss is mostly noncash fair-value changes on convertible notes and derivatives, not cash outflow."
       },
       {
-        "k": "SK Hynix potential special dividend",
-        "latest": "~₩16T (reported)",
+        "k": "Anthropic compute and infrastructure commitments",
+        "latest": ">$600B over a decade across ~8 partners (Reuters)",
         "trend": "up",
-        "reading": "Chipmakers reap profits from the cycle while infrastructure operators commit capital. Details are due October 28."
+        "reading": "Much of it is noncancelable, so future demand must support commitments made well in advance."
       },
       {
-        "k": "AI adoption in strategic European sectors (JRC)",
-        "latest": "18% in 2025 (7% in 2021)",
+        "k": "Meta potential equity capacity",
+        "latest": "$95B (~$35B immediate + up to $60B planned from 2027)",
         "trend": "up",
-        "reading": "Much of the rise reflects general-purpose AI, not organizational transformation. No economy-wide productivity inflection."
+        "reading": "Potential capacity, not yet raised, against 2026 capex guidance of $135–145B."
       },
       {
-        "k": "Brent crude",
-        "latest": "~$114.48/bbl (-1.9%)",
+        "k": "Meta Q3 free cash flow",
+        "latest": "≈ −$2.12B",
         "trend": "down",
-        "reading": "A moderation on Qatar-Iran diplomacy, not a resolution."
+        "reading": "Negative despite strong operating generation. Meta is starting to look like a highly capitalized industrial enterprise."
       },
       {
-        "k": "Europe AI Gigafactories funding",
-        "latest": "€10B public aiming to mobilize €20B+ private",
+        "k": "Meta cash and securities vs long-term debt",
+        "latest": "~$82.45B vs ~$80.92B",
         "trend": "flat",
-        "reading": "Up to seven facilities. EuroHPC deadlines are Lot 2 on December 3, 2026 and Lot 1 on February 4, 2027. Execution depends on financing and electricity."
+        "reading": "Not distress, but AI investment is reshaping how a profitable platform is financed."
+      },
+      {
+        "k": "European wholesale gas",
+        "latest": "~€97/MWh on Oct 26; storage ~75% vs ~80% norm",
+        "trend": "up",
+        "reading": "Highest since 2022, which raises energy-cost exposure for AI infrastructure."
+      },
+      {
+        "k": "South Korea 2027 chip-export shortfall (BoK downside)",
+        "latest": "$50–100B; GDP growth −~0.4 pt in the stress scenario",
+        "trend": "down",
+        "reading": "Assumes a 10% chip-price decline. Shows how a weaker US AI investment cycle could transmit into national exports and growth."
+      },
+      {
+        "k": "EU strategic-sector AI adoption",
+        "latest": "18% (2025), up from 7% (2021)",
+        "trend": "up",
+        "reading": "Uneven by sector (media 38%, energy 34%, manufacturing 16%, mobility 12%) and often shallow, general-purpose tool use."
+      },
+      {
+        "k": "Tata Communications AI-ready fibre",
+        "latest": "$400–450M for ~10,000 km",
+        "trend": "up",
+        "reading": "Planned, not completed. A sign that the geography of AI value is broadening."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-26",
-      "date": "2026-10-26",
+      "url": "/the-next-economy-research-centre-2026-10-27",
+      "date": "2026-10-27",
       "slot": "Morning Brief"
     }
   }

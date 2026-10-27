@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-27",
+    title: "The Next Economy Research Centre",
+    excerpt: "Anthropic files to go public and Meta launches a $95 billion fundraising plan as AI financing moves to the public markets.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "5 min read",
+    time: "09:14",
+    kind: "day"
+  },
+  {
     url: "/capital-moves-before-control",
     title: "Capital Moves Before Control",
     excerpt: "Unipol's €2.46bn raise, sovereign relief and continental scale are reshaping Europe's financial hierarchy before the October 29 MPS vote.",
