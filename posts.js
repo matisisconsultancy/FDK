@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-balance-sheet",
+    title: "The Great Split Reaches the Balance Sheet",
+    excerpt: "Anthropic's IPO, Meta's $95bn plan and new GPU-backed credit mark a shift in how the AI Supercycle is funded — and who captures its returns.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "4 min read",
+    time: "08:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-great-ai-capital-reckoning",
     title: "GVI: The Great AI Capital Reckoning",
     excerpt: "Anthropic's IPO filing exposes the financial architecture of frontier AI — extraordinary revenue set against $600bn in computing commitments and an increasingly structured financing chain.",
