@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-great-divide-in-global-capital",
+    title: "The Next Great Divide in Global Capital",
+    excerpt: "Anthropic's filings, a $63bn infrastructure financing and a tightening Europe reveal the emerging architecture of The Great Split.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "5 min read",
+    time: "15:41",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-enters-the-credit-decision",
     title: "The Great Split Enters the Credit Decision",
     excerpt: "France's sovereign relief rally masks a collapse in consumer confidence and a widening divide in Europe's ability to finance its future.",
