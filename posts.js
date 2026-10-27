@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-intelligence-becomes-collateral",
+    title: "When Intelligence Becomes Collateral",
+    excerpt: "How computing hardware, structured finance and hyperscaler capex are becoming a new collateralized investment cycle — and where the risk concentrates.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "4 min read",
+    time: "19:48",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-power-inflection",
     title: "Europe’s AI Race: The Power Inflection",
     excerpt: "Infineon's €1.1 billion power-semiconductor bet and Spain's revised data-center decree mark a more sophisticated phase of Europe's AI infrastructure race.",
