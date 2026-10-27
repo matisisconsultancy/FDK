@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-power-inflection",
+    title: "Europe’s AI Race: The Power Inflection",
+    excerpt: "Infineon's €1.1 billion power-semiconductor bet and Spain's revised data-center decree mark a more sophisticated phase of Europe's AI infrastructure race.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "7 min read",
+    time: "18:00",
+    kind: "day"
+  },
+  {
     url: "/the-next-great-divide-in-global-capital",
     title: "The Next Great Divide in Global Capital",
     excerpt: "Anthropic's filings, a $63bn infrastructure financing and a tightening Europe reveal the emerging architecture of The Great Split.",
