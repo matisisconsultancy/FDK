@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-great-ai-capital-reckoning",
+    title: "GVI: The Great AI Capital Reckoning",
+    excerpt: "Anthropic's IPO filing exposes the financial architecture of frontier AI — extraordinary revenue set against $600bn in computing commitments and an increasingly structured financing chain.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "5 min read",
+    time: "07:56",
+    kind: "day"
+  },
+  {
     url: "/the-day-the-ai-supercycle-met-the-capital-markets",
     title: "The Day the AI Supercycle Met the Capital Markets",
     excerpt: "Two landmark AI financings and a divided global market signal a new, more demanding regime for capital.",

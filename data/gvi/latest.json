@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-26",
+    "updated": "2026-10-27",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -124,34 +124,35 @@
       "gvi-the-sovereign-transmission-threshold",
       "the-next-economy-research-centre-2026-10-25",
       "gvi-the-cost-of-velocity",
-      "the-next-economy-research-centre-2026-10-26"
+      "the-next-economy-research-centre-2026-10-26",
+      "gvi-the-great-ai-capital-reckoning"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": null,
-      "deltaPct": "",
+      "delta": "N/V",
+      "deltaPct": null,
       "trend": "up",
-      "trend30d": "",
-      "asOf": "2026-10-26",
+      "trend30d": null,
+      "asOf": "2026-10-27",
       "improving": null,
       "declining": null,
-      "coverage": 15,
+      "coverage": null,
       "source": {
-        "title": "GVI: The Cost of Velocity",
-        "url": "/gvi-the-cost-of-velocity",
-        "date": "2026-10-26",
+        "title": "GVI: The Great AI Capital Reckoning",
+        "url": "/gvi-the-great-ai-capital-reckoning",
+        "date": "2026-10-27",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-26",
+      "asOf": "2026-10-27",
       "source": {
-        "title": "GVI: The Cost of Velocity",
-        "url": "/gvi-the-cost-of-velocity",
-        "date": "2026-10-26",
+        "title": "GVI: The Great AI Capital Reckoning",
+        "url": "/gvi-the-great-ai-capital-reckoning",
+        "date": "2026-10-27",
         "slot": "GVI"
       },
       "rows": [
@@ -162,7 +163,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI leadership; cash-conversion test approaching",
+          "tag": "Infrastructure expansion; financial complexity increasing",
           "spark": [
             92.1,
             92.3,
@@ -172,6 +173,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -199,8 +201,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial strength; policy uncertainty",
+          "tag": "Industrial strength; technology-equity repricing",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -223,8 +226,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor strength; capital distribution in focus",
+          "tag": "Semiconductor leadership; concentration risk quantified",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -247,8 +251,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial capabilities; cybersecurity and energy risks",
+          "tag": "Industrial technology strengths; AI-cycle exposure",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -271,8 +276,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial-AI opportunity; energy constraints",
+          "tag": "Business expectations and enterprise AI improving",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -295,8 +301,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI security investment; fiscal pressure",
+          "tag": "Digital-services strength; no new qualifying observation",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -319,8 +326,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Elevated sovereign risk; persistent political uncertainty",
+          "tag": "Sovereign-market relief; fiscal vulnerability persists",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -357,6 +365,7 @@
             80.7,
             80.7,
             80.7,
+            80.7,
             80.7
           ]
         },
@@ -367,8 +376,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Advanced semiconductor-equipment strengths",
+          "tag": "Semiconductor-equipment advantages",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -391,8 +401,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial capabilities; financing sensitivity",
+          "tag": "Previous industrial assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -415,8 +426,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy and digital infrastructure advantages",
+          "tag": "Energy and digital infrastructure strengths",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -439,8 +451,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy resilience",
+          "tag": "Energy-system advantage",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -463,8 +476,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative financing resilience; European spillover exposure",
+          "tag": "Relative financing resilience; investment conversion pending",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -487,8 +501,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial recovery uncertain",
+          "tag": "Industrial recovery remains uncertain",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -511,8 +526,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy-cost exposure; sovereign transmission risk",
+          "tag": "Capital efficiency and European financing conditions remain central",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3146,56 +3162,56 @@
     }
   },
   "today": {
-    "date": "2026-10-26",
-    "edition": "GVI · Global Velocity",
-    "thesis": "GVI: The Cost of Velocity",
-    "subtitle": "The next phase of global competition will be decided not by the capacity to produce intelligence, but by the ability to finance its deployment, protect its infrastructure and convert acceleration into sustainable returns.",
-    "standfirst": "Technology creates the possibility of acceleration; productive conversion decides whether it lasts.",
+    "date": "2026-10-27",
+    "edition": "GVI",
+    "thesis": "GVI: The Great AI Capital Reckoning",
+    "subtitle": "Anthropic's IPO filing exposes the financial architecture of frontier AI — extraordinary revenue set against $600bn in computing commitments and an increasingly structured financing chain.",
+    "standfirst": "Technological leadership determines who can create intelligence; financial capacity determines who can deploy it.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI reference (provisional)",
-        "value": "108.0",
+        "label": "Anthropic H1 2026 revenue",
+        "value": "$16.29B",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Broadcom–Anthropic financing",
+        "value": "$63B",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "Brent crude",
-        "value": "$114.88",
-        "delta": "-1.6%",
+        "label": "BoK downside semiconductor shortfall",
+        "value": "Up to $100B",
+        "delta": null,
         "trend": "down"
       },
       {
-        "label": "UK AI-security funding",
-        "value": "£600m",
+        "label": "Germany Ifo (October)",
+        "value": "90.2",
         "delta": null,
-        "trend": "flat"
+        "trend": "up"
       },
       {
-        "label": "SK Hynix reported special dividend",
-        "value": "16tn won",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "France protesters (Oct 24)",
-        "value": "410,000",
-        "delta": null,
+        "label": "Global Velocity Index",
+        "value": "108.0",
+        "delta": "N/V",
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "GVI: The Cost of Velocity",
-      "url": "/gvi-the-cost-of-velocity",
-      "date": "2026-10-26",
+      "title": "GVI: The Great AI Capital Reckoning",
+      "url": "/gvi-the-great-ai-capital-reckoning",
+      "date": "2026-10-27",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: The Cost of Velocity",
-        "url": "/gvi-the-cost-of-velocity",
+        "title": "GVI: The Great AI Capital Reckoning",
+        "url": "/gvi-the-great-ai-capital-reckoning",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead provisional rankings as financing the cost of velocity becomes the constraint"
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional rankings; no validated score changes today."
       }
     ]
   },
