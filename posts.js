@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-enters-the-credit-decision",
+    title: "The Great Split Enters the Credit Decision",
+    excerpt: "France's sovereign relief rally masks a collapse in consumer confidence and a widening divide in Europe's ability to finance its future.",
+    tag: "In Focus · Sovereign Risk",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 27, 2026",
+    read: "7 min read",
+    time: "14:07",
+    kind: "day"
+  },
+  {
     url: "/the-great-ai-capital-divide",
     title: "The Great AI Capital Divide",
     excerpt: "A material inflection in the U.S.–China AI competition as financial architecture becomes the third competitive dimension.",
