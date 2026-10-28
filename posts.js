@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-the-price-of-money-meets-the-price-of-intelligence",
+    title: "When the Price of Money Meets the Price of Intelligence",
+    excerpt: "Korea's AI profits surge as the Fed splits over tightening, revealing the paradox now confronting global capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "19:37",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-grid-rights-shock",
     title: "Europe’s AI Race: The Grid-rights Shock",
     excerpt: "Two developments from Germany and the Nordics expose why grid access, industrial conversion and operational capacity now define Europe's AI infrastructure race.",
