@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-central-banks",
+    title: "The Great Split Reaches Central Banks",
+    excerpt: "Two October 28 developments — a BIS survey and the Bank of Thailand's decision — expose the next challenge of the AI Supercycle.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "9 min read",
+    time: "11:50",
+    kind: "day"
+  },
+  {
     url: "/the-final-verdict-europes-next-financial-order",
     title: "The Final Verdict: Europe’s Next Financial Order",
     excerpt: "Who controls MPS is not who creates the greatest economic value — Europe's next hierarchy of financial power.",
