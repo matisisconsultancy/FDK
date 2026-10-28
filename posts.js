@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-grid-rights-shock",
+    title: "Europe’s AI Race: The Grid-rights Shock",
+    excerpt: "Two developments from Germany and the Nordics expose why grid access, industrial conversion and operational capacity now define Europe's AI infrastructure race.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "8 min read",
+    time: "19:14",
+    kind: "day"
+  },
+  {
     url: "/europe-must-finance-these-investments-while-sovereign-borrowing-costs-remain-elevated-energy-prices-are-volatile-and-national-fiscal-flexibility-is-increasingly-constrained",
     title: "Europe Must Finance These Investments While Sovereign Borrowing Costs Remain Elevated, Energy Prices Are Volatile and National Fiscal Flexibility Is Increasingly Constrained.",
     excerpt: "France's banking paradox, the return of energy inflation, and why financial resilience may not prevent Europe's great investment divide.",
