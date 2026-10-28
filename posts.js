@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-economy-research-centre-2026-10-28",
+    title: "The Next Economy Research Centre",
+    excerpt: "Suppliers of intelligence infrastructure are already monetizing the Supercycle — while those financing its deployment must still prove the returns.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "08:09",
+    kind: "day"
+  },
+  {
     url: "/the-great-reordering-of-economic-power",
     title: "The Great Reordering of Economic Power",
     excerpt: "As AI capability accelerates, the capital to deploy it grows scarcer and more concentrated — redrawing the hierarchy of global competitiveness.",

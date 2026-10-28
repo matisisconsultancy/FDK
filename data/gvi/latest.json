@@ -127,7 +127,8 @@
       "the-next-economy-research-centre-2026-10-26",
       "gvi-the-great-ai-capital-reckoning",
       "the-next-economy-research-centre-2026-10-27",
-      "gvi-the-new-credit-divide"
+      "gvi-the-new-credit-divide",
+      "the-next-economy-research-centre-2026-10-28"
     ]
   },
   "daily": {
@@ -3695,87 +3696,69 @@
     }
   },
   "nextEconomy": {
-    "asOf": "2026-10-27",
+    "asOf": "2026-10-28",
     "title": "Next Economy Dashboard",
-    "hypothesis": "Whether revenues from intelligence grow faster than the financial obligations required to produce it.",
+    "hypothesis": "The decisive question is no longer how much capital the AI Supercycle can attract, but where that capital becomes cash flow, and where it remains exposed to execution risk.",
     "rows": [
       {
-        "k": "Anthropic H1 2026 revenue",
-        "latest": "$16.29B (~14× the $1.16B of the prior-year period)",
+        "k": "SK Hynix Q3 operating profit",
+        "latest": "₩83.33T (~$62B), ~80% margin; revenue +328% YoY",
         "trend": "up",
-        "reading": "Extraordinary revenue growth disclosed in the S-1."
+        "reading": "Upstream suppliers are accumulating cash, but an 80% margin reflects cyclical scarcity."
       },
       {
-        "k": "Anthropic revenue-to-compute ratio",
-        "latest": "2.08× (Q2 2026), vs 1.40× in Q1 2026 and 0.57× in Q2 2025",
+        "k": "ASM International 2027 revenue outlook",
+        "latest": "Above €5.7B; 2030 target reached three years early",
         "trend": "up",
-        "reading": "Revenue is growing faster than recognized compute cost. This is not a gross margin and can deteriorate as new commitments go live."
+        "reading": "European equipment supplier capturing Supercycle value without owning every layer."
       },
       {
-        "k": "Anthropic Q2 operating income",
-        "latest": "+$974M",
+        "k": "Meta priced equity and convertible-preferred offerings",
+        "latest": "$37.5B priced; possible further $60B ATM program not established",
         "trend": "up",
-        "reading": "A new operating-profit milestone."
+        "reading": "Priced size and potential issuance, not completed cash proceeds."
       },
       {
-        "k": "Anthropic H1 net loss",
-        "latest": "$80.7B (~$72.4B noncash fair-value charges)",
+        "k": "Argentum AI Polish data-centre financing",
+        "latest": "~$5B under negotiation; some customers not investment-grade",
         "trend": "flat",
-        "reading": "The headline loss is mostly noncash fair-value changes on convertible notes and derivatives, not cash outflow."
+        "reading": "Contracted revenue is not collected cash; default, utilization and refinancing risk remain."
       },
       {
-        "k": "Anthropic compute and infrastructure commitments",
-        "latest": ">$600B over a decade across ~8 partners (Reuters)",
+        "k": "US core capital-goods orders / shipments (Sep, m/m)",
+        "latest": "+0.5% orders, +1.2% shipments",
         "trend": "up",
-        "reading": "Much of it is noncancelable, so future demand must support commitments made well in advance."
+        "reading": "Physical capital formation is real, but strong capex does not guarantee returns."
       },
       {
-        "k": "Meta potential equity capacity",
-        "latest": "$95B (~$35B immediate + up to $60B planned from 2027)",
+        "k": "China industrial profits (Sep, YoY)",
+        "latest": "+14.4%",
         "trend": "up",
-        "reading": "Potential capacity, not yet raised, against 2026 capex guidance of $135–145B."
+        "reading": "Two-speed economy: electronics profits surge while furniture makers decline."
       },
       {
-        "k": "Meta Q3 free cash flow",
-        "latest": "≈ −$2.12B",
-        "trend": "down",
-        "reading": "Negative despite strong operating generation. Meta is starting to look like a highly capitalized industrial enterprise."
-      },
-      {
-        "k": "Meta cash and securities vs long-term debt",
-        "latest": "~$82.45B vs ~$80.92B",
+        "k": "CXMT HBM3E usable yields",
+        "latest": "20–30% vs ~70% at SK Hynix",
         "trend": "flat",
-        "reading": "Not distress, but AI investment is reshaping how a profitable platform is financed."
+        "reading": "Near-term cost of technological sovereignty."
       },
       {
-        "k": "European wholesale gas",
-        "latest": "~€97/MWh on Oct 26; storage ~75% vs ~80% norm",
+        "k": "European AI adoption in strategic sectors (2025)",
+        "latest": "18% (16% in manufacturing)",
         "trend": "up",
-        "reading": "Highest since 2022, which raises energy-cost exposure for AI infrastructure."
+        "reading": "Deploying AI is not the same as extracting value; no verified productivity inflection."
       },
       {
-        "k": "South Korea 2027 chip-export shortfall (BoK downside)",
-        "latest": "$50–100B; GDP growth −~0.4 pt in the stress scenario",
-        "trend": "down",
-        "reading": "Assumes a 10% chip-price decline. Shows how a weaker US AI investment cycle could transmit into national exports and growth."
-      },
-      {
-        "k": "EU strategic-sector AI adoption",
-        "latest": "18% (2025), up from 7% (2021)",
+        "k": "Dassault Systèmes FY revenue-growth target",
+        "latest": "4–5%; Q3 revenue €1.55B (+5%)",
         "trend": "up",
-        "reading": "Uneven by sector (media 38%, energy 34%, manufacturing 16%, mobility 12%) and often shallow, general-purpose tool use."
-      },
-      {
-        "k": "Tata Communications AI-ready fibre",
-        "latest": "$400–450M for ~10,000 km",
-        "trend": "up",
-        "reading": "Planned, not completed. A sign that the geography of AI value is broadening."
+        "reading": "Industrial software is a European strength beyond computing infrastructure."
       }
     ],
     "source": {
       "title": "The Next Economy Research Centre",
-      "url": "/the-next-economy-research-centre-2026-10-27",
-      "date": "2026-10-27",
+      "url": "/the-next-economy-research-centre-2026-10-28",
+      "date": "2026-10-28",
       "slot": "Morning Brief"
     }
   }
