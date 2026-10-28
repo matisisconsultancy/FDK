@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-great-repricing-of-economic-power",
+    title: "The Next Great Repricing of Economic Power",
+    excerpt: "The AI Supercycle is entering a more ruthless competition for economic returns.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "08:58",
+    kind: "day"
+  },
+  {
     url: "/the-next-economy-research-centre-2026-10-28",
     title: "The Next Economy Research Centre",
     excerpt: "Suppliers of intelligence infrastructure are already monetizing the Supercycle — while those financing its deployment must still prove the returns.",
