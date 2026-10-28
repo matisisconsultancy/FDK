@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-new-credit-divide",
+    title: "GVI: The New Credit Divide",
+    excerpt: "Capital flows toward intelligence production while broad corporate financing tightens — the next Great Split may be about diffusion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "06:40",
+    kind: "day"
+  },
+  {
     url: "/when-intelligence-becomes-collateral",
     title: "When Intelligence Becomes Collateral",
     excerpt: "How computing hardware, structured finance and hyperscaler capex are becoming a new collateralized investment cycle — and where the risk concentrates.",

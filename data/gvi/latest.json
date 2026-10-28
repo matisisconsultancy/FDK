@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-27",
+    "updated": "2026-10-28",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -126,7 +126,8 @@
       "gvi-the-cost-of-velocity",
       "the-next-economy-research-centre-2026-10-26",
       "gvi-the-great-ai-capital-reckoning",
-      "the-next-economy-research-centre-2026-10-27"
+      "the-next-economy-research-centre-2026-10-27",
+      "gvi-the-new-credit-divide"
     ]
   },
   "daily": {
@@ -137,23 +138,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-27",
+      "asOf": "2026-10-28",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "GVI: The Great AI Capital Reckoning",
-        "url": "/gvi-the-great-ai-capital-reckoning",
-        "date": "2026-10-27",
+        "title": "GVI: The New Credit Divide",
+        "url": "/gvi-the-new-credit-divide",
+        "date": "2026-10-28",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-27",
+      "asOf": "2026-10-28",
       "source": {
-        "title": "GVI: The Great AI Capital Reckoning",
-        "url": "/gvi-the-great-ai-capital-reckoning",
-        "date": "2026-10-27",
+        "title": "GVI: The New Credit Divide",
+        "url": "/gvi-the-new-credit-divide",
+        "date": "2026-10-28",
         "slot": "GVI"
       },
       "rows": [
@@ -164,7 +165,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Infrastructure expansion; financial complexity increasing",
+          "tag": "Equipment investment and AI infrastructure",
           "spark": [
             92.1,
             92.3,
@@ -174,6 +175,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -202,8 +204,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial strength; technology-equity repricing",
+          "tag": "Industrial strength; financing selectivity",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -227,8 +230,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor leadership; concentration risk quantified",
+          "tag": "Strong positive: semiconductor earnings",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -252,8 +256,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial technology strengths; AI-cycle exposure",
+          "tag": "Industrial strengths; energy and currency risks",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -277,8 +282,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Business expectations and enterprise AI improving",
+          "tag": "Negative credit conditions; industrial opportunity",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -302,8 +308,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Digital-services strength; no new qualifying observation",
+          "tag": "Financial-services strength; funding sensitivity",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -327,8 +334,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign-market relief; fiscal vulnerability persists",
+          "tag": "Corporate credit conditions deteriorating",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -367,6 +375,7 @@
             80.7,
             80.7,
             80.7,
+            80.7,
             80.7
           ]
         },
@@ -392,6 +401,7 @@
             80.6,
             80.6,
             80.6,
+            80.6,
             80.6
           ]
         },
@@ -402,8 +412,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous industrial assessment retained",
+          "tag": "Structural industrial strengths",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -427,8 +438,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy and digital infrastructure strengths",
+          "tag": "Energy and computing advantages",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -452,8 +464,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy-system advantage",
+          "tag": "Energy resilience",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -477,8 +490,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative financing resilience; investment conversion pending",
+          "tag": "Corporate lending standards stable",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -502,8 +516,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial recovery remains uncertain",
+          "tag": "Industrial recovery uncertain",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -527,8 +542,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Capital efficiency and European financing conditions remain central",
+          "tag": "Relative improvement in credit supply",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3163,56 +3179,56 @@
     }
   },
   "today": {
-    "date": "2026-10-27",
-    "edition": "GVI",
-    "thesis": "GVI: The Great AI Capital Reckoning",
-    "subtitle": "Anthropic's IPO filing exposes the financial architecture of frontier AI — extraordinary revenue set against $600bn in computing commitments and an increasingly structured financing chain.",
-    "standfirst": "Technological leadership determines who can create intelligence; financial capacity determines who can deploy it.",
+    "date": "2026-10-28",
+    "edition": "GVI · Capital",
+    "thesis": "GVI: The New Credit Divide",
+    "subtitle": "The financing bottleneck is shifting from the production of intelligence toward its productive diffusion across the broader economy.",
+    "standfirst": "Intelligence creates potential; capital allocation decides where it becomes productive.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "Anthropic H1 2026 revenue",
-        "value": "$16.29B",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Broadcom–Anthropic financing",
-        "value": "$63B",
+        "label": "GVI (provisional)",
+        "value": "108.0",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "BoK downside semiconductor shortfall",
-        "value": "Up to $100B",
+        "label": "Euro-area corporate credit tightening",
+        "value": "9%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Euro-area corporate loan demand",
+        "value": "−6%",
         "delta": null,
         "trend": "down"
       },
       {
-        "label": "Germany Ifo (October)",
-        "value": "90.2",
+        "label": "US core capital-goods orders",
+        "value": "+0.5% MoM",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Global Velocity Index",
-        "value": "108.0",
-        "delta": "N/V",
-        "trend": "flat"
+        "label": "SK Hynix operating profit",
+        "value": "₩83.3tn",
+        "delta": null,
+        "trend": "up"
       }
     ],
     "source": {
-      "title": "GVI: The Great AI Capital Reckoning",
-      "url": "/gvi-the-great-ai-capital-reckoning",
-      "date": "2026-10-27",
+      "title": "GVI: The New Credit Divide",
+      "url": "/gvi-the-new-credit-divide",
+      "date": "2026-10-28",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "GVI: The Great AI Capital Reckoning",
-        "url": "/gvi-the-great-ai-capital-reckoning",
+        "title": "GVI: The New Credit Divide",
+        "url": "/gvi-the-new-credit-divide",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional rankings; no validated score changes today."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead; the GVI holds at 108.0 (provisional) as the ECB survey shows a widening credit divide."
       }
     ]
   },
