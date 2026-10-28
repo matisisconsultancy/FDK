@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-cost-paradox",
+    title: "The Great AI Cost Paradox",
+    excerpt: "Two October 28 developments expose a contradiction in China's AI strategy as America turns inference into a multi-chip market.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "13:48",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-10-28",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The AI Supercycle finances the production of intelligence brilliantly, and its diffusion poorly.",
