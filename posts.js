@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europe-must-finance-these-investments-while-sovereign-borrowing-costs-remain-elevated-energy-prices-are-volatile-and-national-fiscal-flexibility-is-increasingly-constrained",
+    title: "Europe Must Finance These Investments While Sovereign Borrowing Costs Remain Elevated, Energy Prices Are Volatile and National Fiscal Flexibility Is Increasingly Constrained.",
+    excerpt: "France's banking paradox, the return of energy inflation, and why financial resilience may not prevent Europe's great investment divide.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "14:45",
+    kind: "day"
+  },
+  {
     url: "/the-great-ai-cost-paradox",
     title: "The Great AI Cost Paradox",
     excerpt: "Two October 28 developments expose a contradiction in China's AI strategy as America turns inference into a multi-chip market.",
