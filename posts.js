@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-reordering-of-economic-power",
+    title: "The Great Reordering of Economic Power",
+    excerpt: "As AI capability accelerates, the capital to deploy it grows scarcer and more concentrated — redrawing the hierarchy of global competitiveness.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "5 min read",
+    time: "07:56",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-new-credit-divide",
     title: "GVI: The New Credit Divide",
     excerpt: "Capital flows toward intelligence production while broad corporate financing tightens — the next Great Split may be about diffusion.",
