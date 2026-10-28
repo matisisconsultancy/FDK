@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-final-verdict-europes-next-financial-order",
+    title: "The Final Verdict: Europe’s Next Financial Order",
+    excerpt: "Who controls MPS is not who creates the greatest economic value — Europe's next hierarchy of financial power.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 28, 2026",
+    read: "4 min read",
+    time: "09:57",
+    kind: "day"
+  },
+  {
     url: "/the-next-great-repricing-of-economic-power",
     title: "The Next Great Repricing of Economic Power",
     excerpt: "The AI Supercycle is entering a more ruthless competition for economic returns.",
