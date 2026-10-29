@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-monetary-credibility-becomes-sovereign-risk",
+    title: "When Monetary Credibility Becomes Sovereign Risk",
+    excerpt: "Monetary, sovereign and political credibility are becoming inseparable determinants of Europe's cost of capital.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "8 min read",
+    time: "09:33",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycles-financial-paradox",
     title: "The AI Supercycle’s Financial Paradox",
     excerpt: "Demand is certain; the distribution and durability of AI's financial returns is not.",
