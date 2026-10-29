@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/googles-great-cannibalization-trap",
+    title: "Google’s Great Cannibalization Trap",
+    excerpt: "AI could raise the value delivered to consumers while shrinking the share Google captures—and its greatest rival may be the economics of its own transformation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "8 min read",
+    time: "15:50",
+    kind: "day"
+  },
+  {
     url: "/public-debt-stands-at-119-of-gdp",
     title: "Public Debt Stands at 119% of GDP.",
     excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping the allocation of capital across Europe.",
