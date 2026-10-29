@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-rotation-in-global-capital",
+    title: "The Next Rotation in Global Capital",
+    excerpt: "The AI Supercycle is intact, but the market is rotating from rewarding the scale of AI investment toward discriminating among the financial returns that investment generates.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "5 min read",
+    time: "07:34",
+    kind: "day"
+  },
+  {
     url: "/when-the-price-of-money-meets-the-price-of-intelligence",
     title: "When the Price of Money Meets the Price of Intelligence",
     excerpt: "Korea's AI profits surge as the Fed splits over tightening, revealing the paradox now confronting global capital.",
