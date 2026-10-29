@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-arbitrage",
+    title: "The Intelligence Arbitrage",
+    excerpt: "New reporting on Chinese distillation and agentic models reframes the AI contest as a fight over who owns the economic value of intelligence.",
+    tag: "Midday Pulse · AI Supercycle",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "5 min read",
+    time: "12:13",
+    kind: "day"
+  },
+  {
     url: "/the-second-claim-on-bank-capital",
     title: "The Second Claim on Bank Capital",
     excerpt: "As MPS shareholders vote, a new €5bn fiscal claim on banks redefines the economics of Europe's consolidation cycle.",
