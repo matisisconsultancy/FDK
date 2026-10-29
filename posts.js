@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-when-growth-stops-creating-value",
+    title: "The Great Split: When Growth Stops Creating Value",
+    excerpt: "AI may deliver technologically while an increasing share of the companies funding it fail to capture the value created.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "5 min read",
+    time: "07:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-10-29",
     title: "GVI Corporate Benchmark",
     excerpt: "Where market outperformance emerges next as AI value migrates from capital accumulation to cash-flow conversion.",
