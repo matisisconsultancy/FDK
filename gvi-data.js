@@ -133,7 +133,8 @@ window.GVI_DATA = {
       "the-next-economy-research-centre-2026-10-27",
       "gvi-the-new-credit-divide",
       "the-next-economy-research-centre-2026-10-28",
-      "the-next-rotation-in-global-capital"
+      "the-next-rotation-in-global-capital",
+      "gvi-corporate-benchmark-2026-10-29"
     ]
   },
   "daily": {
@@ -3250,6 +3251,12 @@ window.GVI_DATA = {
         "url": "/the-next-rotation-in-global-capital",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional country rankings as free cash flow, not capex, becomes the measure of AI value."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-10-29",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Amazon 99.1 lead; Volkswagen 61.6 trails as AI value migrates from capital accumulation to cash-flow conversion"
       }
     ]
   },
@@ -3355,7 +3362,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-22",
+    "asOf": "2026-10-29",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3364,15 +3371,15 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Manufacturing dominance; strongest economic converter"
+        "note": "Manufacturing leadership"
       },
       {
         "rank": 2,
         "name": "Microsoft",
-        "score": 99.2,
-        "delta": 0,
-        "trend": "flat",
-        "note": "Enterprise AI"
+        "score": 99.4,
+        "delta": 0.2,
+        "trend": "up",
+        "note": "Cash conversion"
       },
       {
         "rank": 3,
@@ -3380,23 +3387,23 @@ window.GVI_DATA = {
         "score": 99.1,
         "delta": 0,
         "trend": "up",
-        "note": "Ecosystem expansion"
+        "note": "Cloud ecosystem"
       },
       {
         "rank": 4,
         "name": "Schneider Electric",
         "score": 99,
-        "delta": 0.1,
+        "delta": 0,
         "trend": "up",
-        "note": "Energy infrastructure"
+        "note": "Power infrastructure"
       },
       {
         "rank": 5,
         "name": "Nvidia",
         "score": 98.3,
-        "delta": 0.3,
+        "delta": 0,
         "trend": "up",
-        "note": "Deployment acceleration; principal accelerator"
+        "note": "Computing architecture"
       },
       {
         "rank": 6,
@@ -3411,7 +3418,7 @@ window.GVI_DATA = {
         "name": "Broadcom",
         "score": 97.8,
         "delta": 0,
-        "trend": "flat",
+        "trend": "up",
         "note": "Custom silicon"
       },
       {
@@ -3419,7 +3426,7 @@ window.GVI_DATA = {
         "name": "Palantir",
         "score": 97.4,
         "delta": 0,
-        "trend": "flat",
+        "trend": "up",
         "note": "Operational AI"
       },
       {
@@ -3428,15 +3435,15 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Power infrastructure"
+        "note": "Electricity infrastructure"
       },
       {
         "rank": 10,
         "name": "Siemens AG",
         "score": 97.3,
-        "delta": 0.1,
+        "delta": 0,
         "trend": "up",
-        "note": "Industrial AI"
+        "note": "Industrial intelligence"
       }
     ],
     "laggards": [
@@ -3446,7 +3453,7 @@ window.GVI_DATA = {
         "score": 61.6,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Restructuring"
       },
       {
         "rank": 2,
@@ -3454,7 +3461,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Turnaround execution"
       },
       {
         "rank": 3,
@@ -3462,15 +3469,15 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Technology transition"
       },
       {
         "rank": 4,
-        "name": "Warner Bros. Discovery",
-        "score": 67.2,
+        "name": "Skydance",
+        "score": 66.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Integration and leverage"
       },
       {
         "rank": 5,
@@ -3478,7 +3485,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Productivity"
       },
       {
         "rank": 6,
@@ -3486,7 +3493,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Energy competitiveness"
       },
       {
         "rank": 7,
@@ -3494,15 +3501,15 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Industrial transition"
       },
       {
         "rank": 8,
-        "name": "Prudential",
+        "name": "Prudential plc",
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Digital execution"
       },
       {
         "rank": 9,
@@ -3510,7 +3517,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Capital efficiency"
       },
       {
         "rank": 10,
@@ -3518,50 +3525,40 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Infrastructure returns"
       }
     ],
     "pillars": [
       {
-        "pillar": "Strongest economic converter",
+        "pillar": "Technology architects",
         "leaders": [
-          "TSMC"
+          "TSMC",
+          "Nvidia",
+          "ASML",
+          "Broadcom"
         ]
       },
       {
-        "pillar": "Principal accelerator",
-        "leaders": [
-          "Nvidia"
-        ]
-      },
-      {
-        "pillar": "Dominant ecosystem orchestrators",
-        "leaders": [
-          "Microsoft",
-          "Amazon"
-        ]
-      },
-      {
-        "pillar": "Positioned for the next industrial wave",
+        "pillar": "Infrastructure accelerators",
         "leaders": [
           "Schneider Electric",
-          "ASML",
-          "Siemens"
+          "Siemens Energy",
+          "Siemens AG"
         ]
       },
       {
-        "pillar": "Rest of the leadership group",
+        "pillar": "Economic converters",
         "leaders": [
-          "Broadcom",
-          "Palantir",
-          "Siemens Energy"
+          "Microsoft",
+          "Amazon",
+          "Palantir"
         ]
       }
     ],
     "source": {
-      "title": "The New Laws of Corporate Power",
-      "url": "/the-new-laws-of-corporate-power",
-      "date": "2026-10-22",
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-10-29",
+      "date": "2026-10-29",
       "slot": "GVI"
     }
   },

@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-10-29",
+    title: "GVI Corporate Benchmark",
+    excerpt: "Where market outperformance emerges next as AI value migrates from capital accumulation to cash-flow conversion.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "5 min read",
+    time: "07:43",
+    kind: "day"
+  },
+  {
     url: "/the-next-rotation-in-global-capital",
     title: "The Next Rotation in Global Capital",
     excerpt: "The AI Supercycle is intact, but the market is rotating from rewarding the scale of AI investment toward discriminating among the financial returns that investment generates.",
