@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycles-financial-paradox",
+    title: "The AI Supercycle’s Financial Paradox",
+    excerpt: "Demand is certain; the distribution and durability of AI's financial returns is not.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "8 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-when-growth-stops-creating-value",
     title: "The Great Split: When Growth Stops Creating Value",
     excerpt: "AI may deliver technologically while an increasing share of the companies funding it fail to capture the value created.",
