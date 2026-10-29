@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/public-debt-stands-at-119-of-gdp",
+    title: "Public Debt Stands at 119% of GDP.",
+    excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping the allocation of capital across Europe.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "5 min read",
+    time: "14:26",
+    kind: "day"
+  },
+  {
     url: "/the-great-monetary-reset",
     title: "The Great Monetary Reset",
     excerpt: "The Fed holds on productivity, Canada tightens on energy, and Lagarde announces an early ECB exit.",
