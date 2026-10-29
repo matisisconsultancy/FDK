@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-credibility-premium",
+    title: "Where Markets, Capital and Geopolitics Collide the Credibility Premium",
+    excerpt: "Markets are beginning to distinguish technological ambition from financial delivery as Europe faces a simultaneous test of monetary, sovereign and industrial credibility.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "4 min read",
+    time: "13:36",
+    kind: "day"
+  },
+  {
     url: "/frances-election-europes-financial-future",
     title: "France’s Election, Europe’s Financial Future",
     excerpt: "Lagarde's early departure accelerates Europe's institutional calendar before a French election that will test the credibility of the French state.",
