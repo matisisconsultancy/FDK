@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/alphabet-the-cost-of-defending-the-cash-machine",
+    title: "Alphabet: The Cost of Defending the Cash Machine",
+    excerpt: "Alphabet can advance a technology that challenges the economics of its own franchise.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "5 min read",
+    time: "19:00",
+    kind: "night"
+  },
+  {
     url: "/googles-great-cannibalization-trap",
     title: "Google’s Great Cannibalization Trap",
     excerpt: "AI could raise the value delivered to consumers while shrinking the share Google captures—and its greatest rival may be the economics of its own transformation.",
