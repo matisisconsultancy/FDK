@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-second-claim-on-bank-capital",
+    title: "The Second Claim on Bank Capital",
+    excerpt: "As MPS shareholders vote, a new €5bn fiscal claim on banks redefines the economics of Europe's consolidation cycle.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "8 min read",
+    time: "10:14",
+    kind: "day"
+  },
+  {
     url: "/when-monetary-credibility-becomes-sovereign-risk",
     title: "When Monetary Credibility Becomes Sovereign Risk",
     excerpt: "Monetary, sovereign and political credibility are becoming inseparable determinants of Europe's cost of capital.",
