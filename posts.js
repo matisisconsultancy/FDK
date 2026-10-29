@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-permit-premium",
+    title: "Europe’s AI Race: The Permit Premium",
+    excerpt: "Norway's power warning, Finland's Google investigation and Spain's regulatory confrontation reshape the economics of AI infrastructure.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "10 min read",
+    time: "21:41",
+    kind: "day"
+  },
+  {
     url: "/alphabet-the-cost-of-defending-the-cash-machine",
     title: "Alphabet: The Cost of Defending the Cash Machine",
     excerpt: "Alphabet can advance a technology that challenges the economics of its own franchise.",
