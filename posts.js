@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-monetary-reset",
+    title: "The Great Monetary Reset",
+    excerpt: "The Fed holds on productivity, Canada tightens on energy, and Lagarde announces an early ECB exit.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "8 min read",
+    time: "14:23",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-credibility-premium",
     title: "Where Markets, Capital and Geopolitics Collide the Credibility Premium",
     excerpt: "Markets are beginning to distinguish technological ambition from financial delivery as Europe faces a simultaneous test of monetary, sovereign and industrial credibility.",
