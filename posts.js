@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-500-billion-verdict",
+    title: "The $500 Billion Verdict",
+    excerpt: "Alphabet's historic selloff and Microsoft's cash-flow strength mark a more demanding financial regime for the AI Supercycle.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "4 min read",
+    time: "21:49",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-permit-premium",
     title: "Europe’s AI Race: The Permit Premium",
     excerpt: "Norway's power warning, Finland's Google investigation and Spain's regulatory confrontation reshape the economics of AI infrastructure.",
