@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/frances-election-europes-financial-future",
+    title: "France’s Election, Europe’s Financial Future",
+    excerpt: "Lagarde's early departure accelerates Europe's institutional calendar before a French election that will test the credibility of the French state.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 29, 2026",
+    read: "9 min read",
+    time: "12:19",
+    kind: "day"
+  },
+  {
     url: "/the-intelligence-arbitrage",
     title: "The Intelligence Arbitrage",
     excerpt: "New reporting on Chinese distillation and agentic models reframes the AI contest as a fight over who owns the economic value of intelligence.",
