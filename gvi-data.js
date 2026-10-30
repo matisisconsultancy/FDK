@@ -135,7 +135,8 @@ window.GVI_DATA = {
       "the-next-economy-research-centre-2026-10-28",
       "the-next-rotation-in-global-capital",
       "gvi-corporate-benchmark-2026-10-29",
-      "the-hurdle-rate-returns"
+      "the-hurdle-rate-returns",
+      "gvi-the-index-illusion"
     ]
   },
   "daily": {
@@ -3267,6 +3268,12 @@ window.GVI_DATA = {
         "url": "/the-hurdle-rate-returns",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the carried-forward provisional rankings, while Amazon's free cash flow turns negative at −$42.4bn."
+      },
+      {
+        "title": "GVI the Index Illusion",
+        "url": "/gvi-the-index-illusion",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Amazon slips 0.3 to fourth and Volkswagen falls 0.3 to 61.3."
       }
     ]
   },
@@ -3372,7 +3379,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-10-29",
+    "asOf": "2026-10-30",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3387,25 +3394,25 @@ window.GVI_DATA = {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.4,
-        "delta": 0.2,
+        "delta": 0,
         "trend": "up",
-        "note": "Cash conversion"
+        "note": "Earnings and cash conversion"
       },
       {
         "rank": 3,
-        "name": "Amazon",
-        "score": 99.1,
-        "delta": 0,
-        "trend": "up",
-        "note": "Cloud ecosystem"
-      },
-      {
-        "rank": 4,
         "name": "Schneider Electric",
         "score": 99,
         "delta": 0,
         "trend": "up",
-        "note": "Power infrastructure"
+        "note": "Industrial infrastructure"
+      },
+      {
+        "rank": 4,
+        "name": "Amazon",
+        "score": 98.8,
+        "delta": -0.3,
+        "trend": "up",
+        "note": "Cloud; cash-flow pressure"
       },
       {
         "rank": 5,
@@ -3460,17 +3467,17 @@ window.GVI_DATA = {
       {
         "rank": 1,
         "name": "Volkswagen",
-        "score": 61.6,
-        "delta": 0,
-        "trend": "flat",
-        "note": "Restructuring"
+        "score": 61.3,
+        "delta": -0.3,
+        "trend": "down",
+        "note": "Restructuring pressure"
       },
       {
         "rank": 2,
         "name": "Nissan",
         "score": 63.4,
         "delta": 0,
-        "trend": "flat",
+        "trend": "down",
         "note": "Turnaround execution"
       },
       {
@@ -3486,7 +3493,7 @@ window.GVI_DATA = {
         "name": "Skydance",
         "score": 66.8,
         "delta": 0,
-        "trend": "flat",
+        "trend": "down",
         "note": "Integration and leverage"
       },
       {
@@ -3495,14 +3502,14 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Productivity"
+        "note": "Productivity recovery"
       },
       {
         "rank": 6,
         "name": "BASF",
         "score": 68.9,
         "delta": 0,
-        "trend": "flat",
+        "trend": "down",
         "note": "Energy competitiveness"
       },
       {
@@ -3511,7 +3518,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Industrial transition"
+        "note": "Industrial transformation"
       },
       {
         "rank": 8,
@@ -3526,7 +3533,7 @@ window.GVI_DATA = {
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "flat",
+        "trend": "down",
         "note": "Capital efficiency"
       },
       {
@@ -3538,37 +3545,11 @@ window.GVI_DATA = {
         "note": "Infrastructure returns"
       }
     ],
-    "pillars": [
-      {
-        "pillar": "Technology architects",
-        "leaders": [
-          "TSMC",
-          "Nvidia",
-          "ASML",
-          "Broadcom"
-        ]
-      },
-      {
-        "pillar": "Infrastructure accelerators",
-        "leaders": [
-          "Schneider Electric",
-          "Siemens Energy",
-          "Siemens AG"
-        ]
-      },
-      {
-        "pillar": "Economic converters",
-        "leaders": [
-          "Microsoft",
-          "Amazon",
-          "Palantir"
-        ]
-      }
-    ],
+    "pillars": [],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-10-29",
-      "date": "2026-10-29",
+      "title": "GVI the Index Illusion",
+      "url": "/gvi-the-index-illusion",
+      "date": "2026-10-30",
       "slot": "GVI"
     }
   },

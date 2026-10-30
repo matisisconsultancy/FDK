@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-the-index-illusion",
+    title: "GVI the Index Illusion",
+    excerpt: "The next alpha will emerge from the gap between corporate acceleration and the returns investors are prepared to finance.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "06:07",
+    kind: "day"
+  },
+  {
     url: "/the-hurdle-rate-returns",
     title: "The Hurdle Rate Returns",
     excerpt: "Amazon's free cash flow turns sharply negative even as AWS accelerates and US GDP strengthens, signalling a more demanding phase for AI investment.",
