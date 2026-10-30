@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-governability-becomes-the-risk-premium",
+    title: "When Governability Becomes the Risk Premium",
+    excerpt: "A transmission map from political tension to the cost of capital in Europe, and the signals that separate accommodation from attrition.",
+    tag: "The Close · Macro",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "19:02",
+    kind: "night"
+  },
+  {
     url: "/public-debt-stands-at-119-of-gdp-2026-10-30",
     title: "Public Debt Stands at 119% of GDP.",
     excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping how capital is allocated across Europe.",
