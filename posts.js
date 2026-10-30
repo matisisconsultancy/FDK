@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-the-future",
+    title: "The Cost of the Future",
+    excerpt: "The AI Supercycle is entering a phase where technological acceleration coexists with financial deceleration, and capital is repricing accordingly.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "07:50",
+    kind: "day"
+  },
+  {
     url: "/gvi-the-index-illusion",
     title: "GVI the Index Illusion",
     excerpt: "The next alpha will emerge from the gap between corporate acceleration and the returns investors are prepared to finance.",
