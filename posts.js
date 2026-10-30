@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-shareholder-veto",
+    title: "The Shareholder Veto",
+    excerpt: "Italy's banking contest moves from assembling institutions to competing for capital allocation and sustainable economic profit.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "7 min read",
+    time: "09:31",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-reaches-the-cost-of-capital",
     title: "The Great Split Reaches the Cost of Capital",
     excerpt: "The AI Supercycle is not running out of demand — it is entering a regime where the ability to convert intelligence into free cash flow, finance infrastructure and withstand monetary uncertainty will define the next market leaders.",
