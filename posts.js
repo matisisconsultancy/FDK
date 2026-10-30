@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-battle-for-the-economics-of-intelligence",
+    title: "The Battle for the Economics of Intelligence",
+    excerpt: "Competition is moving from frontier models and inference prices toward enterprise distribution, agentic workflows and the returns AI deployment actually generates.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "11:31",
+    kind: "day"
+  },
+  {
     url: "/the-shareholder-veto",
     title: "The Shareholder Veto",
     excerpt: "Italy's banking contest moves from assembling institutions to competing for capital allocation and sustainable economic profit.",
