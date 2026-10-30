@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-cash-flow-reversal",
+    title: "The Great Cash Flow Reversal",
+    excerpt: "The financial engine that built Big Tech is being redirected from shareholder returns to AI infrastructure — and markets are now pricing the economics, not the promise.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "4 min read",
+    time: "19:42",
+    kind: "night"
+  },
+  {
     url: "/when-governability-becomes-the-risk-premium",
     title: "When Governability Becomes the Risk Premium",
     excerpt: "A transmission map from political tension to the cost of capital in Europe, and the signals that separate accommodation from attrition.",
