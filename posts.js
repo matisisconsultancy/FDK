@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-duration-trap",
+    title: "Where Markets, Capital and Geopolitics Collide the Duration Trap",
+    excerpt: "Markets begin distinguishing the creation of technological capacity from the generation of financial returns, as Europe's recovery splits.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "13:36",
+    kind: "day"
+  },
+  {
     url: "/when-the-ai-boom-sets-the-price-of-money",
     title: "When the AI Boom Sets the Price of Money",
     excerpt: "The central-bank response to the AI Supercycle has entered a more consequential phase, splitting the world into three monetary regimes.",
