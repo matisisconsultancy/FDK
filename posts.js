@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cash-flow-frontier",
+    title: "The Cash-flow Frontier",
+    excerpt: "Accelerating AI demand meets a more demanding financial test as capital expenditure outpaces free cash flow.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "4 min read",
+    time: "08:02",
+    kind: "day"
+  },
+  {
     url: "/the-cost-of-the-future",
     title: "The Cost of the Future",
     excerpt: "The AI Supercycle is entering a phase where technological acceleration coexists with financial deceleration, and capital is repricing accordingly.",
