@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/public-debt-stands-at-119-of-gdp-2026-10-30",
+    title: "Public Debt Stands at 119% of GDP.",
+    excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping how capital is allocated across Europe.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "14:37",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-duration-trap",
     title: "Where Markets, Capital and Geopolitics Collide the Duration Trap",
     excerpt: "Markets begin distinguishing the creation of technological capacity from the generation of financial returns, as Europe's recovery splits.",
