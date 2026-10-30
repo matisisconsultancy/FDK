@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-the-ai-boom-sets-the-price-of-money",
+    title: "When the AI Boom Sets the Price of Money",
+    excerpt: "The central-bank response to the AI Supercycle has entered a more consequential phase, splitting the world into three monetary regimes.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "9 min read",
+    time: "13:30",
+    kind: "day"
+  },
+  {
     url: "/the-battle-for-the-economics-of-intelligence",
     title: "The Battle for the Economics of Intelligence",
     excerpt: "Competition is moving from frontier models and inference prices toward enterprise distribution, agentic workflows and the returns AI deployment actually generates.",
