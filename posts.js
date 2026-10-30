@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-split-reaches-the-cost-of-capital",
+    title: "The Great Split Reaches the Cost of Capital",
+    excerpt: "The AI Supercycle is not running out of demand — it is entering a regime where the ability to convert intelligence into free cash flow, finance infrastructure and withstand monetary uncertainty will define the next market leaders.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "08:19",
+    kind: "day"
+  },
+  {
     url: "/the-cash-flow-frontier",
     title: "The Cash-flow Frontier",
     excerpt: "Accelerating AI demand meets a more demanding financial test as capital expenditure outpaces free cash flow.",
