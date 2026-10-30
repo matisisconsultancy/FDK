@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-hurdle-rate-returns",
+    title: "The Hurdle Rate Returns",
+    excerpt: "Amazon's free cash flow turns sharply negative even as AWS accelerates and US GDP strengthens, signalling a more demanding phase for AI investment.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "04:48",
+    kind: "day"
+  },
+  {
     url: "/the-500-billion-verdict",
     title: "The $500 Billion Verdict",
     excerpt: "Alphabet's historic selloff and Microsoft's cash-flow strength mark a more demanding financial regime for the AI Supercycle.",

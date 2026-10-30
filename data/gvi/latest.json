@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-29",
+    "updated": "2026-10-30",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -130,34 +130,35 @@
       "gvi-the-new-credit-divide",
       "the-next-economy-research-centre-2026-10-28",
       "the-next-rotation-in-global-capital",
-      "gvi-corporate-benchmark-2026-10-29"
+      "gvi-corporate-benchmark-2026-10-29",
+      "the-hurdle-rate-returns"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": null,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-29",
+      "asOf": "2026-10-30",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Next Rotation in Global Capital",
-        "url": "/the-next-rotation-in-global-capital",
-        "date": "2026-10-29",
+        "title": "The Hurdle Rate Returns",
+        "url": "/the-hurdle-rate-returns",
+        "date": "2026-10-30",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-29",
+      "asOf": "2026-10-30",
       "source": {
-        "title": "The Next Rotation in Global Capital",
-        "url": "/the-next-rotation-in-global-capital",
-        "date": "2026-10-29",
+        "title": "The Hurdle Rate Returns",
+        "url": "/the-hurdle-rate-returns",
+        "date": "2026-10-30",
         "slot": "GVI"
       },
       "rows": [
@@ -166,9 +167,9 @@
           "flag": "🇺🇸",
           "name": "United States",
           "score": 94,
-          "delta": null,
-          "trend": null,
-          "tag": "Strong AI monetisation; capital intensity elevated",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Growth accelerating; AI cash-flow discipline intensifying",
           "spark": [
             92.1,
             92.3,
@@ -198,6 +199,7 @@
             94,
             94,
             94,
+            94,
             94
           ]
         },
@@ -206,10 +208,11 @@
           "flag": "🇨🇳",
           "name": "China",
           "score": 91.2,
-          "delta": null,
-          "trend": null,
-          "tag": "Industrial strengths; domestic conversion uneven",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Technology-equity weakness; structural innovation position retained",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -233,10 +236,11 @@
           "flag": "🇰🇷",
           "name": "South Korea",
           "score": 88.8,
-          "delta": null,
-          "trend": null,
-          "tag": "Exceptional semiconductor profitability",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Semiconductor profitability strong; market momentum negative",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -260,10 +264,11 @@
           "flag": "🇯🇵",
           "name": "Japan",
           "score": 84.9,
-          "delta": null,
-          "trend": null,
-          "tag": "Industrial technology strength; energy exposure",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Monetary restraint; equity-market pressure",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -287,10 +292,11 @@
           "flag": "🇩🇪",
           "name": "Germany",
           "score": 83.4,
-          "delta": null,
-          "trend": null,
-          "tag": "Industrial-AI opportunity; financing constraints",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Industrial potential; financing constraints",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -314,10 +320,11 @@
           "flag": "🇬🇧",
           "name": "United Kingdom",
           "score": 82.2,
-          "delta": null,
-          "trend": null,
-          "tag": "Weaker medium-term growth expectations",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Medium-term growth expectations remain weak",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -341,10 +348,11 @@
           "flag": "🇫🇷",
           "name": "France",
           "score": 81.2,
-          "delta": null,
-          "trend": null,
-          "tag": "Sovereign pressure; resilient large banks",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Positive frontier-AI innovation; sovereign financing pressures",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -368,10 +376,11 @@
           "flag": "🇨🇭",
           "name": "Switzerland",
           "score": 80.7,
-          "delta": null,
-          "trend": null,
-          "tag": "Industrial technology resilience",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Financial and industrial resilience",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -395,10 +404,11 @@
           "flag": "🇳🇱",
           "name": "Netherlands",
           "score": 80.6,
-          "delta": null,
-          "trend": null,
-          "tag": "Semiconductor-equipment advantage",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Semiconductor-equipment strengths",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -422,10 +432,11 @@
           "flag": "🇸🇪",
           "name": "Sweden",
           "score": 79.2,
-          "delta": null,
-          "trend": null,
-          "tag": "Positive industrial momentum",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Structural industrial assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -449,10 +460,11 @@
           "flag": "🇩🇰",
           "name": "Denmark",
           "score": 77.8,
-          "delta": null,
-          "trend": null,
-          "tag": "Energy and digital infrastructure strengths",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Digital infrastructure assessment retained",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -476,10 +488,11 @@
           "flag": "🇳🇴",
           "name": "Norway",
           "score": 77.1,
-          "delta": null,
-          "trend": null,
-          "tag": "Energy advantage",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Energy-system resilience",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -503,10 +516,11 @@
           "flag": "🇪🇸",
           "name": "Spain",
           "score": 75,
-          "delta": null,
-          "trend": null,
-          "tag": "Infrastructure pipeline; conversion pending",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Relative credit resilience; European spillover exposure",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -530,10 +544,11 @@
           "flag": "🇦🇹",
           "name": "Austria",
           "score": 72.4,
-          "delta": null,
-          "trend": null,
-          "tag": "Industrial recovery uncertain",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Industrial financing sensitivity",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -557,10 +572,11 @@
           "flag": "🇮🇹",
           "name": "Italy",
           "score": 71.6,
-          "delta": null,
-          "trend": null,
-          "tag": "Productive investment and capital efficiency remain critical",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Productive investment constrained by capital costs",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3197,62 +3213,56 @@
     }
   },
   "today": {
-    "date": "2026-10-29",
-    "edition": "GVI · Capital",
-    "thesis": "The Next Rotation in Global Capital",
-    "subtitle": "The AI Supercycle is intact, but the market is rotating from rewarding the scale of AI investment toward discriminating among the financial returns that investment generates.",
-    "standfirst": "The next rotation will be determined by who earns the most from the capital required to build and deploy intelligence.",
+    "date": "2026-10-30",
+    "edition": "GVI",
+    "thesis": "The Hurdle Rate Returns",
+    "subtitle": "AI demand stays strong, but capital markets are increasingly discriminating between technological growth, operating profitability and sustainable free-cash-flow generation.",
+    "standfirst": "The AI Supercycle has not exhausted its technological potential, but capital markets are beginning to demand proof of its economic returns; the premium now belongs to companies that compound earnings and free cash flow faster than they accumulate capital commitments.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "Microsoft quarterly FCF",
-        "value": "+$18.6B",
+        "label": "US Q3 GDP, annualised",
+        "value": "3.4%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Alphabet quarterly FCF",
-        "value": "−$9.1B",
+        "label": "Amazon trailing FCF",
+        "value": "−$42.4bn",
         "delta": null,
         "trend": "down"
       },
       {
-        "label": "Samsung operating profit",
-        "value": "₩107.4T",
+        "label": "AWS revenue growth YoY",
+        "value": "+39.3%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Fed policy range",
-        "value": "3.75–4.00%",
+        "label": "ECB deposit rate",
+        "value": "2.50%",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "FDK Global Velocity Index (provisional reference)",
+        "label": "GVI (provisional)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Next Rotation in Global Capital",
-      "url": "/the-next-rotation-in-global-capital",
-      "date": "2026-10-29",
+      "title": "The Hurdle Rate Returns",
+      "url": "/the-hurdle-rate-returns",
+      "date": "2026-10-30",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Next Rotation in Global Capital",
-        "url": "/the-next-rotation-in-global-capital",
+        "title": "The Hurdle Rate Returns",
+        "url": "/the-hurdle-rate-returns",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional country rankings as free cash flow, not capex, becomes the measure of AI value."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-10-29",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Amazon 99.1 lead; Volkswagen 61.6 trails as AI value migrates from capital accumulation to cash-flow conversion"
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the carried-forward provisional rankings, while Amazon's free cash flow turns negative at −$42.4bn."
       }
     ]
   },
