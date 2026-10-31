@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-productivity-dividend-meets-the-cost-of-capital",
+    title: "The Productivity Dividend Meets the Cost of Capital",
+    excerpt: "AI is now a measurable monetary-transmission variable — and Europe risks financing the infrastructure without capturing the productivity.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "10 min read",
+    time: "12:15",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-cities-signature-survey-2026-10-31",
     title: "GVI Global Cities: Signature Survey",
     excerpt: "The next phase of the AI Supercycle will reward cities that convert technological investment into productive capacity without financial, infrastructure or social instability eroding the returns.",
