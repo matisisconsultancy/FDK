@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-expiring-grid-option",
+    title: "Europe’s AI Race: The Expiring Grid Option",
+    excerpt: "Two new developments show European AI infrastructure can lose development momentum before reserved electricity becomes operational compute.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "6 min read",
+    time: "17:38",
+    kind: "day"
+  },
+  {
     url: "/it-is-that-the-architecture-remains-intact-while-the-economies-operating-within-it-become-increasingly-unequal-in-their-ability-to-finance-growth",
     title: "It Is That the Architecture Remains Intact While the Economies Operating Within It Become Increasingly Unequal in Their Ability to Finance Growth.",
     excerpt: "Fitch's warning, Europe's social contagion and the coming repricing of productive capital.",
