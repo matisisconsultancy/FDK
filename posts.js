@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-sovereignty-spread",
+    title: "Where Markets, Capital and Geopolitics Collide the Sovereignty Spread",
+    excerpt: "Five October 31 developments point to a structural transition in how capital, energy and credibility distribute the returns of the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "13:04",
+    kind: "day"
+  },
+  {
     url: "/the-productivity-dividend-meets-the-cost-of-capital",
     title: "The Productivity Dividend Meets the Cost of Capital",
     excerpt: "AI is now a measurable monetary-transmission variable — and Europe risks financing the infrastructure without capturing the productivity.",
