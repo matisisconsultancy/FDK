@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief",
+    title: "Daily Intelligence Brief",
+    excerpt: "Markets are repricing the AI Supercycle, separating the companies that finance intelligence from those that can profit from it.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "08:48",
+    kind: "day"
+  },
+  {
     url: "/the-capital-reckoning",
     title: "The Capital Reckoning",
     excerpt: "Friday's selloff revealed a repricing of capital intensity, not an earnings recession — the next phase of AI will be decided in credit markets.",
