@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-cities-signature-survey-2026-10-31",
+    title: "GVI Global Cities: Signature Survey",
+    excerpt: "The next phase of the AI Supercycle will reward cities that convert technological investment into productive capacity without financial, infrastructure or social instability eroding the returns.",
+    tag: "Midday Pulse · Cities",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "12:08",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-dependence",
     title: "The Price of Dependence",
     excerpt: "Why a widening gap between promises and controllable resources is reshaping the basis of competitive advantage.",

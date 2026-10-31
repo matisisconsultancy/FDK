@@ -137,7 +137,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-10-29",
       "the-hurdle-rate-returns",
       "gvi-the-index-illusion",
-      "the-global-growth-spread"
+      "the-global-growth-spread",
+      "gvi-global-cities-signature-survey-2026-10-31"
     ]
   },
   "daily": {
@@ -3283,6 +3284,12 @@ window.GVI_DATA = {
         "url": "/the-global-growth-spread",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the carried-forward provisional scorecard, with the GVI held at 108.0 and no numerical revisions."
+      },
+      {
+        "title": "GVI Global Cities: Signature Survey",
+        "url": "/gvi-global-cities-signature-survey-2026-10-31",
+        "slot": "Midday Pulse",
+        "headline": "Singapore, New York and London lead the Top 50, while Madrid (−0.58) and Paris (−0.55) are the week's largest decliners."
       }
     ]
   },
