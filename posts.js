@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-economic-power",
+    title: "The Great Repricing of Economic Power",
+    excerpt: "Where markets, capital and geopolitics collide — and why the cost of capital is becoming the new dividing line.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "4 min read",
+    time: "11:55",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-ai-leadership",
     title: "The Price of AI Leadership",
     excerpt: "A consequential financial divergence is emerging in the U.S.–China AI competition.",
