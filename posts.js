@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-italian-banking-paradox-2-0-2026-10-31",
+    title: "The Italian Banking Paradox 2.0",
+    excerpt: "Shareholder capital is redrawing Italy's financial architecture — and accelerating Europe's contest for continental scale.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "8 min read",
+    time: "10:38",
+    kind: "day"
+  },
+  {
     url: "/the-time-value-of-power-2026-10-31",
     title: "The Time Value of Power",
     excerpt: "Capital has not stopped financing AI — it has become selective about the balance sheets through which it flows.",
