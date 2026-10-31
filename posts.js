@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-credit-verdict",
+    title: "The Credit Verdict",
+    excerpt: "AI risk moves from equity repricing to credit scrutiny as Europe's sovereign, energy and political strains reshape capital allocation.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "4 min read",
+    time: "19:54",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-expiring-grid-option",
     title: "Europe’s AI Race: The Expiring Grid Option",
     excerpt: "Two new developments show European AI infrastructure can lose development momentum before reserved electricity becomes operational compute.",
