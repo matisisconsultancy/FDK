@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-sovereignty-spread-2026-10-31",
+    title: "Where Markets, Capital and Geopolitics Collide the Sovereignty Spread",
+    excerpt: "As AI returns concentrate, sovereign credibility, energy security and control of productive infrastructure are becoming the decisive determinants of competitiveness.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "14:01",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-sovereignty-spread",
     title: "Where Markets, Capital and Geopolitics Collide the Sovereignty Spread",
     excerpt: "Five October 31 developments point to a structural transition in how capital, energy and credibility distribute the returns of the AI Supercycle.",
