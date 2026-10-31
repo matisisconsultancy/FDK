@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-ai-leadership",
+    title: "The Price of AI Leadership",
+    excerpt: "A consequential financial divergence is emerging in the U.S.–China AI competition.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "11:43",
+    kind: "day"
+  },
+  {
     url: "/the-italian-banking-paradox-2-0-2026-10-31",
     title: "The Italian Banking Paradox 2.0",
     excerpt: "Shareholder capital is redrawing Italy's financial architecture — and accelerating Europe's contest for continental scale.",
