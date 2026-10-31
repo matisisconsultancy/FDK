@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-reckoning",
+    title: "The Capital Reckoning",
+    excerpt: "Friday's selloff revealed a repricing of capital intensity, not an earnings recession — the next phase of AI will be decided in credit markets.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "4 min read",
+    time: "08:42",
+    kind: "day"
+  },
+  {
     url: "/the-global-growth-spread",
     title: "The Global Growth Spread",
     excerpt: "The October 31 Global Velocity assessment finds technological velocity positive, capital-market momentum deteriorating and growth increasingly differentiated.",
