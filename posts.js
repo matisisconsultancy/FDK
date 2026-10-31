@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-dependence",
+    title: "The Price of Dependence",
+    excerpt: "Why a widening gap between promises and controllable resources is reshaping the basis of competitive advantage.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "12:02",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-economic-power",
     title: "The Great Repricing of Economic Power",
     excerpt: "Where markets, capital and geopolitics collide — and why the cost of capital is becoming the new dividing line.",
