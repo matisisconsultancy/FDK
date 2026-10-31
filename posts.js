@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/it-is-that-the-architecture-remains-intact-while-the-economies-operating-within-it-become-increasingly-unequal-in-their-ability-to-finance-growth",
+    title: "It Is That the Architecture Remains Intact While the Economies Operating Within It Become Increasingly Unequal in Their Ability to Finance Growth.",
+    excerpt: "Fitch's warning, Europe's social contagion and the coming repricing of productive capital.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "4 min read",
+    time: "14:25",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-sovereignty-spread-2026-10-31",
     title: "Where Markets, Capital and Geopolitics Collide the Sovereignty Spread",
     excerpt: "As AI returns concentrate, sovereign credibility, energy security and control of productive infrastructure are becoming the decisive determinants of competitiveness.",
