@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-global-growth-spread",
+    title: "The Global Growth Spread",
+    excerpt: "The October 31 Global Velocity assessment finds technological velocity positive, capital-market momentum deteriorating and growth increasingly differentiated.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "08:38",
+    kind: "day"
+  },
+  {
     url: "/the-great-cash-flow-reversal",
     title: "The Great Cash Flow Reversal",
     excerpt: "The financial engine that built Big Tech is being redirected from shareholder returns to AI infrastructure — and markets are now pricing the economics, not the promise.",

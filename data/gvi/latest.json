@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-10-30",
+    "updated": "2026-10-31",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -132,34 +132,35 @@
       "the-next-rotation-in-global-capital",
       "gvi-corporate-benchmark-2026-10-29",
       "the-hurdle-rate-returns",
-      "gvi-the-index-illusion"
+      "gvi-the-index-illusion",
+      "the-global-growth-spread"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": "N/V",
+      "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-10-30",
+      "asOf": "2026-10-31",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Hurdle Rate Returns",
-        "url": "/the-hurdle-rate-returns",
-        "date": "2026-10-30",
+        "title": "The Global Growth Spread",
+        "url": "/the-global-growth-spread",
+        "date": "2026-10-31",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-10-30",
+      "asOf": "2026-10-31",
       "source": {
-        "title": "The Hurdle Rate Returns",
-        "url": "/the-hurdle-rate-returns",
-        "date": "2026-10-30",
+        "title": "The Global Growth Spread",
+        "url": "/the-global-growth-spread",
+        "date": "2026-10-31",
         "slot": "GVI"
       },
       "rows": [
@@ -170,9 +171,8 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Growth accelerating; AI cash-flow discipline intensifying",
+          "tag": "strong fundamentals; negative equity-market momentum",
           "spark": [
-            92.1,
             92.3,
             92.4,
             92.6,
@@ -180,6 +180,7 @@
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -211,8 +212,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Technology-equity weakness; structural innovation position retained",
+          "tag": "manufacturing contraction; high-tech resilience",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -239,8 +241,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor profitability strong; market momentum negative",
+          "tag": "semiconductor earnings strength; valuation pressure",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -267,8 +270,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Monetary restraint; equity-market pressure",
+          "tag": "industrial capabilities; monetary-policy sensitivity",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -295,8 +299,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial potential; financing constraints",
+          "tag": "modest GDP recovery; investment weakness",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -323,8 +328,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Medium-term growth expectations remain weak",
+          "tag": "growth and fiscal constraints",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -351,8 +357,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive frontier-AI innovation; sovereign financing pressures",
+          "tag": "negative: GDP and investment contraction",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -379,8 +386,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Financial and industrial resilience",
+          "tag": "previous structural assessment retained",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -407,8 +415,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor-equipment strengths",
+          "tag": "positive: relative GDP resilience",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -435,8 +444,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Structural industrial assessment retained",
+          "tag": "previous structural assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -463,8 +473,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Digital infrastructure assessment retained",
+          "tag": "previous structural assessment retained",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -491,8 +502,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy-system resilience",
+          "tag": "energy and financial resilience",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -519,8 +531,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative credit resilience; European spillover exposure",
+          "tag": "positive growth; elevated inflation",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -547,8 +560,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial financing sensitivity",
+          "tag": "industrial financing sensitivity",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -575,8 +589,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Productive investment constrained by capital costs",
+          "tag": "negative: stagnation and energy inflation",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3214,62 +3229,56 @@
     }
   },
   "today": {
-    "date": "2026-10-30",
-    "edition": "GVI",
-    "thesis": "The Hurdle Rate Returns",
-    "subtitle": "AI demand stays strong, but capital markets are increasingly discriminating between technological growth, operating profitability and sustainable free-cash-flow generation.",
-    "standfirst": "The AI Supercycle has not exhausted its technological potential, but capital markets are beginning to demand proof of its economic returns; the premium now belongs to companies that compound earnings and free cash flow faster than they accumulate capital commitments.",
+    "date": "2026-10-31",
+    "edition": "GVI · Capital",
+    "thesis": "The Global Growth Spread",
+    "subtitle": "Strong AI demand no longer guarantees rising valuations as technological acceleration and economic acceleration become increasingly disconnected.",
+    "standfirst": "The central investment test remains: INTELLIGENCE → PRODUCTIVITY → FREE CASH FLOW → ROIC ABOVE WACC.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "US Q3 GDP, annualised",
-        "value": "3.4%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Amazon trailing FCF",
-        "value": "−$42.4bn",
+        "label": "US Nasdaq, Oct 30",
+        "value": "−2.86%",
         "delta": null,
         "trend": "down"
       },
       {
-        "label": "AWS revenue growth YoY",
-        "value": "+39.3%",
-        "delta": null,
-        "trend": "up"
+        "label": "China manufacturing PMI",
+        "value": "49.3",
+        "delta": "-0.8",
+        "trend": "down"
       },
       {
-        "label": "ECB deposit rate",
-        "value": "2.50%",
+        "label": "Eurozone Q3 GDP (q/q)",
+        "value": "+0.4%",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "GVI (provisional)",
+        "label": "Italy Oct HICP (y/y)",
+        "value": "5.6%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "GVI (provisional reference)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Hurdle Rate Returns",
-      "url": "/the-hurdle-rate-returns",
-      "date": "2026-10-30",
+      "title": "The Global Growth Spread",
+      "url": "/the-global-growth-spread",
+      "date": "2026-10-31",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Hurdle Rate Returns",
-        "url": "/the-hurdle-rate-returns",
+        "title": "The Global Growth Spread",
+        "url": "/the-global-growth-spread",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the carried-forward provisional rankings, while Amazon's free cash flow turns negative at −$42.4bn."
-      },
-      {
-        "title": "GVI the Index Illusion",
-        "url": "/gvi-the-index-illusion",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Amazon slips 0.3 to fourth and Volkswagen falls 0.3 to 61.3."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the carried-forward provisional scorecard, with the GVI held at 108.0 and no numerical revisions."
       }
     ]
   },
