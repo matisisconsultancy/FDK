@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-time-value-of-power",
+    title: "The Time Value of Power",
+    excerpt: "Capital has not stopped financing AI — it has become selective about the balance sheets through which it flows.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "5 min read",
+    time: "09:07",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief",
     title: "Daily Intelligence Brief",
     excerpt: "Markets are repricing the AI Supercycle, separating the companies that finance intelligence from those that can profit from it.",
