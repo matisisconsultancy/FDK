@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-time-value-of-power-2026-10-31",
+    title: "The Time Value of Power",
+    excerpt: "Capital has not stopped financing AI — it has become selective about the balance sheets through which it flows.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "October 31, 2026",
+    read: "3 min read",
+    time: "09:37",
+    kind: "day"
+  },
+  {
     url: "/the-time-value-of-power",
     title: "The Time Value of Power",
     excerpt: "Capital has not stopped financing AI — it has become selective about the balance sheets through which it flows.",
