@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-dividend-and-the-discount-rate",
+    title: "The Dividend and the Discount Rate",
+    excerpt: "Korea's export windfall, Europe's measurable AI adoption and France's sovereign downgrade sharpen the November 1 Global Velocity assessment.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "07:51",
+    kind: "day"
+  },
+  {
     url: "/the-credit-verdict",
     title: "The Credit Verdict",
     excerpt: "AI risk moves from equity repricing to credit scrutiny as Europe's sovereign, energy and political strains reshape capital allocation.",
