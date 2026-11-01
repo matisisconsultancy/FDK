@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-the-sovereign-investment-divide",
+    title: "Europe’s Great Fracture the Sovereign–investment Divide",
+    excerpt: "France's protests are fading while its credit deteriorates — and Europe's real risk is becoming the uneven capacity to finance its transformation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "9 min read",
+    time: "15:14",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-cash-flow-divide",
     title: "Where Markets, Capital and Geopolitics Collide the Cash-flow Divide",
     excerpt: "Asia monetizes the AI boom, Wall Street reprices its cost, and Europe confronts a financing test.",
