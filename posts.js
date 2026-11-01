@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-fed-confronts-the-price-of-intelligence",
+    title: "The Fed Confronts the Price of Intelligence",
+    excerpt: "The AI Supercycle is repricing capital, credit and specialised labour before its productivity benefits are broadly distributed.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "12:18",
+    kind: "day"
+  },
+  {
     url: "/the-memory-divide",
     title: "The Memory Divide",
     excerpt: "China is narrowing the AI model-cost gap faster than it is closing the gap in advanced computing infrastructure.",

@@ -11,7 +11,7 @@
 (function () {
   "use strict";
   var LANGS = { en: 1, es: 1, it: 1 };
-  var V = "v=2befdcc7a1";
+  var V = "v=aa37a2cccd";
 
   function fromQuery() {
     var m = /[?&]lang=([a-zA-Z-]+)/.exec(location.search);
