@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-01",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "South Korea's AI export surge, China's industrial contraction and Europe's sovereign-energy squeeze reveal a new geography of economic power.",
+    tag: "Morning Brief · Macro",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "08:37",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-01",
     title: "Daily Intelligence Brief",
     excerpt: "The AI Supercycle faces a change in financial discipline, not a reversal in technological momentum.",
