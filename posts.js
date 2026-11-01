@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-cash-flow-divide",
+    title: "Where Markets, Capital and Geopolitics Collide the Cash-flow Divide",
+    excerpt: "Asia monetizes the AI boom, Wall Street reprices its cost, and Europe confronts a financing test.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "13:11",
+    kind: "day"
+  },
+  {
     url: "/the-fed-confronts-the-price-of-intelligence",
     title: "The Fed Confronts the Price of Intelligence",
     excerpt: "The AI Supercycle is repricing capital, credit and specialised labour before its productivity benefits are broadly distributed.",
