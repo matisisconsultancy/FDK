@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-financing-fault-line",
+    title: "The Financing Fault Line",
+    excerpt: "Five November signals expose a global economy financing its greatest transformation just as the cost of capital becomes a mechanism of selection.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "4 min read",
+    time: "19:37",
+    kind: "night"
+  },
+  {
     url: "/the-ai-supercycle-is-accelerating-demand-for-computing-infrastructure",
     title: "The AI Supercycle Is Accelerating Demand for Computing Infrastructure.",
     excerpt: "France's protests are shrinking while its sovereign-credit and investment outlook keeps deteriorating, exposing Europe's real fracture.",
