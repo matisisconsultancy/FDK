@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-economics-of-european-banking-power",
+    title: "The New Economics of European Banking Power",
+    excerpt: "Italy taxes the profits of consolidation just as the industrial race for scale accelerates across Intesa, UniCredit and Crédit Agricole.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "10 min read",
+    time: "09:47",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-01",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "South Korea's AI export surge, China's industrial contraction and Europe's sovereign-energy squeeze reveal a new geography of economic power.",
