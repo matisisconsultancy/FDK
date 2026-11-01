@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-memory-divide",
+    title: "The Memory Divide",
+    excerpt: "China is narrowing the AI model-cost gap faster than it is closing the gap in advanced computing infrastructure.",
+    tag: "Morning Brief · Semiconductors",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "11:47",
+    kind: "day"
+  },
+  {
     url: "/the-new-economics-of-european-banking-power-2026-11-01",
     title: "The New Economics of European Banking Power",
     excerpt: "As shareholders clear the way for larger banks, Rome increases its claim on the profits those banks are expected to generate.",
