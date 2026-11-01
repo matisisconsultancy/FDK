@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-is-accelerating-demand-for-computing-infrastructure",
+    title: "The AI Supercycle Is Accelerating Demand for Computing Infrastructure.",
+    excerpt: "France's protests are shrinking while its sovereign-credit and investment outlook keeps deteriorating, exposing Europe's real fracture.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "15:58",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-the-sovereign-investment-divide",
     title: "Europe’s Great Fracture the Sovereign–investment Divide",
     excerpt: "France's protests are fading while its credit deteriorates — and Europe's real risk is becoming the uneven capacity to finance its transformation.",
