@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-economics-of-european-banking-power-2026-11-01",
+    title: "The New Economics of European Banking Power",
+    excerpt: "As shareholders clear the way for larger banks, Rome increases its claim on the profits those banks are expected to generate.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "9 min read",
+    time: "10:49",
+    kind: "day"
+  },
+  {
     url: "/the-new-economics-of-european-banking-power",
     title: "The New Economics of European Banking Power",
     excerpt: "Italy taxes the profits of consolidation just as the industrial race for scale accelerates across Intesa, UniCredit and Crédit Agricole.",
