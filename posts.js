@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-01",
+    title: "Daily Intelligence Brief",
+    excerpt: "The AI Supercycle faces a change in financial discipline, not a reversal in technological momentum.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "07:58",
+    kind: "day"
+  },
+  {
     url: "/the-future-has-two-prices",
     title: "The Future Has Two Prices",
     excerpt: "Demand for computing is accelerating as the financial, energy and institutional cost of supplying it becomes more restrictive.",
