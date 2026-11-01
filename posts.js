@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-future-has-two-prices",
+    title: "The Future Has Two Prices",
+    excerpt: "Demand for computing is accelerating as the financial, energy and institutional cost of supplying it becomes more restrictive.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 1, 2026",
+    read: "5 min read",
+    time: "07:54",
+    kind: "day"
+  },
+  {
     url: "/the-dividend-and-the-discount-rate",
     title: "The Dividend and the Discount Rate",
     excerpt: "Korea's export windfall, Europe's measurable AI adoption and France's sovereign downgrade sharpen the November 1 Global Velocity assessment.",
