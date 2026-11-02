@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-02-3",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "AI spending accelerates while capital turns selective — the next rotation will reward who can finance the future and make it pay.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "3 min read",
+    time: "13:04",
+    kind: "day"
+  },
+  {
     url: "/the-capital-that-leaves-the-risks-that-return",
     title: "The Capital That Leaves, the Risks That Return",
     excerpt: "The ECB names AI valuations a financial-stability risk as Europe's fragmented capital markets leave it exposed to the global AI cycle.",
