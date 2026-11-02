@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-banking-union-discount",
+    title: "Europe’s Banking Union Discount",
+    excerpt: "Italy's draft 2027 budget exposes the contradiction at the heart of continental banking consolidation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "7 min read",
+    time: "10:39",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-02-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The AI Supercycle is not running out of growth; it is running into the economics of growth.",
