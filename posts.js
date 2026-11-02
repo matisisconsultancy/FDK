@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-trade-boom-meets-the-industrial-cycle",
+    title: "The AI Trade Boom Meets the Industrial Cycle",
+    excerpt: "Korea's semiconductor boom coexists with weaker manufacturing, China's industrial divide widens, and energy costs constrain capital formation.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "07:25",
+    kind: "day"
+  },
+  {
     url: "/the-financing-fault-line",
     title: "The Financing Fault Line",
     excerpt: "Five November signals expose a global economy financing its greatest transformation just as the cost of capital becomes a mechanism of selection.",

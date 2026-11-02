@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-01",
+    "updated": "2026-11-02",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -135,34 +135,35 @@
       "gvi-the-index-illusion",
       "the-global-growth-spread",
       "gvi-global-cities-signature-survey-2026-10-31",
-      "the-dividend-and-the-discount-rate"
+      "the-dividend-and-the-discount-rate",
+      "the-ai-trade-boom-meets-the-industrial-cycle"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": "N/V",
+      "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-01",
+      "asOf": "2026-11-02",
       "improving": null,
       "declining": null,
-      "coverage": null,
+      "coverage": 15,
       "source": {
-        "title": "The Dividend and the Discount Rate",
-        "url": "/the-dividend-and-the-discount-rate",
-        "date": "2026-11-01",
+        "title": "The AI Trade Boom Meets the Industrial Cycle",
+        "url": "/the-ai-trade-boom-meets-the-industrial-cycle",
+        "date": "2026-11-02",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-01",
+      "asOf": "2026-11-02",
       "source": {
-        "title": "The Dividend and the Discount Rate",
-        "url": "/the-dividend-and-the-discount-rate",
-        "date": "2026-11-01",
+        "title": "The AI Trade Boom Meets the Industrial Cycle",
+        "url": "/the-ai-trade-boom-meets-the-industrial-cycle",
+        "date": "2026-11-02",
         "slot": "GVI"
       },
       "rows": [
@@ -173,14 +174,14 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong AI infrastructure demand; financial selectivity",
+          "tag": "Strong AI infrastructure; financial selectivity",
           "spark": [
-            92.4,
             92.6,
             92.8,
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -214,8 +215,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial weakness; strong demand for Korean semiconductors",
+          "tag": "Mixed: official contraction, private-sector expansion",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -243,9 +245,10 @@
           "name": "South Korea",
           "score": 88.8,
           "delta": "N/V",
-          "trend": "up",
-          "tag": "Positive — exceptional AI-related exports",
+          "trend": "flat",
+          "tag": "Mixed: exceptional exports, slowing factory activity",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -274,8 +277,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Industrial strength; energy and financing sensitivity",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -304,8 +308,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "European AI adoption opportunity; financing constraints",
+          "tag": "Industrial potential; financing constraints",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -334,8 +339,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous growth and financing assessment retained",
+          "tag": "Growth and fiscal constraints",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -363,9 +369,10 @@
           "name": "France",
           "score": 81.2,
           "delta": "N/V",
-          "trend": "down",
-          "tag": "Negative — sovereign credit outlook deteriorates",
+          "trend": "flat",
+          "tag": "Sovereign financing risk",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -394,8 +401,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Structural assessment retained",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -424,8 +432,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative economic resilience",
+          "tag": "Structural assessment retained",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -454,8 +463,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Structural assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -484,8 +494,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Structural assessment retained",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -514,8 +525,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Energy-system resilience",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -544,8 +556,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative economic resilience; inflation constraints",
+          "tag": "Growth resilience; financing sensitivity",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -574,8 +587,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Structural assessment retained",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -604,8 +618,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial productivity opportunity; financing sensitivity",
+          "tag": "Industrial productivity opportunity; energy exposure",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3245,56 +3260,56 @@
     }
   },
   "today": {
-    "date": "2026-11-01",
-    "edition": "GVI · Global Velocity",
-    "thesis": "The Dividend and the Discount Rate",
-    "subtitle": "The AI Supercycle is producing measurable economic benefits just as the cost of financing them becomes a decisive determinant of global competitiveness.",
-    "standfirst": "The value of intelligence is rising. So is the importance of the capital required to deploy it.",
+    "date": "2026-11-02",
+    "edition": "GVI · Macro",
+    "thesis": "The AI Trade Boom Meets the Industrial Cycle",
+    "subtitle": "Record Korean chip exports and a slowing factory economy expose a widening gap between the industries supplying intelligence and the broader economies in which they operate.",
+    "standfirst": "Technological acceleration creates the opportunity; productive diffusion determines its value.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI headline (provisional)",
-        "value": "108.0",
-        "delta": null,
+        "label": "Korea chip exports",
+        "value": "$56.44bn",
+        "delta": "+259.4% YoY",
+        "trend": "up"
+      },
+      {
+        "label": "Korea manufacturing PMI",
+        "value": "51.3",
+        "delta": "-2.6",
+        "trend": "down"
+      },
+      {
+        "label": "China official PMI",
+        "value": "49.3",
+        "delta": "-0.8",
+        "trend": "down"
+      },
+      {
+        "label": "China RatingDog PMI",
+        "value": "52.0",
+        "delta": "-0.1",
         "trend": "flat"
       },
       {
-        "label": "South Korea exports, Oct YoY",
-        "value": "+93.7%",
+        "label": "Brent",
+        "value": "~$118",
         "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Korea semiconductor exports",
-        "value": "$56.44bn",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Euro-area workers using AI",
-        "value": "52%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "France Fitch outlook",
-        "value": "A+, Negative",
-        "delta": null,
-        "trend": "down"
+        "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Dividend and the Discount Rate",
-      "url": "/the-dividend-and-the-discount-rate",
-      "date": "2026-11-01",
+      "title": "The AI Trade Boom Meets the Industrial Cycle",
+      "url": "/the-ai-trade-boom-meets-the-industrial-cycle",
+      "date": "2026-11-02",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Dividend and the Discount Rate",
-        "url": "/the-dividend-and-the-discount-rate",
+        "title": "The AI Trade Boom Meets the Industrial Cycle",
+        "url": "/the-ai-trade-boom-meets-the-industrial-cycle",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard; no numerical score changes validated."
+        "headline": "Korean chip exports hit $56.44bn while its PMI falls to 51.3 and China's official and private PMIs diverge; country scores carried forward as provisional, with the US at 94.0 leading."
       }
     ]
   },
