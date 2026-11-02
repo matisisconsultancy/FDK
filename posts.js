@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-that-leaves-the-risks-that-return",
+    title: "The Capital That Leaves, the Risks That Return",
+    excerpt: "The ECB names AI valuations a financial-stability risk as Europe's fragmented capital markets leave it exposed to the global AI cycle.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "8 min read",
+    time: "12:15",
+    kind: "day"
+  },
+  {
     url: "/chinas-next-ai-challenge-intelligence-enters-the-physical-economy",
     title: "China’s Next AI Challenge: Intelligence Enters the Physical Economy",
     excerpt: "China shifts investment from building robots toward the intelligence that makes them economically productive — widening the AI contest.",
