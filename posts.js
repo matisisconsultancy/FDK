@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-market-is-repricing-time",
+    title: "The Market Is Repricing Time",
+    excerpt: "The rebound is real, but the financial repricing of the AI buildout is not over.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "07:58",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-the-payback-clock",
     title: "GVI Corporate Benchmark the Payback Clock",
     excerpt: "The AI Supercycle enters a new financial phase where time-to-return, not growth, divides the leaders.",
