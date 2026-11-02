@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/america-votes-the-cost-of-capital-is-on-the-ballot",
+    title: "America Votes. the Cost of Capital Is on the Ballot.",
+    excerpt: "On the eve of the US midterms, a watch on the political forces reshaping American growth and global markets.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "17:07",
+    kind: "day"
+  },
+  {
     url: "/a-strong-showing-among-independents-would-strengthen-the-argument-for-broader-relevance-outperforming-other-democrats-on-the-same-ballot-would-demonstrate-personal-appeal-while-also-raising-the-ques",
     title: "A Strong Showing Among Independents Would Strengthen the Argument for Broader Relevance. Outperforming Other Democrats on the Same Ballot Would Demonstrate Personal Appeal, While Also Raising the Ques",
     excerpt: "Jon Ossoff, the road to 2028 and the economic consequences of a changing Democratic Party.",
