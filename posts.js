@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-02",
+    title: "Daily Intelligence Brief",
+    excerpt: "How the AI supercycle is redistributing industrial profits, national investment capacity and financial advantage.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "4 min read",
+    time: "08:05",
+    kind: "day"
+  },
+  {
     url: "/the-market-is-repricing-time",
     title: "The Market Is Repricing Time",
     excerpt: "The rebound is real, but the financial repricing of the AI buildout is not over.",
