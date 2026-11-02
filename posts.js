@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-02",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Big Tech has turned cash-flow negative as AI capital intensity doubles, opening a more selective financial regime.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "4 min read",
+    time: "08:16",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-02",
     title: "Daily Intelligence Brief",
     excerpt: "How the AI supercycle is redistributing industrial profits, national investment capacity and financial advantage.",
