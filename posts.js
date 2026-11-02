@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-02-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "The AI Supercycle is not running out of growth; it is running into the economics of growth.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "4 min read",
+    time: "09:39",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-02",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Big Tech has turned cash-flow negative as AI capital intensity doubles, opening a more selective financial regime.",
