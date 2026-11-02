@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-02",
+    title: "Europe’s Great Fracture",
+    excerpt: "France's sovereign stress, Belgium's budget crisis and Alstom's collapse mark the repricing of Europe's industrial future.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "9 min read",
+    time: "15:05",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-02-3",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "AI spending accelerates while capital turns selective — the next rotation will reward who can finance the future and make it pay.",
