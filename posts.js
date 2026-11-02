@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/chinas-next-ai-challenge-intelligence-enters-the-physical-economy",
+    title: "China’s Next AI Challenge: Intelligence Enters the Physical Economy",
+    excerpt: "China shifts investment from building robots toward the intelligence that makes them economically productive — widening the AI contest.",
+    tag: "Morning Brief · Industrial AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "11:52",
+    kind: "day"
+  },
+  {
     url: "/europes-banking-union-discount",
     title: "Europe’s Banking Union Discount",
     excerpt: "Italy's draft 2027 budget exposes the contradiction at the heart of continental banking consolidation.",
