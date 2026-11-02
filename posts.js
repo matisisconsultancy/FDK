@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/american-power-global-repricing",
+    title: "American Power. Global Repricing.",
+    excerpt: "The Velocity Edge launches US Political Economy Watch, examining how shifts in American power transmit through the global financial system.",
+    tag: "Midday Pulse · Political Economy",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "3 min read",
+    time: "16:14",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-02",
     title: "Europe’s Great Fracture",
     excerpt: "France's sovereign stress, Belgium's budget crisis and Alstom's collapse mark the repricing of Europe's industrial future.",
