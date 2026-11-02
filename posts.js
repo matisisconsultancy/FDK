@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/a-strong-showing-among-independents-would-strengthen-the-argument-for-broader-relevance-outperforming-other-democrats-on-the-same-ballot-would-demonstrate-personal-appeal-while-also-raising-the-ques",
+    title: "A Strong Showing Among Independents Would Strengthen the Argument for Broader Relevance. Outperforming Other Democrats on the Same Ballot Would Demonstrate Personal Appeal, While Also Raising the Ques",
+    excerpt: "Jon Ossoff, the road to 2028 and the economic consequences of a changing Democratic Party.",
+    tag: "Midday Pulse · US Political Economy Watch",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "16:18",
+    kind: "day"
+  },
+  {
     url: "/american-power-global-repricing",
     title: "American Power. Global Repricing.",
     excerpt: "The Velocity Edge launches US Political Economy Watch, examining how shifts in American power transmit through the global financial system.",
