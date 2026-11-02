@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-payback-clock",
+    title: "GVI Corporate Benchmark the Payback Clock",
+    excerpt: "The AI Supercycle enters a new financial phase where time-to-return, not growth, divides the leaders.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "07:32",
+    kind: "day"
+  },
+  {
     url: "/the-ai-trade-boom-meets-the-industrial-cycle",
     title: "The AI Trade Boom Meets the Industrial Cycle",
     excerpt: "Korea's semiconductor boom coexists with weaker manufacturing, China's industrial divide widens, and energy costs constrain capital formation.",
