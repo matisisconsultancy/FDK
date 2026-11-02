@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-capital-market-test",
+    title: "Europe’s AI Race: The Capital Market Test",
+    excerpt: "Alphabet's €6 billion bond, National Grid's gigawatt-scale power project and an ECB stability warning mark a more demanding financial phase for Europe's AI race.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "9 min read",
+    time: "19:42",
+    kind: "day"
+  },
+  {
     url: "/america-votes-the-cost-of-capital-is-on-the-ballot",
     title: "America Votes. the Cost of Capital Is on the Ballot.",
     excerpt: "On the eve of the US midterms, a watch on the political forces reshaping American growth and global markets.",
