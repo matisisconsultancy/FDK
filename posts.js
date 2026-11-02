@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-underwriting-divide",
+    title: "The Underwriting Divide",
+    excerpt: "Capital remains available in extraordinary quantities, but investors are becoming selective about who receives it, at what price, and against which returns.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 2, 2026",
+    read: "5 min read",
+    time: "19:46",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-capital-market-test",
     title: "Europe’s AI Race: The Capital Market Test",
     excerpt: "Alphabet's €6 billion bond, National Grid's gigawatt-scale power project and an ECB stability warning mark a more demanding financial phase for Europe's AI race.",
