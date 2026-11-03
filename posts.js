@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-november-23-pricing-test",
+    title: "The November 23 Pricing Test",
+    excerpt: "Europe's banking consolidation moves from the politics of ownership to the economics of execution.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "9 min read",
+    time: "11:14",
+    kind: "day"
+  },
+  {
     url: "/the-bottleneck-premium",
     title: "The Bottleneck Premium",
     excerpt: "Oracle's financing, Apple's margin squeeze and Marvell's $115B deal reveal where value is migrating in the AI Supercycle.",
