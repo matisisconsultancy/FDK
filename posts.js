@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-03",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The next rotation may be about capital productivity versus capital dependency, not technology versus industry.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "14:52",
+    kind: "day"
+  },
+  {
     url: "/italys-spread-was-approximately-115-basis-points-spains-61-and-belgiums-111",
     title: "Italy’s Spread Was Approximately 115 Basis Points, Spain’s 61 and Belgium’s 111.",
     excerpt: "How America's AI financing supercycle is colliding with Europe's sovereign debt, banking fragmentation and industrial investment needs.",

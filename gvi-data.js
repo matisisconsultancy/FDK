@@ -142,7 +142,8 @@ window.GVI_DATA = {
       "the-dividend-and-the-discount-rate",
       "the-ai-trade-boom-meets-the-industrial-cycle",
       "gvi-corporate-benchmark-the-payback-clock",
-      "the-price-of-the-next-expansion"
+      "the-price-of-the-next-expansion",
+      "gvi-corporate-benchmark-2026-11-03"
     ]
   },
   "daily": {
@@ -3330,6 +3331,12 @@ window.GVI_DATA = {
         "url": "/the-price-of-the-next-expansion",
         "slot": "GVI",
         "headline": "US PMI at 55.5 and Europe's divergence contrast with falling valuations; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional country scorecard."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-03",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Palantir earns a provisional +0.1 upgrade to 97.5"
       }
     ]
   },
@@ -3435,7 +3442,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-02",
+    "asOf": "2026-11-03",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3444,7 +3451,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Q3 revenue up 50.9% YoY, operating margin 58.7%, advanced technologies 79% of wafer revenue"
+        "note": "Advanced manufacturing; risk: geographic concentration"
       },
       {
         "rank": 2,
@@ -3452,7 +3459,7 @@ window.GVI_DATA = {
         "score": 99.4,
         "delta": 0,
         "trend": "up",
-        "note": "Azure revenue up 48% on better GPU utilization and higher revenue per token"
+        "note": "AI monetization; risk: infrastructure returns"
       },
       {
         "rank": 3,
@@ -3460,7 +3467,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "up",
-        "note": "Multiplies the physical economy as computing turns more energy-intensive"
+        "note": "Power infrastructure; risk: capital efficiency"
       },
       {
         "rank": 4,
@@ -3468,7 +3475,7 @@ window.GVI_DATA = {
         "score": 98.8,
         "delta": 0,
         "trend": "up",
-        "note": "Economic converter"
+        "note": "Cloud expansion; risk: FCF conversion"
       },
       {
         "rank": 5,
@@ -3476,7 +3483,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0,
         "trend": "up",
-        "note": "Technology architect"
+        "note": "Computing architecture; risk: customer financing"
       },
       {
         "rank": 6,
@@ -3484,7 +3491,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Technology architect"
+        "note": "Lithography; risk: semiconductor cycles"
       },
       {
         "rank": 7,
@@ -3492,15 +3499,15 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "up",
-        "note": "Technology architect"
+        "note": "Custom silicon; risk: customer concentration"
       },
       {
         "rank": 8,
         "name": "Palantir",
-        "score": 97.4,
-        "delta": 0,
+        "score": 97.5,
+        "delta": 0.1,
         "trend": "up",
-        "note": "Economic converter"
+        "note": "Enterprise AI; risk: contract conversion"
       },
       {
         "rank": 9,
@@ -3508,7 +3515,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Infrastructure accelerator"
+        "note": "Electricity infrastructure; risk: project delivery"
       },
       {
         "rank": 10,
@@ -3516,7 +3523,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Infrastructure accelerator"
+        "note": "Industrial intelligence; risk: adoption and execution"
       }
     ],
     "laggards": [
@@ -3526,7 +3533,7 @@ window.GVI_DATA = {
         "score": 61.3,
         "delta": 0,
         "trend": "down",
-        "note": "9M operating profit before special items €8.8bn, reported only ~€0.1bn; automotive net cash flow €4.4bn"
+        "note": "Restructuring"
       },
       {
         "rank": 2,
@@ -3534,7 +3541,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "down",
-        "note": "Slower adaptation of established assets"
+        "note": "Turnaround execution"
       },
       {
         "rank": 3,
@@ -3542,7 +3549,7 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Slower adaptation of established assets"
+        "note": "Technology transition"
       },
       {
         "rank": 4,
@@ -3550,7 +3557,7 @@ window.GVI_DATA = {
         "score": 66.8,
         "delta": 0,
         "trend": "down",
-        "note": "Slower adaptation of established assets"
+        "note": "Integration and leverage"
       },
       {
         "rank": 5,
@@ -3558,7 +3565,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Slower adaptation of established assets"
+        "note": "Productivity improvement"
       },
       {
         "rank": 6,
@@ -3566,7 +3573,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "down",
-        "note": "Slower adaptation of established assets"
+        "note": "Energy competitiveness"
       },
       {
         "rank": 7,
@@ -3574,7 +3581,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Slower adaptation of established assets"
+        "note": "Industrial transformation"
       },
       {
         "rank": 8,
@@ -3582,7 +3589,7 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Slower adaptation of established assets"
+        "note": "Digital execution"
       },
       {
         "rank": 9,
@@ -3590,7 +3597,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "down",
-        "note": "Slower adaptation of established assets"
+        "note": "Capital efficiency"
       },
       {
         "rank": 10,
@@ -3598,40 +3605,14 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Slower adaptation of established assets"
+        "note": "Infrastructure returns"
       }
     ],
-    "pillars": [
-      {
-        "pillar": "Technology architects",
-        "leaders": [
-          "TSMC",
-          "Nvidia",
-          "ASML",
-          "Broadcom"
-        ]
-      },
-      {
-        "pillar": "Infrastructure accelerators",
-        "leaders": [
-          "Schneider Electric",
-          "Siemens Energy",
-          "Siemens AG"
-        ]
-      },
-      {
-        "pillar": "Economic converters",
-        "leaders": [
-          "Microsoft",
-          "Amazon",
-          "Palantir"
-        ]
-      }
-    ],
+    "pillars": [],
     "source": {
-      "title": "GVI Corporate Benchmark the Payback Clock",
-      "url": "/gvi-corporate-benchmark-the-payback-clock",
-      "date": "2026-11-02",
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-11-03",
+      "date": "2026-11-03",
       "slot": "GVI"
     }
   },
