@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-the-next-expansion",
+    title: "The Price of the Next Expansion",
+    excerpt: "US factories accelerate, Europe's industrial divide widens, and AI capital enters a more selective investment cycle.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "07:28",
+    kind: "day"
+  },
+  {
     url: "/the-underwriting-divide",
     title: "The Underwriting Divide",
     excerpt: "Capital remains available in extraordinary quantities, but investors are becoming selective about who receives it, at what price, and against which returns.",
