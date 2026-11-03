@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/italys-spread-was-approximately-115-basis-points-spains-61-and-belgiums-111",
+    title: "Italy’s Spread Was Approximately 115 Basis Points, Spain’s 61 and Belgium’s 111.",
+    excerpt: "How America's AI financing supercycle is colliding with Europe's sovereign debt, banking fragmentation and industrial investment needs.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "14:35",
+    kind: "day"
+  },
+  {
     url: "/for-investors-the-decisive-opportunity-lies-in-identifying-companies-capable-of-compounding-economic-returns-rather-than-merely-expanding-investment-commitments",
     title: "For Investors, the Decisive Opportunity Lies in Identifying Companies Capable of Compounding Economic Returns Rather Than Merely Expanding Investment Commitments.",
     excerpt: "Why the productivity of capital, not intelligence alone, will decide enduring economic power.",
