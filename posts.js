@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-03-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "AI borrowing is colliding with sovereign financing — and the consequences are spreading beyond technology valuations.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "4 min read",
+    time: "13:53",
+    kind: "day"
+  },
+  {
     url: "/when-the-cost-of-intelligence-becomes-the-price-of-money",
     title: "When the Cost of Intelligence Becomes the Price of Money",
     excerpt: "Australia names AI in a rate decision, China warns of capital crowding-out, and the Bundesbank exposes Europe's financing gap.",
