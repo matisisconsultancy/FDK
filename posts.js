@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/for-investors-the-decisive-opportunity-lies-in-identifying-companies-capable-of-compounding-economic-returns-rather-than-merely-expanding-investment-commitments",
+    title: "For Investors, the Decisive Opportunity Lies in Identifying Companies Capable of Compounding Economic Returns Rather Than Merely Expanding Investment Commitments.",
+    excerpt: "Why the productivity of capital, not intelligence alone, will decide enduring economic power.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "2 min read",
+    time: "13:56",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-03-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "AI borrowing is colliding with sovereign financing — and the consequences are spreading beyond technology valuations.",
