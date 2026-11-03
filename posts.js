@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-margin-migration",
+    title: "The Margin Migration",
+    excerpt: "Apple, Palantir, semiconductors, Drax–Brookfield and a €30T financing gap reveal how the AI Supercycle is redistributing margins.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "19:41",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-industrialization-of-sovereign-compute",
     title: "Europe’s AI Race: The Industrialization of Sovereign Compute",
     excerpt: "A Franco-German sovereign-AI alliance, a £20 billion British infrastructure partnership and Germany's energy decisions reveal the next phase of Europe's AI supercycle.",
