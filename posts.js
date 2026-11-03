@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-bottleneck-premium",
+    title: "The Bottleneck Premium",
+    excerpt: "Oracle's financing, Apple's margin squeeze and Marvell's $115B deal reveal where value is migrating in the AI Supercycle.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "08:26",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-03",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "AI's profits concentrate while its financing, energy and political costs spread across the global economy.",
