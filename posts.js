@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-proposals-distinguish-between-transferring-sensitive-underlying-technology-and-providing-access-through-apis-and-cloud-services-they-remain-proposals-with-consultation-scheduled-through-november",
+    title: "The Proposals Distinguish Between Transferring Sensitive Underlying Technology and Providing Access Through APIs and Cloud Services. They Remain Proposals, With Consultation Scheduled Through November",
+    excerpt: "Three November 2–3 developments split the AI contest into a frontier race and a diffusion race — both under one financial constraint.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "11:34",
+    kind: "day"
+  },
+  {
     url: "/the-november-23-pricing-test",
     title: "The November 23 Pricing Test",
     excerpt: "Europe's banking consolidation moves from the politics of ownership to the economics of execution.",
