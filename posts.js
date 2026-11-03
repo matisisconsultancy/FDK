@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-03",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "AI's profits concentrate while its financing, energy and political costs spread across the global economy.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "08:20",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-03",
     title: "Daily Intelligence Brief",
     excerpt: "Anthropic's $895 billion commitments, Oracle's $20 billion raise and a $115 billion merger reshape the financing of AI.",
