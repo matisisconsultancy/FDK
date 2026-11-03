@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/us-elections-watch",
+    title: "US Elections Watch",
+    excerpt: "The numbers, policy shifts and market scenarios that could define 2027.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "4 min read",
+    time: "16:47",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-03",
     title: "GVI Corporate Benchmark",
     excerpt: "The next rotation may be about capital productivity versus capital dependency, not technology versus industry.",
