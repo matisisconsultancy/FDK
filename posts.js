@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-03",
+    title: "Daily Intelligence Brief",
+    excerpt: "Anthropic's $895 billion commitments, Oracle's $20 billion raise and a $115 billion merger reshape the financing of AI.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "5 min read",
+    time: "07:51",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-the-next-expansion",
     title: "The Price of the Next Expansion",
     excerpt: "US factories accelerate, Europe's industrial divide widens, and AI capital enters a more selective investment cycle.",
