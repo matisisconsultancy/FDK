@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-the-cost-of-intelligence-becomes-the-price-of-money",
+    title: "When the Cost of Intelligence Becomes the Price of Money",
+    excerpt: "Australia names AI in a rate decision, China warns of capital crowding-out, and the Bundesbank exposes Europe's financing gap.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "8 min read",
+    time: "13:46",
+    kind: "day"
+  },
+  {
     url: "/the-proposals-distinguish-between-transferring-sensitive-underlying-technology-and-providing-access-through-apis-and-cloud-services-they-remain-proposals-with-consultation-scheduled-through-november",
     title: "The Proposals Distinguish Between Transferring Sensitive Underlying Technology and Providing Access Through APIs and Cloud Services. They Remain Proposals, With Consultation Scheduled Through November",
     excerpt: "Three November 2–3 developments split the AI contest into a frontier race and a diffusion race — both under one financial constraint.",
