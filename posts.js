@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-industrialization-of-sovereign-compute",
+    title: "Europe’s AI Race: The Industrialization of Sovereign Compute",
+    excerpt: "A Franco-German sovereign-AI alliance, a £20 billion British infrastructure partnership and Germany's energy decisions reveal the next phase of Europe's AI supercycle.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 3, 2026",
+    read: "9 min read",
+    time: "18:29",
+    kind: "day"
+  },
+  {
     url: "/us-elections-watch",
     title: "US Elections Watch",
     excerpt: "The numbers, policy shifts and market scenarios that could define 2027.",
