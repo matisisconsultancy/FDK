@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-compute-denial-paradox",
+    title: "The Compute Denial Paradox",
+    excerpt: "Three November 4 developments widen the divergence between controlling computing infrastructure and commercializing intelligence.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "14:02",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-power-is-rewriting-the-price-of-money",
     title: "The Price of Power Is Rewriting the Price of Money",
     excerpt: "Energy-driven inflation is repricing European capital just as the AI investment cycle demands more of it.",
