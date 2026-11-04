@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-american-inflection",
+    title: "The American Inflection",
+    excerpt: "A Democratic sweep turns AI infrastructure into a question of affordability and consent, repricing the investment cycle into 2027.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "07:51",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-04",
     title: "GVI Corporate Benchmark",
     excerpt: "The market is repricing the entire AI production chain as earnings leadership broadens while equity leadership stays concentrated.",
