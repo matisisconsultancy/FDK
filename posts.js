@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-productivity-divide",
+    title: "The Capital Productivity Divide",
+    excerpt: "Intesa's record earnings and the dividend-neutral MPS repricing mark a new inflection point in European banking consolidation.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "7 min read",
+    time: "09:51",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium",
     title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
     excerpt: "The US electoral shock exposes the next scarcity of the AI supercycle — the permission, power and capital to build it.",
