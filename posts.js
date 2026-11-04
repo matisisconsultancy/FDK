@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium-2026-11-04",
+    title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
+    excerpt: "America confronts the political limits of acceleration while Europe confronts the financial limits — and capital turns selective.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "4 min read",
+    time: "14:13",
+    kind: "day"
+  },
+  {
     url: "/the-financial-market-paradox",
     title: "The Financial Market Paradox",
     excerpt: "Eurozone inflation hits 4%, France contracts, and Europe faces a stagflation–investment trap.",
