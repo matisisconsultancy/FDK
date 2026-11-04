@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-license-to-compute",
+    title: "The License to Compute",
+    excerpt: "A Democratic sweep repriced the AI trade overnight even as AMD confirmed record data-center demand — exposing the gap between producing intelligence and deploying it.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "09:07",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-04",
     title: "Daily Intelligence Brief",
     excerpt: "Silicon profits, financing costs, enterprise cash flows and Europe's power infrastructure are redrawing the financial map of the AI Supercycle.",
