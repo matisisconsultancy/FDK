@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-04",
+    title: "Daily Intelligence Brief",
+    excerpt: "Silicon profits, financing costs, enterprise cash flows and Europe's power infrastructure are redrawing the financial map of the AI Supercycle.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-american-inflection",
     title: "The American Inflection",
     excerpt: "A Democratic sweep turns AI infrastructure into a question of affordability and consent, repricing the investment cycle into 2027.",
