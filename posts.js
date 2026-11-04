@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-power-is-rewriting-the-price-of-money",
+    title: "The Price of Power Is Rewriting the Price of Money",
+    excerpt: "Energy-driven inflation is repricing European capital just as the AI investment cycle demands more of it.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "13:59",
+    kind: "day"
+  },
+  {
     url: "/the-capital-productivity-divide",
     title: "The Capital Productivity Divide",
     excerpt: "Intesa's record earnings and the dividend-neutral MPS repricing mark a new inflection point in European banking consolidation.",
