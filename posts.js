@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-project-alert-across-spain-france-germany-italy-or-the-nordics-no-new-eurohpc-award-binding-consortium",
+    title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential Project Alert Across Spain, France, Germany, Italy or the Nordics. No New EuroHPC Award, Binding Consortium",
+    excerpt: "November 4 coverage revisits prior announcements; no new European Gigafactory commitment has emerged.",
+    tag: "The Close · AI Infrastructure",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "2 min read",
+    time: "20:19",
+    kind: "night"
+  },
+  {
     url: "/the-750-billion-scarcity-trade",
     title: "The $750 Billion Scarcity Trade",
     excerpt: "A political backlash against new data centers is making existing AI capacity more valuable — and new competition more expensive.",
