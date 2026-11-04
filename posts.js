@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium",
+    title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
+    excerpt: "The US electoral shock exposes the next scarcity of the AI supercycle — the permission, power and capital to build it.",
+    tag: "Morning Brief · AI Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "09:11",
+    kind: "day"
+  },
+  {
     url: "/the-license-to-compute",
     title: "The License to Compute",
     excerpt: "A Democratic sweep repriced the AI trade overnight even as AMD confirmed record data-center demand — exposing the gap between producing intelligence and deploying it.",
