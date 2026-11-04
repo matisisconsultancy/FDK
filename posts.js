@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-04",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The market is repricing the entire AI production chain as earnings leadership broadens while equity leadership stays concentrated.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "4 min read",
+    time: "06:05",
+    kind: "day"
+  },
+  {
     url: "/the-bottleneck-premium-2026-11-04",
     title: "The Bottleneck Premium",
     excerpt: "Record AI computing revenues meet slower cash conversion and Europe's energy constraints as the investment cycle turns.",

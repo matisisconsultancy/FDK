@@ -144,7 +144,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-the-payback-clock",
       "the-price-of-the-next-expansion",
       "gvi-corporate-benchmark-2026-11-03",
-      "the-bottleneck-premium-2026-11-04"
+      "the-bottleneck-premium-2026-11-04",
+      "gvi-corporate-benchmark-2026-11-04"
     ]
   },
   "daily": {
@@ -3346,6 +3347,12 @@ window.GVI_DATA = {
         "url": "/the-bottleneck-premium-2026-11-04",
         "slot": "GVI",
         "headline": "AMD's 97% data-centre growth meets a 64% fall in free cash flow; no new GVI headline is calculable, so 108.0 stays a provisional reference and the US (94.0) leads the carried-forward country scores."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-04",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 trails"
       }
     ]
   },
@@ -3451,7 +3458,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-03",
+    "asOf": "2026-11-04",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3460,79 +3467,79 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Advanced manufacturing; risk: geographic concentration"
+        "note": "Technology architect controlling scarce computing and manufacturing"
       },
       {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.4,
         "delta": 0,
-        "trend": "up",
-        "note": "AI monetization; risk: infrastructure returns"
+        "trend": "flat",
+        "note": "Economic converter linking capacity to commercial applications"
       },
       {
         "rank": 3,
         "name": "Schneider Electric",
         "score": 99,
         "delta": 0,
-        "trend": "up",
-        "note": "Power infrastructure; risk: capital efficiency"
+        "trend": "flat",
+        "note": "Infrastructure accelerator in electricity and automation"
       },
       {
         "rank": 4,
         "name": "Amazon",
         "score": 98.8,
         "delta": 0,
-        "trend": "up",
-        "note": "Cloud expansion; risk: FCF conversion"
+        "trend": "flat",
+        "note": "Economic converter linking capacity to commercial applications"
       },
       {
         "rank": 5,
         "name": "Nvidia",
         "score": 98.3,
         "delta": 0,
-        "trend": "up",
-        "note": "Computing architecture; risk: customer financing"
+        "trend": "flat",
+        "note": "Technology architect controlling scarce computing"
       },
       {
         "rank": 6,
         "name": "ASML",
         "score": 98.2,
         "delta": 0,
-        "trend": "up",
-        "note": "Lithography; risk: semiconductor cycles"
+        "trend": "flat",
+        "note": "Technology architect controlling scarce manufacturing"
       },
       {
         "rank": 7,
         "name": "Broadcom",
         "score": 97.8,
         "delta": 0,
-        "trend": "up",
-        "note": "Custom silicon; risk: customer concentration"
+        "trend": "flat",
+        "note": "Technology architect in computing and networking"
       },
       {
         "rank": 8,
         "name": "Palantir",
         "score": 97.5,
-        "delta": 0.1,
-        "trend": "up",
-        "note": "Enterprise AI; risk: contract conversion"
+        "delta": 0,
+        "trend": "flat",
+        "note": "Economic converter linking capacity to commercial applications"
       },
       {
         "rank": 9,
         "name": "Siemens Energy",
         "score": 97.3,
         "delta": 0,
-        "trend": "up",
-        "note": "Electricity infrastructure; risk: project delivery"
+        "trend": "flat",
+        "note": "Infrastructure accelerator supplying electricity infrastructure"
       },
       {
         "rank": 10,
         "name": "Siemens AG",
         "score": 97.3,
         "delta": 0,
-        "trend": "up",
-        "note": "Industrial intelligence; risk: adoption and execution"
+        "trend": "flat",
+        "note": "Infrastructure accelerator in automation and industrial infrastructure"
       }
     ],
     "laggards": [
@@ -3541,16 +3548,16 @@ window.GVI_DATA = {
         "name": "Volkswagen",
         "score": 61.3,
         "delta": 0,
-        "trend": "down",
-        "note": "Restructuring"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 2,
         "name": "Nissan",
         "score": 63.4,
         "delta": 0,
-        "trend": "down",
-        "note": "Turnaround execution"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 3,
@@ -3558,15 +3565,15 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Technology transition"
+        "note": null
       },
       {
         "rank": 4,
         "name": "Skydance",
         "score": 66.8,
         "delta": 0,
-        "trend": "down",
-        "note": "Integration and leverage"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 5,
@@ -3574,15 +3581,15 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Productivity improvement"
+        "note": null
       },
       {
         "rank": 6,
         "name": "BASF",
         "score": 68.9,
         "delta": 0,
-        "trend": "down",
-        "note": "Energy competitiveness"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 7,
@@ -3590,7 +3597,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Industrial transformation"
+        "note": null
       },
       {
         "rank": 8,
@@ -3598,15 +3605,15 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Digital execution"
+        "note": null
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "down",
-        "note": "Capital efficiency"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 10,
@@ -3614,14 +3621,40 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Infrastructure returns"
+        "note": null
       }
     ],
-    "pillars": [],
+    "pillars": [
+      {
+        "pillar": "Technology architects",
+        "leaders": [
+          "TSMC",
+          "Nvidia",
+          "ASML",
+          "Broadcom"
+        ]
+      },
+      {
+        "pillar": "Infrastructure accelerators",
+        "leaders": [
+          "Schneider Electric",
+          "Siemens Energy",
+          "Siemens AG"
+        ]
+      },
+      {
+        "pillar": "Economic converters",
+        "leaders": [
+          "Microsoft",
+          "Amazon",
+          "Palantir"
+        ]
+      }
+    ],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-03",
-      "date": "2026-11-03",
+      "url": "/gvi-corporate-benchmark-2026-11-04",
+      "date": "2026-11-04",
       "slot": "GVI"
     }
   },
