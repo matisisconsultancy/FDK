@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-03",
+    "updated": "2026-11-04",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -139,34 +139,35 @@
       "the-ai-trade-boom-meets-the-industrial-cycle",
       "gvi-corporate-benchmark-the-payback-clock",
       "the-price-of-the-next-expansion",
-      "gvi-corporate-benchmark-2026-11-03"
+      "gvi-corporate-benchmark-2026-11-03",
+      "the-bottleneck-premium-2026-11-04"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": null,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-03",
+      "asOf": "2026-11-04",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Price of the Next Expansion",
-        "url": "/the-price-of-the-next-expansion",
-        "date": "2026-11-03",
+        "title": "The Bottleneck Premium",
+        "url": "/the-bottleneck-premium-2026-11-04",
+        "date": "2026-11-04",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-03",
+      "asOf": "2026-11-04",
       "source": {
-        "title": "The Price of the Next Expansion",
-        "url": "/the-price-of-the-next-expansion",
-        "date": "2026-11-03",
+        "title": "The Bottleneck Premium",
+        "url": "/the-bottleneck-premium-2026-11-04",
+        "date": "2026-11-04",
         "slot": "GVI"
       },
       "rows": [
@@ -175,14 +176,14 @@
           "flag": "🇺🇸",
           "name": "United States",
           "score": 94,
-          "delta": null,
-          "trend": "up",
-          "tag": "Positive industrial activity; financial selectivity",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Positive infrastructure; mixed cash conversion",
           "spark": [
-            92.8,
             93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -216,10 +217,11 @@
           "flag": "🇨🇳",
           "name": "China",
           "score": 91.2,
-          "delta": null,
+          "delta": "N/V",
           "trend": "flat",
-          "tag": "Mixed manufacturing; FX liquidity tightening announced",
+          "tag": "Negative — slowing services activity",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -248,10 +250,11 @@
           "flag": "🇰🇷",
           "name": "South Korea",
           "score": 88.8,
-          "delta": null,
+          "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong semiconductor demand; slower manufacturing momentum",
+          "tag": "Strong semiconductor demand; prior assessment retained",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -280,10 +283,11 @@
           "flag": "🇯🇵",
           "name": "Japan",
           "score": 84.9,
-          "delta": null,
-          "trend": "down",
-          "tag": "Manufacturing expansion slowing",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous assessment retained",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -312,10 +316,11 @@
           "flag": "🇩🇪",
           "name": "Germany",
           "score": 83.4,
-          "delta": null,
-          "trend": "up",
-          "tag": "Positive industrial acceleration",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Mixed — capacity awards, energy risks",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -344,10 +349,11 @@
           "flag": "🇬🇧",
           "name": "United Kingdom",
           "score": 82.2,
-          "delta": null,
-          "trend": "up",
-          "tag": "Positive manufacturing momentum; higher costs",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous assessment retained",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -376,10 +382,11 @@
           "flag": "🇫🇷",
           "name": "France",
           "score": 81.2,
-          "delta": null,
-          "trend": "down",
-          "tag": "Negative industrial momentum",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous negative financing-risk assessment retained",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -408,10 +415,11 @@
           "flag": "🇨🇭",
           "name": "Switzerland",
           "score": 80.7,
-          "delta": null,
-          "trend": "up",
-          "tag": "Positive manufacturing momentum",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Slightly negative inflation signal",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -440,10 +448,11 @@
           "flag": "🇳🇱",
           "name": "Netherlands",
           "score": 80.6,
-          "delta": null,
-          "trend": "up",
-          "tag": "Strong expansion; marginal moderation",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous assessment retained",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -472,10 +481,11 @@
           "flag": "🇸🇪",
           "name": "Sweden",
           "score": 79.2,
-          "delta": null,
-          "trend": "up",
-          "tag": "Strong positive industrial acceleration",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous positive industrial assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -504,10 +514,11 @@
           "flag": "🇩🇰",
           "name": "Denmark",
           "score": 77.8,
-          "delta": null,
+          "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "No qualifying new evidence",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -536,10 +547,11 @@
           "flag": "🇳🇴",
           "name": "Norway",
           "score": 77.1,
-          "delta": null,
+          "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "No qualifying new evidence",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -568,10 +580,11 @@
           "flag": "🇪🇸",
           "name": "Spain",
           "score": 75,
-          "delta": null,
-          "trend": "up",
-          "tag": "Positive industrial acceleration",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous positive industrial assessment retained",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -600,10 +613,11 @@
           "flag": "🇦🇹",
           "name": "Austria",
           "score": 72.4,
-          "delta": null,
-          "trend": "up",
-          "tag": "Positive industrial recovery",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous assessment retained",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -632,10 +646,11 @@
           "flag": "🇮🇹",
           "name": "Italy",
           "score": 71.6,
-          "delta": null,
-          "trend": "down",
-          "tag": "Negative industrial momentum",
+          "delta": "N/V",
+          "trend": "flat",
+          "tag": "Previous negative industrial assessment retained",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3277,62 +3292,56 @@
     }
   },
   "today": {
-    "date": "2026-11-03",
-    "edition": "GVI · Macro",
-    "thesis": "The Price of the Next Expansion",
-    "subtitle": "Global industrial activity is proving more resilient than markets will reward, and the next edge lies in reading that divergence.",
-    "standfirst": "Economic acceleration and financial value creation are related, but they are not interchangeable.",
+    "date": "2026-11-04",
+    "edition": "GVI · Capital",
+    "thesis": "The Bottleneck Premium",
+    "subtitle": "AI computing demand keeps accelerating, but cash conversion, utilisation and energy availability are now what separate the winners.",
+    "standfirst": "The next winners will be determined by the quality of their capital compounding — not the scale of their expansion.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "US manufacturing PMI",
-        "value": "55.5",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Sweden manufacturing PMI",
-        "value": "60.5",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Marvell–Lumentum",
-        "value": "$115B",
-        "delta": null,
+        "label": "GVI (provisional reference)",
+        "value": "108.0",
+        "delta": "N/V",
         "trend": "flat"
       },
       {
-        "label": "Palantir Q3 revenue growth",
-        "value": "+96%",
+        "label": "AMD data-centre revenue",
+        "value": "+97% YoY",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Nasdaq (Nov 2)",
-        "value": "-1.07%",
+        "label": "AMD quarterly free cash flow",
+        "value": "$554m",
+        "delta": "−64% YoY",
+        "trend": "down"
+      },
+      {
+        "label": "Arista Networks revenue",
+        "value": "+58.5% YoY",
         "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "China October services PMI",
+        "value": "50.8",
+        "delta": "−0.8",
         "trend": "down"
       }
     ],
     "source": {
-      "title": "The Price of the Next Expansion",
-      "url": "/the-price-of-the-next-expansion",
-      "date": "2026-11-03",
+      "title": "The Bottleneck Premium",
+      "url": "/the-bottleneck-premium-2026-11-04",
+      "date": "2026-11-04",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Price of the Next Expansion",
-        "url": "/the-price-of-the-next-expansion",
+        "title": "The Bottleneck Premium",
+        "url": "/the-bottleneck-premium-2026-11-04",
         "slot": "GVI",
-        "headline": "US PMI at 55.5 and Europe's divergence contrast with falling valuations; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional country scorecard."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-03",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Palantir earns a provisional +0.1 upgrade to 97.5"
+        "headline": "AMD's 97% data-centre growth meets a 64% fall in free cash flow; no new GVI headline is calculable, so 108.0 stays a provisional reference and the US (94.0) leads the carried-forward country scores."
       }
     ]
   },

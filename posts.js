@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-bottleneck-premium-2026-11-04",
+    title: "The Bottleneck Premium",
+    excerpt: "Record AI computing revenues meet slower cash conversion and Europe's energy constraints as the investment cycle turns.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "06:01",
+    kind: "day"
+  },
+  {
     url: "/the-margin-migration",
     title: "The Margin Migration",
     excerpt: "Apple, Palantir, semiconductors, Drax–Brookfield and a €30T financing gap reveal how the AI Supercycle is redistributing margins.",
