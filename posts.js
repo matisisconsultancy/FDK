@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-financial-market-paradox",
+    title: "The Financial Market Paradox",
+    excerpt: "Eurozone inflation hits 4%, France contracts, and Europe faces a stagflation–investment trap.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "14:07",
+    kind: "day"
+  },
+  {
     url: "/the-compute-denial-paradox",
     title: "The Compute Denial Paradox",
     excerpt: "Three November 4 developments widen the divergence between controlling computing infrastructure and commercializing intelligence.",
