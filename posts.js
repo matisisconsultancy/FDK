@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-750-billion-scarcity-trade",
+    title: "The $750 Billion Scarcity Trade",
+    excerpt: "A political backlash against new data centers is making existing AI capacity more valuable — and new competition more expensive.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 4, 2026",
+    read: "5 min read",
+    time: "19:41",
+    kind: "night"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium-2026-11-04",
     title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
     excerpt: "America confronts the political limits of acceleration while Europe confronts the financial limits — and capital turns selective.",
