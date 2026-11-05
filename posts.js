@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/energy-prices-are-retreating-but-europes-structural-exposure-remains",
+    title: "Energy Prices Are Retreating, but Europe’s Structural Exposure Remains",
+    excerpt: "Markets improve even as Europe's deeper capital-allocation problem — sovereign debt meeting leveraged non-bank finance — goes unresolved.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "4 min read",
+    time: "14:14",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-05-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The U.S. midterms turned the AI infrastructure debate from technological capacity into a question of economic legitimacy and investment discipline.",
