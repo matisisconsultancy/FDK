@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-04",
+    "updated": "2026-11-05",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -141,7 +141,8 @@
       "the-price-of-the-next-expansion",
       "gvi-corporate-benchmark-2026-11-03",
       "the-bottleneck-premium-2026-11-04",
-      "gvi-corporate-benchmark-2026-11-04"
+      "gvi-corporate-benchmark-2026-11-04",
+      "the-scarcity-spread"
     ]
   },
   "daily": {
@@ -152,23 +153,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-04",
+      "asOf": "2026-11-05",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Bottleneck Premium",
-        "url": "/the-bottleneck-premium-2026-11-04",
-        "date": "2026-11-04",
+        "title": "The Scarcity Spread",
+        "url": "/the-scarcity-spread",
+        "date": "2026-11-05",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-04",
+      "asOf": "2026-11-05",
       "source": {
-        "title": "The Bottleneck Premium",
-        "url": "/the-bottleneck-premium-2026-11-04",
-        "date": "2026-11-04",
+        "title": "The Scarcity Spread",
+        "url": "/the-scarcity-spread",
+        "date": "2026-11-05",
         "slot": "GVI"
       },
       "rows": [
@@ -179,11 +180,11 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive infrastructure; mixed cash conversion",
+          "tag": "Strong AI infrastructure; financial repricing",
           "spark": [
-            93,
             93.2,
             93.4,
+            94,
             94,
             94,
             94,
@@ -220,8 +221,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative — slowing services activity",
+          "tag": "Industrial divergence; previous assessment retained",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -253,8 +255,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong semiconductor demand; prior assessment retained",
+          "tag": "Strong semiconductor fundamentals; negative equity momentum",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -286,8 +289,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Modest services improvement; technology-market pressure",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -319,8 +323,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Mixed — capacity awards, energy risks",
+          "tag": "Industrial resilience; easing inflation",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -352,8 +357,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Computing innovation; financing sensitivity",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -385,8 +391,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous negative financing-risk assessment retained",
+          "tag": "Sovereign risk and rising inflation",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -418,8 +425,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Slightly negative inflation signal",
+          "tag": "Previous structural assessment retained",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -451,8 +459,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Relative resilience; modest inflation increase",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -484,8 +493,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous positive industrial assessment retained",
+          "tag": "Strong previous industrial momentum",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -517,8 +527,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new evidence",
+          "tag": "No qualifying new structural evidence",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -550,8 +561,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new evidence",
+          "tag": "Energy exposure; lower oil-price outlook",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -583,8 +595,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous positive industrial assessment retained",
+          "tag": "Resilient growth; inflation remains elevated",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -616,8 +629,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Industrial recovery; easing inflation",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -649,8 +663,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous negative industrial assessment retained",
+          "tag": "Elevated inflation; industrial weakness",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3293,62 +3308,56 @@
     }
   },
   "today": {
-    "date": "2026-11-04",
+    "date": "2026-11-05",
     "edition": "GVI · Capital",
-    "thesis": "The Bottleneck Premium",
-    "subtitle": "AI computing demand keeps accelerating, but cash conversion, utilisation and energy availability are now what separate the winners.",
-    "standfirst": "The next winners will be determined by the quality of their capital compounding — not the scale of their expansion.",
+    "thesis": "The Scarcity Spread",
+    "subtitle": "The AI Supercycle is entering a phase where the ability to deploy capital may matter as much as the ability to raise it.",
+    "standfirst": "The next phase of capital allocation will distinguish between businesses that own productive scarcity and those that must finance their way into it.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI (provisional reference)",
+        "label": "GVI (prior provisional)",
         "value": "108.0",
-        "delta": "N/V",
+        "delta": null,
         "trend": "flat"
       },
       {
-        "label": "AMD data-centre revenue",
-        "value": "+97% YoY",
-        "delta": null,
+        "label": "Euro-area inflation, Oct",
+        "value": "4.0%",
+        "delta": "+0.2pp",
         "trend": "up"
       },
       {
-        "label": "AMD quarterly free cash flow",
-        "value": "$554m",
-        "delta": "−64% YoY",
+        "label": "Brent crude",
+        "value": "$93.50",
+        "delta": null,
         "trend": "down"
       },
       {
-        "label": "Arista Networks revenue",
-        "value": "+58.5% YoY",
-        "delta": null,
+        "label": "Arm quarterly revenue",
+        "value": "$1.44bn",
+        "delta": "+27% YoY",
         "trend": "up"
       },
       {
-        "label": "China October services PMI",
-        "value": "50.8",
-        "delta": "−0.8",
+        "label": "ISM Services PMI, Oct",
+        "value": "54.5",
+        "delta": null,
         "trend": "down"
       }
     ],
     "source": {
-      "title": "The Bottleneck Premium",
-      "url": "/the-bottleneck-premium-2026-11-04",
-      "date": "2026-11-04",
+      "title": "The Scarcity Spread",
+      "url": "/the-scarcity-spread",
+      "date": "2026-11-05",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Bottleneck Premium",
-        "url": "/the-bottleneck-premium-2026-11-04",
+        "title": "The Scarcity Spread",
+        "url": "/the-scarcity-spread",
         "slot": "GVI",
-        "headline": "AMD's 97% data-centre growth meets a 64% fall in free cash flow; no new GVI headline is calculable, so 108.0 stays a provisional reference and the US (94.0) leads the carried-forward country scores."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-04",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 trails"
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional country scorecard; GVI held at 108.0 as a prior provisional reference"
       }
     ]
   },

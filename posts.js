@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-scarcity-spread",
+    title: "The Scarcity Spread",
+    excerpt: "Markets are repricing the scarcity value of existing computing infrastructure against the financing cost of building new capacity.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "07:11",
+    kind: "day"
+  },
+  {
     url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-project-alert-across-spain-france-germany-italy-or-the-nordics-no-new-eurohpc-award-binding-consortium",
     title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential Project Alert Across Spain, France, Germany, Italy or the Nordics. No New EuroHPC Award, Binding Consortium",
     excerpt: "November 4 coverage revisits prior announcements; no new European Gigafactory commitment has emerged.",
