@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-05-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "The U.S. midterms turned the AI infrastructure debate from technological capacity into a question of economic legitimacy and investment discipline.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "13:24",
+    kind: "day"
+  },
+  {
     url: "/the-ai-boom-meets-the-bond-glut",
     title: "The AI Boom Meets the Bond Glut",
     excerpt: "Three developments between November 4 and 5 reveal a new phase in the Great Split for monetary policy and global capital.",
