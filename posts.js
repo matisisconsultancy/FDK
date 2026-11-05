@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-boom-meets-the-bond-glut",
+    title: "The AI Boom Meets the Bond Glut",
+    excerpt: "Three developments between November 4 and 5 reveal a new phase in the Great Split for monetary policy and global capital.",
+    tag: "Midday Pulse · Monetary Policy",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "12:08",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-consent",
     title: "The Price of Consent",
     excerpt: "Commerzbank softens its stance on UniCredit and BPER posts €2.01bn as European banking enters its decisive second phase.",
