@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-gigafactory-race-the-execution-premium",
+    title: "Europe’s AI Gigafactory Race: The Execution Premium",
+    excerpt: "EuroHPC resets tender submissions, Legrand lifts guidance on nearly 40% data-center growth, and Skanska signals a more selective financing cycle.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "8 min read",
+    time: "17:59",
+    kind: "day"
+  },
+  {
     url: "/if-european-capital-flows-primarily-into-established-banks-utilities-defense-companies-and-dividend-paying-incumbents-the-result-may-be-higher-asset-prices-without-a-meaningful-acceleration-in-tech",
     title: "If European Capital Flows Primarily Into Established Banks, Utilities, Defense Companies and Dividend-paying Incumbents, the Result May Be Higher Asset Prices Without a Meaningful Acceleration in Tech",
     excerpt: "Six apparently separate shocks are converging into one fundamental reallocation of global capital.",
