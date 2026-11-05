@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-consent",
+    title: "The Price of Consent",
+    excerpt: "Commerzbank softens its stance on UniCredit and BPER posts €2.01bn as European banking enters its decisive second phase.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "9 min read",
+    time: "10:00",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-05",
     title: "Daily Intelligence Brief",
     excerpt: "Credit support, intellectual property and industrial policy expose who finances, owns and captures the returns of the AI-native economy.",
