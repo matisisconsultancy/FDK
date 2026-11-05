@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-investment-cycle-has-become-unusually-dependent-on-decisions-that-cannot-be-separated-from-politics-semiconductor-export-controls-electricity-grid-investment-ai-regulation-data-center-permitti",
+    title: "The Investment Cycle Has Become Unusually Dependent on Decisions That Cannot Be Separated From Politics: Semiconductor Export Controls, Electricity-grid Investment, AI Regulation, Data-center Permitti",
+    excerpt: "Six apparently separate shocks are converging into one global repricing of capital.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "4 min read",
+    time: "14:28",
+    kind: "day"
+  },
+  {
     url: "/energy-prices-are-retreating-but-europes-structural-exposure-remains",
     title: "Energy Prices Are Retreating, but Europe’s Structural Exposure Remains",
     excerpt: "Markets improve even as Europe's deeper capital-allocation problem — sovereign debt meeting leveraged non-bank finance — goes unresolved.",
