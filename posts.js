@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-permission-2026-11-05",
+    title: "The Price of Permission",
+    excerpt: "Wall Street's post-midterm reversal exposes a new financial hierarchy where permission, power and execution reprice the AI value chain.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "19:38",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-gigafactory-race-the-execution-premium",
     title: "Europe’s AI Gigafactory Race: The Execution Premium",
     excerpt: "EuroHPC resets tender submissions, Legrand lifts guidance on nearly 40% data-center growth, and Skanska signals a more selective financing cycle.",
