@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-05",
+    title: "Daily Intelligence Brief",
+    excerpt: "Credit support, intellectual property and industrial policy expose who finances, owns and captures the returns of the AI-native economy.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "08:48",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-05",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Improving financial conditions and deteriorating AI infrastructure valuations are diverging — the first signal of a new capital-allocation regime.",
