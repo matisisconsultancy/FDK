@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-05",
+    title: "GVI Corporate Benchmark",
+    excerpt: "How the political reset in Washington is repricing AI infrastructure, capital productivity and the next generation of equity leaders.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "07:16",
+    kind: "day"
+  },
+  {
     url: "/the-scarcity-spread",
     title: "The Scarcity Spread",
     excerpt: "Markets are repricing the scarcity value of existing computing infrastructure against the financing cost of building new capacity.",
