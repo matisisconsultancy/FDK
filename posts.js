@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-05",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Improving financial conditions and deteriorating AI infrastructure valuations are diverging — the first signal of a new capital-allocation regime.",
+    tag: "Morning Brief · Markets",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 5, 2026",
+    read: "5 min read",
+    time: "07:58",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-05",
     title: "GVI Corporate Benchmark",
     excerpt: "How the political reset in Washington is repricing AI infrastructure, capital productivity and the next generation of equity leaders.",
