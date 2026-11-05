@@ -7,18 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/delete-the-investment-cycle-has-become-unusually-dependent-on-decisions-that-cannot-be-separated-from-politics-semiconductor-export-controls-electricity-grid-investment-ai-regulation-data-center",
-    title: "Delete: The Investment Cycle Has Become Unusually Dependent on Decisions That Cannot Be Separated From Politics: Semiconductor Export Controls, Electricity-grid Investment, AI Regulation, Data-center",
-    excerpt: "The investment cycle has become unusually dependent on decisions that cannot be separated from politics.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "November 5, 2026",
-    read: "2 min read",
-    time: "15:35",
-    kind: "day"
-  },
-  {
     url: "/if-european-capital-flows-primarily-into-established-banks-utilities-defense-companies-and-dividend-paying-incumbents-the-result-may-be-higher-asset-prices-without-a-meaningful-acceleration-in-tech",
     title: "If European Capital Flows Primarily Into Established Banks, Utilities, Defense Companies and Dividend-paying Incumbents, the Result May Be Higher Asset Prices Without a Meaningful Acceleration in Tech",
     excerpt: "Six apparently separate shocks are converging into one fundamental reallocation of global capital.",
@@ -28,30 +16,6 @@ window.FDK_POSTS = [
     date: "November 5, 2026",
     read: "5 min read",
     time: "14:49",
-    kind: "day"
-  },
-  {
-    url: "/the-investment-cycle-has-become-unusually-dependent-on-decisions-that-cannot-be-separated-from-politics-semiconductor-export-controls-electricity-grid-investment-ai-regulation-data-center-permitti-2026-11-05",
-    title: "The Investment Cycle Has Become Unusually Dependent on Decisions That Cannot Be Separated From Politics: Semiconductor Export Controls, Electricity-grid Investment, AI Regulation, Data-center Permitti",
-    excerpt: "Divided government reprices long-duration assets, and Europe's rally may be a relative-valuation trade rather than a renaissance.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "November 5, 2026",
-    read: "3 min read",
-    time: "14:46",
-    kind: "day"
-  },
-  {
-    url: "/the-investment-cycle-has-become-unusually-dependent-on-decisions-that-cannot-be-separated-from-politics-semiconductor-export-controls-electricity-grid-investment-ai-regulation-data-center-permitti",
-    title: "The Investment Cycle Has Become Unusually Dependent on Decisions That Cannot Be Separated From Politics: Semiconductor Export Controls, Electricity-grid Investment, AI Regulation, Data-center Permitti",
-    excerpt: "Six apparently separate shocks are converging into one global repricing of capital.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 5, 2026",
-    read: "4 min read",
-    time: "14:28",
     kind: "day"
   },
   {
@@ -6811,6 +6775,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
