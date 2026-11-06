@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-the-permission-premium-2026-11-06",
+    title: "Daily Intelligence Brief the Permission Premium",
+    excerpt: "Markets erased $3T as Google, IREN and US productivity data show the AI cycle hasn't stopped — only its constraints have changed.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "10:19",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-06",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The AI selloff is spreading from equity valuations into credit risk and capital flows — a potentially decisive inflection point.",
