@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-the-permission-premium",
+    title: "Daily Intelligence Brief the Permission Premium",
+    excerpt: "Markets erased $3 trillion as Google committed $17 billion and IREN's backlog hit $20.3 billion — the selloff reprices execution, not demand.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "08:34",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-permission-2026-11-05",
     title: "The Price of Permission",
     excerpt: "Wall Street's post-midterm reversal exposes a new financial hierarchy where permission, power and execution reprice the AI value chain.",
