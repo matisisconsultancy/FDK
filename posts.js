@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-infrastructure-risk-repricing",
+    title: "Europe’s AI Race: The Infrastructure Risk Repricing",
+    excerpt: "ACER quantifies Europe's grid constraint, ING tests the market for $500 million in data-center loans, and construction protests escalate in Amsterdam.",
+    tag: "In Focus · Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "9 min read",
+    time: "18:24",
+    kind: "day"
+  },
+  {
     url: "/when-the-core-becomes-the-risk",
     title: "When the Core Becomes the Risk",
     excerpt: "France's fiscal strain tests whether political concessions become a eurozone contagion channel — with Belgium, Italy and Spain next on the line.",
