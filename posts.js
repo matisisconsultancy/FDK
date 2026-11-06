@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-06-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "The AI boom's accumulated financial risks are migrating across the capital system as markets begin to differentiate on resilience.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "14:07",
+    kind: "day"
+  },
+  {
     url: "/the-ai-productivity-gap",
     title: "The AI Productivity Gap",
     excerpt: "The Bank of England, the Fed and the BIS are measuring the gap between AI capital and realised productivity.",
