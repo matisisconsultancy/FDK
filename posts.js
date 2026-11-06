@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-independence-premium",
+    title: "The Independence Premium",
+    excerpt: "Record Italian bank profits, Intesa's emerging antitrust settlement and Crédit Agricole's optionality are repricing the economics of European consolidation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "9 min read",
+    time: "11:29",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-06",
     title: "GVI Corporate Benchmark",
     excerpt: "A $3 trillion repricing tests whether November 5 was a valuation shock or the start of a deeper investment-cycle adjustment.",
