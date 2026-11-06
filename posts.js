@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-productivity-capital-divide",
+    title: "The Productivity: Capital Divide",
+    excerpt: "Stronger US productivity meets a more demanding price of capital as the AI selloff reaches credit markets.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "10:51",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-the-permission-premium-2026-11-06",
     title: "Daily Intelligence Brief the Permission Premium",
     excerpt: "Markets erased $3T as Google, IREN and US productivity data show the AI cycle hasn't stopped — only its constraints have changed.",
