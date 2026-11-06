@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-92-trillion-token-divide",
+    title: "The 92-trillion-token Divide",
+    excerpt: "China accelerates AI consumption under computing constraints as America's frontier investment faces market discipline.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "4 min read",
+    time: "12:12",
+    kind: "day"
+  },
+  {
     url: "/the-independence-premium",
     title: "The Independence Premium",
     excerpt: "Record Italian bank profits, Intesa's emerging antitrust settlement and Crédit Agricole's optionality are repricing the economics of European consolidation.",
