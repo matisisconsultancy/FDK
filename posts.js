@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-liquidity-paradox",
+    title: "The Liquidity Paradox",
+    excerpt: "A record borrowing boom meets a flight to cash as markets begin to price the financing of the future.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "19:37",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-infrastructure-risk-repricing",
     title: "Europe’s AI Race: The Infrastructure Risk Repricing",
     excerpt: "ACER quantifies Europe's grid constraint, ING tests the market for $500 million in data-center loans, and construction protests escalate in Amsterdam.",
