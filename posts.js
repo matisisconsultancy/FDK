@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-the-core-becomes-the-risk",
+    title: "When the Core Becomes the Risk",
+    excerpt: "France's fiscal strain tests whether political concessions become a eurozone contagion channel — with Belgium, Italy and Spain next on the line.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "10 min read",
+    time: "16:42",
+    kind: "day"
+  },
+  {
     url: "/the-distinction-is-essential-the-amsterdam-incident-is-verified-the-full-scale-of-actions-announced-elsewhere-has-not-yet-been-established",
     title: "The Distinction Is Essential: The Amsterdam Incident Is Verified; the Full Scale of Actions Announced Elsewhere Has Not Yet Been Established.",
     excerpt: "Social resistance is no longer only a budget problem — it is becoming an investment and execution risk for Europe's technological transformation.",
