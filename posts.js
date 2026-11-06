@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-06",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "The AI selloff is spreading from equity valuations into credit risk and capital flows — a potentially decisive inflection point.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "4 min read",
+    time: "09:25",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-the-permission-premium",
     title: "Daily Intelligence Brief the Permission Premium",
     excerpt: "Markets erased $3 trillion as Google committed $17 billion and IREN's backlog hit $20.3 billion — the selloff reprices execution, not demand.",
