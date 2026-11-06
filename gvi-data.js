@@ -148,7 +148,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-11-04",
       "the-scarcity-spread",
       "gvi-corporate-benchmark-2026-11-05",
-      "the-productivity-capital-divide"
+      "the-productivity-capital-divide",
+      "gvi-corporate-benchmark-2026-11-06"
     ]
   },
   "daily": {
@@ -3378,6 +3379,12 @@ window.GVI_DATA = {
         "url": "/the-productivity-capital-divide",
         "slot": "GVI",
         "headline": "US leads at 94.0, China 91.2 and South Korea 88.8 as stronger US productivity meets a higher cost of capital; country scores are provisional and carried forward."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-06",
+        "slot": "GVI",
+        "headline": "GVI rankings unchanged after the $3 trillion repricing: TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 is lowest."
       }
     ]
   },
@@ -3483,7 +3490,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-05",
+    "asOf": "2026-11-06",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3492,7 +3499,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Advanced manufacturing"
+        "note": "Top of the Top 10; score unchanged."
       },
       {
         "rank": 2,
@@ -3500,7 +3507,7 @@ window.GVI_DATA = {
         "score": 99.4,
         "delta": 0,
         "trend": "up",
-        "note": "Enterprise AI monetization"
+        "note": "Score unchanged; profitable AI platform."
       },
       {
         "rank": 3,
@@ -3508,7 +3515,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "up",
-        "note": "Electrical infrastructure"
+        "note": "Score unchanged; electrical infrastructure."
       },
       {
         "rank": 4,
@@ -3516,7 +3523,7 @@ window.GVI_DATA = {
         "score": 98.8,
         "delta": 0,
         "trend": "up",
-        "note": "AWS ecosystem"
+        "note": "Score unchanged."
       },
       {
         "rank": 5,
@@ -3524,7 +3531,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0,
         "trend": "up",
-        "note": "Computing architecture"
+        "note": "Fell more than 9% on Nov 5; GVI score unchanged."
       },
       {
         "rank": 6,
@@ -3532,7 +3539,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Advanced lithography"
+        "note": "Fell 6.6% on Nov 5; GVI score unchanged."
       },
       {
         "rank": 7,
@@ -3540,7 +3547,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "up",
-        "note": "Custom silicon"
+        "note": "Score unchanged; technological scarcity."
       },
       {
         "rank": 8,
@@ -3548,7 +3555,7 @@ window.GVI_DATA = {
         "score": 97.5,
         "delta": 0,
         "trend": "up",
-        "note": "Enterprise AI deployment"
+        "note": "Score unchanged; profitable AI platform."
       },
       {
         "rank": 9,
@@ -3556,7 +3563,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Electricity infrastructure"
+        "note": "Score unchanged; industrial intelligence."
       },
       {
         "rank": 10,
@@ -3564,7 +3571,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Industrial intelligence"
+        "note": "Score unchanged; industrial intelligence."
       }
     ],
     "laggards": [
@@ -3574,7 +3581,7 @@ window.GVI_DATA = {
         "score": 61.3,
         "delta": 0,
         "trend": "down",
-        "note": "Industrial restructuring"
+        "note": "Lowest score; unchanged."
       },
       {
         "rank": 2,
@@ -3582,7 +3589,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "down",
-        "note": "Turnaround execution"
+        "note": "Score unchanged."
       },
       {
         "rank": 3,
@@ -3590,7 +3597,7 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Technology transition"
+        "note": "Score unchanged."
       },
       {
         "rank": 4,
@@ -3598,7 +3605,7 @@ window.GVI_DATA = {
         "score": 66.8,
         "delta": 0,
         "trend": "down",
-        "note": "Integration and leverage"
+        "note": "Score unchanged."
       },
       {
         "rank": 5,
@@ -3606,7 +3613,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Productivity improvement"
+        "note": "Score unchanged."
       },
       {
         "rank": 6,
@@ -3614,7 +3621,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "down",
-        "note": "Energy competitiveness"
+        "note": "Score unchanged."
       },
       {
         "rank": 7,
@@ -3622,7 +3629,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Industrial transformation"
+        "note": "Score unchanged."
       },
       {
         "rank": 8,
@@ -3630,7 +3637,7 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Digital execution"
+        "note": "Score unchanged."
       },
       {
         "rank": 9,
@@ -3638,7 +3645,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "down",
-        "note": "Capital efficiency"
+        "note": "Score unchanged."
       },
       {
         "rank": 10,
@@ -3646,10 +3653,18 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Infrastructure returns"
+        "note": "Score unchanged."
       }
     ],
     "pillars": [
+      {
+        "pillar": "Profitable AI platforms",
+        "leaders": [
+          "Microsoft",
+          "Palantir",
+          "AppLovin"
+        ]
+      },
       {
         "pillar": "Technological scarcity",
         "leaders": [
@@ -3660,26 +3675,31 @@ window.GVI_DATA = {
         ]
       },
       {
-        "pillar": "Infrastructure control",
+        "pillar": "Electrical infrastructure",
         "leaders": [
-          "Schneider Electric",
-          "Siemens Energy",
-          "Siemens AG"
+          "Schneider",
+          "Legrand",
+          "Eaton"
         ]
       },
       {
-        "pillar": "Economic conversion",
+        "pillar": "Industrial intelligence",
         "leaders": [
-          "Microsoft",
-          "Amazon",
-          "Palantir"
+          "Siemens AG",
+          "Siemens Energy"
+        ]
+      },
+      {
+        "pillar": "Industrial recovery",
+        "leaders": [
+          "Toyota"
         ]
       }
     ],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-05",
-      "date": "2026-11-05",
+      "url": "/gvi-corporate-benchmark-2026-11-06",
+      "date": "2026-11-06",
       "slot": "GVI"
     }
   },

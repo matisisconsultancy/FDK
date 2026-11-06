@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-06",
+    title: "GVI Corporate Benchmark",
+    excerpt: "A $3 trillion repricing tests whether November 5 was a valuation shock or the start of a deeper investment-cycle adjustment.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "11:04",
+    kind: "day"
+  },
+  {
     url: "/the-productivity-capital-divide",
     title: "The Productivity: Capital Divide",
     excerpt: "Stronger US productivity meets a more demanding price of capital as the AI selloff reaches credit markets.",
