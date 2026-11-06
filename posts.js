@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-distinction-is-essential-the-amsterdam-incident-is-verified-the-full-scale-of-actions-announced-elsewhere-has-not-yet-been-established",
+    title: "The Distinction Is Essential: The Amsterdam Incident Is Verified; the Full Scale of Actions Announced Elsewhere Has Not Yet Been Established.",
+    excerpt: "Social resistance is no longer only a budget problem — it is becoming an investment and execution risk for Europe's technological transformation.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "14:59",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-06-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The AI boom's accumulated financial risks are migrating across the capital system as markets begin to differentiate on resilience.",
