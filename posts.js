@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-productivity-gap",
+    title: "The AI Productivity Gap",
+    excerpt: "The Bank of England, the Fed and the BIS are measuring the gap between AI capital and realised productivity.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 6, 2026",
+    read: "5 min read",
+    time: "13:03",
+    kind: "day"
+  },
+  {
     url: "/the-92-trillion-token-divide",
     title: "The 92-trillion-token Divide",
     excerpt: "China accelerates AI consumption under computing constraints as America's frontier investment faces market discipline.",
