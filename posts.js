@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-the-ai-boom-becomes-a-monetary-shock",
+    title: "When the AI Boom Becomes a Monetary Shock",
+    excerpt: "Three November 6 interventions reveal that AI capital formation has become a monetary-policy and financial-stability risk.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "12:14",
+    kind: "day"
+  },
+  {
     url: "/gvi-global-cities-signature-survey-2026-11-07",
     title: "GVI Global Cities: Signature Survey",
     excerpt: "Singapore holds first and Seoul overtakes London as AI capital, social fracture and financial repricing redraw the global hierarchy of cities.",
