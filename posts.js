@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-cycle-loses-its-safety-net",
+    title: "The Capital Cycle Loses Its Safety Net",
+    excerpt: "A strong jobs report, a repriced OpenAI and a four-year high in SoftBank's CDS mark the collision of a resilient economy and a tightening financing regime.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "4 min read",
+    time: "08:32",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-07",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Resilient US growth and record corporate borrowing are repricing the terms on which the AI Supercycle gets its capital.",
