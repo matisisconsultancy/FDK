@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/a-separate-constant-maturity-calculation-using-banque-de-france-and-bundesbank-data-places-the-november-6-spread-at-148-9-basis-points-down-from-157-8-basis-points-on-november-3",
+    title: "A Separate Constant-maturity Calculation Using Banque De France and Bundesbank Data Places the November 6 Spread at 148.9 Basis Points, Down From 157.8 Basis Points on November 3.",
+    excerpt: "France's budget deadlock, a narrowing sovereign premium and a widening gap between financial stability and political governability.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "14:10",
+    kind: "day"
+  },
+  {
     url: "/the-capital-bottleneck-turns-political",
     title: "The Capital Bottleneck Turns Political",
     excerpt: "America confronts the cost of scaling intelligence while China reinforces control over the industrial foundations of AI diffusion.",
