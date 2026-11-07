@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ive-sharpened-the-distinction-between-ai-investment-inflation-ai-enabled-demand-expansion-and-the-later-industrial-ai-productivity-disinflation-channel-including-the-conditions-under-which-each-dom",
+    title: "I’ve Sharpened the Distinction Between AI Investment Inflation, AI-enabled Demand Expansion, and the Later Industrial-AI Productivity/disinflation Channel: Including the Conditions Under Which Each Dom",
+    excerpt: "Why the world survived 150 years of crises, and why the next regime may give it less time to adapt.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "12:35",
+    kind: "day"
+  },
+  {
     url: "/when-the-ai-boom-becomes-a-monetary-shock",
     title: "When the AI Boom Becomes a Monetary Shock",
     excerpt: "Three November 6 interventions reveal that AI capital formation has become a monetary-policy and financial-stability risk.",
