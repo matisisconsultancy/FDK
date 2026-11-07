@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-06",
+    "updated": "2026-11-07",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -145,7 +145,8 @@
       "the-scarcity-spread",
       "gvi-corporate-benchmark-2026-11-05",
       "the-productivity-capital-divide",
-      "gvi-corporate-benchmark-2026-11-06"
+      "gvi-corporate-benchmark-2026-11-06",
+      "when-growth-raises-the-hurdle"
     ]
   },
   "daily": {
@@ -156,23 +157,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-06",
+      "asOf": "2026-11-07",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Productivity: Capital Divide",
-        "url": "/the-productivity-capital-divide",
-        "date": "2026-11-06",
+        "title": "When Growth Raises the Hurdle",
+        "url": "/when-growth-raises-the-hurdle",
+        "date": "2026-11-07",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-06",
+      "asOf": "2026-11-07",
       "source": {
-        "title": "The Productivity: Capital Divide",
-        "url": "/the-productivity-capital-divide",
-        "date": "2026-11-06",
+        "title": "When Growth Raises the Hurdle",
+        "url": "/when-growth-raises-the-hurdle",
+        "date": "2026-11-07",
         "slot": "GVI"
       },
       "rows": [
@@ -183,9 +184,9 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive productivity; negative AI financing momentum",
+          "tag": "Positive employment; tighter-rate expectations",
           "spark": [
-            93.4,
+            94,
             94,
             94,
             94,
@@ -249,6 +250,7 @@
             91.2,
             91.2,
             91.2,
+            91.2,
             91.2
           ]
         },
@@ -259,8 +261,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Severe financial-market correction",
+          "tag": "Strong structural AI exposure; financial volatility",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -294,8 +297,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative technology-market and financing sentiment",
+          "tag": "Positive real-wage momentum",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -329,8 +333,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive orders rebound; modest underlying trend",
+          "tag": "Mixed industrial production and retail demand",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -364,8 +369,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative — higher policy rate",
+          "tag": "Higher financing costs",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -399,8 +405,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous sovereign-financing risk assessment retained",
+          "tag": "Weak consumption; sovereign financing sensitivity",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -434,8 +441,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Previous structural assessment retained",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -469,8 +477,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Retail-demand weakness",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -504,8 +513,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous positive industrial assessment retained",
+          "tag": "Industrial strength; softer retail activity",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -539,8 +549,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Positive retail activity",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -574,8 +585,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous energy assessment retained",
+          "tag": "Energy exposure; softer retail activity",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -609,8 +621,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous growth assessment retained",
+          "tag": "Positive industrial momentum; mixed consumption",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -644,8 +657,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Moderate retail weakness",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -679,8 +693,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous inflation and industrial assessment retained",
+          "tag": "Broad industrial concerns; broadly stable retail activity",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3325,62 +3340,56 @@
     }
   },
   "today": {
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "edition": "GVI · Capital",
-    "thesis": "The Productivity: Capital Divide",
-    "subtitle": "US productivity is accelerating even as the AI correction moves from equities into credit and higher rates raise the cost of capital.",
-    "standfirst": "Technological acceleration creates value; capital productivity determines who captures it.",
+    "thesis": "When Growth Raises the Hurdle",
+    "subtitle": "Stronger US employment and a leaner OpenAI valuation signal a new regime where the cost of capital rises just as AI demands financing — and the premium shifts to credible cash flows.",
+    "standfirst": "The next financial premium will belong to those who convert economic acceleration into durable cash-flow compounding faster than the cost of capital rises.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "FDK GVI (prev. provisional ref.)",
-        "value": "108.0",
+        "label": "US October payrolls",
+        "value": "+165,000",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "US unemployment",
+        "value": "4.1%",
+        "delta": "−0.1 pp",
+        "trend": "down"
+      },
+      {
+        "label": "OpenAI raise (~$1.25tn valuation)",
+        "value": "$11bn",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "US Q3 productivity, annualised",
-        "value": "+3.6%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Nasdaq, Nov 5",
-        "value": "−5.52%",
+        "label": "Nasdaq weekly",
+        "value": "−3.4%",
         "delta": null,
         "trend": "down"
       },
       {
-        "label": "SoftBank 5-yr CDS",
-        "value": "466 bp",
-        "delta": "+22 bp",
-        "trend": "up"
-      },
-      {
-        "label": "Bank of England policy rate",
-        "value": "4.00%",
+        "label": "GVI (previous provisional ref.)",
+        "value": "108.0",
         "delta": null,
-        "trend": "up"
+        "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Productivity: Capital Divide",
-      "url": "/the-productivity-capital-divide",
-      "date": "2026-11-06",
+      "title": "When Growth Raises the Hurdle",
+      "url": "/when-growth-raises-the-hurdle",
+      "date": "2026-11-07",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Productivity: Capital Divide",
-        "url": "/the-productivity-capital-divide",
+        "title": "When Growth Raises the Hurdle",
+        "url": "/when-growth-raises-the-hurdle",
         "slot": "GVI",
-        "headline": "US leads at 94.0, China 91.2 and South Korea 88.8 as stronger US productivity meets a higher cost of capital; country scores are provisional and carried forward."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-06",
-        "slot": "GVI",
-        "headline": "GVI rankings unchanged after the $3 trillion repricing: TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 is lowest."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional FDK country rankings, carried forward from November 6 with no validated changes."
       }
     ]
   },

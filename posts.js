@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-growth-raises-the-hurdle",
+    title: "When Growth Raises the Hurdle",
+    excerpt: "A more demanding investment regime as stronger activity raises the cost of capital while AI requires extraordinary financing.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "07:28",
+    kind: "day"
+  },
+  {
     url: "/the-liquidity-paradox",
     title: "The Liquidity Paradox",
     excerpt: "A record borrowing boom meets a flight to cash as markets begin to price the financing of the future.",
