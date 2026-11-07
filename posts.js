@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-optionality-premium",
+    title: "The Optionality Premium",
+    excerpt: "Record cash inflows, Berkshire's $357B reserve and China's robotics veto reveal a new premium on financial flexibility.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "19:39",
+    kind: "night"
+  },
+  {
     url: "/the-grid-underwriting-test",
     title: "The Grid Underwriting Test",
     excerpt: "Europe's AI infrastructure race reveals where institutional capital is moving — and why deliverable power now matters as much as money.",
