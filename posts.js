@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-france-reprices-europe",
+    title: "When France Reprices Europe",
+    excerpt: "France's debt talks could raise borrowing costs across the eurozone, first in sovereign markets, then in bank funding.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "11:48",
+    kind: "day"
+  },
+  {
     url: "/the-synergy-waterfall",
     title: "The Synergy Waterfall",
     excerpt: "MPS raises its 2026 target, Intesa nears antitrust approval, and Italian banks reprice — exposing the economics of consolidation.",
