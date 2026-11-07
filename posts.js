@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-synergy-waterfall",
+    title: "The Synergy Waterfall",
+    excerpt: "MPS raises its 2026 target, Intesa nears antitrust approval, and Italian banks reprice — exposing the economics of consolidation.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "9 min read",
+    time: "09:45",
+    kind: "day"
+  },
+  {
     url: "/the-capital-cycle-loses-its-safety-net",
     title: "The Capital Cycle Loses Its Safety Net",
     excerpt: "A strong jobs report, a repriced OpenAI and a four-year high in SoftBank's CDS mark the collision of a resilient economy and a tightening financing regime.",
