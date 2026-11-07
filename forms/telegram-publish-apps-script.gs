@@ -393,13 +393,22 @@ function processMessage_(msg) {
   if (del) {
     var arg = del[1].trim();
     var slugCmd = slugFromArg_(arg);
-    // Delete immediately only when the argument is a SINGLE token (a slug or a
-    // URL). A multi-word argument ("la nota di prova", or an article that just
-    // happens to start with "delete") is ambiguous → fall through to the loose
-    // handler, which confirms or asks which note, and never publishes it.
+    // A clean single-token slug or URL → delete right away.
     if (slugCmd && /^\S+$/.test(arg)) { doUnpublish_(chatId, slugCmd); return; }
-    if (!arg) { tgSend_(chatId, L("delUsage")); return; }
-    // else: fall through to loose intent handling below.
+    // Strong delete signal: the verb was followed by "nota"/"note" or a ":".
+    // Then this is DEFINITELY a delete command (e.g. "elimina nota: <long
+    // pasted title>") and must NEVER be published as a note — even when the
+    // argument is a long sentence. Try a pasted site link, else ask which note.
+    var hadMarker = new RegExp("^\\s*\\/?(?:" + V + ")\\b(?:\\s+(?:la\\s+)?(?:nota|note)\\b|\\s*[:：])", "i").test(text);
+    if (hadMarker || !arg) {
+      var dh = String(CONFIG.SITE_BASE || "").replace(/^https?:\/\//i, "").replace(/\/+$/, "");
+      var dm = dh ? arg.match(new RegExp(dh.replace(/[.]/g, "\\.") + "\\/([a-z0-9][a-z0-9-]*)", "i")) : null;
+      if (dm && dm[1]) { doUnpublish_(chatId, dm[1].toLowerCase()); return; }
+      tgSend_(chatId, arg ? L("delWhich") : L("delUsage"));
+      return;
+    }
+    // Bare "elimina <several words>" with no marker is ambiguous (could be an
+    // article starting with the word) → fall through to loose handling below.
   }
 
   // 3) loose delete intent (plain text only; documents are always articles) ----
