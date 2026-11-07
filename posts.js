@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-global-cities-signature-survey-2026-11-07",
+    title: "GVI Global Cities: Signature Survey",
+    excerpt: "Singapore holds first and Seoul overtakes London as AI capital, social fracture and financial repricing redraw the global hierarchy of cities.",
+    tag: "Midday Pulse · Cities",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "12:09",
+    kind: "day"
+  },
+  {
     url: "/when-france-reprices-europe",
     title: "When France Reprices Europe",
     excerpt: "France's debt talks could raise borrowing costs across the eurozone, first in sovereign markets, then in bank funding.",

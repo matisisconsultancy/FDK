@@ -151,7 +151,8 @@ window.GVI_DATA = {
       "the-productivity-capital-divide",
       "gvi-corporate-benchmark-2026-11-06",
       "when-growth-raises-the-hurdle",
-      "gvi-corporate-benchmark-2026-11-07"
+      "gvi-corporate-benchmark-2026-11-07",
+      "gvi-global-cities-signature-survey-2026-11-07"
     ]
   },
   "daily": {
@@ -3401,6 +3402,12 @@ window.GVI_DATA = {
         "url": "/gvi-corporate-benchmark-2026-11-07",
         "slot": "GVI",
         "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; no score revisions as financing conditions shift."
+      },
+      {
+        "title": "GVI Global Cities: Signature Survey",
+        "url": "/gvi-global-cities-signature-survey-2026-11-07",
+        "slot": "Midday Pulse",
+        "headline": "Singapore holds first at 92.86 while Seoul (91.67) overtakes London (91.21) for third and Madrid falls to twentieth; scores are provisional nowcasts."
       }
     ]
   },
