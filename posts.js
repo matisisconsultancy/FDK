@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-07-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Selective capital, higher-for-longer rates and political constraints are repricing the financial architecture of the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "4 min read",
+    time: "15:38",
+    kind: "day"
+  },
+  {
     url: "/a-separate-constant-maturity-calculation-using-banque-de-france-and-bundesbank-data-places-the-november-6-spread-at-148-9-basis-points-down-from-157-8-basis-points-on-november-3",
     title: "A Separate Constant-maturity Calculation Using Banque De France and Bundesbank Data Places the November 6 Spread at 148.9 Basis Points, Down From 157.8 Basis Points on November 3.",
     excerpt: "France's budget deadlock, a narrowing sovereign premium and a widening gap between financial stability and political governability.",
