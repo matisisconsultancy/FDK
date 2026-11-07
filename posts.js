@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-07",
+    title: "Daily Intelligence Brief",
+    excerpt: "Record corporate issuance meets rising credit risk as the AI Supercycle enters a phase defined by the price of financial resilience.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "4 min read",
+    time: "07:47",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-07",
     title: "GVI Corporate Benchmark",
     excerpt: "A new financial hierarchy is forming between corporations that generate cash, those that monetize infrastructure and those dependent on future financing.",
