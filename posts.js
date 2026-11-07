@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-07",
+    title: "GVI Corporate Benchmark",
+    excerpt: "A new financial hierarchy is forming between corporations that generate cash, those that monetize infrastructure and those dependent on future financing.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "4 min read",
+    time: "07:41",
+    kind: "day"
+  },
+  {
     url: "/when-growth-raises-the-hurdle",
     title: "When Growth Raises the Hurdle",
     excerpt: "A more demanding investment regime as stronger activity raises the cost of capital while AI requires extraordinary financing.",
