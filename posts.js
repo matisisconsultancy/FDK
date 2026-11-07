@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-grid-underwriting-test",
+    title: "The Grid Underwriting Test",
+    excerpt: "Europe's AI infrastructure race reveals where institutional capital is moving — and why deliverable power now matters as much as money.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "7 min read",
+    time: "17:43",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-07-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Selective capital, higher-for-longer rates and political constraints are repricing the financial architecture of the AI Supercycle.",
