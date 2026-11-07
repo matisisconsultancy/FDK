@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-age-of-secular-volatility",
+    title: "The Age of Secular Volatility",
+    excerpt: "Secular Volatility is not more volatility — it is a different pricing regime, with a higher and more volatile cost of capital.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "9 min read",
+    time: "12:53",
+    kind: "day"
+  },
+  {
     url: "/ive-sharpened-the-distinction-between-ai-investment-inflation-ai-enabled-demand-expansion-and-the-later-industrial-ai-productivity-disinflation-channel-including-the-conditions-under-which-each-dom",
     title: "I’ve Sharpened the Distinction Between AI Investment Inflation, AI-enabled Demand Expansion, and the Later Industrial-AI Productivity/disinflation Channel: Including the Conditions Under Which Each Dom",
     excerpt: "Why the world survived 150 years of crises, and why the next regime may give it less time to adapt.",
