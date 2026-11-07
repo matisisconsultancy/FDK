@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/elimina-nota-ive-sharpened-the-distinction-between-ai-investment-inflation-ai-enabled-demand-expansion-and-the-later-industrial-ai-productivity-disinflation-channel-including-the-conditions-under",
+    title: "Elimina Nota: I’ve Sharpened the Distinction Between AI Investment Inflation, AI-enabled Demand Expansion, and the Later Industrial-AI Productivity/disinflation Channel: Including the Conditions Under",
+    excerpt: "Sharpening the distinction between AI investment inflation, AI-enabled demand expansion, and the later industrial-AI productivity channel.",
+    tag: "Midday Pulse",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "2 min read",
+    time: "13:05",
+    kind: "day"
+  },
+  {
     url: "/the-capital-bottleneck-turns-political",
     title: "The Capital Bottleneck Turns Political",
     excerpt: "America confronts the cost of scaling intelligence while China reinforces control over the industrial foundations of AI diffusion.",
