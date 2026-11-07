@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-capital-bottleneck-turns-political",
+    title: "The Capital Bottleneck Turns Political",
+    excerpt: "America confronts the cost of scaling intelligence while China reinforces control over the industrial foundations of AI diffusion.",
+    tag: "Midday Pulse · AI Supercycle",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "5 min read",
+    time: "12:57",
+    kind: "day"
+  },
+  {
     url: "/the-age-of-secular-volatility",
     title: "The Age of Secular Volatility",
     excerpt: "Secular Volatility is not more volatility — it is a different pricing regime, with a higher and more volatile cost of capital.",
