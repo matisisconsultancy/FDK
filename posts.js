@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-07",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Resilient US growth and record corporate borrowing are repricing the terms on which the AI Supercycle gets its capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 7, 2026",
+    read: "4 min read",
+    time: "07:57",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-07",
     title: "Daily Intelligence Brief",
     excerpt: "Record corporate issuance meets rising credit risk as the AI Supercycle enters a phase defined by the price of financial resilience.",
