@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/a-sovereign-spread-increase-does-not-automatically-create-realized-bank-losses",
+    title: "A Sovereign Spread Increase Does Not Automatically Create Realized Bank Losses.",
+    excerpt: "Progressive Fragmentation remains Europe's central scenario at 70% as protests fade, energy eases and the cost of resilience rises.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "4 min read",
+    time: "15:17",
+    kind: "day"
+  },
+  {
     url: "/the-oat-bund-spread-therefore-stood-near-153-basis-points",
     title: "The OAT: Bund Spread Therefore Stood Near 153 Basis Points.",
     excerpt: "Europe's immediate crisis is receding; its structural risks are not.",
