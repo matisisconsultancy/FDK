@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-07",
+    "updated": "2026-11-08",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -148,34 +148,35 @@
       "gvi-corporate-benchmark-2026-11-06",
       "when-growth-raises-the-hurdle",
       "gvi-corporate-benchmark-2026-11-07",
-      "gvi-global-cities-signature-survey-2026-11-07"
+      "gvi-global-cities-signature-survey-2026-11-07",
+      "the-liquidity-premium"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
-      "score": 108,
-      "delta": "N/V",
+      "score": null,
+      "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-07",
+      "asOf": "2026-11-08",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "When Growth Raises the Hurdle",
-        "url": "/when-growth-raises-the-hurdle",
-        "date": "2026-11-07",
+        "title": "The Liquidity Premium",
+        "url": "/the-liquidity-premium",
+        "date": "2026-11-08",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-07",
+      "asOf": "2026-11-08",
       "source": {
-        "title": "When Growth Raises the Hurdle",
-        "url": "/when-growth-raises-the-hurdle",
-        "date": "2026-11-07",
+        "title": "The Liquidity Premium",
+        "url": "/the-liquidity-premium",
+        "date": "2026-11-08",
         "slot": "GVI"
       },
       "rows": [
@@ -186,7 +187,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive employment; tighter-rate expectations",
+          "tag": "Positive corporate liquidity and industrial activity; selective AI financing",
           "spark": [
             94,
             94,
@@ -227,8 +228,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous mixed industrial assessment retained",
+          "tag": "Stable FX reserves; mixed total reserve valuation",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -263,8 +265,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong structural AI exposure; financial volatility",
+          "tag": "Semiconductor strength; financial-market volatility",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -299,8 +302,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive real-wage momentum",
+          "tag": "AI financing exposure; policy and investment flexibility",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -335,8 +339,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Mixed industrial production and retail demand",
+          "tag": "Previous industrial recovery assessment retained",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -371,8 +376,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Higher financing costs",
+          "tag": "Previous restrictive financing assessment retained",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -407,8 +413,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Weak consumption; sovereign financing sensitivity",
+          "tag": "Sovereign financing vulnerability",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -443,8 +450,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "No qualifying new structural evidence",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -479,8 +487,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Retail-demand weakness",
+          "tag": "No qualifying new structural evidence",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -515,8 +524,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial strength; softer retail activity",
+          "tag": "Previous positive industrial assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -551,8 +561,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive retail activity",
+          "tag": "No qualifying new structural evidence",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -587,8 +598,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy exposure; softer retail activity",
+          "tag": "Previous energy assessment retained",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -623,8 +635,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive industrial momentum; mixed consumption",
+          "tag": "Previous positive industrial assessment retained",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -659,8 +672,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Moderate retail weakness",
+          "tag": "No qualifying new structural evidence",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -695,8 +709,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Broad industrial concerns; broadly stable retail activity",
+          "tag": "Previous industrial and financing assessment retained",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3342,68 +3357,50 @@
     }
   },
   "today": {
-    "date": "2026-11-07",
-    "edition": "GVI · Capital",
-    "thesis": "When Growth Raises the Hurdle",
-    "subtitle": "Stronger US employment and a leaner OpenAI valuation signal a new regime where the cost of capital rises just as AI demands financing — and the premium shifts to credible cash flows.",
-    "standfirst": "The next financial premium will belong to those who convert economic acceleration into durable cash-flow compounding faster than the cost of capital rises.",
+    "date": "2026-11-08",
+    "edition": "GVI · Smart Capital",
+    "thesis": "The Liquidity Premium",
+    "subtitle": "In a capital-intensive transition, liquidity is becoming a strategic option — the evidence strengthens the Smart Capital pillar but does not yet justify a new ranking.",
+    "standfirst": "Liquidity creates the option. Capital productivity creates the value.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "US October payrolls",
-        "value": "+165,000",
-        "delta": null,
+        "label": "China FX reserves (Oct)",
+        "value": "$3.405 trillion",
+        "delta": "+0.14% MoM",
         "trend": "up"
       },
       {
-        "label": "US unemployment",
-        "value": "4.1%",
-        "delta": "−0.1 pp",
-        "trend": "down"
-      },
-      {
-        "label": "OpenAI raise (~$1.25tn valuation)",
-        "value": "$11bn",
+        "label": "Berkshire cash & T-bills",
+        "value": "$352.3 billion",
         "delta": null,
         "trend": "flat"
       },
       {
-        "label": "Nasdaq weekly",
-        "value": "−3.4%",
+        "label": "SoftBank 5Y CDS peak (Nov 6)",
+        "value": "466 bp",
         "delta": null,
-        "trend": "down"
+        "trend": "up"
       },
       {
-        "label": "GVI (previous provisional ref.)",
+        "label": "Previous provisional GVI reference",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "When Growth Raises the Hurdle",
-      "url": "/when-growth-raises-the-hurdle",
-      "date": "2026-11-07",
+      "title": "The Liquidity Premium",
+      "url": "/the-liquidity-premium",
+      "date": "2026-11-08",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "When Growth Raises the Hurdle",
-        "url": "/when-growth-raises-the-hurdle",
+        "title": "The Liquidity Premium",
+        "url": "/the-liquidity-premium",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional FDK country rankings, carried forward from November 6 with no validated changes."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-07",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; no score revisions as financing conditions shift."
-      },
-      {
-        "title": "GVI Global Cities: Signature Survey",
-        "url": "/gvi-global-cities-signature-survey-2026-11-07",
-        "slot": "Midday Pulse",
-        "headline": "Singapore holds first at 92.86 while Seoul (91.67) overtakes London (91.21) for third and Madrid falls to twentieth; scores are provisional nowcasts."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard; liquidity strengthens Smart Capital but no numerical GVI upgrade or ranking change."
       }
     ]
   },

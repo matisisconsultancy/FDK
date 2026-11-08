@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-liquidity-premium",
+    title: "The Liquidity Premium",
+    excerpt: "China's FX reserves rose even as total reserve assets fell, Berkshire held $352.3 billion, and AI credit stress widened — a financial, not technological, lesson.",
+    tag: "GVI · Smart Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "06:42",
+    kind: "day"
+  },
+  {
     url: "/the-optionality-premium",
     title: "The Optionality Premium",
     excerpt: "Record cash inflows, Berkshire's $357B reserve and China's robotics veto reveal a new premium on financial flexibility.",
