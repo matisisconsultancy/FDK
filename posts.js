@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-grid-becomes-the-balance-sheet",
+    title: "The Grid Becomes the Balance Sheet",
+    excerpt: "Anthropic's reported $3.4bn power deal signals a shift from access to compute toward access to dependable productive power.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "19:45",
+    kind: "night"
+  },
+  {
     url: "/a-sovereign-spread-increase-does-not-automatically-create-realized-bank-losses",
     title: "A Sovereign Spread Increase Does Not Automatically Create Realized Bank Losses.",
     excerpt: "Progressive Fragmentation remains Europe's central scenario at 70% as protests fade, energy eases and the cost of resilience rises.",
