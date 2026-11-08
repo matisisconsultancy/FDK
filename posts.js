@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/capital-is-losing-its-neutrality",
+    title: "Capital Is Losing Its Neutrality",
+    excerpt: "A new financial regime is forming in which who can finance, own and control productive intelligence decides the next capital rotation.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "07:59",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-the-bottleneck-economy",
     title: "Daily Intelligence Brief the Bottleneck Economy",
     excerpt: "As investment removes one AI constraint, economic value may migrate to the next — from packaging to power to productive deployment.",
