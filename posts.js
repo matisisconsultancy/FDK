@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-inference-arbitrage",
+    title: "The Great Inference Arbitrage",
+    excerpt: "Revolut runs self-hosted Chinese models on Nvidia chips and cuts inference costs ~90%, exposing a divergence between AI leadership and value capture.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "4 min read",
+    time: "14:58",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-intelligence",
     title: "The Price of Intelligence",
     excerpt: "Central banks are confronting the AI investment boom as a demand and inflation problem before the productivity dividend has arrived.",
