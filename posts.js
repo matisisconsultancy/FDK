@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-italian-banking-paradox-2-0-2026-11-08",
+    title: "The Italian Banking Paradox 2.0",
+    excerpt: "An EBA clarification reveals that historical capital exemptions cannot automatically migrate across institutions — reshaping the economics of Italian bank consolidation.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "10 min read",
+    time: "09:29",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-08",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Record AI debt issuance meets record corporate cash — and the Great Split moves from technological leadership to financial autonomy.",
