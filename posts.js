@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-european-ai-gigafactory-alert-since-november-7-no-new-consortium-member-binding-financing-commitment-con",
+    title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential European AI Gigafactory Alert Since November 7. No New Consortium Member, Binding Financing Commitment, Con",
+    excerpt: "EuroHPC's tender stays open with deadlines intact, while demonstrations and Anthropic's gas commitments fail the materiality test.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "2 min read",
+    time: "20:03",
+    kind: "night"
+  },
+  {
     url: "/the-grid-becomes-the-balance-sheet",
     title: "The Grid Becomes the Balance Sheet",
     excerpt: "Anthropic's reported $3.4bn power deal signals a shift from access to compute toward access to dependable productive power.",
