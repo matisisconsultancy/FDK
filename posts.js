@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-oat-bund-spread-therefore-stood-near-153-basis-points",
+    title: "The OAT: Bund Spread Therefore Stood Near 153 Basis Points.",
+    excerpt: "Europe's immediate crisis is receding; its structural risks are not.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "15:07",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-08-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The decisive divide is no longer about AI's promise but about the time between capital committed and cash generated.",
