@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-capital-option",
+    title: "GVI Corporate Benchmark the Capital Option",
+    excerpt: "Capital is turning selective just as demand for technological investment keeps expanding — redrawing the hierarchy of corporate leadership.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "07:02",
+    kind: "day"
+  },
+  {
     url: "/the-liquidity-premium",
     title: "The Liquidity Premium",
     excerpt: "China's FX reserves rose even as total reserve assets fell, Berkshire held $352.3 billion, and AI credit stress widened — a financial, not technological, lesson.",

@@ -153,7 +153,8 @@ window.GVI_DATA = {
       "when-growth-raises-the-hurdle",
       "gvi-corporate-benchmark-2026-11-07",
       "gvi-global-cities-signature-survey-2026-11-07",
-      "the-liquidity-premium"
+      "the-liquidity-premium",
+      "gvi-corporate-benchmark-the-capital-option"
     ]
   },
   "daily": {
@@ -3391,6 +3392,12 @@ window.GVI_DATA = {
         "value": "108.0",
         "delta": null,
         "trend": "flat"
+      },
+      {
+        "label": "Leaders composite",
+        "value": "98.33/100",
+        "delta": null,
+        "trend": "flat"
       }
     ],
     "source": {
@@ -3405,6 +3412,12 @@ window.GVI_DATA = {
         "url": "/the-liquidity-premium",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard; liquidity strengthens Smart Capital but no numerical GVI upgrade or ranking change."
+      },
+      {
+        "title": "GVI Corporate Benchmark the Capital Option",
+        "url": "/gvi-corporate-benchmark-the-capital-option",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; leaders composite 98.33 unchanged"
       }
     ]
   },
@@ -3510,7 +3523,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-07",
+    "asOf": "2026-11-08",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3519,7 +3532,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Advanced manufacturing / Geographic concentration"
+        "note": "Advanced manufacturing; geographic concentration"
       },
       {
         "rank": 2,
@@ -3527,7 +3540,7 @@ window.GVI_DATA = {
         "score": 99.4,
         "delta": 0,
         "trend": "up",
-        "note": "Enterprise AI monetization / Infrastructure returns"
+        "note": "Enterprise AI monetization; infrastructure returns"
       },
       {
         "rank": 3,
@@ -3535,7 +3548,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "up",
-        "note": "Electrical infrastructure / Project execution"
+        "note": "Electrical infrastructure; project execution"
       },
       {
         "rank": 4,
@@ -3543,7 +3556,7 @@ window.GVI_DATA = {
         "score": 98.8,
         "delta": 0,
         "trend": "up",
-        "note": "AWS ecosystem / Capital productivity"
+        "note": "AWS ecosystem; free-cash-flow conversion"
       },
       {
         "rank": 5,
@@ -3551,7 +3564,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0,
         "trend": "up",
-        "note": "Computing architecture / Customer financing"
+        "note": "Computing architecture; customer financing"
       },
       {
         "rank": 6,
@@ -3559,7 +3572,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Advanced lithography / Investment cycles"
+        "note": "Advanced lithography; investment cycles"
       },
       {
         "rank": 7,
@@ -3567,7 +3580,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "up",
-        "note": "Custom silicon and networking / Customer concentration"
+        "note": "Custom silicon and networking; customer concentration"
       },
       {
         "rank": 8,
@@ -3575,7 +3588,7 @@ window.GVI_DATA = {
         "score": 97.5,
         "delta": 0,
         "trend": "up",
-        "note": "Enterprise AI deployment / Contract conversion"
+        "note": "Enterprise AI deployment; contract conversion"
       },
       {
         "rank": 9,
@@ -3583,7 +3596,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Power infrastructure / Backlog execution"
+        "note": "Electricity infrastructure; backlog execution"
       },
       {
         "rank": 10,
@@ -3591,7 +3604,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Industrial intelligence / Productivity realization"
+        "note": "Industrial intelligence; productivity realization"
       }
     ],
     "laggards": [
@@ -3676,11 +3689,37 @@ window.GVI_DATA = {
         "note": "Infrastructure returns"
       }
     ],
-    "pillars": [],
+    "pillars": [
+      {
+        "pillar": "Technological scarcity",
+        "leaders": [
+          "TSMC",
+          "Nvidia",
+          "ASML",
+          "Broadcom"
+        ]
+      },
+      {
+        "pillar": "Infrastructure control",
+        "leaders": [
+          "Schneider Electric",
+          "Siemens Energy",
+          "Siemens AG"
+        ]
+      },
+      {
+        "pillar": "Economic conversion",
+        "leaders": [
+          "Microsoft",
+          "Amazon",
+          "Palantir"
+        ]
+      }
+    ],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-07",
-      "date": "2026-11-07",
+      "title": "GVI Corporate Benchmark the Capital Option",
+      "url": "/gvi-corporate-benchmark-the-capital-option",
+      "date": "2026-11-08",
       "slot": "GVI"
     }
   },
