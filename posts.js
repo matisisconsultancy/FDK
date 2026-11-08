@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-intelligence",
+    title: "The Price of Intelligence",
+    excerpt: "Central banks are confronting the AI investment boom as a demand and inflation problem before the productivity dividend has arrived.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "14:48",
+    kind: "day"
+  },
+  {
     url: "/the-italian-banking-paradox-2-0-2026-11-08",
     title: "The Italian Banking Paradox 2.0",
     excerpt: "An EBA clarification reveals that historical capital exemptions cannot automatically migrate across institutions — reshaping the economics of Italian bank consolidation.",
