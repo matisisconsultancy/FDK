@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-08-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "The decisive divide is no longer about AI's promise but about the time between capital committed and cash generated.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "5 min read",
+    time: "15:03",
+    kind: "day"
+  },
+  {
     url: "/the-great-inference-arbitrage",
     title: "The Great Inference Arbitrage",
     excerpt: "Revolut runs self-hosted Chinese models on Nvidia chips and cuts inference costs ~90%, exposing a divergence between AI leadership and value capture.",
