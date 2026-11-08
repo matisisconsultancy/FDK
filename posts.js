@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-capital-option-2026-11-08",
+    title: "GVI Corporate Benchmark the Capital Option",
+    excerpt: "As capital turns selective, the next alpha cycle may hinge on which balance sheets can accelerate when rivals must retreat.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "4 min read",
+    time: "07:39",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-the-capital-option",
     title: "GVI Corporate Benchmark the Capital Option",
     excerpt: "Capital is turning selective just as demand for technological investment keeps expanding — redrawing the hierarchy of corporate leadership.",

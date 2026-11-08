@@ -154,7 +154,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-11-07",
       "gvi-global-cities-signature-survey-2026-11-07",
       "the-liquidity-premium",
-      "gvi-corporate-benchmark-the-capital-option"
+      "gvi-corporate-benchmark-the-capital-option",
+      "gvi-corporate-benchmark-the-capital-option-2026-11-08"
     ]
   },
   "daily": {
@@ -3418,6 +3419,12 @@ window.GVI_DATA = {
         "url": "/gvi-corporate-benchmark-the-capital-option",
         "slot": "GVI",
         "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; leaders composite 98.33 unchanged"
+      },
+      {
+        "title": "GVI Corporate Benchmark the Capital Option",
+        "url": "/gvi-corporate-benchmark-the-capital-option-2026-11-08",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; the Top-10 composite is unchanged at 98.33"
       }
     ]
   },
@@ -3532,7 +3539,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Advanced manufacturing; geographic concentration"
+        "note": null
       },
       {
         "rank": 2,
@@ -3540,7 +3547,7 @@ window.GVI_DATA = {
         "score": 99.4,
         "delta": 0,
         "trend": "up",
-        "note": "Enterprise AI monetization; infrastructure returns"
+        "note": null
       },
       {
         "rank": 3,
@@ -3548,7 +3555,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "up",
-        "note": "Electrical infrastructure; project execution"
+        "note": null
       },
       {
         "rank": 4,
@@ -3556,7 +3563,7 @@ window.GVI_DATA = {
         "score": 98.8,
         "delta": 0,
         "trend": "up",
-        "note": "AWS ecosystem; free-cash-flow conversion"
+        "note": null
       },
       {
         "rank": 5,
@@ -3564,7 +3571,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0,
         "trend": "up",
-        "note": "Computing architecture; customer financing"
+        "note": null
       },
       {
         "rank": 6,
@@ -3572,7 +3579,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": "Advanced lithography; investment cycles"
+        "note": null
       },
       {
         "rank": 7,
@@ -3580,7 +3587,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "up",
-        "note": "Custom silicon and networking; customer concentration"
+        "note": null
       },
       {
         "rank": 8,
@@ -3588,7 +3595,7 @@ window.GVI_DATA = {
         "score": 97.5,
         "delta": 0,
         "trend": "up",
-        "note": "Enterprise AI deployment; contract conversion"
+        "note": null
       },
       {
         "rank": 9,
@@ -3596,7 +3603,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Electricity infrastructure; backlog execution"
+        "note": null
       },
       {
         "rank": 10,
@@ -3604,7 +3611,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": "Industrial intelligence; productivity realization"
+        "note": null
       }
     ],
     "laggards": [
@@ -3614,7 +3621,7 @@ window.GVI_DATA = {
         "score": 61.3,
         "delta": 0,
         "trend": "down",
-        "note": "Industrial restructuring"
+        "note": null
       },
       {
         "rank": 2,
@@ -3622,7 +3629,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "down",
-        "note": "Turnaround execution"
+        "note": null
       },
       {
         "rank": 3,
@@ -3630,7 +3637,7 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Technology transition"
+        "note": null
       },
       {
         "rank": 4,
@@ -3638,7 +3645,7 @@ window.GVI_DATA = {
         "score": 66.8,
         "delta": 0,
         "trend": "down",
-        "note": "Integration and leverage"
+        "note": null
       },
       {
         "rank": 5,
@@ -3646,7 +3653,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Productivity recovery"
+        "note": null
       },
       {
         "rank": 6,
@@ -3654,7 +3661,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "down",
-        "note": "Energy competitiveness"
+        "note": null
       },
       {
         "rank": 7,
@@ -3662,7 +3669,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Industrial transformation"
+        "note": null
       },
       {
         "rank": 8,
@@ -3670,7 +3677,7 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Digital execution"
+        "note": null
       },
       {
         "rank": 9,
@@ -3678,7 +3685,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "down",
-        "note": "Capital efficiency"
+        "note": null
       },
       {
         "rank": 10,
@@ -3686,39 +3693,13 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Infrastructure returns"
+        "note": null
       }
     ],
-    "pillars": [
-      {
-        "pillar": "Technological scarcity",
-        "leaders": [
-          "TSMC",
-          "Nvidia",
-          "ASML",
-          "Broadcom"
-        ]
-      },
-      {
-        "pillar": "Infrastructure control",
-        "leaders": [
-          "Schneider Electric",
-          "Siemens Energy",
-          "Siemens AG"
-        ]
-      },
-      {
-        "pillar": "Economic conversion",
-        "leaders": [
-          "Microsoft",
-          "Amazon",
-          "Palantir"
-        ]
-      }
-    ],
+    "pillars": [],
     "source": {
       "title": "GVI Corporate Benchmark the Capital Option",
-      "url": "/gvi-corporate-benchmark-the-capital-option",
+      "url": "/gvi-corporate-benchmark-the-capital-option-2026-11-08",
       "date": "2026-11-08",
       "slot": "GVI"
     }
