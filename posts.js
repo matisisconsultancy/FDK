@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-08",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Record AI debt issuance meets record corporate cash — and the Great Split moves from technological leadership to financial autonomy.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 8, 2026",
+    read: "4 min read",
+    time: "08:05",
+    kind: "day"
+  },
+  {
     url: "/capital-is-losing-its-neutrality",
     title: "Capital Is Losing Its Neutrality",
     excerpt: "A new financial regime is forming in which who can finance, own and control productive intelligence decides the next capital rotation.",
