@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-inflation-before-the-intelligence",
+    title: "The Inflation Before the Intelligence",
+    excerpt: "RBA research reveals why the AI investment cycle could lift neutral rates before delivering productivity gains.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "12:09",
+    kind: "day"
+  },
+  {
     url: "/the-power-premium",
     title: "The Power Premium",
     excerpt: "The scarcity constraining frontier intelligence is spreading from semiconductors to the physical infrastructure required to run them.",
