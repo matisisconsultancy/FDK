@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-08",
+    "updated": "2026-11-09",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -151,34 +151,35 @@
       "gvi-global-cities-signature-survey-2026-11-07",
       "the-liquidity-premium",
       "gvi-corporate-benchmark-the-capital-option",
-      "gvi-corporate-benchmark-the-capital-option-2026-11-08"
+      "gvi-corporate-benchmark-the-capital-option-2026-11-08",
+      "the-great-margin-squeeze"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
-      "score": null,
-      "delta": null,
+      "score": 108,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Liquidity Premium",
-        "url": "/the-liquidity-premium",
-        "date": "2026-11-08",
+        "title": "The Great Margin Squeeze",
+        "url": "/the-great-margin-squeeze",
+        "date": "2026-11-09",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-08",
+      "asOf": "2026-11-09",
       "source": {
-        "title": "The Liquidity Premium",
-        "url": "/the-liquidity-premium",
-        "date": "2026-11-08",
+        "title": "The Great Margin Squeeze",
+        "url": "/the-great-margin-squeeze",
+        "date": "2026-11-09",
         "slot": "GVI"
       },
       "rows": [
@@ -189,7 +190,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive corporate liquidity and industrial activity; selective AI financing",
+          "tag": "Strong productive fundamentals; higher financing hurdles",
           "spark": [
             94,
             94,
@@ -230,8 +231,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Stable FX reserves; mixed total reserve valuation",
+          "tag": "Negative cost pressure; positive tariff-policy development",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -267,8 +269,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor strength; financial-market volatility",
+          "tag": "Positive operational AI infrastructure; volatile valuations",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -304,8 +307,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "AI financing exposure; policy and investment flexibility",
+          "tag": "Tentative financial-market recovery",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -341,8 +345,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous industrial recovery assessment retained",
+          "tag": "Previous industrial assessment retained",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -378,8 +383,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous restrictive financing assessment retained",
+          "tag": "Negative hiring-survey signal; elevated financing costs",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -442,6 +448,7 @@
             81.2,
             81.2,
             81.2,
+            81.2,
             81.2
           ]
         },
@@ -452,8 +459,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Previous structural assessment retained",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -489,8 +497,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Previous structural assessment retained",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -553,6 +562,7 @@
             79.2,
             79.2,
             79.2,
+            79.2,
             79.2
           ]
         },
@@ -590,6 +600,7 @@
             77.8,
             77.8,
             77.8,
+            77.8,
             77.8
           ]
         },
@@ -600,8 +611,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous energy assessment retained",
+          "tag": "Lower oil-price environment",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -637,8 +649,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous positive industrial assessment retained",
+          "tag": "Previous growth assessment retained",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -701,6 +714,7 @@
             72.4,
             72.4,
             72.4,
+            72.4,
             72.4
           ]
         },
@@ -713,6 +727,7 @@
           "trend": "flat",
           "tag": "Previous industrial and financing assessment retained",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3359,68 +3374,56 @@
     }
   },
   "today": {
-    "date": "2026-11-08",
-    "edition": "GVI · Smart Capital",
-    "thesis": "The Liquidity Premium",
-    "subtitle": "In a capital-intensive transition, liquidity is becoming a strategic option — the evidence strengthens the Smart Capital pillar but does not yet justify a new ranking.",
-    "standfirst": "Liquidity creates the option. Capital productivity creates the value.",
+    "date": "2026-11-09",
+    "edition": "GVI · Macro",
+    "thesis": "The Great Margin Squeeze",
+    "subtitle": "China's producer prices accelerated to 5.7% while consumer inflation slid to 0.7%, exposing a widening gap between the cost of producing value and the ability to capture it.",
+    "standfirst": "Growth creates opportunity. Productivity creates value. Capital discipline determines who captures it.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "China FX reserves (Oct)",
-        "value": "$3.405 trillion",
-        "delta": "+0.14% MoM",
+        "label": "China PPI (Oct)",
+        "value": "5.7%",
+        "delta": "+0.7pp",
         "trend": "up"
       },
       {
-        "label": "Berkshire cash & T-bills",
-        "value": "$352.3 billion",
-        "delta": null,
-        "trend": "flat"
+        "label": "China CPI",
+        "value": "0.7%",
+        "delta": "−0.2pp",
+        "trend": "down"
       },
       {
-        "label": "SoftBank 5Y CDS peak (Nov 6)",
-        "value": "466 bp",
-        "delta": null,
+        "label": "China purchasing prices",
+        "value": "7.9%",
+        "delta": "+1.0pp",
         "trend": "up"
       },
       {
-        "label": "Previous provisional GVI reference",
+        "label": "PPI−CPI gap",
+        "value": "5.0 pp",
+        "delta": "+0.9pp",
+        "trend": "up"
+      },
+      {
+        "label": "GVI (provisional ref.)",
         "value": "108.0",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "Leaders composite",
-        "value": "98.33/100",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Liquidity Premium",
-      "url": "/the-liquidity-premium",
-      "date": "2026-11-08",
+      "title": "The Great Margin Squeeze",
+      "url": "/the-great-margin-squeeze",
+      "date": "2026-11-09",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Liquidity Premium",
-        "url": "/the-liquidity-premium",
+        "title": "The Great Margin Squeeze",
+        "url": "/the-great-margin-squeeze",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard; liquidity strengthens Smart Capital but no numerical GVI upgrade or ranking change."
-      },
-      {
-        "title": "GVI Corporate Benchmark the Capital Option",
-        "url": "/gvi-corporate-benchmark-the-capital-option",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; leaders composite 98.33 unchanged"
-      },
-      {
-        "title": "GVI Corporate Benchmark the Capital Option",
-        "url": "/gvi-corporate-benchmark-the-capital-option-2026-11-08",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; the Top-10 composite is unchanged at 98.33"
+        "headline": "China's PPI-CPI gap widens to 5.0pp; the country scorecard is carried forward provisionally with the US 94.0, China 91.2 and South Korea 88.8 leading, and the GVI held at 108.0."
       }
     ]
   },

@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-margin-squeeze",
+    title: "The Great Margin Squeeze",
+    excerpt: "China's PPI-CPI divergence and an incomplete AI rebound reframe the global competition for productive returns.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "07:22",
+    kind: "day"
+  },
+  {
     url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-european-ai-gigafactory-alert-since-november-7-no-new-consortium-member-binding-financing-commitment-con",
     title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential European AI Gigafactory Alert Since November 7. No New Consortium Member, Binding Financing Commitment, Con",
     excerpt: "EuroHPC's tender stays open with deadlines intact, while demonstrations and Anthropic's gas commitments fail the materiality test.",
