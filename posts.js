@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium-2026-11-09",
+    title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
+    excerpt: "A third constraint on AI investment has emerged — political and regulatory permission — reshaping how capital will be allocated.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "08:46",
+    kind: "day"
+  },
+  {
     url: "/the-six-year-divide",
     title: "The Six-year Divide",
     excerpt: "Markets rebound in minutes while AI infrastructure takes years — the next capital rotation will reward execution velocity.",
