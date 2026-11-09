@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-the-margin-trap",
+    title: "Where Markets, Capital and Geopolitics Collide the Margin Trap",
+    excerpt: "The AI Supercycle remains expansionary, but its value is being distributed unevenly—rewarding those who protect margins and control bottlenecks over those absorbing the cost of acceleration.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "4 min read",
+    time: "07:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-09",
     title: "GVI Corporate Benchmark",
     excerpt: "Three developments in 72 hours reveal that the AI Supercycle is entering an age of strategic control—and financial risk.",
