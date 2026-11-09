@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-trust-discount",
+    title: "The Trust Discount",
+    excerpt: "A board probe into Jensen Huang rattles Nvidia even as the broader AI market rebounds, redrawing the map of global capital.",
+    tag: "The Close · AI & Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "20:56",
+    kind: "night"
+  },
+  {
     url: "/the-intelligence-war-for-ai-supremacy",
     title: "The Intelligence War for AI Supremacy",
     excerpt: "Espionage allegations, architectural competition and geopolitics are forcing a reassessment of the price of technological supremacy.",
