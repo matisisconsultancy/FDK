@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-09",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "AI equities rebound while Europe's banks consolidate, China's margins tighten and oil slides — exposing the real test of the Next Economy.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "13:45",
+    kind: "day"
+  },
+  {
     url: "/the-inflation-before-the-intelligence",
     title: "The Inflation Before the Intelligence",
     excerpt: "RBA research reveals why the AI investment cycle could lift neutral rates before delivering productivity gains.",
