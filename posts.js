@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-war-for-ai-supremacy",
+    title: "The Intelligence War for AI Supremacy",
+    excerpt: "Espionage allegations, architectural competition and geopolitics are forcing a reassessment of the price of technological supremacy.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "19:48",
+    kind: "night"
+  },
+  {
     url: "/the-strategic-contradiction-is-striking",
     title: "The Strategic Contradiction Is Striking.",
     excerpt: "France buys social stability as banks cross borders and AI infrastructure meets continental resistance — while sovereign risk differentiates rather than detonates.",
