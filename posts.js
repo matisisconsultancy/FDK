@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-power-premium",
+    title: "The Power Premium",
+    excerpt: "The scarcity constraining frontier intelligence is spreading from semiconductors to the physical infrastructure required to run them.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "12:05",
+    kind: "day"
+  },
+  {
     url: "/the-battle-for-europes-financial-supremacy",
     title: "The Battle for Europe’s Financial Supremacy",
     excerpt: "UniCredit, Intesa Sanpaolo and Crédit Agricole are redefining continental scale, capital allocation and the future of European banking power.",
