@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-strategic-contradiction-is-striking",
+    title: "The Strategic Contradiction Is Striking.",
+    excerpt: "France buys social stability as banks cross borders and AI infrastructure meets continental resistance — while sovereign risk differentiates rather than detonates.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "18:47",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-great-infrastructure-divide-2026-11-09",
     title: "Europe’s AI Race: The Great Infrastructure Divide",
     excerpt: "Norway restricts data-center grid access as Deutsche Telekom and Ardian commit capital to proven demand and semiconductor supply.",
