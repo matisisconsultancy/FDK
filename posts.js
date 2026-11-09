@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-battle-for-europes-financial-supremacy",
+    title: "The Battle for Europe’s Financial Supremacy",
+    excerpt: "UniCredit, Intesa Sanpaolo and Crédit Agricole are redefining continental scale, capital allocation and the future of European banking power.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "8 min read",
+    time: "10:38",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium-2026-11-09",
     title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
     excerpt: "A third constraint on AI investment has emerged — political and regulatory permission — reshaping how capital will be allocated.",
