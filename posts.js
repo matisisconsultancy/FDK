@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-six-year-divide",
+    title: "The Six-year Divide",
+    excerpt: "Markets rebound in minutes while AI infrastructure takes years — the next capital rotation will reward execution velocity.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "08:20",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-09",
     title: "Daily Intelligence Brief",
     excerpt: "Anthropic's $3.4B power deal, Japan's ¥1.84T JSR acquisition and a turbine shortage reveal a new premium on infrastructure readiness.",
