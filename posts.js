@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-09",
+    title: "Daily Intelligence Brief",
+    excerpt: "Anthropic's $3.4B power deal, Japan's ¥1.84T JSR acquisition and a turbine shortage reveal a new premium on infrastructure readiness.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "08:14",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-the-margin-trap",
     title: "Where Markets, Capital and Geopolitics Collide the Margin Trap",
     excerpt: "The AI Supercycle remains expansionary, but its value is being distributed unevenly—rewarding those who protect margins and control bottlenecks over those absorbing the cost of acceleration.",
