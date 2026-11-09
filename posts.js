@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-09",
+    title: "GVI Corporate Benchmark",
+    excerpt: "Three developments in 72 hours reveal that the AI Supercycle is entering an age of strategic control—and financial risk.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "5 min read",
+    time: "07:32",
+    kind: "day"
+  },
+  {
     url: "/the-great-margin-squeeze",
     title: "The Great Margin Squeeze",
     excerpt: "China's PPI-CPI divergence and an incomplete AI rebound reframe the global competition for productive returns.",

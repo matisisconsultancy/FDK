@@ -156,7 +156,8 @@ window.GVI_DATA = {
       "the-liquidity-premium",
       "gvi-corporate-benchmark-the-capital-option",
       "gvi-corporate-benchmark-the-capital-option-2026-11-08",
-      "the-great-margin-squeeze"
+      "the-great-margin-squeeze",
+      "gvi-corporate-benchmark-2026-11-09"
     ]
   },
   "daily": {
@@ -3428,6 +3429,12 @@ window.GVI_DATA = {
         "url": "/the-great-margin-squeeze",
         "slot": "GVI",
         "headline": "China's PPI-CPI gap widens to 5.0pp; the country scorecard is carried forward provisionally with the US 94.0, China 91.2 and South Korea 88.8 leading, and the GVI held at 108.0."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-09",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 trails, with all scores unchanged."
       }
     ]
   },
@@ -3533,7 +3540,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-08",
+    "asOf": "2026-11-09",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3542,7 +3549,7 @@ window.GVI_DATA = {
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Strongest structural accelerator; September revenue +54.6% y/y"
       },
       {
         "rank": 2,
@@ -3550,7 +3557,7 @@ window.GVI_DATA = {
         "score": 99.4,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "$18.6B quarterly free cash flow, Azure +48%"
       },
       {
         "rank": 3,
@@ -3558,7 +3565,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Q3 revenue €11.46B, +16.9% organic, triple-digit data-center demand"
       },
       {
         "rank": 4,
@@ -3566,7 +3573,7 @@ window.GVI_DATA = {
         "score": 98.8,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Economic conversion; can buy up to $60B of Qualcomm AI chips"
       },
       {
         "rank": 5,
@@ -3574,7 +3581,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Technological scarcity leader"
       },
       {
         "rank": 6,
@@ -3582,7 +3589,7 @@ window.GVI_DATA = {
         "score": 98.2,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Technological scarcity in chipmaking equipment"
       },
       {
         "rank": 7,
@@ -3590,7 +3597,7 @@ window.GVI_DATA = {
         "score": 97.8,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Technological scarcity in AI semiconductors"
       },
       {
         "rank": 8,
@@ -3598,7 +3605,7 @@ window.GVI_DATA = {
         "score": 97.5,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Revenue growth of 96%"
       },
       {
         "rank": 9,
@@ -3606,7 +3613,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Infrastructure control; benefits from power-capacity demand"
       },
       {
         "rank": 10,
@@ -3614,7 +3621,7 @@ window.GVI_DATA = {
         "score": 97.3,
         "delta": 0,
         "trend": "up",
-        "note": null
+        "note": "Infrastructure control"
       }
     ],
     "laggards": [
@@ -3624,7 +3631,7 @@ window.GVI_DATA = {
         "score": 61.3,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Lowest-scoring corporation in the benchmark"
       },
       {
         "rank": 2,
@@ -3632,7 +3639,7 @@ window.GVI_DATA = {
         "score": 63.4,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Second-lowest score"
       },
       {
         "rank": 3,
@@ -3640,7 +3647,7 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Score unchanged, trend flat"
       },
       {
         "rank": 4,
@@ -3648,7 +3655,7 @@ window.GVI_DATA = {
         "score": 66.8,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Score unchanged, trend down"
       },
       {
         "rank": 5,
@@ -3656,7 +3663,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Score unchanged, trend flat"
       },
       {
         "rank": 6,
@@ -3664,7 +3671,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Score unchanged, trend down"
       },
       {
         "rank": 7,
@@ -3672,7 +3679,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Score unchanged, trend flat"
       },
       {
         "rank": 8,
@@ -3680,7 +3687,7 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Score unchanged, trend flat"
       },
       {
         "rank": 9,
@@ -3688,7 +3695,7 @@ window.GVI_DATA = {
         "score": 70.7,
         "delta": 0,
         "trend": "down",
-        "note": null
+        "note": "Score unchanged, trend down"
       },
       {
         "rank": 10,
@@ -3696,14 +3703,40 @@ window.GVI_DATA = {
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Score unchanged, trend flat"
       }
     ],
-    "pillars": [],
+    "pillars": [
+      {
+        "pillar": "Technological scarcity",
+        "leaders": [
+          "TSMC",
+          "Nvidia",
+          "ASML",
+          "Broadcom"
+        ]
+      },
+      {
+        "pillar": "Infrastructure control",
+        "leaders": [
+          "Schneider Electric",
+          "Siemens Energy",
+          "Siemens AG"
+        ]
+      },
+      {
+        "pillar": "Economic conversion",
+        "leaders": [
+          "Microsoft",
+          "Amazon",
+          "Palantir"
+        ]
+      }
+    ],
     "source": {
-      "title": "GVI Corporate Benchmark the Capital Option",
-      "url": "/gvi-corporate-benchmark-the-capital-option-2026-11-08",
-      "date": "2026-11-08",
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-11-09",
+      "date": "2026-11-09",
       "slot": "GVI"
     }
   },
