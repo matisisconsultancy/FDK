@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-great-infrastructure-divide-2026-11-09",
+    title: "Europe’s AI Race: The Great Infrastructure Divide",
+    excerpt: "Norway restricts data-center grid access as Deutsche Telekom and Ardian commit capital to proven demand and semiconductor supply.",
+    tag: "In Focus · AI Infrastructure",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 9, 2026",
+    read: "9 min read",
+    time: "18:42",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-09",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "AI equities rebound while Europe's banks consolidate, China's margins tighten and oil slides — exposing the real test of the Next Economy.",
