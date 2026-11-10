@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-wars",
+    title: "The Intelligence Wars",
+    excerpt: "National security has become a cost-of-capital variable, and the AI race now runs through corporate governance, supply chains and secure computing.",
+    tag: "The Close · Geopolitics",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "22:25",
+    kind: "night"
+  },
+  {
     url: "/the-duration-trap",
     title: "The Duration Trap",
     excerpt: "Five developments on November 10 expose the fracture between AI's technological velocity and its financial velocity.",
