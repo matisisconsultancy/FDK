@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-capital-border",
+    title: "The New Capital Border",
+    excerpt: "China's surplus, Washington's chip offensive and Wall Street's credit discipline are redefining who can finance, control and monetize the Next Economy.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "4 min read",
+    time: "08:43",
+    kind: "day"
+  },
+  {
     url: "/the-trust-discount",
     title: "The Trust Discount",
     excerpt: "A board probe into Jensen Huang rattles Nvidia even as the broader AI market rebounds, redrawing the map of global capital.",
