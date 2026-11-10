@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-sovereignty-trap",
+    title: "The AI Sovereignty Trap",
+    excerpt: "Espionage, semiconductor dependencies and the rising cost of capital are reshaping the U.S.–China AI race.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "12:57",
+    kind: "day"
+  },
+  {
     url: "/the-monetary-collision",
     title: "The Monetary Collision",
     excerpt: "New Fed research and hawkish signals across four central banks reveal the monetary collision confronting the AI investment boom.",
