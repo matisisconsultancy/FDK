@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-10-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Anthropic's trillion-dollar IPO, SoftBank's $7bn loss and a credit repricing signal the AI Supercycle's first great capital-conversion test.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "13:17",
+    kind: "day"
+  },
+  {
     url: "/the-ai-sovereignty-trap",
     title: "The AI Sovereignty Trap",
     excerpt: "Espionage, semiconductor dependencies and the rising cost of capital are reshaping the U.S.–China AI race.",
