@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-power-behind-the-compute",
+    title: "Europe’s AI Race: The Power Behind the Compute",
+    excerpt: "Europe is still competing to finance sovereign compute, even as its chipmakers already capture revenue from the global AI cycle.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "8 min read",
+    time: "18:04",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-the-sovereign-social-capital-trap",
     title: "Europe’s Great Fracture the Sovereign–social–capital Trap",
     excerpt: "France's political crisis, an easing energy shock and a quiet repricing of sovereign risk reveal a deeper European fracture between investment needs and fiscal capacity.",
