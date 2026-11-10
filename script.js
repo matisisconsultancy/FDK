@@ -188,10 +188,37 @@
   const currentPage = (location.pathname.replace(/index\.html$/, "").replace(/\/$/, "") || "/");
 
   // Home teaser cards — show the latest 3 entries.
+  // The home does not ship posts.js (300+ KB for three cards, fetched before
+  // the hero could paint on a mobile connection). It is pulled in when the
+  // library section comes near the viewport; until then the static cards in
+  // the HTML stand in.
   const homeGrid = $(".library .library__grid");
-  if (homeGrid && POSTS.length) {
-    homeGrid.innerHTML = POSTS.slice(0, 3).map(lcardHTML).join("");
+  const renderHome = (list) => {
+    if (!homeGrid || !list.length) return;
+    homeGrid.innerHTML = list.slice(0, 3).map(lcardHTML).join("");
     revealObserve($$(".lcard", homeGrid));
+  };
+  if (homeGrid && POSTS.length) {
+    renderHome(POSTS);
+  } else if (homeGrid && !window.FDK_POSTS) {
+    let asked = false;
+    const loadPosts = () => {
+      if (asked) return;
+      asked = true;
+      const s = document.createElement("script");
+      s.src = "/posts.js?" + (window.FDK_IV || "");
+      s.async = true;
+      s.onload = () => renderHome(window.FDK_POSTS || []);
+      document.body.appendChild(s);
+    };
+    if ("IntersectionObserver" in window) {
+      const pio = new IntersectionObserver((es) => {
+        if (es.some((e) => e.isIntersecting)) { pio.disconnect(); loadPosts(); }
+      }, { rootMargin: "1200px 0px" });
+      pio.observe(homeGrid);
+    } else {
+      window.addEventListener("load", loadPosts);
+    }
   }
 
   // Article footer gallery — every other entry, so readers can hop across notes.
