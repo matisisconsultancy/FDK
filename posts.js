@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-financial-sovereignty",
+    title: "The Price of Financial Sovereignty",
+    excerpt: "Sovereign debt enters the Crédit Agricole–Banco BPM negotiation as UniCredit nears Commerzbank control and Intesa prepares its MPS offer.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "8 min read",
+    time: "09:35",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-10",
     title: "GVI Corporate Benchmark",
     excerpt: "A broad market rebound masks a widening split between corporations that control the Next Economy's productive foundations and those dependent on uncertain financing.",
