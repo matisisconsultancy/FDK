@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-monetary-collision",
+    title: "The Monetary Collision",
+    excerpt: "New Fed research and hawkish signals across four central banks reveal the monetary collision confronting the AI investment boom.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "12:09",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-financial-sovereignty",
     title: "The Price of Financial Sovereignty",
     excerpt: "Sovereign debt enters the Crédit Agricole–Banco BPM negotiation as UniCredit nears Commerzbank control and Intesa prepares its MPS offer.",
