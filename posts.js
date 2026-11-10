@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-10",
+    title: "Daily Intelligence Brief",
+    excerpt: "Three November 9 developments show access, eligibility and productive deployment becoming the new sources of advantage in the AI economy.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "08:48",
+    kind: "day"
+  },
+  {
     url: "/the-new-capital-border",
     title: "The New Capital Border",
     excerpt: "China's surplus, Washington's chip offensive and Wall Street's credit discipline are redefining who can finance, control and monetize the Next Economy.",
