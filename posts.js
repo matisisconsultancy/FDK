@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-the-sovereign-social-capital-trap",
+    title: "Europe’s Great Fracture the Sovereign–social–capital Trap",
+    excerpt: "France's political crisis, an easing energy shock and a quiet repricing of sovereign risk reveal a deeper European fracture between investment needs and fiscal capacity.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "7 min read",
+    time: "14:42",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-10-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Anthropic's trillion-dollar IPO, SoftBank's $7bn loss and a credit repricing signal the AI Supercycle's first great capital-conversion test.",
