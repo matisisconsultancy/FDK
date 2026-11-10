@@ -154,7 +154,8 @@
       "gvi-corporate-benchmark-the-capital-option-2026-11-08",
       "the-great-margin-squeeze",
       "gvi-corporate-benchmark-2026-11-09",
-      "the-intelligence-trade-paradox"
+      "the-intelligence-trade-paradox",
+      "gvi-corporate-benchmark-2026-11-10"
     ]
   },
   "daily": {
@@ -3440,6 +3441,12 @@
         "url": "/the-intelligence-trade-paradox",
         "slot": "GVI",
         "headline": "China's record export surplus, Nvidia's security shock and falling Brent crude reprice the AI cycle; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional carried-forward country scores."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-10",
+        "slot": "GVI",
+        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Skydance is downgraded 0.2 to 66.6."
       }
     ]
   },
@@ -3545,7 +3552,7 @@
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-09",
+    "asOf": "2026-11-10",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3554,79 +3561,79 @@
         "score": 99.7,
         "delta": 0,
         "trend": "flat",
-        "note": "Strongest structural accelerator; September revenue +54.6% y/y"
+        "note": "Q3 revenue +50.9% y/y, operating margin 58.7%; October sales due next."
       },
       {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.4,
         "delta": 0,
-        "trend": "up",
-        "note": "$18.6B quarterly free cash flow, Azure +48%"
+        "trend": "flat",
+        "note": "Quarterly revenue $92.3B (+19%), operating income $45.9B (+21%)."
       },
       {
         "rank": 3,
         "name": "Schneider Electric",
         "score": 99,
         "delta": 0,
-        "trend": "up",
-        "note": "Q3 revenue €11.46B, +16.9% organic, triple-digit data-center demand"
+        "trend": "flat",
+        "note": "Q3 revenue €11.46B (+16.9% organic); raised annual targets."
       },
       {
         "rank": 4,
         "name": "Amazon",
         "score": 98.8,
         "delta": 0,
-        "trend": "up",
-        "note": "Economic conversion; can buy up to $60B of Qualcomm AI chips"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 5,
         "name": "Nvidia",
         "score": 98.3,
         "delta": 0,
-        "trend": "up",
-        "note": "Technological scarcity leader"
+        "trend": "flat",
+        "note": "Score held pending verified developments; governance risk elevated."
       },
       {
         "rank": 6,
         "name": "ASML",
         "score": 98.2,
         "delta": 0,
-        "trend": "up",
-        "note": "Technological scarcity in chipmaking equipment"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 7,
         "name": "Broadcom",
         "score": 97.8,
         "delta": 0,
-        "trend": "up",
-        "note": "Technological scarcity in AI semiconductors"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 8,
         "name": "Palantir",
         "score": 97.5,
         "delta": 0,
-        "trend": "up",
-        "note": "Revenue growth of 96%"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 9,
         "name": "Siemens Energy",
         "score": 97.3,
         "delta": 0,
-        "trend": "up",
-        "note": "Infrastructure control; benefits from power-capacity demand"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 10,
         "name": "Siemens AG",
         "score": 97.3,
         "delta": 0,
-        "trend": "up",
-        "note": "Infrastructure control"
+        "trend": "flat",
+        "note": null
       }
     ],
     "laggards": [
@@ -3635,16 +3642,16 @@
         "name": "Volkswagen",
         "score": 61.3,
         "delta": 0,
-        "trend": "down",
-        "note": "Lowest-scoring corporation in the benchmark"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 2,
         "name": "Nissan",
         "score": 63.4,
         "delta": 0,
-        "trend": "down",
-        "note": "Second-lowest score"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 3,
@@ -3652,15 +3659,15 @@
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Score unchanged, trend flat"
+        "note": null
       },
       {
         "rank": 4,
         "name": "Skydance",
-        "score": 66.8,
-        "delta": 0,
+        "score": 66.6,
+        "delta": -0.2,
         "trend": "down",
-        "note": "Score unchanged, trend down"
+        "note": "Downgraded: ~$87B gross debt against $10B cash after the WBD close."
       },
       {
         "rank": 5,
@@ -3668,15 +3675,15 @@
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Score unchanged, trend flat"
+        "note": null
       },
       {
         "rank": 6,
         "name": "BASF",
         "score": 68.9,
         "delta": 0,
-        "trend": "down",
-        "note": "Score unchanged, trend down"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 7,
@@ -3684,7 +3691,7 @@
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Score unchanged, trend flat"
+        "note": null
       },
       {
         "rank": 8,
@@ -3692,15 +3699,15 @@
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Score unchanged, trend flat"
+        "note": null
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "down",
-        "note": "Score unchanged, trend down"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 10,
@@ -3708,40 +3715,14 @@
         "score": 71.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Score unchanged, trend flat"
+        "note": null
       }
     ],
-    "pillars": [
-      {
-        "pillar": "Technological scarcity",
-        "leaders": [
-          "TSMC",
-          "Nvidia",
-          "ASML",
-          "Broadcom"
-        ]
-      },
-      {
-        "pillar": "Infrastructure control",
-        "leaders": [
-          "Schneider Electric",
-          "Siemens Energy",
-          "Siemens AG"
-        ]
-      },
-      {
-        "pillar": "Economic conversion",
-        "leaders": [
-          "Microsoft",
-          "Amazon",
-          "Palantir"
-        ]
-      }
-    ],
+    "pillars": [],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-09",
-      "date": "2026-11-09",
+      "url": "/gvi-corporate-benchmark-2026-11-10",
+      "date": "2026-11-10",
       "slot": "GVI"
     }
   },

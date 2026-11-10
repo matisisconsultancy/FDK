@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-10",
+    title: "GVI Corporate Benchmark",
+    excerpt: "A broad market rebound masks a widening split between corporations that control the Next Economy's productive foundations and those dependent on uncertain financing.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "09:06",
+    kind: "day"
+  },
+  {
     url: "/the-intelligence-trade-paradox",
     title: "The Intelligence Trade Paradox",
     excerpt: "China's record export surplus, Nvidia's security shock and falling energy prices reprice the global AI investment cycle.",
