@@ -70,6 +70,7 @@
     briefingInbox: "info@fdkempowernet.com",
   };
   const isConfigured = (v, placeholder) => !!v && v !== placeholder;
+  const track = (name, params) => { if (window.fdkTrack) window.fdkTrack(name, params); };
 
   /* ---------- Split text into masked words / block ---------- */
   function splitText(el) {
@@ -671,10 +672,24 @@
   }
 
   /* Subscribe an email to a Kit / ConvertKit form. Returns
-     { ok, placeholder }. While the form ID is still the placeholder,
-     resolves ok:true so the UX keeps working before setup is done. */
+     { ok, inbox }. While a form has no Kit ID yet, the sign-up is
+     emailed to the team inbox (FormSubmit) instead of being dropped. */
+  async function inboxSubscribe(email, fields) {
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/" + FDK_FORMS.briefingInbox, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(Object.assign({ email: email, page: location.href }, fields || {}, {
+          _subject: "New subscriber — " + ((fields && (fields.book_interest || fields.source)) || "FDK EmpowerNet"),
+          _template: "table", _captcha: "false",
+        })),
+      });
+      const j = await res.json().catch(() => ({}));
+      return { ok: res.ok && String(j.success) === "true", inbox: true };
+    } catch (e) { return { ok: false, inbox: true }; }
+  }
   async function ckSubscribe(formId, email, fields) {
-    if (!isConfigured(formId, "YOUR_KIT_FORM_ID")) return { ok: true, placeholder: true };
+    if (!isConfigured(formId, "YOUR_KIT_FORM_ID")) return inboxSubscribe(email, fields);
     try {
       const res = await fetch("https://app.kit.com/forms/" + formId + "/subscriptions", {
         method: "POST",
@@ -745,12 +760,15 @@
       const bookTitle = rq("title").textContent;
       const bookFormId = (FDK_FORMS.kitBookForms || {})[bookTitle];
       const res = await ckSubscribe(bookFormId, email, { book_interest: bookTitle });
+      if (res.ok) track("sign_up", { method: "book_sample", book: bookTitle });
       setUnlocked();
       revealRest();
       gate.classList.add("reader__gate--done");
       form.hidden = true; skip.hidden = true;
       showMsg(msg, res.ok
-        ? "You’re in. Check your inbox and confirm your email to download the sample — meanwhile, keep reading below."
+        ? (res.inbox
+          ? "You’re in. Keep reading below — The Velocity Edge will reach your inbox."
+          : "You’re in. Check your inbox and confirm your email to download the sample — meanwhile, keep reading below.")
         : "Enjoy the chapter. We couldn’t confirm the subscription just now — please try again later.",
         res.ok ? "ok" : "err");
     });
@@ -979,6 +997,7 @@
       const subOriginal = subBtn ? subBtn.textContent : "";
       if (subBtn) { subBtn.disabled = true; subBtn.textContent = "Subscribing…"; }
       const res = await ckSubscribe(FDK_FORMS.kitNewsletterFormId, email, { source: "intelligence-library" });
+      if (res.ok) track("sign_up", { method: "newsletter", source: "intelligence-library" });
       if (subBtn) { subBtn.disabled = false; subBtn.textContent = subOriginal; }
       subForm.reset();
       subStatus.textContent = res.ok
@@ -1011,6 +1030,7 @@
       const done = (ok) => {
         btn.disabled = false; btn.textContent = original;
         if (ok) {
+          track("generate_lead", { form: "briefing", sector: payload.sector || undefined });
           form.reset();
           status.textContent = `Thank you, ${name}. We've received your request and will be in touch shortly.`;
           status.classList.add("ok");

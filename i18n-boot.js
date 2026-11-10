@@ -11,7 +11,7 @@
 (function () {
   "use strict";
   var LANGS = { en: 1, es: 1, it: 1 };
-  var V = "v=75815cb41b";
+  var V = "v=7093f27176";
 
   function fromQuery() {
     var m = /[?&]lang=([a-zA-Z-]+)/.exec(location.search);
@@ -47,6 +47,15 @@
   var path = location.pathname.replace(/\/index\.html?$/i, "/");
   var slug = path.replace(/^\/+|\/+$/g, "").replace(/\//g, "-").toLowerCase();
   window.FDK_PAGE = slug || "home";
+
+  /* GA4 conversion events (CTA, store links, leads) — every page loads this
+     boot file, so the tracker reaches new notes without touching them. */
+  try {
+    var ga = document.createElement("script");
+    ga.src = "/analytics.js?" + V;
+    ga.async = true;
+    (document.head || document.documentElement).appendChild(ga);
+  } catch (e) {}
 
   if (lang === "en") return;
 
