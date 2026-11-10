@@ -87,7 +87,7 @@ function emit(lang, name, keys, dict) {
    that impossible: any change to a dictionary or to the scripts that
    read one produces a new version on the next build.
    ------------------------------------------------------------------ */
-const VERSIONED = ["i18n-boot.js", "i18n.js", "script.js", "posts.js",
+const VERSIONED = ["i18n-boot.js", "i18n.js", "script.js", "analytics.js", "posts.js",
   "market.js", "market-board.js", "gvi.js", "gvi-data.js", "styles.css", "ve-nav.css", "ve-nav.js", "velocityedge/ve.css", "ve-live.js"];
 
 function assetVersion() {

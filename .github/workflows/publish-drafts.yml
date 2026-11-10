@@ -21,7 +21,7 @@ concurrency:
 # "true" turns it on: each publish translates the newest untranslated strings,
 # up to ~4,000 words (a few cents), so the backlog also shrinks run by run.
 env:
-  AUTO_TRANSLATE: "false"
+  AUTO_TRANSLATE: "true"
 
 permissions:
   contents: write
