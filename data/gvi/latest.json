@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-09",
+    "updated": "2026-11-10",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -153,34 +153,35 @@
       "gvi-corporate-benchmark-the-capital-option",
       "gvi-corporate-benchmark-the-capital-option-2026-11-08",
       "the-great-margin-squeeze",
-      "gvi-corporate-benchmark-2026-11-09"
+      "gvi-corporate-benchmark-2026-11-09",
+      "the-intelligence-trade-paradox"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": "N/V",
+      "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-09",
+      "asOf": "2026-11-10",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Great Margin Squeeze",
-        "url": "/the-great-margin-squeeze",
-        "date": "2026-11-09",
+        "title": "The Intelligence Trade Paradox",
+        "url": "/the-intelligence-trade-paradox",
+        "date": "2026-11-10",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-09",
+      "asOf": "2026-11-10",
       "source": {
-        "title": "The Great Margin Squeeze",
-        "url": "/the-great-margin-squeeze",
-        "date": "2026-11-09",
+        "title": "The Intelligence Trade Paradox",
+        "url": "/the-intelligence-trade-paradox",
+        "date": "2026-11-10",
         "slot": "GVI"
       },
       "rows": [
@@ -191,7 +192,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong productive fundamentals; higher financing hurdles",
+          "tag": "Strong infrastructure; rising security-policy risk",
           "spark": [
             94,
             94,
@@ -232,8 +233,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative cost pressure; positive tariff-policy development",
+          "tag": "Positive exports; increasing international trade exposure",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -270,8 +272,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive operational AI infrastructure; volatile valuations",
+          "tag": "Strong semiconductor capabilities; strategic supply-chain sensitivity",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -308,8 +311,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Tentative financial-market recovery",
+          "tag": "Previous structural assessment retained",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -346,8 +350,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous industrial assessment retained",
+          "tag": "Industrial recovery remains uneven",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -384,8 +389,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative hiring-survey signal; elevated financing costs",
+          "tag": "Previous financing assessment retained",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -450,6 +456,7 @@
             81.2,
             81.2,
             81.2,
+            81.2,
             81.2
           ]
         },
@@ -460,8 +467,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Previous assessment retained",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -498,8 +506,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Previous assessment retained",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -564,6 +573,7 @@
             79.2,
             79.2,
             79.2,
+            79.2,
             79.2
           ]
         },
@@ -574,8 +584,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Negative — latest annual services-output observation",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -612,8 +623,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Lower oil-price environment",
+          "tag": "Lower international oil-price environment",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -678,6 +690,7 @@
             75,
             75,
             75,
+            75,
             75
           ]
         },
@@ -688,8 +701,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural evidence",
+          "tag": "Previous assessment retained",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -726,8 +740,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous industrial and financing assessment retained",
+          "tag": "Negative — latest annual services-output observation",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3375,62 +3390,56 @@
     }
   },
   "today": {
-    "date": "2026-11-09",
-    "edition": "GVI · Macro",
-    "thesis": "The Great Margin Squeeze",
-    "subtitle": "China's producer prices accelerated to 5.7% while consumer inflation slid to 0.7%, exposing a widening gap between the cost of producing value and the ability to capture it.",
-    "standfirst": "Growth creates opportunity. Productivity creates value. Capital discipline determines who captures it.",
+    "date": "2026-11-10",
+    "edition": "Global Velocity",
+    "thesis": "The Intelligence Trade Paradox",
+    "subtitle": "The AI Supercycle is making the world more technologically interconnected — and more strategically contested.",
+    "standfirst": "Intelligence creates the opportunity. Strategic resilience protects it. Capital productivity determines its value.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "China PPI (Oct)",
-        "value": "5.7%",
-        "delta": "+0.7pp",
+        "label": "China Oct exports YoY",
+        "value": "+35.2%",
+        "delta": null,
         "trend": "up"
       },
       {
-        "label": "China CPI",
-        "value": "0.7%",
-        "delta": "−0.2pp",
+        "label": "China surplus Jan–Oct",
+        "value": "$1.04tn",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Nvidia, Nov 9",
+        "value": "−4.3%",
+        "delta": null,
         "trend": "down"
       },
       {
-        "label": "China purchasing prices",
-        "value": "7.9%",
-        "delta": "+1.0pp",
-        "trend": "up"
+        "label": "Brent crude",
+        "value": "$92.57",
+        "delta": "−5.8%",
+        "trend": "down"
       },
       {
-        "label": "PPI−CPI gap",
-        "value": "5.0 pp",
-        "delta": "+0.9pp",
-        "trend": "up"
-      },
-      {
-        "label": "GVI (provisional ref.)",
+        "label": "GVI headline (provisional)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Great Margin Squeeze",
-      "url": "/the-great-margin-squeeze",
-      "date": "2026-11-09",
+      "title": "The Intelligence Trade Paradox",
+      "url": "/the-intelligence-trade-paradox",
+      "date": "2026-11-10",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Great Margin Squeeze",
-        "url": "/the-great-margin-squeeze",
+        "title": "The Intelligence Trade Paradox",
+        "url": "/the-intelligence-trade-paradox",
         "slot": "GVI",
-        "headline": "China's PPI-CPI gap widens to 5.0pp; the country scorecard is carried forward provisionally with the US 94.0, China 91.2 and South Korea 88.8 leading, and the GVI held at 108.0."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-09",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 trails, with all scores unchanged."
+        "headline": "China's record export surplus, Nvidia's security shock and falling Brent crude reprice the AI cycle; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional carried-forward country scores."
       }
     ]
   },

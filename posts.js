@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-trade-paradox",
+    title: "The Intelligence Trade Paradox",
+    excerpt: "China's record export surplus, Nvidia's security shock and falling energy prices reprice the global AI investment cycle.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "4 min read",
+    time: "09:02",
+    kind: "day"
+  },
+  {
     url: "/china-seeks-greater-independence-in-advanced-semiconductor-technology",
     title: "China Seeks Greater Independence in Advanced Semiconductor Technology.",
     excerpt: "As markets recover, the decisive question is who can be trusted to control the technologies of the future.",
