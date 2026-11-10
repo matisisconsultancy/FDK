@@ -501,7 +501,10 @@ img { max-width: 100%; display: block; }
 .excerpt__toggle { background: none; border: 0; color: var(--green); font-family: inherit; font-size: 1rem; font-weight: 600; cursor: pointer; padding: 6px 0; }
 .excerpt__cta { display: flex; flex-wrap: wrap; gap: 16px; }
 
-.buy__grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+.buy__grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 22px; }
+/* Up to four stores in a row; fewer stay centred under the title instead of hugging the left edge. */
+.buy__grid > .buystore { flex: 0 1 calc((100% - 66px) / 4); min-width: 220px; }
+@media (max-width: 720px) { .buy__grid > .buystore { flex-basis: 100%; } }
 .buystore { display: flex; flex-direction: column; gap: 8px; padding: 34px 30px; border: 1px solid var(--border); border-radius: 12px; background: #fff; transition: transform 0.4s var(--ease), border-color 0.4s, box-shadow 0.4s; }
 .buystore:hover { transform: translateY(-8px); border-color: var(--green-deep); box-shadow: 0 30px 50px -30px rgba(13,18,56,0.35); }
 .buystore__name { font-family: var(--font-display); font-size: 1.5rem; color: var(--navy); }
