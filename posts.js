@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/china-seeks-greater-independence-in-advanced-semiconductor-technology",
+    title: "China Seeks Greater Independence in Advanced Semiconductor Technology.",
+    excerpt: "As markets recover, the decisive question is who can be trusted to control the technologies of the future.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "4 min read",
+    time: "08:59",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-10",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "A governance crisis, a financing test and a trillion-dollar surplus are redefining what sustains technological value.",
