@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-10",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "A governance crisis, a financing test and a trillion-dollar surplus are redefining what sustains technological value.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "4 min read",
+    time: "08:55",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-10",
     title: "Daily Intelligence Brief",
     excerpt: "Three November 9 developments show access, eligibility and productive deployment becoming the new sources of advantage in the AI economy.",
