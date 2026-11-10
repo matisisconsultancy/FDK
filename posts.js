@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-duration-trap",
+    title: "The Duration Trap",
+    excerpt: "Five developments on November 10 expose the fracture between AI's technological velocity and its financial velocity.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 10, 2026",
+    read: "5 min read",
+    time: "22:01",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-power-behind-the-compute",
     title: "Europe’s AI Race: The Power Behind the Compute",
     excerpt: "Europe is still competing to finance sovereign compute, even as its chipmakers already capture revenue from the global AI cycle.",
