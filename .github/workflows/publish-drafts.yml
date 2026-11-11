@@ -137,6 +137,21 @@ jobs:
           echo "::error::Failed to push after 4 attempts"
           exit 1
 
+      # Ping IndexNow (Bing, Yandex, …) with only the pages this publish
+      # changed, so they are crawled within minutes. Google is unaffected —
+      # it uses sitemap.xml. Best-effort: never fail a publish over this.
+      - name: Ping IndexNow
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
+        continue-on-error: true
+        run: |
+          FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep -E '(^|/)index\.html$' || true)
+          if [ -z "$FILES" ]; then
+            echo "IndexNow: no changed pages to submit."
+            exit 0
+          fi
+          echo "IndexNow: submitting the pages from this publish:"; echo "$FILES"
+          node scripts/indexnow.mjs --changed $FILES
+
       - name: Ensure Pages deployment (self-heal transient GitHub timeouts)
         if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         continue-on-error: true   # best-effort: never fail the publish over this

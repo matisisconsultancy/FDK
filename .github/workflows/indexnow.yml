@@ -1,0 +1,52 @@
+name: IndexNow — submit URLs
+
+# Instant indexing ping to Bing / Yandex / Seznam / Naver and other
+# IndexNow engines. Day-to-day pings happen automatically inside
+# publish-drafts.yml (only the pages that changed). This workflow is
+# for manual runs — above all the one-time full submission of every
+# URL in the sitemap right after IndexNow is first set up.
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to submit to IndexNow"
+        type: choice
+        options: [sitemap, changed]
+        default: sitemap
+
+concurrency:
+  group: indexnow-manual
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: claude/eager-carson-vjorjg
+          fetch-depth: 2
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Submit to IndexNow
+        run: |
+          set -euo pipefail
+          MODE="${{ github.event.inputs.mode || 'sitemap' }}"
+          if [ "$MODE" = "changed" ]; then
+            FILES=$(git diff --name-only --diff-filter=AM HEAD~1 HEAD | grep -E '(^|/)index\.html$' || true)
+            if [ -z "$FILES" ]; then echo "No changed pages in the last commit."; exit 0; fi
+            echo "Changed pages:"; echo "$FILES"
+            node scripts/indexnow.mjs --changed $FILES
+          else
+            node scripts/indexnow.mjs --sitemap
+          fi
