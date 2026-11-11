@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/for-lenders-the-critical-measure-should-become-contractually-secured-megawatts-rather-than-total-announced-or-requested-megawatts",
+    title: "For Lenders, the Critical Measure Should Become Contractually Secured Megawatts, Rather Than Total Announced or Requested Megawatts.",
+    excerpt: "Siemens Energy converts AI demand into orders while Italy's Piedmont pipeline shows how far requested capacity sits from contractual execution.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "4 min read",
+    time: "18:35",
+    kind: "night"
+  },
+  {
     url: "/europes-great-fracture-2026-11-11",
     title: "Europe’s Great Fracture",
     excerpt: "France now borrows above Italy as markets reorder eurozone sovereign risk around fiscal credibility, not inherited reputation.",
