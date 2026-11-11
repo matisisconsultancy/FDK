@@ -39,6 +39,25 @@ Marque cada casilla cuando esté decidida.
 - [x] **Proveedor elegido: HeyGen** (ver "Por qué HeyGen" más abajo).
 - [ ] **Grabación de entrenamiento hecha** (ver más abajo).
 
+### Material existente evaluado
+
+**Entrevista en YouTube** (ANPIT, *Economica 2022*, en italiano):
+https://www.youtube.com/watch?v=X6Ee6JEhq-Y
+
+| Aspecto | Valoración |
+|---|---|
+| Encuadre | ✅ Plano medio, frontal, mirada a cámara, gestos moderados: ideal |
+| Audio | ✅ Micrófono de solapa: buena base para **clonar la voz en italiano** |
+| Fondo | ❌ Photocall de ANPIT / *Economica 2022*: quedaría en todos los vídeos del avatar, con la marca de un tercero y el año 2022 |
+| Idioma | ⚠ Solo italiano |
+| Formato | ⚠ Horizontal 16:9 (los vídeos para redes serán 9:16) |
+| Derechos | ⚠ El vídeo es de ANPIT: pedir su permiso antes de usarlo para entrenar |
+
+**Conclusión.** Sirve para una **prueba interna rápida** y para **clonar la voz en
+italiano**. **No sirve para el gemelo definitivo**, que debe grabarse de nuevo con
+fondo neutro o de marca FDK, siguiendo `data/avatar/training-recording.md`. HeyGen
+pedirá igualmente el vídeo de consentimiento de Francesco.
+
 ### Por qué HeyGen
 
 - **API pública y documentada (v3)**, con pago por uso: se puede automatizar sin
