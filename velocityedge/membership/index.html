@@ -14,7 +14,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="robots" content="noindex, nofollow" />
   <title>Membership · The Velocity Edge · FDK EmpowerNet</title>
-  <meta name="description" content="The Velocity Edge membership: every note at four depths — the one-minute signal, the daily note, the deep reading and the full paper." />
+  <meta name="description" content="The Velocity Edge membership: Signal, free; Individual, the daily notes; Board, the six briefings in full with the indices and their method." />
   <meta name="theme-color" content="#04070e" />
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Fraunces:ital,wght@1,400;1,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -22,7 +22,8 @@
   <style>
     /* ============================================================
        The Velocity Edge · Membership (PREVIEW — noindex)
-       Tiers, the paywall line and one real note at four depths.
+       Three memberships (Signal · Individual · Board), the Team licence,
+       the paywall line and one real In Focus note.
        Prices are indicative until validated with Francesco.
        ============================================================ */
     :root {
@@ -63,9 +64,9 @@
     .depths a b { font: 600 1.05rem/1 var(--mono); color: var(--sky); }
     .depths a:hover { border-color: var(--sky); background: rgba(48,155,255,.08); }
 
-    /* one note, four depths */
+    /* one note, from the signal to the paper */
     .reader { border: 1px solid var(--line); border-radius: 22px; background: linear-gradient(180deg, var(--bg2), var(--bg)); overflow: hidden; }
-    .reader__bar { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); }
+    .reader__bar { display: grid; grid-template-columns: repeat(3, 1fr); border-bottom: 1px solid var(--line); }
     .reader__tab { appearance: none; border: 0; background: none; color: var(--mute); padding: 18px 12px 16px; text-align: left; cursor: pointer; position: relative; font: inherit; transition: color .25s, background .25s; }
     .reader__tab + .reader__tab { border-left: 1px solid var(--line); }
     .reader__tab b { display: block; font: 600 clamp(1.3rem, 3vw, 1.9rem)/1 var(--mono); color: inherit; }
@@ -121,7 +122,7 @@
     .bill button { appearance: none; border: 0; background: none; color: var(--soft); font: 500 .85rem/1 var(--display); padding: 10px 16px; border-radius: 999px; cursor: pointer; }
     .bill button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
     .bill small { color: var(--green); font-weight: 600; margin-left: 4px; }
-    .plans { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+    .plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
     .plan { display: flex; flex-direction: column; border: 1px solid var(--line); border-radius: 20px; padding: 26px 22px; background: var(--card); position: relative; }
     .plan--hot { border-color: rgba(48,155,255,.6); box-shadow: 0 0 0 1px rgba(48,155,255,.25), 0 24px 60px -30px rgba(48,155,255,.5); }
     .plan__badge { position: absolute; top: -11px; left: 22px; font: 600 .66rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; background: var(--sky); color: #04101f; padding: 6px 9px; border-radius: 999px; }
@@ -130,7 +131,7 @@
     .plan__price { margin: 22px 0 4px; font: 600 2.4rem/1 var(--display); letter-spacing: -.03em; }
     .plan__price small { font: 500 .85rem/1 var(--body); color: var(--mute); letter-spacing: 0; margin-left: 4px; }
     .plan__note { min-height: 1.4em; font-size: .8rem; color: var(--mute); }
-    .plan ul { list-style: none; padding: 0; margin: 20px 0 24px; display: grid; gap: 10px; font-size: .92rem; color: var(--soft); flex: 1; }
+    .plan ul { list-style: none; padding: 0; margin: 20px 0 24px; display: grid; align-content: start; gap: 10px; font-size: .92rem; color: var(--soft); flex: 1; }
     .plan li { position: relative; padding-left: 24px; line-height: 1.45; }
     .plan li::before { content: ""; position: absolute; left: 2px; top: .5em; width: 10px; height: 6px; border-left: 2px solid var(--sky); border-bottom: 2px solid var(--sky); transform: rotate(-45deg); }
     .plan li.plus { color: var(--ink); }
@@ -141,6 +142,7 @@
     .inst p { margin: 8px 0 0; color: var(--soft); font-size: .95rem; }
     .inst ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: .9rem; color: var(--soft); }
     .inst li::before { content: "◆"; color: var(--sun); font-size: .7rem; margin-right: 10px; }
+    .inst a { color: var(--sun); }
 
     /* paywall line */
     .wall { width: 100%; border-collapse: collapse; font-size: .92rem; }
@@ -161,7 +163,7 @@
     .grid-day b { font: 500 1.05rem/1.3 var(--display); }
     .grid-day p { margin: 4px 0 0; color: var(--mute); font-size: .88rem; }
     .pk { font: 600 .66rem/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; padding: 6px 9px; border-radius: 999px; border: 1px solid currentColor; white-space: nowrap; }
-    .packs { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-top: 30px; }
+    .packs { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; margin-top: 30px; }
     .pack { border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
     .pack b { font: 600 .78rem/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; }
     .pack p { margin: 10px 0 0; color: var(--soft); font-size: .88rem; }
@@ -180,13 +182,11 @@
     .fine { color: var(--mute); font-size: .82rem; text-align: center; padding: 70px 0 110px; max-width: 720px; margin: 0 auto; }
 
     @media (max-width: 980px) {
-      .plans, .packs { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .packs { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .plans { grid-template-columns: 1fr; max-width: 620px; }
       .inst { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
-      .reader__bar { grid-template-columns: repeat(2, 1fr); }
-      .reader__tab:nth-child(3) { border-left: 0; }
-      .reader__tab:nth-child(n+3) { border-top: 1px solid var(--line); }
       .plans, .packs { grid-template-columns: 1fr; }
       .grid-day li { grid-template-columns: 64px 1fr; }
       .grid-day li .pk { grid-column: 2; justify-self: start; margin-top: 6px; }
@@ -224,42 +224,40 @@
     <a href="/" style="--i:3">FDK EmpowerNet<small>↗</small></a>
     <a class="mmenu__cta" href="/velocityedge/#go-subscribe" style="--i:4">Subscribe <span aria-hidden="true">→</span></a>
     <div class="mmenu__lang" role="group" aria-label="Language / Idioma / Lingua" data-no-i18n><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button><button type="button" data-lang="it" lang="it" aria-pressed="false">IT</button></div>
-    <span class="mmenu__foot">The Velocity Edge · by FDK EmpowerNet</span>
+    <span class="mmenu__foot" data-no-i18n>The Velocity Edge · by FDK EmpowerNet</span>
   </nav></div>
   <!-- /VE-NAV -->
 
 <main>
   <section class="hero"><div class="wrap hero__in">
     <span class="eyebrow">The Velocity Edge · Membership</span>
-    <h1>Read the Next Economy at <em>the depth you need.</em></h1>
-    <p>Every note from Francesco De Leo Kaufmann exists at four depths: the one-minute signal, the daily note, the deep reading and the full paper. The signal is free. Each step deeper is a membership.</p>
-    <ul class="depths" aria-label="The four depths">
-      <li><a href="#depths" data-depth="1"><b>1</b> min · the signal</a></li>
-      <li><a href="#depths" data-depth="5"><b>5</b> min · the note</a></li>
-      <li><a href="#depths" data-depth="10"><b>10</b> min · the deep reading</a></li>
-      <li><a href="#depths" data-depth="50"><b>50</b> min · the full paper</a></li>
+    <h1>Read the Next Economy at <em>the depth your decisions need.</em></h1>
+    <p>Six briefings by Francesco De Leo Kaufmann, from the Morning Brief to The Week Ahead, and the indices behind them. The signal of every note is free. The daily notes are Individual. The deep readings, the full indices and the method are Board.</p>
+    <ul class="depths" aria-label="The three memberships">
+      <li><a href="#plans"><b>Signal</b> · free</a></li>
+      <li><a href="#plans"><b>Individual</b> · the daily notes</a></li>
+      <li><a href="#plans"><b>Board</b> · the full edge</a></li>
     </ul>
   </div></section>
 
-  <!-- ONE NOTE, FOUR DEPTHS -->
+  <!-- ONE IN FOCUS NOTE, FROM THE SIGNAL TO THE PAPER -->
   <section class="sec" id="depths"><div class="wrap">
     <div class="sec__head">
-      <span class="eyebrow">One note, four depths</span>
+      <span class="eyebrow">One note, from the signal to the paper</span>
       <h2>The same intelligence, from one minute to the full paper.</h2>
-      <p>A real In Focus note of 21 October 2026, shown the way each member would read it.</p>
+      <p>A real In Focus note of 21 October 2026, shown the way each member reads it. In Focus is a Board briefing: Individual members read its signal, and every Morning Brief, Midday Pulse and Close in full.</p>
     </div>
 
     <div class="reader">
       <div class="reader__bar" role="tablist" aria-label="Reading depth">
-        <button class="reader__tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><b>1′</b><span>The signal</span><i>Free</i></button>
-        <button class="reader__tab" role="tab" id="t5" aria-controls="p5" aria-selected="false" tabindex="-1"><b>5′</b><span>The note</span><i>Individual</i></button>
-        <button class="reader__tab" role="tab" id="t10" aria-controls="p10" aria-selected="false" tabindex="-1"><b>10′</b><span>The deep reading</span><i>Professional</i></button>
-        <button class="reader__tab" role="tab" id="t50" aria-controls="p50" aria-selected="false" tabindex="-1"><b>50′</b><span>The full paper</span><i>Executive · Institutional</i></button>
+        <button class="reader__tab" role="tab" id="t1" aria-controls="p1" aria-selected="true"><b>1′</b><span>The signal</span><i>Signal · free</i></button>
+        <button class="reader__tab" role="tab" id="t10" aria-controls="p10" aria-selected="false" tabindex="-1"><b>10′</b><span>In Focus, in full</span><i>Board</i></button>
+        <button class="reader__tab" role="tab" id="t50" aria-controls="p50" aria-selected="false" tabindex="-1"><b>50′</b><span>The monthly paper</span><i>Board</i></button>
       </div>
 
-      <!-- 1 minute: free -->
+      <!-- 1 minute: Signal -->
       <div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
-        <div class="panel__meta"><span class="tier-tag tier-tag--free">Free</span><span>45–60 seconds</span><span>Delivered 07:00 · email & web</span></div>
+        <div class="panel__meta"><span class="tier-tag tier-tag--free">Signal</span><span>45–60 seconds</span><span>Every note · email & web</span></div>
         <div class="note-kicker">In Focus · 21 October 2026</div>
         <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk</h3>
         <ol class="points">
@@ -271,14 +269,14 @@
           <li><strong>The decisive transition</strong> is from AI-supported resilience to AI-generated productivity — before the investment boom slows.</li>
         </ol>
         <div class="gate__cta" style="margin-top:26px">
-          <p><b>Want the reasoning behind the six points?</b> The full note, its data and the investment implications are part of the membership.</p>
-          <button class="btn" type="button" data-show="5">Read the 5-minute note →</button>
+          <p><b>Want the reasoning behind the six points?</b> The full In Focus note, its data and the investment implications are part of Board.</p>
+          <button class="btn" type="button" data-show="10">Read In Focus in full →</button>
         </div>
       </div>
 
-      <!-- 5 minutes: Individual -->
-      <div class="panel" role="tabpanel" id="p5" aria-labelledby="t5" hidden>
-        <div class="panel__meta"><span class="tier-tag tier-tag--ind">Individual</span><span>About 5 minutes</span><span>Every daily note, in full</span></div>
+      <!-- In Focus in full: Board -->
+      <div class="panel" role="tabpanel" id="p10" aria-labelledby="t10" hidden>
+        <div class="panel__meta"><span class="tier-tag tier-tag--pro">Board</span><span>About 10 minutes</span><span>In Focus · The Week Ahead · GVI</span></div>
         <div class="note-kicker">In Focus · 21 October 2026</div>
         <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk</h3>
         <p class="note-dek">Europe has proven it can withstand the energy shock — the open question is whether the AI Supercycle is financing a new productive economy or merely concealing the structural weaknesses of the existing one.</p>
@@ -293,20 +291,8 @@
           <p>Meanwhile, fresh British inflation data strengthen the case for monetary tightening, while the Bank of Japan explicitly identifies AI-driven industrial demand as a contributor to rising prices. The Great Split is entering a more consequential monetary phase: economies are beginning to diverge according to whether AI creates durable productive capacity or merely provides temporary demand.</p>
           <h3>The hidden pattern</h3>
           <p><strong>Global AI capital formation → European technology exports → higher industrial activity → greater economic resilience.</strong> But this transmission remains vulnerable to investment decisions outside Europe.</p>
-        </div>
-        <div class="gate__cta">
-          <p><b>Individual · €16 a month.</b> Every Morning Brief, Midday Pulse and Close in full, every day.</p>
-          <button class="btn" type="button" data-reserve="Individual">Become a member</button>
         </div></div>
-      </div>
-
-      <!-- 10 minutes: Professional -->
-      <div class="panel" role="tabpanel" id="p10" aria-labelledby="t10" hidden>
-        <div class="panel__meta"><span class="tier-tag tier-tag--pro">Professional</span><span>About 10 minutes</span><span>In Focus · Week Ahead · GVI</span></div>
-        <div class="note-kicker">In Focus · the deep reading</div>
-        <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk</h3>
-        <p class="note-dek">Six sections, the second-order effects and five takeaways for investors and European policymakers.</p>
-        <ol class="toc" aria-label="Sections of the deep reading">
+        <ol class="toc" aria-label="Sections of the In Focus note">
           <li><span>01</span><div>The ECB: Europe’s resilience is real — but not yet structural<small>Three forces, one warning</small></div><em>2 min</em></li>
           <li><span>02</span><div>The hidden pattern: an AI Supercycle Europe does not fully control<small>A transmission it does not own</small></div><em>1 min</em></li>
           <li><span>03</span><div>The labour-market divide: output decouples from employment<small>A divergence consistent with the Great Split</small></div><em>2 min</em></li>
@@ -315,18 +301,18 @@
           <li><span>06</span><div>Five key takeaways · The final take<small>From dependence to domestic capital formation</small></div><em>2 min</em></li>
         </ol>
         <div class="gate__cta" style="margin-top:24px">
-          <p><b>Professional · €30 a month.</b> Everything in Individual, plus every In Focus deep reading, The Week Ahead and the GVI rankings with the full Velocity Dashboard.</p>
-          <button class="btn" type="button" data-reserve="Professional">Become a member</button>
+          <p><b>Board · €50 a month.</b> Every In Focus note and The Week Ahead in full, the sector watches, the 05:00 Newscast and the full GVI.</p>
+          <button class="btn" type="button" data-reserve="Board">Become a member</button>
         </div>
       </div>
 
-      <!-- 50 minutes: Executive / Institutional -->
+      <!-- 50 minutes: the monthly paper, Board -->
       <div class="panel" role="tabpanel" id="p50" aria-labelledby="t50" hidden>
-        <div class="panel__meta"><span class="tier-tag tier-tag--inst">Executive · Institutional</span><span>About 50 minutes</span><span>Monthly paper · PDF · methodology</span></div>
-        <div class="note-kicker">The full paper · illustrative outline</div>
+        <div class="panel__meta"><span class="tier-tag tier-tag--inst">Board</span><span>About 50 minutes</span><span>Monthly paper · PDF · method</span></div>
+        <div class="note-kicker">The monthly paper · illustrative outline</div>
         <h3 class="note-title">Europe’s AI Shield Has an Expiration Risk — the full paper</h3>
         <p class="note-dek">The note becomes a paper: the data behind each claim, the method, country by country, and what it means for a balance sheet.</p>
-        <ol class="toc" aria-label="Outline of the full paper">
+        <ol class="toc" aria-label="Outline of the monthly paper">
           <li><span>I</span><div>Executive summary<small>The thesis on one page, for a board</small></div><em>3 min</em></li>
           <li><span>II</span><div>The evidence<small>ECB research of 21 October, ONS, Bank of Japan testimony — sources and charts</small></div><em>10 min</em></li>
           <li><span>III</span><div>Method<small>How the Global Velocity Index reads resilience versus productivity</small></div><em>8 min</em></li>
@@ -335,8 +321,8 @@
           <li><span>VI</span><div>Scenarios and signals to watch<small>What would confirm or break the thesis</small></div><em>7 min</em></li>
         </ol>
         <div class="gate__cta" style="margin-top:24px;border-color:rgba(245,184,46,.4);background:rgba(245,184,46,.06)">
-          <p><b>Executive · €50 a month</b> includes the monthly paper. <b>Institutional</b> members commission papers on their own questions, with a 1:1 briefing.</p>
-          <button class="btn btn--sun" type="button" data-reserve="Executive">Request access</button>
+          <p><b>Board</b> includes the monthly paper, PDF editions to share with your board and a quarterly live briefing with Francesco.</p>
+          <button class="btn btn--sun" type="button" data-reserve="Board">Become a member</button>
         </div>
       </div>
     </div>
@@ -346,8 +332,8 @@
   <section class="sec" id="plans"><div class="wrap">
     <div class="sec__head">
       <span class="eyebrow">Membership</span>
-      <h2>Four ways in. One for every depth.</h2>
-      <p>Founding members keep their price for as long as they stay.</p>
+      <h2>Three ways in.</h2>
+      <p>Founding members keep their price for as long as they stay. Every paid membership can be invoiced to you or to your organisation.</p>
     </div>
     <div class="bill" role="group" aria-label="Billing">
       <button type="button" data-bill="m" aria-pressed="true">Monthly</button>
@@ -355,62 +341,55 @@
     </div>
     <div class="plans">
       <article class="plan">
-        <h3>Signal</h3><div class="plan__depth">1 minute</div>
+        <h3>Signal</h3><div class="plan__depth">The one-minute signal</div>
         <div class="plan__price">€0</div><div class="plan__note">Always free</div>
         <ul>
           <li>The one-minute signal of every note</li>
           <li>Five to six key points, every morning</li>
           <li>The public Velocity Dashboard</li>
-          <li>One full note a week</li>
+          <li>GVI: the top 5</li>
         </ul>
         <a class="btn btn--ghost" href="/velocityedge/#go-subscribe">Subscribe free</a>
       </article>
       <article class="plan">
-        <h3>Individual</h3><div class="plan__depth">5 minutes</div>
+        <h3>Individual</h3><div class="plan__depth">The daily notes</div>
         <div class="plan__price" data-m="€16" data-y="€160">€16<small>/ month</small></div><div class="plan__note" data-m="" data-y="€160 billed yearly"></div>
         <ul>
           <li class="plus">Everything in Signal</li>
-          <li>Every daily note in full: Morning Brief, Midday Pulse, The Close</li>
-          <li>The full archive of notes</li>
+          <li>Morning Brief, Midday Pulse and The Close in full, every day</li>
+          <li>The full archive of the daily notes</li>
           <li>EN · ES · IT</li>
+          <li>Invoice to you or to your organisation</li>
         </ul>
         <button class="btn btn--ghost" type="button" data-reserve="Individual">Reserve a founding place</button>
       </article>
       <article class="plan plan--hot">
-        <span class="plan__badge">Most chosen</span>
-        <h3>Professional</h3><div class="plan__depth">10 minutes</div>
-        <div class="plan__price" data-m="€30" data-y="€300">€30<small>/ month</small></div><div class="plan__note" data-m="" data-y="€300 billed yearly"></div>
-        <ul>
-          <li class="plus">Everything in Individual</li>
-          <li>Every In Focus deep reading</li>
-          <li>The Week Ahead, every Sunday</li>
-          <li>GVI rankings and the full Velocity Dashboard</li>
-          <li>Sector watches: AI, central banks, European banking</li>
-        </ul>
-        <button class="btn" type="button" data-reserve="Professional">Reserve a founding place</button>
-      </article>
-      <article class="plan">
-        <h3>Executive</h3><div class="plan__depth">50 minutes</div>
+        <span class="plan__badge">The full edge</span>
+        <h3>Board</h3><div class="plan__depth">Everything, with the method</div>
         <div class="plan__price" data-m="€50" data-y="€500">€50<small>/ month</small></div><div class="plan__note" data-m="" data-y="€500 billed yearly"></div>
         <ul>
-          <li class="plus">Everything in Professional</li>
-          <li>The monthly full paper, with method and data</li>
-          <li>PDF editions to share with your board</li>
+          <li class="plus">Everything in Individual</li>
+          <li>Every In Focus note in full</li>
+          <li>The Week Ahead, every Sunday</li>
+          <li>The sector watches: Italian and European banking, U.S.–China AI, central banks</li>
+          <li>The 05:00 Newscast</li>
+          <li>The full GVI and Velocity Dashboard, with the method of the GVI and the Espresso Index</li>
+          <li>The monthly paper and PDF editions to share with your board</li>
           <li>A quarterly live briefing with Francesco</li>
         </ul>
-        <button class="btn btn--ghost" type="button" data-reserve="Executive">Reserve a founding place</button>
+        <button class="btn" type="button" data-reserve="Board">Reserve a founding place</button>
       </article>
     </div>
     <div class="inst">
-      <div><span class="eyebrow" style="color:var(--sun)">Institutional</span><h3 style="margin-top:12px">For banks, funds, boards and governments.</h3>
-        <p>The full research, commissioned on your questions, for your whole team.</p></div>
+      <div><span class="eyebrow" style="color:var(--sun)">Team licence</span><h3 style="margin-top:12px">Board for your whole leadership team.</h3>
+        <p>Your organisation buys the seats, with one annual invoice. For banks, funds, corporates and public institutions.</p></div>
       <ul>
-        <li>Papers on your own questions</li>
-        <li>1:1 briefings with Francesco De Leo Kaufmann</li>
-        <li>Custom indicators and GVI country cuts</li>
-        <li>Seats for the whole leadership team</li>
+        <li>Board membership for every seat</li>
+        <li>One annual invoice to your organisation</li>
+        <li>Seats added during the year</li>
+        <li>A question of your own? It starts with an <a href="/#contact">Executive Briefing</a></li>
       </ul>
-      <button class="btn btn--sun" type="button" data-reserve="Institutional">Request a proposal</button>
+      <button class="btn btn--sun" type="button" data-reserve="Team licence">Request a proposal</button>
     </div>
   </div></section>
 
@@ -419,52 +398,52 @@
     <div class="sec__head">
       <span class="eyebrow">What is free, what is membership</span>
       <h2>The signal builds the habit. The depth is the product.</h2>
-      <p>Notes signed by Francesco stay visible to everyone at one minute. The reasoning, the indicators and the method sit behind the line.</p>
+      <p>Notes signed by Francesco stay visible to everyone at one minute. The daily reasoning is Individual. The deep readings, the indices and the method are Board.</p>
     </div>
     <div class="wall-scroll"><table class="wall">
-      <thead><tr><th scope="col">What you get</th><th scope="col">Signal</th><th scope="col">Individual</th><th scope="col">Professional</th><th scope="col">Executive</th><th scope="col">Institutional</th></tr></thead>
+      <thead><tr><th scope="col">What you get</th><th scope="col">Signal</th><th scope="col">Individual</th><th scope="col">Board</th></tr></thead>
       <tbody>
-        <tr class="grp"><td colspan="6">The Daily</td></tr>
-        <tr><td>One-minute signal of every note</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>Morning Brief · Midday Pulse · The Close, in full</td><td class="lim">1 a week</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>In Focus deep readings</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>The Week Ahead</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr class="grp"><td colspan="6">Indicators</td></tr>
-        <tr><td>Public Velocity Dashboard (markets, live)</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>GVI rankings, history and country detail</td><td class="lim">Top 5</td><td class="lim">Top 5</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>Methodology paper of the indices</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>Custom indicators and country cuts</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
-        <tr class="grp"><td colspan="6">Depth and access</td></tr>
-        <tr><td>Monthly full paper (PDF)</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td>Live briefing with Francesco</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="lim">Quarterly</td><td class="lim">1:1</td></tr>
-        <tr><td>Papers commissioned on your questions</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
-        <tr><td>Seats</td><td>1</td><td>1</td><td>1</td><td>1</td><td class="lim">Team</td></tr>
+        <tr class="grp"><td colspan="4">The Daily</td></tr>
+        <tr><td>One-minute signal of every note</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Morning Brief · Midday Pulse · The Close, in full</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>In Focus, in full</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr><td>The Week Ahead</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr><td>Sector watches</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr><td>05:00 Newscast</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr class="grp"><td colspan="4">Indices</td></tr>
+        <tr><td>Public Velocity Dashboard (markets, live)</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>GVI rankings, history and country detail</td><td class="lim">Top 5</td><td class="lim">Top 5</td><td class="y">✓</td></tr>
+        <tr><td>Method of the GVI and the Espresso Index</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr class="grp"><td colspan="4">Depth and access</td></tr>
+        <tr><td>Monthly paper and PDF editions for your board</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+        <tr><td>Live briefing with Francesco</td><td class="n">—</td><td class="n">—</td><td class="lim">Quarterly</td></tr>
+        <tr class="grp"><td colspan="4">How to buy</td></tr>
+        <tr><td>Personal subscription</td><td class="lim">Free</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Invoice to your organisation</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td>Team licence: seats for your leadership team</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
       </tbody>
     </table></div>
   </div></section>
 
-  <!-- THE DAILY GRID -->
+  <!-- THE SIX BRIEFINGS -->
   <section class="sec" id="grid"><div class="wrap">
     <div class="sec__head">
-      <span class="eyebrow">The daily grid</span>
-      <h2>From the 05:00 newscast to the close: one product line.</h2>
-      <p>What Francesco already produces every day, grouped into packages each membership unlocks.</p>
+      <span class="eyebrow">The Daily</span>
+      <h2>Six briefings, from the morning to Sunday.</h2>
+      <p>What Francesco already writes every day, and the membership that opens each one in full.</p>
     </div>
     <ol class="grid-day">
-      <li style="--c:var(--glacier)"><time>05:00</time><div><b>Newscast</b><p>What happened overnight, before markets open.</p></div><span class="pk" style="color:var(--green)">Signal</span></li>
-      <li style="--c:var(--sun)"><time>07:00</time><div><b>Morning Brief</b><p>The day’s thesis, the numbers and what to watch.</p></div><span class="pk" style="color:var(--glacier)">Daily Pack</span></li>
-      <li style="--c:var(--sky)"><time>Morning</time><div><b>Sector watches</b><p>Italian and European banking · U.S.–China AI Watch · Central Banks AI Watch.</p></div><span class="pk" style="color:var(--sky)">Sector Pack</span></li>
-      <li style="--c:#f7d046"><time>12:00</time><div><b>Midday Pulse</b><p>What moved in the morning session and why.</p></div><span class="pk" style="color:var(--glacier)">Daily Pack</span></li>
-      <li style="--c:#7c8bff"><time>17:00</time><div><b>In Focus</b><p>The deep reading of the day’s decisive theme.</p></div><span class="pk" style="color:var(--sky)">Deep Pack</span></li>
-      <li style="--c:var(--glacier)"><time>Daily</time><div><b>GVI · Global Velocity Index</b><p>Country, city and corporate rankings, with the daily nowcast.</p></div><span class="pk" style="color:var(--sky)">Index Pack</span></li>
-      <li style="--c:#aeb8ff"><time>Close</time><div><b>The Close</b><p>The wrap of the day for the people who move capital.</p></div><span class="pk" style="color:var(--glacier)">Daily Pack</span></li>
-      <li style="--c:var(--sun)"><time>Sunday</time><div><b>The Week Ahead</b><p>The calendar, the risks and the positioning for the week.</p></div><span class="pk" style="color:var(--sky)">Deep Pack</span></li>
+      <li style="--c:var(--sun)"><time>07:00</time><div><b>Morning Brief</b><p>The day’s thesis, the numbers and what to watch.</p></div><span class="pk" style="color:var(--glacier)">Individual</span></li>
+      <li style="--c:#f7d046"><time>12:00</time><div><b>Midday Pulse</b><p>What moved in the morning session and why.</p></div><span class="pk" style="color:var(--glacier)">Individual</span></li>
+      <li style="--c:#7c8bff"><time>17:00</time><div><b>In Focus</b><p>The deep reading of the day’s decisive theme.</p></div><span class="pk" style="color:var(--sky)">Board</span></li>
+      <li style="--c:#aeb8ff"><time>Close</time><div><b>The Close</b><p>The wrap of the day for the people who move capital.</p></div><span class="pk" style="color:var(--glacier)">Individual</span></li>
+      <li style="--c:var(--glacier)"><time>Daily</time><div><b>GVI · Global Velocity Index</b><p>Country, city and corporate rankings, with the daily nowcast.</p></div><span class="pk" style="color:var(--sky)">Board</span></li>
+      <li style="--c:var(--sun)"><time>Sunday</time><div><b>The Week Ahead</b><p>The calendar, the risks and the positioning for the week.</p></div><span class="pk" style="color:var(--sky)">Board</span></li>
     </ol>
     <div class="packs">
-      <div class="pack"><b style="color:var(--green)">Signal</b><p>The one-minute version of everything above. Free.</p></div>
-      <div class="pack"><b style="color:var(--glacier)">Daily Pack</b><p>Morning Brief, Midday Pulse and The Close in full. Individual.</p></div>
-      <div class="pack"><b style="color:var(--sky)">Sector · Deep · Index</b><p>Sector watches, In Focus, Week Ahead and GVI. Professional.</p></div>
-      <div class="pack"><b style="color:var(--sun)">Papers</b><p>The monthly paper and the method. Executive and Institutional.</p></div>
+      <div class="pack"><b style="color:var(--green)">Signal</b><p>The one-minute version of every briefing. Free.</p></div>
+      <div class="pack"><b style="color:var(--glacier)">Individual</b><p>Morning Brief, Midday Pulse and The Close in full.</p></div>
+      <div class="pack"><b style="color:var(--sky)">Board</b><p>All six briefings in full, plus the sector watches (Italian and European banking, U.S.–China AI Watch, Central Banks AI Watch) and the 05:00 Newscast.</p></div>
     </div>
   </div></section>
 
@@ -479,7 +458,11 @@
     <p>No payment today. We will write to you before launch with the founding price.</p>
     <label for="rTier">Membership</label>
     <select id="rTier" name="tier">
-      <option>Individual</option><option>Professional</option><option>Executive</option><option>Institutional</option>
+      <option>Individual</option><option>Board</option><option>Team licence</option>
+    </select>
+    <label for="rBill">Invoice to</label>
+    <select id="rBill" name="billing">
+      <option>Me</option><option>My organisation</option>
     </select>
     <label for="rName">Name</label>
     <input id="rName" name="name" autocomplete="name" required />
@@ -546,7 +529,7 @@
     if (!name || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) { msg.style.color = '#ff8a80'; msg.textContent = 'Please add your name and a valid email.'; return; }
     send.disabled = true; msg.style.color = 'var(--soft)'; msg.textContent = 'Sending…';
     fetch('https://formsubmit.co/ajax/' + INBOX, { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-      body: JSON.stringify({ name: name, email: email, organisation: form.org.value.trim(), membership: form.tier.value, page: location.href,
+      body: JSON.stringify({ name: name, email: email, organisation: form.org.value.trim(), membership: form.tier.value, invoice_to: form.billing.value, page: location.href,
         _subject: 'Founding membership request — ' + form.tier.value, _replyto: email, _template: 'table', _captcha: 'false' }) })
       .then(function (r) { return r.json().catch(function () { return {}; }); })
       .then(function (j) {
