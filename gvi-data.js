@@ -160,7 +160,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-2026-11-09",
       "the-intelligence-trade-paradox",
       "gvi-corporate-benchmark-2026-11-10",
-      "the-cost-of-compute-repriced"
+      "the-cost-of-compute-repriced",
+      "gvi-corporate-benchmark-2026-11-11"
     ]
   },
   "daily": {
@@ -3440,6 +3441,12 @@ window.GVI_DATA = {
         "value": "$846m",
         "delta": null,
         "trend": "up"
+      },
+      {
+        "label": "TSMC Oct revenue",
+        "value": "NT$586.89bn",
+        "delta": "+59.7% YoY",
+        "trend": "up"
       }
     ],
     "source": {
@@ -3454,6 +3461,12 @@ window.GVI_DATA = {
         "url": "/the-cost-of-compute-repriced",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard, carried forward unchanged, as financing and energy costs reprice AI returns."
+      },
+      {
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-11",
+        "slot": "Midday Pulse",
+        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; Volkswagen 61.3 trails the laggards."
       }
     ]
   },
@@ -3559,16 +3572,16 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-10",
+    "asOf": "2026-11-11",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
         "rank": 1,
         "name": "TSMC",
-        "score": 99.7,
-        "delta": 0,
-        "trend": "flat",
-        "note": "Q3 revenue +50.9% y/y, operating margin 58.7%; October sales due next."
+        "score": 99.8,
+        "delta": 0.1,
+        "trend": "up",
+        "note": "Upgraded from a provisional 99.7 on stronger commercialization and capital-formation evidence."
       },
       {
         "rank": 2,
@@ -3576,7 +3589,7 @@ window.GVI_DATA = {
         "score": 99.4,
         "delta": 0,
         "trend": "flat",
-        "note": "Quarterly revenue $92.3B (+19%), operating income $45.9B (+21%)."
+        "note": null
       },
       {
         "rank": 3,
@@ -3584,7 +3597,7 @@ window.GVI_DATA = {
         "score": 99,
         "delta": 0,
         "trend": "flat",
-        "note": "Q3 revenue €11.46B (+16.9% organic); raised annual targets."
+        "note": null
       },
       {
         "rank": 4,
@@ -3600,7 +3613,7 @@ window.GVI_DATA = {
         "score": 98.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Score held pending verified developments; governance risk elevated."
+        "note": "Score maintained pending verified findings on the allegations; the board is investigating."
       },
       {
         "rank": 6,
@@ -3672,9 +3685,9 @@ window.GVI_DATA = {
         "rank": 4,
         "name": "Skydance",
         "score": 66.6,
-        "delta": -0.2,
-        "trend": "down",
-        "note": "Downgraded: ~$87B gross debt against $10B cash after the WBD close."
+        "delta": 0,
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 5,
@@ -3728,9 +3741,9 @@ window.GVI_DATA = {
     "pillars": [],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-10",
-      "date": "2026-11-10",
-      "slot": "GVI"
+      "url": "/gvi-corporate-benchmark-2026-11-11",
+      "date": "2026-11-11",
+      "slot": "Midday Pulse"
     }
   },
   "indices": {

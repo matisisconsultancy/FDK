@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-11",
+    title: "GVI Corporate Benchmark",
+    excerpt: "AI demand is accelerating while financing costs rebuild the competitive hierarchy of the Next Economy.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "4 min read",
+    time: "13:36",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-11-2",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Siemens Energy banks record cash while CoreWeave scales on debt — the Great Split turns financial.",
