@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cost-of-compute-repriced",
+    title: "The Cost of Compute, Repriced",
+    excerpt: "US inflation, CoreWeave's financing burden and Europe's electricity constraints redefine the AI investment test.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "12:44",
+    kind: "day"
+  },
+  {
     url: "/the-ai-inflation-credit-squeeze",
     title: "The AI Inflation: Credit Squeeze",
     excerpt: "AI capital formation now drives inflation, strains financing and tests the transition from infrastructure spending to Industrial AI productivity.",

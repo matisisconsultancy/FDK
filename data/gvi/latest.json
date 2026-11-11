@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-10",
+    "updated": "2026-11-11",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -155,34 +155,35 @@
       "the-great-margin-squeeze",
       "gvi-corporate-benchmark-2026-11-09",
       "the-intelligence-trade-paradox",
-      "gvi-corporate-benchmark-2026-11-10"
+      "gvi-corporate-benchmark-2026-11-10",
+      "the-cost-of-compute-repriced"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
-      "score": 108,
+      "score": null,
       "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Intelligence Trade Paradox",
-        "url": "/the-intelligence-trade-paradox",
-        "date": "2026-11-10",
+        "title": "The Cost of Compute, Repriced",
+        "url": "/the-cost-of-compute-repriced",
+        "date": "2026-11-11",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-10",
+      "asOf": "2026-11-11",
       "source": {
-        "title": "The Intelligence Trade Paradox",
-        "url": "/the-intelligence-trade-paradox",
-        "date": "2026-11-10",
+        "title": "The Cost of Compute, Repriced",
+        "url": "/the-cost-of-compute-repriced",
+        "date": "2026-11-11",
         "slot": "GVI"
       },
       "rows": [
@@ -193,7 +194,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong infrastructure; rising security-policy risk",
+          "tag": "Negative financing pressure; positive AI demand",
           "spark": [
             94,
             94,
@@ -234,8 +235,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive exports; increasing international trade exposure",
+          "tag": "Previous strong trade and mixed industrial assessment retained",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -273,8 +275,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Strong semiconductor capabilities; strategic supply-chain sensitivity",
+          "tag": "Positive semiconductor fundamentals; financial sensitivity",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -312,8 +315,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous structural assessment retained",
+          "tag": "Negative external-balance signal",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -351,8 +355,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial recovery remains uneven",
+          "tag": "Negative electricity-cost and flexibility pressure",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -390,8 +395,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous financing assessment retained",
+          "tag": "Previous restrictive financing assessment retained",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -429,8 +435,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign financing vulnerability",
+          "tag": "Sovereign financing sensitivity retained",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -468,8 +475,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "No qualifying new structural observation",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -507,8 +515,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "European energy-market exposure",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -546,8 +555,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous positive industrial assessment retained",
+          "tag": "Industrial strength; hydropower-system sensitivity",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -585,8 +595,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative — latest annual services-output observation",
+          "tag": "Previous assessment retained",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -624,8 +635,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Lower international oil-price environment",
+          "tag": "Hydrological constraints; structural energy strengths",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -692,6 +704,7 @@
             75,
             75,
             75,
+            75,
             75
           ]
         },
@@ -702,8 +715,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Central European electricity-system exposure",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -741,8 +755,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative — latest annual services-output observation",
+          "tag": "Previous industrial and financing assessment retained",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3391,62 +3406,50 @@
     }
   },
   "today": {
-    "date": "2026-11-10",
-    "edition": "Global Velocity",
-    "thesis": "The Intelligence Trade Paradox",
-    "subtitle": "The AI Supercycle is making the world more technologically interconnected — and more strategically contested.",
-    "standfirst": "Intelligence creates the opportunity. Strategic resilience protects it. Capital productivity determines its value.",
+    "date": "2026-11-11",
+    "edition": "GVI · Global Velocity",
+    "thesis": "The Cost of Compute, Repriced",
+    "subtitle": "The AI Supercycle enters a more demanding financial phase, where financing and energy costs — not demand — now define returns.",
+    "standfirst": "Technological acceleration creates the opportunity. Capital productivity determines its financial value.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "China Oct exports YoY",
-        "value": "+35.2%",
+        "label": "US October CPI",
+        "value": "+0.4%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "China surplus Jan–Oct",
-        "value": "$1.04tn",
-        "delta": null,
+        "label": "US 10-year yield",
+        "value": "4.988%",
+        "delta": "+12.55 bp",
         "trend": "up"
       },
       {
-        "label": "Nvidia, Nov 9",
-        "value": "−4.3%",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "Brent crude",
-        "value": "$92.57",
-        "delta": "−5.8%",
-        "trend": "down"
-      },
-      {
-        "label": "GVI headline (provisional)",
-        "value": "108.0",
+        "label": "CoreWeave backlog",
+        "value": "$132.5bn",
         "delta": null,
         "trend": "flat"
+      },
+      {
+        "label": "CoreWeave Q3 net interest expense",
+        "value": "$846m",
+        "delta": null,
+        "trend": "up"
       }
     ],
     "source": {
-      "title": "The Intelligence Trade Paradox",
-      "url": "/the-intelligence-trade-paradox",
-      "date": "2026-11-10",
+      "title": "The Cost of Compute, Repriced",
+      "url": "/the-cost-of-compute-repriced",
+      "date": "2026-11-11",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Intelligence Trade Paradox",
-        "url": "/the-intelligence-trade-paradox",
+        "title": "The Cost of Compute, Repriced",
+        "url": "/the-cost-of-compute-repriced",
         "slot": "GVI",
-        "headline": "China's record export surplus, Nvidia's security shock and falling Brent crude reprice the AI cycle; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional carried-forward country scores."
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-10",
-        "slot": "GVI",
-        "headline": "TSMC 99.7, Microsoft 99.4 and Schneider Electric 99.0 lead; Skydance is downgraded 0.2 to 66.6."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the provisional scorecard, carried forward unchanged, as financing and energy costs reprice AI returns."
       }
     ]
   },
