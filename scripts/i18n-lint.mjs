@@ -44,6 +44,23 @@ const HOUSE = {
 
 const tags = (s) => (s.match(/<[^>]+>/g) || []).sort().join("");
 
+/* Terms whose right translation depends on the English source:
+   [English pattern, wrong rendering, what to use]. */
+const KEYED = {
+  es: [
+    [/repric/i, /revaloriz/i, "reajuste/reajustar for repricing — revalorización means a rise in value"],
+    [/tariff/i, /\btarifas?\b/i, "aranceles for trade tariffs"],
+    [/data[- ]cent/i, /data cent/i, "centros de datos"],
+    [/policy rates?/i, /tipos? de referencia|tasas? de pol[ií]tica/i, "tipo oficial"],
+  ],
+  it: [
+    [/repric/i, /rivalut/i, "riprezzamento/riprezzare for repricing — rivalutazione means a rise in value"],
+    [/tariff/i, /\btariff/i, "dazi for trade tariffs"],
+    [/policy rates?/i, /tass[oi] (di policy|ufficial)/i, "tasso di riferimento"],
+  ],
+};
+const ABBR = [/\bbps?\b/, "pb for basis points"];
+
 let bad = 0;
 for (const lang of ["es", "it"]) {
   const dict = read(`data/i18n/${lang}.json`);
@@ -51,6 +68,9 @@ for (const lang of ["es", "it"]) {
   for (const [k, v] of Object.entries(dict)) {
     if (tags(k) !== tags(v))
       problems.push([`markup`, k, `${tags(k) || "(none)"} → ${tags(v) || "(none)"}`]);
+    for (const [kre, vre, fix] of KEYED[lang])
+      if (kre.test(k) && vre.test(v)) problems.push([`term`, k, `use ${fix}`]);
+    if (ABBR[0].test(v)) problems.push([`term`, k, `use ${ABBR[1]}`]);
     for (const [pattern, fix] of HOUSE[lang]) {
       const hit = typeof pattern === "string" ? v.includes(pattern) : pattern.test(v);
       if (hit) problems.push([`wording`, k, `use ${fix}`]);

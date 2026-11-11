@@ -86,6 +86,13 @@ Rules:
 - Keep in English: The Velocity Edge, FDK, FDK EmpowerNet, Global Velocity Index, GVI, company and product names, tickers, people, and index names (S&P 500, Euro Stoxx 50…).
 - "Velocity" as a plain word is "velocidad" / "velocità"; it stays English only inside "The Velocity Edge" and "Global Velocity Index".
 - In Italian, a "library" is "biblioteca" (never "libreria"); "Breaking" is "Ultim'ora".
+- House terminology (use these, never the alternatives):
+  · repricing / reprice → es "reajuste" / "reajustar (el precio de)" — never "revalorización", which means a rise in value; it "riprezzamento" / "riprezzare" — never "rivalutazione".
+  · bond yield → es "rentabilidad" (not "rendimiento"); it "rendimento".
+  · central-bank policy rate → es "tipo oficial"; it "tasso di riferimento".
+  · trade tariffs → es "aranceles" (never "tarifas"); it "dazi" (never "tariffe").
+  · data centers → es "centros de datos"; it "data center". Basis points → "pb" in both.
+- Italian addresses the reader with "voi" ("il vostro consiglio", "vi serve"); never "tu" or "Lei" in sentences. Short single-verb buttons keep the usual web imperative ("Leggi", "Iscriviti").
 - Fixed terms used across the site:
 ${GLOSSARY}
 - A string that is only a proper noun, a ticker or a figure is returned unchanged.
