@@ -55,6 +55,34 @@ for (const p of pages) {
 const META_BLOCK = /\n?[ \t]*<!-- SEO-META[\s\S]*?<!-- \/SEO-META -->/;
 const posts = (() => { const w = {}; try { new Function("window", fs.readFileSync(path.join(ROOT, "posts.js"), "utf8"))(w); } catch {} return w.FDK_POSTS || []; })();
 const postByUrl = new Map(posts.map((p) => [`${BASE}${p.url.replace(/\/?$/, "/")}`, p]));
+
+/* ---- de-duplicate recurring-series titles ------------------------------
+   Daily/twice-daily editions share a brand title ("GVI Daily Update", …).
+   Identical <title>s hurt SEO (Google collapses them), so any title used by
+   more than one indexable note gets a unique, human-readable suffix built
+   from the edition's slot + date (then time, then a counter as fallbacks).
+   Derived from posts.js (the clean title), so it is fully idempotent. */
+const displayByUrl = new Map();
+{
+  const count = {};
+  const postPages = pages.filter((p) => indexable.has(p.url) && postByUrl.has(p.url));
+  for (const p of postPages) { const t = postByUrl.get(p.url).title; count[t] = (count[t] || 0) + 1; }
+  const groups = {};
+  for (const p of postPages) { const t = postByUrl.get(p.url).title; if (count[t] > 1) (groups[t] = groups[t] || []).push(p); }
+  for (const [base, ps] of Object.entries(groups)) {
+    const used = new Set();
+    for (const p of ps) {
+      const post = postByUrl.get(p.url);
+      const ds = [post.slot, post.date].filter(Boolean).join(", ");
+      let label = ds ? `${base} — ${ds}` : base;
+      if (used.has(label) && post.time) label += ` · ${post.time}`;
+      let n = 2; const b2 = label;
+      while (used.has(label)) label = `${b2} (${n++})`;
+      used.add(label);
+      displayByUrl.set(p.url, label);
+    }
+  }
+}
 const BOOKS = {
   "the-rise-of-velocity": "the-rise-of-velocity-cover.jpg",
   "the-age-of-intelligent-motion": "the-age-of-intelligent-motion-cover.jpg",
@@ -77,6 +105,7 @@ function metaBlock(url, head) {
   const desc = unattr((head.match(/<meta name="description" content="([^"]*)"/) || [])[1] || "").trim();
   const slug = url.slice(BASE.length + 1).replace(/\/$/, "");
   const post = postByUrl.get(url);
+  const dt = post ? (displayByUrl.get(url) || post.title) : title;
   let image = `${BASE}/assets/fdk-lobby.jpg`, type = "website", ld = null;
   const extra = [];
   if (post) {
@@ -86,7 +115,7 @@ function metaBlock(url, head) {
     const when = madridIso(post.date, post.time);
     if (when) extra.push(["property", "article:published_time", when]);
     extra.push(["property", "article:author", AUTHOR.name], ["property", "article:section", post.slot || "The Velocity Edge"]);
-    ld = { "@context": "https://schema.org", "@type": "Article", headline: post.title, description: desc || post.excerpt, image: [image],
+    ld = { "@context": "https://schema.org", "@type": "Article", headline: dt, description: desc || post.excerpt, image: [image],
       datePublished: when || undefined, author: AUTHOR, publisher: ORG, mainEntityOfPage: url, inLanguage: "en",
       isPartOf: { "@type": "Periodical", name: "The Velocity Edge", url: `${BASE}/velocityedge/` } };
   } else if (BOOKS[slug]) {
@@ -100,10 +129,10 @@ function metaBlock(url, head) {
     ld = { "@context": "https://schema.org", "@type": "ProfilePage", url, mainEntity: { ...AUTHOR, image: `${BASE}/assets/fdk-founder.jpg`, worksFor: ORG } };
   }
   const tags = [
-    ["property", "og:site_name", "FDK EmpowerNet"], ["property", "og:type", type], ["property", "og:title", post ? post.title : title],
+    ["property", "og:site_name", "FDK EmpowerNet"], ["property", "og:type", type], ["property", "og:title", dt],
     ["property", "og:description", desc], ["property", "og:url", url], ["property", "og:image", image],
     ...extra,
-    ["name", "twitter:card", "summary_large_image"], ["name", "twitter:title", post ? post.title : title],
+    ["name", "twitter:card", "summary_large_image"], ["name", "twitter:title", dt],
     ["name", "twitter:description", desc], ["name", "twitter:image", image],
   ].filter(([k, n, v]) => v && !new RegExp(`${k}=["']${n.replace(/[:.]/g, "\\$&")}["']`).test(head));
   const lines = tags.map(([k, n, v]) => `  <meta ${k}="${n}" content="${attr(v)}" />`);
@@ -117,7 +146,9 @@ for (const p of pages) {
   const bare = html.replace(META_BLOCK, "");
   const head = bare.slice(0, bare.indexOf("</head>"));
   const block = metaBlock(p.url, head);
-  const out = bare.replace(/(<link rel="canonical"[^>]*>)/, (m) => m + block);
+  let out = bare.replace(/(<link rel="canonical"[^>]*>)/, (m) => m + block);
+  const dt = displayByUrl.get(p.url);
+  if (dt) out = out.replace(/<title>[\s\S]*?<\/title>/, `<title>${attr(dt)} · The Velocity Edge · FDK EmpowerNet</title>`);
   if (out === html) continue;
   report.meta.push(p.url);
   if (!CHECK) fs.writeFileSync(p.file, out);
