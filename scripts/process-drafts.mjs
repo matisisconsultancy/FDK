@@ -133,6 +133,14 @@ function looksJunkTitle(title) {
   if (/^['’‘`"“”«»]/.test(t)) return "title starts with a quote or apostrophe";
   if (/^(the\s+)?(morning\s+(brief|view|note)|midday(\s+pulse)?|the\s+close|(the\s+)?week\s+ahead|in\s+focus|gvi)$/i.test(t)) return "edition name as title";
   if (/prueba de que est[aá] funcionando|funcionando el publicador/i.test(t)) return "test note";
+  // Assistant / editorial meta-commentary that leaked from the drafting tool —
+  // never an article title ("I'd Make the Thesis…", "Resolved. I Standardized…",
+  // "I've Made the Five Signals…", "Here's the revised…", "Sure, here is…").
+  if (/^(i['’](d|ve|ll|m)\b|i\s+(have|would|think|believe|can(not|['’]t)?|made|standardi[sz]ed|suggest|recommend|propose|agree|changed|updated|revised)\b|let['’]?s\b|let me\b|here['’]?s\b|here (is|are)\b|sure[\s,.:!]|certainly\b|of course\b|resolved[\s,.:]|done[\s,.:!]|understood\b|absolutely[\s,.:!]|as (requested|you asked|an ai)\b|to (summari[sz]e|clarify|recap)\b|in summary\b|below (is|are)\b|the following\b|great question\b|thank(s| you)\b|note:|draft:|revis(ed|ion):|updated:)/i.test(t)) return "assistant/editorial text as title";
+  // Truncated first word — leading letters dropped on publish ("Nvestor
+  // Allocation…", "Porate Benchmark…"). Heuristic blocklist of common finance
+  // words missing their first letter(s); upstream (the bot) is the real fix.
+  if (/^(nvestor|orporate|porate|ompany|conomy|echnology|overnment|nflation|arket|apital|nalysis|trategy|olicy|iquidity|aluation|nfrastructure|roductivity|nvestment)\b/i.test(t)) return "truncated first word in title";
   return null;
 }
 
