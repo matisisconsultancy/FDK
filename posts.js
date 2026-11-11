@@ -583,18 +583,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/gvi-corporate-benchmark-the-capital-option-2026-11-08",
-    title: "GVI Corporate Benchmark the Capital Option",
-    excerpt: "As capital turns selective, the next alpha cycle may hinge on which balance sheets can accelerate when rivals must retreat.",
-    tag: "GVI · Capital",
-    slot: "GVI",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "November 8, 2026",
-    read: "4 min read",
-    time: "07:39",
-    kind: "day"
-  },
-  {
     url: "/gvi-corporate-benchmark-the-capital-option",
     title: "GVI Corporate Benchmark the Capital Option",
     excerpt: "Capital is turning selective just as demand for technological investment keeps expanding — redrawing the hierarchy of corporate leadership.",
@@ -916,18 +904,6 @@ window.FDK_POSTS = [
     date: "November 6, 2026",
     read: "5 min read",
     time: "10:51",
-    kind: "day"
-  },
-  {
-    url: "/daily-intelligence-brief-the-permission-premium-2026-11-06",
-    title: "Daily Intelligence Brief the Permission Premium",
-    excerpt: "Markets erased $3T as Google, IREN and US productivity data show the AI cycle hasn't stopped — only its constraints have changed.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
-    date: "November 6, 2026",
-    read: "5 min read",
-    time: "10:19",
     kind: "day"
   },
   {
@@ -1876,18 +1852,6 @@ window.FDK_POSTS = [
     date: "October 31, 2026",
     read: "8 min read",
     time: "10:38",
-    kind: "day"
-  },
-  {
-    url: "/the-time-value-of-power-2026-10-31",
-    title: "The Time Value of Power",
-    excerpt: "Capital has not stopped financing AI — it has become selective about the balance sheets through which it flows.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
-    date: "October 31, 2026",
-    read: "3 min read",
-    time: "09:37",
     kind: "day"
   },
   {
@@ -7675,6 +7639,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
