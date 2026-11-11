@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-11",
+    title: "Daily Intelligence Brief",
+    excerpt: "The AI Supercycle is entering a phase of financial differentiation, where demand can be strong while returns on capital stay weak.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "08:53",
+    kind: "day"
+  },
+  {
     url: "/the-five-percent-wall",
     title: "The Five-percent Wall",
     excerpt: "A five-percent Treasury is forcing the AI Supercycle to prove it can earn more than the capital required to build it.",
