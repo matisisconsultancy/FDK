@@ -86,6 +86,8 @@ Precios y condiciones cambian a menudo: verifíquelos en el momento de contratar
 
 ### Grabación de entrenamiento (de esto depende la calidad)
 
+Texto listo para leer, en EN/ES/IT: **`data/avatar/training-recording.md`**.
+
 - 5–10 minutos de Francesco hablando a cámara, en el mismo sitio y con la misma ropa.
 - Luz frontal suave, fondo neutro o de marca FDK (navy `#141a4e`).
 - Micrófono de solapa o de condensador, sin eco. Mejor que la cámara si hay que elegir.
