@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-11",
+    title: "Europe’s Great Fracture",
+    excerpt: "France now borrows above Italy as markets reorder eurozone sovereign risk around fiscal credibility, not inherited reputation.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "8 min read",
+    time: "14:10",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-11",
     title: "GVI Corporate Benchmark",
     excerpt: "AI demand is accelerating while financing costs rebuild the competitive hierarchy of the Next Economy.",
