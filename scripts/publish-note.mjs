@@ -26,13 +26,15 @@ const warn = (m) => console.warn("⚠ " + m);
 const ok = (m) => console.log("✓ " + m);
 
 /* ---- inline markdown -> html (trusted author input) --------------------- */
+function esc(s) { return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
 function inline(s) {
-  return s
+  // Escape HTML first so a draft body can never inject raw markup
+  // (<script>, <img onerror>, …); then apply the trusted **/==/* markup.
+  return esc(s)
     .replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>")
     .replace(/==(.+?)==/g, '<span class="hl-green">$1</span>')
     .replace(/(^|[^*])\*(?!\*)(.+?)\*(?!\*)/g, "$1<em>$2</em>");
 }
-const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 const kebab = (s) => s.toLowerCase().replace(/[’'"]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 /* ---- read current site conventions (robust to version bumps) ------------ */

@@ -36,8 +36,8 @@ function checkRows(label, rows, fields) {
     fields.forEach((f) => {
       if (r[f] === undefined) { console.warn(`  ! ${label}[${i}] missing "${f}"`); warnings++; }
     });
-    if (r.trend && !TREND.has(r.trend)) { console.warn(`  ! ${label}[${i}] bad trend "${r.trend}"`); warnings++; }
-    if (typeof r.score === "number" && (r.score < 0 || r.score > 120)) { console.warn(`  ! ${label}[${i}] score out of range: ${r.score}`); warnings++; }
+    if (r.trend && !TREND.has(r.trend)) fail(`${label}[${i}] bad trend "${r.trend}" — refusing to publish bad dashboard data`);
+    if (r.score !== undefined && (typeof r.score !== "number" || r.score < 0 || r.score > 120)) fail(`${label}[${i}] score out of range or non-numeric: ${r.score} — refusing to publish bad dashboard data`);
   });
 }
 checkRows("daily.countries", data.daily.countries.rows, ["rank", "name", "score"]);

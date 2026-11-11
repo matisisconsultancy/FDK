@@ -53,6 +53,7 @@ jobs:
       # Dashboard: their numbers are extracted into data/gvi/latest.json, linked back
       # to the note, and gvi-data.js is rebuilt. Never blocks a publish.
       - name: Feed GVI notes into the dashboard
+        id: gvi
         if: steps.process.outputs.published != '0' && steps.process.outputs.published != ''
         continue-on-error: true
         env:
@@ -76,6 +77,7 @@ jobs:
       # style (glossary, "usted", HTML kept intact) and merged into the
       # dictionaries. Never blocks a publish: a failure leaves the note in English.
       - name: Translate new strings into ES and IT
+        id: translate
         if: env.AUTO_TRANSLATE == 'true' && steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         continue-on-error: true
         env:
@@ -113,6 +115,22 @@ jobs:
       - name: Refresh canonical tags and sitemap
         if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
         run: node scripts/seo-build.mjs
+
+      # If an optional enrichment step failed, drop its partial output before
+      # staging so the commit never ships half-written data — the last good
+      # version stays and the next run regenerates it. Only generated data
+      # artifacts are reverted; note pages are never touched.
+      - name: Drop partial output from failed optional steps
+        if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''
+        run: |
+          if [ "${{ steps.gvi.outcome }}" = "failure" ]; then
+            echo "::warning title=GVI skipped::dashboard step failed — reverting data/gvi and gvi-data.js to the last good version."
+            git checkout -- data/gvi gvi-data.js 2>/dev/null || true
+          fi
+          if [ "${{ steps.translate.outcome }}" = "failure" ]; then
+            echo "::warning title=Translation skipped::translate step failed — reverting i18n/ (the note stays in English)."
+            git checkout -- i18n 2>/dev/null || true
+          fi
 
       - name: Commit and push
         if: steps.process.outputs.changed != '0' && steps.process.outputs.changed != ''

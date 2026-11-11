@@ -227,7 +227,18 @@ for (const file of pending) {
       continue;
     }
 
-    run("publish-note.mjs", [rel]);
+    try {
+      run("publish-note.mjs", [rel]);
+    } catch (e) {
+      // A hard publish failure (missing date/slot, slug already taken, …) is a
+      // structural problem with the draft, not a transient one: set it aside so
+      // it does not sit in drafts/ and get reprocessed (and re-pay the AI) on
+      // every future push.
+      setAside(file, `pubblicazione fallita (${String(e.message).slice(0, 120)})`);
+      console.warn(`⛔ set aside ${file}: publish-note failed (${e.message}) → drafts/rejected/`);
+      failed.push(file);
+      continue;
+    }
 
     // capture the slug the publisher just added (top entry of posts.js)
     const posts = fs.readFileSync(path.join(ROOT, "posts.js"), "utf8");
