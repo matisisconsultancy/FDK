@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-five-percent-wall",
+    title: "The Five-percent Wall",
+    excerpt: "A five-percent Treasury is forcing the AI Supercycle to prove it can earn more than the capital required to build it.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "08:43",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-11",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "The next market leaders will be determined by who can outrun the rising cost of capital.",
