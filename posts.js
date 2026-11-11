@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-backlog-paradox",
+    title: "The Backlog Paradox",
+    excerpt: "CoreWeave, Siemens Energy and a defense repricing expose the market's new discipline — the capacity to convert contracted demand into cash.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "4 min read",
+    time: "19:40",
+    kind: "night"
+  },
+  {
     url: "/the-price-of-intelligence-2026-11-11",
     title: "The Price of Intelligence",
     excerpt: "Anthropic asks public investors to price a business with two clocks — fast-moving customers and years-long compute commitments.",
