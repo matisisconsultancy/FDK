@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-11",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "The next market leaders will be determined by who can outrun the rising cost of capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "08:28",
+    kind: "day"
+  },
+  {
     url: "/the-intelligence-wars",
     title: "The Intelligence Wars",
     excerpt: "National security has become a cost-of-capital variable, and the AI race now runs through corporate governance, supply chains and secure computing.",
