@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-11-2",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Siemens Energy banks record cash while CoreWeave scales on debt — the Great Split turns financial.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "4 min read",
+    time: "13:12",
+    kind: "day"
+  },
+  {
     url: "/the-triple-squeeze-on-europes-banking-champions",
     title: "The Triple Squeeze on Europe’s Banking Champions",
     excerpt: "Fiscal extraction, prudential capital retention and political control are redefining the economics of European banking consolidation.",
