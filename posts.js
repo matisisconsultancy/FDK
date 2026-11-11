@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-control-gap",
+    title: "The Control Gap",
+    excerpt: "New procurement evidence shows restricted Nvidia chips reaching China — and reveals the widening cost of defending frontier leadership.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "11:44",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-11",
     title: "Daily Intelligence Brief",
     excerpt: "The AI Supercycle is entering a phase of financial differentiation, where demand can be strong while returns on capital stay weak.",
