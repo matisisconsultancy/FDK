@@ -7,6 +7,42 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-triple-squeeze-on-europes-banking-champions",
+    title: "The Triple Squeeze on Europe’s Banking Champions",
+    excerpt: "Fiscal extraction, prudential capital retention and political control are redefining the economics of European banking consolidation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "8 min read",
+    time: "12:49",
+    kind: "day"
+  },
+  {
+    url: "/the-cost-of-compute-repriced",
+    title: "The Cost of Compute, Repriced",
+    excerpt: "US inflation, CoreWeave's financing burden and Europe's electricity constraints redefine the AI investment test.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "12:44",
+    kind: "day"
+  },
+  {
+    url: "/the-ai-inflation-credit-squeeze",
+    title: "The AI Inflation: Credit Squeeze",
+    excerpt: "AI capital formation now drives inflation, strains financing and tests the transition from infrastructure spending to Industrial AI productivity.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "5 min read",
+    time: "12:32",
+    kind: "day"
+  },
+  {
     url: "/the-control-gap",
     title: "The Control Gap",
     excerpt: "New procurement evidence shows restricted Nvidia chips reaching China — and reveals the widening cost of defending frontier leadership.",
