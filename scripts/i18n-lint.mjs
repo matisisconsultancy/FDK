@@ -49,13 +49,10 @@ const tags = (s) => (s.match(/<[^>]+>/g) || []).sort().join("");
 const KEYED = {
   es: [
     [/repric/i, /revaloriz/i, "reajuste/reajustar for repricing — revalorización means a rise in value"],
-    [/tariff/i, /\btarifas?\b/i, "aranceles for trade tariffs"],
-    [/data[- ]cent/i, /data cent/i, "centros de datos"],
+    [/data[- ]cent/i, /\bdata cent/, "centros de datos (company names like Pure Data Centres stay)"],
     [/policy rates?/i, /tipos? de referencia|tasas? de pol[ií]tica/i, "tipo oficial"],
   ],
   it: [
-    [/repric/i, /rivalut/i, "riprezzamento/riprezzare for repricing — rivalutazione means a rise in value"],
-    [/tariff/i, /\btariff/i, "dazi for trade tariffs"],
     [/policy rates?/i, /tass[oi] (di policy|ufficial)/i, "tasso di riferimento"],
   ],
 };
