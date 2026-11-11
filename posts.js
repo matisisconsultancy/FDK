@@ -5131,18 +5131,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/global-take-weekend-edition",
-    title: "Global Take: Weekend Edition",
-    excerpt: "Why the AI revolution will compress the adjustment period dramatically—and concentrate financial returns even as technology diffuses faster than ever.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "October 11, 2026",
-    read: "4 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
     url: "/global-take-the-weekend-edition",
     title: "Global Take: The Weekend Edition",
     excerpt: "Why the coming deflationary boom may first trigger the most unforgiving capital repricing in a generation.",
@@ -5971,18 +5959,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/nvestor-allocation-framework",
-    title: "Nvestor Allocation Framework",
-    excerpt: "AI is becoming a financial selection mechanism — capital productivity, not capex, is now the decisive test.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "September 30, 2026",
-    read: "4 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-physical-ai-countermove",
     title: "The Physical-ai Countermove",
     excerpt: "AMD buys Fei-Fei Li's World Labs for $8.2B, pushing the AI frontier from language into robotics and Physical AI.",
@@ -6007,18 +5983,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/id-make-the-thesis-one-step-more-forceful-ai-is-already-acting-like-a-tightening-shock-through-capital-formation-while-the-easing-effect-of-productivity-remains-delayed",
-    title: "I’d Make the Thesis One Step More Forceful: AI Is Already Acting Like a Tightening Shock Through Capital Formation, While the Easing Effect of Productivity Remains Delayed.",
-    excerpt: "Three central-bank signals point to one monetary sequence — and a decisive asymmetry between tightening now and easing later.",
-    tag: "The Close · Macro",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "September 29, 2026",
-    read: "2 min read",
-    time: "21:00",
-    kind: "night"
-  },
-  {
     url: "/the-eurozone-banking-reordering",
     title: "The Eurozone Banking Reordering",
     excerpt: "The Italian banking contest is no longer about ownership — it is about who shapes European capital formation.",
@@ -6027,18 +5991,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
     date: "September 29, 2026",
     read: "5 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/porate-benchmark",
-    title: "Porate Benchmark",
-    excerpt: "With the 10-year at 5.24%, the test is no longer how much AI capital is deployed but how fast it converts into cash.",
-    tag: "Morning View · AI Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "September 29, 2026",
-    read: "7 min read",
     time: "08:00",
     kind: "day"
   },
@@ -6327,18 +6279,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
     date: "September 25, 2026",
     read: "4 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/resolved-i-standardized-every-reference-to-the-same-benchmark-the-u-s-10-year-treasury-yield-at-approximately-5-2",
-    title: "Resolved. I Standardized Every Reference to the Same Benchmark: The U.S. 10-year Treasury Yield at Approximately 5.2%.",
-    excerpt: "The FDK GVI Corporate Benchmark on why powered, commissioned capacity — not contracts — is the new premium.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "September 25, 2026",
-    read: "5 min read",
     time: "08:00",
     kind: "day"
   },
@@ -6663,18 +6603,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
     date: "September 20, 2026",
     read: "11 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/ive-made-the-five-signals-fully-symmetrical-each-now-follows-the-same-structure-what-changed-why-it-matters-decisive-implication",
-    title: "I’ve Made the Five Signals Fully Symmetrical: Each Now Follows the Same Structure: What Changed → Why It Matters → Decisive Implication.",
-    excerpt: "Who can convert technological acceleration into economic power before the surrounding system slows it down?",
-    tag: "Morning View · Macro",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "September 20, 2026",
-    read: "4 min read",
     time: "08:00",
     kind: "day"
   },
@@ -7735,6 +7663,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
