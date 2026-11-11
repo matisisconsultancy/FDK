@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-intelligence-2026-11-11",
+    title: "The Price of Intelligence",
+    excerpt: "Anthropic asks public investors to price a business with two clocks — fast-moving customers and years-long compute commitments.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 11, 2026",
+    read: "7 min read",
+    time: "19:21",
+    kind: "day"
+  },
+  {
     url: "/for-lenders-the-critical-measure-should-become-contractually-secured-megawatts-rather-than-total-announced-or-requested-megawatts",
     title: "For Lenders, the Critical Measure Should Become Contractually Secured Megawatts, Rather Than Total Announced or Requested Megawatts.",
     excerpt: "Siemens Energy converts AI demand into orders while Italy's Piedmont pipeline shows how far requested capacity sits from contractual execution.",
