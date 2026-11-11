@@ -1,0 +1,125 @@
+name: Avatar — script and video (HeyGen)
+
+# Runs the avatar pipeline of AVATAR-PLAN.md in the cloud, by hand
+# (Actions → "Avatar — script and video" → Run workflow):
+#
+#   script   write the EN/ES/IT script of a note        (needs ANTHROPIC_API_KEY)
+#   approve  record Francesco's approval of that script (no key needed)
+#   render   render the approved script with HeyGen     (needs HEYGEN_API_KEY)
+#   status   refresh the render status and collect the videos
+#   avatars  list the account's digital twins and voices (to fill data/avatar/config.json)
+#
+# Scripts and their status are committed to data/avatar/scripts/. The videos
+# themselves are NOT committed (too heavy for the site repo): they are attached
+# to the run as a downloadable artifact for 30 days, and stay in HeyGen.
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: "What to do"
+        type: choice
+        options: [script, approve, render, status, avatars]
+        default: script
+      slug:
+        description: "Note slug, e.g. the-five-percent-wall (empty = newest note, for 'script')"
+        required: false
+        default: ""
+      approver:
+        description: "approve: who approves (e.g. Francesco De Leo Kaufmann)"
+        required: false
+        default: ""
+      languages:
+        description: "render: languages, e.g. es,en (empty = config default)"
+        required: false
+        default: ""
+
+concurrency:
+  group: avatar-${{ github.ref_name }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  avatar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      HEYGEN_API_KEY: ${{ secrets.HEYGEN_API_KEY }}
+      HEYGEN_AVATAR_ID: ${{ vars.HEYGEN_AVATAR_ID }}
+      HEYGEN_VOICE_EN: ${{ vars.HEYGEN_VOICE_EN }}
+      HEYGEN_VOICE_ES: ${{ vars.HEYGEN_VOICE_ES }}
+      HEYGEN_VOICE_IT: ${{ vars.HEYGEN_VOICE_IT }}
+      AVATAR_MODEL: ${{ vars.AVATAR_MODEL }}
+      SLUG: ${{ inputs.slug }}
+      APPROVER: ${{ inputs.approver }}
+      LANGS: ${{ inputs.languages }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Write the script
+        if: inputs.action == 'script'
+        run: node scripts/avatar-script.mjs $SLUG
+
+      - name: Approve the script
+        if: inputs.action == 'approve'
+        run: |
+          [ -n "$SLUG" ] || { echo "::error::Give the note slug"; exit 1; }
+          [ -n "$APPROVER" ] || { echo "::error::Give the approver's name"; exit 1; }
+          node scripts/avatar-heygen.mjs approve "$SLUG" --by "$APPROVER"
+
+      - name: Render with HeyGen
+        if: inputs.action == 'render'
+        run: |
+          [ -n "$SLUG" ] || { echo "::error::Give the note slug"; exit 1; }
+          node scripts/avatar-heygen.mjs render "$SLUG" ${LANGS:+--lang "$LANGS"} --wait --download avatar-out
+
+      - name: Refresh status and collect videos
+        if: inputs.action == 'status'
+        run: |
+          [ -n "$SLUG" ] || { echo "::error::Give the note slug"; exit 1; }
+          node scripts/avatar-heygen.mjs status "$SLUG" --refresh --download avatar-out
+
+      - name: List avatars and voices
+        if: inputs.action == 'avatars'
+        run: |
+          echo "## Your digital twins"; node scripts/avatar-heygen.mjs avatars
+          echo; echo "## Your voices";  node scripts/avatar-heygen.mjs voices
+
+      - name: Attach the videos to this run
+        if: always() && (inputs.action == 'render' || inputs.action == 'status')
+        uses: actions/upload-artifact@v4
+        with:
+          name: avatar-${{ inputs.slug }}
+          path: avatar-out/
+          if-no-files-found: ignore
+          retention-days: 30
+
+      - name: Show the script summary
+        if: always() && inputs.slug != ''
+        run: |
+          f="data/avatar/scripts/${SLUG}.md"
+          [ -f "$f" ] && cat "$f" >> "$GITHUB_STEP_SUMMARY" || true
+
+      - name: Commit script / status
+        if: always() && inputs.action != 'avatars'
+        run: |
+          git config user.name  "velocity-edge-bot"
+          git config user.email "matisisconsultancy@gmail.com"
+          git add data/avatar
+          if git diff --cached --quiet; then echo "Nothing to commit."; exit 0; fi
+          git commit -m "Avatar: ${{ inputs.action }} ${SLUG:-newest note}"
+          for i in 1 2 3 4; do
+            git pull --rebase --autostash origin "${{ github.ref_name }}" || true
+            if git push origin "HEAD:${{ github.ref_name }}"; then exit 0; fi
+            sleep $((2 ** i))
+          done
+          echo "::error::Failed to push after 4 attempts"; exit 1

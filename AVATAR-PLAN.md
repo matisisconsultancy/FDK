@@ -13,9 +13,9 @@ Nota publicada → guion EN/ES/IT (scripts/avatar-script.mjs) → aprobación de
 
 | Fase | Qué | Duración | Estado |
 |---|---|---|---|
-| 0 · Definir | Decisiones, consentimiento, proveedor, grabación de entrenamiento | 1–2 semanas | **en curso** |
-| 1 · Piloto manual | 2–3 vídeos/semana, guion generado y vídeo montado a mano | 4–6 semanas | guion listo (`scripts/avatar-script.mjs`) |
-| 2 · Automatizar | Guion → vídeo → aprobación por Telegram → Metricool → web | 3–4 semanas | pendiente de resultados del piloto |
+| 0 · Definir | Decisiones, consentimiento, proveedor, grabación de entrenamiento | 1–2 semanas | **en curso** · proveedor elegido: **HeyGen** |
+| 1 · Piloto | 2–3 vídeos/semana: guion → aprobación → vídeo HeyGen, desde GitHub Actions | 4–6 semanas | **código listo**; falta la cuenta HeyGen y el gemelo digital. Guion piloto n.º 1 escrito |
+| 2 · Automatizar | Aprobación por Telegram → Metricool → vídeo incrustado en la web | 3–4 semanas | pendiente de resultados del piloto |
 | 3 · Avatar conversacional | "Pregunte a la tesis" en la web, basado en las notas y el libro | por definir | idea |
 
 ---
@@ -36,13 +36,44 @@ Marque cada casilla cuando esté decidida.
         sobre personas, cualquier cosa que no esté en una nota;
       - aprobación obligatoria: ningún vídeo sale sin el visto bueno de Francesco;
       - derecho a retirar el avatar y a borrar sus datos en cualquier momento.
-- [ ] **Proveedor elegido** (ver la lista de comprobación más abajo).
+- [x] **Proveedor elegido: HeyGen** (ver "Por qué HeyGen" más abajo).
 - [ ] **Grabación de entrenamiento hecha** (ver más abajo).
 
-### Elegir proveedor: comprobar antes de firmar
+### Por qué HeyGen
 
-Los candidatos habituales son HeyGen y Synthesia para el vídeo, y ElevenLabs para la
-voz. Precios y condiciones cambian a menudo: verifíquelos en el momento de contratar.
+- **API pública y documentada (v3)**, con pago por uso: se puede automatizar sin
+  contrato Enterprise. En Synthesia el acceso a la API depende del plan y las fuentes
+  no coinciden; conviene confirmarlo en su página de precios si se quiere comparar.
+- **Gemelo digital (Digital Twin)** con imagen y **voz clonada** de Francesco, usable
+  directamente desde la API (`avatar_id` + `voice_id`).
+- **Vídeo vertical 9:16, subtítulos incrustados y archivo .srt** en la misma llamada.
+- **Multilingüe**: el mismo gemelo habla EN/ES/IT con su propia voz.
+- **Seguridad de la API**: clave de idempotencia (un reintento nunca cobra dos veces)
+  y un webhook opcional al terminar.
+
+Nota técnica: HeyGen retiró las versiones v1/v2 de su API el 31 de octubre de 2026.
+`scripts/avatar-heygen.mjs` usa ya la **v3** (`POST /v3/videos`, `GET /v3/videos/{id}`).
+
+### Poner HeyGen en marcha (lo que tiene que hacer FDK)
+
+1. **Cuenta web de HeyGen** (heygen.com) a nombre de FDK. Allí se crea el gemelo:
+   *Avatars → Create → Digital Twin*. Se sube la grabación de entrenamiento (ver más
+   abajo) y Francesco graba el **vídeo de consentimiento** que pide HeyGen.
+2. **Clonar la voz** de Francesco en la misma cuenta (*Voices → Clone*), una por
+   idioma si su acento cambia entre idiomas.
+3. **Plan de API** en platform.heygen.com: es un producto aparte del plan web, con
+   saldo de pago por uso. Copiar la **API key**.
+4. En GitHub, *Settings → Secrets and variables → Actions*:
+   - Secret `HEYGEN_API_KEY` = la clave del paso 3 (**nunca** en el repositorio).
+   - `ANTHROPIC_API_KEY` ya existe (lo usa la publicación de notas).
+5. Ejecutar el workflow **"Avatar — script and video"** con la acción `avatars`.
+   Muestra el `avatar_id` del gemelo y los `voice_id`. Guardarlos como **variables**
+   del repositorio: `HEYGEN_AVATAR_ID`, `HEYGEN_VOICE_EN`, `HEYGEN_VOICE_ES`,
+   `HEYGEN_VOICE_IT` (o escribirlos en `data/avatar/config.json`).
+
+### Comprobar antes de firmar con HeyGen
+
+Precios y condiciones cambian a menudo: verifíquelos en el momento de contratar.
 
 - [ ] La imagen y la voz clonadas **son propiedad de FDK/Francesco** y no se usan para
       entrenar otros modelos.
@@ -115,12 +146,49 @@ Arriba del `.md` aparecen avisos (**⚠ Check before recording**) si:
 - el español parece usar *tú*;
 - aparece una cifra que no está en la nota.
 
-### 2. Aprobar, grabar y publicar
+### 2. Aprobar, generar el vídeo y publicar (en la nube, con GitHub Actions)
 
-1. Francesco lee el `.md`, corrige y aprueba.
-2. Pegar el guion en el proveedor de avatar y generar el vídeo vertical con subtítulos.
-3. Añadir en pantalla la línea de transparencia y los tres títulos.
-4. Programar en LinkedIn y YouTube Shorts con Metricool, con el texto del `.md`.
+Todo se lanza desde *Actions → "Avatar — script and video" → Run workflow*:
+
+| Acción | Qué hace | Campos |
+|---|---|---|
+| `script` | Escribe el guion EN/ES/IT de la nota y lo guarda en `data/avatar/scripts/` | `slug` (vacío = la nota más reciente) |
+| `approve` | Registra la aprobación de Francesco | `slug`, `approver` |
+| `render` | Genera los vídeos con HeyGen, espera a que terminen y los adjunta al run | `slug`, `languages` (opcional) |
+| `status` | Vuelve a consultar HeyGen y descarga los vídeos | `slug` |
+| `avatars` | Lista gemelos digitales y voces de la cuenta | — |
+
+Reglas que el código hace cumplir:
+- **Sin aprobación, no hay vídeo.** `render` se niega si el guion no está aprobado.
+- **Si se edita el guion después de aprobarlo, la aprobación caduca.** Se guarda una
+  huella del texto aprobado.
+- **No se aprueba un guion con avisos** (cifra que no está en la nota, *tú*, duración)
+  salvo que se fuerce a propósito.
+- **Un reintento nunca cobra dos veces** el mismo vídeo (clave de idempotencia).
+
+Los vídeos (`.mp4` normal, `.mp4` con subtítulos y `.srt`) quedan adjuntos al run
+durante 30 días y siguen en la cuenta de HeyGen. **No se suben al repositorio**, que
+es la web.
+
+Después:
+1. Descargar el `.mp4` con subtítulos del run.
+2. Programarlo en LinkedIn y YouTube Shorts con Metricool, con el texto del `.md`.
+   El texto ya incluye la línea de transparencia.
+
+Para trabajar en local, los mismos pasos:
+
+```bash
+node scripts/avatar-heygen.mjs avatars                       # gemelos digitales
+node scripts/avatar-heygen.mjs voices                        # voces clonadas
+node scripts/avatar-heygen.mjs approve the-five-percent-wall --by "Francesco De Leo Kaufmann"
+node scripts/avatar-heygen.mjs render the-five-percent-wall --lang es,en --wait --download avatar-out
+node scripts/avatar-script.mjs the-five-percent-wall --recheck   # tras editar un guion a mano
+```
+
+### Guion piloto n.º 1
+
+`data/avatar/scripts/the-five-percent-wall.md`: nota *The Five-percent Wall* del
+11 de noviembre, en EN/ES/IT, sin avisos. **Pendiente de la revisión de Francesco.**
 
 ### Calendario propuesto
 

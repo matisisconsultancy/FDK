@@ -15,6 +15,7 @@
      ANTHROPIC_API_KEY=… node scripts/avatar-script.mjs                 # newest note
      ANTHROPIC_API_KEY=… node scripts/avatar-script.mjs <slug>          # a given note
      node scripts/avatar-script.mjs <slug> --dry-run                    # show the input only
+     node scripts/avatar-script.mjs <slug> --recheck                    # re-check after a hand edit
    Options: --seconds N (target length, default 75; 45–120)
 
    Uses the Anthropic Messages API directly (no SDK dependency), like the
@@ -22,49 +23,21 @@
    ============================================================================ */
 import fs from "node:fs";
 import path from "node:path";
-import vm from "node:vm";
-import { fileURLToPath } from "node:url";
+import { SCRIPTS_DIR, SITE, WPM, DISCLOSURE, loadPosts, slugOf, noteText, words, review, saveRecord } from "./avatar-lib.mjs";
 
-const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), "..");
-const POSTS = path.join(ROOT, "posts.js");
-const DRAFTS = path.join(ROOT, "drafts", "published");
-const OUT = path.join(ROOT, "data", "avatar", "scripts");
 const API = "https://api.anthropic.com/v1/messages";
 const MODEL = process.env.AVATAR_MODEL || "claude-opus-5-5";
 const KEY = process.env.ANTHROPIC_API_KEY;
-const SITE = "fdkempowernet.com";
 
 const args = process.argv.slice(2);
 const opt = (k) => { const i = args.indexOf(k); return i >= 0 ? args[i + 1] : null; };
 const DRY = args.includes("--dry-run");
+const RECHECK = args.includes("--recheck");
 const SECONDS = Math.min(120, Math.max(45, Number(opt("--seconds")) || 75));
 // Spoken pace: ~150 words a minute in English; Spanish and Italian run a
 // little longer for the same idea, so they get the same time, not the same words.
-const WORDS = Math.round((SECONDS / 60) * 150);
+const WORDS = Math.round((SECONDS / 60) * WPM);
 const slugArg = args.find((a, i) => !a.startsWith("--") && args[i - 1] !== "--seconds");
-
-/* ---- the note ----------------------------------------------------------------- */
-function loadPosts() {
-  const ctx = { window: {} }; vm.createContext(ctx);
-  vm.runInContext(fs.readFileSync(POSTS, "utf8"), ctx);
-  return ctx.window.FDK_POSTS || [];
-}
-const slugOf = (p) => String(p.url || "").replace(/^\/+|\/+$/g, "");
-
-function noteText(slug) {
-  if (fs.existsSync(DRAFTS)) {
-    const f = fs.readdirSync(DRAFTS).filter((x) => x.endsWith(`-${slug}.md`)).sort().pop();
-    if (f) return fs.readFileSync(path.join(DRAFTS, f), "utf8");
-  }
-  const page = path.join(ROOT, slug, "index.html");
-  if (!fs.existsSync(page)) return null;
-  let h = fs.readFileSync(page, "utf8");
-  const a = h.indexOf("<article"), b = h.lastIndexOf("</article>");
-  if (a >= 0 && b > a) h = h.slice(a, b);
-  return h.replace(/<(script|style)[^>]*>[\s\S]*?<\/\1>/g, "").replace(/<(p|li|h\d|br|div|tr)[^>]*>/g, "\n")
-    .replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&#39;|&rsquo;/g, "’").replace(/&quot;/g, '"')
-    .replace(/&nbsp;/g, " ").replace(/\n\s*\n+/g, "\n").trim();
-}
 
 /* ---- the brief to the model ---------------------------------------------------- */
 const SYSTEM = `You write short video scripts for the declared AI avatar of Francesco De Leo Kaufmann, founder of FDK EmpowerNet — a strategic AI thesis practice for CSOs and CEOs in mobility, energy and telecom. The avatar speaks in Francesco's first person, to senior executives and board members.
@@ -97,12 +70,6 @@ on_screen: three short titles (at most 6 words each) shown during the three beat
 captions: a LinkedIn post of 40–80 words that ends with the note's link, which the user message gives you.
 hashtags: 3 to 5, no spaces.`;
 
-const DISCLOSURE = {
-  en: "AI avatar of Francesco De Leo Kaufmann · script reviewed by FDK EmpowerNet",
-  es: "Avatar IA de Francesco De Leo Kaufmann · guion revisado por FDK EmpowerNet",
-  it: "Avatar IA di Francesco De Leo Kaufmann · testo rivisto da FDK EmpowerNet",
-};
-
 async function ask(note, post) {
   const link = `https://${SITE}/${slugOf(post)}`;
   const body = {
@@ -129,44 +96,6 @@ async function ask(note, post) {
   return { result: JSON.parse(out), link, model: data.model };
 }
 
-/* ---- checks a reviewer should not have to do by eye --------------------------- */
-const words = (s) => String(s || "").trim().split(/\s+/).filter(Boolean).length;
-function review(r, note) {
-  const warn = [];
-  for (const l of ["en", "es", "it"]) {
-    const n = words(r.scripts?.[l]);
-    if (!n) warn.push(`${l}: script missing`);
-    else if (n < WORDS * 0.75 || n > WORDS * 1.35) warn.push(`${l}: ${n} words (target ≈${WORDS})`);
-  }
-  if (/\btú\b|\btienes\b|\bpuedes\b|\bdebes\b/i.test(r.scripts?.es || "")) warn.push("es: looks like 'tú' — the house register is 'usted'");
-  // Every number the scripts say aloud must be in the note.
-  const plain = note.replace(/[,\s]/g, "");
-  for (const l of ["en", "es", "it"]) {
-    for (const num of String(r.scripts?.[l] || "").match(/\d+(?:[.,]\d+)?/g) || []) {
-      const bare = num.replace(/,/g, "");
-      if (!plain.includes(bare) && !plain.includes(bare.replace(".", ","))) warn.push(`${l}: figure "${num}" not found in the note — check it`);
-    }
-  }
-  return warn;
-}
-
-function toMarkdown(post, link, r, warn, model) {
-  const L = { en: "English", es: "Español", it: "Italiano" };
-  const est = (l) => Math.round((words(r.scripts[l]) / 150) * 60);
-  let md = `# Avatar script · ${post.title}\n\n`;
-  md += `- Note: ${link}\n- Generated: ${new Date().toISOString()} · ${model}\n- Status: **draft — awaiting Francesco's approval**\n\n`;
-  if (warn.length) md += `## ⚠ Check before recording\n\n${warn.map((w) => `- ${w}`).join("\n")}\n\n`;
-  for (const l of ["en", "es", "it"]) {
-    md += `## ${L[l]} (~${est(l)} s)\n\n${r.scripts[l]}\n\n`;
-    md += `**On screen:** ${(r.on_screen?.[l] || []).join(" · ")}\n\n`;
-    md += `**Disclosure (always on screen):** ${DISCLOSURE[l]}\n\n`;
-    md += `**Caption:**\n\n> ${String(r.captions?.[l] || "").replace(/\n/g, "\n> ")}\n>\n> ${DISCLOSURE[l]}\n\n`;
-  }
-  md += `**Hashtags:** ${(r.hashtags || []).join(" ")}\n\n`;
-  md += `## Facts the scripts rely on\n\n${(r.facts_used || []).map((f) => `- ${f}`).join("\n")}\n`;
-  return md;
-}
-
 /* ---- main ---------------------------------------------------------------------- */
 const posts = loadPosts();
 const post = slugArg ? posts.find((p) => slugOf(p) === slugArg.replace(/^\/+|\/+$/g, "")) : posts[0];
@@ -175,6 +104,17 @@ const slug = slugOf(post);
 const note = noteText(slug);
 if (!note) { console.error(`✖ Cannot read the text of /${slug}`); process.exit(1); }
 
+if (RECHECK) {
+  // After editing a script by hand: re-run the checks and rewrite the .md.
+  const f = path.join(SCRIPTS_DIR, `${slug}.json`);
+  if (!fs.existsSync(f)) { console.error(`✖ No script yet for /${slug}`); process.exit(1); }
+  const rec = JSON.parse(fs.readFileSync(f, "utf8"));
+  rec.warnings = review(rec, note, Math.round(((rec.seconds || SECONDS) / 60) * WPM));
+  saveRecord(rec);
+  console.log(`✔ rechecked data/avatar/scripts/${slug}.md`);
+  for (const w of rec.warnings) console.log(`  ⚠ ${w}`);
+  process.exit(0);
+}
 if (DRY) {
   console.log(`Note: ${post.title} (/${slug}) · ${words(note)} words · target ${SECONDS}s ≈ ${WORDS} words/script\n`);
   console.log(note.slice(0, 1500) + (note.length > 1500 ? "\n…" : ""));
@@ -183,11 +123,9 @@ if (DRY) {
 if (!KEY) { console.error("✖ ANTHROPIC_API_KEY is not set."); process.exit(1); }
 
 const { result, link, model } = await ask(note, post);
-const warn = review(result, note);
-fs.mkdirSync(OUT, { recursive: true });
-const record = { slug, title: post.title, link, generated: new Date().toISOString(), model,
-  seconds: SECONDS, status: "draft", disclosure: DISCLOSURE, warnings: warn, ...result };
-fs.writeFileSync(path.join(OUT, `${slug}.json`), JSON.stringify(record, null, 2) + "\n");
-fs.writeFileSync(path.join(OUT, `${slug}.md`), toMarkdown(post, link, result, warn, model));
+const rec = { slug, title: post.title, link, generated: new Date().toISOString(), model,
+  seconds: SECONDS, status: "draft", disclosure: DISCLOSURE, ...result };
+rec.warnings = review(rec, note, WORDS);
+saveRecord(rec);
 console.log(`✔ data/avatar/scripts/${slug}.md (+ .json)`);
-for (const w of warn) console.log(`  ⚠ ${w}`);
+for (const w of rec.warnings) console.log(`  ⚠ ${w}`);

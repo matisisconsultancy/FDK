@@ -1,0 +1,11 @@
+{
+  "_comment": "HeyGen settings for scripts/avatar-heygen.mjs. avatar_id = Francesco's digital-twin look (node scripts/avatar-heygen.mjs avatars). voices = his cloned voice per language (… voices). Until the twin exists, a public stock avatar can be used for internal tests only — never published as Francesco.",
+  "provider": "heygen",
+  "avatar_id": "",
+  "voices": { "en": "", "es": "", "it": "" },
+  "languages": ["es", "en"],
+  "aspect_ratio": "9:16",
+  "resolution": "1080p",
+  "burn_captions": true,
+  "allow_default_voice": false
+}
