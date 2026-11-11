@@ -48,7 +48,7 @@
     var sign = chg > 0 ? "+" : "";
     var ch = chg == null ? "" : (it.rate ? sign + Math.round(chg) + " bp" : sign + Number(chg).toFixed(2) + "%");
     return '<span class="mpill">' +
-      '<span class="mpill__l">' + it.l + '</span>' +
+      '<span class="mpill__l">' + t(it.l) + '</span>' +
       '<span class="mpill__px">' + fmt(price, it.dp) + (it.rate ? "%" : "") + '</span>' +
       (ch ? '<span class="mpill__ch mpill__ch--' + dir + '">' + arrow + ' ' + ch + '</span>' : "") +
       '</span>';

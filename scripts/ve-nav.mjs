@@ -63,7 +63,7 @@ export function veNav({ archive = false } = {}) {
     <a href="/" style="--i:3">FDK EmpowerNet<small>↗</small></a>
     <a class="mmenu__cta" href="${HOME}#go-subscribe" style="--i:4">Subscribe <span aria-hidden="true">→</span></a>
     <div class="mmenu__lang" role="group" aria-label="Language / Idioma / Lingua" data-no-i18n><button type="button" data-lang="en" lang="en" aria-pressed="false">EN</button><button type="button" data-lang="es" lang="es" aria-pressed="false">ES</button><button type="button" data-lang="it" lang="it" aria-pressed="false">IT</button></div>
-    <span class="mmenu__foot" data-no-i18n>The Velocity Edge · by FDK EmpowerNet</span>
+    <span class="mmenu__foot">The Velocity Edge · by FDK EmpowerNet</span>
   </nav></div>
   <!-- /VE-NAV -->`;
 }

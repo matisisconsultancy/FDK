@@ -349,18 +349,21 @@
   }
   function txAttrs(el) {
     if (!el.hasAttribute) return;
-    var cls = el.getAttribute("class") || "";
-    var brandish = cls.indexOf("brand") >= 0 || cls.indexOf("lang-switch") >= 0;
-    for (var i = 0; i < ATTRS.length; i++) {
-      if (brandish && ATTRS[i] === "aria-label") continue;
-      txAttr(el, ATTRS[i]);
-    }
+    /* Brand marks are translated too: txAttr only changes a value that has a
+       dictionary entry, and the entries keep the brand name in English
+       ("The Velocity Edge by FDK, home" → "… de FDK, inicio"). */
+    for (var i = 0; i < ATTRS.length; i++) txAttr(el, ATTRS[i]);
   }
 
   /* ---------- the walk ---------- */
   function walk(el) {
     if (!el || el.nodeType !== 1) return;
-    if (isSkipped(el)) return;
+    if (isSkipped(el)) {
+      /* data-no-i18n protects the text (a logo, the switcher), not what a
+         screen reader announces — that still follows the page language. */
+      if (el.getAttribute("data-no-i18n") !== null) txAttr(el, "aria-label");
+      return;
+    }
     txAttrs(el);
     var mode = el.__i18nUnit ? "unit" : classify(el);
     if (mode === "unit" && txUnit(el)) return;
@@ -372,7 +375,17 @@
     }
   }
 
+  /* A node added inside a skipped ancestor stays untouched. Without this the
+     observer translated the text node the HTML parser adds to an inline
+     <script> while it streams in — which rewrote (and broke) the code of any
+     inline script parsed after this file loaded. */
+  function insideSkipped(node) {
+    for (var e = node.parentNode; e && e.nodeType === 1; e = e.parentNode)
+      if (isSkipped(e)) return true;
+    return false;
+  }
   function walkAdded(node) {
+    if (insideSkipped(node)) return;
     if (node.nodeType === 3) { if (LETTERS.test(node.nodeValue)) txText(node); return; }
     if (node.nodeType === 1) walk(node);
   }
@@ -554,7 +567,7 @@
      engine translates through, so on a language switch there is nothing left
      to translate from. Captured here, before the first walk, it is English in
      every language. script.js puts it back before asking for a refresh. */
-  var rv = document.querySelectorAll("[data-reveal-text],[data-reveal-block],[data-highlight]");
+  var rv = document.querySelectorAll("[data-reveal-text],[data-reveal-block],[data-highlight],h2[data-rise],[data-fill]");
   for (var ri = 0; ri < rv.length; ri++) rv[ri].__i18nEN = rv[ri].innerHTML;
   walk(document.body); applyHead();
   makeObserver();

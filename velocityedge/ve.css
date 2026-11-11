@@ -894,5 +894,6 @@ body.menu-open .demo,body.menu-open .demo-note{display:none}
 .snav__cta{background:var(--b-sky);box-shadow:0 10px 26px -10px rgba(48,155,255,.75)}
 @media (hover:hover) and (pointer:fine){.snav__cta:hover{background:#fff;box-shadow:0 16px 32px -12px rgba(48,155,255,.6)}}
 .mmenu__in > a.mmenu__cta{background:var(--b-sky);color:var(--b-deep);box-shadow:0 10px 26px -10px rgba(48,155,255,.75)}
+.snav .lang-switch{display:inline-flex;gap:2px;align-items:center;margin-left:8px;padding:3px;border:1px solid rgba(255,255,255,.2);border-radius:100px}.snav .lang-switch__btn{font-size:.72rem;font-weight:600;letter-spacing:.6px;color:rgba(255,255,255,.6);background:none;border:0;padding:5px 10px;border-radius:100px;cursor:pointer;line-height:1}
 .snav .lang-switch__btn.is-active{color:var(--b-deep);background:var(--b-sky)}
 .mmenu__lang button[aria-pressed="true"]{color:var(--b-deep);background:var(--b-sky);border-color:var(--b-sky)}
