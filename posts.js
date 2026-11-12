@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/munich-based-agile-robots-raised-500-million-in-a-funding-round-led-by-softbank-valuing-the-company-at-8-5-billion-nvidia-and-hitachi-also-participated",
+    title: "Munich-based Agile Robots Raised $500 Million in a Funding Round Led by SoftBank, Valuing the Company at $8.5 Billion. Nvidia and Hitachi Also Participated.",
+    excerpt: "Europe's AI suppliers post record earnings while infrastructure operators face rising capital needs and new supplier risk.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "17:41",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-12",
     title: "Europe’s Great Fracture",
     excerpt: "Record equities, France's sovereign strain and the AI investment race are creating a new hierarchy of European financial power.",
