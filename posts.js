@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-12",
+    title: "Europe’s Great Fracture",
+    excerpt: "Record equities, France's sovereign strain and the AI investment race are creating a new hierarchy of European financial power.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "8 min read",
+    time: "14:57",
+    kind: "day"
+  },
+  {
     url: "/the-inflection-point-full-report",
     title: "The Inflection Point: Full Report",
     excerpt: "Markets are learning to separate the invention of intelligence from the capacity to finance, operate and monetize it.",
