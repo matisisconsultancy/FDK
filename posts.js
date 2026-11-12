@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/inaugural-essay-2026-11-12",
+    title: "Inaugural Essay",
+    excerpt: "The new mandate for higher education after the AI Super Cycle, and why it becomes an investable category.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "10:27",
+    kind: "day"
+  },
+  {
     url: "/europes-financial-sovereignty-at-a-crossroads",
     title: "Europe’s Financial Sovereignty at a Crossroads",
     excerpt: "Anima, Mediobanca and Commerzbank reveal three competing futures for European banking — and only one rewards capital productivity.",
