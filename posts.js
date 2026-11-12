@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-inflection-point-full-report",
+    title: "The Inflection Point: Full Report",
+    excerpt: "Markets are learning to separate the invention of intelligence from the capacity to finance, operate and monetize it.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "4 min read",
+    time: "13:16",
+    kind: "day"
+  },
+  {
     url: "/the-remote-compute-squeeze",
     title: "The Remote Compute Squeeze",
     excerpt: "Computing access is becoming more restricted even as intelligence consumption becomes more widespread.",
