@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-financial-sovereignty-at-a-crossroads",
+    title: "Europe’s Financial Sovereignty at a Crossroads",
+    excerpt: "Anima, Mediobanca and Commerzbank reveal three competing futures for European banking — and only one rewards capital productivity.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "10 min read",
+    time: "09:10",
+    kind: "day"
+  },
+  {
     url: "/inaugural-essay",
     title: "Inaugural Essay",
     excerpt: "AI can reproduce analytical capacity overnight, but the judgment to use it still takes years — and someone must finance that gap.",
