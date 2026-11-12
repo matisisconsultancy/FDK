@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-capital-formation-may-increase-demand-for-savings-and-contribute-to-higher-equilibrium-real-interest-rates-yet-individual-ai-exposed-companies-may-simultaneously-enjoy-lower-credit-spreads-because",
+    title: "AI Capital Formation May Increase Demand for Savings and Contribute to Higher Equilibrium Real Interest Rates. Yet Individual AI-exposed Companies May Simultaneously Enjoy Lower Credit Spreads Because",
+    excerpt: "New ECB evidence reveals an AI financing advantage as the Bundesbank warns of financial contagion.",
+    tag: "Midday Pulse · Central Banks & AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "12:47",
+    kind: "day"
+  },
+  {
     url: "/inaugural-essay-2026-11-12",
     title: "Inaugural Essay",
     excerpt: "The new mandate for higher education after the AI Super Cycle, and why it becomes an investable category.",
