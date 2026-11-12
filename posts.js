@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/one-founder-one-factory-one-europe",
+    title: "One Founder. One Factory. One Europe.",
+    excerpt: "China asks individuals to build AI companies; Europe should ask its factories, ports and utilities to become their first customers.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "20:10",
+    kind: "night"
+  },
+  {
     url: "/chinas-army-of-one",
     title: "China’s Army of One",
     excerpt: "China's one-person company movement opens a new front in the U.S.–China AI supercycle, where deployment matters as much as frontier capability.",
