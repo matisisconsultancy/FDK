@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-remote-compute-squeeze",
+    title: "The Remote Compute Squeeze",
+    excerpt: "Computing access is becoming more restricted even as intelligence consumption becomes more widespread.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "13:11",
+    kind: "day"
+  },
+  {
     url: "/ai-capital-formation-may-increase-demand-for-savings-and-contribute-to-higher-equilibrium-real-interest-rates-yet-individual-ai-exposed-companies-may-simultaneously-enjoy-lower-credit-spreads-because",
     title: "AI Capital Formation May Increase Demand for Savings and Contribute to Higher Equilibrium Real Interest Rates. Yet Individual AI-exposed Companies May Simultaneously Enjoy Lower Credit Spreads Because",
     excerpt: "New ECB evidence reveals an AI financing advantage as the Bundesbank warns of financial contagion.",
