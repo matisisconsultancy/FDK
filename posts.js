@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/they-demonstrate-the-commercial-potential-of-the-physical-ai-supply-chain-but-cannot-independently-justify-a-structural-national-score-upgrade",
+    title: "They Demonstrate the Commercial Potential of the Physical AI Supply Chain but Cannot Independently Justify a Structural National-score Upgrade.",
+    excerpt: "Siemens Energy's record orders, Japan's renewed industrial inflation and Asia's capital outflows are reshaping the economics of the AI Supercycle.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "4 min read",
+    time: "08:11",
+    kind: "day"
+  },
+  {
+    url: "/22-yoy",
+    title: "+22% YoY",
+    excerpt: "Upstream suppliers book AI earnings now while platforms absorb the costs — and Europe's industrial strength is where value is already visible.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "4 min read",
+    time: "08:10",
+    kind: "day"
+  },
+  {
     url: "/the-price-of-dependence-2026-11-12",
     title: "The Price of Dependence",
     excerpt: "Nvidia's leadership shock, a 19-month-high dollar and Siemens' record profit reveal a market repricing dependence, not demand.",
