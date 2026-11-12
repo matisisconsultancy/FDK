@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/inaugural-essay",
+    title: "Inaugural Essay",
+    excerpt: "AI can reproduce analytical capacity overnight, but the judgment to use it still takes years — and someone must finance that gap.",
+    tag: "Morning Brief · Education",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "08:40",
+    kind: "day"
+  },
+  {
     url: "/they-demonstrate-the-commercial-potential-of-the-physical-ai-supply-chain-but-cannot-independently-justify-a-structural-national-score-upgrade",
     title: "They Demonstrate the Commercial Potential of the Physical AI Supply Chain but Cannot Independently Justify a Structural National-score Upgrade.",
     excerpt: "Siemens Energy's record orders, Japan's renewed industrial inflation and Asia's capital outflows are reshaping the economics of the AI Supercycle.",
