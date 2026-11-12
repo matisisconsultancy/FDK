@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-12",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "A new financial architecture is reorganizing the AI Supercycle into a contest over who converts capital into durable economic profit.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "4 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-backlog-paradox",
     title: "The Backlog Paradox",
     excerpt: "CoreWeave, Siemens Energy and a defense repricing expose the market's new discipline — the capacity to convert contracted demand into cash.",
