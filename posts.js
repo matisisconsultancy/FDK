@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-dependence-2026-11-12",
+    title: "The Price of Dependence",
+    excerpt: "Nvidia's leadership shock, a 19-month-high dollar and Siemens' record profit reveal a market repricing dependence, not demand.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "4 min read",
+    time: "08:05",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-12",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "A new financial architecture is reorganizing the AI Supercycle into a contest over who converts capital into durable economic profit.",
