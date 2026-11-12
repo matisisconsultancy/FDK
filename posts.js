@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/chinas-army-of-one",
+    title: "China’s Army of One",
+    excerpt: "China's one-person company movement opens a new front in the U.S.–China AI supercycle, where deployment matters as much as frontier capability.",
+    tag: "The Close · AI",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "20:01",
+    kind: "night"
+  },
+  {
     url: "/munich-based-agile-robots-raised-500-million-in-a-funding-round-led-by-softbank-valuing-the-company-at-8-5-billion-nvidia-and-hitachi-also-participated",
     title: "Munich-based Agile Robots Raised $500 Million in a Funding Round Led by SoftBank, Valuing the Company at $8.5 Billion. Nvidia and Hitachi Also Participated.",
     excerpt: "Europe's AI suppliers post record earnings while infrastructure operators face rising capital needs and new supplier risk.",
