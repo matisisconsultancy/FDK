@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/one-founder-one-university-one-europe",
+    title: "One Founder. One University. One Europe.",
+    excerpt: "Europe's universities can give one-person AI companies a real problem, a place to prove the solution and a first customer.",
+    tag: "The Close · AI",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 12, 2026",
+    read: "5 min read",
+    time: "20:19",
+    kind: "night"
+  },
+  {
     url: "/one-founder-one-factory-one-europe",
     title: "One Founder. One Factory. One Europe.",
     excerpt: "China asks individuals to build AI companies; Europe should ask its factories, ports and utilities to become their first customers.",
