@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-s-p-500-declined-0-4-ap-news",
+    title: "The S&P 500 Declined 0.4%. AP News",
+    excerpt: "The AI Supercycle meets its sharpest governance shock even as the industrial foundations keep expanding.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "07:07",
+    kind: "day"
+  },
+  {
     url: "/one-founder-one-university-one-europe",
     title: "One Founder. One University. One Europe.",
     excerpt: "Europe's universities can give one-person AI companies a real problem, a place to prove the solution and a first customer.",
