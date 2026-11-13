@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-13",
+    title: "The Big Take",
+    excerpt: "Record equity inflows collide with rising yields and extraordinary AI valuations.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "14:46",
+    kind: "day"
+  },
+  {
     url: "/the-great-ai-reset",
     title: "The Great AI Reset",
     excerpt: "How Jensen Huang's departure could rewrite AI governance, capital allocation, transparency and competition.",
