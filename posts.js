@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-risk-is-a-mismatch-between-the-speed-at-which-europe-wishes-to-build-computing-infrastructure-and-the-speed-at-which-public-financial-commitments-become-enforceable",
+    title: "The Risk Is a Mismatch Between the Speed at Which Europe Wishes to Build Computing Infrastructure and the Speed at Which Public Financial Commitments Become Enforceable.",
+    excerpt: "Bavaria specifies project-level Gigafactory funding while the EU's multiyear framework stays politically uncertain.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "4 min read",
+    time: "18:44",
+    kind: "night"
+  },
+  {
     url: "/the-big-take-2026-11-13",
     title: "The Big Take",
     excerpt: "Record equity inflows collide with rising yields and extraordinary AI valuations.",
