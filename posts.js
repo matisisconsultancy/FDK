@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/anthropic-is-preparing-to-test-public-market-demand-for-an-ai-developer-carrying-extraordinary-future-computing-obligations",
+    title: "Anthropic Is Preparing to Test Public-market Demand for an AI Developer Carrying Extraordinary Future Computing Obligations.",
+    excerpt: "Nvidia's leadership change, Anthropic's record IPO and 5% yields are repricing the financial system behind the AI buildout.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "13:31",
+    kind: "day"
+  },
+  {
     url: "/the-consequence-for-investors-is-potentially-substantial-market-liquidity-may-become-increasingly-dependent-on-how-autonomous-systems-behave-collectively-rather-than-exclusively-on-traditional-lever",
     title: "The Consequence for Investors Is Potentially Substantial: Market Liquidity May Become Increasingly Dependent on How Autonomous Systems Behave Collectively, Rather Than Exclusively on Traditional Lever",
     excerpt: "Two central-bank interventions reveal a new dimension of the AI Supercycle — who captures the productivity dividend.",
