@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-empire-of-intelligence-at-a-crossroads",
+    title: "The Empire of Intelligence at a Crossroads",
+    excerpt: "November 13 reframed the AI cycle as a redistribution of opportunity and risk, not a retreat from artificial intelligence.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "4 min read",
+    time: "19:55",
+    kind: "night"
+  },
+  {
     url: "/the-risk-is-a-mismatch-between-the-speed-at-which-europe-wishes-to-build-computing-infrastructure-and-the-speed-at-which-public-financial-commitments-become-enforceable",
     title: "The Risk Is a Mismatch Between the Speed at Which Europe Wishes to Build Computing Infrastructure and the Speed at Which Public Financial Commitments Become Enforceable.",
     excerpt: "Bavaria specifies project-level Gigafactory funding while the EU's multiyear framework stays politically uncertain.",
