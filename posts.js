@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/morning-edition",
+    title: "Morning Edition",
+    excerpt: "Three events in 24 hours show Europe's banking contest shifting from ownership to sovereign financing, shareholder rights and capital allocation.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "8 min read",
+    time: "11:30",
+    kind: "day"
+  },
+  {
     url: "/colette-kress-nvidias-cfo-since-2013-was-appointed-interim-ceo-and-will-retain-her-finance-responsibilities-during-the-transition",
     title: "Colette Kress, Nvidia’s CFO Since 2013, Was Appointed Interim CEO and Will Retain Her Finance Responsibilities During the Transition.",
     excerpt: "A governance shock at Nvidia meets record supplier earnings and Europe's first leaders' AI summit.",
