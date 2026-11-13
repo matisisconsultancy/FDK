@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-consequence-for-investors-is-potentially-substantial-market-liquidity-may-become-increasingly-dependent-on-how-autonomous-systems-behave-collectively-rather-than-exclusively-on-traditional-lever",
+    title: "The Consequence for Investors Is Potentially Substantial: Market Liquidity May Become Increasingly Dependent on How Autonomous Systems Behave Collectively, Rather Than Exclusively on Traditional Lever",
+    excerpt: "Two central-bank interventions reveal a new dimension of the AI Supercycle — who captures the productivity dividend.",
+    tag: "Midday Pulse · Central Banks & AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "12:49",
+    kind: "day"
+  },
+  {
     url: "/the-succession-premium",
     title: "The Succession Premium",
     excerpt: "Jensen Huang's exit turns a governance question into an immediate market issue across the AI Supercycle.",
