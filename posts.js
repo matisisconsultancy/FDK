@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-compute-repricing",
+    title: "The Great Compute Repricing",
+    excerpt: "A governance crisis at Nvidia becomes a geopolitical and financial inflection in the U.S.–China AI race.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "11:52",
+    kind: "day"
+  },
+  {
     url: "/morning-edition",
     title: "Morning Edition",
     excerpt: "Three events in 24 hours show Europe's banking contest shifting from ownership to sovereign financing, shareholder rights and capital allocation.",
