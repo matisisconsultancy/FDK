@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-succession-premium",
+    title: "The Succession Premium",
+    excerpt: "Jensen Huang's exit turns a governance question into an immediate market issue across the AI Supercycle.",
+    tag: "In Focus · AI",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "7 min read",
+    time: "12:08",
+    kind: "day"
+  },
+  {
     url: "/the-great-compute-repricing",
     title: "The Great Compute Repricing",
     excerpt: "A governance crisis at Nvidia becomes a geopolitical and financial inflection in the U.S.–China AI race.",
