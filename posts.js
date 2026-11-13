@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/colette-kress-nvidias-cfo-since-2013-was-appointed-interim-ceo-and-will-retain-her-finance-responsibilities-during-the-transition",
+    title: "Colette Kress, Nvidia’s CFO Since 2013, Was Appointed Interim CEO and Will Retain Her Finance Responsibilities During the Transition.",
+    excerpt: "A governance shock at Nvidia meets record supplier earnings and Europe's first leaders' AI summit.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "08:10",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-13",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Jensen Huang's exit turns Nvidia's leadership shock into the first real test of the AI Supercycle's financial independence.",
