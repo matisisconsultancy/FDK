@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-succession-shock",
+    title: "GVI Corporate Benchmark the Succession Shock",
+    excerpt: "Nvidia's leadership rupture meets Siemens' and Applied Materials' record profits, redefining corporate power and the next equity rotation.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "07:22",
+    kind: "day"
+  },
+  {
     url: "/the-s-p-500-declined-0-4-ap-news",
     title: "The S&P 500 Declined 0.4%. AP News",
     excerpt: "The AI Supercycle meets its sharpest governance shock even as the industrial foundations keep expanding.",
