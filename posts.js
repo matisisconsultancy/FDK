@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-ai-reset",
+    title: "The Great AI Reset",
+    excerpt: "How Jensen Huang's departure could rewrite AI governance, capital allocation, transparency and competition.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "14:21",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-13",
     title: "Europe’s Great Fracture",
     excerpt: "France's budget deadlock, the return of sovereign stress and Nvidia's leadership shock expose Europe's deepening divide between the capital it needs and the capacity to finance it.",
