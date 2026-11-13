@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-13",
+    title: "Europe’s Great Fracture",
+    excerpt: "France's budget deadlock, the return of sovereign stress and Nvidia's leadership shock expose Europe's deepening divide between the capital it needs and the capacity to finance it.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "8 min read",
+    time: "14:13",
+    kind: "day"
+  },
+  {
     url: "/anthropic-is-preparing-to-test-public-market-demand-for-an-ai-developer-carrying-extraordinary-future-computing-obligations",
     title: "Anthropic Is Preparing to Test Public-market Demand for an AI Developer Carrying Extraordinary Future Computing Obligations.",
     excerpt: "Nvidia's leadership change, Anthropic's record IPO and 5% yields are repricing the financial system behind the AI buildout.",
