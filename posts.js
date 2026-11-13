@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-13",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Jensen Huang's exit turns Nvidia's leadership shock into the first real test of the AI Supercycle's financial independence.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-the-succession-shock",
     title: "GVI Corporate Benchmark the Succession Shock",
     excerpt: "Nvidia's leadership rupture meets Siemens' and Applied Materials' record profits, redefining corporate power and the next equity rotation.",
