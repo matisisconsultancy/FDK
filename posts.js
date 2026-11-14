@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-14",
+    title: "Europe’s Great Fracture",
+    excerpt: "Record equity inflows, France's sovereign stress and the next battle for Europe's productive capital.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "8 min read",
+    time: "14:24",
+    kind: "day"
+  },
+  {
     url: "/the-inflection-point-full-report-2026-11-14",
     title: "The Inflection Point: Full Report",
     excerpt: "The AI Supercycle is not ending — its financial architecture is being rewritten.",
