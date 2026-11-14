@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/in-focus-the-weekend-edition",
+    title: "In-focus: The Weekend Edition",
+    excerpt: "Why the AI Supercycle will outlast its leaders, survive its corrections, and reprice capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "11:14",
+    kind: "day"
+  },
+  {
     url: "/weekend-strategic-edition",
     title: "Weekend Strategic Edition",
     excerpt: "Sovereign credibility, Continental banking consolidation and the battle for capital distribution converge in three competing futures.",
