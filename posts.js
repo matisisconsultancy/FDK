@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-the-system-becomes-the-risk",
+    title: "When the System Becomes the Risk",
+    excerpt: "A convergence of bond, governance and infrastructure shocks is turning resilience into a priced component of competitive advantage.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "4 min read",
+    time: "20:26",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-500-billion-sovereignty-test",
     title: "Europe’s AI Race: The €500 Billion Sovereignty Test",
     excerpt: "Brussels quantifies a €500bn sovereignty bill as Paris calls for European AI procurement and the Gigafactory race sharpens.",
