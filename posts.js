@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/weekend-strategic-edition",
+    title: "Weekend Strategic Edition",
+    excerpt: "Sovereign credibility, Continental banking consolidation and the battle for capital distribution converge in three competing futures.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "9 min read",
+    time: "10:03",
+    kind: "day"
+  },
+  {
     url: "/ai-related-debt-issuance-680b-through-october-financing-concentration",
     title: "AI-related Debt Issuance $680B Through October Financing Concentration",
     excerpt: "The Fed names AI a financial stability risk as yields spike and capital rotates toward Europe.",
