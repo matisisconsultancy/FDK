@@ -163,7 +163,8 @@ window.GVI_DATA = {
       "the-cost-of-compute-repriced",
       "gvi-corporate-benchmark-2026-11-11",
       "gvi-corporate-benchmark-the-succession-shock",
-      "gvi-corporate-benchmark-2026-11-14"
+      "gvi-corporate-benchmark-2026-11-14",
+      "gvi-cities-methodology-1-0"
     ]
   },
   "daily": {
@@ -3463,6 +3464,12 @@ window.GVI_DATA = {
         "url": "/gvi-corporate-benchmark-2026-11-14",
         "slot": "Morning Brief",
         "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; rankings hold unchanged while the financial-resilience overlay is raised"
+      },
+      {
+        "title": "GVI Cities Methodology 1.0",
+        "url": "/gvi-cities-methodology-1-0",
+        "slot": "GVI",
+        "headline": "Singapore 92.93, Seoul 91.83 and New York 91.76 lead the GVI Global Cities ranking as markets favor financeable, productive AI capacity."
       }
     ]
   },

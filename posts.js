@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-cities-methodology-1-0",
+    title: "GVI Cities Methodology 1.0",
+    excerpt: "The GVI weekly survey finds markets differentiating between cities with AI capabilities and cities that can finance, power and convert them.",
+    tag: "GVI · Cities",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "12:08",
+    kind: "day"
+  },
+  {
     url: "/in-focus-the-weekend-edition",
     title: "In-focus: The Weekend Edition",
     excerpt: "Why the AI Supercycle will outlast its leaders, survive its corrections, and reprice capital.",
