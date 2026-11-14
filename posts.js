@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-inflection-point-full-report-2026-11-14",
+    title: "The Inflection Point: Full Report",
+    excerpt: "The AI Supercycle is not ending — its financial architecture is being rewritten.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "13:20",
+    kind: "day"
+  },
+  {
     url: "/in-the-meantime-ai-related-investment-is-already-contributing-to-equipment-bottlenecks-higher-prices-and-demand-for-capital-he-specifically-recognised-that-sustained-productivity-improvements-could",
     title: "In the Meantime, AI-related Investment Is Already Contributing to Equipment Bottlenecks, Higher Prices and Demand for Capital. He Specifically Recognised That Sustained Productivity Improvements Could",
     excerpt: "The Fed makes AI's financing architecture a systemic-risk concern as monetary conditions tighten into 2027.",
