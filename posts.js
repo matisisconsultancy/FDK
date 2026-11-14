@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-14",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The AI Supercycle has grown large enough to shape the stability of the wider financial system — and the GVI leaders hold while the resilience overlay rises.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "4 min read",
+    time: "07:13",
+    kind: "day"
+  },
+  {
     url: "/4-in-september",
     title: "4% in September.",
     excerpt: "The Fed brings AI financing into the stability framework as capital rotates to Europe without matching productivity gains.",

@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-13",
+    "updated": "2026-11-14",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -158,7 +158,8 @@
       "gvi-corporate-benchmark-2026-11-10",
       "the-cost-of-compute-repriced",
       "gvi-corporate-benchmark-2026-11-11",
-      "gvi-corporate-benchmark-the-succession-shock"
+      "gvi-corporate-benchmark-the-succession-shock",
+      "gvi-corporate-benchmark-2026-11-14"
     ]
   },
   "daily": {
@@ -3408,56 +3409,56 @@
     }
   },
   "today": {
-    "date": "2026-11-13",
+    "date": "2026-11-14",
     "edition": "Morning Brief",
-    "thesis": "GVI Corporate Benchmark the Succession Shock",
-    "subtitle": "Nvidia's founder exits while Siemens and Applied Materials show accelerating profitability and cash generation.",
-    "standfirst": "Innovation creates leadership; institutions preserve it.",
+    "thesis": "GVI Corporate Benchmark",
+    "subtitle": "The Fed's AI-financing warning, Nvidia's leadership crisis and Europe's capital inflows are redrawing the corporate hierarchy — yet the GVI rankings hold, with the financial-resilience overlay raised.",
+    "standfirst": "Velocity determines who leads. Capital productivity determines who earns.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "Top-10 composite",
-        "value": "98.36",
-        "delta": "-0.01",
-        "trend": "down"
-      },
-      {
-        "label": "Laggard composite",
-        "value": "67.63",
-        "delta": "0.0",
-        "trend": "flat"
-      },
-      {
-        "label": "Nvidia GVI",
-        "value": "97.8",
-        "delta": "-0.5",
-        "trend": "down"
-      },
-      {
-        "label": "Siemens AG GVI",
-        "value": "97.7",
-        "delta": "+0.4",
+        "label": "AI risk contacts",
+        "value": "87%",
+        "delta": null,
         "trend": "up"
       },
       {
-        "label": "Nvidia share move (Nov 12)",
-        "value": "-4.3%",
+        "label": "Adv.-computing debt",
+        "value": "$680bn",
         "delta": null,
-        "trend": "down"
+        "trend": "up"
+      },
+      {
+        "label": "US Oct PPI y/y",
+        "value": "6.5%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Europe fund inflows",
+        "value": "$35.13bn",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Top-10 composite",
+        "value": "98.36",
+        "delta": null,
+        "trend": "flat"
       }
     ],
     "source": {
-      "title": "GVI Corporate Benchmark the Succession Shock",
-      "url": "/gvi-corporate-benchmark-the-succession-shock",
-      "date": "2026-11-13",
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-11-14",
+      "date": "2026-11-14",
       "slot": "Morning Brief"
     },
     "notes": [
       {
-        "title": "GVI Corporate Benchmark the Succession Shock",
-        "url": "/gvi-corporate-benchmark-the-succession-shock",
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-14",
         "slot": "Morning Brief",
-        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; Nvidia cut 0.5 on succession shock, Siemens AG raised 0.4"
+        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; rankings hold unchanged while the financial-resilience overlay is raised"
       }
     ]
   },
@@ -3563,7 +3564,7 @@
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-13",
+    "asOf": "2026-11-14",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3571,80 +3572,80 @@
         "name": "TSMC",
         "score": 99.8,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged at the top of the benchmark"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.4,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 3,
         "name": "Schneider Electric",
         "score": 99,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 4,
         "name": "Amazon",
         "score": 98.8,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 5,
         "name": "ASML",
         "score": 98.2,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 6,
         "name": "Broadcom",
         "score": 97.8,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": "Same score as Nvidia; ordering is an analytical tie-break"
       },
       {
         "rank": 7,
         "name": "Nvidia",
         "score": 97.8,
-        "delta": -0.5,
+        "delta": 0,
         "trend": "down",
-        "note": "Downgraded on weaker near-term resilience after founder Jensen Huang's resignation as CEO"
+        "note": "Governance downgrade already incorporated Nov 13; earnings Nov 17"
       },
       {
         "rank": 8,
         "name": "Siemens AG",
         "score": 97.7,
-        "delta": 0.4,
+        "delta": 0,
         "trend": "up",
-        "note": "Upgraded on record orders, industrial profit and free cash flow"
+        "note": "€12.1bn FY2026 group free cash flow"
       },
       {
         "rank": 9,
         "name": "Siemens Energy",
         "score": 97.6,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": null
       },
       {
         "rank": 10,
         "name": "Palantir",
         "score": 97.5,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": null
       }
     ],
     "laggards": [
@@ -3653,16 +3654,16 @@
         "name": "Volkswagen",
         "score": 61.3,
         "delta": 0,
-        "trend": "flat",
-        "note": "Lowest-scoring constituent"
+        "trend": "down",
+        "note": null
       },
       {
         "rank": 2,
         "name": "Nissan",
         "score": 63.4,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "down",
+        "note": null
       },
       {
         "rank": 3,
@@ -3670,15 +3671,15 @@
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged"
+        "note": null
       },
       {
         "rank": 4,
         "name": "Skydance",
         "score": 66.6,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "down",
+        "note": null
       },
       {
         "rank": 5,
@@ -3686,7 +3687,7 @@
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged"
+        "note": null
       },
       {
         "rank": 6,
@@ -3694,7 +3695,7 @@
         "score": 68.9,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged"
+        "note": null
       },
       {
         "rank": 7,
@@ -3702,7 +3703,7 @@
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged"
+        "note": null
       },
       {
         "rank": 8,
@@ -3710,30 +3711,30 @@
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Unchanged"
+        "note": null
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "down",
+        "note": null
       },
       {
         "rank": 10,
         "name": "Cellnex",
         "score": 72,
         "delta": 0,
-        "trend": "flat",
-        "note": "Unchanged"
+        "trend": "up",
+        "note": "Nine-month FCF €474m vs €186m; net debt/EBITDA 6.13x"
       }
     ],
     "pillars": [],
     "source": {
-      "title": "GVI Corporate Benchmark the Succession Shock",
-      "url": "/gvi-corporate-benchmark-the-succession-shock",
-      "date": "2026-11-13",
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-11-14",
+      "date": "2026-11-14",
       "slot": "Morning Brief"
     }
   },
