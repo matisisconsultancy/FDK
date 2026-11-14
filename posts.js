@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-500-billion-sovereignty-test",
+    title: "Europe’s AI Race: The €500 Billion Sovereignty Test",
+    excerpt: "Brussels quantifies a €500bn sovereignty bill as Paris calls for European AI procurement and the Gigafactory race sharpens.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "18:22",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-14",
     title: "Europe’s Great Fracture",
     excerpt: "Record equity inflows, France's sovereign stress and the next battle for Europe's productive capital.",
