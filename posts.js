@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/in-the-meantime-ai-related-investment-is-already-contributing-to-equipment-bottlenecks-higher-prices-and-demand-for-capital-he-specifically-recognised-that-sustained-productivity-improvements-could",
+    title: "In the Meantime, AI-related Investment Is Already Contributing to Equipment Bottlenecks, Higher Prices and Demand for Capital. He Specifically Recognised That Sustained Productivity Improvements Could",
+    excerpt: "The Fed makes AI's financing architecture a systemic-risk concern as monetary conditions tighten into 2027.",
+    tag: "Midday Pulse · Central Banks & AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "12:32",
+    kind: "day"
+  },
+  {
     url: "/export-restriction-or-a-new-chinese-model-release-that-independently-overturns-american-frontier-leadership",
     title: "Export Restriction or a New Chinese Model Release That Independently Overturns American Frontier Leadership.",
     excerpt: "New technical evidence suggests China's frontier AI remains more dependent on American accelerated computing than its lower-cost success implies.",
