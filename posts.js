@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/4-in-september",
+    title: "4% in September.",
+    excerpt: "The Fed brings AI financing into the stability framework as capital rotates to Europe without matching productivity gains.",
+    tag: "Morning Brief · Smart Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "07:02",
+    kind: "day"
+  },
+  {
     url: "/the-empire-of-intelligence-at-a-crossroads",
     title: "The Empire of Intelligence at a Crossroads",
     excerpt: "November 13 reframed the AI cycle as a redistribution of opportunity and risk, not a retreat from artificial intelligence.",
