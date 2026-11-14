@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-14",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Capital is chasing the future while the price of financing it rises — the next Great Split is a divide in the cost of economic progress.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "07:51",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-14",
     title: "GVI Corporate Benchmark",
     excerpt: "The AI Supercycle has grown large enough to shape the stability of the wider financial system — and the GVI leaders hold while the resilience overlay rises.",
