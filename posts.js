@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/export-restriction-or-a-new-chinese-model-release-that-independently-overturns-american-frontier-leadership",
+    title: "Export Restriction or a New Chinese Model Release That Independently Overturns American Frontier Leadership.",
+    excerpt: "New technical evidence suggests China's frontier AI remains more dependent on American accelerated computing than its lower-cost success implies.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "4 min read",
+    time: "12:14",
+    kind: "day"
+  },
+  {
     url: "/gvi-cities-methodology-1-0",
     title: "GVI Cities Methodology 1.0",
     excerpt: "The GVI weekly survey finds markets differentiating between cities with AI capabilities and cities that can finance, power and convert them.",
