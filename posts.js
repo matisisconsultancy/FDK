@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-share-of-nonfinancial-investment-grade-corporate-debt-issuance-linked-to-advanced-computing-increased-from-less-than-6-in-2023-to-approximately-31-in-2026",
+    title: "The Share of Nonfinancial Investment-grade Corporate Debt Issuance Linked to Advanced Computing Increased From Less Than 6% in 2023 to Approximately 31% in 2026.",
+    excerpt: "The Fed's new Financial Stability Report makes AI financing a mainstream credit-market issue, just as the cost of capital rises.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "08:09",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-14",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Capital is chasing the future while the price of financing it rises — the next Great Split is a divide in the cost of economic progress.",
