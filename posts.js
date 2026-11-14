@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/ai-related-debt-issuance-680b-through-october-financing-concentration",
+    title: "AI-related Debt Issuance $680B Through October Financing Concentration",
+    excerpt: "The Fed names AI a financial stability risk as yields spike and capital rotates toward Europe.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "08:14",
+    kind: "day"
+  },
+  {
     url: "/the-share-of-nonfinancial-investment-grade-corporate-debt-issuance-linked-to-advanced-computing-increased-from-less-than-6-in-2023-to-approximately-31-in-2026",
     title: "The Share of Nonfinancial Investment-grade Corporate Debt Issuance Linked to Advanced Computing Increased From Less Than 6% in 2023 to Approximately 31% in 2026.",
     excerpt: "The Fed's new Financial Stability Report makes AI financing a mainstream credit-market issue, just as the cost of capital rises.",
