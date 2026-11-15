@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-15",
+    title: "Europe’s Great Fracture",
+    excerpt: "France's protests are receding while sovereign risk, equity inflows and AI investment delays reveal a deeper structural fracture in Europe.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "8 min read",
+    time: "14:42",
+    kind: "day"
+  },
+  {
     url: "/the-great-split-is-entering-a-new-phase-not-simply-between-technological-leaders-and-followers-but-between-those-capable-of-sustaining-an-increasingly-complex-economy-and-those-exposed-to-failures-t",
     title: "The Great Split Is Entering a New Phase: Not Simply Between Technological Leaders and Followers, but Between Those Capable of Sustaining an Increasingly Complex Economy and Those Exposed to Failures T",
     excerpt: "The greatest risk to the AI supercycle may no longer be a shortage of intelligence, but the ability of financial, physical and political systems to sustain it.",
