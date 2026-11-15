@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/part-i-the-market-diagnosis",
+    title: "Part I: The Market Diagnosis",
+    excerpt: "Five signals — bonds, Nvidia, infrastructure, the Gulf and Europe — define a new financial regime built on execution, not ambition.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "5 min read",
+    time: "19:44",
+    kind: "night"
+  },
+  {
     url: "/europes-great-fracture-2026-11-15",
     title: "Europe’s Great Fracture",
     excerpt: "France's protests are receding while sovereign risk, equity inflows and AI investment delays reveal a deeper structural fracture in Europe.",
