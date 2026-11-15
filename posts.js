@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-gigafactory-alert-across-spain-france-germany-italy-or-the-nordics-no-new-eurohpc-award-binding-consor",
+    title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential Gigafactory Alert Across Spain, France, Germany, Italy or the Nordics. No New EuroHPC Award, Binding Consor",
+    excerpt: "EuroHPC deadlines hold firm as a recovered Poste Italiane fund signals a possible channel for Italian savings into digital infrastructure.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "2 min read",
+    time: "20:00",
+    kind: "night"
+  },
+  {
     url: "/part-i-the-market-diagnosis",
     title: "Part I: The Market Diagnosis",
     excerpt: "Five signals — bonds, Nvidia, infrastructure, the Gulf and Europe — define a new financial regime built on execution, not ambition.",
