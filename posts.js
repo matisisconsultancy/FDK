@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/beyond-the-frontiers-of-knowledge",
+    title: "Beyond the Frontiers of Knowledge",
+    excerpt: "The intelligence revolution's defining challenge is institutional, not technological — whether universities, governments and societies can reinvent themselves fast enough.",
+    tag: "The Close · Intelligence",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "5 min read",
+    time: "20:16",
+    kind: "night"
+  },
+  {
     url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-gigafactory-alert-across-spain-france-germany-italy-or-the-nordics-no-new-eurohpc-award-binding-consor",
     title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential Gigafactory Alert Across Spain, France, Germany, Italy or the Nordics. No New EuroHPC Award, Binding Consor",
     excerpt: "EuroHPC deadlines hold firm as a recovered Poste Italiane fund signals a possible channel for Italian savings into digital infrastructure.",
