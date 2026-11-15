@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-risk-beneath-europes-banking-rally",
+    title: "The Risk Beneath Europe’s Banking Rally",
+    excerpt: "Credit normalization, continental consolidation and capital allocation are redefining European banking valuations.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "8 min read",
+    time: "12:24",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-the-deployment-divide",
     title: "GVI Corporate Benchmark the Deployment Divide",
     excerpt: "Two Federal Reserve reports frame the AI Supercycle's central test: converting unprecedented investment into measurable productivity before financing costs overtake returns.",
