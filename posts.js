@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/40-dollar-funding-and-currency-pressure",
+    title: "40 Dollar Funding and Currency Pressure",
+    excerpt: "Governments, hyperscalers and infrastructure now compete for long-duration financing just as money grows more expensive.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "5 min read",
+    time: "09:45",
+    kind: "day"
+  },
+  {
     url: "/when-the-system-becomes-the-risk",
     title: "When the System Becomes the Risk",
     excerpt: "A convergence of bond, governance and infrastructure shocks is turning resilience into a priced component of competitive advantage.",
