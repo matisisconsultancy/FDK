@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/it-supports-a-kkr-backed-infrastructure-platform-spanning-data-centres-power-systems-transmission-and-connectivity",
+    title: "It Supports a KKR-backed Infrastructure Platform Spanning Data Centres, Power Systems, Transmission and Connectivity.",
+    excerpt: "Samsung's integration, Nvidia's leadership test and Europe's regulatory boundary reframe who captures value in the AI Supercycle.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "5 min read",
+    time: "10:46",
+    kind: "day"
+  },
+  {
     url: "/40-dollar-funding-and-currency-pressure",
     title: "40 Dollar Funding and Currency Pressure",
     excerpt: "Governments, hyperscalers and infrastructure now compete for long-duration financing just as money grows more expensive.",
