@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-14",
+    "updated": "2026-11-15",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -160,35 +160,36 @@
       "gvi-corporate-benchmark-2026-11-11",
       "gvi-corporate-benchmark-the-succession-shock",
       "gvi-corporate-benchmark-2026-11-14",
-      "gvi-cities-methodology-1-0"
+      "gvi-cities-methodology-1-0",
+      "united-states-the-economic-cost-of-infrastructure-failure"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
-      "score": null,
-      "delta": null,
+      "score": 108,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-11",
+      "asOf": "2026-11-15",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Cost of Compute, Repriced",
-        "url": "/the-cost-of-compute-repriced",
-        "date": "2026-11-11",
-        "slot": "GVI"
+        "title": "United States: The Economic Cost of Infrastructure Failure",
+        "url": "/united-states-the-economic-cost-of-infrastructure-failure",
+        "date": "2026-11-15",
+        "slot": "Morning Brief"
       }
     },
     "countries": {
-      "asOf": "2026-11-11",
+      "asOf": "2026-11-15",
       "source": {
-        "title": "The Cost of Compute, Repriced",
-        "url": "/the-cost-of-compute-repriced",
-        "date": "2026-11-11",
-        "slot": "GVI"
+        "title": "United States: The Economic Cost of Infrastructure Failure",
+        "url": "/united-states-the-economic-cost-of-infrastructure-failure",
+        "date": "2026-11-15",
+        "slot": "Morning Brief"
       },
       "rows": [
         {
@@ -198,7 +199,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative financing pressure; positive AI demand",
+          "tag": "Infrastructure-resilience risk; innovation positive",
           "spark": [
             94,
             94,
@@ -239,8 +240,9 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous strong trade and mixed industrial assessment retained",
+          "tag": "Negative domestic credit momentum",
           "spark": [
+            91.2,
             91.2,
             91.2,
             91.2,
@@ -279,8 +281,9 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive semiconductor fundamentals; financial sensitivity",
+          "tag": "Semiconductor investment strength retained",
           "spark": [
+            88.8,
             88.8,
             88.8,
             88.8,
@@ -319,8 +322,9 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative external-balance signal",
+          "tag": "Positive quantum-computing implementation",
           "spark": [
+            84.9,
             84.9,
             84.9,
             84.9,
@@ -359,8 +363,9 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative electricity-cost and flexibility pressure",
+          "tag": "Energy-infrastructure strength; weak growth",
           "spark": [
+            83.4,
             83.4,
             83.4,
             83.4,
@@ -399,8 +404,9 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous restrictive financing assessment retained",
+          "tag": "Digital-sector momentum retained",
           "spark": [
+            82.2,
             82.2,
             82.2,
             82.2,
@@ -439,8 +445,9 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign financing sensitivity retained",
+          "tag": "Sovereign and economic weakness retained",
           "spark": [
+            81.2,
             81.2,
             81.2,
             81.2,
@@ -479,8 +486,9 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new structural observation",
+          "tag": "No qualifying new evidence",
           "spark": [
+            80.7,
             80.7,
             80.7,
             80.7,
@@ -519,8 +527,9 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "European energy-market exposure",
+          "tag": "Relative growth resilience",
           "spark": [
+            80.6,
             80.6,
             80.6,
             80.6,
@@ -559,8 +568,9 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial strength; hydropower-system sensitivity",
+          "tag": "Previous industrial assessment retained",
           "spark": [
+            79.2,
             79.2,
             79.2,
             79.2,
@@ -599,8 +609,9 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "No qualifying new evidence",
           "spark": [
+            77.8,
             77.8,
             77.8,
             77.8,
@@ -639,8 +650,9 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Hydrological constraints; structural energy strengths",
+          "tag": "Previous energy assessment retained",
           "spark": [
+            77.1,
             77.1,
             77.1,
             77.1,
@@ -679,8 +691,9 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous growth assessment retained",
+          "tag": "Relative economic resilience",
           "spark": [
+            75,
             75,
             75,
             75,
@@ -719,8 +732,9 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Central European electricity-system exposure",
+          "tag": "Modest growth momentum retained",
           "spark": [
+            72.4,
             72.4,
             72.4,
             72.4,
@@ -759,8 +773,9 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous industrial and financing assessment retained",
+          "tag": "Industrial and growth weakness retained",
           "spark": [
+            71.6,
             71.6,
             71.6,
             71.6,
@@ -3410,62 +3425,56 @@
     }
   },
   "today": {
-    "date": "2026-11-14",
+    "date": "2026-11-15",
     "edition": "Morning Brief",
-    "thesis": "GVI Corporate Benchmark",
-    "subtitle": "The Fed's AI-financing warning, Nvidia's leadership crisis and Europe's capital inflows are redrawing the corporate hierarchy — yet the GVI rankings hold, with the financial-resilience overlay raised.",
-    "standfirst": "Velocity determines who leads. Capital productivity determines who earns.",
+    "thesis": "United States: The Economic Cost of Infrastructure Failure",
+    "subtitle": "China's credit contraction, America's infrastructure breakdown and the new frontiers of scientific computing reveal the next test of global economic velocity.",
+    "standfirst": "Technological ambition opens the frontier. Execution determines who crosses it.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "AI risk contacts",
-        "value": "87%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Adv.-computing debt",
-        "value": "$680bn",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "US Oct PPI y/y",
-        "value": "6.5%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Europe fund inflows",
-        "value": "$35.13bn",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "Top-10 composite",
-        "value": "98.36",
+        "label": "GVI reference (provisional)",
+        "value": "108.0",
         "delta": null,
         "trend": "flat"
+      },
+      {
+        "label": "China Oct net new yuan loans",
+        "value": "−¥0.10tn",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "China bank-loan growth YoY",
+        "value": "4.7%",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "US flights cancelled, Nov 14",
+        "value": "6,400+",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "China corporate bond net financing, Jan–Oct",
+        "value": "¥3.10tn",
+        "delta": null,
+        "trend": "up"
       }
     ],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-14",
-      "date": "2026-11-14",
+      "title": "United States: The Economic Cost of Infrastructure Failure",
+      "url": "/united-states-the-economic-cost-of-infrastructure-failure",
+      "date": "2026-11-15",
       "slot": "Morning Brief"
     },
     "notes": [
       {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-14",
+        "title": "United States: The Economic Cost of Infrastructure Failure",
+        "url": "/united-states-the-economic-cost-of-infrastructure-failure",
         "slot": "Morning Brief",
-        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; rankings hold unchanged while the financial-resilience overlay is raised"
-      },
-      {
-        "title": "GVI Cities Methodology 1.0",
-        "url": "/gvi-cities-methodology-1-0",
-        "slot": "GVI",
-        "headline": "Singapore 92.93, Seoul 91.83 and New York 91.76 lead the GVI Global Cities ranking as markets favor financeable, productive AI capacity."
+        "headline": "No validated score changes: GVI holds at its 108.0 reference as China's credit contraction and the US aviation shutdown weigh against quantum-computing advances."
       }
     ]
   },
