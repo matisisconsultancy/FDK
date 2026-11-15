@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/latest-verified-friday-closes-november-13-releases-and-november-14-15-weekend-reporting-sunday-is-not-a-regular-trading-session-for-major-equity-or-sovereign-bond-markets",
+    title: "Latest Verified Friday Closes, November 13 Releases and November 14: 15 Weekend Reporting. Sunday Is Not a Regular Trading Session for Major Equity or Sovereign-bond Markets.",
+    excerpt: "A 6.8-point equity divergence, a 5.14% Treasury yield and record European inflows signal a repricing of who captures the AI dividend.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "4 min read",
+    time: "10:52",
+    kind: "day"
+  },
+  {
     url: "/it-supports-a-kkr-backed-infrastructure-platform-spanning-data-centres-power-systems-transmission-and-connectivity",
     title: "It Supports a KKR-backed Infrastructure Platform Spanning Data Centres, Power Systems, Transmission and Connectivity.",
     excerpt: "Samsung's integration, Nvidia's leadership test and Europe's regulatory boundary reframe who captures value in the AI Supercycle.",
