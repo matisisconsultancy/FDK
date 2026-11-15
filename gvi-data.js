@@ -165,7 +165,8 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-the-succession-shock",
       "gvi-corporate-benchmark-2026-11-14",
       "gvi-cities-methodology-1-0",
-      "united-states-the-economic-cost-of-infrastructure-failure"
+      "united-states-the-economic-cost-of-infrastructure-failure",
+      "gvi-corporate-benchmark-the-deployment-divide"
     ]
   },
   "daily": {
@@ -3479,6 +3480,12 @@ window.GVI_DATA = {
         "url": "/united-states-the-economic-cost-of-infrastructure-failure",
         "slot": "Morning Brief",
         "headline": "No validated score changes: GVI holds at its 108.0 reference as China's credit contraction and the US aviation shutdown weigh against quantum-computing advances."
+      },
+      {
+        "title": "GVI Corporate Benchmark the Deployment Divide",
+        "url": "/gvi-corporate-benchmark-the-deployment-divide",
+        "slot": "Morning Brief",
+        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; scores unchanged as AI capital outpaces productivity gains"
       }
     ]
   },
@@ -3584,7 +3591,7 @@ window.GVI_DATA = {
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-14",
+    "asOf": "2026-11-15",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3592,80 +3599,80 @@ window.GVI_DATA = {
         "name": "TSMC",
         "score": 99.8,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Manufacturing anchor; October revenue up 59.7% YoY to NT$586.89bn"
       },
       {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.4,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Economic-conversion leader"
       },
       {
         "rank": 3,
         "name": "Schneider Electric",
         "score": 99,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 4,
         "name": "Amazon",
         "score": 98.8,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 5,
         "name": "ASML",
         "score": 98.2,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 6,
         "name": "Broadcom",
         "score": 97.8,
         "delta": 0,
-        "trend": "up",
-        "note": "Same score as Nvidia; ordering is an analytical tie-break"
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 7,
         "name": "Nvidia",
         "score": 97.8,
         "delta": 0,
-        "trend": "down",
-        "note": "Governance downgrade already incorporated Nov 13; earnings Nov 17"
+        "trend": "flat",
+        "note": "Succession announcement makes governance and customer-financing policy material"
       },
       {
         "rank": 8,
         "name": "Siemens AG",
         "score": 97.7,
         "delta": 0,
-        "trend": "up",
-        "note": "€12.1bn FY2026 group free cash flow"
+        "trend": "flat",
+        "note": "FY2026 revenue €83.4bn, orders €108.2bn, free cash flow €12.1bn"
       },
       {
         "rank": 9,
         "name": "Siemens Energy",
         "score": 97.6,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Record €164bn backlog, about €15bn data-center-related"
       },
       {
         "rank": 10,
         "name": "Palantir",
         "score": 97.5,
         "delta": 0,
-        "trend": "up",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       }
     ],
     "laggards": [
@@ -3674,16 +3681,16 @@ window.GVI_DATA = {
         "name": "Volkswagen",
         "score": 61.3,
         "delta": 0,
-        "trend": "down",
-        "note": null
+        "trend": "flat",
+        "note": "Lowest of the 20-company cohort"
       },
       {
         "rank": 2,
         "name": "Nissan",
         "score": 63.4,
         "delta": 0,
-        "trend": "down",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 3,
@@ -3691,15 +3698,15 @@ window.GVI_DATA = {
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Scores unchanged"
       },
       {
         "rank": 4,
         "name": "Skydance",
         "score": 66.6,
         "delta": 0,
-        "trend": "down",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 5,
@@ -3707,7 +3714,7 @@ window.GVI_DATA = {
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Scores unchanged"
       },
       {
         "rank": 6,
@@ -3715,7 +3722,7 @@ window.GVI_DATA = {
         "score": 68.9,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Scores unchanged"
       },
       {
         "rank": 7,
@@ -3723,7 +3730,7 @@ window.GVI_DATA = {
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Scores unchanged"
       },
       {
         "rank": 8,
@@ -3731,30 +3738,30 @@ window.GVI_DATA = {
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": null
+        "note": "Scores unchanged"
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "down",
-        "note": null
+        "trend": "flat",
+        "note": "Scores unchanged"
       },
       {
         "rank": 10,
         "name": "Cellnex",
         "score": 72,
         "delta": 0,
-        "trend": "up",
-        "note": "Nine-month FCF €474m vs €186m; net debt/EBITDA 6.13x"
+        "trend": "flat",
+        "note": "Scores unchanged"
       }
     ],
     "pillars": [],
     "source": {
-      "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-14",
-      "date": "2026-11-14",
+      "title": "GVI Corporate Benchmark the Deployment Divide",
+      "url": "/gvi-corporate-benchmark-the-deployment-divide",
+      "date": "2026-11-15",
       "slot": "Morning Brief"
     }
   },

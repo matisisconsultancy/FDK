@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-the-deployment-divide",
+    title: "GVI Corporate Benchmark the Deployment Divide",
+    excerpt: "Two Federal Reserve reports frame the AI Supercycle's central test: converting unprecedented investment into measurable productivity before financing costs overtake returns.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "4 min read",
+    time: "11:59",
+    kind: "day"
+  },
+  {
     url: "/united-states-the-economic-cost-of-infrastructure-failure",
     title: "United States: The Economic Cost of Infrastructure Failure",
     excerpt: "China's credit contraction, a US aviation shutdown and quantum-computing advances expose the gap between technological scale and productive execution.",
