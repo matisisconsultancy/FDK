@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/assessment-no-new-development-has-yet-cleared-the-threshold-for-a-material-inflection-alert-the-governing-thesis-remains-intact-the-united-states-retains-critical-advantages-in-frontier-computing",
+    title: "Assessment: No New Development Has Yet Cleared the Threshold for a Material Inflection Alert. the Governing Thesis Remains Intact: The United States Retains Critical Advantages in Frontier Computing",
+    excerpt: "DeepSeek's API push, possible offshore-compute curbs and Lenovo's cost target — three developments that warrant continued scrutiny.",
+    tag: "Midday Pulse · AI Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "2 min read",
+    time: "13:01",
+    kind: "day"
+  },
+  {
     url: "/the-risk-beneath-europes-banking-rally",
     title: "The Risk Beneath Europe’s Banking Rally",
     excerpt: "Credit normalization, continental consolidation and capital allocation are redefining European banking valuations.",
