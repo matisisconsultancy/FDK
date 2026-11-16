@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-next-market-rotation",
+    title: "The Next Market Rotation",
+    excerpt: "Washington's chip restrictions, BlackRock's repositioning and higher Treasury yields converge on a more selective, more expensive AI market.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "9 min read",
+    time: "15:25",
+    kind: "day"
+  },
+  {
     url: "/the-inflection-point-the-big-take",
     title: "The Inflection Point: The Big Take",
     excerpt: "Nvidia's succession, restrictive sovereign yields and an uneasy oil surplus mark the shift of the Great Split from technological scarcity to financial power.",
