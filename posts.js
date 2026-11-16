@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-income-divide",
+    title: "The Intelligence: Income Divide",
+    excerpt: "China accelerates high-tech production as domestic demand weakens, Japan's capex outruns consumption, and Korea builds its chip ecosystem.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "09:27",
+    kind: "day"
+  },
+  {
     url: "/the-absorption-gap",
     title: "The Absorption Gap",
     excerpt: "Nvidia's repricing, China's weak consumer and Japan's contraction reveal the next financial constraint on the AI supercycle.",

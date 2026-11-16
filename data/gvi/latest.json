@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-15",
+    "updated": "2026-11-16",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -162,35 +162,36 @@
       "gvi-corporate-benchmark-2026-11-14",
       "gvi-cities-methodology-1-0",
       "united-states-the-economic-cost-of-infrastructure-failure",
-      "gvi-corporate-benchmark-the-deployment-divide"
+      "gvi-corporate-benchmark-the-deployment-divide",
+      "the-intelligence-income-divide"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": "N/V",
+      "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-15",
+      "asOf": "2026-11-16",
       "improving": null,
       "declining": null,
-      "coverage": null,
+      "coverage": 15,
       "source": {
-        "title": "United States: The Economic Cost of Infrastructure Failure",
-        "url": "/united-states-the-economic-cost-of-infrastructure-failure",
-        "date": "2026-11-15",
-        "slot": "Morning Brief"
+        "title": "The Intelligence: Income Divide",
+        "url": "/the-intelligence-income-divide",
+        "date": "2026-11-16",
+        "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-15",
+      "asOf": "2026-11-16",
       "source": {
-        "title": "United States: The Economic Cost of Infrastructure Failure",
-        "url": "/united-states-the-economic-cost-of-infrastructure-failure",
-        "date": "2026-11-15",
-        "slot": "Morning Brief"
+        "title": "The Intelligence: Income Divide",
+        "url": "/the-intelligence-income-divide",
+        "date": "2026-11-16",
+        "slot": "GVI"
       },
       "rows": [
         {
@@ -200,7 +201,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Infrastructure-resilience risk; innovation positive",
+          "tag": "Previous AI infrastructure and financing assessment retained",
           "spark": [
             94,
             94,
@@ -241,7 +242,7 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative domestic credit momentum",
+          "tag": "High-tech positive; domestic investment negative",
           "spark": [
             91.2,
             91.2,
@@ -282,7 +283,7 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Semiconductor investment strength retained",
+          "tag": "Positive semiconductor supplier investment plans",
           "spark": [
             88.8,
             88.8,
@@ -323,7 +324,7 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive quantum-computing implementation",
+          "tag": "Negative GDP and consumption; positive capex",
           "spark": [
             84.9,
             84.9,
@@ -364,7 +365,7 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Energy-infrastructure strength; weak growth",
+          "tag": "Previous assessment retained",
           "spark": [
             83.4,
             83.4,
@@ -405,7 +406,7 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Digital-sector momentum retained",
+          "tag": "Previous assessment retained",
           "spark": [
             82.2,
             82.2,
@@ -446,7 +447,7 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Sovereign and economic weakness retained",
+          "tag": "Previous assessment retained",
           "spark": [
             81.2,
             81.2,
@@ -487,7 +488,7 @@
           "score": 80.7,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new evidence",
+          "tag": "No qualifying new observation",
           "spark": [
             80.7,
             80.7,
@@ -528,7 +529,7 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative growth resilience",
+          "tag": "Previous assessment retained",
           "spark": [
             80.6,
             80.6,
@@ -569,7 +570,7 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous industrial assessment retained",
+          "tag": "Previous assessment retained",
           "spark": [
             79.2,
             79.2,
@@ -610,7 +611,7 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new evidence",
+          "tag": "No qualifying new observation",
           "spark": [
             77.8,
             77.8,
@@ -651,7 +652,7 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous energy assessment retained",
+          "tag": "Previous assessment retained",
           "spark": [
             77.1,
             77.1,
@@ -692,7 +693,7 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Relative economic resilience",
+          "tag": "Previous assessment retained",
           "spark": [
             75,
             75,
@@ -733,7 +734,7 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Modest growth momentum retained",
+          "tag": "No qualifying new observation",
           "spark": [
             72.4,
             72.4,
@@ -774,7 +775,7 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Industrial and growth weakness retained",
+          "tag": "Previous assessment retained",
           "spark": [
             71.6,
             71.6,
@@ -3426,62 +3427,56 @@
     }
   },
   "today": {
-    "date": "2026-11-15",
-    "edition": "Morning Brief",
-    "thesis": "United States: The Economic Cost of Infrastructure Failure",
-    "subtitle": "China's credit contraction, America's infrastructure breakdown and the new frontiers of scientific computing reveal the next test of global economic velocity.",
-    "standfirst": "Technological ambition opens the frontier. Execution determines who crosses it.",
+    "date": "2026-11-16",
+    "edition": "GVI · Macro",
+    "thesis": "The Intelligence: Income Divide",
+    "subtitle": "China's high-tech output is surging while domestic investment contracts, and the decisive contest is shifting from technological leadership to economic conversion.",
+    "standfirst": "Intelligence expands the frontier. Productive conversion determines who captures the value.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI reference (provisional)",
+        "label": "China high-tech output (Oct YoY)",
+        "value": "+17.6%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "China retail sales (Oct YoY)",
+        "value": "+0.4%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "China fixed-asset investment (10M)",
+        "value": "−8.1%",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "Japan real GDP (Q3 annualised)",
+        "value": "−0.1%",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "FDK Global Velocity Index (prior provisional)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
-      },
-      {
-        "label": "China Oct net new yuan loans",
-        "value": "−¥0.10tn",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "China bank-loan growth YoY",
-        "value": "4.7%",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "US flights cancelled, Nov 14",
-        "value": "6,400+",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "China corporate bond net financing, Jan–Oct",
-        "value": "¥3.10tn",
-        "delta": null,
-        "trend": "up"
       }
     ],
     "source": {
-      "title": "United States: The Economic Cost of Infrastructure Failure",
-      "url": "/united-states-the-economic-cost-of-infrastructure-failure",
-      "date": "2026-11-15",
-      "slot": "Morning Brief"
+      "title": "The Intelligence: Income Divide",
+      "url": "/the-intelligence-income-divide",
+      "date": "2026-11-16",
+      "slot": "GVI"
     },
     "notes": [
       {
-        "title": "United States: The Economic Cost of Infrastructure Failure",
-        "url": "/united-states-the-economic-cost-of-infrastructure-failure",
-        "slot": "Morning Brief",
-        "headline": "No validated score changes: GVI holds at its 108.0 reference as China's credit contraction and the US aviation shutdown weigh against quantum-computing advances."
-      },
-      {
-        "title": "GVI Corporate Benchmark the Deployment Divide",
-        "url": "/gvi-corporate-benchmark-the-deployment-divide",
-        "slot": "Morning Brief",
-        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; scores unchanged as AI capital outpaces productivity gains"
+        "title": "The Intelligence: Income Divide",
+        "url": "/the-intelligence-income-divide",
+        "slot": "GVI",
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead; no validated country-score changes established"
       }
     ]
   },
