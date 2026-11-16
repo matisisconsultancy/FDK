@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/where-markets-capital-and-geopolitics-collide-2026-11-16",
+    title: "Where Markets, Capital and Geopolitics Collide",
+    excerpt: "Technological capital is surging while household demand and financing conditions weaken — and markets are starting to price the gap.",
+    tag: "Morning Brief · Macro",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "07:57",
+    kind: "day"
+  },
+  {
     url: "/beyond-the-frontiers-of-knowledge",
     title: "Beyond the Frontiers of Knowledge",
     excerpt: "The intelligence revolution's defining challenge is institutional, not technological — whether universities, governments and societies can reinvent themselves fast enough.",
