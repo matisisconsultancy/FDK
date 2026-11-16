@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-european-financial-power",
+    title: "The Great Repricing of European Financial Power",
+    excerpt: "Banking consolidation, sovereign financing and the AI Supercycle are converging into a single contest over who allocates European savings.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "7 min read",
+    time: "10:17",
+    kind: "day"
+  },
+  {
     url: "/the-great-claim-on-capital",
     title: "The Great Claim on Capital",
     excerpt: "AI, sovereign governments and energy systems are competing for unprecedented investment capital — the emergence of a new financial hierarchy.",
