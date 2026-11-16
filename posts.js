@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-16",
+    title: "GVI Corporate Benchmark",
+    excerpt: "Technology, sovereign access and execution are becoming three distinct premiums as the AI supercycle turns more selective.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "09:37",
+    kind: "day"
+  },
+  {
     url: "/the-intelligence-income-divide",
     title: "The Intelligence: Income Divide",
     excerpt: "China accelerates high-tech production as domestic demand weakens, Japan's capex outruns consumption, and Korea builds its chip ecosystem.",
