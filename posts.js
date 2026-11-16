@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-16",
+    title: "Europe’s Great Fracture",
+    excerpt: "Europe's gas shock, France's sovereign premium and a new wave of banking integration are redrawing the continent's financial architecture.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "6 min read",
+    time: "14:22",
+    kind: "day"
+  },
+  {
     url: "/nevertheless-his-remarks-suggest-that-traditional-stress-testing-assumptions-about-the-speed-of-market-reactions-and-depositor-behaviour-may-require-reconsideration-federal-reserve-board",
     title: "Nevertheless, His Remarks Suggest That Traditional Stress-testing Assumptions About the Speed of Market Reactions and Depositor Behaviour May Require Reconsideration. Federal Reserve Board",
     excerpt: "The ECB and Fed warn the AI Supercycle is colliding with sovereign debt, credit markets and systemic financial risk.",
