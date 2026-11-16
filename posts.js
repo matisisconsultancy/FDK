@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-repricing-of-risk-2026-11-16",
+    title: "The Great Repricing of Risk",
+    excerpt: "AI's capital-discipline phase and the industrialization of private-capital distribution are redrawing where financial fragility accumulates.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "9 min read",
+    time: "15:47",
+    kind: "day"
+  },
+  {
     url: "/the-next-market-rotation",
     title: "The Next Market Rotation",
     excerpt: "Washington's chip restrictions, BlackRock's repositioning and higher Treasury yields converge on a more selective, more expensive AI market.",
