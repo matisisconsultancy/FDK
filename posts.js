@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-inflection-point-the-big-take",
+    title: "The Inflection Point: The Big Take",
+    excerpt: "Nvidia's succession, restrictive sovereign yields and an uneasy oil surplus mark the shift of the Great Split from technological scarcity to financial power.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "15:08",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-16",
     title: "Europe’s Great Fracture",
     excerpt: "Europe's gas shock, France's sovereign premium and a new wave of banking integration are redrawing the continent's financial architecture.",
