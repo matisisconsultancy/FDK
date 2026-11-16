@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-geography-of-ai-power",
+    title: "The New Geography of AI Power",
+    excerpt: "America organizes an allied AI infrastructure system as China drives down the cost of deploying advanced intelligence.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "4 min read",
+    time: "12:21",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-european-financial-power",
     title: "The Great Repricing of European Financial Power",
     excerpt: "Banking consolidation, sovereign financing and the AI Supercycle are converging into a single contest over who allocates European savings.",
