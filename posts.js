@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-claim-on-capital",
+    title: "The Great Claim on Capital",
+    excerpt: "AI, sovereign governments and energy systems are competing for unprecedented investment capital — the emergence of a new financial hierarchy.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "7 min read",
+    time: "09:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-16",
     title: "GVI Corporate Benchmark",
     excerpt: "Technology, sovereign access and execution are becoming three distinct premiums as the AI supercycle turns more selective.",
