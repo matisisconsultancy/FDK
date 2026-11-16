@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/nevertheless-his-remarks-suggest-that-traditional-stress-testing-assumptions-about-the-speed-of-market-reactions-and-depositor-behaviour-may-require-reconsideration-federal-reserve-board",
+    title: "Nevertheless, His Remarks Suggest That Traditional Stress-testing Assumptions About the Speed of Market Reactions and Depositor Behaviour May Require Reconsideration. Federal Reserve Board",
+    excerpt: "The ECB and Fed warn the AI Supercycle is colliding with sovereign debt, credit markets and systemic financial risk.",
+    tag: "Midday Pulse · Central Banks & AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "13:09",
+    kind: "day"
+  },
+  {
     url: "/the-new-geography-of-ai-power",
     title: "The New Geography of AI Power",
     excerpt: "America organizes an allied AI infrastructure system as China drives down the cost of deploying advanced intelligence.",
