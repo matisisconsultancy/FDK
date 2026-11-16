@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-future-is-being-discounted",
+    title: "The Future Is Being Discounted",
+    excerpt: "Why November 16 exposed the widening gap between technological success and financial success in the AI supercycle.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "20:06",
+    kind: "night"
+  },
+  {
     url: "/europes-ai-race-the-new-geography-of-compute-and-capital",
     title: "Europe’s AI Race: The New Geography of Compute and Capital",
     excerpt: "A Nordic–Baltic Gigafactory consortium and Uniper's grid-led strategy reframe European AI infrastructure investment.",
