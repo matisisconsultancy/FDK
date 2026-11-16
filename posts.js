@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-absorption-gap",
+    title: "The Absorption Gap",
+    excerpt: "Nvidia's repricing, China's weak consumer and Japan's contraction reveal the next financial constraint on the AI supercycle.",
+    tag: "Morning Brief · Macro & Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "09:19",
+    kind: "day"
+  },
+  {
     url: "/where-markets-capital-and-geopolitics-collide-2026-11-16",
     title: "Where Markets, Capital and Geopolitics Collide",
     excerpt: "Technological capital is surging while household demand and financing conditions weaken — and markets are starting to price the gap.",
