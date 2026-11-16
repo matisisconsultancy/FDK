@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-new-geography-of-compute-and-capital",
+    title: "Europe’s AI Race: The New Geography of Compute and Capital",
+    excerpt: "A Nordic–Baltic Gigafactory consortium and Uniper's grid-led strategy reframe European AI infrastructure investment.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 16, 2026",
+    read: "5 min read",
+    time: "19:25",
+    kind: "day"
+  },
+  {
     url: "/the-great-repricing-of-risk-2026-11-16",
     title: "The Great Repricing of Risk",
     excerpt: "AI's capital-discipline phase and the industrialization of private-capital distribution are redrawing where financial fragility accumulates.",
