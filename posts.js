@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-compute-border",
+    title: "The Compute Border",
+    excerpt: "US compute-access restrictions, a Fed warning on AI financing and mixed European industry reshape the Global Velocity assessment for November 17.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "07:09",
+    kind: "day"
+  },
+  {
     url: "/the-future-is-being-discounted",
     title: "The Future Is Being Discounted",
     excerpt: "Why November 16 exposed the widening gap between technological success and financial success in the AI supercycle.",

@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-16",
+    "updated": "2026-11-17",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -164,7 +164,8 @@
       "united-states-the-economic-cost-of-infrastructure-failure",
       "gvi-corporate-benchmark-the-deployment-divide",
       "the-intelligence-income-divide",
-      "gvi-corporate-benchmark-2026-11-16"
+      "gvi-corporate-benchmark-2026-11-16",
+      "the-compute-border"
     ]
   },
   "daily": {
@@ -175,23 +176,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "improving": null,
       "declining": null,
       "coverage": 15,
       "source": {
-        "title": "The Intelligence: Income Divide",
-        "url": "/the-intelligence-income-divide",
-        "date": "2026-11-16",
+        "title": "The Compute Border",
+        "url": "/the-compute-border",
+        "date": "2026-11-17",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-16",
+      "asOf": "2026-11-17",
       "source": {
-        "title": "The Intelligence: Income Divide",
-        "url": "/the-intelligence-income-divide",
-        "date": "2026-11-16",
+        "title": "The Compute Border",
+        "url": "/the-compute-border",
+        "date": "2026-11-17",
         "slot": "GVI"
       },
       "rows": [
@@ -202,7 +203,7 @@
           "score": 94,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous AI infrastructure and financing assessment retained",
+          "tag": "Negative regulatory and financing risk",
           "spark": [
             94,
             94,
@@ -243,7 +244,7 @@
           "score": 91.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "High-tech positive; domestic investment negative",
+          "tag": "Negative external compute-access risk",
           "spark": [
             91.2,
             91.2,
@@ -284,7 +285,7 @@
           "score": 88.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive semiconductor supplier investment plans",
+          "tag": "Negative equity sentiment; semiconductor strength retained",
           "spark": [
             88.8,
             88.8,
@@ -325,7 +326,7 @@
           "score": 84.9,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative GDP and consumption; positive capex",
+          "tag": "Negative equity sentiment; prior GDP weakness",
           "spark": [
             84.9,
             84.9,
@@ -366,7 +367,7 @@
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Positive monthly recovery",
           "spark": [
             83.4,
             83.4,
@@ -407,7 +408,7 @@
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Previous digital-sector assessment retained",
           "spark": [
             82.2,
             82.2,
@@ -448,7 +449,7 @@
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Negative",
           "spark": [
             81.2,
             81.2,
@@ -530,7 +531,7 @@
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Mixed; strong annual output",
           "spark": [
             80.6,
             80.6,
@@ -571,7 +572,7 @@
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Negative monthly reversal",
           "spark": [
             79.2,
             79.2,
@@ -612,7 +613,7 @@
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new observation",
+          "tag": "Positive",
           "spark": [
             77.8,
             77.8,
@@ -653,7 +654,7 @@
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Positive monthly industry",
           "spark": [
             77.1,
             77.1,
@@ -694,7 +695,7 @@
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Positive",
           "spark": [
             75,
             75,
@@ -735,7 +736,7 @@
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "No qualifying new observation",
+          "tag": "Mild negative",
           "spark": [
             72.4,
             72.4,
@@ -776,7 +777,7 @@
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous assessment retained",
+          "tag": "Positive rebound; weak annual trend",
           "spark": [
             71.6,
             71.6,
@@ -3428,62 +3429,56 @@
     }
   },
   "today": {
-    "date": "2026-11-16",
+    "date": "2026-11-17",
     "edition": "GVI · Macro",
-    "thesis": "The Intelligence: Income Divide",
-    "subtitle": "China's high-tech output is surging while domestic investment contracts, and the decisive contest is shifting from technological leadership to economic conversion.",
-    "standfirst": "Intelligence expands the frontier. Productive conversion determines who captures the value.",
+    "thesis": "The Compute Border",
+    "subtitle": "Compute access, AI financing risk and Europe's shallow industrial recovery now define the frontier — but no validated change in the weighted GVI has been asserted.",
+    "standfirst": "Intelligence creates the frontier. Access determines participation. Capital productivity determines who captures the value.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "China high-tech output (Oct YoY)",
-        "value": "+17.6%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "China retail sales (Oct YoY)",
-        "value": "+0.4%",
-        "delta": null,
-        "trend": "up"
-      },
-      {
-        "label": "China fixed-asset investment (10M)",
-        "value": "−8.1%",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "Japan real GDP (Q3 annualised)",
-        "value": "−0.1%",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "FDK Global Velocity Index (prior provisional)",
+        "label": "GVI headline (prior provisional, 2025 = 100)",
         "value": "108.0",
+        "delta": null,
+        "trend": "flat"
+      },
+      {
+        "label": "Euro-area industry, Sep MoM",
+        "value": "+0.2%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "US semiconductors, Nov 16",
+        "value": "−5.3%",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "Nasdaq, Nov 16",
+        "value": "−2.49%",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "Potential off-balance-sheet AI obligations (Fed)",
+        "value": "$3T",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Intelligence: Income Divide",
-      "url": "/the-intelligence-income-divide",
-      "date": "2026-11-16",
+      "title": "The Compute Border",
+      "url": "/the-compute-border",
+      "date": "2026-11-17",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Intelligence: Income Divide",
-        "url": "/the-intelligence-income-divide",
+        "title": "The Compute Border",
+        "url": "/the-compute-border",
         "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead; no validated country-score changes established"
-      },
-      {
-        "title": "GVI Corporate Benchmark",
-        "url": "/gvi-corporate-benchmark-2026-11-16",
-        "slot": "Morning Brief",
-        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; no score changes since the November 13 US close."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the 15-country scorecard; no validated score changes or ranking movements are established."
       }
     ]
   },
