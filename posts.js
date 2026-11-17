@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/what-if-the-greatest-threat-to-ai-infrastructure-valuations-is-no-longer-a-shortage-of-computing-power-but-the-possibility-that-governments-restrict-the-customers-needed-to-make-that-computing-power-f",
+    title: "What if the Greatest Threat to AI Infrastructure Valuations Is No Longer a Shortage of Computing Power: But the Possibility That Governments Restrict the Customers Needed to Make That Computing Power F",
+    excerpt: "Washington extends AI controls to remote computing access as markets correct and the ECB flags a $5.5tn financing strain.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "4 min read",
+    time: "07:52",
+    kind: "day"
+  },
+  {
     url: "/the-compute-border-2026-11-17",
     title: "The Compute Border",
     excerpt: "US compute-access limits, a Federal Reserve financing warning and a shallow European recovery define today's Global Velocity assessment.",
