@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/daily-intelligence-brief-2026-11-17",
+    title: "Daily Intelligence Brief",
+    excerpt: "The AI Supercycle's next split lies between owning computing capacity and holding the regulatory right to sell it.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "07:59",
+    kind: "day"
+  },
+  {
     url: "/what-if-the-greatest-threat-to-ai-infrastructure-valuations-is-no-longer-a-shortage-of-computing-power-but-the-possibility-that-governments-restrict-the-customers-needed-to-make-that-computing-power-f",
     title: "What if the Greatest Threat to AI Infrastructure Valuations Is No Longer a Shortage of Computing Power: But the Possibility That Governments Restrict the Customers Needed to Make That Computing Power F",
     excerpt: "Washington extends AI controls to remote computing access as markets correct and the ECB flags a $5.5tn financing strain.",
