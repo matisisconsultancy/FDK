@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-compute-squeeze",
+    title: "The Great Compute Squeeze",
+    excerpt: "Two developments on November 16–17 materially strengthen our U.S.–China AI thesis.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "12:33",
+    kind: "day"
+  },
+  {
     url: "/the-significance-lies-in-the-feds-willingness-to-treat-productivity-and-employment-as-potentially-divergent-outcomes-rather-than-assuming-that-a-technological-acceleration-necessarily-benefits-both",
     title: "The Significance Lies in the Fed’s Willingness to Treat Productivity and Employment as Potentially Divergent Outcomes, Rather Than Assuming That a Technological Acceleration Necessarily Benefits Both.",
     excerpt: "Europe finances America's AI infrastructure through its bond markets while still forecasting modest growth and no AI productivity uplift.",
