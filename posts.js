@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-significance-lies-in-the-feds-willingness-to-treat-productivity-and-employment-as-potentially-divergent-outcomes-rather-than-assuming-that-a-technological-acceleration-necessarily-benefits-both",
+    title: "The Significance Lies in the Fed’s Willingness to Treat Productivity and Employment as Potentially Divergent Outcomes, Rather Than Assuming That a Technological Acceleration Necessarily Benefits Both.",
+    excerpt: "Europe finances America's AI infrastructure through its bond markets while still forecasting modest growth and no AI productivity uplift.",
+    tag: "Midday Pulse · Central Banks & AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "12:29",
+    kind: "day"
+  },
+  {
+    url: "/the-danger-is-not-that-europe-invests-in-american-innovation-international-capital-allocation-is-economically-beneficial-when-risks-are-appropriately-priced",
+    title: "The Danger Is Not That Europe Invests in American Innovation. International Capital Allocation Is Economically Beneficial When Risks Are Appropriately Priced.",
+    excerpt: "Europe risks financing the AI supercycle without capturing its productivity dividend.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "2 min read",
+    time: "12:27",
+    kind: "day"
+  },
+  {
     url: "/the-permission-premium",
     title: "The Permission Premium",
     excerpt: "Markets are no longer pricing only the cost of producing intelligence, but the permission, financing and infrastructure required to deploy it.",
