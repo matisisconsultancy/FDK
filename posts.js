@@ -7,6 +7,30 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/decisive-signal-whether-sovereign-risk-premiums-begin-affecting-investment-grade-corporate-borrowing-and-productive-infrastructure-finance",
+    title: "Decisive Signal: Whether Sovereign Risk Premiums Begin Affecting Investment-grade Corporate Borrowing and Productive Infrastructure Finance.",
+    excerpt: "A new global financial hierarchy is forming around who can afford to make intelligence productive.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "19:32",
+    kind: "night"
+  },
+  {
+    url: "/3-the-second-order-financial-effect",
+    title: "3: The Second-order Financial Effect",
+    excerpt: "Two developments since November 16 show Europe's computing race is now decided by converting electricity access into deliverable physical capacity.",
+    tag: "The Close · AI Infrastructure",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "19:31",
+    kind: "night"
+  },
+  {
     url: "/key-numbers-to-watch",
     title: "Key Numbers to Watch",
     excerpt: "Markets are no longer imposing the same financing terms on every AI participant — they are differentiating by credit, dependence, regulation and cash flow.",
