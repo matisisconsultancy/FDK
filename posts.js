@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-17",
+    title: "Europe’s Great Fracture",
+    excerpt: "The European Commission's Autumn Forecast confirms a continent of competing speeds, with France falling behind on growth, deficits and debt.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "8 min read",
+    time: "14:37",
+    kind: "day"
+  },
+  {
     url: "/the-great-compute-squeeze",
     title: "The Great Compute Squeeze",
     excerpt: "Two developments on November 16–17 materially strengthen our U.S.–China AI thesis.",
