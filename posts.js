@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-compute-border-2026-11-17",
+    title: "The Compute Border",
+    excerpt: "US compute-access limits, a Federal Reserve financing warning and a shallow European recovery define today's Global Velocity assessment.",
+    tag: "GVI · Global Velocity",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "07:36",
+    kind: "day"
+  },
+  {
     url: "/the-compute-border",
     title: "The Compute Border",
     excerpt: "US compute-access restrictions, a Fed warning on AI financing and mixed European industry reshape the Global Velocity assessment for November 17.",

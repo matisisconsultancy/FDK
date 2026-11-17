@@ -169,14 +169,15 @@ window.GVI_DATA = {
       "gvi-corporate-benchmark-the-deployment-divide",
       "the-intelligence-income-divide",
       "gvi-corporate-benchmark-2026-11-16",
-      "the-compute-border"
+      "the-compute-border",
+      "the-compute-border-2026-11-17"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": null,
+      "delta": "N/V",
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
@@ -186,7 +187,7 @@ window.GVI_DATA = {
       "coverage": 15,
       "source": {
         "title": "The Compute Border",
-        "url": "/the-compute-border",
+        "url": "/the-compute-border-2026-11-17",
         "date": "2026-11-17",
         "slot": "GVI"
       }
@@ -195,7 +196,7 @@ window.GVI_DATA = {
       "asOf": "2026-11-17",
       "source": {
         "title": "The Compute Border",
-        "url": "/the-compute-border",
+        "url": "/the-compute-border-2026-11-17",
         "date": "2026-11-17",
         "slot": "GVI"
       },
@@ -371,7 +372,7 @@ window.GVI_DATA = {
           "score": 83.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive monthly recovery",
+          "tag": "Positive monthly recovery (+1.3% MoM industry)",
           "spark": [
             83.4,
             83.4,
@@ -412,7 +413,7 @@ window.GVI_DATA = {
           "score": 82.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Previous digital-sector assessment retained",
+          "tag": "Prior digital-sector assessment retained",
           "spark": [
             82.2,
             82.2,
@@ -453,7 +454,7 @@ window.GVI_DATA = {
           "score": 81.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative",
+          "tag": "Negative (−0.5% MoM industry)",
           "spark": [
             81.2,
             81.2,
@@ -535,7 +536,7 @@ window.GVI_DATA = {
           "score": 80.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Mixed; strong annual output",
+          "tag": "Mixed; strong annual output (−0.2% MoM industry)",
           "spark": [
             80.6,
             80.6,
@@ -576,7 +577,7 @@ window.GVI_DATA = {
           "score": 79.2,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Negative monthly reversal",
+          "tag": "Negative monthly reversal (−2.1% MoM industry)",
           "spark": [
             79.2,
             79.2,
@@ -617,7 +618,7 @@ window.GVI_DATA = {
           "score": 77.8,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive",
+          "tag": "Positive (+3.7% MoM industry)",
           "spark": [
             77.8,
             77.8,
@@ -658,7 +659,7 @@ window.GVI_DATA = {
           "score": 77.1,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive monthly industry",
+          "tag": "Positive monthly industry (+1.0% MoM)",
           "spark": [
             77.1,
             77.1,
@@ -699,7 +700,7 @@ window.GVI_DATA = {
           "score": 75,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive",
+          "tag": "Positive (+0.9% MoM industry)",
           "spark": [
             75,
             75,
@@ -740,7 +741,7 @@ window.GVI_DATA = {
           "score": 72.4,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Mild negative",
+          "tag": "Mild negative (−0.3% MoM industry)",
           "spark": [
             72.4,
             72.4,
@@ -781,7 +782,7 @@ window.GVI_DATA = {
           "score": 71.6,
           "delta": "N/V",
           "trend": "flat",
-          "tag": "Positive rebound; weak annual trend",
+          "tag": "Positive rebound; weak annual trend (+1.2% MoM industry)",
           "spark": [
             71.6,
             71.6,
@@ -3483,6 +3484,12 @@ window.GVI_DATA = {
         "url": "/the-compute-border",
         "slot": "GVI",
         "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the 15-country scorecard; no validated score changes or ranking movements are established."
+      },
+      {
+        "title": "The Compute Border",
+        "url": "/the-compute-border-2026-11-17",
+        "slot": "GVI",
+        "headline": "US compute-access limits, a Federal Reserve financing warning and a shallow European recovery leave country scores unchanged: the US leads at 94.0, China 91.2 and South Korea 88.8."
       }
     ]
   },
