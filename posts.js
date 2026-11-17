@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-permission-premium",
+    title: "The Permission Premium",
+    excerpt: "Markets are no longer pricing only the cost of producing intelligence, but the permission, financing and infrastructure required to deploy it.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "4 min read",
+    time: "08:37",
+    kind: "day"
+  },
+  {
     url: "/daily-intelligence-brief-2026-11-17",
     title: "Daily Intelligence Brief",
     excerpt: "The AI Supercycle's next split lies between owning computing capacity and holding the regulatory right to sell it.",
