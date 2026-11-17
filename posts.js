@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/key-numbers-to-watch",
+    title: "Key Numbers to Watch",
+    excerpt: "Markets are no longer imposing the same financing terms on every AI participant — they are differentiating by credit, dependence, regulation and cash flow.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "14:42",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-17",
     title: "Europe’s Great Fracture",
     excerpt: "The European Commission's Autumn Forecast confirms a continent of competing speeds, with France falling behind on growth, deficits and debt.",
