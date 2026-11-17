@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/part-ii-where-global-capital-is-moving",
+    title: "Part II: Where Global Capital Is Moving",
+    excerpt: "The next capital rotation will reward financing quality, execution credibility and return on every unit of capital invested.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "19:58",
+    kind: "night"
+  },
+  {
     url: "/decisive-signal-whether-sovereign-risk-premiums-begin-affecting-investment-grade-corporate-borrowing-and-productive-infrastructure-finance",
     title: "Decisive Signal: Whether Sovereign Risk Premiums Begin Affecting Investment-grade Corporate Borrowing and Productive Infrastructure Finance.",
     excerpt: "A new global financial hierarchy is forming around who can afford to make intelligence productive.",
