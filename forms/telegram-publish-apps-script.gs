@@ -66,6 +66,13 @@ var CONFIG = {
   // Idioma de los mensajes de estado que ve quien publica: "it" o "en".
   LANG: "it",
 
+  // ---- Buffer anti-fragmentación ----
+  // Telegram corta a ~4096 caratteri: un newsletter lungo arriva in 2–4
+  // messaggi. Invece di pubblicare ogni pezzo come nota separata, il bot
+  // accumula i messaggi di fila dello stesso utente e pubblica UNA nota quando
+  // passano BUFFER_SECONDS di silenzio (o quando l'autore scrive "FINE").
+  BUFFER_SECONDS: 90,
+
   // ---- Ediciones por hora ----
   // El bot elige la edición según la hora de publicación (zona TIMEZONE):
   // `from` = hora (0–23) a partir de la cual aplica. `slot` = etiqueta del
@@ -125,6 +132,11 @@ var TXT = {
   delCancelled: { it: "✖ Eliminazione annullata.", en: "✖ Deletion cancelled." },
   delNotFound: { it: function (s) { return "⚠️ Non trovo «" + s + "» online. Controlla il link o lo slug (o la nota è già stata eliminata)."; },
                  en: function (s) { return "⚠️ I can't find «" + s + "» online. Check the link or slug (or the note is already deleted)."; } },
+  collecting: { it: "📝 <b>Ricevuto.</b> Se il testo è spezzato in più messaggi, mandali pure: li unisco in <b>una</b> sola nota.\nScrivi <b>FINE</b> per pubblicare subito.",
+                en: "📝 <b>Got it.</b> If the text is split across messages, keep sending: I'll merge them into <b>one</b> note.\nType <b>FINE</b> to publish now." },
+  flushEmpty: { it: "ℹ️ Non c'è nulla in attesa da pubblicare.", en: "ℹ️ There's nothing waiting to publish." },
+  bufLost:    { it: function (e) { return "✖ Non sono riuscito a pubblicare la nota in sospeso: " + e + "\nRimanda il testo."; },
+                en: function (e) { return "✖ I couldn't publish the pending note: " + e + "\nPlease resend the text."; } },
 };
 function L(key) { var m = TXT[key]; return m ? (m[CONFIG.LANG] || m.it) : ""; }
 // ========================================================
@@ -170,6 +182,11 @@ function pollUpdates() {
     // Runs every minute: notify when a pending publish is actually live, or a
     // pending deletion is actually gone. Must be BEFORE the early return below.
     processPendingConfirms_();
+
+    // Also every minute: publish any buffered text that has gone quiet for
+    // BUFFER_SECONDS (the anti-fragmentation debounce). BEFORE the early return
+    // so a buffer still flushes on a minute with no new messages.
+    flushQuietBuffers_();
 
     var props = PropertiesService.getScriptProperties();
     var offset = Number(props.getProperty("TG_OFFSET") || 0);
@@ -443,7 +460,29 @@ function processMessage_(msg) {
     }
   }
 
-  // ---- gather the article (document > text) ----
+  // ---- publish-now command: flush the buffer immediately ----
+  if (/^\s*\/?(?:fine|pubblica|publica|publish|invia)\s*[.!]?$/i.test(text)) {
+    flushBuffer_(chatId);
+    return;
+  }
+
+  // ---- a document (.docx/.pdf/.txt) is a complete article → publish now ----
+  if (msg.document) { publishArticle_(msg); return; }
+
+  // ---- plain text → buffer it (anti-fragmentation) ----
+  // Consecutive text messages from the same author are accumulated and
+  // published as ONE note after BUFFER_SECONDS of quiet (or on "FINE"), so a
+  // long paste that Telegram split into several messages is never fragmented
+  // into several notes.
+  if (text) { appendToBuffer_(chatId, fromId, msg.text); return; }
+
+  tgSend_(chatId, L("noText") + helpText_());
+}
+
+// Build and commit ONE note from a message: the flushed text buffer, or a
+// document. (The former processMessage_ publish path, now reusable.)
+function publishArticle_(msg) {
+  var chatId = msg.chat && msg.chat.id;
   var got = extractContent_(msg);       // { text, title, source }
   var raw = (got.text || "").trim();
   if (!raw) { tgSend_(chatId, L("noText") + helpText_()); return; }
@@ -543,6 +582,92 @@ function processMessage_(msg) {
 
   addPendingConfirm_({ type: "publish", slug: slug, chatId: chatId, url: url, title: title, edition: ed.label,
                        draft: when.iso + "-" + slug + ".md" });
+}
+
+/* ============ ANTI-FRAGMENTATION BUFFER ============ */
+// Telegram splits a long paste into several messages, which can land in
+// different one-minute polls. So we accumulate an author's consecutive text
+// messages and publish ONE note once BUFFER_SECONDS pass with no new piece (or
+// when the author sends "FINE"). Each piece is stored durably in its own Script
+// Property (BUF_<chat>_<i>, each ≤ one Telegram message ≈ 4 KB, under the 9 KB
+// property limit); ACTIVE_BUFFERS holds the small per-chat metadata.
+function nowSec_() { return Math.floor(Date.now() / 1000); }
+function activeBuffers_() {
+  var raw = PropertiesService.getScriptProperties().getProperty("ACTIVE_BUFFERS");
+  if (!raw) return {};
+  try { return JSON.parse(raw) || {}; } catch (e) { return {}; }
+}
+function saveActiveBuffers_(obj) {
+  var props = PropertiesService.getScriptProperties();
+  if (obj && Object.keys(obj).length) props.setProperty("ACTIVE_BUFFERS", JSON.stringify(obj));
+  else props.deleteProperty("ACTIVE_BUFFERS");
+}
+
+// Add one text piece to the author's buffer; ack only on the first piece.
+function appendToBuffer_(chatId, fromId, text) {
+  var piece = String(text || "");
+  if (!piece.trim()) { tgSend_(chatId, L("noText") + helpText_()); return; }
+  var props = PropertiesService.getScriptProperties();
+  var bufs = activeBuffers_();
+  var key = String(chatId);
+  var b = bufs[key] || { from: fromId, n: 0, last: 0 };
+  try {
+    props.setProperty("BUF_" + key + "_" + b.n, piece);
+  } catch (e) {
+    // A property write can fail (9 KB limit on heavy multibyte text): publish
+    // what we have plus this piece right away rather than lose it.
+    flushBuffer_(chatId, piece);
+    return;
+  }
+  var first = b.n === 0;
+  b.n += 1;
+  b.last = nowSec_();
+  b.from = fromId;
+  bufs[key] = b;
+  saveActiveBuffers_(bufs);
+  if (first) tgSend_(chatId, L("collecting"));
+}
+
+// Concatenate the buffered pieces (optionally plus a trailing piece), clear the
+// buffer and publish ONE note. Triggered by "FINE", by the debounce, or by an
+// overflowing append.
+function flushBuffer_(chatId, extraPiece) {
+  var props = PropertiesService.getScriptProperties();
+  var bufs = activeBuffers_();
+  var key = String(chatId);
+  var b = bufs[key];
+  var parts = [];
+  if (b) {
+    for (var i = 0; i < b.n; i++) {
+      var p = props.getProperty("BUF_" + key + "_" + i);
+      if (p != null) parts.push(p);
+      props.deleteProperty("BUF_" + key + "_" + i);
+    }
+    delete bufs[key];
+    saveActiveBuffers_(bufs);
+  }
+  if (typeof extraPiece === "string" && extraPiece) parts.push(extraPiece);
+  var text = parts.join("\n\n").trim();
+  if (!text) { tgSend_(chatId, L("flushEmpty")); return; }
+  try {
+    publishArticle_({ chat: { id: chatId }, from: { id: b ? b.from : null }, text: text });
+  } catch (e) {
+    tgSend_(chatId, L("bufLost")(String(e)));
+  }
+}
+
+// Called every poll: flush any buffer quiet for ≥ BUFFER_SECONDS.
+function flushQuietBuffers_() {
+  var bufs = activeBuffers_();
+  var keys = Object.keys(bufs);
+  if (!keys.length) return;
+  var cutoff = nowSec_() - (CONFIG.BUFFER_SECONDS || 90);
+  for (var i = 0; i < keys.length; i++) {
+    var k = keys[i];
+    if ((bufs[k].last || 0) <= cutoff) {
+      try { flushBuffer_(Number(k)); } catch (e) { Logger.log("flush " + k + ": " + e); }
+    }
+  }
 }
 
 // Split the incoming text into { title, body, dateObj, edition, hadMasthead }.
