@@ -49,10 +49,18 @@ if (fs.existsSync(UNPUB)) {
   }
 }
 
-const pending = fs.readdirSync(DRAFTS)
+let pending = fs.readdirSync(DRAFTS)
   .filter((f) => f.endsWith(".md") && !SKIP.has(f))
   .filter((f) => fs.statSync(path.join(DRAFTS, f)).isFile())
   .sort();
+
+// ---- B: re-stitch fragments BEFORE any guard runs --------------------------
+// Telegram splits a long paste into several messages. The bot's buffer (A) now
+// joins them into one draft, but as a safety net — for drafts from an older bot
+// or another channel — reassemble here too, so the guards below judge the whole
+// assembled note, not the fragments. Deterministic when the pieces carry a
+// `thread`/`part` front-matter; otherwise a same-day heuristic.
+pending = restitchPending(pending);
 
 if (!pending.length) {
   console.log(unpublished.length ? `Unpublished ${unpublished.length} note(s); no drafts to publish.` : "No pending drafts.");
@@ -178,6 +186,62 @@ function resolveSlug(file) {
   fs.writeFileSync(path.join(DRAFTS, file), src.replace(/^slug\s*:.*$/m, `slug: ${next}`));
   console.log(`→ /${slug}/ already holds another note — this one is published as /${next}/`);
   return { ok: true };
+}
+
+// Reassemble split pastes into whole notes before the guards see them.
+function restitchPending(list) {
+  const readD = (f) => {
+    const src = fs.readFileSync(path.join(DRAFTS, f), "utf8").replace(/\r\n/g, "\n");
+    const m = src.match(/^---\n([\s\S]*?)\n---\n?([\s\S]*)$/);
+    return { fm: m ? m[1] : "", body: m ? m[2] : src, hasFM: !!m };
+  };
+  // [ \t] (not \s) after the colon so an empty field ("title:") reads as "",
+  // instead of \s swallowing the newline and grabbing the next line's value.
+  const fmGet = (fm, k) => ((fm.match(new RegExp(`(?:^|\\n)[ \\t]*${k}[ \\t]*:[ \\t]*(.*)`)) || [])[1] || "").trim();
+  const bodyWords = (body) => (body.replace(/^::.*$/gm, " ").match(/[A-Za-z0-9’'-]+/g) || []).length;
+  const writeNote = (f, fm, body) => fs.writeFileSync(path.join(DRAFTS, f),
+    `---\n${fm.replace(/^\n+|\n+$/g, "")}\n---\n\n${body.replace(/^\n+/, "").trimEnd()}\n`);
+
+  // 1) deterministic: group by `thread`, concatenate by `part`, keep part 1.
+  const byThread = {};
+  for (const f of list) {
+    const d = readD(f); const th = fmGet(d.fm, "thread");
+    if (th) (byThread[th] = byThread[th] || []).push({ f, part: parseInt(fmGet(d.fm, "part"), 10) || 0 });
+  }
+  const consumed = new Set();
+  for (const th of Object.keys(byThread)) {
+    const grp = byThread[th]; if (grp.length < 2) continue;
+    grp.sort((a, b) => a.part - b.part || a.f.localeCompare(b.f));
+    const head = readD(grp[0].f);
+    const merged = grp.map((g) => readD(g.f).body.trim()).filter(Boolean).join("\n\n");
+    const fm = head.fm.replace(/(?:^|\n)[ \t]*(?:thread|part)[ \t]*:.*(?=\n|$)/g, "");
+    writeNote(grp[0].f, fm, merged);
+    for (let i = 1; i < grp.length; i++) { fs.rmSync(path.join(DRAFTS, grp[i].f)); consumed.add(grp[i].f); }
+    console.log(`→ stitched thread ${th}: ${grp.length} parts → ${grp[0].f}`);
+  }
+  list = list.filter((f) => !consumed.has(f));
+
+  // 2) heuristic: a fragment (no valid title) the same day, right after a full
+  //    titled note, is appended to that note instead of becoming its own.
+  const dateOf = (f, d) => (f.match(/^(\d{4}-\d{2}-\d{2})/) || [])[1] || fmGet(d.fm, "date");
+  const out = [];
+  let anchor = null; // { f, date } of the last full titled note
+  for (const f of list) {
+    const d = readD(f);
+    const title = fmGet(d.fm, "title");
+    const isFragment = !title || !!looksJunkTitle(title);
+    const date = dateOf(f, d);
+    if (anchor && isFragment && date && date === anchor.date) {
+      const a = readD(anchor.f);
+      writeNote(anchor.f, a.fm, `${a.body.trim()}\n\n${d.body.trim()}`);
+      fs.rmSync(path.join(DRAFTS, f));
+      console.log(`→ appended fragment ${f} into ${anchor.f} (same day, no valid title)`);
+      continue;
+    }
+    out.push(f);
+    anchor = (title && !looksJunkTitle(title) && bodyWords(d.body) >= 300) ? { f, date } : null;
+  }
+  return out;
 }
 
 for (const file of pending) {
