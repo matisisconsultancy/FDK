@@ -5731,18 +5731,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/the-race-moves-from-models-to-machines",
-    title: "The Race Moves From Models to Machines",
-    excerpt: "America raises the capability ceiling while China scales the deployment floor—Physical AI becomes the next battleground.",
-    tag: "U.s. · AI",
-    slot: "U.s.",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "September 27, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/the-italian-banking-paradox-2-0",
     title: "The Italian Banking Paradox 2.0",
     excerpt: "Italy's banking Risiko is no longer Italy's alone — it is becoming a re-equilibrium of Eurozone finance.",
@@ -5763,18 +5751,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
     date: "September 27, 2026",
     read: "4 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/the-great-repricing-of-ai",
-    title: "The Great Repricing of AI",
-    excerpt: "With the 10-year at 5.158%, AI leadership only pays where it converts into cash and valuation still leaves room for upside.",
-    tag: "FDK GVI Corporate Benchmark · Capital",
-    slot: "FDK GVI Corporate Benchmark",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "September 27, 2026",
-    read: "6 min read",
     time: "08:00",
     kind: "day"
   },
@@ -7171,6 +7147,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
