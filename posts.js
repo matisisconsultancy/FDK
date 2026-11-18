@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-18",
+    title: "The Big Take",
+    excerpt: "France now pays a 44-basis-point premium over Italy, inverting Europe's historical sovereign hierarchy.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "6 min read",
+    time: "15:05",
+    kind: "day"
+  },
+  {
     url: "/france-the-coming-reckoning",
     title: "France: The Coming Reckoning",
     excerpt: "France's crisis is no longer just political — it is becoming financial, and the consequences reach across the eurozone.",
