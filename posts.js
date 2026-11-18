@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-key-numbers-to-watch",
+    title: "The Key Numbers to Watch",
+    excerpt: "Nvidia's record quarter meets investor caution, as the AI Supercycle becomes a contest over the distribution of returns rather than the existence of demand.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "5 min read",
+    time: "08:04",
+    kind: "day"
+  },
+  {
     url: "/us-and-european-equity-figures-are-november-17-closes-asian-commodity-currency-and-treasury-observations-are-early-november-18-quotations-and-are-not-synchronized",
     title: "US and European Equity Figures Are November 17 Closes. Asian, Commodity, Currency and Treasury Observations Are Early November 18 Quotations and Are Not Synchronized.",
     excerpt: "Nvidia's record quarter meets a selective market as Anthropic, the ECB and a resilient Fed redraw the hierarchy of AI capital.",
