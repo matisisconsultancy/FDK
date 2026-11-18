@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/confidence-and-materiality-decision-high-confidence-in-the-reported-statistics-and-corporate-financial-statements-high-materiality-for-nvidia-us-industrial-activity-and-japans-trade-performance-m",
+    title: "Confidence and Materiality Decision: High Confidence in the Reported Statistics and Corporate Financial Statements; High Materiality for Nvidia, US Industrial Activity and Japan’s Trade Performance. M",
+    excerpt: "The AI Supercycle is accelerating faster than the economies financing it — and its financial returns are concentrating.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "5 min read",
+    time: "07:06",
+    kind: "day"
+  },
+  {
     url: "/part-ii-where-global-capital-is-moving",
     title: "Part II: Where Global Capital Is Moving",
     excerpt: "The next capital rotation will reward financing quality, execution credibility and return on every unit of capital invested.",
