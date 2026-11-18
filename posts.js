@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/third-the-transition-to-the-vera-rubin-architecture-is-already-producing-commercial-shipments",
+    title: "Third, the Transition to the Vera Rubin Architecture Is Already Producing Commercial Shipments.",
+    excerpt: "Nvidia's record quarter confirms extraordinary supplier profitability, even as the financial divide across the AI economy widens.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "4 min read",
+    time: "08:49",
+    kind: "day"
+  },
+  {
     url: "/the-key-numbers-to-watch",
     title: "The Key Numbers to Watch",
     excerpt: "Nvidia's record quarter meets investor caution, as the AI Supercycle becomes a contest over the distribution of returns rather than the existence of demand.",
