@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-consequences-may-be-decisive-for-private-credit-specialized-computing-operators-and-technology-infrastructure-valuations",
+    title: "The Consequences May Be Decisive for Private Credit, Specialized Computing Operators and Technology Infrastructure Valuations.",
+    excerpt: "Nvidia validated demand while the ECB flagged financing risk — the Great Split is now a divide in capital productivity.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "4 min read",
+    time: "13:34",
+    kind: "day"
+  },
+  {
     url: "/the-more-immediate-vulnerability-lies-with-investment-funds-leveraged-positions-and-concentrated-holdings-across-equities-and-credit",
     title: "The More Immediate Vulnerability Lies With Investment Funds, Leveraged Positions and Concentrated Holdings Across Equities and Credit.",
     excerpt: "The ECB maps the hidden liabilities of the AI buildout as Singapore reinvents financial intermediation and UK inflation reasserts the energy constraint.",
