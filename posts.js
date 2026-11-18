@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/us-and-european-equity-figures-are-november-17-closes-asian-commodity-currency-and-treasury-observations-are-early-november-18-quotations-and-are-not-synchronized",
+    title: "US and European Equity Figures Are November 17 Closes. Asian, Commodity, Currency and Treasury Observations Are Early November 18 Quotations and Are Not Synchronized.",
+    excerpt: "Nvidia's record quarter meets a selective market as Anthropic, the ECB and a resilient Fed redraw the hierarchy of AI capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "4 min read",
+    time: "07:52",
+    kind: "day"
+  },
+  {
     url: "/gvi-corporate-benchmark-2026-11-18",
     title: "GVI Corporate Benchmark",
     excerpt: "Record profits are no longer enough — Nvidia's blowout quarter met a muted market as investors price capital productivity over growth.",
