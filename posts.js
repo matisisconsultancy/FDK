@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/france-the-coming-reckoning",
+    title: "France: The Coming Reckoning",
+    excerpt: "France's crisis is no longer just political — it is becoming financial, and the consequences reach across the eurozone.",
+    tag: "In Focus · Sovereign Risk",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "6 min read",
+    time: "11:00",
+    kind: "day"
+  },
+  {
     url: "/the-sovereign-discount-and-the-distribution-premium",
     title: "The Sovereign Discount and the Distribution Premium",
     excerpt: "Brussels enables Continental Scale just as the macro backdrop turns less forgiving — and a new valuation hierarchy forms around sovereign risk and distribution efficiency.",
