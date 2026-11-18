@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-sovereign-discount-and-the-distribution-premium",
+    title: "The Sovereign Discount and the Distribution Premium",
+    excerpt: "Brussels enables Continental Scale just as the macro backdrop turns less forgiving — and a new valuation hierarchy forms around sovereign risk and distribution efficiency.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "9 min read",
+    time: "09:19",
+    kind: "day"
+  },
+  {
     url: "/third-the-transition-to-the-vera-rubin-architecture-is-already-producing-commercial-shipments",
     title: "Third, the Transition to the Vera Rubin Architecture Is Already Producing Commercial Shipments.",
     excerpt: "Nvidia's record quarter confirms extraordinary supplier profitability, even as the financial divide across the AI economy widens.",
