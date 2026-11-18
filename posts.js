@@ -7,6 +7,138 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-confirmation-signal",
+    title: "The Confirmation Signal",
+    excerpt: "A disciplined framework for reading BTP–Bund spreads: level, confirmation, action.",
+    tag: "Midday Pulse · Macro",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "October 2, 2026",
+    read: "4 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/the-slowest-complement",
+    title: "The Slowest Complement",
+    excerpt: "AI no longer moves at the speed of the model — it moves at the speed of its slowest complement.",
+    tag: "Morning View · AI",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 6, 2026",
+    read: "11 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/bankable-growth",
+    title: "Bankable Growth",
+    excerpt: "With U.S. long yields at multi-decade highs, AI growth must now compete for capital on materially tougher terms.",
+    tag: "Morning View · Capital",
+    slot: "Morning View",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "September 25, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/sovereign-personal-computing",
+    title: "Sovereign Personal Computing",
+    excerpt: "Why the Apple–Meta alliance signals the rise of sovereign personal computing.",
+    tag: "Morning Brief · AI",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "October 17, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/the-electricity-advantage",
+    title: "The Electricity Advantage",
+    excerpt: "Two developments since November 16 show Europe's computing race is now decided by converting electricity access into deliverable physical capacity.",
+    tag: "The Close · AI Infrastructure",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 17, 2026",
+    read: "5 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
+    url: "/the-price-of-long-term-capital",
+    title: "The Price of Long-Term Capital",
+    excerpt: "Governments, hyperscalers and infrastructure now compete for long-duration financing just as money grows more expensive.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 15, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/the-migration-of-scarcity",
+    title: "The Migration of Scarcity",
+    excerpt: "AI does not eliminate the economics of the physical world — it intensifies them, migrating scarcity from computing to memory to optics to power to capital.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "September 15, 2026",
+    read: "6 min read",
+    time: "21:00",
+    kind: "night"
+  },
+  {
+    url: "/strong-banks-weak-investment",
+    title: "Strong Banks, Weak Investment",
+    excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping how capital is allocated across Europe.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 30, 2026",
+    read: "5 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
+    url: "/the-governance-shock",
+    title: "The Governance Shock",
+    excerpt: "The AI Supercycle meets its sharpest governance shock even as the industrial foundations keep expanding.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 13, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/ais-hidden-obligations",
+    title: "AI’s Hidden Obligations",
+    excerpt: "The Fed brings AI financing into the stability framework as capital rotates to Europe without matching productivity gains.",
+    tag: "Morning Brief · Smart Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 14, 2026",
+    read: "5 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
+    url: "/capital-that-compounds",
+    title: "Capital That Compounds",
+    excerpt: "Record equities, retreating consumers and the next financial divide — who captures the returns of the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "October 10, 2026",
+    read: "9 min read",
+    time: "12:30",
+    kind: "day"
+  },
+  {
     url: "/the-intelligence-gold-rush",
     title: "The Intelligence Gold Rush",
     excerpt: "As AI becomes the century's largest capital-intensive undertaking, the decisive question shifts from who builds the most intelligence to who earns the most from each dollar invested.",
@@ -88,18 +220,6 @@ window.FDK_POSTS = [
     date: "November 17, 2026",
     read: "5 min read",
     time: "19:58",
-    kind: "night"
-  },
-  {
-    url: "/3-the-second-order-financial-effect",
-    title: "3: The Second-order Financial Effect",
-    excerpt: "Two developments since November 16 show Europe's computing race is now decided by converting electricity access into deliverable physical capacity.",
-    tag: "The Close · AI Infrastructure",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "November 17, 2026",
-    read: "5 min read",
-    time: "19:31",
     kind: "night"
   },
   {
@@ -391,18 +511,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/40-dollar-funding-and-currency-pressure",
-    title: "40 Dollar Funding and Currency Pressure",
-    excerpt: "Governments, hyperscalers and infrastructure now compete for long-duration financing just as money grows more expensive.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 15, 2026",
-    read: "5 min read",
-    time: "09:45",
-    kind: "day"
-  },
-  {
     url: "/europes-ai-race-the-500-billion-sovereignty-test",
     title: "Europe’s AI Race: The €500 Billion Sovereignty Test",
     excerpt: "Brussels quantifies a €500bn sovereignty bill as Paris calls for European AI procurement and the Gigafactory race sharpens.",
@@ -499,18 +607,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/4-in-september",
-    title: "4% in September.",
-    excerpt: "The Fed brings AI financing into the stability framework as capital rotates to Europe without matching productivity gains.",
-    tag: "Morning Brief · Smart Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
-    date: "November 14, 2026",
-    read: "5 min read",
-    time: "07:02",
-    kind: "day"
-  },
-  {
     url: "/the-empire-of-intelligence-at-a-crossroads",
     title: "The Empire of Intelligence at a Crossroads",
     excerpt: "November 13 reframed the AI cycle as a redistribution of opportunity and risk, not a retreat from artificial intelligence.",
@@ -604,18 +700,6 @@ window.FDK_POSTS = [
     date: "November 13, 2026",
     read: "5 min read",
     time: "07:22",
-    kind: "day"
-  },
-  {
-    url: "/the-s-p-500-declined-0-4-ap-news",
-    title: "The S&P 500 Declined 0.4%. AP News",
-    excerpt: "The AI Supercycle meets its sharpest governance shock even as the industrial foundations keep expanding.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "November 13, 2026",
-    read: "5 min read",
-    time: "07:07",
     kind: "day"
   },
   {
@@ -2153,18 +2237,6 @@ window.FDK_POSTS = [
     read: "4 min read",
     time: "19:42",
     kind: "night"
-  },
-  {
-    url: "/public-debt-stands-at-119-of-gdp-2026-10-30",
-    title: "Public Debt Stands at 119% of GDP.",
-    excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping how capital is allocated across Europe.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "October 30, 2026",
-    read: "5 min read",
-    time: "14:37",
-    kind: "day"
   },
   {
     url: "/the-battle-for-the-economics-of-intelligence",
@@ -4063,18 +4135,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/2-why-now-three-economic-forces-are-converging",
-    title: "2: Why Now: Three Economic Forces Are Converging",
-    excerpt: "Why the Apple–Meta alliance signals the rise of sovereign personal computing.",
-    tag: "Morning Brief · AI",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    date: "October 17, 2026",
-    read: "5 min read",
-    time: "08:52",
-    kind: "day"
-  },
-  {
     url: "/the-great-capital-collision",
     title: "The Great Capital Collision",
     excerpt: "Technological demand stays strong, but the capacity to finance, deploy and monetize it is becoming increasingly concentrated.",
@@ -5011,18 +5071,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/global-markets-ai-supercycle-capital-formation-europe",
-    title: "Global Markets • AI Supercycle • Capital Formation • Europe",
-    excerpt: "Record equities, retreating consumers and the next financial divide — who captures the returns of the AI Supercycle.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
-    date: "October 10, 2026",
-    read: "9 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
     url: "/todays-espresso-index",
     title: "Today’s Espresso Index",
     excerpt: "The Espresso Index proposes to measure the speed at which the token economy converts technological capability into economic progress.",
@@ -5211,18 +5259,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
     date: "October 6, 2026",
     read: "6 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/ebit-revenue-capital-release",
-    title: "Ebit + Revenue + Capital Release",
-    excerpt: "AI no longer moves at the speed of the model — it moves at the speed of its slowest complement.",
-    tag: "Morning View · AI",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "October 6, 2026",
-    read: "11 min read",
     time: "08:00",
     kind: "day"
   },
@@ -5487,18 +5523,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
     date: "October 2, 2026",
     read: "3 min read",
-    time: "12:30",
-    kind: "day"
-  },
-  {
-    url: "/the-136-and-144-action-triggers-in-focus",
-    title: "The 136 and 144 Action Triggers-in Focus",
-    excerpt: "A disciplined framework for reading BTP–Bund spreads: level, confirmation, action.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "October 2, 2026",
-    read: "4 min read",
     time: "12:30",
     kind: "day"
   },
@@ -5859,18 +5883,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
     date: "September 25, 2026",
     read: "4 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/5-avoid-stranded-scale",
-    title: "5: Avoid: Stranded Scale",
-    excerpt: "With U.S. long yields at multi-decade highs, AI growth must now compete for capital on materially tougher terms.",
-    tag: "Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "September 25, 2026",
-    read: "3 min read",
     time: "08:00",
     kind: "day"
   },
@@ -6459,18 +6471,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
     date: "September 15, 2026",
     read: "8 min read",
-    time: "21:00",
-    kind: "night"
-  },
-  {
-    url: "/electricity-infrastructure-construction-and-capital",
-    title: "Electricity, Infrastructure, Construction and Capital.",
-    excerpt: "AI does not eliminate the economics of the physical world — it intensifies them, migrating scarcity from computing to memory to optics to power to capital.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "6 min read",
     time: "21:00",
     kind: "night"
   },
@@ -7147,6 +7147,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
