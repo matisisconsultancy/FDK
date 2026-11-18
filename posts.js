@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-more-immediate-vulnerability-lies-with-investment-funds-leveraged-positions-and-concentrated-holdings-across-equities-and-credit",
+    title: "The More Immediate Vulnerability Lies With Investment Funds, Leveraged Positions and Concentrated Holdings Across Equities and Credit.",
+    excerpt: "The ECB maps the hidden liabilities of the AI buildout as Singapore reinvents financial intermediation and UK inflation reasserts the energy constraint.",
+    tag: "Midday Pulse · Central Banks & AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "5 min read",
+    time: "13:10",
+    kind: "day"
+  },
+  {
     url: "/the-decisive-indicators-now-are-nvidias-ability-to-sustain-its-revenue-guidance-the-commercial-performance-of-huawei-based-ai-systems-chinese-model-adoption-outside-china-and-whether-bilateral-res",
     title: "The Decisive Indicators Now Are Nvidia’s Ability to Sustain Its Revenue Guidance, the Commercial Performance of Huawei-based AI Systems, Chinese Model Adoption Outside China, and Whether Bilateral Res",
     excerpt: "Nvidia can sustain record growth while planning for zero Chinese data-center compute — and that reshapes the AI Supercycle.",
