@@ -7,30 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/the-consequences-may-be-decisive-for-private-credit-specialized-computing-operators-and-technology-infrastructure-valuations",
-    title: "The Consequences May Be Decisive for Private Credit, Specialized Computing Operators and Technology Infrastructure Valuations.",
-    excerpt: "Nvidia validated demand while the ECB flagged financing risk — the Great Split is now a divide in capital productivity.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
-    date: "November 18, 2026",
-    read: "4 min read",
-    time: "13:34",
-    kind: "day"
-  },
-  {
-    url: "/the-more-immediate-vulnerability-lies-with-investment-funds-leveraged-positions-and-concentrated-holdings-across-equities-and-credit",
-    title: "The More Immediate Vulnerability Lies With Investment Funds, Leveraged Positions and Concentrated Holdings Across Equities and Credit.",
-    excerpt: "The ECB maps the hidden liabilities of the AI buildout as Singapore reinvents financial intermediation and UK inflation reasserts the energy constraint.",
-    tag: "Midday Pulse · Central Banks & AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "November 18, 2026",
-    read: "5 min read",
-    time: "13:10",
-    kind: "day"
-  },
-  {
     url: "/france-the-coming-reckoning",
     title: "France: The Coming Reckoning",
     excerpt: "France's crisis is no longer just political — it is becoming financial, and the consequences reach across the eurozone.",
@@ -55,18 +31,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/third-the-transition-to-the-vera-rubin-architecture-is-already-producing-commercial-shipments",
-    title: "Third, the Transition to the Vera Rubin Architecture Is Already Producing Commercial Shipments.",
-    excerpt: "Nvidia's record quarter confirms extraordinary supplier profitability, even as the financial divide across the AI economy widens.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "November 18, 2026",
-    read: "4 min read",
-    time: "08:49",
-    kind: "day"
-  },
-  {
     url: "/the-key-numbers-to-watch",
     title: "The Key Numbers to Watch",
     excerpt: "Nvidia's record quarter meets investor caution, as the AI Supercycle becomes a contest over the distribution of returns rather than the existence of demand.",
@@ -76,18 +40,6 @@ window.FDK_POSTS = [
     date: "November 18, 2026",
     read: "5 min read",
     time: "08:04",
-    kind: "day"
-  },
-  {
-    url: "/us-and-european-equity-figures-are-november-17-closes-asian-commodity-currency-and-treasury-observations-are-early-november-18-quotations-and-are-not-synchronized",
-    title: "US and European Equity Figures Are November 17 Closes. Asian, Commodity, Currency and Treasury Observations Are Early November 18 Quotations and Are Not Synchronized.",
-    excerpt: "Nvidia's record quarter meets a selective market as Anthropic, the ECB and a resilient Fed redraw the hierarchy of AI capital.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "November 18, 2026",
-    read: "4 min read",
-    time: "07:52",
     kind: "day"
   },
   {
@@ -103,18 +55,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/confidence-and-materiality-decision-high-confidence-in-the-reported-statistics-and-corporate-financial-statements-high-materiality-for-nvidia-us-industrial-activity-and-japans-trade-performance-m",
-    title: "Confidence and Materiality Decision: High Confidence in the Reported Statistics and Corporate Financial Statements; High Materiality for Nvidia, US Industrial Activity and Japan’s Trade Performance. M",
-    excerpt: "The AI Supercycle is accelerating faster than the economies financing it — and its financial returns are concentrating.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "November 18, 2026",
-    read: "5 min read",
-    time: "07:06",
-    kind: "day"
-  },
-  {
     url: "/part-ii-where-global-capital-is-moving",
     title: "Part II: Where Global Capital Is Moving",
     excerpt: "The next capital rotation will reward financing quality, execution credibility and return on every unit of capital invested.",
@@ -124,18 +64,6 @@ window.FDK_POSTS = [
     date: "November 17, 2026",
     read: "5 min read",
     time: "19:58",
-    kind: "night"
-  },
-  {
-    url: "/decisive-signal-whether-sovereign-risk-premiums-begin-affecting-investment-grade-corporate-borrowing-and-productive-infrastructure-finance",
-    title: "Decisive Signal: Whether Sovereign Risk Premiums Begin Affecting Investment-grade Corporate Borrowing and Productive Infrastructure Finance.",
-    excerpt: "A new global financial hierarchy is forming around who can afford to make intelligence productive.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "November 17, 2026",
-    read: "5 min read",
-    time: "19:32",
     kind: "night"
   },
   {
@@ -187,30 +115,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/the-significance-lies-in-the-feds-willingness-to-treat-productivity-and-employment-as-potentially-divergent-outcomes-rather-than-assuming-that-a-technological-acceleration-necessarily-benefits-both",
-    title: "The Significance Lies in the Fed’s Willingness to Treat Productivity and Employment as Potentially Divergent Outcomes, Rather Than Assuming That a Technological Acceleration Necessarily Benefits Both.",
-    excerpt: "Europe finances America's AI infrastructure through its bond markets while still forecasting modest growth and no AI productivity uplift.",
-    tag: "Midday Pulse · Central Banks & AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "November 17, 2026",
-    read: "5 min read",
-    time: "12:29",
-    kind: "day"
-  },
-  {
-    url: "/the-danger-is-not-that-europe-invests-in-american-innovation-international-capital-allocation-is-economically-beneficial-when-risks-are-appropriately-priced",
-    title: "The Danger Is Not That Europe Invests in American Innovation. International Capital Allocation Is Economically Beneficial When Risks Are Appropriately Priced.",
-    excerpt: "Europe risks financing the AI supercycle without capturing its productivity dividend.",
-    tag: "Midday Pulse · AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "November 17, 2026",
-    read: "2 min read",
-    time: "12:27",
-    kind: "day"
-  },
-  {
     url: "/the-permission-premium",
     title: "The Permission Premium",
     excerpt: "Markets are no longer pricing only the cost of producing intelligence, but the permission, financing and infrastructure required to deploy it.",
@@ -232,18 +136,6 @@ window.FDK_POSTS = [
     date: "November 17, 2026",
     read: "5 min read",
     time: "07:59",
-    kind: "day"
-  },
-  {
-    url: "/what-if-the-greatest-threat-to-ai-infrastructure-valuations-is-no-longer-a-shortage-of-computing-power-but-the-possibility-that-governments-restrict-the-customers-needed-to-make-that-computing-power-f",
-    title: "What if the Greatest Threat to AI Infrastructure Valuations Is No Longer a Shortage of Computing Power: But the Possibility That Governments Restrict the Customers Needed to Make That Computing Power F",
-    excerpt: "Washington extends AI controls to remote computing access as markets correct and the ECB flags a $5.5tn financing strain.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "November 17, 2026",
-    read: "4 min read",
-    time: "07:52",
     kind: "day"
   },
   {
@@ -343,18 +235,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/nevertheless-his-remarks-suggest-that-traditional-stress-testing-assumptions-about-the-speed-of-market-reactions-and-depositor-behaviour-may-require-reconsideration-federal-reserve-board",
-    title: "Nevertheless, His Remarks Suggest That Traditional Stress-testing Assumptions About the Speed of Market Reactions and Depositor Behaviour May Require Reconsideration. Federal Reserve Board",
-    excerpt: "The ECB and Fed warn the AI Supercycle is colliding with sovereign debt, credit markets and systemic financial risk.",
-    tag: "Midday Pulse · Central Banks & AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "November 16, 2026",
-    read: "5 min read",
-    time: "13:09",
-    kind: "day"
-  },
-  {
     url: "/the-new-geography-of-ai-power",
     title: "The New Geography of AI Power",
     excerpt: "America organizes an allied AI infrastructure system as China drives down the cost of deploying advanced intelligence.",
@@ -427,18 +307,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-16",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Technological capital is surging while household demand and financing conditions weaken — and markets are starting to price the gap.",
-    tag: "Morning Brief · Macro",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "November 16, 2026",
-    read: "5 min read",
-    time: "07:57",
-    kind: "day"
-  },
-  {
     url: "/beyond-the-frontiers-of-knowledge",
     title: "Beyond the Frontiers of Knowledge",
     excerpt: "The intelligence revolution's defining challenge is institutional, not technological — whether universities, governments and societies can reinvent themselves fast enough.",
@@ -448,18 +316,6 @@ window.FDK_POSTS = [
     date: "November 15, 2026",
     read: "5 min read",
     time: "20:16",
-    kind: "night"
-  },
-  {
-    url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-gigafactory-alert-across-spain-france-germany-italy-or-the-nordics-no-new-eurohpc-award-binding-consor",
-    title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential Gigafactory Alert Across Spain, France, Germany, Italy or the Nordics. No New EuroHPC Award, Binding Consor",
-    excerpt: "EuroHPC deadlines hold firm as a recovered Poste Italiane fund signals a possible channel for Italian savings into digital infrastructure.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
-    date: "November 15, 2026",
-    read: "2 min read",
-    time: "20:00",
     kind: "night"
   },
   {
@@ -484,30 +340,6 @@ window.FDK_POSTS = [
     date: "November 15, 2026",
     read: "8 min read",
     time: "14:42",
-    kind: "day"
-  },
-  {
-    url: "/the-great-split-is-entering-a-new-phase-not-simply-between-technological-leaders-and-followers-but-between-those-capable-of-sustaining-an-increasingly-complex-economy-and-those-exposed-to-failures-t",
-    title: "The Great Split Is Entering a New Phase: Not Simply Between Technological Leaders and Followers, but Between Those Capable of Sustaining an Increasingly Complex Economy and Those Exposed to Failures T",
-    excerpt: "The greatest risk to the AI supercycle may no longer be a shortage of intelligence, but the ability of financial, physical and political systems to sustain it.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "November 15, 2026",
-    read: "4 min read",
-    time: "13:05",
-    kind: "day"
-  },
-  {
-    url: "/assessment-no-new-development-has-yet-cleared-the-threshold-for-a-material-inflection-alert-the-governing-thesis-remains-intact-the-united-states-retains-critical-advantages-in-frontier-computing",
-    title: "Assessment: No New Development Has Yet Cleared the Threshold for a Material Inflection Alert. the Governing Thesis Remains Intact: The United States Retains Critical Advantages in Frontier Computing",
-    excerpt: "DeepSeek's API push, possible offshore-compute curbs and Lenovo's cost target — three developments that warrant continued scrutiny.",
-    tag: "Midday Pulse · AI Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
-    date: "November 15, 2026",
-    read: "2 min read",
-    time: "13:01",
     kind: "day"
   },
   {
@@ -547,30 +379,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/latest-verified-friday-closes-november-13-releases-and-november-14-15-weekend-reporting-sunday-is-not-a-regular-trading-session-for-major-equity-or-sovereign-bond-markets",
-    title: "Latest Verified Friday Closes, November 13 Releases and November 14: 15 Weekend Reporting. Sunday Is Not a Regular Trading Session for Major Equity or Sovereign-bond Markets.",
-    excerpt: "A 6.8-point equity divergence, a 5.14% Treasury yield and record European inflows signal a repricing of who captures the AI dividend.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
-    date: "November 15, 2026",
-    read: "4 min read",
-    time: "10:52",
-    kind: "day"
-  },
-  {
-    url: "/it-supports-a-kkr-backed-infrastructure-platform-spanning-data-centres-power-systems-transmission-and-connectivity",
-    title: "It Supports a KKR-backed Infrastructure Platform Spanning Data Centres, Power Systems, Transmission and Connectivity.",
-    excerpt: "Samsung's integration, Nvidia's leadership test and Europe's regulatory boundary reframe who captures value in the AI Supercycle.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "November 15, 2026",
-    read: "5 min read",
-    time: "10:46",
-    kind: "day"
-  },
-  {
     url: "/40-dollar-funding-and-currency-pressure",
     title: "40 Dollar Funding and Currency Pressure",
     excerpt: "Governments, hyperscalers and infrastructure now compete for long-duration financing just as money grows more expensive.",
@@ -581,18 +389,6 @@ window.FDK_POSTS = [
     read: "5 min read",
     time: "09:45",
     kind: "day"
-  },
-  {
-    url: "/when-the-system-becomes-the-risk",
-    title: "When the System Becomes the Risk",
-    excerpt: "A convergence of bond, governance and infrastructure shocks is turning resilience into a priced component of competitive advantage.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "November 14, 2026",
-    read: "4 min read",
-    time: "20:26",
-    kind: "night"
   },
   {
     url: "/europes-ai-race-the-500-billion-sovereignty-test",
@@ -628,30 +424,6 @@ window.FDK_POSTS = [
     date: "November 14, 2026",
     read: "5 min read",
     time: "13:20",
-    kind: "day"
-  },
-  {
-    url: "/in-the-meantime-ai-related-investment-is-already-contributing-to-equipment-bottlenecks-higher-prices-and-demand-for-capital-he-specifically-recognised-that-sustained-productivity-improvements-could",
-    title: "In the Meantime, AI-related Investment Is Already Contributing to Equipment Bottlenecks, Higher Prices and Demand for Capital. He Specifically Recognised That Sustained Productivity Improvements Could",
-    excerpt: "The Fed makes AI's financing architecture a systemic-risk concern as monetary conditions tighten into 2027.",
-    tag: "Midday Pulse · Central Banks & AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    date: "November 14, 2026",
-    read: "5 min read",
-    time: "12:32",
-    kind: "day"
-  },
-  {
-    url: "/export-restriction-or-a-new-chinese-model-release-that-independently-overturns-american-frontier-leadership",
-    title: "Export Restriction or a New Chinese Model Release That Independently Overturns American Frontier Leadership.",
-    excerpt: "New technical evidence suggests China's frontier AI remains more dependent on American accelerated computing than its lower-cost success implies.",
-    tag: "Midday Pulse · AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "November 14, 2026",
-    read: "4 min read",
-    time: "12:14",
     kind: "day"
   },
   {
@@ -703,30 +475,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/the-share-of-nonfinancial-investment-grade-corporate-debt-issuance-linked-to-advanced-computing-increased-from-less-than-6-in-2023-to-approximately-31-in-2026",
-    title: "The Share of Nonfinancial Investment-grade Corporate Debt Issuance Linked to Advanced Computing Increased From Less Than 6% in 2023 to Approximately 31% in 2026.",
-    excerpt: "The Fed's new Financial Stability Report makes AI financing a mainstream credit-market issue, just as the cost of capital rises.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
-    date: "November 14, 2026",
-    read: "5 min read",
-    time: "08:09",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-14",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Capital is chasing the future while the price of financing it rises — the next Great Split is a divide in the cost of economic progress.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "November 14, 2026",
-    read: "5 min read",
-    time: "07:51",
-    kind: "day"
-  },
-  {
     url: "/gvi-corporate-benchmark-2026-11-14",
     title: "GVI Corporate Benchmark",
     excerpt: "The AI Supercycle has grown large enough to shape the stability of the wider financial system — and the GVI leaders hold while the resilience overlay rises.",
@@ -760,18 +508,6 @@ window.FDK_POSTS = [
     date: "November 13, 2026",
     read: "4 min read",
     time: "19:55",
-    kind: "night"
-  },
-  {
-    url: "/the-risk-is-a-mismatch-between-the-speed-at-which-europe-wishes-to-build-computing-infrastructure-and-the-speed-at-which-public-financial-commitments-become-enforceable",
-    title: "The Risk Is a Mismatch Between the Speed at Which Europe Wishes to Build Computing Infrastructure and the Speed at Which Public Financial Commitments Become Enforceable.",
-    excerpt: "Bavaria specifies project-level Gigafactory funding while the EU's multiyear framework stays politically uncertain.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "November 13, 2026",
-    read: "4 min read",
-    time: "18:44",
     kind: "night"
   },
   {
@@ -811,30 +547,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/anthropic-is-preparing-to-test-public-market-demand-for-an-ai-developer-carrying-extraordinary-future-computing-obligations",
-    title: "Anthropic Is Preparing to Test Public-market Demand for an AI Developer Carrying Extraordinary Future Computing Obligations.",
-    excerpt: "Nvidia's leadership change, Anthropic's record IPO and 5% yields are repricing the financial system behind the AI buildout.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 13, 2026",
-    read: "5 min read",
-    time: "13:31",
-    kind: "day"
-  },
-  {
-    url: "/the-consequence-for-investors-is-potentially-substantial-market-liquidity-may-become-increasingly-dependent-on-how-autonomous-systems-behave-collectively-rather-than-exclusively-on-traditional-lever",
-    title: "The Consequence for Investors Is Potentially Substantial: Market Liquidity May Become Increasingly Dependent on How Autonomous Systems Behave Collectively, Rather Than Exclusively on Traditional Lever",
-    excerpt: "Two central-bank interventions reveal a new dimension of the AI Supercycle — who captures the productivity dividend.",
-    tag: "Midday Pulse · Central Banks & AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "November 13, 2026",
-    read: "5 min read",
-    time: "12:49",
-    kind: "day"
-  },
-  {
     url: "/the-succession-premium",
     title: "The Succession Premium",
     excerpt: "Jensen Huang's exit turns a governance question into an immediate market issue across the AI Supercycle.",
@@ -868,30 +580,6 @@ window.FDK_POSTS = [
     date: "November 13, 2026",
     read: "8 min read",
     time: "11:30",
-    kind: "day"
-  },
-  {
-    url: "/colette-kress-nvidias-cfo-since-2013-was-appointed-interim-ceo-and-will-retain-her-finance-responsibilities-during-the-transition",
-    title: "Colette Kress, Nvidia’s CFO Since 2013, Was Appointed Interim CEO and Will Retain Her Finance Responsibilities During the Transition.",
-    excerpt: "A governance shock at Nvidia meets record supplier earnings and Europe's first leaders' AI summit.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
-    date: "November 13, 2026",
-    read: "5 min read",
-    time: "08:10",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-13",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Jensen Huang's exit turns Nvidia's leadership shock into the first real test of the AI Supercycle's financial independence.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "November 13, 2026",
-    read: "5 min read",
-    time: "08:00",
     kind: "day"
   },
   {
@@ -955,18 +643,6 @@ window.FDK_POSTS = [
     kind: "night"
   },
   {
-    url: "/munich-based-agile-robots-raised-500-million-in-a-funding-round-led-by-softbank-valuing-the-company-at-8-5-billion-nvidia-and-hitachi-also-participated",
-    title: "Munich-based Agile Robots Raised $500 Million in a Funding Round Led by SoftBank, Valuing the Company at $8.5 Billion. Nvidia and Hitachi Also Participated.",
-    excerpt: "Europe's AI suppliers post record earnings while infrastructure operators face rising capital needs and new supplier risk.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "November 12, 2026",
-    read: "5 min read",
-    time: "17:41",
-    kind: "day"
-  },
-  {
     url: "/europes-great-fracture-2026-11-12",
     title: "Europe’s Great Fracture",
     excerpt: "Record equities, France's sovereign strain and the AI investment race are creating a new hierarchy of European financial power.",
@@ -1000,18 +676,6 @@ window.FDK_POSTS = [
     date: "November 12, 2026",
     read: "5 min read",
     time: "13:11",
-    kind: "day"
-  },
-  {
-    url: "/ai-capital-formation-may-increase-demand-for-savings-and-contribute-to-higher-equilibrium-real-interest-rates-yet-individual-ai-exposed-companies-may-simultaneously-enjoy-lower-credit-spreads-because",
-    title: "AI Capital Formation May Increase Demand for Savings and Contribute to Higher Equilibrium Real Interest Rates. Yet Individual AI-exposed Companies May Simultaneously Enjoy Lower Credit Spreads Because",
-    excerpt: "New ECB evidence reveals an AI financing advantage as the Bundesbank warns of financial contagion.",
-    tag: "Midday Pulse · Central Banks & AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "November 12, 2026",
-    read: "5 min read",
-    time: "12:47",
     kind: "day"
   },
   {
@@ -1051,18 +715,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/they-demonstrate-the-commercial-potential-of-the-physical-ai-supply-chain-but-cannot-independently-justify-a-structural-national-score-upgrade",
-    title: "They Demonstrate the Commercial Potential of the Physical AI Supply Chain but Cannot Independently Justify a Structural National-score Upgrade.",
-    excerpt: "Siemens Energy's record orders, Japan's renewed industrial inflation and Asia's capital outflows are reshaping the economics of the AI Supercycle.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 12, 2026",
-    read: "4 min read",
-    time: "08:11",
-    kind: "day"
-  },
-  {
     url: "/22-yoy",
     title: "+22% YoY",
     excerpt: "Upstream suppliers book AI earnings now while platforms absorb the costs — and Europe's industrial strength is where value is already visible.",
@@ -1084,18 +736,6 @@ window.FDK_POSTS = [
     date: "November 12, 2026",
     read: "4 min read",
     time: "08:05",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-12",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "A new financial architecture is reorganizing the AI Supercycle into a contest over who converts capital into durable economic profit.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "November 12, 2026",
-    read: "4 min read",
-    time: "08:00",
     kind: "day"
   },
   {
@@ -1123,18 +763,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/for-lenders-the-critical-measure-should-become-contractually-secured-megawatts-rather-than-total-announced-or-requested-megawatts",
-    title: "For Lenders, the Critical Measure Should Become Contractually Secured Megawatts, Rather Than Total Announced or Requested Megawatts.",
-    excerpt: "Siemens Energy converts AI demand into orders while Italy's Piedmont pipeline shows how far requested capacity sits from contractual execution.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 11, 2026",
-    read: "4 min read",
-    time: "18:35",
-    kind: "night"
-  },
-  {
     url: "/europes-great-fracture-2026-11-11",
     title: "Europe’s Great Fracture",
     excerpt: "France now borrows above Italy as markets reorder eurozone sovereign risk around fiscal credibility, not inherited reputation.",
@@ -1156,18 +784,6 @@ window.FDK_POSTS = [
     date: "November 11, 2026",
     read: "4 min read",
     time: "13:36",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-11-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Siemens Energy banks record cash while CoreWeave scales on debt — the Great Split turns financial.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 11, 2026",
-    read: "4 min read",
-    time: "13:12",
     kind: "day"
   },
   {
@@ -1243,18 +859,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-11",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The next market leaders will be determined by who can outrun the rising cost of capital.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "November 11, 2026",
-    read: "5 min read",
-    time: "08:28",
-    kind: "day"
-  },
-  {
     url: "/the-intelligence-wars",
     title: "The Intelligence Wars",
     excerpt: "National security has become a cost-of-capital variable, and the AI race now runs through corporate governance, supply chains and secure computing.",
@@ -1300,18 +904,6 @@ window.FDK_POSTS = [
     date: "November 10, 2026",
     read: "7 min read",
     time: "14:42",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-10-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Anthropic's trillion-dollar IPO, SoftBank's $7bn loss and a credit repricing signal the AI Supercycle's first great capital-conversion test.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "November 10, 2026",
-    read: "5 min read",
-    time: "13:17",
     kind: "day"
   },
   {
@@ -1387,18 +979,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-10",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "A governance crisis, a financing test and a trillion-dollar surplus are redefining what sustains technological value.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "November 10, 2026",
-    read: "4 min read",
-    time: "08:55",
-    kind: "day"
-  },
-  {
     url: "/daily-intelligence-brief-2026-11-10",
     title: "Daily Intelligence Brief",
     excerpt: "Three November 9 developments show access, eligibility and productive deployment becoming the new sources of advantage in the AI economy.",
@@ -1471,18 +1051,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-09",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "AI equities rebound while Europe's banks consolidate, China's margins tighten and oil slides — exposing the real test of the Next Economy.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "November 9, 2026",
-    read: "5 min read",
-    time: "13:45",
-    kind: "day"
-  },
-  {
     url: "/the-inflation-before-the-intelligence",
     title: "The Inflation Before the Intelligence",
     excerpt: "RBA research reveals why the AI investment cycle could lift neutral rates before delivering productivity gains.",
@@ -1519,18 +1087,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium-2026-11-09",
-    title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
-    excerpt: "A third constraint on AI investment has emerged — political and regulatory permission — reshaping how capital will be allocated.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
-    date: "November 9, 2026",
-    read: "5 min read",
-    time: "08:46",
-    kind: "day"
-  },
-  {
     url: "/the-six-year-divide",
     title: "The Six-year Divide",
     excerpt: "Markets rebound in minutes while AI infrastructure takes years — the next capital rotation will reward execution velocity.",
@@ -1552,18 +1108,6 @@ window.FDK_POSTS = [
     date: "November 9, 2026",
     read: "5 min read",
     time: "08:14",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-the-margin-trap",
-    title: "Where Markets, Capital and Geopolitics Collide the Margin Trap",
-    excerpt: "The AI Supercycle remains expansionary, but its value is being distributed unevenly—rewarding those who protect margins and control bottlenecks over those absorbing the cost of acceleration.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "November 9, 2026",
-    read: "4 min read",
-    time: "07:52",
     kind: "day"
   },
   {
@@ -1589,18 +1133,6 @@ window.FDK_POSTS = [
     read: "5 min read",
     time: "07:22",
     kind: "day"
-  },
-  {
-    url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-european-ai-gigafactory-alert-since-november-7-no-new-consortium-member-binding-financing-commitment-con",
-    title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential European AI Gigafactory Alert Since November 7. No New Consortium Member, Binding Financing Commitment, Con",
-    excerpt: "EuroHPC's tender stays open with deadlines intact, while demonstrations and Anthropic's gas commitments fail the materiality test.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "November 8, 2026",
-    read: "2 min read",
-    time: "20:03",
-    kind: "night"
   },
   {
     url: "/the-grid-becomes-the-balance-sheet",
@@ -1639,18 +1171,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-08-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The decisive divide is no longer about AI's promise but about the time between capital committed and cash generated.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 8, 2026",
-    read: "5 min read",
-    time: "15:03",
-    kind: "day"
-  },
-  {
     url: "/the-great-inference-arbitrage",
     title: "The Great Inference Arbitrage",
     excerpt: "Revolut runs self-hosted Chinese models on Nvidia chips and cuts inference costs ~90%, exposing a divergence between AI leadership and value capture.",
@@ -1684,18 +1204,6 @@ window.FDK_POSTS = [
     date: "November 8, 2026",
     read: "10 min read",
     time: "09:29",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-08",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Record AI debt issuance meets record corporate cash — and the Great Split moves from technological leadership to financial autonomy.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "November 8, 2026",
-    read: "4 min read",
-    time: "08:05",
     kind: "day"
   },
   {
@@ -1771,30 +1279,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-07-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Selective capital, higher-for-longer rates and political constraints are repricing the financial architecture of the AI Supercycle.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
-    date: "November 7, 2026",
-    read: "4 min read",
-    time: "15:38",
-    kind: "day"
-  },
-  {
-    url: "/a-separate-constant-maturity-calculation-using-banque-de-france-and-bundesbank-data-places-the-november-6-spread-at-148-9-basis-points-down-from-157-8-basis-points-on-november-3",
-    title: "A Separate Constant-maturity Calculation Using Banque De France and Bundesbank Data Places the November 6 Spread at 148.9 Basis Points, Down From 157.8 Basis Points on November 3.",
-    excerpt: "France's budget deadlock, a narrowing sovereign premium and a widening gap between financial stability and political governability.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
-    date: "November 7, 2026",
-    read: "5 min read",
-    time: "14:10",
-    kind: "day"
-  },
-  {
     url: "/the-capital-bottleneck-turns-political",
     title: "The Capital Bottleneck Turns Political",
     excerpt: "America confronts the cost of scaling intelligence while China reinforces control over the industrial foundations of AI diffusion.",
@@ -1819,18 +1303,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/when-the-ai-boom-becomes-a-monetary-shock",
-    title: "When the AI Boom Becomes a Monetary Shock",
-    excerpt: "Three November 6 interventions reveal that AI capital formation has become a monetary-policy and financial-stability risk.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "November 7, 2026",
-    read: "5 min read",
-    time: "12:14",
-    kind: "day"
-  },
-  {
     url: "/gvi-global-cities-signature-survey-2026-11-07",
     title: "GVI Global Cities: Signature Survey",
     excerpt: "Singapore holds first and Seoul overtakes London as AI capital, social fracture and financial repricing redraw the global hierarchy of cities.",
@@ -1840,18 +1312,6 @@ window.FDK_POSTS = [
     date: "November 7, 2026",
     read: "5 min read",
     time: "12:09",
-    kind: "day"
-  },
-  {
-    url: "/when-france-reprices-europe",
-    title: "When France Reprices Europe",
-    excerpt: "France's debt talks could raise borrowing costs across the eurozone, first in sovereign markets, then in bank funding.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
-    date: "November 7, 2026",
-    read: "5 min read",
-    time: "11:48",
     kind: "day"
   },
   {
@@ -1879,18 +1339,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-07",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Resilient US growth and record corporate borrowing are repricing the terms on which the AI Supercycle gets its capital.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "November 7, 2026",
-    read: "4 min read",
-    time: "07:57",
-    kind: "day"
-  },
-  {
     url: "/daily-intelligence-brief-2026-11-07",
     title: "Daily Intelligence Brief",
     excerpt: "Record corporate issuance meets rising credit risk as the AI Supercycle enters a phase defined by the price of financial resilience.",
@@ -1915,18 +1363,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/when-growth-raises-the-hurdle",
-    title: "When Growth Raises the Hurdle",
-    excerpt: "A more demanding investment regime as stronger activity raises the cost of capital while AI requires extraordinary financing.",
-    tag: "GVI · Capital",
-    slot: "GVI",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "November 7, 2026",
-    read: "5 min read",
-    time: "07:28",
-    kind: "day"
-  },
-  {
     url: "/the-liquidity-paradox",
     title: "The Liquidity Paradox",
     excerpt: "A record borrowing boom meets a flight to cash as markets begin to price the financing of the future.",
@@ -1948,42 +1384,6 @@ window.FDK_POSTS = [
     date: "November 6, 2026",
     read: "9 min read",
     time: "18:24",
-    kind: "day"
-  },
-  {
-    url: "/when-the-core-becomes-the-risk",
-    title: "When the Core Becomes the Risk",
-    excerpt: "France's fiscal strain tests whether political concessions become a eurozone contagion channel — with Belgium, Italy and Spain next on the line.",
-    tag: "In Focus · Capital",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "November 6, 2026",
-    read: "10 min read",
-    time: "16:42",
-    kind: "day"
-  },
-  {
-    url: "/the-distinction-is-essential-the-amsterdam-incident-is-verified-the-full-scale-of-actions-announced-elsewhere-has-not-yet-been-established",
-    title: "The Distinction Is Essential: The Amsterdam Incident Is Verified; the Full Scale of Actions Announced Elsewhere Has Not Yet Been Established.",
-    excerpt: "Social resistance is no longer only a budget problem — it is becoming an investment and execution risk for Europe's technological transformation.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "November 6, 2026",
-    read: "5 min read",
-    time: "14:59",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-06-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The AI boom's accumulated financial risks are migrating across the capital system as markets begin to differentiate on resilience.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "November 6, 2026",
-    read: "5 min read",
-    time: "14:07",
     kind: "day"
   },
   {
@@ -2047,18 +1447,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-06",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The AI selloff is spreading from equity valuations into credit risk and capital flows — a potentially decisive inflection point.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "November 6, 2026",
-    read: "4 min read",
-    time: "09:25",
-    kind: "day"
-  },
-  {
     url: "/daily-intelligence-brief-the-permission-premium",
     title: "Daily Intelligence Brief the Permission Premium",
     excerpt: "Markets erased $3 trillion as Google committed $17 billion and IREN's backlog hit $20.3 billion — the selloff reprices execution, not demand.",
@@ -2095,18 +1483,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/if-european-capital-flows-primarily-into-established-banks-utilities-defense-companies-and-dividend-paying-incumbents-the-result-may-be-higher-asset-prices-without-a-meaningful-acceleration-in-tech",
-    title: "If European Capital Flows Primarily Into Established Banks, Utilities, Defense Companies and Dividend-paying Incumbents, the Result May Be Higher Asset Prices Without a Meaningful Acceleration in Tech",
-    excerpt: "Six apparently separate shocks are converging into one fundamental reallocation of global capital.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
-    date: "November 5, 2026",
-    read: "5 min read",
-    time: "14:49",
-    kind: "day"
-  },
-  {
     url: "/energy-prices-are-retreating-but-europes-structural-exposure-remains",
     title: "Energy Prices Are Retreating, but Europe’s Structural Exposure Remains",
     excerpt: "Markets improve even as Europe's deeper capital-allocation problem — sovereign debt meeting leveraged non-bank finance — goes unresolved.",
@@ -2116,18 +1492,6 @@ window.FDK_POSTS = [
     date: "November 5, 2026",
     read: "4 min read",
     time: "14:14",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-05-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The U.S. midterms turned the AI infrastructure debate from technological capacity into a question of economic legitimacy and investment discipline.",
-    tag: "Midday Pulse · AI",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "November 5, 2026",
-    read: "5 min read",
-    time: "13:24",
     kind: "day"
   },
   {
@@ -2167,18 +1531,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-05",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Improving financial conditions and deteriorating AI infrastructure valuations are diverging — the first signal of a new capital-allocation regime.",
-    tag: "Morning Brief · Markets",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "November 5, 2026",
-    read: "5 min read",
-    time: "07:58",
-    kind: "day"
-  },
-  {
     url: "/gvi-corporate-benchmark-2026-11-05",
     title: "GVI Corporate Benchmark",
     excerpt: "How the political reset in Washington is repricing AI infrastructure, capital productivity and the next generation of equity leaders.",
@@ -2203,18 +1555,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/todays-review-found-no-newly-verified-development-meeting-the-threshold-for-a-consequential-project-alert-across-spain-france-germany-italy-or-the-nordics-no-new-eurohpc-award-binding-consortium",
-    title: "Today’s Review Found No Newly Verified Development Meeting the Threshold for a Consequential Project Alert Across Spain, France, Germany, Italy or the Nordics. No New EuroHPC Award, Binding Consortium",
-    excerpt: "November 4 coverage revisits prior announcements; no new European Gigafactory commitment has emerged.",
-    tag: "The Close · AI Infrastructure",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "November 4, 2026",
-    read: "2 min read",
-    time: "20:19",
-    kind: "night"
-  },
-  {
     url: "/the-750-billion-scarcity-trade",
     title: "The $750 Billion Scarcity Trade",
     excerpt: "A political backlash against new data centers is making existing AI capacity more valuable — and new competition more expensive.",
@@ -2225,18 +1565,6 @@ window.FDK_POSTS = [
     read: "5 min read",
     time: "19:41",
     kind: "night"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium-2026-11-04",
-    title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
-    excerpt: "America confronts the political limits of acceleration while Europe confronts the financial limits — and capital turns selective.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
-    date: "November 4, 2026",
-    read: "4 min read",
-    time: "14:13",
-    kind: "day"
   },
   {
     url: "/the-financial-market-paradox",
@@ -2284,18 +1612,6 @@ window.FDK_POSTS = [
     date: "November 4, 2026",
     read: "7 min read",
     time: "09:51",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-the-permission-premium",
-    title: "Where Markets, Capital and Geopolitics Collide the Permission Premium",
-    excerpt: "The US electoral shock exposes the next scarcity of the AI supercycle — the permission, power and capital to build it.",
-    tag: "Morning Brief · AI Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "November 4, 2026",
-    read: "5 min read",
-    time: "09:11",
     kind: "day"
   },
   {
@@ -2407,66 +1723,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/italys-spread-was-approximately-115-basis-points-spains-61-and-belgiums-111",
-    title: "Italy’s Spread Was Approximately 115 Basis Points, Spain’s 61 and Belgium’s 111.",
-    excerpt: "How America's AI financing supercycle is colliding with Europe's sovereign debt, banking fragmentation and industrial investment needs.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "November 3, 2026",
-    read: "5 min read",
-    time: "14:35",
-    kind: "day"
-  },
-  {
-    url: "/for-investors-the-decisive-opportunity-lies-in-identifying-companies-capable-of-compounding-economic-returns-rather-than-merely-expanding-investment-commitments",
-    title: "For Investors, the Decisive Opportunity Lies in Identifying Companies Capable of Compounding Economic Returns Rather Than Merely Expanding Investment Commitments.",
-    excerpt: "Why the productivity of capital, not intelligence alone, will decide enduring economic power.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "November 3, 2026",
-    read: "2 min read",
-    time: "13:56",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-03-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "AI borrowing is colliding with sovereign financing — and the consequences are spreading beyond technology valuations.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "November 3, 2026",
-    read: "4 min read",
-    time: "13:53",
-    kind: "day"
-  },
-  {
-    url: "/when-the-cost-of-intelligence-becomes-the-price-of-money",
-    title: "When the Cost of Intelligence Becomes the Price of Money",
-    excerpt: "Australia names AI in a rate decision, China warns of capital crowding-out, and the Bundesbank exposes Europe's financing gap.",
-    tag: "In Focus · Macro",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "November 3, 2026",
-    read: "8 min read",
-    time: "13:46",
-    kind: "day"
-  },
-  {
-    url: "/the-proposals-distinguish-between-transferring-sensitive-underlying-technology-and-providing-access-through-apis-and-cloud-services-they-remain-proposals-with-consultation-scheduled-through-november",
-    title: "The Proposals Distinguish Between Transferring Sensitive Underlying Technology and Providing Access Through APIs and Cloud Services. They Remain Proposals, With Consultation Scheduled Through November",
-    excerpt: "Three November 2–3 developments split the AI contest into a frontier race and a diffusion race — both under one financial constraint.",
-    tag: "Morning Brief · AI",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
-    date: "November 3, 2026",
-    read: "5 min read",
-    time: "11:34",
-    kind: "day"
-  },
-  {
     url: "/the-november-23-pricing-test",
     title: "The November 23 Pricing Test",
     excerpt: "Europe's banking consolidation moves from the politics of ownership to the economics of execution.",
@@ -2488,18 +1744,6 @@ window.FDK_POSTS = [
     date: "November 3, 2026",
     read: "5 min read",
     time: "08:26",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-03",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "AI's profits concentrate while its financing, energy and political costs spread across the global economy.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "November 3, 2026",
-    read: "5 min read",
-    time: "08:20",
     kind: "day"
   },
   {
@@ -2563,18 +1807,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/a-strong-showing-among-independents-would-strengthen-the-argument-for-broader-relevance-outperforming-other-democrats-on-the-same-ballot-would-demonstrate-personal-appeal-while-also-raising-the-ques",
-    title: "A Strong Showing Among Independents Would Strengthen the Argument for Broader Relevance. Outperforming Other Democrats on the Same Ballot Would Demonstrate Personal Appeal, While Also Raising the Ques",
-    excerpt: "Jon Ossoff, the road to 2028 and the economic consequences of a changing Democratic Party.",
-    tag: "Midday Pulse · US Political Economy Watch",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1642790551116-18e150f248e3?auto=format&fit=crop&w=800&q=80",
-    date: "November 2, 2026",
-    read: "5 min read",
-    time: "16:18",
-    kind: "day"
-  },
-  {
     url: "/american-power-global-repricing",
     title: "American Power. Global Repricing.",
     excerpt: "The Velocity Edge launches US Political Economy Watch, examining how shifts in American power transmit through the global financial system.",
@@ -2596,18 +1828,6 @@ window.FDK_POSTS = [
     date: "November 2, 2026",
     read: "9 min read",
     time: "15:05",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-02-3",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "AI spending accelerates while capital turns selective — the next rotation will reward who can finance the future and make it pay.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "November 2, 2026",
-    read: "3 min read",
-    time: "13:04",
     kind: "day"
   },
   {
@@ -2644,30 +1864,6 @@ window.FDK_POSTS = [
     date: "November 2, 2026",
     read: "7 min read",
     time: "10:39",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-02-2",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The AI Supercycle is not running out of growth; it is running into the economics of growth.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "November 2, 2026",
-    read: "4 min read",
-    time: "09:39",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-02",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Big Tech has turned cash-flow negative as AI capital intensity doubles, opening a more selective financial regime.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "November 2, 2026",
-    read: "4 min read",
-    time: "08:16",
     kind: "day"
   },
   {
@@ -2755,18 +1951,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-the-cash-flow-divide",
-    title: "Where Markets, Capital and Geopolitics Collide the Cash-flow Divide",
-    excerpt: "Asia monetizes the AI boom, Wall Street reprices its cost, and Europe confronts a financing test.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&w=800&q=80",
-    date: "November 1, 2026",
-    read: "5 min read",
-    time: "13:11",
-    kind: "day"
-  },
-  {
     url: "/the-fed-confronts-the-price-of-intelligence",
     title: "The Fed Confronts the Price of Intelligence",
     excerpt: "The AI Supercycle is repricing capital, credit and specialised labour before its productivity benefits are broadly distributed.",
@@ -2812,18 +1996,6 @@ window.FDK_POSTS = [
     date: "November 1, 2026",
     read: "10 min read",
     time: "09:47",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-11-01",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "South Korea's AI export surge, China's industrial contraction and Europe's sovereign-energy squeeze reveal a new geography of economic power.",
-    tag: "Morning Brief · Macro",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
-    date: "November 1, 2026",
-    read: "5 min read",
-    time: "08:37",
     kind: "day"
   },
   {
@@ -2884,42 +2056,6 @@ window.FDK_POSTS = [
     date: "October 31, 2026",
     read: "6 min read",
     time: "17:38",
-    kind: "day"
-  },
-  {
-    url: "/it-is-that-the-architecture-remains-intact-while-the-economies-operating-within-it-become-increasingly-unequal-in-their-ability-to-finance-growth",
-    title: "It Is That the Architecture Remains Intact While the Economies Operating Within It Become Increasingly Unequal in Their Ability to Finance Growth.",
-    excerpt: "Fitch's warning, Europe's social contagion and the coming repricing of productive capital.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
-    date: "October 31, 2026",
-    read: "4 min read",
-    time: "14:25",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-the-sovereignty-spread-2026-10-31",
-    title: "Where Markets, Capital and Geopolitics Collide the Sovereignty Spread",
-    excerpt: "As AI returns concentrate, sovereign credibility, energy security and control of productive infrastructure are becoming the decisive determinants of competitiveness.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "October 31, 2026",
-    read: "5 min read",
-    time: "14:01",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-the-sovereignty-spread",
-    title: "Where Markets, Capital and Geopolitics Collide the Sovereignty Spread",
-    excerpt: "Five October 31 developments point to a structural transition in how capital, energy and credibility distribute the returns of the AI Supercycle.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "October 31, 2026",
-    read: "5 min read",
-    time: "13:04",
     kind: "day"
   },
   {
@@ -3055,18 +2191,6 @@ window.FDK_POSTS = [
     kind: "night"
   },
   {
-    url: "/when-governability-becomes-the-risk-premium",
-    title: "When Governability Becomes the Risk Premium",
-    excerpt: "A transmission map from political tension to the cost of capital in Europe, and the signals that separate accommodation from attrition.",
-    tag: "The Close · Macro",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
-    date: "October 30, 2026",
-    read: "5 min read",
-    time: "19:02",
-    kind: "night"
-  },
-  {
     url: "/public-debt-stands-at-119-of-gdp-2026-10-30",
     title: "Public Debt Stands at 119% of GDP.",
     excerpt: "France's sovereign stress, the energy shock and the AI Supercycle are reshaping how capital is allocated across Europe.",
@@ -3076,30 +2200,6 @@ window.FDK_POSTS = [
     date: "October 30, 2026",
     read: "5 min read",
     time: "14:37",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-the-duration-trap",
-    title: "Where Markets, Capital and Geopolitics Collide the Duration Trap",
-    excerpt: "Markets begin distinguishing the creation of technological capacity from the generation of financial returns, as Europe's recovery splits.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "October 30, 2026",
-    read: "5 min read",
-    time: "13:36",
-    kind: "day"
-  },
-  {
-    url: "/when-the-ai-boom-sets-the-price-of-money",
-    title: "When the AI Boom Sets the Price of Money",
-    excerpt: "The central-bank response to the AI Supercycle has entered a more consequential phase, splitting the world into three monetary regimes.",
-    tag: "In Focus · Macro",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "October 30, 2026",
-    read: "9 min read",
-    time: "13:30",
     kind: "day"
   },
   {
@@ -3259,18 +2359,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-the-credibility-premium",
-    title: "Where Markets, Capital and Geopolitics Collide the Credibility Premium",
-    excerpt: "Markets are beginning to distinguish technological ambition from financial delivery as Europe faces a simultaneous test of monetary, sovereign and industrial credibility.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
-    date: "October 29, 2026",
-    read: "4 min read",
-    time: "13:36",
-    kind: "day"
-  },
-  {
     url: "/frances-election-europes-financial-future",
     title: "France’s Election, Europe’s Financial Future",
     excerpt: "Lagarde's early departure accelerates Europe's institutional calendar before a French election that will test the credibility of the French state.",
@@ -3304,18 +2392,6 @@ window.FDK_POSTS = [
     date: "October 29, 2026",
     read: "8 min read",
     time: "10:14",
-    kind: "day"
-  },
-  {
-    url: "/when-monetary-credibility-becomes-sovereign-risk",
-    title: "When Monetary Credibility Becomes Sovereign Risk",
-    excerpt: "Monetary, sovereign and political credibility are becoming inseparable determinants of Europe's cost of capital.",
-    tag: "In Focus · Capital",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "October 29, 2026",
-    read: "8 min read",
-    time: "09:33",
     kind: "day"
   },
   {
@@ -3367,18 +2443,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/when-the-price-of-money-meets-the-price-of-intelligence",
-    title: "When the Price of Money Meets the Price of Intelligence",
-    excerpt: "Korea's AI profits surge as the Fed splits over tightening, revealing the paradox now confronting global capital.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "October 28, 2026",
-    read: "5 min read",
-    time: "19:37",
-    kind: "night"
-  },
-  {
     url: "/europes-ai-race-the-grid-rights-shock",
     title: "Europe’s AI Race: The Grid-rights Shock",
     excerpt: "Two developments from Germany and the Nordics expose why grid access, industrial conversion and operational capacity now define Europe's AI infrastructure race.",
@@ -3391,18 +2455,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/europe-must-finance-these-investments-while-sovereign-borrowing-costs-remain-elevated-energy-prices-are-volatile-and-national-fiscal-flexibility-is-increasingly-constrained",
-    title: "Europe Must Finance These Investments While Sovereign Borrowing Costs Remain Elevated, Energy Prices Are Volatile and National Fiscal Flexibility Is Increasingly Constrained.",
-    excerpt: "France's banking paradox, the return of energy inflation, and why financial resilience may not prevent Europe's great investment divide.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
-    date: "October 28, 2026",
-    read: "5 min read",
-    time: "14:45",
-    kind: "day"
-  },
-  {
     url: "/the-great-ai-cost-paradox",
     title: "The Great AI Cost Paradox",
     excerpt: "Two October 28 developments expose a contradiction in China's AI strategy as America turns inference into a multi-chip market.",
@@ -3412,18 +2464,6 @@ window.FDK_POSTS = [
     date: "October 28, 2026",
     read: "5 min read",
     time: "13:48",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-10-28",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "The AI Supercycle finances the production of intelligence brilliantly, and its diffusion poorly.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
-    date: "October 28, 2026",
-    read: "5 min read",
-    time: "13:20",
     kind: "day"
   },
   {
@@ -3497,18 +2537,6 @@ window.FDK_POSTS = [
     read: "5 min read",
     time: "06:40",
     kind: "day"
-  },
-  {
-    url: "/when-intelligence-becomes-collateral",
-    title: "When Intelligence Becomes Collateral",
-    excerpt: "How computing hardware, structured finance and hyperscaler capex are becoming a new collateralized investment cycle — and where the risk concentrates.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
-    date: "October 27, 2026",
-    read: "4 min read",
-    time: "19:48",
-    kind: "night"
   },
   {
     url: "/europes-ai-race-the-power-inflection",
@@ -3679,18 +2707,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-10-26",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Meta's $95B recapitalization, tightening Eurozone credit and Europe's energy shock reveal a new financial regime for the AI Supercycle.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
-    date: "October 26, 2026",
-    read: "5 min read",
-    time: "15:03",
-    kind: "day"
-  },
-  {
     url: "/europes-ai-credit-divide",
     title: "Europe’s AI Credit Divide",
     excerpt: "Europe is building the capacity to allocate capital faster while its companies find that capital harder to obtain.",
@@ -3847,18 +2863,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-10-25",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Sovereign, geopolitical and AI-financing stress are converging on the global cost of capital.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
-    date: "October 25, 2026",
-    read: "4 min read",
-    time: "13:10",
-    kind: "day"
-  },
-  {
     url: "/the-capital-veto",
     title: "The Capital Veto",
     excerpt: "Norges opposes MPS's expansion, Bank of Italy warns on capital, and France's crisis persists — European banking shifts from control to capital productivity.",
@@ -3964,18 +2968,6 @@ window.FDK_POSTS = [
     date: "October 24, 2026",
     read: "5 min read",
     time: "14:14",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide-2026-10-24",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Sovereign stress, energy inflation and AI leverage are competing for the same expensive capital.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "October 24, 2026",
-    read: "5 min read",
-    time: "13:40",
     kind: "day"
   },
   {
@@ -4120,18 +3112,6 @@ window.FDK_POSTS = [
     date: "October 23, 2026",
     read: "9 min read",
     time: "14:14",
-    kind: "day"
-  },
-  {
-    url: "/where-markets-capital-and-geopolitics-collide",
-    title: "Where Markets, Capital and Geopolitics Collide",
-    excerpt: "Three simultaneous claims on the same selective pool of capital — AI, energy and sovereign debt — define the morning of October 23.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
-    date: "October 23, 2026",
-    read: "5 min read",
-    time: "13:33",
     kind: "day"
   },
   {
@@ -4288,18 +3268,6 @@ window.FDK_POSTS = [
     date: "October 22, 2026",
     read: "5 min read",
     time: "14:45",
-    kind: "day"
-  },
-  {
-    url: "/the-october-demonstrations-do-not-produce-sustained-economic-disruption-and-european-markets-continue-distinguishing-french-sovereign-risk-from-broader-monetary-union-stability",
-    title: "The October Demonstrations Do Not Produce Sustained Economic Disruption, and European Markets Continue Distinguishing French Sovereign Risk From Broader Monetary-union Stability.",
-    excerpt: "Cross-country spread widening signals a shift from a French fiscal problem to a test of Europe's financial architecture.",
-    tag: "Midday Pulse · Capital",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "October 22, 2026",
-    read: "4 min read",
-    time: "14:19",
     kind: "day"
   },
   {
@@ -4687,18 +3655,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/reuters-reported-that-the-french-oat-bund-spread-increased-by-approximately-5-5-basis-points-to-152-5-basis-points-during-tuesdays-morning-trading",
-    title: "Reuters Reported That the French OAT: Bund Spread Increased by Approximately 5.5 Basis Points to 152.5 Basis Points During Tuesday’s Morning Trading.",
-    excerpt: "France's crisis moves from politics to capital markets, as its spread over Germany overtakes Italy's.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=800&q=80",
-    date: "October 20, 2026",
-    read: "5 min read",
-    time: "14:47",
-    kind: "day"
-  },
-  {
     url: "/the-cloud-outage-that-exposes-financial-dependence",
     title: "The Cloud Outage That Exposes Financial Dependence",
     excerpt: "A Google Cloud outage and new UK labour data sharpen the central-bank response to the AI Supercycle.",
@@ -4817,18 +3773,6 @@ window.FDK_POSTS = [
     read: "5 min read",
     time: "23:07",
     kind: "night"
-  },
-  {
-    url: "/when-france-shakes-europe-trembles",
-    title: "When France Shakes, Europe Trembles",
-    excerpt: "The Eurozone's first systemic stress test of a new political era, as French unrest begins to reprice sovereign credibility.",
-    tag: "In Focus · Sovereign Risk",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "October 19, 2026",
-    read: "10 min read",
-    time: "19:04",
-    kind: "day"
   },
   {
     url: "/europes-ai-capital-race-enters-the-credit-divide",
@@ -5224,30 +4168,6 @@ window.FDK_POSTS = [
     date: "October 17, 2026",
     read: "5 min read",
     time: "11:53",
-    kind: "day"
-  },
-  {
-    url: "/second-order-impact-the-consolidation-process-becomes-more-selective-potentially-increasing-the-strategic-relevance-of-independent-savings-and-banking-franchises",
-    title: "Second-order Impact: The Consolidation Process Becomes More Selective, Potentially Increasing the Strategic Relevance of Independent Savings and Banking Franchises.",
-    excerpt: "The ECB clears UniCredit's path to Commerzbank as markets begin repricing Europe's banking hierarchy around capital productivity.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
-    date: "October 17, 2026",
-    read: "5 min read",
-    time: "09:34",
-    kind: "day"
-  },
-  {
-    url: "/the-remaining-regulatory-procedures-and-offer-conditions-are-expected-to-be-completed-around-year-end",
-    title: "The Remaining Regulatory Procedures and Offer Conditions Are Expected to Be Completed Around Year-end.",
-    excerpt: "The ECB clears UniCredit's path to Commerzbank as markets begin pricing capital productivity over acquisition volume.",
-    tag: "Morning Brief · Capital",
-    slot: "Morning Brief",
-    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
-    date: "October 17, 2026",
-    read: "5 min read",
-    time: "09:31",
     kind: "day"
   },
   {
@@ -7039,18 +5959,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/ai-is-moving-from-a-valuation-story-to-a-credit-and-cash-flow-story",
-    title: "AI Is Moving From a Valuation Story to a Credit-and-cash-flow Story.",
-    excerpt: "Three institutional signals converge on a single conclusion — watch credit first, follow cash flow second.",
-    tag: "Central Banks & AI Watch · Capital",
-    slot: "Central Banks & AI Watch",
-    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
-    date: "September 30, 2026",
-    read: "2 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
     url: "/china-breaks-the-cuda-wall",
     title: "China Breaks the Cuda Wall",
     excerpt: "China's pivotal AI advance is no longer a better model or chip, but the beginning of an alternative intelligence-production system.",
@@ -8011,18 +6919,6 @@ window.FDK_POSTS = [
     kind: "day"
   },
   {
-    url: "/10-year-yield-has-moved-above-5-and-markets-are-assigning-around-a-90-probability-to-a-fed-hike-this-week",
-    title: "10-year Yield Has Moved Above 5%, and Markets Are Assigning Around a 90% Probability to a Fed Hike This Week.",
-    excerpt: "Higher rates make Italian banking consolidation simultaneously more strategic and more financially demanding.",
-    tag: "The Close · Capital",
-    slot: "The Close",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "2 min read",
-    time: "21:00",
-    kind: "night"
-  },
-  {
     url: "/italian-banking-paradox-2-0",
     title: "Italian Banking Paradox 2.0",
     excerpt: "MPS's defence now depends on the value of the very share currency Intesa's takeover attempt helped make scarce.",
@@ -8128,18 +7024,6 @@ window.FDK_POSTS = [
     date: "August 26, 2026",
     read: "9 min read",
     time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/the-morning-view",
-    title: "The Morning View",
-    excerpt: "Two repricing mechanisms converge this week — NVIDIA on the return on intelligence, Jackson Hole on the price of capital.",
-    tag: "Midday Pulse · Macro",
-    slot: "Midday Pulse",
-    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
-    date: "September 15, 2026",
-    read: "7 min read",
-    time: "12:30",
     kind: "day"
   },
   {
@@ -8343,18 +7227,6 @@ window.FDK_POSTS = [
     image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
     date: "September 15, 2026",
     read: "7 min read",
-    time: "08:00",
-    kind: "day"
-  },
-  {
-    url: "/the-age-of-industrial-ai-is-becoming-the-age-of-capital-formation",
-    title: "The Age of Industrial AI Is Becoming the Age of Capital Formation",
-    excerpt: "Weak payrolls, Nvidia's infrastructure push and Hormuz all point to the same divide — capital-rich versus capital-constrained systems.",
-    tag: "The Morning View · Capital",
-    slot: "Morning View",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "August 8, 2026",
-    read: "2 min read",
     time: "08:00",
     kind: "day"
   },
@@ -8779,6 +7651,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 

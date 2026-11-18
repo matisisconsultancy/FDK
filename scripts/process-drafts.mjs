@@ -141,6 +141,11 @@ function looksJunkTitle(title) {
   // Allocation…", "Porate Benchmark…"). Heuristic blocklist of common finance
   // words missing their first letter(s); upstream (the bot) is the real fix.
   if (/^(nvestor|orporate|porate|ompany|conomy|echnology|overnment|nflation|arket|apital|nalysis|trategy|olicy|iquidity|aluation|nfrastructure|roductivity|nvestment)\b/i.test(t)) return "truncated first word in title";
+  // A sentence or a clause from the body taken as the title — the Telegram
+  // splitter's signature. A real headline is short and self-contained.
+  if (t.split(/\s+/).length > 16 || t.length > 130) return "sentence as title (too long)";
+  if (/^(the more|it is|nevertheless|whether|what if|rather than|moreover|furthermore|because|although|while|meanwhile|conversely|however|indeed|thus|hence|therefore|which|who)\b/i.test(t) && !/[:?]$/.test(t)) return "title starts mid-sentence";
+  if (/[\s,'’-](a|an|the|and|or|of|to|in|on|for|with|res|inves|internat|assu)$/i.test(t) || /\bno lon$/i.test(t)) return "title ends truncated";
   return null;
 }
 
@@ -215,6 +220,21 @@ for (const file of pending) {
     if (junkReason) {
       setAside(file, `titolo non valido (${junkReason})`);
       console.warn(`⛔ rejected ${file}: ${junkReason} — title ${JSON.stringify(titleLine)} → drafts/rejected/`);
+      failed.push(file);
+      continue;
+    }
+
+    // ---- guard: reject fragments (a real edition is a full article) ----
+    // Telegram splits a long newsletter into several messages; each arrives as
+    // its own short draft. A genuine edition runs 600–1,400 words, a fragment
+    // well under that. Set the short ones aside (the bot reports back to the
+    // author) so one newsletter can no longer explode into a dozen stubs.
+    const fragSrc = fs.readFileSync(path.join(DRAFTS, file), "utf8");
+    const fragBody = (fragSrc.match(/^---\n[\s\S]*?\n---\n?([\s\S]*)$/) || [, fragSrc])[1];
+    const bodyWords = (fragBody.replace(/^::.*$/gm, " ").match(/[A-Za-z0-9’'-]+/g) || []).length;
+    if (bodyWords < 300) {
+      setAside(file, `nota troppo corta (${bodyWords} parole, probabile frammento)`);
+      console.warn(`⛔ set aside ${file}: fragment (${bodyWords} words) → drafts/rejected/`);
       failed.push(file);
       continue;
     }
