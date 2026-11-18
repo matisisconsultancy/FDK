@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-decisive-indicators-now-are-nvidias-ability-to-sustain-its-revenue-guidance-the-commercial-performance-of-huawei-based-ai-systems-chinese-model-adoption-outside-china-and-whether-bilateral-res",
+    title: "The Decisive Indicators Now Are Nvidia’s Ability to Sustain Its Revenue Guidance, the Commercial Performance of Huawei-based AI Systems, Chinese Model Adoption Outside China, and Whether Bilateral Res",
+    excerpt: "Nvidia can sustain record growth while planning for zero Chinese data-center compute — and that reshapes the AI Supercycle.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "4 min read",
+    time: "12:48",
+    kind: "day"
+  },
+  {
     url: "/france-the-coming-reckoning",
     title: "France: The Coming Reckoning",
     excerpt: "France's crisis is no longer just political — it is becoming financial, and the consequences reach across the eurozone.",
