@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-gold-rush",
+    title: "The Intelligence Gold Rush",
+    excerpt: "As AI becomes the century's largest capital-intensive undertaking, the decisive question shifts from who builds the most intelligence to who earns the most from each dollar invested.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "5 min read",
+    time: "16:29",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-2026-11-18",
     title: "The Big Take",
     excerpt: "France now pays a 44-basis-point premium over Italy, inverting Europe's historical sovereign hierarchy.",
