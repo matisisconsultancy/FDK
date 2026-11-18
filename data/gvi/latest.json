@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-17",
+    "updated": "2026-11-18",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -166,7 +166,8 @@
       "the-intelligence-income-divide",
       "gvi-corporate-benchmark-2026-11-16",
       "the-compute-border",
-      "the-compute-border-2026-11-17"
+      "the-compute-border-2026-11-17",
+      "gvi-corporate-benchmark-2026-11-18"
     ]
   },
   "daily": {
@@ -3430,62 +3431,56 @@
     }
   },
   "today": {
-    "date": "2026-11-17",
-    "edition": "GVI · Macro",
-    "thesis": "The Compute Border",
-    "subtitle": "Compute access, AI financing risk and Europe's shallow industrial recovery now define the frontier — but no validated change in the weighted GVI has been asserted.",
-    "standfirst": "Intelligence creates the frontier. Access determines participation. Capital productivity determines who captures the value.",
+    "date": "2026-11-18",
+    "edition": "Morning Brief",
+    "thesis": "GVI Corporate Benchmark",
+    "subtitle": "Nvidia's $115.8bn quarter confirms the AI supercycle yet reveals a new financial hierarchy set by marginal returns, institutional resilience and the cost of capital.",
+    "standfirst": "Innovation determines who leads. Capital productivity determines who earns.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "GVI headline (prior provisional, 2025 = 100)",
-        "value": "108.0",
-        "delta": null,
+        "label": "Top-10 composite",
+        "value": "98.39",
+        "delta": "+0.03",
+        "trend": "up"
+      },
+      {
+        "label": "Laggard composite",
+        "value": "67.63",
+        "delta": "0.00",
         "trend": "flat"
       },
       {
-        "label": "Euro-area industry, Sep MoM",
-        "value": "+0.2%",
+        "label": "Nvidia GVI",
+        "value": "98.1",
+        "delta": "+0.3",
+        "trend": "up"
+      },
+      {
+        "label": "Nvidia Q3 revenue",
+        "value": "$115.8bn",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "US semiconductors, Nov 16",
-        "value": "−5.3%",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "Nasdaq, Nov 16",
-        "value": "−2.49%",
-        "delta": null,
-        "trend": "down"
-      },
-      {
-        "label": "Potential off-balance-sheet AI obligations (Fed)",
-        "value": "$3T",
+        "label": "10-year yield",
+        "value": "5.08%",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Compute Border",
-      "url": "/the-compute-border",
-      "date": "2026-11-17",
-      "slot": "GVI"
+      "title": "GVI Corporate Benchmark",
+      "url": "/gvi-corporate-benchmark-2026-11-18",
+      "date": "2026-11-18",
+      "slot": "Morning Brief"
     },
     "notes": [
       {
-        "title": "The Compute Border",
-        "url": "/the-compute-border",
-        "slot": "GVI",
-        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the 15-country scorecard; no validated score changes or ranking movements are established."
-      },
-      {
-        "title": "The Compute Border",
-        "url": "/the-compute-border-2026-11-17",
-        "slot": "GVI",
-        "headline": "US compute-access limits, a Federal Reserve financing warning and a shallow European recovery leave country scores unchanged: the US leads at 94.0, China 91.2 and South Korea 88.8."
+        "title": "GVI Corporate Benchmark",
+        "url": "/gvi-corporate-benchmark-2026-11-18",
+        "slot": "Morning Brief",
+        "headline": "TSMC 99.8, Microsoft 99.4 and Schneider Electric 99.0 lead; Nvidia is upgraded 0.3 to 98.1 and moves to rank 6."
       }
     ]
   },
@@ -3591,7 +3586,7 @@
     ]
   },
   "corporateBenchmark": {
-    "asOf": "2026-11-16",
+    "asOf": "2026-11-18",
     "title": "GVI Corporate Benchmark",
     "leaders": [
       {
@@ -3599,80 +3594,80 @@
         "name": "TSMC",
         "score": 99.8,
         "delta": 0,
-        "trend": "up",
-        "note": "Advanced manufacturing"
+        "trend": "flat",
+        "note": "October revenue rose 59.7% to NT$586.89bn."
       },
       {
         "rank": 2,
         "name": "Microsoft",
         "score": 99.4,
         "delta": 0,
-        "trend": "up",
-        "note": "Enterprise AI monetization"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 3,
         "name": "Schneider Electric",
         "score": 99,
         "delta": 0,
-        "trend": "up",
-        "note": "Electrical infrastructure"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 4,
         "name": "Amazon",
         "score": 98.8,
         "delta": 0,
-        "trend": "up",
-        "note": "AWS and cloud ecosystem"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 5,
         "name": "ASML",
         "score": 98.2,
         "delta": 0,
-        "trend": "up",
-        "note": "Advanced lithography"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 6,
-        "name": "Broadcom",
-        "score": 97.8,
-        "delta": 0,
+        "name": "Nvidia",
+        "score": 98.1,
+        "delta": 0.3,
         "trend": "up",
-        "note": "Custom silicon and networking"
+        "note": "Upgraded 0.3 (rank 7 to 6); governance discount stays until succession and financing strategy are clear."
       },
       {
         "rank": 7,
-        "name": "Nvidia",
+        "name": "Broadcom",
         "score": 97.8,
         "delta": 0,
-        "trend": "down",
-        "note": "Accelerated computing ecosystem"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 8,
         "name": "Siemens AG",
         "score": 97.7,
         "delta": 0,
-        "trend": "up",
-        "note": "Industrial AI and automation"
+        "trend": "flat",
+        "note": "FY2026 free cash flow of €12.1bn."
       },
       {
         "rank": 9,
         "name": "Siemens Energy",
         "score": 97.6,
         "delta": 0,
-        "trend": "up",
-        "note": "Power generation and grids"
+        "trend": "flat",
+        "note": "Pre-tax free cash flow of €8.8bn."
       },
       {
         "rank": 10,
         "name": "Palantir",
         "score": 97.5,
         "delta": 0,
-        "trend": "up",
-        "note": "Enterprise AI adoption"
+        "trend": "flat",
+        "note": null
       }
     ],
     "laggards": [
@@ -3681,16 +3676,16 @@
         "name": "Volkswagen",
         "score": 61.3,
         "delta": 0,
-        "trend": "down",
-        "note": "Industrial restructuring"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 2,
         "name": "Nissan",
         "score": 63.4,
         "delta": 0,
-        "trend": "down",
-        "note": "Turnaround execution"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 3,
@@ -3698,15 +3693,15 @@
         "score": 65.2,
         "delta": 0,
         "trend": "flat",
-        "note": "Capital-intensive transformation"
+        "note": "Q3 industrial free cash flow of negative €4bn; the harder case."
       },
       {
         "rank": 4,
         "name": "Skydance",
         "score": 66.6,
         "delta": 0,
-        "trend": "down",
-        "note": "Integration and leverage"
+        "trend": "flat",
+        "note": "Leverage is a source of deceleration."
       },
       {
         "rank": 5,
@@ -3714,7 +3709,7 @@
         "score": 68.1,
         "delta": 0,
         "trend": "flat",
-        "note": "Productivity improvement"
+        "note": null
       },
       {
         "rank": 6,
@@ -3722,7 +3717,7 @@
         "score": 68.9,
         "delta": 0,
         "trend": "flat",
-        "note": "Energy competitiveness"
+        "note": "Structural energy competitiveness weighs on the score."
       },
       {
         "rank": 7,
@@ -3730,7 +3725,7 @@
         "score": 69.8,
         "delta": 0,
         "trend": "flat",
-        "note": "Industrial transition"
+        "note": null
       },
       {
         "rank": 8,
@@ -3738,30 +3733,30 @@
         "score": 70.3,
         "delta": 0,
         "trend": "flat",
-        "note": "Digital productivity"
+        "note": null
       },
       {
         "rank": 9,
         "name": "Porsche AG",
         "score": 70.7,
         "delta": 0,
-        "trend": "down",
-        "note": "Investment returns"
+        "trend": "flat",
+        "note": null
       },
       {
         "rank": 10,
         "name": "Cellnex",
         "score": 72,
         "delta": 0,
-        "trend": "up",
-        "note": "Infrastructure leverage"
+        "trend": "flat",
+        "note": "Constructive inflection: nine-month FCF €474m vs €186m, leverage 6.13x."
       }
     ],
     "pillars": [],
     "source": {
       "title": "GVI Corporate Benchmark",
-      "url": "/gvi-corporate-benchmark-2026-11-16",
-      "date": "2026-11-16",
+      "url": "/gvi-corporate-benchmark-2026-11-18",
+      "date": "2026-11-18",
       "slot": "Morning Brief"
     }
   },

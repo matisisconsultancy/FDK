@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark-2026-11-18",
+    title: "GVI Corporate Benchmark",
+    excerpt: "Record profits are no longer enough — Nvidia's blowout quarter met a muted market as investors price capital productivity over growth.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "5 min read",
+    time: "07:22",
+    kind: "day"
+  },
+  {
     url: "/confidence-and-materiality-decision-high-confidence-in-the-reported-statistics-and-corporate-financial-statements-high-materiality-for-nvidia-us-industrial-activity-and-japans-trade-performance-m",
     title: "Confidence and Materiality Decision: High Confidence in the Reported Statistics and Corporate Financial Statements; High Materiality for Nvidia, US Industrial Activity and Japan’s Trade Performance. M",
     excerpt: "The AI Supercycle is accelerating faster than the economies financing it — and its financial returns are concentrating.",
