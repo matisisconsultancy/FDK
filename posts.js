@@ -7,6 +7,42 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/when-record-profits-no-longer-buy-confidence",
+    title: "When Record Profits No Longer Buy Confidence",
+    excerpt: "The AI Supercycle is delivering extraordinary profits, but markets now reward productivity over ambition.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 19, 2026",
+    read: "3 min read",
+    time: "17:00",
+    kind: "day"
+  },
+  {
+    url: "/the-81-billion-confidence-test",
+    title: "The $81 Billion Confidence Test",
+    excerpt: "Anthropic's record IPO, a Fed warning and record patent filings redraw the Global Velocity map.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 19, 2026",
+    read: "4 min read",
+    time: "16:59",
+    kind: "day"
+  },
+  {
+    url: "/europes-ai-race-the-capital-behind-the-compute",
+    title: "Europe’s AI Race: The Capital Behind the Compute",
+    excerpt: "Europe's AI infrastructure contest moves from investment announcements to financial execution across Italy, Brussels and Spain.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 18, 2026",
+    read: "3 min read",
+    time: "08:00",
+    kind: "day"
+  },
+  {
     url: "/the-confirmation-signal",
     title: "The Confirmation Signal",
     excerpt: "A disciplined framework for reading BTP–Bund spreads: level, confirmation, action.",
