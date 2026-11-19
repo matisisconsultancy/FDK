@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-4-trillion-shadow-of-intelligence",
+    title: "The $4 Trillion Shadow of Intelligence",
+    excerpt: "The ECB, Singapore's MAS and UK inflation data converge to show AI liabilities outpacing the productivity gains needed to support them.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 19, 2026",
+    read: "5 min read",
+    time: "18:19",
+    kind: "night"
+  },
+  {
     url: "/when-record-profits-no-longer-buy-confidence",
     title: "When Record Profits No Longer Buy Confidence",
     excerpt: "The AI Supercycle is delivering extraordinary profits, but markets now reward productivity over ambition.",
