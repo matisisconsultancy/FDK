@@ -20,6 +20,10 @@ const DRAFTS = path.join(ROOT, "drafts");
 const PUBLISHED = path.join(DRAFTS, "published");
 const SKIP = new Set(["README.md", "TEMPLATE.md"]);
 const hasKey = !!process.env.ANTHROPIC_API_KEY;
+// Declared up here (not beside looksJunkTitle) because restitchPending() runs
+// near the top and calls looksJunkTitle, which reads MONTHS — a `const` is in
+// the temporal dead zone until its line runs, so it must precede that call.
+const MONTHS = "january|february|march|april|may|june|july|august|september|october|november|december";
 
 if (!fs.existsSync(DRAFTS)) { console.log("No drafts/ directory — nothing to do."); process.exit(0); }
 fs.mkdirSync(PUBLISHED, { recursive: true });
@@ -75,7 +79,6 @@ const failed = [];
 // masthead line, or a test note. These are the junk the Telegram pipeline
 // produces; they must never reach the live site regardless of which bot sent
 // them. Returns a reason string when junk, else null.
-const MONTHS = "january|february|march|april|may|june|july|august|september|october|november|december";
 // A draft set aside goes to drafts/rejected/ with its reason in the
 // front-matter ("rejected: …"), which the Telegram bot reads back to Francesco.
 function setAside(file, reason) {
