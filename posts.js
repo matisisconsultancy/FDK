@@ -7,18 +7,6 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
-    url: "/pipeline-health-check",
-    title: "Pipeline Health Check",
-    excerpt: "A temporary test note verifying the full publishing pipeline from commit to live page.",
-    tag: "In Focus · Operations",
-    slot: "In Focus",
-    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
-    date: "November 19, 2026",
-    read: "2 min read",
-    time: "17:18",
-    kind: "day"
-  },
-  {
     url: "/when-record-profits-no-longer-buy-confidence",
     title: "When Record Profits No Longer Buy Confidence",
     excerpt: "The AI Supercycle is delivering extraordinary profits, but markets now reward productivity over ambition.",
@@ -7195,6 +7183,7 @@ window.FDK_POSTS = [
     kind: "night"
   }
 ];
+
 
 
 
