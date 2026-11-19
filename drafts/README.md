@@ -117,3 +117,5 @@ Example `::rank` (great for GVI index / benchmark editions):
 node scripts/publish-note.mjs drafts/2026-07-18-my-note.md --dry-run   # check
 node scripts/publish-note.mjs drafts/2026-07-18-my-note.md             # publish
 ```
+
+<!-- reprocess trigger 20261119T155724Z -->
