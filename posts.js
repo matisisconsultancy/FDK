@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-intelligence-risk-premium",
+    title: "The Intelligence Risk Premium",
+    excerpt: "The AI supercycle confronts its first systemic test of financial confidence as the SEC examines Nvidia and markets reprice the capital financing intelligence.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 21, 2026",
+    read: "5 min read",
+    time: "11:40",
+    kind: "day"
+  },
+  {
     url: "/the-4-trillion-shadow-of-intelligence",
     title: "The $4 Trillion Shadow of Intelligence",
     excerpt: "The ECB, Singapore's MAS and UK inflation data converge to show AI liabilities outpacing the productivity gains needed to support them.",
