@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-battle-for-europes-financial-destiny",
+    title: "The Battle for Europe’s Financial Destiny",
+    excerpt: "Europe is winning the battle for financial scale, but has yet to prove it can win the battle for economic value.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 22, 2026",
+    read: "9 min read",
+    time: "18:57",
+    kind: "day"
+  },
+  {
     url: "/the-intelligence-risk-premium",
     title: "The Intelligence Risk Premium",
     excerpt: "The AI supercycle confronts its first systemic test of financial confidence as the SEC examines Nvidia and markets reprice the capital financing intelligence.",
