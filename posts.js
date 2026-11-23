@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-23",
+    title: "The Big Take",
+    excerpt: "The AI Supercycle shifts from building compute to controlling the commercialization and financial value of intelligence.",
+    tag: "The Close · AI Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 23, 2026",
+    read: "5 min read",
+    time: "19:03",
+    kind: "night"
+  },
+  {
     url: "/the-disinflation-divide",
     title: "The Disinflation Divide",
     excerpt: "Why Singapore's inflation easing tests whether AI productivity has truly arrived.",
