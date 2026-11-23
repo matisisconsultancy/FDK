@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-priority",
+    title: "The Price of Priority",
+    excerpt: "The AI Supercycle is now competing with the economy it promises to transform—for capital, energy and credit.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 23, 2026",
+    read: "5 min read",
+    time: "19:09",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-2026-11-23",
     title: "The Big Take",
     excerpt: "The AI Supercycle shifts from building compute to controlling the commercialization and financial value of intelligence.",
