@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-return-of-the-compass",
+    title: "The Return of the Compass",
+    excerpt: "Huang's reinstatement shows markets repricing leadership itself — the capacity to reduce uncertainty about an industry's future.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 23, 2026",
+    read: "5 min read",
+    time: "19:38",
+    kind: "night"
+  },
+  {
     url: "/the-price-of-priority",
     title: "The Price of Priority",
     excerpt: "The AI Supercycle is now competing with the economy it promises to transform—for capital, energy and credit.",
