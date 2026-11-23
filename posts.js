@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-disinflation-divide",
+    title: "The Disinflation Divide",
+    excerpt: "Why Singapore's inflation easing tests whether AI productivity has truly arrived.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 23, 2026",
+    read: "3 min read",
+    time: "18:22",
+    kind: "day"
+  },
+  {
     url: "/the-battle-for-europes-financial-destiny",
     title: "The Battle for Europe’s Financial Destiny",
     excerpt: "Europe is winning the battle for financial scale, but has yet to prove it can win the battle for economic value.",
