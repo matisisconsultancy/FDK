@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/frontier-magnets-compass-companies",
+    title: "Frontier Magnets & Compass Companies",
+    excerpt: "From Chandler's Captains of Industry to the gravitational forces reshaping global capitalism.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "5 min read",
+    time: "21:28",
+    kind: "night"
+  },
+  {
     url: "/the-price-of-intelligence-2026-11-24",
     title: "The Price of Intelligence",
     excerpt: "Europe's AI challenge is becoming an energy, a monetary and a capital-allocation challenge.",
