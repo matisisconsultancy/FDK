@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-intelligence-2026-11-24",
+    title: "The Price of Intelligence",
+    excerpt: "Europe's AI challenge is becoming an energy, a monetary and a capital-allocation challenge.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "4 min read",
+    time: "18:15",
+    kind: "day"
+  },
+  {
     url: "/the-inflection-point-the-big-take-2026-11-24",
     title: "The Inflection Point: The Big Take",
     excerpt: "A trillion-dollar reversal, a record IPO retreating and a renewed Fed hike reveal a new global investment regime.",
