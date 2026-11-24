@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-geopolitical-discount",
+    title: "The Geopolitical Discount",
+    excerpt: "Confidence returns to Nvidia even as Washington escalates export enforcement — exposing a K-shaped divergence within the AI Supercycle.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "4 min read",
+    time: "16:09",
+    kind: "day"
+  },
+  {
     url: "/the-architects-of-acceleration",
     title: "The Architects of Acceleration",
     excerpt: "Jensen Huang's return, Switzerland's SIX growth program and a widening Germany–France divergence redraw the map of global capital allocation.",
