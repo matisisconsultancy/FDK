@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-inflection-point-the-big-take-2026-11-24",
+    title: "The Inflection Point: The Big Take",
+    excerpt: "A trillion-dollar reversal, a record IPO retreating and a renewed Fed hike reveal a new global investment regime.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "5 min read",
+    time: "16:17",
+    kind: "day"
+  },
+  {
     url: "/the-geopolitical-discount",
     title: "The Geopolitical Discount",
     excerpt: "Confidence returns to Nvidia even as Washington escalates export enforcement — exposing a K-shaped divergence within the AI Supercycle.",
