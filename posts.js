@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-architects-of-acceleration",
+    title: "The Architects of Acceleration",
+    excerpt: "Jensen Huang's return, Switzerland's SIX growth program and a widening Germany–France divergence redraw the map of global capital allocation.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "5 min read",
+    time: "09:48",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-the-compass-premium",
     title: "The Big Take the Compass Premium",
     excerpt: "Leadership credibility, infrastructure financing and capital-market depth are becoming interdependent.",

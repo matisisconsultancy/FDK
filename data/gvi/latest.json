@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-19",
+    "updated": "2026-11-24",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -168,34 +168,35 @@
       "the-compute-border",
       "the-compute-border-2026-11-17",
       "gvi-corporate-benchmark-2026-11-18",
-      "the-81-billion-confidence-test"
+      "the-81-billion-confidence-test",
+      "the-architects-of-acceleration"
     ]
   },
   "daily": {
     "index": {
       "label": "Global Velocity Index",
       "score": 108,
-      "delta": "N/V",
+      "delta": null,
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-19",
+      "asOf": "2026-11-24",
       "improving": null,
       "declining": null,
-      "coverage": 15,
+      "coverage": null,
       "source": {
-        "title": "The $81 Billion Confidence Test",
-        "url": "/the-81-billion-confidence-test",
-        "date": "2026-11-19",
+        "title": "The Architects of Acceleration",
+        "url": "/the-architects-of-acceleration",
+        "date": "2026-11-24",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-19",
+      "asOf": "2026-11-24",
       "source": {
-        "title": "The $81 Billion Confidence Test",
-        "url": "/the-81-billion-confidence-test",
-        "date": "2026-11-19",
+        "title": "The Architects of Acceleration",
+        "url": "/the-architects-of-acceleration",
+        "date": "2026-11-24",
         "slot": "GVI"
       },
       "rows": [
@@ -204,9 +205,9 @@
           "flag": "🇺🇸",
           "name": "United States",
           "score": 94,
-          "delta": "N/V",
-          "trend": "flat",
-          "tag": "AI capital access strong; financial risk rising",
+          "delta": null,
+          "trend": "up",
+          "tag": "Positive",
           "spark": [
             94,
             94,
@@ -245,9 +246,9 @@
           "flag": "🇨🇳",
           "name": "China",
           "score": 91.2,
-          "delta": "N/V",
+          "delta": null,
           "trend": "flat",
-          "tag": "Innovation strong; domestic demand weak",
+          "tag": "Previous assessment",
           "spark": [
             91.2,
             91.2,
@@ -286,9 +287,9 @@
           "flag": "🇰🇷",
           "name": "South Korea",
           "score": 88.8,
-          "delta": "N/V",
-          "trend": "flat",
-          "tag": "Semiconductor and patent leadership",
+          "delta": null,
+          "trend": "down",
+          "tag": "Domestic sentiment",
           "spark": [
             88.8,
             88.8,
@@ -327,9 +328,9 @@
           "flag": "🇯🇵",
           "name": "Japan",
           "score": 84.9,
-          "delta": "N/V",
+          "delta": null,
           "trend": "flat",
-          "tag": "Advanced manufacturing resilient",
+          "tag": "Mixed",
           "spark": [
             84.9,
             84.9,
@@ -368,9 +369,9 @@
           "flag": "🇩🇪",
           "name": "Germany",
           "score": 83.4,
-          "delta": "N/V",
-          "trend": "flat",
-          "tag": "Inflation easing; industry subdued",
+          "delta": null,
+          "trend": "up",
+          "tag": "Industrial acceleration",
           "spark": [
             83.4,
             83.4,
@@ -409,9 +410,9 @@
           "flag": "🇬🇧",
           "name": "United Kingdom",
           "score": 82.2,
-          "delta": "N/V",
+          "delta": null,
           "trend": "flat",
-          "tag": "Digital growth; financing constraints",
+          "tag": "Mixed",
           "spark": [
             82.2,
             82.2,
@@ -450,9 +451,9 @@
           "flag": "🇫🇷",
           "name": "France",
           "score": 81.2,
-          "delta": "N/V",
-          "trend": "flat",
-          "tag": "Sovereign and inflation pressure",
+          "delta": null,
+          "trend": "down",
+          "tag": "Contraction",
           "spark": [
             81.2,
             81.2,
@@ -488,12 +489,96 @@
         },
         {
           "rank": 8,
+          "flag": "🇨🇭",
+          "name": "Switzerland",
+          "score": 80.7,
+          "delta": null,
+          "trend": "up",
+          "tag": "Capital-market initiative",
+          "spark": [
+            80.7
+          ]
+        },
+        {
+          "rank": 9,
+          "flag": "🇳🇱",
+          "name": "Netherlands",
+          "score": 80.6,
+          "delta": null,
+          "trend": "flat",
+          "tag": null,
+          "spark": [
+            80.6
+          ]
+        },
+        {
+          "rank": 10,
+          "flag": "🇸🇪",
+          "name": "Sweden",
+          "score": 79.2,
+          "delta": null,
+          "trend": "flat",
+          "tag": null,
+          "spark": [
+            79.2
+          ]
+        },
+        {
+          "rank": 11,
+          "flag": "🇩🇰",
+          "name": "Denmark",
+          "score": 77.8,
+          "delta": null,
+          "trend": "flat",
+          "tag": null,
+          "spark": [
+            77.8
+          ]
+        },
+        {
+          "rank": 12,
+          "flag": "🇳🇴",
+          "name": "Norway",
+          "score": 77.1,
+          "delta": null,
+          "trend": "flat",
+          "tag": null,
+          "spark": [
+            77.1
+          ]
+        },
+        {
+          "rank": 13,
+          "flag": "🇪🇸",
+          "name": "Spain",
+          "score": 75,
+          "delta": null,
+          "trend": "up",
+          "tag": "Capital-market opportunity",
+          "spark": [
+            75
+          ]
+        },
+        {
+          "rank": 14,
+          "flag": "🇦🇹",
+          "name": "Austria",
+          "score": 72.4,
+          "delta": null,
+          "trend": "flat",
+          "tag": null,
+          "spark": [
+            72.4
+          ]
+        },
+        {
+          "rank": 15,
           "flag": "🇮🇹",
           "name": "Italy",
           "score": 71.6,
-          "delta": "N/V",
+          "delta": null,
           "trend": "flat",
-          "tag": "Inflation and growth deterioration",
+          "tag": "Previous constraints",
           "spark": [
             71.6,
             71.6,
@@ -3145,56 +3230,56 @@
     }
   },
   "today": {
-    "date": "2026-11-19",
-    "edition": "GVI · Capital",
-    "thesis": "The $81 Billion Confidence Test",
-    "subtitle": "Record AI capital formation meets rising financial risk as innovation accelerates and returns become the decisive test.",
-    "standfirst": "The AI Supercycle is winning the competition for capital. The next battle is over returns.",
+    "date": "2026-11-24",
+    "edition": "GVI",
+    "thesis": "The Architects of Acceleration",
+    "subtitle": "The next phase of the AI Supercycle will increasingly be shaped by three strategic assets — visionary leadership, integrated capital markets and the industrial capacity to deploy intelligence at scale.",
+    "standfirst": "In the Next Economy, the greatest premium will accrue not simply to those who participate in acceleration, but to those who determine its direction.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "Anthropic IPO",
-        "value": "$81.3bn",
+        "label": "Nvidia · Nov 23",
+        "value": "+31.5%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Global patent filings",
-        "value": "3.9m",
-        "delta": "+6.0% YoY",
-        "trend": "up"
-      },
-      {
-        "label": "Eurozone inflation",
-        "value": "4.0%",
+        "label": "Nasdaq 100",
+        "value": "+6.5%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Italy inflation",
-        "value": "5.6%",
-        "delta": null,
+        "label": "Germany composite PMI",
+        "value": "55.0",
+        "delta": "+1.6",
         "trend": "up"
       },
       {
-        "label": "Global Velocity Index (provisional)",
+        "label": "France composite PMI",
+        "value": "46.2",
+        "delta": "−0.4",
+        "trend": "down"
+      },
+      {
+        "label": "FDK Global Velocity Index (2025 = 100)",
         "value": "108.0",
-        "delta": "N/V",
+        "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The $81 Billion Confidence Test",
-      "url": "/the-81-billion-confidence-test",
-      "date": "2026-11-19",
+      "title": "The Architects of Acceleration",
+      "url": "/the-architects-of-acceleration",
+      "date": "2026-11-24",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The $81 Billion Confidence Test",
-        "url": "/the-81-billion-confidence-test",
+        "title": "The Architects of Acceleration",
+        "url": "/the-architects-of-acceleration",
         "slot": "GVI",
-        "headline": "Anthropic's record $81.3bn IPO, a Fed warning on AI financing and 3.9m patent filings shift the focus from capital formation to returns; the GVI stays at its provisional 108.0 with the US (94.0) and China (91.2) leading carried-forward estimates."
+        "headline": "The United States (94.0), China (91.2) and South Korea (88.8) lead the GVI, while the Germany–France PMI gap widens to 8.8 points, the widest in six years."
       }
     ]
   },
