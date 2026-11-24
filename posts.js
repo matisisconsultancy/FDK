@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-the-compass-premium",
+    title: "The Big Take the Compass Premium",
+    excerpt: "Leadership credibility, infrastructure financing and capital-market depth are becoming interdependent.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "5 min read",
+    time: "09:28",
+    kind: "day"
+  },
+  {
     url: "/the-great-divide-in-the-ai-supercycle",
     title: "The Great Divide in the AI Supercycle",
     excerpt: "NVIDIA's rebound lifts markets, but rising yields and sovereign fragility point to a more selective investment regime.",
