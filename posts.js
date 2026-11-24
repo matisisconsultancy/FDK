@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-divide-in-the-ai-supercycle",
+    title: "The Great Divide in the AI Supercycle",
+    excerpt: "NVIDIA's rebound lifts markets, but rising yields and sovereign fragility point to a more selective investment regime.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 24, 2026",
+    read: "5 min read",
+    time: "09:15",
+    kind: "day"
+  },
+  {
     url: "/the-return-of-the-compass",
     title: "The Return of the Compass",
     excerpt: "Huang's reinstatement shows markets repricing leadership itself — the capacity to reduce uncertainty about an industry's future.",
