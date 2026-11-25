@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-cities-that-will-shape-the-wealth-of-nations",
+    title: "The Cities That Will Shape the Wealth of Nations",
+    excerpt: "The AI Supercycle is redistributing intellectual capital city by city — and with it the geography of future wealth.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "5 min read",
+    time: "19:49",
+    kind: "night"
+  },
+  {
     url: "/the-reckoning-between-capital-and-compute",
     title: "The Reckoning Between Capital and Compute",
     excerpt: "AI's strategic necessity is colliding with the financial sustainability of funding it — and the rotation may happen within the ecosystem, not away from it.",
