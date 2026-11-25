@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-reckoning-between-capital-and-compute",
+    title: "The Reckoning Between Capital and Compute",
+    excerpt: "AI's strategic necessity is colliding with the financial sustainability of funding it — and the rotation may happen within the ecosystem, not away from it.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "4 min read",
+    time: "12:09",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-2026-11-25",
     title: "The Big Take",
     excerpt: "Record AI demand, distressed credit markets and Europe's €50 billion strategic opportunity.",
