@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/he-velocity-edge-closing-of-the-day",
+    title: "He Velocity Edge: Closing of the Day",
+    excerpt: "Strong growth, sticky inflation and economic nationalism are rewriting the rules of global capital allocation.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "5 min read",
+    time: "21:28",
+    kind: "night"
+  },
+  {
     url: "/the-price-of-a-fractured-world",
     title: "The Price of a Fractured World",
     excerpt: "Growth, inflation and economic nationalism collide as markets question not AI demand, but the sustainability of financing it.",
