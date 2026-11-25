@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-productivity-arbitrage",
+    title: "The Great Productivity Arbitrage",
+    excerpt: "John Williams's intervention reframes the AI debate around who captures the productivity dividend and how long capital must wait.",
+    tag: "In Focus · Macro",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "5 min read",
+    time: "19:58",
+    kind: "day"
+  },
+  {
     url: "/the-cities-that-will-shape-the-wealth-of-nations",
     title: "The Cities That Will Shape the Wealth of Nations",
     excerpt: "The AI Supercycle is redistributing intellectual capital city by city — and with it the geography of future wealth.",
