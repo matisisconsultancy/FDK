@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-price-of-a-fractured-world",
+    title: "The Price of a Fractured World",
+    excerpt: "Growth, inflation and economic nationalism collide as markets question not AI demand, but the sustainability of financing it.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "4 min read",
+    time: "20:05",
+    kind: "night"
+  },
+  {
     url: "/the-great-productivity-arbitrage",
     title: "The Great Productivity Arbitrage",
     excerpt: "John Williams's intervention reframes the AI debate around who captures the productivity dividend and how long capital must wait.",
