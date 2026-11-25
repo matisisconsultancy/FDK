@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-bond-markets-verdict",
+    title: "The Bond Market's Verdict",
+    excerpt: "Dell posts record AI demand while CDS spreads blow out — credit, not innovation, may decide the AI Supercycle's winners.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "4 min read",
+    time: "11:53",
+    kind: "day"
+  },
+  {
     url: "/frontier-magnets-compass-companies",
     title: "Frontier Magnets & Compass Companies",
     excerpt: "From Chandler's Captains of Industry to the gravitational forces reshaping global capitalism.",
