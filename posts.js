@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-25",
+    title: "The Big Take",
+    excerpt: "Record AI demand, distressed credit markets and Europe's €50 billion strategic opportunity.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 25, 2026",
+    read: "5 min read",
+    time: "11:59",
+    kind: "day"
+  },
+  {
     url: "/the-bond-markets-verdict",
     title: "The Bond Market's Verdict",
     excerpt: "Dell posts record AI demand while CDS spreads blow out — credit, not innovation, may decide the AI Supercycle's winners.",
