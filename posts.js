@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/gvi-corporate-benchmark",
+    title: "GVI Corporate Benchmark",
+    excerpt: "The repricing of AI credit is revealing the next corporate hierarchy — and why financial independence may be the decisive edge.",
+    tag: "The Close · AI Credit",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "5 min read",
+    time: "18:18",
+    kind: "night"
+  },
+  {
     url: "/the-gravity-of-capital",
     title: "The Gravity of Capital",
     excerpt: "How the AI Supercycle is reshaping the cost of money, the hierarchy of global assets and the economics of future growth.",
