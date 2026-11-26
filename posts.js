@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-battle-for-velocity",
+    title: "The Battle for Velocity",
+    excerpt: "Export controls are slowing Chinese frontier models and reshaping AI infrastructure credit — a new competitive dimension emerges.",
+    tag: "Midday Pulse · AI",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "5 min read",
+    time: "17:43",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-2026-11-26",
     title: "The Big Take",
     excerpt: "America's monetary constraint, Europe's sovereign capital opportunity and the emerging redistribution of AI wealth.",
