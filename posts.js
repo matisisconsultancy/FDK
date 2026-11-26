@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-gravity-of-capital",
+    title: "The Gravity of Capital",
+    excerpt: "How the AI Supercycle is reshaping the cost of money, the hierarchy of global assets and the economics of future growth.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "4 min read",
+    time: "17:58",
+    kind: "day"
+  },
+  {
     url: "/europes-ai-race-the-new-hierarchy-of-capital",
     title: "Europe’s AI Race: The New Hierarchy of Capital",
     excerpt: "Three developments reveal an emerging reallocation of European AI infrastructure capital across Spain and Portugal.",

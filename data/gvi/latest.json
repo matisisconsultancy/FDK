@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-24",
+    "updated": "2026-11-26",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -169,7 +169,8 @@
       "the-compute-border-2026-11-17",
       "gvi-corporate-benchmark-2026-11-18",
       "the-81-billion-confidence-test",
-      "the-architects-of-acceleration"
+      "the-architects-of-acceleration",
+      "the-gravity-of-capital"
     ]
   },
   "daily": {
@@ -3230,56 +3231,56 @@
     }
   },
   "today": {
-    "date": "2026-11-24",
-    "edition": "GVI",
-    "thesis": "The Architects of Acceleration",
-    "subtitle": "The next phase of the AI Supercycle will increasingly be shaped by three strategic assets — visionary leadership, integrated capital markets and the industrial capacity to deploy intelligence at scale.",
-    "standfirst": "In the Next Economy, the greatest premium will accrue not simply to those who participate in acceleration, but to those who determine its direction.",
+    "date": "2026-11-26",
+    "edition": "Afternoon edition",
+    "thesis": "The Gravity of Capital",
+    "subtitle": "The AI Supercycle is no longer simply transforming the global economy — it is beginning to redefine the price of capital and the hierarchy of global assets.",
+    "standfirst": "What happens when the most powerful technological accelerator of our time begins to alter the very financial conditions required to sustain its expansion?",
     "velocityReading": null,
     "strip": [
       {
-        "label": "Nvidia · Nov 23",
-        "value": "+31.5%",
+        "label": "Hyperscaler bond issuance (BoE 2026)",
+        "value": "$305bn+",
         "delta": null,
-        "trend": "up"
+        "trend": "flat"
       },
       {
-        "label": "Nasdaq 100",
-        "value": "+6.5%",
+        "label": "US real GDP growth, Q3 annualised",
+        "value": "4.3%",
         "delta": null,
+        "trend": "flat"
+      },
+      {
+        "label": "South Korea policy rate",
+        "value": "3.25%",
+        "delta": "+25 bp",
         "trend": "up"
       },
       {
-        "label": "Germany composite PMI",
-        "value": "55.0",
-        "delta": "+1.6",
-        "trend": "up"
+        "label": "European technology fund target",
+        "value": "€50bn",
+        "delta": null,
+        "trend": "flat"
       },
       {
-        "label": "France composite PMI",
-        "value": "46.2",
-        "delta": "−0.4",
-        "trend": "down"
-      },
-      {
-        "label": "FDK Global Velocity Index (2025 = 100)",
+        "label": "FDK Global Velocity Index (provisional, historical reference)",
         "value": "108.0",
-        "delta": null,
+        "delta": "N/V",
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Architects of Acceleration",
-      "url": "/the-architects-of-acceleration",
-      "date": "2026-11-24",
+      "title": "The Gravity of Capital",
+      "url": "/the-gravity-of-capital",
+      "date": "2026-11-26",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Architects of Acceleration",
-        "url": "/the-architects-of-acceleration",
+        "title": "The Gravity of Capital",
+        "url": "/the-gravity-of-capital",
         "slot": "GVI",
-        "headline": "The United States (94.0), China (91.2) and South Korea (88.8) lead the GVI, while the Germany–France PMI gap widens to 8.8 points, the widest in six years."
+        "headline": "The AI Supercycle is repricing capital: the Bank of England projects $305bn+ of hyperscaler bonds, and the GVI headline stays at a provisional 108.0 with no ranking changes."
       }
     ]
   },
