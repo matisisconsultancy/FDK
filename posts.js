@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-divide-between-growth-and-capital",
+    title: "The Great Divide Between Growth and Capital",
+    excerpt: "Equities rally even as monetary tightening, energy prices and AI credit stress test the investment cycle.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1508739773434-c26b3d09e071?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "5 min read",
+    time: "19:33",
+    kind: "night"
+  },
+  {
     url: "/the-orbital-frontier-of-intelligence",
     title: "The Orbital Frontier of Intelligence",
     excerpt: "SpaceX's one-million-satellite authorization opens the orbital computing frontier — but technical and financial constraints still separate ambition from commercial reality.",
