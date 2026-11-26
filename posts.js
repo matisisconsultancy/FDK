@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-ai-race-the-new-hierarchy-of-capital",
+    title: "Europe’s AI Race: The New Hierarchy of Capital",
+    excerpt: "Three developments reveal an emerging reallocation of European AI infrastructure capital across Spain and Portugal.",
+    tag: "In Focus · Capital",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "3 min read",
+    time: "17:50",
+    kind: "day"
+  },
+  {
     url: "/the-battle-for-velocity",
     title: "The Battle for Velocity",
     excerpt: "Export controls are slowing Chinese frontier models and reshaping AI infrastructure credit — a new competitive dimension emerges.",
