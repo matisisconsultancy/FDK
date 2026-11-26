@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-26",
+    title: "The Big Take",
+    excerpt: "America's monetary constraint, Europe's sovereign capital opportunity and the emerging redistribution of AI wealth.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "5 min read",
+    time: "17:01",
+    kind: "day"
+  },
+  {
     url: "/he-velocity-edge-closing-of-the-day",
     title: "He Velocity Edge: Closing of the Day",
     excerpt: "Strong growth, sticky inflation and economic nationalism are rewriting the rules of global capital allocation.",
