@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-orbital-frontier-of-intelligence",
+    title: "The Orbital Frontier of Intelligence",
+    excerpt: "SpaceX's one-million-satellite authorization opens the orbital computing frontier — but technical and financial constraints still separate ambition from commercial reality.",
+    tag: "The Close · Space",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80",
+    date: "November 26, 2026",
+    read: "4 min read",
+    time: "18:47",
+    kind: "night"
+  },
+  {
     url: "/gvi-corporate-benchmark",
     title: "GVI Corporate Benchmark",
     excerpt: "The repricing of AI credit is revealing the next corporate hierarchy — and why financial independence may be the decisive edge.",
