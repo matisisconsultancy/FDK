@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-borders-of-financial-power-2026-11-27",
+    title: "The New Borders of Financial Power",
+    excerpt: "UniCredit's German breakthrough, the Bank of England's capital easing and the ECB accounts reveal a new phase in the battle for financial supremacy.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "10 min read",
+    time: "21:31",
+    kind: "day"
+  },
+  {
     url: "/the-inflection-point-the-big-take-the-great-disconnect",
     title: "The Inflection Point: the Big Take the Great Disconnect",
     excerpt: "Record industrial demand, retreating financial capital and the emerging fight over who captures the productivity dividend.",
