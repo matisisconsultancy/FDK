@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-27",
+    title: "The Big Take",
+    excerpt: "How the AI Supercycle is repricing strategic assets and redrawing the cost of capital.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "4 min read",
+    time: "09:33",
+    kind: "day"
+  },
+  {
     url: "/the-ai-supercycle-at-the-tipping-point",
     title: "The AI Supercycle at the Tipping Point",
     excerpt: "As the Bank of England flags AI financing as a channel for instability, markets enter a new era of capital selection.",
