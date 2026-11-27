@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-borders-of-financial-power",
+    title: "The New Borders of Financial Power",
+    excerpt: "Europe dismantles barriers to banking consolidation just as the global contest for capital intensifies.",
+    tag: "In Focus · Banking",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "9 min read",
+    time: "14:08",
+    kind: "day"
+  },
+  {
     url: "/the-new-geography-of-economic-power",
     title: "The New Geography of Economic Power",
     excerpt: "The AI Supercycle is redistributing economic power across countries, industries and financial markets.",
