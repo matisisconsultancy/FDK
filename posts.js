@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-ai-supercycle-at-the-tipping-point",
+    title: "The AI Supercycle at the Tipping Point",
+    excerpt: "As the Bank of England flags AI financing as a channel for instability, markets enter a new era of capital selection.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1454372182658-c712e4c5a1db?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "5 min read",
+    time: "09:26",
+    kind: "day"
+  },
+  {
     url: "/the-great-collision-2026-11-27",
     title: "The Great Collision",
     excerpt: "The AI Supercycle's financing needs are colliding with central banks' financial-stability objectives.",
