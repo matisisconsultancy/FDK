@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-new-geography-of-economic-power",
+    title: "The New Geography of Economic Power",
+    excerpt: "The AI Supercycle is redistributing economic power across countries, industries and financial markets.",
+    tag: "GVI · Macro",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "5 min read",
+    time: "10:11",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-2026-11-27",
     title: "The Big Take",
     excerpt: "How the AI Supercycle is repricing strategic assets and redrawing the cost of capital.",

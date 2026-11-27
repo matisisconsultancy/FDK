@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-26",
+    "updated": "2026-11-27",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -170,7 +170,8 @@
       "gvi-corporate-benchmark-2026-11-18",
       "the-81-billion-confidence-test",
       "the-architects-of-acceleration",
-      "the-gravity-of-capital"
+      "the-gravity-of-capital",
+      "the-new-geography-of-economic-power"
     ]
   },
   "daily": {
@@ -181,23 +182,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-24",
+      "asOf": "2026-11-27",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The Architects of Acceleration",
-        "url": "/the-architects-of-acceleration",
-        "date": "2026-11-24",
+        "title": "The New Geography of Economic Power",
+        "url": "/the-new-geography-of-economic-power",
+        "date": "2026-11-27",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-24",
+      "asOf": "2026-11-27",
       "source": {
-        "title": "The Architects of Acceleration",
-        "url": "/the-architects-of-acceleration",
-        "date": "2026-11-24",
+        "title": "The New Geography of Economic Power",
+        "url": "/the-new-geography-of-economic-power",
+        "date": "2026-11-27",
         "slot": "GVI"
       },
       "rows": [
@@ -207,8 +208,8 @@
           "name": "United States",
           "score": 94,
           "delta": null,
-          "trend": "up",
-          "tag": "Positive",
+          "trend": "flat",
+          "tag": "Regulatory and credit constraints",
           "spark": [
             94,
             94,
@@ -248,8 +249,8 @@
           "name": "China",
           "score": 91.2,
           "delta": null,
-          "trend": "flat",
-          "tag": "Previous assessment",
+          "trend": "up",
+          "tag": "Industrial profitability",
           "spark": [
             91.2,
             91.2,
@@ -289,8 +290,8 @@
           "name": "South Korea",
           "score": 88.8,
           "delta": null,
-          "trend": "down",
-          "tag": "Domestic sentiment",
+          "trend": "flat",
+          "tag": "Growth strength; monetary tightening",
           "spark": [
             88.8,
             88.8,
@@ -331,7 +332,7 @@
           "score": 84.9,
           "delta": null,
           "trend": "flat",
-          "tag": "Mixed",
+          "tag": "Infrastructure opportunity; inflation",
           "spark": [
             84.9,
             84.9,
@@ -372,7 +373,7 @@
           "score": 83.4,
           "delta": null,
           "trend": "up",
-          "tag": "Industrial acceleration",
+          "tag": "Financial integration",
           "spark": [
             83.4,
             83.4,
@@ -413,7 +414,7 @@
           "score": 82.2,
           "delta": null,
           "trend": "flat",
-          "tag": "Mixed",
+          "tag": "Mixed industrial recovery",
           "spark": [
             82.2,
             82.2,
@@ -453,8 +454,8 @@
           "name": "France",
           "score": 81.2,
           "delta": null,
-          "trend": "down",
-          "tag": "Contraction",
+          "trend": "flat",
+          "tag": "Fiscal and monetary constraints",
           "spark": [
             81.2,
             81.2,
@@ -494,9 +495,10 @@
           "name": "Switzerland",
           "score": 80.7,
           "delta": null,
-          "trend": "up",
-          "tag": "Capital-market initiative",
+          "trend": "flat",
+          "tag": "No qualifying change",
           "spark": [
+            80.7,
             80.7
           ]
         },
@@ -507,8 +509,9 @@
           "score": 80.6,
           "delta": null,
           "trend": "flat",
-          "tag": null,
+          "tag": "Semiconductor regulatory exposure",
           "spark": [
+            80.6,
             80.6
           ]
         },
@@ -519,8 +522,9 @@
           "score": 79.2,
           "delta": null,
           "trend": "flat",
-          "tag": null,
+          "tag": "No qualifying change",
           "spark": [
+            79.2,
             79.2
           ]
         },
@@ -531,8 +535,9 @@
           "score": 77.8,
           "delta": null,
           "trend": "flat",
-          "tag": null,
+          "tag": "No qualifying change",
           "spark": [
+            77.8,
             77.8
           ]
         },
@@ -543,8 +548,9 @@
           "score": 77.1,
           "delta": null,
           "trend": "flat",
-          "tag": null,
+          "tag": "No qualifying change",
           "spark": [
+            77.1,
             77.1
           ]
         },
@@ -554,9 +560,10 @@
           "name": "Spain",
           "score": 75,
           "delta": null,
-          "trend": "up",
-          "tag": "Capital-market opportunity",
+          "trend": "flat",
+          "tag": "Monetary-policy continuity",
           "spark": [
+            75,
             75
           ]
         },
@@ -567,8 +574,9 @@
           "score": 72.4,
           "delta": null,
           "trend": "flat",
-          "tag": null,
+          "tag": "No qualifying change",
           "spark": [
+            72.4,
             72.4
           ]
         },
@@ -578,8 +586,8 @@
           "name": "Italy",
           "score": 71.6,
           "delta": null,
-          "trend": "flat",
-          "tag": "Previous constraints",
+          "trend": "up",
+          "tag": "Banking integration",
           "spark": [
             71.6,
             71.6,
@@ -3231,56 +3239,56 @@
     }
   },
   "today": {
-    "date": "2026-11-26",
-    "edition": "Afternoon edition",
-    "thesis": "The Gravity of Capital",
-    "subtitle": "The AI Supercycle is no longer simply transforming the global economy — it is beginning to redefine the price of capital and the hierarchy of global assets.",
-    "standfirst": "What happens when the most powerful technological accelerator of our time begins to alter the very financial conditions required to sustain its expansion?",
+    "date": "2026-11-27",
+    "edition": "GVI · Macro",
+    "thesis": "The New Geography of Economic Power",
+    "subtitle": "Why the intersection of intelligence, energy sovereignty and financial scale is beginning to redraw the global investment map.",
+    "standfirst": "Capital will follow the economies that can turn intelligence into industrial advantage.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "Hyperscaler bond issuance (BoE 2026)",
-        "value": "$305bn+",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "US real GDP growth, Q3 annualised",
-        "value": "4.3%",
-        "delta": null,
-        "trend": "flat"
-      },
-      {
-        "label": "South Korea policy rate",
-        "value": "3.25%",
-        "delta": "+25 bp",
+        "label": "China industrial profits (Oct YoY)",
+        "value": "+20.1%",
+        "delta": "+5.7 pp",
         "trend": "up"
       },
       {
-        "label": "European technology fund target",
-        "value": "€50bn",
-        "delta": null,
-        "trend": "flat"
+        "label": "Tokyo core inflation (Nov)",
+        "value": "2.9%",
+        "delta": "+0.3 pp",
+        "trend": "up"
       },
       {
-        "label": "FDK Global Velocity Index (provisional, historical reference)",
+        "label": "Eurozone corporate lending (Oct YoY)",
+        "value": "4.5%",
+        "delta": "+0.2 pp",
+        "trend": "up"
+      },
+      {
+        "label": "STOXX 600 (Nov 26 close)",
+        "value": "+1.8%",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "Global Velocity Index",
         "value": "108.0",
-        "delta": "N/V",
+        "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The Gravity of Capital",
-      "url": "/the-gravity-of-capital",
-      "date": "2026-11-26",
+      "title": "The New Geography of Economic Power",
+      "url": "/the-new-geography-of-economic-power",
+      "date": "2026-11-27",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The Gravity of Capital",
-        "url": "/the-gravity-of-capital",
+        "title": "The New Geography of Economic Power",
+        "url": "/the-new-geography-of-economic-power",
         "slot": "GVI",
-        "headline": "The AI Supercycle is repricing capital: the Bank of England projects $305bn+ of hyperscaler bonds, and the GVI headline stays at a provisional 108.0 with no ranking changes."
+        "headline": "The Global Velocity Index holds at 108.0 with no validated revisions; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional country rankings."
       }
     ]
   },
