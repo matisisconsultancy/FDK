@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-inflection-point-the-big-take-the-great-disconnect",
+    title: "The Inflection Point: the Big Take the Great Disconnect",
+    excerpt: "Record industrial demand, retreating financial capital and the emerging fight over who captures the productivity dividend.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1620121692029-d088224ddc74?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "5 min read",
+    time: "14:53",
+    kind: "day"
+  },
+  {
     url: "/europes-great-fracture-2026-11-27",
     title: "Europe's Great Fracture",
     excerpt: "France's contraction and a stalled EU budget expose the widening gap between Europe's financial capacity and its productive capacity.",
