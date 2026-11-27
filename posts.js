@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-intelligence-export",
+    title: "The Great Intelligence Export",
+    excerpt: "China incorporates AI services into its national export strategy as America proves efficiency gains are not one-sided.",
+    tag: "The Close · AI",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "5 min read",
+    time: "22:16",
+    kind: "night"
+  },
+  {
     url: "/the-great-capital-dislocation",
     title: "The Great Capital Dislocation",
     excerpt: "A powerful equity rebound hides a more consequential shift in how, and where, global capital is being allocated.",
