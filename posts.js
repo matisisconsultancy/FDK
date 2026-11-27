@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-collision-2026-11-27",
+    title: "The Great Collision",
+    excerpt: "The AI Supercycle's financing needs are colliding with central banks' financial-stability objectives.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "4 min read",
+    time: "09:17",
+    kind: "day"
+  },
+  {
     url: "/the-great-divide-between-growth-and-capital",
     title: "The Great Divide Between Growth and Capital",
     excerpt: "Equities rally even as monetary tightening, energy prices and AI credit stress test the investment cycle.",
