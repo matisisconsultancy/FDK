@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-capital-dislocation",
+    title: "The Great Capital Dislocation",
+    excerpt: "A powerful equity rebound hides a more consequential shift in how, and where, global capital is being allocated.",
+    tag: "The Close · Capital",
+    slot: "The Close",
+    image: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "4 min read",
+    time: "22:08",
+    kind: "night"
+  },
+  {
     url: "/the-new-borders-of-financial-power-2026-11-27",
     title: "The New Borders of Financial Power",
     excerpt: "UniCredit's German breakthrough, the Bank of England's capital easing and the ECB accounts reveal a new phase in the battle for financial supremacy.",
