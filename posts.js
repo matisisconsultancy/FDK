@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/europes-great-fracture-2026-11-27",
+    title: "Europe's Great Fracture",
+    excerpt: "France's contraction and a stalled EU budget expose the widening gap between Europe's financial capacity and its productive capacity.",
+    tag: "Midday Pulse · Capital",
+    slot: "Midday Pulse",
+    image: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&w=800&q=80",
+    date: "November 27, 2026",
+    read: "5 min read",
+    time: "14:47",
+    kind: "day"
+  },
+  {
     url: "/the-new-borders-of-financial-power",
     title: "The New Borders of Financial Power",
     excerpt: "Europe dismantles barriers to banking consolidation just as the global contest for capital intensifies.",
