@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-big-take-2026-11-28",
+    title: "The Big Take",
+    excerpt: "Asia captures the industrial dividend, America reassesses AI infrastructure, and Europe shows tentative signs of renewed attractiveness.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1478760329108-5c3ed9d495a0?auto=format&fit=crop&w=800&q=80",
+    date: "November 28, 2026",
+    read: "5 min read",
+    time: "10:21",
+    kind: "day"
+  },
+  {
     url: "/weekend-edition",
     title: "Weekend Edition",
     excerpt: "The AI Supercycle is not losing momentum — the financial architecture around it is changing.",
