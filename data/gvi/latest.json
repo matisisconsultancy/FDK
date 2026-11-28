@@ -4,7 +4,7 @@
     "tagline": "The Velocity Edge · by FDK",
     "scale": "0–100",
     "source": "FDK Velocity Intelligence Platform",
-    "updated": "2026-11-27",
+    "updated": "2026-11-28",
     "notesIngested": [
       "the-ai-trade-is-repricing-the-worlds-cost-of-capital",
       "the-ai-supercycle-meets-the-full-equation",
@@ -171,7 +171,8 @@
       "the-81-billion-confidence-test",
       "the-architects-of-acceleration",
       "the-gravity-of-capital",
-      "the-new-geography-of-economic-power"
+      "the-new-geography-of-economic-power",
+      "the-great-contest-for-returns"
     ]
   },
   "daily": {
@@ -182,23 +183,23 @@
       "deltaPct": null,
       "trend": "up",
       "trend30d": null,
-      "asOf": "2026-11-27",
+      "asOf": "2026-11-28",
       "improving": null,
       "declining": null,
       "coverage": null,
       "source": {
-        "title": "The New Geography of Economic Power",
-        "url": "/the-new-geography-of-economic-power",
-        "date": "2026-11-27",
+        "title": "The Great Contest for Returns",
+        "url": "/the-great-contest-for-returns",
+        "date": "2026-11-28",
         "slot": "GVI"
       }
     },
     "countries": {
-      "asOf": "2026-11-27",
+      "asOf": "2026-11-28",
       "source": {
-        "title": "The New Geography of Economic Power",
-        "url": "/the-new-geography-of-economic-power",
-        "date": "2026-11-27",
+        "title": "The Great Contest for Returns",
+        "url": "/the-great-contest-for-returns",
+        "date": "2026-11-28",
         "slot": "GVI"
       },
       "rows": [
@@ -209,7 +210,7 @@
           "score": 94,
           "delta": null,
           "trend": "flat",
-          "tag": "Regulatory and credit constraints",
+          "tag": "Mixed",
           "spark": [
             94,
             94,
@@ -249,8 +250,8 @@
           "name": "China",
           "score": 91.2,
           "delta": null,
-          "trend": "up",
-          "tag": "Industrial profitability",
+          "trend": "flat",
+          "tag": "Mixed",
           "spark": [
             91.2,
             91.2,
@@ -290,8 +291,8 @@
           "name": "South Korea",
           "score": 88.8,
           "delta": null,
-          "trend": "flat",
-          "tag": "Growth strength; monetary tightening",
+          "trend": "up",
+          "tag": "Positive",
           "spark": [
             88.8,
             88.8,
@@ -332,7 +333,7 @@
           "score": 84.9,
           "delta": null,
           "trend": "flat",
-          "tag": "Infrastructure opportunity; inflation",
+          "tag": "Flat",
           "spark": [
             84.9,
             84.9,
@@ -372,8 +373,8 @@
           "name": "Germany",
           "score": 83.4,
           "delta": null,
-          "trend": "up",
-          "tag": "Financial integration",
+          "trend": "down",
+          "tag": "Negative",
           "spark": [
             83.4,
             83.4,
@@ -414,7 +415,7 @@
           "score": 82.2,
           "delta": null,
           "trend": "flat",
-          "tag": "Mixed industrial recovery",
+          "tag": "Flat",
           "spark": [
             82.2,
             82.2,
@@ -454,8 +455,8 @@
           "name": "France",
           "score": 81.2,
           "delta": null,
-          "trend": "flat",
-          "tag": "Fiscal and monetary constraints",
+          "trend": "down",
+          "tag": "Negative",
           "spark": [
             81.2,
             81.2,
@@ -496,8 +497,9 @@
           "score": 80.7,
           "delta": null,
           "trend": "flat",
-          "tag": "No qualifying change",
+          "tag": "Flat",
           "spark": [
+            80.7,
             80.7,
             80.7
           ]
@@ -508,9 +510,10 @@
           "name": "Netherlands",
           "score": 80.6,
           "delta": null,
-          "trend": "flat",
-          "tag": "Semiconductor regulatory exposure",
+          "trend": "up",
+          "tag": "Positive",
           "spark": [
+            80.6,
             80.6,
             80.6
           ]
@@ -521,9 +524,10 @@
           "name": "Sweden",
           "score": 79.2,
           "delta": null,
-          "trend": "flat",
-          "tag": "No qualifying change",
+          "trend": "up",
+          "tag": "Positive",
           "spark": [
+            79.2,
             79.2,
             79.2
           ]
@@ -535,8 +539,9 @@
           "score": 77.8,
           "delta": null,
           "trend": "flat",
-          "tag": "No qualifying change",
+          "tag": "Flat",
           "spark": [
+            77.8,
             77.8,
             77.8
           ]
@@ -548,8 +553,9 @@
           "score": 77.1,
           "delta": null,
           "trend": "flat",
-          "tag": "No qualifying change",
+          "tag": "Flat",
           "spark": [
+            77.1,
             77.1,
             77.1
           ]
@@ -560,9 +566,10 @@
           "name": "Spain",
           "score": 75,
           "delta": null,
-          "trend": "flat",
-          "tag": "Monetary-policy continuity",
+          "trend": "up",
+          "tag": "Positive",
           "spark": [
+            75,
             75,
             75
           ]
@@ -573,9 +580,10 @@
           "name": "Austria",
           "score": 72.4,
           "delta": null,
-          "trend": "flat",
-          "tag": "No qualifying change",
+          "trend": "up",
+          "tag": "Positive",
           "spark": [
+            72.4,
             72.4,
             72.4
           ]
@@ -586,8 +594,8 @@
           "name": "Italy",
           "score": 71.6,
           "delta": null,
-          "trend": "up",
-          "tag": "Banking integration",
+          "trend": "down",
+          "tag": "Negative",
           "spark": [
             71.6,
             71.6,
@@ -3239,56 +3247,56 @@
     }
   },
   "today": {
-    "date": "2026-11-27",
-    "edition": "GVI · Macro",
-    "thesis": "The New Geography of Economic Power",
-    "subtitle": "Why the intersection of intelligence, energy sovereignty and financial scale is beginning to redraw the global investment map.",
-    "standfirst": "Capital will follow the economies that can turn intelligence into industrial advantage.",
+    "date": "2026-11-28",
+    "edition": "GVI",
+    "thesis": "The Great Contest for Returns",
+    "subtitle": "Why the widening divide between technological acceleration, capital flows and industrial productivity could determine the next hierarchy of global investment returns.",
+    "standfirst": "The first phase rewarded the owners of intelligence; the next will reward those who master its economics.",
     "velocityReading": null,
     "strip": [
       {
-        "label": "China industrial profits (Oct YoY)",
-        "value": "+20.1%",
-        "delta": "+5.7 pp",
-        "trend": "up"
+        "label": "Global equity fund flows",
+        "value": "−$22.73bn",
+        "delta": null,
+        "trend": "down"
       },
       {
-        "label": "Tokyo core inflation (Nov)",
-        "value": "2.9%",
-        "delta": "+0.3 pp",
-        "trend": "up"
-      },
-      {
-        "label": "Eurozone corporate lending (Oct YoY)",
-        "value": "4.5%",
-        "delta": "+0.2 pp",
-        "trend": "up"
-      },
-      {
-        "label": "STOXX 600 (Nov 26 close)",
-        "value": "+1.8%",
+        "label": "S. Korea semiconductor exports, Nov 1–20 YoY",
+        "value": "+294.4%",
         "delta": null,
         "trend": "up"
       },
       {
-        "label": "Global Velocity Index",
+        "label": "European equity fund inflows",
+        "value": "+$7.29bn",
+        "delta": null,
+        "trend": "up"
+      },
+      {
+        "label": "French real GDP, Q3",
+        "value": "−0.2%",
+        "delta": null,
+        "trend": "down"
+      },
+      {
+        "label": "Global Velocity Index (provisional reference)",
         "value": "108.0",
         "delta": null,
         "trend": "flat"
       }
     ],
     "source": {
-      "title": "The New Geography of Economic Power",
-      "url": "/the-new-geography-of-economic-power",
-      "date": "2026-11-27",
+      "title": "The Great Contest for Returns",
+      "url": "/the-great-contest-for-returns",
+      "date": "2026-11-28",
       "slot": "GVI"
     },
     "notes": [
       {
-        "title": "The New Geography of Economic Power",
-        "url": "/the-new-geography-of-economic-power",
+        "title": "The Great Contest for Returns",
+        "url": "/the-great-contest-for-returns",
         "slot": "GVI",
-        "headline": "The Global Velocity Index holds at 108.0 with no validated revisions; the US (94.0), China (91.2) and South Korea (88.8) lead the provisional country rankings."
+        "headline": "United States 94.0, China 91.2 and South Korea 88.8 lead the country rankings as global equity funds see −$22.73bn of outflows."
       }
     ]
   },

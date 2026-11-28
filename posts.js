@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-great-contest-for-returns",
+    title: "The Great Contest for Returns",
+    excerpt: "Technological leadership and investment attractiveness are increasingly distinct as capital turns selective.",
+    tag: "GVI · Capital",
+    slot: "GVI",
+    image: "https://images.unsplash.com/photo-1497436072909-60f360e1d4b1?auto=format&fit=crop&w=800&q=80",
+    date: "November 28, 2026",
+    read: "5 min read",
+    time: "10:29",
+    kind: "day"
+  },
+  {
     url: "/the-big-take-2026-11-28",
     title: "The Big Take",
     excerpt: "Asia captures the industrial dividend, America reassesses AI infrastructure, and Europe shows tentative signs of renewed attractiveness.",
