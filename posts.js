@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/the-productivity-dividend-trap",
+    title: "The Productivity Dividend Trap",
+    excerpt: "Europe can lead in AI adoption yet fall behind in capital formation, sovereignty and wealth creation.",
+    tag: "In Focus · Central Banks & AI",
+    slot: "In Focus",
+    image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80",
+    date: "November 28, 2026",
+    read: "4 min read",
+    time: "12:52",
+    kind: "day"
+  },
+  {
     url: "/the-great-contest-for-returns",
     title: "The Great Contest for Returns",
     excerpt: "Technological leadership and investment attractiveness are increasingly distinct as capital turns selective.",
