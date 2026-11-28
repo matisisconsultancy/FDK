@@ -7,6 +7,18 @@
    ============================================================ */
 window.FDK_POSTS = [
   {
+    url: "/weekend-edition",
+    title: "Weekend Edition",
+    excerpt: "The AI Supercycle is not losing momentum — the financial architecture around it is changing.",
+    tag: "Morning Brief · Capital",
+    slot: "Morning Brief",
+    image: "https://images.unsplash.com/photo-1504198266287-1659872e6590?auto=format&fit=crop&w=800&q=80",
+    date: "November 28, 2026",
+    read: "3 min read",
+    time: "09:16",
+    kind: "day"
+  },
+  {
     url: "/the-great-intelligence-export",
     title: "The Great Intelligence Export",
     excerpt: "China incorporates AI services into its national export strategy as America proves efficiency gains are not one-sided.",
